@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use — BMX Parts Depot</title>
+<meta name="description" content="The terms that govern your access to and use of bmxpartsdepot.com.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="index,follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cyan:#00a4e6;--orange:#e64700;
+  --candy-1:#7fe4ff;--candy-2:#1cb9f7;--candy-3:#0083d8;
+  --ink:#08090b;--hairline:rgba(255,255,255,.10);
+  --paper:#f9fafb;--paper-2:#f0f2f4;--line:#e2e5e9;
+  --text:#0a0a0a;--muted:#6b7280;
+  --maxw:1180px;--readw:760px;--pad:clamp(20px,5vw,48px);
+  --display:"Bebas Neue",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --logo:Anton,Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);
+  font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+
+/* wordmark */
+.wordmark{font-family:var(--logo);font-weight:400;font-size:clamp(26px,3vw,36px);
+  letter-spacing:-.005em;line-height:1;white-space:nowrap;text-decoration:none;
+  text-transform:uppercase;display:inline-flex;gap:.26em;align-items:baseline;
+  color:#fff;transition:filter .25s ease}
+.wordmark .bmx{color:var(--candy-2);
+  background:linear-gradient(180deg,var(--candy-1) 0%,var(--candy-2) 46%,var(--candy-3) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.28)) drop-shadow(0 4px 14px rgba(28,185,247,.45))}
+.wordmark:hover{filter:brightness(1.08)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 26px;
+  border-radius:10px;background:var(--cyan);color:#fff;font-weight:650;font-size:15px;
+  white-space:nowrap;text-decoration:none;border:1px solid transparent;overflow:hidden;
+  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease;
+  box-shadow:0 1px 0 rgba(255,255,255,.22) inset,0 10px 24px -12px rgba(0,164,230,.85)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.28) inset,0 18px 34px -14px rgba(0,164,230,.95)}
+.btn.sm{padding:11px 18px;font-size:14px;border-radius:9px}
+.btn.ghost-dark{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
+.btn.ghost-dark:hover{background:#fff;border-color:#c9ced6;box-shadow:0 10px 24px -18px rgba(0,0,0,.6)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:60;background:rgba(8,9,11,.92);
+  backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--hairline)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:70px}
+.nav a{color:#fff}
+.nav .links{display:flex;gap:28px;margin-left:auto;align-items:center}
+.nav .links a.lnk{position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
+  color:rgba(255,255,255,.72);transition:color .2s ease}
+.nav .links a.lnk::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;
+  background:var(--cyan);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.nav .links a.lnk:hover{color:#fff}
+.nav .links a.lnk:hover::after{transform:scaleX(1)}
+@media(max-width:820px){.nav .links a.lnk{display:none}}
+
+/* page header */
+.phead{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate;
+  padding:clamp(56px,8vw,92px) 0 clamp(44px,6vw,68px)}
+.phead .glow{position:absolute;left:50%;top:-30%;width:min(900px,120vw);aspect-ratio:1;
+  transform:translateX(-50%);z-index:-1;
+  background:radial-gradient(circle,rgba(0,164,230,.26),transparent 64%)}
+.phead .eyebrow{font-family:var(--display);font-size:15px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);margin:0 0 12px}
+.phead h1{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  line-height:.88;letter-spacing:.005em;margin:0;font-size:clamp(42px,7.5vw,88px)}
+.phead .updated{margin:20px 0 0;font-size:14.5px;color:rgba(255,255,255,.5)}
+
+/* legal body */
+.legal{padding:clamp(48px,7vw,80px) 0 clamp(64px,9vw,104px)}
+.legal .col{max-width:var(--readw)}
+.legal h2{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;line-height:1;font-size:clamp(28px,4vw,40px);
+  margin:56px 0 6px;padding-top:26px;border-top:2px solid var(--line)}
+.legal h2:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.legal h3{font-size:17px;font-weight:700;letter-spacing:.01em;margin:30px 0 4px;color:var(--text)}
+.legal p{margin:14px 0;color:#33383f}
+.legal ul{margin:14px 0;padding-left:22px;color:#33383f}
+.legal li{margin:8px 0}
+.legal p.caps{font-weight:600;color:var(--text);background:var(--paper-2);
+  border-left:3px solid var(--orange);padding:16px 18px;border-radius:0 10px 10px 0}
+.legal a[href^="mailto"]{color:#0083d8;font-weight:600;text-decoration:none;
+  border-bottom:1px solid rgba(0,131,216,.35)}
+.legal a[href^="mailto"]:hover{border-bottom-color:#0083d8}
+.backrow{margin-top:64px;padding-top:32px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.6);border-top:1px solid var(--hairline);
+  padding:52px 0 40px;font-size:14.5px}
+footer .top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;
+  justify-content:space-between;margin-bottom:34px}
+footer .wordmark{color:#fff;font-size:clamp(30px,4vw,42px)}
+footer nav{display:flex;flex-wrap:wrap;gap:26px}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
+footer a:hover{color:var(--cyan)}
+footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+  padding-top:26px;border-top:1px solid var(--hairline);font-size:13.5px;color:rgba(255,255,255,.42)}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+@media(max-width:640px){
+  body{font-size:16px}
+  .nav .wrap{height:62px;gap:10px}
+  .wordmark{font-size:23px}
+  .nav .btn.sm{padding:9px 13px;font-size:13px}
+}
+@media(max-width:420px){.wordmark{font-size:21px}.hide-xs{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="BMX Parts Depot home"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+    <div class="links">
+      <a class="lnk" href="index.html#stock">What We Stock</a>
+      <a class="lnk" href="index.html#why">Why Us</a>
+      <a class="lnk" href="index.html#contact">Contact</a>
+      <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
+        <span class="hide-xs">Shop on&nbsp;</span>eBay
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="phead">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>BMX Parts Depot<br>Terms of Use</h1>
+    <p class="updated">Last updated: August 23, 2026</p>
+  </div>
+</section>
+
+<main class="legal">
+  <div class="wrap">
+    <div class="col">
+      <p>BMX Parts Depot ("we," "us," or "our") owns and operates bmxpartsdepot.com and other sites linking to these Terms of Use (individually, the "Site", and collectively, the "Sites"). Through the Sites, BMX Parts Depot provides various offerings, information, and resources related to the products and services available on our Sites (each a "Service" and collectively, the "Services"). References to the Sites include the Services.</p>
+      <p>BMX Parts Depot may change, suspend, modify, or discontinue all or any part of the Sites in its sole discretion with or without notice. BMX Parts Depot is not liable if all or any part of a Site is, for any reason, unavailable at any time or for any period. BMX Parts Depot reserves the right to block or deny access to any of the Sites to anyone at any time for any reason. BMX Parts Depot is not obligated to correct or update any information or content on the Sites.</p>
+      <h2>General Terms</h2>
+      <p>These terms of use (together with any additional terms, as described below) ("Terms of Use") are an agreement between BMX Parts Depot and the individuals that use the Sites ("users," "you," or "your"). The Terms of Use govern your access to and use of the Sites. Subject to your full and ongoing compliance with these Terms of Use, BMX Parts Depot hereby grants you a limited and revocable right to access and use the Sites, solely for their intended purposes. If you use or access the Sites on behalf of a business or other entity, you must have authority to bind that business/entity. In such case, the term "you" includes the business/entity and any of its agents that use or access the Sites. By using or accessing the Sites, you represent and warrant that you are of legal age to accept these Terms of Use and form a binding contract with BMX Parts Depot.</p>
+      <p class="caps">IF YOU ARE UNDER THE AGE OF 18 (A MINOR), YOUR PARENT OR LEGAL GUARDIAN MUST READ AND CONSENT TO THE TERMS OF USE BEFORE YOU USE THE SITES. BY PERMITTING A MINOR TO USE THE SITES, THE MINOR’S PARENT OR GUARDIAN BECOMES SUBJECT TO THE TERMS OF USE AND AGREES TO BE RESPONSIBLE FOR THE MINOR’S ACTIVITIES ON THE SITES.</p>
+      <p>We may now or in the future offer multiple platforms (the "BMX Parts Depot Platforms") through our Sites for use in accessing our Services. To use the Platforms, you must adhere to any additional terms and conditions specific to each Platform, as identified below and/or presented to you at the time you use the Platforms. Certain offerings on the Sites may be free of charge or offered for a fee, and we reserve the right to change what Services are offered free of charge or for a fee, and the fees charged for any given Service.</p>
+      <p class="caps">PLEASE READ THE TERMS OF USE CAREFULLY. BY ACCESSING ANY PAGES ON THE SITES; CREATING AN ACCOUNT; USING ANY SERVICES MADE AVAILABLE THROUGH THE SITES; POSTING, SUBMITTING, TRANSMITTING, OR UPLOADING ANY INFORMATION OR CONTENT THROUGH THE SITES; OR USING ANY PLATFORM, YOU EXPRESSLY AGREE THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO THE TERMS OF USE AND ANY APPLICABLE POLICIES AND DISCLAIMERS REFERENCED HEREIN OR ON THE SITES. DO NOT USE THE SITES IF YOU DO NOT AGREE TO THE TERMS OF USE AND ALL APPLICABLE POLICIES AND DISCLAIMERS.</p>
+      <h2>Changes to the Terms of Use</h2>
+      <p>As stated above, BMX Parts Depot reserves the right to update or modify the Terms of Use at any time, with or without prior notice. Any such changes will become effective upon the earlier of (i) the first time you use the Sites or Services with actual notice of the change(s), or (ii) 30 days after the change(s) are publicly posted on the Sites. Disputes arising under these Terms will be resolved in accordance with the version of the Terms of Use in place at the time the dispute arose. We use reasonable efforts to ensure that the Terms of Use identify the last date of update.</p>
+      <p>In the case of material changes to the Terms, BMX Parts Depot will make reasonable efforts to notify you of the change, such as by sending an email to any address we have on file, displaying a pop-up window on the Sites, or other similar mechanism. We encourage you to review the Terms of Use frequently to stay informed of any changes.</p>
+      <h2>Account Access and Security</h2>
+      <p>You may be required to register and create an account to access some content and functionality on the Sites and/or Platforms. You may be required to provide personal information, such as an email and password, to create an account, as described in our Privacy Notice.</p>
+      <p>You are responsible for maintaining the confidentiality of your account, password, and other information. By creating an account, you agree that such account is intended for your use only, and you agree not to allow any other person to access it. You agree to notify BMX Parts Depot immediately if you become aware of any unauthorized access to or use of your account. You may be required to log out from your account at the end of each session. You should use caution when accessing your account from a public or shared computer so that others are not able to view or access your information. BMX Parts Depot may disable an account at any time in its sole discretion. Circumventing account access controls may be a violation of law.</p>
+      <p>Any information you provide to BMX Parts Depot must be correct, current, and complete. Our use of your information is governed by our Privacy Notice. By providing us with personal information, you consent to our use of such information as described in our Privacy Notice.</p>
+      <h2>User Content</h2>
+      <p>The Sites may now or in the future contain Services that use information you have provided to BMX Parts Depot and that allow you and others to post, submit, publish, display, or otherwise transmit ("post") various information and materials ("User Content"), which may include answers in response to questions, comments, documents, and other similar content. Other than personally identifiable information that you provide to us and except as expressly provided in these Terms of Use or the policies applicable to any BMX Parts Depot Platform, User Content is and will be considered non-confidential and non-proprietary. You retain ownership rights in and to your User Content, and by posting User Content to the Sites, you hereby grant BMX Parts Depot an unrestricted, non-exclusive, perpetual, royalty-free, worldwide, transferable, sublicensable, and irrevocable license and right, but not an obligation, to use, edit, alter, copy, reproduce, disclose, display, publish, prepare derivative works from, perform, market, distribute, exhibit, broadcast, or otherwise use such User Content and derivatives thereof, in whole or in part, and in any form, media, or technology now known or hereafter developed.</p>
+      <p>BMX Parts Depot is under no obligation to use, return, review, or respond to User Content. You understand and acknowledge that you are responsible for any User Content you post. By providing User Content, you represent and warrant that: (a) you own or control all rights in and to such User Content, (b) you have the right to grant BMX Parts Depot the license to such User Content that is described above, and (c) the User Content you provide does and will comply with these Terms of Use, including the Content Standards below. You have full responsibility for such content, including its legality, reliability, accuracy, and appropriateness, as further explained in the Content Standards.</p>
+      <h2>Reliance on Posted Information</h2>
+      <p>The Sites may include content provided by persons or entities other than BMX Parts Depot ("third parties"). Other than content provided by BMX Parts Depot, all statements and/or opinions expressed, including all articles, responses to questions, and other content are solely the opinions and the responsibility of the party providing those materials. BMX Parts Depot is not responsible for the content of any materials provided by third parties, and BMX Parts Depot does not warrant the accuracy, completeness, or reliability of any such information. Information provided by BMX Parts Depot on the Sites is informational only. BMX Parts Depot does not guarantee the accuracy of information provided on the Sites.</p>
+      <h2>Content Standards</h2>
+      <p>You agree that you will not post any User Content that (a) infringes on or violates any intellectual property rights, (b) fails to comply with applicable laws and regulations, or (c) contains any expressions of hate, abuse, offensive images or conduct, or any similar content. Without limiting the foregoing, User Content must not:</p>
+      <ul>
+        <li>contain any defamatory, libelous, slanderous, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory, sexually explicit, pornographic, or otherwise objectionable (as determined by BMX Parts Depot in its sole discretion) material;</li>
+        <li>promote violence or discrimination based on race, ethnicity, sex, religion, nationality, disability, sexual orientation, gender identity, or age;</li>
+        <li>violate any person’s or entity’s legal rights (including intellectual property rights, moral rights, and rights of publicity and privacy);</li>
+        <li>impersonate any person or entity;</li>
+        <li>misrepresent your identity or affiliation or the identity or affiliation of any other entity;</li>
+        <li>appear as if it is posted by or endorsed by BMX Parts Depot or any other person or entity, if this is not the case;</li>
+        <li>be likely to or designed to deceive any person or entity;</li>
+        <li>contain any material that is unlawful or could result in civil or criminal liability;</li>
+        <li>incite, advocate, promote, contribute to, enable, or assist any illegal or unlawful activity;</li>
+        <li>involve commercial activities or sales, such as contests, sweepstakes, and other sales promotions, barter or advertising, other than as conducted by BMX Parts Depot in its operation of the Sites; or</li>
+        <li>conflict with these Terms of Use or any other applicable law or policy.</li>
+      </ul>
+      <h2>Governing Law and Jurisdiction</h2>
+      <p>You agree that all matters relating to the Sites and these Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of Maryland without giving effect to any choice or conflict of law provision or rule (whether of the State of Maryland or any other jurisdiction).</p>
+      <div class="backrow">
+        <a class="btn" href="index.html">Back to the site</a>
+        <a class="btn ghost-dark" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="wordmark" href="index.html"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+      <nav>
+        <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
+      <span>Used BMX parts, honestly priced. Shipped from Maryland.</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

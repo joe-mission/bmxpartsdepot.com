@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — BMX Parts Depot</title>
+<meta name="description" content="How BMX Parts Depot collects, uses, and shares personal information.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="index,follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --cyan:#00a4e6;--orange:#e64700;
+  --candy-1:#7fe4ff;--candy-2:#1cb9f7;--candy-3:#0083d8;
+  --ink:#08090b;--hairline:rgba(255,255,255,.10);
+  --paper:#f9fafb;--paper-2:#f0f2f4;--line:#e2e5e9;
+  --text:#0a0a0a;--muted:#6b7280;
+  --maxw:1180px;--readw:760px;--pad:clamp(20px,5vw,48px);
+  --display:"Bebas Neue",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --logo:Anton,Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);
+  font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+
+/* wordmark */
+.wordmark{font-family:var(--logo);font-weight:400;font-size:clamp(26px,3vw,36px);
+  letter-spacing:-.005em;line-height:1;white-space:nowrap;text-decoration:none;
+  text-transform:uppercase;display:inline-flex;gap:.26em;align-items:baseline;
+  color:#fff;transition:filter .25s ease}
+.wordmark .bmx{color:var(--candy-2);
+  background:linear-gradient(180deg,var(--candy-1) 0%,var(--candy-2) 46%,var(--candy-3) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.28)) drop-shadow(0 4px 14px rgba(28,185,247,.45))}
+.wordmark:hover{filter:brightness(1.08)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 26px;
+  border-radius:10px;background:var(--cyan);color:#fff;font-weight:650;font-size:15px;
+  white-space:nowrap;text-decoration:none;border:1px solid transparent;overflow:hidden;
+  transition:transform .18s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease;
+  box-shadow:0 1px 0 rgba(255,255,255,.22) inset,0 10px 24px -12px rgba(0,164,230,.85)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.28) inset,0 18px 34px -14px rgba(0,164,230,.95)}
+.btn.sm{padding:11px 18px;font-size:14px;border-radius:9px}
+.btn.ghost-dark{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
+.btn.ghost-dark:hover{background:#fff;border-color:#c9ced6;box-shadow:0 10px 24px -18px rgba(0,0,0,.6)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:60;background:rgba(8,9,11,.92);
+  backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--hairline)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:70px}
+.nav a{color:#fff}
+.nav .links{display:flex;gap:28px;margin-left:auto;align-items:center}
+.nav .links a.lnk{position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
+  color:rgba(255,255,255,.72);transition:color .2s ease}
+.nav .links a.lnk::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;
+  background:var(--cyan);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.nav .links a.lnk:hover{color:#fff}
+.nav .links a.lnk:hover::after{transform:scaleX(1)}
+@media(max-width:820px){.nav .links a.lnk{display:none}}
+
+/* page header */
+.phead{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate;
+  padding:clamp(56px,8vw,92px) 0 clamp(44px,6vw,68px)}
+.phead .glow{position:absolute;left:50%;top:-30%;width:min(900px,120vw);aspect-ratio:1;
+  transform:translateX(-50%);z-index:-1;
+  background:radial-gradient(circle,rgba(0,164,230,.26),transparent 64%)}
+.phead .eyebrow{font-family:var(--display);font-size:15px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan);margin:0 0 12px}
+.phead h1{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  line-height:.88;letter-spacing:.005em;margin:0;font-size:clamp(42px,7.5vw,88px)}
+.phead .updated{margin:20px 0 0;font-size:14.5px;color:rgba(255,255,255,.5)}
+
+/* legal body */
+.legal{padding:clamp(48px,7vw,80px) 0 clamp(64px,9vw,104px)}
+.legal .col{max-width:var(--readw)}
+.legal h2{font-family:var(--display);font-weight:400;text-transform:uppercase;
+  letter-spacing:.02em;line-height:1;font-size:clamp(28px,4vw,40px);
+  margin:56px 0 6px;padding-top:26px;border-top:2px solid var(--line)}
+.legal h2:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.legal h3{font-size:17px;font-weight:700;letter-spacing:.01em;margin:30px 0 4px;color:var(--text)}
+.legal p{margin:14px 0;color:#33383f}
+.legal ul{margin:14px 0;padding-left:22px;color:#33383f}
+.legal li{margin:8px 0}
+.legal p.caps{font-weight:600;color:var(--text);background:var(--paper-2);
+  border-left:3px solid var(--orange);padding:16px 18px;border-radius:0 10px 10px 0}
+.legal a[href^="mailto"]{color:#0083d8;font-weight:600;text-decoration:none;
+  border-bottom:1px solid rgba(0,131,216,.35)}
+.legal a[href^="mailto"]:hover{border-bottom-color:#0083d8}
+.backrow{margin-top:64px;padding-top:32px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.6);border-top:1px solid var(--hairline);
+  padding:52px 0 40px;font-size:14.5px}
+footer .top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;
+  justify-content:space-between;margin-bottom:34px}
+footer .wordmark{color:#fff;font-size:clamp(30px,4vw,42px)}
+footer nav{display:flex;flex-wrap:wrap;gap:26px}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
+footer a:hover{color:var(--cyan)}
+footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+  padding-top:26px;border-top:1px solid var(--hairline);font-size:13.5px;color:rgba(255,255,255,.42)}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+@media(max-width:640px){
+  body{font-size:16px}
+  .nav .wrap{height:62px;gap:10px}
+  .wordmark{font-size:23px}
+  .nav .btn.sm{padding:9px 13px;font-size:13px}
+}
+@media(max-width:420px){.wordmark{font-size:21px}.hide-xs{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="wordmark" href="index.html" aria-label="BMX Parts Depot home"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+    <div class="links">
+      <a class="lnk" href="index.html#stock">What We Stock</a>
+      <a class="lnk" href="index.html#why">Why Us</a>
+      <a class="lnk" href="index.html#contact">Contact</a>
+      <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
+        <span class="hide-xs">Shop on&nbsp;</span>eBay
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="phead">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>BMX Parts Depot<br>Privacy Notice</h1>
+    <p class="updated">Last updated: August 23, 2026</p>
+  </div>
+</section>
+
+<main class="legal">
+  <div class="wrap">
+    <div class="col">
+      <p>At BMX Parts Depot ("we," or "us"), we value the privacy of individuals who use our websites and related services (collectively, our "Services"). This Privacy Notice explains how we collect, use, and share the personal information of users of our Services ("users," "you," or "your"). By using our Services, you agree to the collection, use, disclosure, and processing of your information as described by this Privacy Notice.</p>
+      <p>Personal information is information that identifies or could be used to identify a specific person. Personal information does not include deidentified information (anonymized or pseudonymized) or aggregated information derived from personal information.</p>
+      <p>We may collect a variety of personal information and other information about you or your devices from various sources, as described below.</p>
+      <h2>Information You Provide to Us</h2>
+      <h3>Registration Information</h3>
+      <p>If you sign up for an account, register to use our Services, or sign up for emails or other updates, we may ask you for basic contact information, such as your name, email address, phone number, and/or mailing address. We may also collect certain demographic information when you register for our Services, including your age, gender, personal interests, income, and/or marital status.</p>
+      <h3>Communications</h3>
+      <p>If you contact us directly, we may collect additional information from you. For example, when you reach out to our customer support team, we may ask for your name, email address, mailing address, phone number, or other contact information so that we can verify your identity and communicate with you. We may also store the contents of any message or attachments that you send to us, as well as any information you submit through any of our forms or questionnaires.</p>
+      <h3>Events</h3>
+      <p>If you register for an event that we host, whether in-person or online, we may collect relevant information such as your name, address, title, company, phone number, or email address, as well as specific information relevant to the event for which you are registering.</p>
+      <h3>User Content</h3>
+      <p>We may allow you and other Users of our Services to share their own content with others. This may include posts, comments, reviews, or other User-generated content. Unless otherwise noted when creating such content, this information may be shared publicly through our Services.</p>
+      <h3>Payment Information</h3>
+      <p>If you make a purchase through our Services, we (or a third-party payment processor acting on our behalf) may collect your payment-related information, such as credit card or other financial information.</p>
+      <h3>Job Applications</h3>
+      <p>If you apply for a job with us, we may collect relevant information such as your name, phone number, email address, position, job history, education history, references, a cover letter, and other similar information.</p>
+      <h2>Information We Collect Automatically When You Use Our Services</h2>
+      <h3>Device Information</h3>
+      <p>We may collect information about the devices and software you use to access our Services, such as your IP address, web browser type, operating system version, device identifiers, and other similar information.</p>
+      <h3>Usage Information</h3>
+      <p>To help us understand how you use our Services and to help us improve them, we may collect data about your interactions with our Services. This includes, but is not limited to, information such as crash reports, session lengths and times, the specific pages and other content you view, and any searches you conduct on our site.</p>
+      <h3>Cookies and Similar Technologies</h3>
+      <p>We and our third-party partners may collect information using cookies, pixel tags, or similar technologies. Cookies are small text files containing a string of alphanumeric characters. We may use both session cookies and persistent cookies. A session cookie disappears after you close your browser. A persistent cookie remains after you close your browser and may be used by your browser on subsequent visits to our Services.</p>
+      <h3>Information We Receive from Other Sources</h3>
+      <p>We may receive information about you from other sources, including third parties that help us update, expand, and analyze our records, identify new customers, or detect or prevent fraud. What information we receive from third parties is governed by the privacy settings, policies, and/or procedures of the relevant organizations, and we encourage you to review them.</p>
+      <h2>How We Use the Information We Collect</h2>
+      <p>We may use the information we collect:</p>
+      <ul>
+        <li>To provide, maintain, improve, and enhance our Services;</li>
+        <li>To understand and analyze how you use our Services and develop new products, services, features, and functionality;</li>
+        <li>To facilitate purchases of products or services that you order;</li>
+        <li>To host events;</li>
+        <li>To allow you to share content with other Users of our Services;</li>
+        <li>To evaluate and process applications for jobs with us;</li>
+        <li>To communicate with you, provide you with updates and other information relating to our Services, provide information that you request, respond to comments and questions, and otherwise provide User support;</li>
+        <li>For marketing and advertising purposes, including developing and providing promotional and advertising materials that may be relevant, valuable or otherwise of interest to you;</li>
+        <li>To detect and prevent fraud, and respond to trust and safety issues that may arise;</li>
+        <li>In connection with generative AI applications;</li>
+        <li>For compliance purposes, including enforcing our Terms of Use or other legal rights, or as may be required by applicable laws and regulations or requested by any judicial process or governmental agency; and</li>
+        <li>For other purposes for which we provide specific notice at the time the information is collected.</li>
+      </ul>
+      <h2>How We Share the Information We Collect</h2>
+      <h3>Service Providers</h3>
+      <p>We may share any information we collect with service providers retained in connection with the provision of our Services. These companies are permitted to use this information to help us provide our Services to improve the services they provide us, and for other purposes disclosed in this Privacy Notice.</p>
+      <h3>Our Affiliates and Representatives</h3>
+      <p>We may share your information with our affiliates, subsidiaries, and representatives as needed to provide our Services.</p>
+      <h3>Other Users</h3>
+      <p>Content you post on our websites, including comments, may be displayed to other Users as appropriate.</p>
+      <h3>Our Advertising and Analytics Partners</h3>
+      <p>We work with our Service Providers and other analytics and/or advertising partners to collect and process certain analytics data regarding your use of our Services and to conduct advertising via cookies, as detailed below. Our Service Providers and other analytics and/or advertising partners may also collect information about your use of other websites, apps, and online resources. Parties that may process your information for advertising and analytics purposes include our Service Providers and may also include:</p>
+      <ul>
+        <li>Google - We may use Google’s services to collect and process analytics data about how our Users interact with our Services and to place ads that we think may interest Users and potential users. For more information, see Google’s Privacy &amp; Terms page.</li>
+        <li>Meta - We may use Meta’s services to place ads that we think may interest our users and potential users across Meta’s various websites, such as Facebook and Instagram. For more information, see Meta’s Data Policy and Privacy Center.</li>
+        <li>LinkedIn - We may use LinkedIn’s services to place ads that we think may interest our users and potential users, as well as to advertise openings to potential employees. For more information, see LinkedIn’s Privacy Notice and Cookie Policy.</li>
+        <li>Microsoft - We may use Microsoft’s services to place ads that we think may interest our users and potential users. For more information, see Microsoft’s Advertising Policies.</li>
+      </ul>
+      <p>Please note that our Service Providers and advertising and analytics partners may change from time to time. If you would like a current list of the specific parties we are working with to provide analytics and/or advertising services, contact us at <a href="mailto:info@bmxpartsdepot.com">info@bmxpartsdepot.com</a>. For details about your choices regarding how these partners use your information, see the Your Choices section below.</p>
+      <h3>As Required by Law and Similar Disclosures</h3>
+      <p>We may access, preserve, and disclose your information if we believe doing so is required or appropriate to: (a) comply with law enforcement requests and legal process, such as a court order or subpoena; (b) respond to your requests; or (c) protect your, our, or others’ rights, property, or safety. In particular, we may disclose relevant information to the appropriate third parties if you post any illegal, threatening, or objectionable content on or through the Services.</p>
+      <h3>Events</h3>
+      <p>We may share your information with event partners or co-sponsors to facilitate the events for which you register.</p>
+      <h3>Merger, Sale, or Other Asset Transfers</h3>
+      <p>We may transfer your information to service providers, advisors, potential transactional partners, or other third parties in connection with the consideration, negotiation, or completion of a corporate transaction in which we are acquired by or merged with another company or in which we sell, liquidate, or transfer all or a portion of our assets. The use of your information following any of these events will be governed by the same general provisions of this Privacy Notice.</p>
+      <h3>Consent</h3>
+      <p>We may also disclose your information with your permission.</p>
+      <h2>Your Choices</h2>
+      <h3>Our Communications</h3>
+      <p>From time to time, you may receive marketing or other informational email messages from us. You can unsubscribe from our promotional and informational emails via the link provided in the emails. After opting out of receiving such messages from us, users may continue to receive administrative messages from us that are necessary to service User accounts.</p>
+      <h3>Cookies</h3>
+      <p>Most web browsers allow you to manage cookies through the browser settings. To find out more about cookies, you can visit www.aboutcookies.org or www.allaboutcookies.org.</p>
+      <h3>Our Partners</h3>
+      <p>You can learn more about Google’s privacy practices and your options for how they use your information on Google’s website. You can also install the Google Analytics Opt-out Browser Add-on. Meta, the parent company of Facebook, provides information about how it uses the information it collects through our Services in its Data Policy. You can also learn specifically about Facebook’s advertising practices on its website.</p>
+      <p>Some of our advertising partners may be members of the Network Advertising Initiative or the Digital Advertising Alliance. You can visit those organizations’ websites to learn about how you may opt out of receiving web-based personalized ads from their member companies. You can also access any settings offered by your mobile operating system to limit ad tracking. To inquire about your choices regarding our business partners generally, contact us at <a href="mailto:info@bmxpartsdepot.com">info@bmxpartsdepot.com</a>.</p>
+      <h2>Third-Party Content</h2>
+      <p>Our Services may contain links to other websites, products, or services that we do not own or operate. We are not responsible for the content provided by, or the privacy practices of, these third parties. Please be aware that this Privacy Notice does not apply to your activities on these third-party services or any information you disclose to these third parties. We encourage you to read their privacy policies before providing any information to them.</p>
+      <h2>Security</h2>
+      <p>We make reasonable efforts to protect your information by using administrative, technological, and physical safeguards designed to improve the security of the information we maintain and protect it from accidental loss, unauthorized access or use, or any other inappropriate or unlawful processing. Because no information system can be 100% secure, we cannot guarantee the absolute security of your information.</p>
+      <h2>Children’s Privacy</h2>
+      <p>We do not knowingly collect, maintain, or use information from children under 13 years of age, and no part of our Services are directed toward children. If you learn that a child has provided us with information in violation of this Privacy Notice, then you may alert us at <a href="mailto:info@bmxpartsdepot.com">info@bmxpartsdepot.com</a>.</p>
+      <h2>International Visitors</h2>
+      <p>Our Services are hosted in the United States and intended for use by individuals located within the United States. If you choose to use the Services from the European Union or other regions of the world with laws governing data collection and use that may differ from U.S. law, please note that you are transferring your information outside of those regions to the United States for storage and processing. Also, we may transfer your data from the U.S. to other countries or regions in connection with operating the Services and storing or processing data. By using our Services, you consent to the transfer, storage, and processing of your information as described in this Privacy Notice.</p>
+      <h2>Changes to this Privacy Notice</h2>
+      <p>We will post any adjustments to the Privacy Notice on this page, and the revised version will be effective when it is posted. If we make material changes, we may notify you via a notice posted on our website or another method. We encourage you to read this Privacy Notice periodically to stay up to date about our privacy practices.</p>
+      <h2>Contact Us</h2>
+      <p>All feedback, comments, requests for technical support, and other communications relating to the Sites and our data collection and processing activities should be directed to: <a href="mailto:info@bmxpartsdepot.com">info@bmxpartsdepot.com</a>.</p>
+      <div class="backrow">
+        <a class="btn" href="index.html">Back to the site</a>
+        <a class="btn ghost-dark" href="terms.html">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <a class="wordmark" href="index.html"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+      <nav>
+        <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </nav>
+    </div>
+    <div class="bottom">
+      <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
+      <span>Used BMX parts, honestly priced. Shipped from Maryland.</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -15,7 +15,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -48,7 +48,13 @@
   --pad:clamp(20px,5vw,48px);
 
   --display:"Bebas Neue",Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --logo:Anton,Impact,"Haettenschweiler","Arial Narrow Bold",sans-serif;
   --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+
+  /* candy blue */
+  --candy-1:#7fe4ff;
+  --candy-2:#1cb9f7;
+  --candy-3:#0083d8;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -89,17 +95,32 @@ a{color:inherit}
 
 /* ---------- wordmark ---------- */
 .wordmark{
-  font-family:var(--display);
-  font-size:26px;
-  letter-spacing:.02em;
+  font-family:var(--logo);
+  font-weight:400;
+  font-size:clamp(26px,3vw,36px);
+  letter-spacing:-.005em;
   line-height:1;
   white-space:nowrap;
   text-decoration:none;
+  text-transform:uppercase;
   display:inline-flex;
-  gap:.34em;
+  gap:.26em;
   align-items:baseline;
+  color:#fff;
+  transition:filter .25s ease;
 }
-.wordmark .bmx{color:var(--cyan)}
+.wordmark .bmx{
+  /* candy blue: glossy vertical gradient with a highlight along the top */
+  color:var(--candy-2);                       /* fallback */
+  background:linear-gradient(180deg,var(--candy-1) 0%,var(--candy-2) 46%,var(--candy-3) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.28)) drop-shadow(0 4px 14px rgba(28,185,247,.45));
+}
+.wordmark:hover{filter:brightness(1.08)}
+/* on light backgrounds the second word flips to ink */
+.wordmark.on-light{color:var(--text)}
 
 /* ---------- buttons ---------- */
 .btn{
@@ -254,6 +275,9 @@ a{color:inherit}
 
 h1.hero-h{font-size:clamp(42px,10.5vw,140px);color:#fff}
 h1.hero-h .ln{display:block;overflow:hidden;white-space:nowrap}
+/* once the rise-in has played, stop clipping so a slow/failed webfont
+   can never leave the headline permanently cut off */
+h1.hero-h.done .ln{overflow:visible}
 h1.hero-h .ln > span{display:block;transform:translateY(105%);animation:riseIn .95s cubic-bezier(.16,1,.3,1) forwards}
 h1.hero-h .ln:nth-child(2) > span{animation-delay:.10s}
 h1.hero-h .ln:nth-child(3) > span{animation-delay:.20s}
@@ -378,7 +402,7 @@ section{position:relative}
 /* ---------- footer ---------- */
 footer{background:var(--ink);color:rgba(255,255,255,.6);border-top:1px solid var(--hairline);padding:52px 0 40px;font-size:14.5px}
 footer .top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between;margin-bottom:34px}
-footer .wordmark{color:#fff;font-size:24px}
+footer .wordmark{color:#fff;font-size:clamp(30px,4vw,42px)}
 footer nav{display:flex;flex-wrap:wrap;gap:26px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
 footer a:hover{color:var(--cyan)}
@@ -401,13 +425,13 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 @media(max-width:640px){
   body{font-size:16px}
   .nav .wrap{height:62px;gap:10px}
-  .wordmark{font-size:20px}
+  .wordmark{font-size:23px}
   .nav .btn.sm{padding:9px 13px;font-size:13px}
   .hero-cta .btn{width:100%;justify-content:center}
   .step::before{font-size:44px}
 }
 @media(max-width:420px){
-  .wordmark{font-size:18px}
+  .wordmark{font-size:21px}
   .hide-xs{display:none}
 }
 </style>
@@ -423,7 +447,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
       <a class="lnk" href="#why">Why Us</a>
       <a class="lnk" href="#process">Our Process</a>
       <a class="lnk" href="#contact">Contact</a>
-      <a class="btn sm" href="https://www.ebay.com/str/bmxpartsdepot" target="_blank" rel="noopener">
+      <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
         <span class="hide-xs">Shop on&nbsp;</span>eBay
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       </a>
@@ -474,7 +498,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     <p class="hero-sub">Quality 4130 hardgoods and mid-school components. Cleaned, inspected, and ready to ride.</p>
 
     <div class="hero-cta">
-      <a class="btn" href="https://www.ebay.com/str/bmxpartsdepot" target="_blank" rel="noopener">
+      <a class="btn" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
         Shop the eBay Store
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
       </a>
@@ -599,12 +623,12 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
       <p class="lead">Tell us the part, the era, and the size. If it is not in the store yet, there is a good chance it is in a bin waiting to be listed.</p>
       <div class="cta-row">
         <!-- ▼▼ EDIT: swap in your real inbox ▼▼ -->
-        <a class="btn orange" href="mailto:hello@bmxpartsdepot.com?subject=Part%20request&amp;body=Part%20I'm%20looking%20for%3A%0AEra%2Fbrand%3A%0ASize%3A%0A">
+        <a class="btn orange" href="mailto:bmx-parts-depot@gmail.com?subject=Part%20request&amp;body=Part%20I'm%20looking%20for%3A%0AEra%2Fbrand%3A%0ASize%3A%0A">
           Email Us
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></svg>
         </a>
         <!-- ▲▲ EDIT ▲▲ -->
-        <a class="btn ghost" href="https://www.ebay.com/str/bmxpartsdepot" target="_blank" rel="noopener">Message us on eBay</a>
+        <a class="btn ghost" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Message us on eBay</a>
       </div>
       <p class="fineprint">Most part requests get a reply within a day.</p>
     </div>
@@ -617,10 +641,10 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     <div class="top">
       <a class="wordmark" href="#top"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
       <nav>
-        <a href="https://www.ebay.com/str/bmxpartsdepot" target="_blank" rel="noopener">Shop</a>
+        <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
         <a href="#contact">Contact</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
       </nav>
     </div>
     <div class="bottom">
@@ -636,6 +660,11 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 
   /* year */
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* unclip the hero headline once its reveal has played */
+  var heroH = document.querySelector('h1.hero-h');
+  if (heroH) { reduce ? heroH.classList.add('done')
+                      : setTimeout(function(){ heroH.classList.add('done'); }, 1400); }
 
   /* sticky nav state */
   var nav = document.getElementById('nav');
