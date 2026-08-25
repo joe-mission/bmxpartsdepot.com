@@ -8,6 +8,11 @@
 <meta name="theme-color" content="#0a0a0a">
 <meta name="robots" content="index,follow">
 
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,15 +36,19 @@ body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);
 a{color:inherit}
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
 
-/* wordmark */
-.wordmark{font-family:var(--logo);font-weight:400;font-size:clamp(26px,3vw,36px);
-  letter-spacing:-.005em;line-height:1;white-space:nowrap;text-decoration:none;
-  text-transform:uppercase;display:inline-flex;gap:.26em;align-items:baseline;
-  color:#fff;transition:filter .25s ease}
-.wordmark .bmx{color:var(--candy-2);
-  background:linear-gradient(180deg,var(--candy-1) 0%,var(--candy-2) 46%,var(--candy-3) 100%);
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 1px 0 rgba(255,255,255,.28)) drop-shadow(0 4px 14px rgba(28,185,247,.45))}
+/* ---------- wordmark ---------- */
+.wordmark{
+  display:inline-flex;
+  align-items:center;
+  line-height:0;
+  text-decoration:none;
+  transition:filter .25s ease,transform .25s ease;
+}
+.wordmark img{
+  height:34px;
+  width:auto;
+  display:block;
+}
 .wordmark:hover{filter:brightness(1.08)}
 
 /* buttons */
@@ -105,7 +114,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);border-top:1px solid var
   padding:52px 0 40px;font-size:14.5px}
 footer .top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;
   justify-content:space-between;margin-bottom:34px}
-footer .wordmark{color:#fff;font-size:clamp(30px,4vw,42px)}
+footer .wordmark img{height:clamp(28px,3.6vw,40px)}
 footer nav{display:flex;flex-wrap:wrap;gap:26px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
 footer a:hover{color:var(--cyan)}
@@ -117,17 +126,17 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 @media(max-width:640px){
   body{font-size:16px}
   .nav .wrap{height:62px;gap:10px}
-  .wordmark{font-size:23px}
+  .wordmark img{height:25px}
   .nav .btn.sm{padding:9px 13px;font-size:13px}
 }
-@media(max-width:420px){.wordmark{font-size:21px}.hide-xs{display:none}}
+@media(max-width:420px){.wordmark img{height:22px}.hide-xs{display:none}}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap">
-    <a class="wordmark" href="index.html" aria-label="BMX Parts Depot home"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+    <a class="wordmark" href="index.html"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="index.html#stock">What We Stock</a>
       <a class="lnk" href="index.html#why">Why Us</a>
@@ -199,7 +208,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 <footer>
   <div class="wrap">
     <div class="top">
-      <a class="wordmark" href="index.html"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+      <a class="wordmark" href="index.html"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
       <nav>
         <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
         <a href="index.html#contact">Contact</a>
@@ -209,7 +218,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     </div>
     <div class="bottom">
       <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
-      <span>Used BMX parts, honestly priced. Shipped from Maryland.</span>
+      <span>Used BMX parts, honestly priced.</span>
     </div>
   </div>
 </footer>

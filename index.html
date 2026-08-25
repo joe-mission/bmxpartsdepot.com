@@ -4,14 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BMX Parts Depot — Used &amp; Mid-School BMX Parts</title>
-<meta name="description" content="Used and mid-school BMX parts. Quality 4130 chromoly hardgoods and mid-school components, cleaned, inspected, and ready to ride. Shipped from Maryland.">
+<meta name="description" content="Used and mid-school BMX parts. Quality 4130 chromoly hardgoods and mid-school components, cleaned, inspected, and ready to ride.">
 <meta name="theme-color" content="#0a0a0a">
-<link rel="canonical" href="https://www.bmxpartsdepot.com/">
+<link rel="canonical" href="https://bmxpartsdepot.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="BMX Parts Depot — Used &amp; Mid-School BMX Parts">
 <meta property="og:description" content="Quality 4130 hardgoods and mid-school components. Cleaned, inspected, and ready to ride.">
-<meta property="og:url" content="https://www.bmxpartsdepot.com/">
+<meta property="og:url" content="https://bmxpartsdepot.com/">
+<meta property="og:image" content="https://bmxpartsdepot.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,32 +104,18 @@ a{color:inherit}
 
 /* ---------- wordmark ---------- */
 .wordmark{
-  font-family:var(--logo);
-  font-weight:400;
-  font-size:clamp(26px,3vw,36px);
-  letter-spacing:-.005em;
-  line-height:1;
-  white-space:nowrap;
-  text-decoration:none;
-  text-transform:uppercase;
   display:inline-flex;
-  gap:.26em;
-  align-items:baseline;
-  color:#fff;
-  transition:filter .25s ease;
+  align-items:center;
+  line-height:0;
+  text-decoration:none;
+  transition:filter .25s ease,transform .25s ease;
 }
-.wordmark .bmx{
-  /* candy blue: glossy vertical gradient with a highlight along the top */
-  color:var(--candy-2);                       /* fallback */
-  background:linear-gradient(180deg,var(--candy-1) 0%,var(--candy-2) 46%,var(--candy-3) 100%);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  filter:drop-shadow(0 1px 0 rgba(255,255,255,.28)) drop-shadow(0 4px 14px rgba(28,185,247,.45));
+.wordmark img{
+  height:34px;
+  width:auto;
+  display:block;
 }
 .wordmark:hover{filter:brightness(1.08)}
-/* on light backgrounds the second word flips to ink */
-.wordmark.on-light{color:var(--text)}
 
 /* ---------- buttons ---------- */
 .btn{
@@ -402,7 +397,7 @@ section{position:relative}
 /* ---------- footer ---------- */
 footer{background:var(--ink);color:rgba(255,255,255,.6);border-top:1px solid var(--hairline);padding:52px 0 40px;font-size:14.5px}
 footer .top{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between;margin-bottom:34px}
-footer .wordmark{color:#fff;font-size:clamp(30px,4vw,42px)}
+footer .wordmark img{height:clamp(28px,3.6vw,40px)}
 footer nav{display:flex;flex-wrap:wrap;gap:26px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
 footer a:hover{color:var(--cyan)}
@@ -425,13 +420,16 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 @media(max-width:640px){
   body{font-size:16px}
   .nav .wrap{height:62px;gap:10px}
-  .wordmark{font-size:23px}
+  .wordmark img{height:25px}
   .nav .btn.sm{padding:9px 13px;font-size:13px}
   .hero-cta .btn{width:100%;justify-content:center}
   .step::before{font-size:44px}
 }
+@media(max-width:480px){
+  .chip{font-size:13px;letter-spacing:.11em;padding-right:13px}
+}
 @media(max-width:420px){
-  .wordmark{font-size:21px}
+  .wordmark img{height:22px}
   .hide-xs{display:none}
 }
 </style>
@@ -441,7 +439,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="wordmark" href="#top" aria-label="BMX Parts Depot home"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+    <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="#stock">What We Stock</a>
       <a class="lnk" href="#why">Why Us</a>
@@ -487,7 +485,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
   </svg>
 
   <div class="wrap hero-inner">
-    <div class="chip"><span class="dot"></span>SHIPPED FROM MARYLAND</div>
+    <div class="chip"><span class="dot"></span>4130 CHROMOLY AND MID-SCHOOL</div>
 
     <h1 class="display hero-h">
       <span class="ln"><span>Used <span class="slash">&amp;</span></span></span>
@@ -639,7 +637,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 <footer>
   <div class="wrap">
     <div class="top">
-      <a class="wordmark" href="#top"><span class="bmx">BMX</span><span>PARTS DEPOT</span></a>
+      <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
       <nav>
         <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
         <a href="#contact">Contact</a>
@@ -649,7 +647,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     </div>
     <div class="bottom">
       <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
-      <span>Used BMX parts, honestly priced. Shipped from Maryland.</span>
+      <span>Used BMX parts, honestly priced.</span>
     </div>
   </div>
 </footer>
