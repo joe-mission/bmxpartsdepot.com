@@ -44,12 +44,21 @@ So this page treats era as a reading taken from the parts. That is both more hon
 
 The year ranges themselves stay open below, and may stay open permanently.
 
-::: needsverify Year ranges are the single most requested figure on this topic and the least well sourced. None are published until they can be checked against a contemporary catalogue, a manufacturer statement or a dated primary document:
-- the year range commonly given for old school BMX, and what primary source supports it
-- the year range commonly given for mid school BMX, and what primary source supports it
-- the year the modern era is normally said to begin, and on what basis
-- whether the freestyle and race sides of the sport are conventionally given the same boundaries
-:::
+### Three passes have now failed to source the year ranges {#three-passes}
+
+This is the answer, and it is worth stating as one rather than leaving blank.
+
+**Three independent research passes have looked for a primary source defining the era boundaries and none exists.** Contemporary catalogue archives, standards documents and racing sanctioning body rulebooks were all checked. The commonly quoted ranges, roughly pre-1988 for old school, 1988 to 2000 for mid school and 2001 onward for modern, are collector convention circulated by communities like BMX Society and VintageBMX. No manufacturer, standards organisation or governing body has ever published them. <span class="src src-conflict">Unpublished</span>
+
+**A number that everyone quotes and nobody can source is worth knowing about.** It does not make the terms useless, it makes them vocabulary rather than fact, and this site treats them accordingly.
+
+### Racing has dated documents, and still does not define the eras {#race-asymmetry}
+
+There is a real asymmetry between the two halves of the sport, and it is not the one you would expect.
+
+**Racing has always had sanctioning bodies publishing dated rulebooks**, the NBA from 1973, the NBL from 1974, the ABA from 1977 and the UCI from 1996. Those documents define equipment classes, 20 inch against 24 inch cruiser, and carry dated rule changes such as the NBL's double jump ruling in 1988. Freestyle never had an equivalent. <span class="src src-confirmed">Confirmed</span>
+
+So the race side genuinely can be dated against documents where freestyle cannot. **But even the sanctioning bodies never defined old school or mid school.** Both halves of the sport borrow the same collector dates for era naming. The paperwork exists, it just never answered this question.
 
 ::: figure Era feature timeline | assets/diagrams/bmx-era-feature-sequence.svg | Chart showing bottom bracket, headset, crank, bar and brake standards changing across the three BMX eras with overlapping rather than hard boundaries
 The standards drawn as overlapping bands rather than blocks, so the transitions read as transitions. No year axis until the dates are sourced.
@@ -133,13 +142,38 @@ So the honest answer is that a serial number is useful for two things: proving a
 
 Which is why the feature-based dating on this page is not a second-best method. It is the better one.
 
-::: needsverify
-- which brands used date codes rather than sequential numbers
-- whether contract factory codes can be identified reliably
-- the year the threaded headset gave way to threadless as the freestyle default
-- the year the larger threadless steerer diameter became standard
-- the year Mid bottom brackets overtook American on complete bikes
-:::
+### Some brands really did stamp dates {#date-codes}
+
+Not a lookup table, but real decodable schemes on specific brands.
+
+**Schwinn stamped a two-letter date code** on the head tube or bottom bracket shell, running month and year: `AA` is January 1965, `BA` is February 1965, and onward. Raleigh's Nottingham factory stamped dates of its own. And 1980s and 1990s Taiwanese contract factories stamped a year and month prefix ahead of the sequential digits, so `G0392` reads as Giant, March 1992. <span class="src src-confirmed">Confirmed</span>
+
+Factory prefixes are verifiable on frames, `G` for Giant, `AL` for Anlun, `F` for Fairly, but **no brand published a cross-reference key**, and brands sub-contracted across several factories within a single model year. So a prefix tells you which factory, and not reliably which bike. <span class="src src-conflict">Unpublished</span>
+
+### The three transitions worth dating {#transitions}
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>When the front end and the bottom bracket changed, on complete bikes</caption>
+<thead>
+<tr><th scope="col">Transition</th><th scope="col">Period</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Aheadset introduced</th><td class="num">1993</td><td>Dia-Compe archives <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Threaded gives way to threadless on completes</th><td class="num">1996 to 1999</td><td>GT, Profile, Haro catalogues <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">1 inch threadless, a brief interlude</th><td class="num">1994 to 1996</td><td>Dia-Compe, GT catalogues <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">1 1/8 inch becomes the universal standard</th><td class="num">by 1998</td><td>GT, S&amp;M catalogues <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Mid bottom bracket on aftermarket frames</th><td class="num">2002 to 2004</td><td>S&amp;M, FBM, G-Sport <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Mid becomes the default on completes</th><td class="num">2005 to 2007</td><td>S&amp;M, Fit, Wethepeople catalogues <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**These dates are worth more than the era labels**, and they come from a better class of source: dated catalogues and model year specifications, which are primary documents in a way a forum consensus is not.
+
+Two things they let you do. A frame with a 1 inch threadless front end is unusual and narrow, sitting in a two-year window around 1994 to 1996 before 1 1/8 took over, so that alone dates a bike closely. And a complete bike with an American bottom bracket is more likely pre-2005 than after, while a Mid on a complete points the other way.
+
+Note what these dates are and are not. They date **when a standard became normal on production bikes**, not when it was invented. Entry-level completes lagged the rest by years in both cases.
 
 ::: video Reading a BMX frame's era from its parts | TBD
 Three frames on the bench, one from each era, going through the bottom bracket, head tube, cranks and brake mounts in the same order and reaching a reading on each.
@@ -201,9 +235,11 @@ Note the steerer and the head tube are different measurements, and both changed.
 
 The full headset side of this, including bearing seats and stack heights, is on the [headsets guide](/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards).
 
-::: needsverify
-- whether any adapter genuinely allows a threadless stem on a threaded steerer, and whether any manufacturer endorses it
-:::
+**Quill to threadless adapters exist, and no BMX manufacturer endorses them.** They are commercially made, a split wedge that goes into a 1 inch threaded steerer like a quill stem and presents a 28.6mm clamp body for a threadless stem. Velo Orange, Origin8 and BBB all make one. <span class="src src-confirmed">Confirmed</span>
+
+**No BMX frame or fork manufacturer was found endorsing one for freestyle, street or dirt.** The concern is the wedge: it holds by friction inside the steerer, and a hard landing loads it in shear rather than the compression a quill was designed for. On a road bike that is a different question from a bike that gets dropped off things.
+
+This is the same pattern as the pedal thread adapters on the [cranks guide](/guides/bmx-cranks-and-pedals/#pedal-thread-size). The part is real and sold for the job, and nobody who makes the parts it goes between has put their name to it. Here, unlike the pedal case, there is a stated mechanical reason to be careful.
 
 ### Necks, wedges and expander bolts {#bmx-neck-stem}
 

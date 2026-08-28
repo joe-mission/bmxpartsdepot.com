@@ -182,7 +182,11 @@ The bearing outer diameter is deliberately blank. Three sources give three diffe
 </table>
 </div>
 
-The era column is deliberately vague. Sources describe the sequence clearly, American first, then Euro, then Mid, then Spanish, and they name the frames involved, but not one of them gives a year. Rather than invent dates, this guide describes the order and leaves it there. The single hard date anchor found in research is a GSport article from June 2004 that describes Spanish as still emerging at that point.
+The era column is deliberately vague about invention dates, because no source gives a year for when any of these standards was created. Sources describe the sequence clearly, American first, then Euro, then Mid, then Spanish, and they name the frames, and none of them dates it.
+
+What can now be dated is **adoption**, which is a different claim and a more useful one. Dated catalogues put Mid on aftermarket frames from 2002 to 2004 and make it the default on complete bikes between 2005 and 2007, with American holding on at entry level until around 2007. The GSport article from June 2004 describing Spanish as still emerging sits neatly inside that. The full transition table is on the [era guide](/guides/vintage-bmx-identification/#transitions).
+
+So: if a complete bike has an American shell it is more likely to predate 2005 than follow it. That is a probability from catalogue evidence, not a rule.
 
 ## Crank spindle diameter {#crank-spindle-diameter}
 
