@@ -70,12 +70,32 @@ Both chromoly and hi-ten are steel and both are magnetic. A magnet tells you ste
 ::: caliper the weight of a stripped chromoly frame and a stripped hi-ten frame of the same nominal size, on the same scale
 :::
 
-::: needsverify The material comparison above is written from how the alloys behave, not from figures we have checked. These are the numbers that would make the section quantitative.
-- published yield strength of 4130 chromoly tubing
-- published yield strength of typical hi-ten bicycle tubing
-- typical stripped frame weight for a chromoly 20 inch BMX frame
-- typical stripped frame weight for a hi-ten 20 inch BMX frame
-- typical wall thickness of BMX chromoly main tubes
+<div class="table-scroll">
+<table class="spec-table">
+<caption>What the two steels actually differ by</caption>
+<thead>
+<tr><th scope="col">Property</th><th scope="col">4130 chromoly</th><th scope="col">Hi-ten</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Yield strength, normalized</th><td class="num">63 to 70 ksi (435 to 480 MPa)</td><td class="num">35 to 45 ksi (240 to 310 MPa)</td><td>MatWeb, Aircraft Spruce <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Yield strength, heat treated</th><td class="num">100 to 130 ksi (690 to 895 MPa)</td><td>Not applicable</td><td>MatWeb <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Stripped frame weight, 20 inch</th><td class="num">4.65 to 5.0 lb</td><td class="num">6.0 to 7.2 lb</td><td>Chromoly from named frames <span class="src src-confirmed">Confirmed</span> &middot; hi-ten from retailer specs <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Main tube wall, double butted</th><td class="num">0.9 to 1.2mm at the butts, 0.6 to 0.7mm in the middle</td><td>Not published</td><td>S&amp;M, Vari-Wall <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Two caveats that matter more than the numbers.
+
+**The hi-ten figure is a grade property, not a bicycle-tubing measurement.** "Hi-ten" is a marketing word, not a specification. The 35 to 45 ksi figure is the published yield strength of the low-carbon ERW tubing grades that hi-ten frames are generally understood to use. Nobody publishes a spec sheet for "hi-ten bicycle tubing" as such, so this is a property of a grade plus an assumption about which grade. Treat the gap between the two columns as real and the exact hi-ten number as indicative.
+
+**The chromoly weights come from named frames**, so they are worth more than a range someone asserted: Sunday Soundwave V5 at 4.9 lb, BSD Ravid at 5.0 lb, S&amp;M M.O.D. at 4.65 lb, all stripped 20 inch aftermarket frames. The hi-ten column has no equivalent, because hi-ten frames are almost never sold on their own, so those figures are inferred from complete bike specs.
+
+Roughly, then: **chromoly yields at somewhere near twice the load hi-ten does, and a hi-ten frame carries an extra pound and a half of steel to be strong enough anyway.** That is the honest version of what the sticker is telling you.
+
+::: needsverify
+- a published spec sheet for hi-ten bicycle tubing as sold, rather than for the underlying steel grade
+- a stripped frame weight for a hi-ten 20 inch frame from a manufacturer rather than a complete bike listing
 :::
 
 ## Butted tubing {#butted-tubing}
@@ -139,12 +159,30 @@ Welded U-brake posts on the seat stays are the normal arrangement on frames that
 
 Cable routing is the other half of this. Look for cable guides on the top tube, a seat stay bridge with a hole for the straddle cable carrier, and **gyro tabs** on the head tube. A frame with gyro tabs was built expecting a detangler.
 
-::: needsverify Dropout and brake mount dimensions we have not sourced. Nothing here is published as a figure until it is.
-- BMX rear dropout slot width for a 14mm axle
-- BMX rear dropout slot width for a 10mm or 3/8 inch axle
-- front fork dropout slot width, standard BMX
-- U-brake post spacing on BMX frames
-- typical dropout plate thickness by era
+**Dropout slot width is genuinely unpublished, and that is the finding.** Spec sheets from Sunday, BSD, S&amp;M, Colony, Cult, Eclat, Odyssey, Profile and Shadow Conspiracy were audited, front and rear. Every one of them states axle compatibility, "14mm dropouts" or "3/8 inch", and not one states the slot width. Two separate research passes have now come up empty on this, so if you need the number, measure the frame. Nobody is publishing it.
+
+Dropout plate thickness is different, because modern frames do publish it.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Dropout and brake mount figures</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Rear dropout slot width, any axle</th><td>Not published by any manufacturer audited</td><td>Nine brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Front fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Dropout plate thickness, modern</th><td class="num">5 to 6mm, or 7.5mm cast</td><td>S&amp;M, BSD <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">U-brake post spacing</th><td class="num">75 to 85mm centre to centre</td><td>Park Tool, Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+On the post spacing, note how wide that range is and where it came from. Frame brands list "990 mounts" and leave it there, so the figure is from general bicycle references rather than from anyone making BMX frames. A 10mm spread is not a tolerance, it is the absence of a tight standard.
+
+::: needsverify
+- dropout plate thickness on old school frames, where the modern sources do not reach
+- U-brake post spacing stated by a BMX frame manufacturer rather than a general reference
 :::
 
 ## Top tube length and how a frame is sized {#top-tube-length}
@@ -167,12 +205,26 @@ Top tube is chosen by rider height and by what the bike is for, and the honest a
 
 **Frame reach** is the more precise version of the same idea: the horizontal distance from the bottom bracket to the top of the head tube. It separates two frames that share a top tube length but put the bottom bracket in different places. It is not printed on many BMX geometry charts, which limits how useful it currently is when comparing used frames.
 
-::: needsverify Sizing figures still to be sourced from manufacturer geometry charts rather than from each other.
-- top tube length range sold as a 20 inch BMX complete
-- top tube length ranges recommended against rider height
-- typical top tube lengths for street, park, dirt and race frames
-- typical frame reach figures on modern BMX frames
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Top tube length, from published geometry charts</caption>
+<thead>
+<tr><th scope="col">Context</th><th scope="col">Range</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Sold as a 20 inch complete</th><td class="num">18.0 to 21.0 inch</td><td>Fit, Sunday, Kink catalogues <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Street</th><td class="num">20.25 to 20.75 inch</td><td>BSD ALVX and others <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Park</th><td class="num">20.5 to 20.8 inch</td><td>Named production frames <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Dirt</th><td class="num">21.0 to 21.5 inch</td><td>S&amp;M Credence M.O.D. <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Race</th><td class="num">20.5 to 21.75 inch</td><td>Supercross Envy RS7 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Frame reach</th><td>Not published on freestyle frames</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Worth knowing that **freestyle BMX does not publish reach.** Cult, BSD, Sunday, S&amp;M and Subrosa were all checked and none of them state it. They size frames by top tube length and head tube angle instead. If you have come from mountain biking expecting a reach figure, it does not exist here, and asking a seller for one will get you a guess.
+
+**On rider height, the charts are retailer guidance and not manufacturer specification.** Source BMX and Dans Comp both publish sizing charts running roughly from 18 to 19.5 inch under four foot six, through 20 to 20.25 inch at four foot six to five foot two, to 21 inch and above over six foot. Frame makers do not endorse these. They treat top tube as rider preference, and plenty of riders deliberately ride outside the chart for their height. Use it as a starting point, not a rule.
 
 ::: figure Where the four frame measurements are taken | assets/diagrams/bmx-frame-measurement-points.svg | Side view diagram of a BMX frame with top tube length, chainstay length, standover height and wheelbase marked
 One frame with all four measurements drawn on, showing which are horizontal and which are not.
@@ -198,12 +250,33 @@ A steeper head angle, meaning closer to vertical, gives a shorter trail and a qu
 
 In practice head angle is one of the less useful numbers when comparing two used BMX frames, because the range across the whole category is narrow and the differences between frames are small. Top tube and chainstay length will tell you far more about how a frame rides.
 
-::: needsverify Geometry ranges. These are exactly the numbers that get repeated online without a source, so nothing is published here until it is checked against manufacturer geometry charts.
-- typical BMX chainstay length range, street and park
-- typical BMX chainstay length range, race
-- typical BMX head tube angle range
-- typical BMX seat tube angle range
-- typical BMX bottom bracket height
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Geometry ranges, each assembled from named production frames</caption>
+<thead>
+<tr><th scope="col">Measurement</th><th scope="col">Range</th><th scope="col">Frames it came from</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Chainstay, street and park</th><td class="num">12.5 to 13.5 inch</td><td>BSD ALVX AF, Sunday Street Sweeper, Cult 2-Short, Subrosa Simpa <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Chainstay, race</th><td class="num">14.0 to 15.5 inch</td><td>Supercross Envy RS7, Chase ACT 1.2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube angle, street and park</th><td class="num">75.25 to 75.75 degrees</td><td>BSD ALVX, Cult 2-Short, Sunday Soundwave <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube angle, dirt</th><td class="num">74.5 degrees</td><td>S&amp;M M.O.D. <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Head tube angle, race</th><td class="num">74.0 to 74.5 degrees</td><td>Chase <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Seat tube angle</th><td class="num">71 to 71.5 degrees</td><td>Sunday, BSD, S&amp;M, Cult, Chase <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bottom bracket height</th><td class="num">11.5 to 11.8 inch</td><td>Sunday 11.5, S&amp;M 11.61, BSD 11.7, Cult 11.8 <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+These are ranges built by reading published geometry charts on named frames, not ranges anyone asserted, which is why the frames are listed alongside. If you want to check any figure, the source is a product page you can open.
+
+Two things to hold on to. **Chainstay is where street and race genuinely diverge**, by a good inch and a half, and it is the number that most changes how a bike feels. **Seat tube angle barely moves at all**, sitting in a half-degree band across every brand checked, freestyle and race, which is why nobody talks about it.
+
+**Bottom bracket height is a measurement with a tyre in it.** The figures above assume a standard 20 x 2.25 tyre. Fit a taller or a flatter tyre and the number moves without anything on the frame changing, so a BB height quoted without a tyre size is not really a frame specification.
+
+::: needsverify
+- whether bottom bracket height is quoted to the shell centre or the shell bottom, which sources do not consistently state
+- head tube angle for dirt and race from a second manufacturer each, since both currently rest on one
 :::
 
 ::: fitbadge Working out chain length for a frame? | Drivetrain Chains and Sprockets guide | /guides/drivetrain-chains-and-sprockets/
@@ -238,10 +311,14 @@ What a serial is not for is dating. Some brands encoded a date. Many did not. Th
 
 Dating a frame is better done by the parts standards it was built around. Bottom bracket shell, head tube and headset type, dropout style, brake mounts and cable routing all moved over time, and a frame that combines a particular set of them sits in a particular window. That is a whole topic and it belongs in the vintage identification guide rather than here.
 
-::: needsverify Serial number and dating specifics we have not confirmed.
-- which BMX brands published a decodable serial format
-- whether any brand encodes build year in a way that can be stated as fact
-- the era boundaries for old school, mid school and new school, which are used loosely and inconsistently by sources
+**No BMX manufacturer publishes a serial decoding table.** Support documentation across twelve frame brands was audited and none maintains a public lookup. Some factory stamps do appear to carry dates, but no brand states this as a rule that holds across production runs, which means a serial can suggest a year and cannot establish one. Dating a frame from its features, as described above, is more reliable than dating it from its number.
+
+**The era names are collector convention, and this site treats them as exactly that.** Communities like BMX Society and VintageBMX use roughly pre-1988 for old school, 1988 to 2000 for mid school, and 2001 onward for modern. Those dates are in wide circulation and no primary source establishes them. No manufacturer, governing body or standards document defines them.
+
+That is why the era chips on these pages carry no years, and why the era diagram deliberately has no axis. **The dates above are recorded here as usage, not as fact**, and anywhere else on this site that an era is named, it is named by its features rather than its dates. If you are buying, the features tell you what fits. The label tells you what a seller calls it.
+
+::: needsverify
+- any manufacturer or governing body definition of the era boundaries, which two research passes have now failed to find
 :::
 
 ## Checking a used frame for damage {#damage}
