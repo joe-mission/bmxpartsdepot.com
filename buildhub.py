@@ -179,7 +179,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
             {
                 "@type": "CollectionPage",
                 "@id": url + "#page",
-                "name": "BMX Fitment Guide and A-Z Spec Dictionary",
+                "name": "BMX Fitment Guide and A-Z Parts Glossary",
                 "description": ("Reference guides and an A-Z dictionary for identifying used BMX "
                                 "parts and checking whether they fit."),
                 "url": url,
@@ -211,9 +211,9 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
     }
 
     head = HEAD.format(
-        title="BMX Fitment Guide and A-Z Spec Dictionary | BMX Parts Depot",
+        title="BMX Fitment Guide and A-Z Parts Glossary | BMX Parts Depot",
         description=("Work out whether a used BMX part fits before you buy it. Ten reference "
-                     "guides and an A-Z dictionary of BMX standards, dimensions, and part variations."),
+                     "guides plus an A-Z glossary of BMX standards, dimensions and part variations."),
         url=url, site=SITE, schema=json.dumps(schema, indent=2, ensure_ascii=False),
         nav=nav_html("guides"), css_href=versioned("/assets/guide.css"),
     )
@@ -223,8 +223,8 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
   <div class="wrap">
     <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span>Fitment Guide</p>
     <p class="eyebrow">Reference</p>
-    <h1 class="display">BMX Fitment Guide<br>and A-Z Spec Dictionary</h1>
-    <p class="standfirst">Ten reference guides and {total} dictionary entries covering the standards, dimensions, and part variations that decide whether a used BMX part fits your bike. Built from manufacturer sources, with the measurements you should take yourself called out as you go.</p>
+    <h1 class="display">BMX Fitment Guide<br>and A-Z Parts Glossary</h1>
+    <p class="standfirst">Ten reference guides and an A-Z glossary of {total} BMX terms, covering the standards, dimensions, and part variations that decide whether a used BMX part fits your bike. Built from manufacturer sources, with the measurements you should take yourself called out as you go.</p>
   </div>
 </section>
 
@@ -248,7 +248,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
       </section>
 
       <section class="hub-sec" id="dict-sec" aria-labelledby="dictionary">
-        <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">A-Z Dictionary</h2>
+        <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">The A-Z Parts Glossary</h2>
         <div class="sec-rule"></div>
         <p style="max-width:70ch;color:var(--muted);margin:0 0 28px">Every term links into the guide section that covers it. {az_status}</p>
         <div id="az-results">{az}</div>

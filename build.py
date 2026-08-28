@@ -612,7 +612,7 @@ def build_schema(meta, ctx, url):
                 "inDefinedTermSet": {
                     "@type": "DefinedTermSet",
                     "@id": SITE + "/guides/#dictionary",
-                    "name": "BMX Parts Depot A-Z Fitment Dictionary",
+                    "name": "BMX Parts Depot A-Z Parts Glossary",
                     "url": SITE + "/guides/",
                 },
             }
@@ -699,7 +699,7 @@ def nav_html(active=""):
   </div>
   <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
     <a href="/#stock">What We Stock</a>
-    <a href="/guides/">Fitment Guide and A-Z</a>
+    <a href="/guides/">Fitment Guide</a>
     <a href="/#process">Our Process</a>
     <a href="/#contact">Contact</a>
   </nav>
@@ -721,7 +721,7 @@ def footer_html(top_guides):
       <div>
         <p class="col-title">BMX Knowledge Base</p>
         <nav>
-          <a href="/guides/">Fitment Guide and A-Z</a>
+          <a href="/guides/">Fitment Guide</a>
           %s
         </nav>
       </div>

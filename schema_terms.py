@@ -1,5 +1,5 @@
 """
-DefinedTerm JSON-LD generation and validation for the A-Z fitment dictionary.
+DefinedTerm JSON-LD generation and validation for the A-Z parts glossary.
 
 Imported by buildhub.py so there is one generator rather than two that drift.
 Run directly for a validation report:
@@ -8,10 +8,10 @@ Run directly for a validation report:
 
 Design notes, because two of these constrain what the payload may claim.
 
-A term is NOT a page. All 107 terms live as sections inside the ten pillar
+A term is NOT a page. Every term lives as a section inside one of the ten pillar
 guides, so a term's canonical URL is the pillar URL plus its section fragment.
-There is no per-term canonical and no /dictionary/ page. Emitting either would
-put @ids in the graph that resolve to nothing.
+There is no per-term canonical and no standalone glossary page. Emitting either
+would put @ids in the graph that resolve to nothing.
 
 A term is only emitted when its section anchor actually exists on the target
 page. A DefinedTerm whose @id points at a fragment that is not in the HTML is
@@ -58,7 +58,7 @@ def term_url(site, page_slug, term_slug):
 
 
 def build_defined_terms(entries, term_map, site):
-    """Map dictionary entries to DefinedTerm nodes.
+    """Map glossary entries to DefinedTerm nodes.
 
     entries  -- iterable of {"term","slug","definition"} from the A-Z source
     term_map -- {term_slug: (page_slug, page_title, has_anchor)}
@@ -78,7 +78,7 @@ def build_defined_terms(entries, term_map, site):
             skipped.append((slug, "claimed by %s with no matching section anchor" % page_slug))
             continue
         if slug in seen:
-            skipped.append((slug, "duplicate slug in the dictionary source"))
+            skipped.append((slug, "duplicate slug in the glossary source"))
             continue
         seen.add(slug)
 
@@ -164,7 +164,7 @@ def defined_term_set(nodes, site):
     return {
         "@type": "DefinedTermSet",
         "@id": site + "/guides/#dictionary",
-        "name": "BMX Parts Depot A-Z Fitment Dictionary",
+        "name": "BMX Parts Depot A-Z Parts Glossary",
         "description": "BMX technical terms, dimensional standards, and part variations.",
         "url": site + "/guides/",
         "hasDefinedTerm": nodes,
