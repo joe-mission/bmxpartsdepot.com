@@ -606,10 +606,23 @@ figure.diagram .fig-body.placeholder .todo{
   .az-row .az-bar,.hub-input{transition:none}
 }
 
+/* While a search is running the dictionary moves above the guide cards.
+   The ten cards sat between the search box and the term results, which was
+   490px of the reason nothing looked like it had happened when you typed.
+   Flex order rather than moving nodes, so the DOM and reading order stay
+   as they are when nothing is being searched. */
+#main{display:flex;flex-direction:column}
+.hub-sec{order:0}
+#main.searching #dict-sec{order:-1}
+#main.searching #pillars-sec{margin-top:8px}
+
 /* live result count, sits directly under the input so typing has a visible
    effect even though the results themselves are far below the fold */
 .search-count{
-  margin:-6px 0 14px;
+  /* Positive top margin: the -6px here was tuned for the old layout where
+     the input sat above this line. The field now overlays the A-Z row and
+     overflows it slightly, so a negative margin ran the two together. */
+  margin:9px 0 0;
   font-size:14px;
   color:var(--cyan-lt);
   font-weight:550;

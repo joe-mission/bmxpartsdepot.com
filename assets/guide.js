@@ -25,9 +25,9 @@
       var shown = 0;
       var cardHits = 0;
 
-      /* guides first: they are what most people are actually after, and
-         they sit above the fold, so filtering them is what makes typing
-         look like it did something */
+      /* Filter the guide cards too. While a search is running the CSS
+         moves the dictionary above them, so these are the second result
+         group rather than the first. */
       cards.forEach(function (c) {
         var hay = c.getAttribute("data-term") || c.textContent.toLowerCase();
         var match = !q || hay.indexOf(q) !== -1;
@@ -53,8 +53,9 @@
 
       if (empty) empty.hidden = shown !== 0 || cardHits !== 0;
 
-      /* the results live well below the fold, so say what happened up
-         here at the box rather than leaving it looking inert */
+      /* Says what happened up at the box. Still worth having now that the
+         page scrolls to the results, because it reports both hit counts
+         and survives when the scroll is suppressed. */
       if (count) {
         if (!q) {
           count.hidden = true;
@@ -72,9 +73,40 @@
       }
     };
 
+    /* The hero plus the guide cards put the first term result 300 to 450px
+       below the fold at every viewport, so typing looked inert. On the first
+       character of a new search, bring the results up under the sticky bars.
+       Once only: re-scrolling on every keystroke is worse than not scrolling
+       at all. */
+    var main = document.getElementById("main");
+    var dictSec = document.getElementById("dict-sec");
+    var wasEmpty = true;
+
+    var stickyOffset = function () {
+      var nav = document.querySelector(".nav");
+      var tools = document.querySelector(".hub-tools");
+      return (nav ? nav.offsetHeight : 0) + (tools ? tools.offsetHeight : 0) + 14;
+    };
+
+    var revealResults = function () {
+      if (!dictSec) return;
+      var target = dictSec.getBoundingClientRect().top + window.pageYOffset - stickyOffset();
+      if (target <= window.pageYOffset + 4) return;   /* already at or above it */
+      window.scrollTo({
+        top: target,
+        behavior: prefersReduced() ? "auto" : "smooth"
+      });
+    };
+
     search.addEventListener("input", function () {
       clearTimeout(timer);
-      timer = setTimeout(filter, 90);
+      timer = setTimeout(function () {
+        filter();
+        var isEmpty = search.value.trim() === "";
+        if (main) main.classList.toggle("searching", !isEmpty);
+        if (wasEmpty && !isEmpty) revealResults();
+        wasEmpty = isEmpty;
+      }, 90);
     });
 
     /* Enter on a single result goes straight there */

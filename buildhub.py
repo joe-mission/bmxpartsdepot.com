@@ -241,15 +241,19 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 <div class="guide-body">
   <div class="wrap">
     <main id="main">
-      <h2 class="display" id="guides-head" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">The Ten Master Guides</h2>
-      <div class="sec-rule" id="guides-rule"></div>
-      <div class="pillar-grid" id="pillar-grid">{cards}</div>
+      <section class="hub-sec" id="pillars-sec" aria-labelledby="guides-head">
+        <h2 class="display" id="guides-head" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">The Ten Master Guides</h2>
+        <div class="sec-rule" id="guides-rule"></div>
+        <div class="pillar-grid" id="pillar-grid">{cards}</div>
+      </section>
 
-      <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">A-Z Dictionary</h2>
-      <div class="sec-rule"></div>
-      <p style="max-width:70ch;color:var(--muted);margin:0 0 28px">Every term links into the guide section that covers it. {az_status}</p>
-      <div id="az-results">{az}</div>
-      <p class="no-results" id="no-results" hidden>Nothing matched that. Try a shorter word, or the part name on its own.</p>
+      <section class="hub-sec" id="dict-sec" aria-labelledby="dictionary">
+        <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">A-Z Dictionary</h2>
+        <div class="sec-rule"></div>
+        <p style="max-width:70ch;color:var(--muted);margin:0 0 28px">Every term links into the guide section that covers it. {az_status}</p>
+        <div id="az-results">{az}</div>
+        <p class="no-results" id="no-results" hidden>Nothing matched that. Try a shorter word, or the part name on its own.</p>
+      </section>
     </main>
   </div>
 </div>
