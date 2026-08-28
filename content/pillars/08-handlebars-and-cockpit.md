@@ -49,13 +49,32 @@ The second interaction is cutting. Trimming the ends of a swept bar takes width 
 
 That table has no figures in it on purpose. The shape of the effect is well understood and does not need a source. The numbers do, and they are not confirmed yet.
 
-::: needsverify The bar dimensions people search for most, none of which are published on this page until they are checked against manufacturer spec sheets:
-- the usual range of BMX bar rise, in inches, from the lowest to the tallest commonly sold
-- the usual range of BMX bar width, in inches
-- typical backsweep, in degrees, and the range across current bars
-- typical upsweep, in degrees, and the range across current bars
-- whether rise is normally quoted to the top of the bar tube or to the centreline of the grip area
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>The four numbers, from published bar specs</caption>
+<thead>
+<tr><th scope="col">Number</th><th scope="col">Range</th><th scope="col">Bars it came from</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Rise</th><td class="num">8.0 to 11.0 inch</td><td>S&amp;M Hoder 9, Perfect 10, Elevenz; Odyssey Tenacious 10 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Width, adult freestyle</th><td class="num">27.5 to 30.0 inch</td><td>S&amp;M Hoder 30, BSD Grime 29.4, Odyssey Luminary 29 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Width, race junior and expert</th><td class="num">23 to 26 inch</td><td>Race catalogues <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Backsweep, freestyle</th><td class="num">10 to 12 degrees</td><td>S&amp;M Hoder 11 and Credence 12, BSD Safari 12, Sunday Darkwave 12 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Backsweep, flatland</th><td class="num">3 to 6 degrees</td><td>Heresy Ascent <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Upsweep</th><td class="num">1.5 to 3 degrees</td><td>Odyssey 1.5, S&amp;M 1.5 and 2, BSD 2, Cult 3 <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Rise is where the choice really lives, spanning three inches across the market. The other three barely move: upsweep sits inside a degree and a half across every brand checked, and freestyle backsweep inside two degrees. **If you are comparing bars, rise and width are the numbers doing the work.**
+
+### Two bars quoting the same rise are not necessarily the same height {#rise-convention}
+
+**Brands do not measure rise from the same place.** Most freestyle makers measure from the clamp tube centre to the centre of the grip area. Some measure to the outer top wall of the tube instead. On a 22.2mm tube that is a difference of one tube radius, about 11mm, or nearly **0.44 inch**.
+
+So two bars both sold as 9.0 inch rise can stand almost half an inch apart in real height, and neither maker is lying. This is the single most useful thing on this page. **Do not compare rise figures between brands and expect them to mean the same thing**, and if you are replacing bars with the same rise from a different maker, expect the cockpit to feel different.
+
+It is also why the diagram above measures rise to the top of the tube and says so, rather than quietly picking one convention.
 
 ::: figure The four bar measurements | assets/diagrams/bmx-handlebar-measurement-points.svg | Diagram of a BMX handlebar with rise, width, backsweep and upsweep each called out with an arrow
 One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.
@@ -115,11 +134,11 @@ Upsweep is the angle the ends rise out of the plane the rest of the bar sits in.
 
 If you have ever fitted bars that measured right and still felt like they were pushing your hands outward, upsweep is a good candidate.
 
-::: needsverify Sweep figures that need a source before they go on the page:
-- the range of backsweep offered across current bar models, in degrees
-- the range of upsweep offered across current bar models, in degrees
-- whether sweep is conventionally quoted per side or as a total included angle
-:::
+The ranges are in the table above: 10 to 12 degrees of backsweep on freestyle bars, 1.5 to 3 degrees of upsweep, with flatland bars running much straighter at 3 to 6 degrees back.
+
+**On how sweep is quoted, the news is good, and it is the opposite of the rise problem.** Every source checked quotes sweep **per side**, as the angle each grip section deviates from the clamp axis. So a bar listed at 12 degrees backsweep has each end swept back 12 degrees, not 12 degrees total across both. No brand was found using an included-angle convention.
+
+That means sweep figures **can** be compared between brands, which is worth knowing because almost nothing else on this page can be.
 
 ## Two-piece, three-piece and four-piece bars {#bar-construction}
 
@@ -170,9 +189,11 @@ Going the other way, a larger bar simply will not go into a smaller clamp, and n
 
 Oversize at 25.4mm is offered by S&amp;M and Eclat, so it is current rather than dead, but it is a deliberate choice rather than something you end up with by accident. **An oversize bar needs an oversize stem.** The two clamp diameters do not mix, and the gap between them is 3.2mm, which is far too much to force.
 
-::: needsverify
-- whether shims are sold to run a standard 22.2mm bar in a 25.4mm clamp, and by whom
-:::
+**Shims exist, from named makers.** Eclat sell a 25.4mm to 22.2mm handlebar shim set, and Problem Solvers make handlebar reducer shims for the same job. These are split aluminium sleeves with a 25.4mm outside and a 22.2mm inside, made to hold a standard bar in an oversize clamp without slipping. <span class="src src-confirmed">Confirmed</span>
+
+Worth saying because the alternative people reach for is packing the gap with a strip of drink can or a wrap of tape. **Do not.** A bar clamp works by even pressure around the tube, and a shim that is not a proper sleeve gives you a bar that creeps under load and a clamp face that scores the bar. The parts cost a few pounds and they are the difference between a safe fix and a bar that rotates on a hard landing.
+
+Note this only goes one way. A shim lets a **standard bar** run in an **oversize clamp**. Nothing lets an oversize bar into a standard clamp.
 
 ### Knurling and clamp condition {#knurled-bar-clamp}
 
@@ -216,11 +237,27 @@ The open end of a handlebar is a small circular cutting edge, and it is the sing
 
 A used bike with no barends fitted has been ridden with no barends fitted, which is worth remembering when you are judging how the rest of it was looked after.
 
-::: needsverify Grip and bar end figures still to be sourced:
-- the standard BMX bar end outer diameter that grips are made to fit, in millimetres
-- whether any current BMX bars use a different grip diameter
-- common grip lengths, and whether makers quote overall length or usable length
-:::
+**Grips fit one diameter and that makes life simple.** BMX bars are 22.2mm at the grip area, the same 7/8 inch as the clamp section, and no current bar was found using anything else. Even oversize 25.4mm bars taper back down to 22.2mm where your hands go, because the oversize is about clamping strength at the stem, not about the grips. So any BMX grip fits any BMX bar. <span class="src src-confirmed">Confirmed</span>
+
+Grip length is less tidy.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Grip dimensions</caption>
+<thead>
+<tr><th scope="col">Measurement</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Bar outer diameter at the grip</th><td class="num">22.2mm (7/8 inch)</td><td>ISO 4210-2, Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Grip length, range sold</th><td class="num">140 to 170mm</td><td>ODI Longneck 143, Cult 160, Shadow Gypsy 165 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">What that length means</th><td>Not quoted consistently</td><td>Compared across makers <span class="src src-conflict">Conflicting</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Flanged grips are often quoted overall, including the flange**, which eats 3 to 5mm of the space your hand actually gets. Flangeless grips are more often quoted as usable sleeve length. So a 160mm flanged grip and a 160mm flangeless grip do not give you the same amount of grip, and the difference goes the wrong way from what the number suggests.
+
+Same lesson as the rise figures further up this page: **the number is reliable, what it is measuring is not.**
 
 ::: video Getting old grips off without wrecking them | TBD
 Compressed air or a thin screwdriver and soapy water, and why heat is the wrong first move on a grip you want to keep.
