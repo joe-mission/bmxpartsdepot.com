@@ -110,8 +110,8 @@ Because the split is at the steering axis, the upper cable never wraps around an
 
 Two cables run down from the top plate on most designs, one to each side, so the pull is balanced and the plate is not dragged sideways when the lever is squeezed. That is why gyro cable sets come as an upper pair plus a lower single, and why an incomplete set is useless.
 
-::: video How a gyro detangler works, with the plates off the bike | TBD
-The two plates, the bearing between them, and what happens to the upper and lower cables when the bars are turned and the lever is pulled at the same time.
+::: video BMX Gyro and Detangler Troubleshooting and Adjusting | 72BCVAE7nJ0
+The plates, the bearing between them, and what the upper and lower cables do when the bars turn and the lever is pulled at the same time.
 :::
 
 ### What goes wrong with them

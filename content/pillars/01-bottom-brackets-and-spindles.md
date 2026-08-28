@@ -36,8 +36,8 @@ One thing that catches people out: some sources quote the bearing or cup outer d
 The four standards at the same scale, with the bore diameter called out on each.
 :::
 
-::: video How to measure a BMX bottom bracket shell | TBD
-Where to put the calipers, and why the reading changes if a cup is still pressed in.
+::: video What Type of Bottom Bracket do I Have? | e-8G1G9QNX8
+Park Tool working through bottom bracket identification from the shell. It covers the wider bicycle world rather than BMX, so take the method from it and take the American, Mid and Spanish figures from the table above.
 :::
 
 ## American bottom bracket {#american-bottom-bracket}
@@ -108,7 +108,7 @@ Five independent sources give the shell diameter as the same number to rounding:
 </table>
 </div>
 
-::: video Pressing Mid bottom bracket bearings in and out | TBD
+::: video Removing and Installing Mid Bottom Brackets BMX, Step by Step | KQxcwyZu9KQ
 The job people most often do badly. Watch how the press is squared up before any load goes on.
 :::
 

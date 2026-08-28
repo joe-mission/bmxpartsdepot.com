@@ -80,8 +80,8 @@ It is also why the diagram above measures rise to the top of the tube and says s
 One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.
 :::
 
-::: video How to measure a set of BMX bars on the bench | TBD
-Bars stood on a flat surface, rise taken off the clamp area, width taken end to end, and both sweeps read off from above. Also shows how much the rise reading moves if the bar is not sat square.
+::: video Sizing and Cutting Handlebars | pBdxCtAn5Ew
+Park Tool on sizing and cutting bars. It is a width video rather than a rise and sweep video, so use it for the cutting method and take rise, upsweep and backsweep from the measuring points diagram above.
 :::
 
 ## Handlebar rise {#handlebar-rise}
@@ -261,8 +261,8 @@ Grip length is less tidy.
 
 Same lesson as the rise figures further up this page: **the number is reliable, what it is measuring is not.**
 
-::: video Getting old grips off without wrecking them | TBD
-Compressed air or a thin screwdriver and soapy water, and why heat is the wrong first move on a grip you want to keep.
+::: video Removing and Installing BMX Grips Without an Air Compressor | qWamOoHlRFo
+The no-compressor method, which is the one most people can actually do at home.
 :::
 
 ## Stems and where they put the bars {#front-load-stem}

@@ -141,8 +141,8 @@ Bolt and hex sizes beyond the table above vary and are largely unpublished. Park
 
 BSD and Eclat both describe their cranks as investment cast pinch designs without stating a thread pitch anywhere, and no manufacturer publishes machining tolerance classes for spindle diameters. Both were checked twice. <span class="src src-conflict">Unpublished</span>
 
-::: video Fitting a three-piece crank without wrecking the splines | TBD
-The order the parts go on, how far the arm should sit, and what a spline that has already been ridden loose looks like once it is off.
+::: video Removing and Installing 3-piece Cranks and Sprockets, Step By Step | QUhphm6qVcc
+The order the parts go on, how far the arm should sit, and what the splines look like once the arm is off.
 :::
 
 ## Crank spindle diameter {#crank-spindle-diameter}
@@ -245,8 +245,8 @@ The millimetre figures are the inch designations converted, not measurements tak
 
 Tech support documentation across ten pedal and crank manufacturers was audited and **not one of them says anything about adapters, for or against.** Not a warning, not an endorsement. The silence is consistent and it is the whole answer. <span class="src src-conflict">Unpublished</span>
 
-::: video Telling a left pedal from a right pedal | TBD
-The stamped markings, where they hide, and the thread direction check for when the markings are gone.
+::: video Pedal Identification | EWyj-ktlcYc
+Where the L and R markings hide, and the thread direction check for when they have worn away. Pedal threading is the same across cycling, so this applies directly.
 :::
 
 ## Pedal bodies {#nylon-pedals}

@@ -43,10 +43,6 @@ Work in order, cheapest check first, and stop as soon as you have what you need.
 ::: fitbadge Need to work out the bottom bracket shell too? | Bottom Brackets and Spindles guide | /guides/bottom-brackets-and-spindles/
 :::
 
-::: video Identifying a bare BMX frame with no stickers | TBD
-Working through one stripped frame on the bench: decal ghosts, dropout stamps, shell measurement, weight in hand.
-:::
-
 ## Chromoly, hi-ten and what the sticker means {#4130-chromoly}
 
 ::: quickanswer

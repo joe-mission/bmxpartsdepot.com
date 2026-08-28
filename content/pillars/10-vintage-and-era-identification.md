@@ -172,10 +172,6 @@ Two things they let you do. A frame with a 1 inch threadless front end is unusua
 
 Note what these dates are and are not. They date **when a standard became normal on production bikes**, not when it was invented. Entry-level completes lagged the rest by years in both cases.
 
-::: video Reading a BMX frame's era from its parts | TBD
-Three frames on the bench, one from each era, going through the bottom bracket, head tube, cranks and brake mounts in the same order and reaching a reading on each.
-:::
-
 ## Construction giveaways {#construction}
 
 Beyond the part standards, how the frame is actually built gives the era away.

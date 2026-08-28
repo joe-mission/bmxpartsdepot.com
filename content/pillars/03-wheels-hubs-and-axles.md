@@ -40,10 +40,6 @@ Three designs have been used to let a BMX bike coast. They are not interchangeab
 Where the mechanism lives in each design, and why that is what makes them incompatible.
 :::
 
-::: video Telling a cassette from a freecoaster on a built bike | TBD
-Spinning the wheel backwards on one of each, listening to the difference, then pulling both apart on the bench.
-:::
-
 ## Cassette hub {#cassette-hub}
 
 ::: quickanswer
