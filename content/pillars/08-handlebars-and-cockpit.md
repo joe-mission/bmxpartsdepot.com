@@ -7,7 +7,7 @@ slug: bmx-handlebars-and-cockpit
 headline: BMX Bar Rise, Width, Sweep and Cockpit Fitment
 description: How BMX bars are measured, what rise, width, backsweep and upsweep each change, two-piece against four-piece construction, clamp diameter, and how grips and stem choice finish the cockpit.
 cardline: Four numbers describe a set of bars, and changing one quietly changes the others.
-standfirst: Bars are the part riders replace on feel rather than on fitment, which is why so many people end up with a set that measures right and feels wrong. This guide explains what each of the four bar numbers does, how they interact, and which figures on this page still need a source before we will publish them.
+standfirst: Bars are the part riders replace on feel rather than on fitment, which is why so many people end up with a set that measures right and feels wrong. This guide explains what each of the four bar numbers does and how they interact, with every published figure carrying its source.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28

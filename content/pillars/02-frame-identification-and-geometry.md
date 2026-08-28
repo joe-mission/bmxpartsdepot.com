@@ -7,11 +7,11 @@ slug: bmx-frame-identification-and-geometry
 headline: How to Identify a Used BMX Frame and Read Its Geometry
 description: Chromoly against hi-ten, butted tubing, gussets, dropouts and brake mounts, plus what top tube length, chainstay length and head angle actually change on a BMX frame.
 cardline: What the frame is made of, how it is put together, and which measurements decide whether it fits you.
-standfirst: A used BMX frame usually turns up with no spec sheet, no box and half its stickers gone. Everything you need is on the frame itself. This guide covers what to look at, what each answer means, and where a figure has not been checked it says so instead of filling the gap.
+standfirst: A used BMX frame usually turns up with no spec sheet, no box and half its stickers gone. Everything you need is on the frame itself. This guide covers what to look at and what each answer means. Every figure carries its source, and the ones nobody publishes, dropout slot width above all, are named as unpublished rather than guessed at.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, yield-strength|Yield Strength, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle
+terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, vintage-bmx-identification|Vintage BMX Identification
 ---
 

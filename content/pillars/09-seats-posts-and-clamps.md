@@ -7,7 +7,7 @@ slug: bmx-seats-and-seatposts
 headline: BMX Seat Types, Post Diameters and Clamp Fitment
 description: Pivotal, railed and tripod seats explained, how seat post diameter is measured, integrated against external clamps, slammed setups, and how to get a seized post out of a frame.
 cardline: The seat interface, the post diameter and the clamp are three separate fitment questions, and mixing them up is what makes seat shopping confusing.
-standfirst: A seat has to match its post, the post has to match the frame, and the clamp has to match the top of the seat tube. Three separate measurements, three separate ways to get it wrong. This guide explains all three and is honest about which figures still need a source.
+standfirst: A seat has to match its post, the post has to match the frame, and the clamp has to match the top of the seat tube. Three separate measurements, three separate ways to get it wrong. This guide explains all three, with the post and clamp diameters sourced and stated rather than left to a guess at the counter.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28

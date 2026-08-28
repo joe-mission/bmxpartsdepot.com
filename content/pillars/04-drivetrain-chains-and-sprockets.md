@@ -7,7 +7,7 @@ slug: drivetrain-chains-and-sprockets
 headline: BMX Chain Width, Gear Ratio, Sprocket Fitment and Chainline
 description: Chain width 1/8 inch against 3/32 inch, half links, gear ratio and gear inches, micro drive, sprocket bolt patterns and spline drive, sprocket bore, chainline and chain tension.
 cardline: Four parts have to agree with each other: sprocket, chain, driver and chainline. Here is how they fit together.
-standfirst: A BMX drivetrain is four parts and they all have to agree. Get the chain width wrong and it sits badly on the teeth. Get the chainline wrong and it throws off under load. Get the sprocket bore wrong and it does not go on at all. This guide covers how the parts relate, and it keeps the specific figures out of the prose wherever they have not been checked.
+standfirst: A BMX drivetrain is four parts and they all have to agree. Get the chain width wrong and it sits badly on the teeth. Get the chainline wrong and it throws off under load. Get the sprocket bore wrong and it does not go on at all. This guide covers how the parts relate, with every figure sourced, and it names the numbers nobody publishes rather than repeating one off a forum.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28

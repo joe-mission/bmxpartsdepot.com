@@ -11,7 +11,7 @@ standfirst: Four bottom bracket standards have been used on BMX bikes, and they 
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: american-bottom-bracket|American Bottom Bracket, mid-bottom-bracket|Mid Bottom Bracket, spanish-bottom-bracket|Spanish Bottom Bracket, euro-bottom-bracket|Euro Bottom Bracket, bottom-bracket-shell-width|Bottom Bracket Shell Width, crank-spindle-diameter|Crank Spindle Diameter, sealed-bearing-sizes|Sealed Bearing Sizes, press-fit-bottom-bracket|Press-Fit Bottom Bracket, loose-ball-bearings|Loose Ball Bearings, unsealed-bearings|Unsealed Bearings, pinch-bolt|Pinch Bolt
+terms: american-bottom-bracket|American Bottom Bracket, mid-bottom-bracket|Mid Bottom Bracket, spanish-bottom-bracket|Spanish Bottom Bracket, euro-bottom-bracket|Euro Bottom Bracket, bottom-bracket-shell-width|Bottom Bracket Shell Width, crank-spindle-diameter|Crank Spindle Diameter, sealed-bearing-sizes|Sealed Bearing Sizes, press-fit-bottom-bracket|Press-Fit Bottom Bracket, loose-ball-bearings|Loose Ball Bearings, unsealed-bearings|Unsealed Bearings
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-wheels-hubs-and-axles|Wheels and Hubs, drivetrain-chains-and-sprockets|Drivetrain and Sprockets, bmx-cranks-and-pedals|Cranks and Pedals
 ---
 

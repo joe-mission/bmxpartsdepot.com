@@ -7,7 +7,7 @@ slug: bmx-wheels-hubs-and-axles
 headline: BMX Rear Hub Types, Axle Sizes and Wheel Fitment
 description: Cassette, freecoaster and freewheel hubs compared, plus axle diameters, male and female axles, hub spacing, rim wall construction, bead seat diameter and spoke count.
 cardline: Which rear hub you have, which axle it runs, and whether the wheel will fit the frame you own.
-standfirst: The rear hub is the part of a BMX bike with the most ways to be incompatible, and the most confidently repeated wrong numbers online. This guide separates the three hub types, then works through axle diameter and hub spacing, which are two different measurements people mix up constantly. Where a figure has been checked it says where it came from. Where it has not, it says that instead.
+standfirst: The rear hub is the part of a BMX bike with the most ways to be incompatible, and the most confidently repeated wrong numbers online. This guide separates the three hub types, then works through axle diameter and hub spacing, which are two different measurements people mix up constantly. Every figure carries its source, and where the honest answer is that nobody publishes one, it says that instead.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28

@@ -7,11 +7,11 @@ slug: bmx-front-end-headsets-and-forks
 headline: BMX Headset Standards, Fork Fitment, and Stem Types
 description: Integrated, zero stack and threaded BMX headsets explained, with how threadless compression works, what fork offset changes, and how to tell a quill stem from a threadless one.
 cardline: What the head tube decides, what the steerer decides, and why the stem is the last thing to worry about.
-standfirst: The front end is where the most confidently wrong numbers on the internet live. This guide covers how each part of a BMX front end works and what determines fit, and it holds back the diameters and offsets until they have been measured or sourced rather than repeating figures that do not hold up.
+standfirst: The front end is where the most confidently wrong numbers on the internet live. This guide covers how each part of a BMX front end works and what determines fit. Steerer diameters, bearing dimensions and fork offsets are sourced and stated here. Dropout slot width is not, because no manufacturer publishes it.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: bmx-headset-standards|Headset Standards, integrated-headset|Integrated Headset, zero-stack-headset|Zero Stack Headset, threaded-headset|Threaded Headset, threadless-headset|Threadless Headset, aheadset|Aheadset, quill-stem|Quill Stem, wedge-stem|Wedge Stem, expander-bolt|Expander Bolt, front-load-stem|Front Load Stem, fork-offset|Fork Offset, unicrown-fork|Unicrown Fork, oversize-bar-clamp|Oversize Bar Clamp, dropout-slot-width|Dropout Slot Width
+terms: bmx-headset-standards|Headset Standards, integrated-headset|Integrated Headset, zero-stack-headset|Zero Stack Headset, threaded-headset|Threaded Headset, threadless-headset|Threadless Headset, aheadset|Aheadset, quill-stem|Quill Stem, front-load-stem|Front Load Stem, fork-offset|Fork Offset, unicrown-fork|Unicrown Fork, dropout-slot-width|Dropout Slot Width
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-handlebars-and-cockpit|Handlebars and Cockpit, bmx-brakes-and-gyros|Brakes, Cables and Detanglers, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles
 ---
 

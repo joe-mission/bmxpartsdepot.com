@@ -7,7 +7,7 @@ slug: bmx-cranks-and-pedals
 headline: BMX Crank Types, Spindle Fitment, and Pedal Threads
 description: One-piece, two-piece and three-piece BMX cranks explained, with how spindles attach, what crank arm length changes, and which pedal thread goes with which crank.
 cardline: Three crank types, one spindle number that matters, and the pedal thread that ruins an arm if you get it wrong.
-standfirst: Cranks are the part of a used BMX most likely to be sold with the wrong spindle, the wrong pedals, or a quietly ruined thread. This guide covers what actually determines fit, and marks every figure that has not been checked against a source rather than repeating one.
+standfirst: Cranks are the part of a used BMX most likely to be sold with the wrong spindle, the wrong pedals, or a quietly ruined thread. This guide covers what actually determines fit, with every figure carrying its source, starting with the pedal threads that are the most expensive thing here to get wrong.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
