@@ -65,13 +65,29 @@ The other reason chain width matters is peg and frame clearance. A wider chain i
 ::: caliper the internal width of a used 1/8 inch chain and a used 3/32 inch chain, and the tooth thickness of sprockets cut for each
 :::
 
-::: needsverify Chain figures we have not sourced. The names 1/8 inch and 3/32 inch are the nominal internal widths, but the actual dimensions and the pitch have not been checked here.
-- BMX chain pitch, stated with a source
-- actual measured internal width of a 1/8 inch BMX chain
-- actual measured internal width of a 3/32 inch chain
-- typical chain plate thickness and outer width for each size
-- how many links a standard BMX chain ships with
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Chain dimensions</caption>
+<thead>
+<tr><th scope="col">Measurement</th><th scope="col">1/8 inch</th><th scope="col">3/32 inch</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Pitch</th><td class="num">12.7mm (1/2 inch)</td><td class="num">12.7mm (1/2 inch)</td><td>ISO 606, ANSI B29.1, KMC <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Internal width</th><td class="num">3.175mm</td><td class="num">2.381mm</td><td>ISO 606 designations 081 and 083 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Outer width, standard</th><td class="num">8.6 to 9.4mm</td><td class="num">6.7 to 7.3mm</td><td>KMC <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Outer width, half link</th><td class="num">9.8 to 10.2mm</td><td>Not applicable</td><td>Shadow Conspiracy <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Plate thickness</th><td class="num">1.0mm, half link 1.4 to 1.5mm</td><td class="num">0.8 to 0.9mm</td><td>KMC, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Sprocket tooth thickness to suit</th><td class="num">2.8 to 3.0mm</td><td class="num">2.0 to 2.1mm</td><td>KMC <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Links per boxed chain</th><td class="num">96 to 112, half link 98 to 102</td><td class="num">96 to 112</td><td>KMC, Shadow, Salt Plus <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Here the names are honest.** A 1/8 inch chain really does measure 3.175mm inside and a 3/32 really is 2.381mm, both exactly their fractions converted. That is not something to take for granted on this site, given the 24mm spindle that is really 23.81mm and the 22.2mm bar clamp that is really 22.225mm. On chains, the nominal name is the actual dimension.
+
+**Outer width is the number that decides clearance**, and it is the one nobody quotes. A half-link 1/8 inch chain is up to 10.2mm across against 9.4mm for a standard one, so a chain that fits a tight chainstay in one form may not in the other. Worth measuring if you are running a short back end.
+
+Boxed chains ship at 96 to 112 links and get cut to roughly 72 to 86 on a BMX, depending on chainstay length and gearing. Buy the chain expecting to shorten it.
 
 ## Half links {#half-links}
 
@@ -109,12 +125,41 @@ The number people quote is a rough one, because it uses the nominal wheel size r
 
 We are not printing a gear inch chart on this page yet. The chart is trivial arithmetic once the wheel diameter figure is settled, and that figure is the part that needs sourcing rather than assuming.
 
-::: needsverify What is needed before a gear chart goes on this page.
-- the diameter figure to use for a standard 20 inch BMX wheel in gear inch arithmetic
-- whether the convention is nominal wheel size or measured rolled diameter
-- the gear ratios that BMX complete bikes currently ship with
-- the ratio range considered normal for street, park, dirt and race
-:::
+**A 20 inch BMX wheel is not 20 inches, and that is why gear charts disagree.**
+
+The rim is ISO 406, and a modern 2.25 to 2.40 inch street tyre puts the rolled diameter at roughly **19.4 to 19.6 inches**, not 20. So there are two conventions in circulation and both are in use:
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Two conventions for the same calculation</caption>
+<thead>
+<tr><th scope="col">Convention</th><th scope="col">Wheel figure used</th><th scope="col">Who uses it</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Nominal</th><td class="num">20.0 inch (508mm)</td><td>Most online gear calculators and traditional charts</td></tr>
+<tr><th scope="row">Measured rollout</th><td class="num">about 19.5 inch (495mm)</td><td>Race gearing charts and engineering calculations</td></tr>
+</tbody>
+</table>
+</div>
+
+The gap is about 2.5 percent. That is small enough to ignore for choosing a sprocket and large enough to explain why two charts give different gear inches for the same tooth counts. **If you are comparing gear inches between sources, check which wheel figure each one used before concluding one of them is wrong.** Sourced to Sheldon Brown and Park Tool against race charts from Rennen. <span class="src src-confirmed">Confirmed</span>
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Gearing in current use</caption>
+<thead>
+<tr><th scope="col">Context</th><th scope="col">Ratio</th><th scope="col">Typical teeth</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Modern complete bikes</th><td class="num">2.78:1</td><td class="num">25/9</td><td>Sunday, Wethepeople, Cult, Kink <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Street and park</th><td class="num">2.75 to 2.89:1</td><td class="num">25/9, 28/10, 28/9</td><td>S&amp;M and complete specs <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Dirt and trails</th><td class="num">2.89 to 3.00:1</td><td class="num">28/9, 30/10</td><td>S&amp;M <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Race</th><td class="num">2.65 to 2.85:1</td><td class="num">44/16, 43/16, 38/14</td><td>Profile Racing, Rennen <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**25/9 is the default** across modern freestyle completes, giving about 55.6 gear inches on the nominal convention. If a used bike has something else, somebody chose it deliberately.
 
 ::: fitbadge Counting driver teeth on a cassette hub? | Wheels Hubs and Axles guide | /guides/bmx-wheels-hubs-and-axles/
 :::
@@ -141,11 +186,11 @@ Three things follow from smaller parts.
 
 Chain length changes too. Smaller sprocket and smaller driver means a shorter chain, so a micro drive conversion on an existing bike usually means removing links and possibly a half link to land the axle correctly.
 
-::: needsverify Micro drive specifics.
-- the sprocket and driver tooth counts that are normally described as micro drive
-- whether micro drive is a defined size class or a loose description used differently by brands
-- comparative driver wear life at different tooth counts
-:::
+**Micro drive is a description, not a size class.** There is no ISO definition and no trade association standard behind it. The term was coined for setups smaller than the traditional 36/13, specifically 25/9 and down, at a time when that was unusual. Sub-28 tooth setups are now simply standard freestyle gearing, which makes micro drive an era word more than a specification.
+
+In practice it means a front sprocket of about 28 teeth or fewer and a driver of about 10 or fewer, most often 25/9, 28/10, 23/8 or 22/8. But because no one owns the definition, **a listing saying "micro drive" does not tell you the tooth counts.** Ask for the numbers.
+
+On whether small drivers wear out faster, the honest answer is that nobody has published the test. Manufacturers acknowledge that an 8 tooth driver concentrates the same load over fewer teeth and turns more times per wheel revolution than a 10, which is a sound mechanical argument. What does not exist anywhere in Odyssey, Eclat, BSD, Profile or KMC's published material is wear life data or mileage figures comparing them. So the reasoning is available and the numbers are not.
 
 ## Drivers and cog sizes {#cassette-driver}
 
@@ -184,11 +229,27 @@ Bolt patterns in bicycles generally are a well-documented mess with many standar
 
 A **sprocket guard** is a disc that sits over or beside the sprocket to protect the teeth during grinds. It has to match the sprocket, both in size and in how it mounts, so it is not a universal part. On bolt-on setups it usually shares the sprocket bolts. Guards are frequently missing from used sprockets, and a sprocket sold with its guard is worth more than one without.
 
-::: needsverify Bolt pattern figures. These are all specific numbers and none of them has been checked against a manufacturer source, so none of them appears above.
-- bolt circle diameters used on BMX sprocket spiders
-- bolt counts in common use on BMX bolt-on sprockets
-- whether any BMX bolt pattern matches a general bicycle standard
-- sprocket bolt thread sizes
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Sprocket mounting, then and now</caption>
+<thead>
+<tr><th scope="col">Era</th><th scope="col">Mounting</th><th scope="col">Bolt circle</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Old school and mid school</th><td>5-bolt onto a separate spider</td><td class="num">110mm BCD, also 130mm on race</td><td>Shimano, Sugino, Profile <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Modern freestyle</th><td>Single drive bolt into the crank arm</td><td>No bolt circle, proprietary drive pin spacing</td><td>Profile, S&amp;M, Tree <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**The useful finding here is that the old standard was not a BMX standard at all.** Old school 5-arm BMX spiders used 110mm BCD, which is the same bolt circle as road and touring cranks, so 110 BCD road chainrings physically interchange with them. If you are restoring something old school and cannot find a BMX sprocket, the road parts bin is open to you.
+
+**Modern is the opposite.** A single-bolt freestyle sprocket matches no road or mountain standard. It locates on drive pins spaced relative to the spindle bore, and that arrangement is specific to BMX and often to the brand. Nothing from outside BMX will fit, and not everything inside BMX will either.
+
+On bolt threads, **two are in circulation on modern drive bolts and you cannot assume which you have**: M8 x 1.25 and 5/16 inch x 18 TPI both appear across brands, and they are not interchangeable despite being close in diameter. Legacy 5-bolt spider hardware uses the standard fine-pitch chainring bolt, M8 x 0.75. Check the bolt you have before ordering a replacement.
+
+::: needsverify
+- which brands use M8 x 1.25 against 5/16 x 18 on modern drive bolts, since both are in use and no source maps them to makers
 :::
 
 ## Spline drive and sprocket bore {#spline-drive-sprocket}
@@ -289,10 +350,28 @@ The rough field test is to pull the chain away from the front sprocket at the th
 
 The practical rule for a used bike: if the chain is visibly worn, replace the chain and inspect the driver and sprocket, because a chain that has been run past its life has usually taken the teeth with it.
 
-::: needsverify Tension and wear figures.
-- the vertical chain play figure normally recommended for BMX
-- the chain elongation percentage at which a chain is considered worn out
-- axle nut and axle bolt torque figures for BMX rear axles
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Tension and wear</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Vertical chain play at mid span</th><td class="num">12 to 25mm (1/2 to 1 inch)</td><td>Park Tool, Dans Comp workshop guidance <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Chain worn out at</th><td class="num">0.75 percent elongation</td><td>ISO 606, Park Tool, KMC <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Rear axle torque</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+</tbody>
+</table>
+</div>
+
+The 0.75 percent figure is general bicycle practice rather than BMX specific, measured over twelve links with a chain checker, and it is the single-speed threshold. Derailleur drivetrains are replaced earlier. Past 0.75 percent the chain starts hooking sprocket teeth, which is how a worn chain turns into a worn sprocket and driver.
+
+Chain play is workshop guidance, not a specification. Aim for some slack. A chain tensioned like a guitar string binds the driver and wears everything faster than a loose one.
+
+**On rear axle torque, nobody publishes a figure and this page will not invent one.** Odyssey, Profile, BSD, Sunday and Shadow Conspiracy were all checked, manuals and spec sheets, and none states a torque for a 14mm axle nut or a 3/8 inch axle bolt. A figure does circulate informally in the race world, and it is deliberately not repeated here, because an unsourced number for the fastener holding your rear wheel in is worse than no number. This is the same situation as crank bolt torque on the cranks page, and it gets the same treatment.
+
+::: needsverify
+- a published rear axle torque figure from any BMX manufacturer, which two passes have now failed to find
 :::
 
 ## Questions {#questions}
