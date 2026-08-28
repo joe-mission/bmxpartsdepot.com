@@ -871,6 +871,14 @@ def site_entities():
     following the reference found an empty node: the pages claimed a
     publisher without ever saying who. Emitted on every page so the graph
     resolves without depending on a crawler having fetched another URL.
+
+    The @ids are /#org and /#website and they are load-bearing. The homepage
+    once carried a hand-written block defining a second Organization at
+    /#organization, which meant the site published two organisations with
+    different logos while every article pointed its publisher at the one the
+    homepage did not define. One thing, two identities. If these ids change,
+    index.html, privacy.html and terms.html have to change with them, and
+    check_static_entities below fails the build until they do.
     """
     return [
         {
@@ -878,12 +886,21 @@ def site_entities():
             "@id": SITE + "/#org",
             "name": "BMX Parts Depot",
             "url": SITE + "/",
+            "description": ("Used and mid-school BMX parts, sold through eBay, with a "
+                            "fitment and identification reference for checking whether "
+                            "a used part fits before buying it."),
             "email": "bmx-parts-depot@gmail.com",
             "logo": {
                 "@type": "ImageObject",
                 "url": SITE + "/assets/logo.png",
                 "width": 1302,
                 "height": 160,
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": SITE + "/assets/og-image.png",
+                "width": 1200,
+                "height": 630,
             },
             "sameAs": [EBAY],
         },
@@ -892,10 +909,65 @@ def site_entities():
             "@id": SITE + "/#website",
             "name": "BMX Parts Depot",
             "url": SITE + "/",
+            "description": ("Used and mid-school BMX parts, plus a reference covering "
+                            "BMX standards, dimensions and part variations."),
             "publisher": {"@id": SITE + "/#org"},
             "inLanguage": "en",
         },
     ]
+
+
+STATIC_PAGES = ["index.html", "privacy.html", "terms.html"]
+
+
+def static_entity_block():
+    """The exact <script> block the three hand-written pages must carry."""
+    payload = {"@context": "https://schema.org", "@graph": site_entities()}
+    return ('<script type="application/ld+json">\n%s\n</script>'
+            % json.dumps(payload, indent=2, ensure_ascii=False))
+
+
+def check_static_entities():
+    """Defects if a hand-written page's Organization/WebSite has drifted.
+
+    index.html, privacy.html and terms.html are hand-written and build.py does
+    not generate them, so nothing kept their structured data in step with
+    site_entities(). It drifted exactly once and produced a second Organization
+    under a different @id. This makes that a build failure rather than
+    something noticed months later in Search Console.
+    """
+    want = {n["@id"]: n for n in site_entities()}
+    problems = []
+    for name in STATIC_PAGES:
+        path = os.path.join(ROOT, name)
+        if not os.path.isfile(path):
+            continue
+        blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>',
+                            open(path, encoding="utf-8").read(), re.S)
+        found = {}
+        for b in blocks:
+            try:
+                data = json.loads(b)
+            except ValueError:
+                problems.append("%s has a JSON-LD block that is not valid JSON" % name)
+                continue
+            for node in data.get("@graph", [data]):
+                if isinstance(node, dict) and node.get("@id") in want:
+                    found[node["@id"]] = node
+        for nid, node in want.items():
+            if nid not in found:
+                problems.append("%s does not define %s. Paste the block printed by "
+                                "`python3 -c \"import build;print(build.static_entity_block())\"`"
+                                % (name, nid))
+            elif found[nid] != node:
+                problems.append("%s defines %s but it has drifted from site_entities(). "
+                                "Regenerate it." % (name, nid))
+        stray = [b for b in blocks if '"#organization"' in b or "/#organization" in b]
+        if stray:
+            problems.append("%s still defines an Organization at /#organization. The "
+                            "site's canonical Organization is /#org, which every article "
+                            "points its publisher at." % name)
+    return problems
 
 
 def nav_html(active=""):
@@ -1215,6 +1287,7 @@ def main():
     for p in pages:
         for item in split_todo(p)[0]:
             defects.append("%s has an unfilled placeholder: %s" % (p["slug"], item))
+    defects.extend(check_static_entities())
 
     if defects:
         allow = "--allow-warnings" in sys.argv

@@ -143,6 +143,28 @@ different `@id`. `home` decides which is canonical.
 `python3 schema_terms.py` validates the lot and must report zero skipped and
 zero problems.
 
+**One Organization, one WebSite, one @id each.** `/#org` and `/#website`,
+defined identically on all fourteen pages. Every TechArticle points its
+`publisher` and `author` at `/#org`.
+
+`index.html`, `privacy.html` and `terms.html` are hand-written, so nothing kept
+their structured data in step with `site_entities()`. It drifted once: a block
+was added to the homepage defining a second Organization at `/#organization`,
+with a different logo, while every article kept pointing at the `/#org` the
+homepage did not define. One business, two identities, and a crawler left to
+pick.
+
+`build.check_static_entities()` now fails the build if any of the three is
+missing a node, has drifted from `site_entities()`, or reintroduces
+`/#organization`. To regenerate the block after changing `site_entities()`:
+
+```bash
+python3 -c "import build; print(build.static_entity_block())"
+```
+
+Paste the output over the existing block in all three files. The build tells
+you which ones are wrong.
+
 ### The auto-linker
 
 `build.autolink` links the first mention of each glossary term to the section

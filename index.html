@@ -14,12 +14,23 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://bmxpartsdepot.com/#organization",
+      "@id": "https://bmxpartsdepot.com/#org",
       "name": "BMX Parts Depot",
       "url": "https://bmxpartsdepot.com/",
-      "logo": "https://bmxpartsdepot.com/assets/apple-touch-icon.png",
-      "image": "https://bmxpartsdepot.com/assets/og-image.png",
-      "description": "Used and mid-school BMX parts reference and shop portal.",
+      "description": "Used and mid-school BMX parts, sold through eBay, with a fitment and identification reference for checking whether a used part fits before buying it.",
+      "email": "bmx-parts-depot@gmail.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bmxpartsdepot.com/assets/logo.png",
+        "width": 1302,
+        "height": 160
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://bmxpartsdepot.com/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
       "sameAs": [
         "https://www.ebay.com/usr/bmx-parts-depot"
       ]
@@ -27,12 +38,13 @@
     {
       "@type": "WebSite",
       "@id": "https://bmxpartsdepot.com/#website",
-      "url": "https://bmxpartsdepot.com/",
       "name": "BMX Parts Depot",
-      "description": "Used and mid-school BMX parts. Quality 4130 chromoly hardgoods and mid-school components.",
+      "url": "https://bmxpartsdepot.com/",
+      "description": "Used and mid-school BMX parts, plus a reference covering BMX standards, dimensions and part variations.",
       "publisher": {
-        "@id": "https://bmxpartsdepot.com/#organization"
-      }
+        "@id": "https://bmxpartsdepot.com/#org"
+      },
+      "inLanguage": "en"
     }
   ]
 }
