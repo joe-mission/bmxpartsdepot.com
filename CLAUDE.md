@@ -24,9 +24,13 @@ CNAME           written by GitHub Pages, contains bmxpartsdepot.com. Do not dele
 
 build.py        the generator. Run it, commit what it writes, push.
 buildhub.py     hub page, sitemap.xml, robots.txt, llms.txt. Imported by build.py.
+schema_terms.py DefinedTerm generation and validation. Run it directly for a report.
+test_autolink.py  adversarial tests for the auto-linker. Run after touching it.
 content/pillars/*.md    the ten pillar guide sources. Edit these, not the HTML.
-content-plan/   planning docs: the A-Z dictionary, the 100 questions, the
-                verified spec research, the asset query sheet. Not published.
+content-plan/terms.tsv  THE TERM REGISTRY. Single source of truth for the A-Z.
+content-plan/   planning docs: the old A-Z dictionary (superseded, kept as the
+                research record), the 100 questions, the verified spec
+                research, the asset query sheet. Not published.
 guides/         GENERATED OUTPUT. Never hand-edit, build.py overwrites it.
 assets/guide.css        shared stylesheet for guide pages only
 assets/guide.js         progressive enhancement for guide pages only
@@ -54,10 +58,65 @@ See `content/pillars/01-bottom-brackets-and-spindles.md`, which is the format
 model and the quality bar. Directives: `quickanswer`, `needsverify`, `caliper`,
 `video`, `figure`, `faq`, `ebay`, `fitbadge`.
 
-A `## Heading {#anchor}` whose anchor matches a dictionary slug is what makes the
+A `## Heading {#anchor}` whose anchor matches a registry slug is what makes the
 hub's A-Z link deep-link into that section. Claiming a term in frontmatter without
 writing the matching section means the hub links to the page instead, and the
 build says so.
+
+### The term registry
+
+`content-plan/terms.tsv` is the single source of truth for the glossary. Tab
+separated, `#` comments, eleven columns. Add terms there first, then write the
+section. `content-plan/az-dictionary.md` is superseded and no longer read.
+
+Two columns do more work than they look like they do.
+
+`status` is `published` or `planned`. A planned term is excluded from the A-Z,
+from the schema and from the auto-linker, because it has no section and
+therefore no anchor: publishing it would put a dead link in the glossary and an
+unresolvable `@id` in the graph. Flipping status to `published` is the last step
+of writing a term, not the first.
+
+`letter` is which A-Z group the term files under, and it is editorial rather
+than mechanical. The glossary files by concept keyword, so Wheel Dish sits
+under D and Handlebar Backsweep under B. Do not derive it from the first
+character of the name; that reshuffles about a third of the glossary.
+
+`category` is one of the eight (drivetrain, frame, wheels, steering, brakes,
+cockpit, vintage, hardware) and **a category is not a pillar**. Drivetrain
+spans pillars 01, 04 and 05. Cockpit spans 08 and 09. Hardware is distributed
+across all ten with a canonical home per term. `home` is the pillar that owns
+the section; that is the column the build actually resolves links against.
+
+### Structured data
+
+Each pillar emits the `DefinedTerm` nodes for the terms it owns, on the page
+that holds the anchor. The hub emits the `DefinedTermSet` they all point at,
+without enumerating its members. Do not move the nodes back onto the hub: that
+was 53% of that page's bytes at 104 terms and projected to 578KB at 1,000.
+
+Only the owning page emits a node. Twelve terms are claimed by two pillars, and
+before this rule both emitted a `DefinedTerm` with the same `termCode` and a
+different `@id`. `home` decides which is canonical.
+
+`python3 schema_terms.py` validates the lot and must report zero skipped and
+zero problems.
+
+### The auto-linker
+
+`build.autolink` links the first mention of each glossary term to the section
+that defines it. It runs on the rendered HTML, walking the tag stream rather
+than regexing the document, so it never touches an attribute value.
+
+It will not link inside a heading, table, existing link, code block, caliper
+block, eBay card or the table of contents; it will not link a term the current
+page owns; it will not link a planned term; and it stops at `AUTOLINK_MAX` per
+page. `AUTOLINK_STOPLIST` holds terms whose display name is an everyday word
+("Driver", "Neck", "Old School") where the first match on a page is reliably
+the wrong sentence.
+
+Run `python3 test_autolink.py` after changing any of it. A linker that is wrong
+once in fifty is worse than no linker, because nobody reads the diff.
 
 ## Hosting
 

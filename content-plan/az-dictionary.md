@@ -1,5 +1,16 @@
 # A-Z BMX Fitment and Identification Dictionary
 
+> **Superseded, and kept as the research record.**
+>
+> The build no longer reads this file. `content-plan/terms.tsv` is the single
+> source of truth for the term list, and it was generated from the tables
+> below. Add and edit terms there. This document stays because it holds the
+> original one-line definitions and fitment notes in the form they were
+> researched in, and because the letter grouping here is editorial: terms file
+> by concept keyword, so Wheel Dish sits under D and Handlebar Backsweep under
+> B. That grouping was carried across verbatim into the registry's `letter`
+> column rather than recomputed.
+
 This document lists the BMX technical terms, dimensional standards, geometry terms, and part variations that determine whether a used part fits a given bike. Each entry is planned as a standalone reference page on bmxpartsdepot.com, with a slug, a plain definition, and a note on why the fitment matters to a buyer. The Confidence column flags rows that carry a specific number, era boundary, or brand claim that should be checked against a primary source before publishing.
 
 ## A

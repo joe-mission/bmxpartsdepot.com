@@ -578,6 +578,163 @@ def render(body, ctx):
 
 
 # --------------------------------------------------------------------------
+# auto-linker
+# --------------------------------------------------------------------------
+#
+# Links the first mention of a glossary term to the section that defines it.
+# At 104 terms internal linking can be done by hand. At the 1,000 the
+# expansion targets it cannot, and without it the deep sections have no
+# inbound links and never get crawled properly.
+#
+# The rules are deliberately conservative, because a linker that is wrong
+# once in fifty is worse than no linker at all: it puts a link on the wrong
+# word inside someone's spec table and nobody notices for a month.
+#
+#   - first mention per page only, never the second
+#   - never inside a heading, table, existing link, code block, caliper
+#     block, eBay card, or any other structural or data furniture
+#   - never inside an HTML attribute, which is what a naive regex over the
+#     whole document gets wrong
+#   - never a term the current page owns, so a page does not link to itself
+#   - never a term still marked planned, which has no section to point at
+#   - capped per page, so a dense page does not turn into a wall of blue
+
+AUTOLINK_SKIP_TAGS = {
+    "a", "code", "pre", "script", "style", "svg", "table",
+    "h1", "h2", "h3", "h4", "h5", "h6",
+    "button", "select", "textarea", "iframe",
+}
+
+# Substring match against an element's class attribute.
+AUTOLINK_SKIP_CLASSES = ("caliper", "ebay", "toc", "crumbs", "era", "fitbadge",
+                         "xlink", "qa-label", "cal-")
+
+# Terms whose display name is an everyday word. "Driver" and "Neck" appear in
+# ordinary prose constantly, and linking the first one on a page lands on a
+# sentence that is not about the term at all. They stay hand-linked.
+AUTOLINK_STOPLIST = {
+    "cassette-driver", "bmx-neck-stem", "old-school-bmx", "mid-school-bmx",
+    "non-drive-side",
+}
+
+AUTOLINK_MAX = 24
+
+VOID_TAGS = {"br", "img", "hr", "input", "meta", "link", "source", "col",
+             "area", "base", "embed", "param", "track", "wbr"}
+
+TAG_TOKEN = re.compile(r"<[^>]+>")
+TAG_PARTS = re.compile(r"<\s*(/?)\s*([a-zA-Z][\w-]*)([^>]*?)(/?)>", re.S)
+
+
+def _autolink_patterns(registry, page_slug):
+    """(compiled pattern, href) for every term this page may link, longest first.
+
+    Longest first so "American Bottom Bracket" is matched before any shorter
+    term that is a substring of it.
+    """
+    out = []
+    for row in registry:
+        if row["status"] != "published" or row["slug"] in AUTOLINK_STOPLIST:
+            continue
+        if row["home"] == page_slug:
+            continue
+        name = row["term"].strip()
+        if len(name) < 4:
+            continue
+        # Flexible whitespace so a name broken across two source lines still
+        # matches once the paragraph has been joined.
+        body = re.escape(name).replace(r"\ ", r"\s+")
+        # \b is wrong at a bracket or digit boundary: "Chromoly (4130)" ends
+        # in ")", where \b does not assert what it looks like it asserts.
+        pat = re.compile(r"(?<![\w-])(%s)s?(?![\w-])" % body, re.I)
+        out.append((len(name), pat, "/guides/%s/#%s" % (row["home"], row["slug"]),
+                    row["slug"]))
+    out.sort(key=lambda t: -t[0])
+    return [(p, href, slug) for _n, p, href, slug in out]
+
+
+def _is_skip_tag(name, attrs):
+    if name in AUTOLINK_SKIP_TAGS:
+        return True
+    m = re.search(r'class\s*=\s*"([^"]*)"', attrs)
+    if m:
+        cls = m.group(1)
+        return any(c in cls for c in AUTOLINK_SKIP_CLASSES)
+    return False
+
+
+def autolink(html_text, page_slug, registry):
+    """Link the first mention of each linkable term. Returns (html, count)."""
+    patterns = _autolink_patterns(registry, page_slug)
+    if not patterns:
+        return html_text, 0
+
+    used = set()
+    made = 0
+    stack = []          # (tag name, opens a skip zone)
+    out = []
+    pos = 0
+
+    for m in TAG_TOKEN.finditer(html_text):
+        text = html_text[pos:m.start()]
+        pos = m.end()
+
+        if text and not any(skip for _n, skip in stack) and made < AUTOLINK_MAX:
+            text, n = _autolink_text(text, patterns, used)
+            made += n
+        out.append(text)
+
+        tag = m.group(0)
+        out.append(tag)
+        parts = TAG_PARTS.match(tag)
+        if not parts:
+            continue
+        closing, name, attrs, selfclose = parts.groups()
+        name = name.lower()
+        if closing:
+            for i in range(len(stack) - 1, -1, -1):
+                if stack[i][0] == name:
+                    del stack[i:]
+                    break
+        elif not selfclose and name not in VOID_TAGS:
+            stack.append((name, _is_skip_tag(name, attrs)))
+
+    tail = html_text[pos:]
+    if tail and not any(skip for _n, skip in stack) and made < AUTOLINK_MAX:
+        tail, n = _autolink_text(tail, patterns, used)
+        made += n
+    out.append(tail)
+
+    return "".join(out), made
+
+
+def _autolink_text(text, patterns, used):
+    """Link unused terms inside one text run, left to right.
+
+    Scans forward past each inserted anchor rather than restarting, so a
+    later term can never match inside the markup an earlier one just added.
+    """
+    made = 0
+    cursor = 0
+    while True:
+        best = None
+        for pat, href, slug in patterns:
+            if slug in used:
+                continue
+            m = pat.search(text, cursor)
+            if m and (best is None or m.start() < best[0].start()):
+                best = (m, href, slug)
+        if best is None:
+            return text, made
+        m, href, slug = best
+        anchor = '<a href="%s" class="xterm">%s</a>' % (href, m.group(0))
+        text = text[:m.start()] + anchor + text[m.end():]
+        cursor = m.start() + len(anchor)
+        used.add(slug)
+        made += 1
+
+
+# --------------------------------------------------------------------------
 # schema
 # --------------------------------------------------------------------------
 
@@ -601,24 +758,52 @@ def build_schema(meta, ctx, url):
         "datePublished": meta.get("published", str(date.today())),
         "dateModified": meta.get("updated", str(date.today())),
     }
-    terms = [(s_, l) for s_, l in as_pairs(meta, "terms") if s_ in ctx["ids"]]
-    if terms:
-        article["about"] = [
-            {
-                "@type": "DefinedTerm",
-                "@id": "%s#%s" % (url, slug),
-                "name": label,
-                "termCode": slug,
-                "url": "%s#%s" % (url, slug),
-                "inDefinedTermSet": {
-                    "@type": "DefinedTermSet",
-                    "@id": SITE + "/guides/#dictionary",
-                    "name": "BMX Parts Depot A-Z Parts Glossary",
-                    "url": SITE + "/guides/",
-                },
-            }
-            for slug, label in terms
-        ]
+    # ---- DefinedTerm nodes ---------------------------------------------
+    #
+    # These used to live on the hub, all of them, inline inside one
+    # DefinedTermSet. That put 62KB of JSON-LD on a 116KB page, 53% of it,
+    # and it scaled linearly: at the 1,000 terms the expansion is aimed at
+    # it projected to 578KB on a single page, duplicating descriptions that
+    # already exist as HTML on the pillars.
+    #
+    # A term's node now lives on the page that contains its anchor. Each
+    # node points at the set with inDefinedTermSet, so the relationship is
+    # fully expressed from the term side and the set does not have to
+    # enumerate its members. The hub's payload drops to a few hundred bytes
+    # and stays there however many terms get added.
+    #
+    # Only the owning page emits the node. Several terms are claimed by two
+    # pillars and both have a matching section, which previously produced
+    # two DefinedTerm nodes with the same termCode and different @ids: one
+    # term, two identities, and no way for a consumer to tell which was
+    # canonical. The registry's home column settles it, and the other page
+    # references the canonical @id instead of minting a rival.
+    import buildhub
+    registry = {r["slug"]: r for r in buildhub.load_registry(ROOT)}
+
+    about = []
+    for slug, label in as_pairs(meta, "terms"):
+        if slug not in ctx["ids"]:
+            continue
+        row = registry.get(slug)
+        if row is None or row["status"] != "published":
+            continue
+        owner = row["home"]
+        canonical = "%s/guides/%s/#%s" % (SITE, owner, slug)
+        about.append({"@id": canonical})
+        if owner != meta.get("slug"):
+            continue
+        graph.append({
+            "@type": "DefinedTerm",
+            "@id": canonical,
+            "name": row["term"] or label,
+            "description": row["definition"],
+            "termCode": slug,
+            "url": canonical,
+            "inDefinedTermSet": {"@id": SITE + "/guides/#dictionary"},
+        })
+    if about:
+        article["about"] = about
     graph.append(article)
 
     if ctx["faqs"]:
@@ -871,6 +1056,9 @@ def build_pillar(path, all_pillars, top_guides):
            "seen_qa": False, "ids": set(), "dupe_ids": []}
     main = render(body, ctx)
 
+    import buildhub
+    main, ctx["links"] = autolink(main, slug, buildhub.load_registry(ROOT))
+
     toc = ""
     if ctx["toc"]:
         items = "".join(
@@ -946,6 +1134,7 @@ def build_pillar(path, all_pillars, top_guides):
         "terms": as_pairs(meta, "terms"),
         "dupe_ids": ctx["dupe_ids"],
         "ids": ctx["ids"],
+        "links": ctx.get("links", 0),
     }
 
 
@@ -980,8 +1169,8 @@ def main():
     todo_total = sum(len(p["todo"]) for p in pages)
     print("built %d pillar pages" % len(pages))
     for p in pages:
-        print("  %-42s %2d sections  %2d faqs  %2d placeholders"
-              % (p["slug"], len(p["sections"]), p["faqs"], len(p["todo"])))
+        print("  %-42s %2d sections  %2d faqs  %2d placeholders  %2d auto-links"
+              % (p["slug"], len(p["sections"]), p["faqs"], len(p["todo"]), p["links"]))
     print("%d placeholders awaiting Joe (caliper readings, video ids, diagrams)" % todo_total)
 
     dupes = [(p["slug"], a) for p in pages for a in p.get("dupe_ids", [])]
