@@ -27,6 +27,16 @@ CATEGORIES = {
     "brakes", "cockpit", "vintage", "hardware",
 }
 
+# Valid source_status for a published term. Derived from the sourcing badges
+# in the term's own section rather than set by hand, so that the coverage
+# report describes the pages as they are instead of what someone intended
+# when the term was planned. wont-source is the one exception and is set by
+# hand: era terms can never carry a sourced figure, because the site
+# deliberately publishes no year ranges.
+SOURCE_STATES = {
+    "confirmed", "single", "conflict", "review", "no-figure", "wont-source",
+}
+
 _REGISTRY_CACHE = {}
 
 
@@ -76,6 +86,12 @@ def load_registry(root):
             if row["letter"] not in LETTERS:
                 raise SystemExit("%s line %d: letter %r is not A-Z"
                                  % (path, lineno, row["letter"]))
+            if row["status"] == "published" and row["source_status"] not in SOURCE_STATES:
+                raise SystemExit(
+                    "%s line %d: source_status %r is not one of %s. Published "
+                    "values are derived from the page badges, so set it by "
+                    "rerunning the derivation rather than by hand."
+                    % (path, lineno, row["source_status"], sorted(SOURCE_STATES)))
             row["related"] = [s for s in row["related"].split("|") if s]
             rows.append(row)
 
@@ -374,21 +390,42 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
                        "written." % (s, term_map[s][0]))
 
     # ---- coverage -------------------------------------------------------
+    #
+    # source_status is derived from the sourcing badges on the pages, not
+    # from an editor's intent. The first version of this table collapsed it
+    # to one "unsourced" column and got the meaning wrong: it was reading
+    # stale planning flags, and reported 32 terms as needing sources when
+    # most of them were already sourced and several published no figure at
+    # all. The columns below say what they mean.
+    #
+    #   conf     every badge in the term's section is Confirmed
+    #   single   weakest badge is Single source. A second source upgrades it.
+    #   confl    publishes a conflict and gives the range. Correct, not a gap.
+    #   review   publishes figures with no badge of its own. Needs a read.
+    #   none     publishes no dimensional claim, so nothing to source.
     cats = sorted(CATEGORIES)
+    order = ["confirmed", "single", "conflict", "review", "no-figure", "wont-source"]
     print()
     print("coverage by category")
-    print("  %-12s %9s %9s %8s   %s" % ("category", "published", "planned", "total", "unsourced"))
+    print("  %-12s %5s %5s | %5s %6s %6s %6s %5s"
+          % ("category", "pub", "plan", "conf", "single", "confl", "review", "none"))
+    tally = {k: 0 for k in order}
     for c in cats:
         rs = [r for r in rows if r["category"] == c]
         pub = [r for r in rs if r["status"] == "published"]
-        plan = [r for r in rs if r["status"] == "planned"]
-        # A published term whose figure was never confirmed by two sources.
-        # Not a defect, but it is the backlog that decides whether a category
-        # is actually finished or only nominally finished.
-        unsourced = sum(1 for r in pub if r["source_status"] not in ("solid", "src-confirmed"))
-        print("  %-12s %9d %9d %8d   %d" % (c, len(pub), len(plan), len(rs), unsourced))
+        n = {k: sum(1 for r in pub if r["source_status"] == k) for k in order}
+        for k in order:
+            tally[k] += n[k]
+        print("  %-12s %5d %5d | %5d %6d %6d %6d %5d"
+              % (c, len(pub), len(rs) - len(pub), n["confirmed"], n["single"],
+                 n["conflict"], n["review"], n["no-figure"] + n["wont-source"]))
     tot_pub = sum(1 for r in rows if r["status"] == "published")
-    print("  %-12s %9d %9d %8d" % ("all", tot_pub, len(rows) - tot_pub, len(rows)))
+    print("  %-12s %5d %5d | %5d %6d %6d %6d %5d"
+          % ("all", tot_pub, len(rows) - tot_pub, tally["confirmed"], tally["single"],
+             tally["conflict"], tally["review"], tally["no-figure"] + tally["wont-source"]))
+    if tally["review"] or tally["single"]:
+        print("  %d to review, %d that a second source would upgrade to confirmed"
+              % (tally["review"], tally["single"]))
 
     return defects
 

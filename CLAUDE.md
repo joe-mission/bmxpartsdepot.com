@@ -58,10 +58,24 @@ Two pillars claiming one term is **not** a defect and stays a note. The
 registry's `home` column decides which page owns the canonical section; the
 second claim only affects which page the A-Z links to.
 
-The build also prints coverage per category: published, planned, total, and how
-many published terms carry a figure that was never confirmed by two independent
-sources. That last column is what tells you a category is actually finished
-rather than nominally finished.
+The build also prints coverage per category. `source_status` is **derived from
+the sourcing badges on the pages**, never set by hand, so the table describes
+what is published rather than what someone intended when the term was planned:
+
+| value | meaning |
+|---|---|
+| `confirmed` | every badge in the term's section is Confirmed |
+| `single` | weakest badge is Single source. A second source upgrades it. |
+| `conflict` | publishes a conflict and gives the range. Correct, not a gap. |
+| `review` | publishes figures with no badge of its own. Needs a human read. |
+| `no-figure` | publishes no dimensional claim, so there is nothing to source |
+| `wont-source` | can never be sourced. Set by hand. Era terms only. |
+
+`review` is not automatically a defect. Some of those sections mention a figure
+in prose and point at a badged table in a neighbouring section, which is fine.
+Others have their own spec table whose last column is Notes where sources
+should be, which is not. Telling them apart needs a person reading the page, so
+the build flags them rather than guessing.
 
 ### Content source format
 
@@ -131,6 +145,22 @@ the wrong sentence.
 Run `python3 test_autolink.py` after changing any of it. A linker that is wrong
 once in fifty is worse than no linker, because nobody reads the diff.
 
+### Two cyans, deliberately
+
+`--cyan` (#007bb0) is for light backgrounds. `--cyan-on-dark` (#00a4e6, the
+original brand cyan) is for the same accent where it sits on ink: the hero
+emphasis, eyebrows, footer link hover, and links inside a Quick Answer block.
+
+One value cannot do both. #00a4e6 measures 2.82 against white, and #007bb0
+measures 4.23 on #08090b. Swapping the single token fixed the light failures
+and silently broke the dark ones, which the axe run caught and eyeballing
+would not have.
+
+When adding a cyan-on-dark rule, watch specificity. `article.guide a` is
+(0,1,2) and beats a bare `.quick-answer a` at (0,1,1). Match the qualifier
+rather than reaching for `!important`. The same trap once painted the eBay CTA
+cyan on cyan.
+
 ## Hosting
 
 GitHub Pages, deploy from `main` branch, root directory. Push to `main` and it
@@ -150,7 +180,8 @@ Carried over from the previous site, do not invent new values.
 
 | Token | Value | Use |
 |---|---|---|
-| cyan | `#00a4e6` | primary, links, accents |
+| cyan | `#007bb0` | primary, links, accents, on light backgrounds |
+| cyan on dark | `#00a4e6` | the same accent where it sits on ink |
 | candy blue gradient | `#7fe4ff` → `#1cb9f7` → `#0083d8` | the "BMX" in the wordmark |
 | orange | `#e64700` | secondary accent, ticker, contact CTA |
 | deep blue | `#0032e6` | tertiary, used sparingly |
