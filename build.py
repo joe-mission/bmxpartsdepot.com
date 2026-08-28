@@ -1163,7 +1163,7 @@ def main():
 
     # hub + root files are written by their own modules
     from buildhub import write_hub, write_root_files
-    write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE)
+    defects = write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE)
     write_root_files(pages, SITE, ROOT)
 
     todo_total = sum(len(p["todo"]) for p in pages)
@@ -1173,11 +1173,38 @@ def main():
               % (p["slug"], len(p["sections"]), p["faqs"], len(p["todo"]), p["links"]))
     print("%d placeholders awaiting Joe (caliper readings, video ids, diagrams)" % todo_total)
 
-    dupes = [(p["slug"], a) for p in pages for a in p.get("dupe_ids", [])]
-    if dupes:
-        print("  DUPLICATE SECTION IDS (the second one is unreachable):")
-        for slug, a in dupes:
-            print("    %-42s #%s" % (slug, a))
+    # ---- the gate -------------------------------------------------------
+    #
+    # These four used to print and scroll past in a wall of build output.
+    # At 104 terms that was survivable. At the 1,000 the expansion targets it
+    # is not: a warning nobody reads is the same as no warning, and every one
+    # of these ships a page that looks fine and is quietly broken.
+    #
+    # --allow-warnings exists because writing a term is a multi-step job and
+    # the tree is legitimately broken in the middle of one. It is for work in
+    # progress, not for pushing.
+    for p in pages:
+        for a in p.get("dupe_ids", []):
+            defects.append("%s has two sections with id #%s, so the second is "
+                           "unreachable by link, anchor and schema" % (p["slug"], a))
+    for p in pages:
+        for item in p["todo"]:
+            defects.append("%s has an unfilled placeholder: %s" % (p["slug"], item))
+
+    if defects:
+        allow = "--allow-warnings" in sys.argv
+        print()
+        print("%d defect%s found:" % (len(defects), "" if len(defects) == 1 else "s"))
+        for d in defects:
+            print("  - " + d)
+        if allow:
+            print("\n--allow-warnings given, so the build is not failing on these.")
+            return 0
+        print("\nBuild failed. Fix these, or pass --allow-warnings while the "
+              "work is still in progress.")
+        return 1
+
+    print("\nno defects")
     return 0
 
 

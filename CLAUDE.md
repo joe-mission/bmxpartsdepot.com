@@ -45,10 +45,23 @@ python3 build.py        # regenerate everything
 python3 -m http.server 8000
 ```
 
-The build prints a report every run: placeholders still outstanding, dictionary
-terms claimed by two pillars, terms claimed with no matching section anchor, and
-claimed slugs that are not in the dictionary at all. Those warnings are the
-to-do list. Do not let them accumulate silently.
+**The build fails on defects.** `python3 build.py` exits non-zero on any of:
+an unfilled placeholder, a duplicate section id, a term claimed with no matching
+section anchor, a claimed slug that is not in the registry, or a claimed slug
+still marked `planned`. Each one ships a page that looks fine and is quietly
+broken, and as warnings they simply scrolled past.
+
+Pass `--allow-warnings` while a term is half-written. It is for work in
+progress, not for pushing.
+
+Two pillars claiming one term is **not** a defect and stays a note. The
+registry's `home` column decides which page owns the canonical section; the
+second claim only affects which page the A-Z links to.
+
+The build also prints coverage per category: published, planned, total, and how
+many published terms carry a figure that was never confirmed by two independent
+sources. That last column is what tells you a category is actually finished
+rather than nominally finished.
 
 ### Content source format
 

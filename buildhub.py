@@ -154,9 +154,17 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 
     term_map, collisions = build_term_map(pages)
 
-    # a claimed term that is not a real dictionary slug is a typo
-    known = {e["slug"] for v in groups.values() for e in v}
-    unknown = sorted(s for s in term_map if s not in known)
+    # A claimed term the registry has never heard of is a typo. A claimed term
+    # the registry knows but still marks planned is a different mistake with a
+    # different fix, and it is the one people will actually make: write the
+    # section, claim the term in frontmatter, forget to flip status. Saying
+    # "not in the registry" there sends them looking for a spelling error that
+    # is not present.
+    rows = load_registry(root)
+    all_slugs = {r["slug"] for r in rows}
+    published_slugs = {r["slug"] for r in rows if r["status"] == "published"}
+    unknown = sorted(s for s in term_map if s not in all_slugs)
+    still_planned = sorted(s for s in term_map if s in all_slugs and s not in published_slugs)
 
     total_terms = sum(len(v) for v in groups.values())
     mapped = sum(1 for v in groups.values() for e in v if e["slug"] in term_map)
@@ -334,19 +342,55 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
     unmapped = [e["term"] for L in LETTERS for e in groups.get(L, []) if e["slug"] not in term_map]
     print("hub: %d dictionary entries, %d linked to a guide section, %d not yet placed"
           % (total_terms, mapped, len(unmapped)))
+
+    # Defects the build should refuse to ship, as opposed to things worth
+    # mentioning. See main() for what happens to them.
+    defects = []
+
+    # Two pillars claiming one term is normal and stays a note: the registry's
+    # home column decides which owns the canonical section, and the second
+    # claim only affects which page the A-Z links to.
     if collisions:
-        print("  %d term collisions (first claim kept, second ignored):" % len(collisions))
+        print("  %d terms claimed by two pillars (home decides the canonical "
+              "section; the A-Z links to the first claim):" % len(collisions))
         for slug, kept, dropped in collisions:
             print("    %-32s kept on %s, also claimed by %s" % (slug, kept, dropped))
+
+    # These two are defects. A term claimed with no anchor degrades its A-Z
+    # entry to a whole-page link and drops it from the schema entirely, and a
+    # claimed slug that is not in the registry is a typo that silently does
+    # nothing. Both used to scroll past in a wall of build output.
     noanchor = sorted(s for s, v in term_map.items() if not v[2])
-    if noanchor:
-        print("  %d terms claimed but with no matching section anchor "
-              "(hub links to the page, not a fragment):" % len(noanchor))
-        print("    " + ", ".join(noanchor))
-    if unknown:
-        print("  %d claimed terms are not in the dictionary (likely typos): %s"
-              % (len(unknown), ", ".join(unknown)))
-    return unmapped
+    for s in noanchor:
+        defects.append("term %s is claimed but has no matching section anchor, "
+                       "so the A-Z links to the page and the schema skips it" % s)
+    for s in unknown:
+        defects.append("term %s is claimed by a pillar but is not in the registry "
+                       "at all (likely a typo in frontmatter)" % s)
+    for s in still_planned:
+        defects.append("term %s is claimed by %s but is still marked planned in "
+                       "the registry, so it is missing from the A-Z and the "
+                       "schema. Set status to published once the section is "
+                       "written." % (s, term_map[s][0]))
+
+    # ---- coverage -------------------------------------------------------
+    cats = sorted(CATEGORIES)
+    print()
+    print("coverage by category")
+    print("  %-12s %9s %9s %8s   %s" % ("category", "published", "planned", "total", "unsourced"))
+    for c in cats:
+        rs = [r for r in rows if r["category"] == c]
+        pub = [r for r in rs if r["status"] == "published"]
+        plan = [r for r in rs if r["status"] == "planned"]
+        # A published term whose figure was never confirmed by two sources.
+        # Not a defect, but it is the backlog that decides whether a category
+        # is actually finished or only nominally finished.
+        unsourced = sum(1 for r in pub if r["source_status"] not in ("solid", "src-confirmed"))
+        print("  %-12s %9d %9d %8d   %d" % (c, len(pub), len(plan), len(rs), unsourced))
+    tot_pub = sum(1 for r in rows if r["status"] == "published")
+    print("  %-12s %9d %9d %8d" % ("all", tot_pub, len(rows) - tot_pub, len(rows)))
+
+    return defects
 
 
 def write_root_files(pages, SITE, root):
