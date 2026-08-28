@@ -6,18 +6,58 @@ and route people to the eBay store.
 
 ## Stack
 
-There isn't one. Three hand-written HTML files, each fully self-contained: all CSS in
-a `<style>` block, all JS in a `<script>` block at the end of body. No build step, no
-package.json, no dependencies except a Google Fonts `<link>`.
+Still no framework and no bundler. If a change seems to call for one, it doesn't.
 
-Keep it that way. If a change seems to call for a framework or a bundler, it doesn't.
+The three original pages are hand-written and fully self-contained: all CSS in a
+`<style>` block, all JS in a `<script>` block at the end of body.
+
+The guide section is generated, because eleven pages sharing one 30KB stylesheet
+should not inline it eleven times. `build.py` reads Markdown from `content/` and
+writes plain HTML into `guides/`. Python 3 standard library only, no
+package.json, no node_modules, nothing to install.
 
 ```
 index.html      the one-pager
 privacy.html    privacy notice, text carried over verbatim from the old site
 terms.html      terms of use, same
 CNAME           written by GitHub Pages, contains bmxpartsdepot.com. Do not delete.
+
+build.py        the generator. Run it, commit what it writes, push.
+buildhub.py     hub page, sitemap.xml, robots.txt, llms.txt. Imported by build.py.
+content/pillars/*.md    the ten pillar guide sources. Edit these, not the HTML.
+content-plan/   planning docs: the A-Z dictionary, the 100 questions, the
+                verified spec research, the asset query sheet. Not published.
+guides/         GENERATED OUTPUT. Never hand-edit, build.py overwrites it.
+assets/guide.css        shared stylesheet for guide pages only
+assets/guide.js         progressive enhancement for guide pages only
+snippets/       paste-in HTML for eBay item descriptions, inline-styled
+sitemap.xml robots.txt llms.txt    GENERATED. Do not hand-edit.
 ```
+
+### Working on the guides
+
+```bash
+python3 build.py        # regenerate everything
+python3 -m http.server 8000
+```
+
+The build prints a report every run: placeholders still outstanding, dictionary
+terms claimed by two pillars, terms claimed with no matching section anchor, and
+claimed slugs that are not in the dictionary at all. Those warnings are the
+to-do list. Do not let them accumulate silently.
+
+### Content source format
+
+Markdown with `key: value` frontmatter and `:::` block directives. Raw HTML
+passes through, so spec tables are authored as real HTML5 `<table class="spec-table">`.
+See `content/pillars/01-bottom-brackets-and-spindles.md`, which is the format
+model and the quality bar. Directives: `quickanswer`, `needsverify`, `caliper`,
+`video`, `figure`, `faq`, `ebay`, `fitbadge`.
+
+A `## Heading {#anchor}` whose anchor matches a dictionary slug is what makes the
+hub's A-Z link deep-link into that section. Claiming a term in frontmatter without
+writing the matching section means the hub links to the page instead, and the
+build says so.
 
 ## Hosting
 
@@ -63,6 +103,32 @@ category grid, dark value props, light process, dark contact, dark footer.
   old site copy and is not currently receiving mail (see Known issues).
 - Never claim sales figures, review counts, customer numbers, or years in business.
   There is no data behind any of it and inventing it would be lying to buyers.
+
+### Specifications: the rule that matters most
+
+The guide section publishes dimensions people will spend money on. A wrong figure
+is worse than a missing one.
+
+- Every published figure carries its sourcing badge: `src-confirmed` (two or more
+  independent good sources agree), `src-single` (one source), `src-conflict`
+  (sources disagree, and the page says so and gives the range).
+- If a number cannot be sourced, it goes in a `::: needsverify` block as a visible
+  hole. It does not get written into a table with a confident badge.
+- `content-plan/verified-specs-bb.md` is the research record: every claim, its
+  source URL, and its status. Add to it rather than replacing it. Anything not in
+  there has not been checked.
+- `::: caliper` blocks are for Joe's own bench measurements only. Never write
+  a measurement into one. Fabricating first-hand shop data to look authoritative
+  is exactly the kind of thing this site exists not to do.
+- Era year ranges (old school, mid school, modern) are NOT sourced. Research
+  could not trace them to any primary source. Describe eras by their features.
+  Do not publish year boundaries, and note that the era chips deliberately carry
+  no dates for this reason.
+- Known traps, all found by checking rather than assuming: 3/8 inch is 9.525mm and
+  is not a 10mm axle. Dropout spacing (110mm nominal) is not axle diameter (14mm).
+  "24mm" spindle is 15/16 inch, 23.81mm. "19, 22, 24" is the complete spindle set
+  for freestyle only, race adds 30mm and 35mm. American shell diameter has no
+  single agreed figure.
 
 ## Writing style
 

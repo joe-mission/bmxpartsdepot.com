@@ -199,7 +199,10 @@ a{color:inherit}
   background:var(--ink);
   color:#fff;
   overflow:hidden;
-  padding:clamp(72px,11vw,132px) 0 clamp(64px,8vw,96px);
+  /* vertical rhythm answers to viewport HEIGHT as well as width, so the hero
+     still lands above the fold on short laptop viewports. Tall screens hit the
+     max values and are unchanged. */
+  padding:clamp(72px,min(11vw,14vh),132px) 0 clamp(64px,min(8vw,10vh),96px);
   isolation:isolate;
 }
 /* moving grid */
@@ -263,12 +266,12 @@ a{color:inherit}
   border:1px solid rgba(0,164,230,.42);
   background:rgba(0,164,230,.10);
   font-family:var(--display);font-size:14px;letter-spacing:.17em;color:#9fe3ff;
-  margin-bottom:26px;
+  margin-bottom:clamp(16px,2.7vh,26px);
 }
 .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 0 rgba(0,164,230,.7);animation:pulse 2.4s ease-out infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(0,164,230,0)}100%{box-shadow:0 0 0 0 rgba(0,164,230,0)}}
 
-h1.hero-h{font-size:clamp(42px,10.5vw,140px);color:#fff}
+h1.hero-h{font-size:clamp(42px,min(10.5vw,15vh),140px);color:#fff}
 h1.hero-h .ln{display:block;overflow:hidden;white-space:nowrap}
 /* once the rise-in has played, stop clipping so a slow/failed webfont
    can never leave the headline permanently cut off */
@@ -281,14 +284,14 @@ h1.hero-h em{font-style:normal;color:var(--cyan)}
 h1.hero-h .slash{color:var(--orange)}
 
 .hero-sub{
-  margin:26px 0 0;max-width:600px;
+  margin:clamp(16px,2.7vh,26px) 0 0;max-width:600px;
   font-size:clamp(17px,2.1vw,20px);
   color:rgba(255,255,255,.72);
   opacity:0;animation:fadeUp .8s ease .42s forwards;
 }
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;opacity:0;animation:fadeUp .8s ease .56s forwards}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(22px,3.75vh,36px);opacity:0;animation:fadeUp .8s ease .56s forwards}
 .hero-meta{
-  display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;
+  display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:clamp(20px,3.5vh,34px);
   font-size:14px;color:rgba(255,255,255,.55);
   opacity:0;animation:fadeUp .8s ease .7s forwards;
 }
@@ -402,6 +405,25 @@ footer nav{display:flex;flex-wrap:wrap;gap:26px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
 footer a:hover{color:var(--cyan)}
 footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:26px;border-top:1px solid var(--hairline);font-size:13.5px;color:rgba(255,255,255,.42)}
+/* footer knowledge base columns */
+footer .cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:32px;margin-bottom:34px}
+@media(max-width:820px){footer .cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){footer .cols{grid-template-columns:minmax(0,1fr)}}
+footer .col-title{font-family:var(--display);font-size:14px;letter-spacing:.18em;color:#fff;margin:0 0 14px;text-transform:uppercase}
+footer .cols nav{flex-direction:column;gap:9px}
+footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-width:34ch}
+
+/* ---------- guide promo ---------- */
+.guide-promo{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;
+  background:linear-gradient(135deg,var(--ink) 0%,var(--ink-3) 100%);
+  border:1px solid rgba(0,164,230,.28);border-radius:16px;
+  padding:clamp(24px,4vw,38px);color:#fff;
+}
+.guide-promo .eyebrow{color:var(--cyan);margin-bottom:10px}
+.guide-promo h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(24px,3.4vw,34px);line-height:1;margin:0 0 10px}
+.guide-promo p{margin:0;color:rgba(255,255,255,.72);max-width:62ch;font-size:16px}
+@media(max-width:760px){.guide-promo{grid-template-columns:minmax(0,1fr)}.guide-promo .btn{width:100%;justify-content:center}}
 
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.8,.2,1),transform .75s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
@@ -442,7 +464,7 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="#stock">What We Stock</a>
-      <a class="lnk" href="#why">Why Us</a>
+      <a class="lnk" href="/guides/">Fitment Guide</a>
       <a class="lnk" href="#process">Our Process</a>
       <a class="lnk" href="#contact">Contact</a>
       <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
@@ -611,6 +633,23 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
   </div>
 </section>
 
+<!-- ============ FITMENT GUIDE PROMO ============ -->
+<section class="pad" id="guide-promo" style="padding-top:0">
+  <div class="wrap">
+    <div class="guide-promo reveal">
+      <div>
+        <p class="eyebrow">Free Reference</p>
+        <h3>Not sure it fits? Check before you buy.</h3>
+        <p>Ten guides and an A-Z dictionary covering the standards, dimensions, and part variations that decide whether a used BMX part fits your bike. Every figure carries its source, and the ones nobody can source are marked as such.</p>
+      </div>
+      <a class="btn" href="/guides/">
+        Open the Fitment Guide
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="glow2" aria-hidden="true"></div>
@@ -636,14 +675,40 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
-    <div class="top">
-      <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
-      <nav>
-        <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">Shop</a>
-        <a href="#contact">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </nav>
+    <div class="cols">
+      <div>
+        <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
+        <p class="tagline">Used BMX parts, honestly priced.</p>
+      </div>
+      <div>
+        <p class="col-title">BMX Knowledge Base</p>
+        <nav>
+          <a href="/guides/">Fitment Guide and A-Z</a>
+          <a href="/guides/bottom-brackets-and-spindles/">Bottom Brackets and Spindles</a>
+          <a href="/guides/bmx-frame-identification-and-geometry/">Frame ID and Geometry</a>
+          <a href="/guides/bmx-wheels-hubs-and-axles/">Wheels, Hubs and Axles</a>
+          <a href="/guides/drivetrain-chains-and-sprockets/">Drivetrain and Sprockets</a>
+          <a href="/guides/bmx-front-end-headsets-and-forks/">Headsets, Forks and Stems</a>
+        </nav>
+      </div>
+      <div>
+        <p class="col-title">Shop</p>
+        <nav>
+          <a href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">eBay Store</a>
+          <a href="#stock">What We Stock</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <p class="col-title">Site</p>
+        <nav>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Use</a>
+          <a href="/llms.txt">llms.txt</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
     </div>
     <div class="bottom">
       <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
