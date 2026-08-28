@@ -153,6 +153,14 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
         )
 
     url = SITE + "/guides/"
+    # "N of M live so far, and the rest are being written" is false once
+    # every term is placed. Say what is actually true instead.
+    if mapped >= total_terms:
+        az_status = "All %d entries are live." % total_terms
+    else:
+        az_status = ("%d of %d entries are live so far, and the rest are being written."
+                     % (mapped, total_terms))
+
 
     # One generator for the dictionary JSON-LD, shared with schema_terms.py.
     # Terms with no matching section anchor are skipped there rather than
@@ -235,7 +243,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 
       <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">A-Z Dictionary</h2>
       <div class="sec-rule"></div>
-      <p style="max-width:70ch;color:var(--muted);margin:0 0 28px">Every term links into the guide section that covers it. {mapped} of {total} entries are live so far, and the rest are being written.</p>
+      <p style="max-width:70ch;color:var(--muted);margin:0 0 28px">Every term links into the guide section that covers it. {az_status}</p>
       <div id="az-results">{az}</div>
       <p class="no-results" id="no-results" hidden>Nothing matched that. Try a shorter word, or the part name on its own.</p>
     </main>
@@ -245,7 +253,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 <script src="/assets/guide.js" defer></script>
 </body>
 </html>
-""".format(total=total_terms, mapped=mapped, az_bar=az_bar,
+""".format(total=total_terms, mapped=mapped, az_status=az_status, az_bar=az_bar,
            cards="".join(cards), az="".join(az_html), footer=footer_html(top_guides))
 
     outdir = os.path.join(root, "guides")
