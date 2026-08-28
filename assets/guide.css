@@ -216,7 +216,9 @@ a{color:inherit}
 
 /* breadcrumb */
 .crumbs{font-size:13.5px;color:rgba(255,255,255,.5);margin:0 0 16px;letter-spacing:.02em}
-.crumbs a{color:rgba(255,255,255,.72);text-decoration:none}
+/* Underlined rather than colour-only: these sit inside a text block, so
+   colour alone is not a sufficient distinction (WCAG 1.4.1). */
+.crumbs a{color:rgba(255,255,255,.72);text-decoration:underline;text-underline-offset:2px}
 .crumbs a:hover{color:#fff;text-decoration:underline}
 .crumbs span[aria-hidden]{padding:0 8px;opacity:.5}
 
@@ -297,6 +299,7 @@ article.guide a:hover{color:var(--orange)}
 /* ============================================================
    SPEC TABLE
    ============================================================ */
+.table-scroll:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
 .table-scroll{overflow-x:auto;margin:0 0 24px;-webkit-overflow-scrolling:touch}
 table.spec-table{
   width:100%;border-collapse:collapse;font-size:15px;

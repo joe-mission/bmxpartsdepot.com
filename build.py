@@ -532,7 +532,20 @@ def render(body, ctx):
                 i += 1
             raw = "\n".join(block)
             if "<table" in raw:
-                raw = '<div class="table-scroll">%s</div>' % raw
+                # A scrollable region only a mouse can scroll strands the
+                # content inside it for keyboard users (WCAG 2.1.1), so the
+                # wrapper is focusable and labelled.
+                #
+                # Sources hand-write <div class="table-scroll"> around their
+                # tables, and this used to wrap them a second time, nesting
+                # two identical scroll containers. Add the attributes to the
+                # one that is already there rather than making another.
+                ATTRS = ' tabindex="0" role="region" aria-label="Specification table, scrollable"'
+                if 'class="table-scroll"' in raw:
+                    raw = raw.replace('<div class="table-scroll">',
+                                      '<div class="table-scroll"%s>' % ATTRS)
+                else:
+                    raw = '<div class="table-scroll"%s>%s</div>' % (ATTRS, raw)
             out.append(raw)
             continue
 
