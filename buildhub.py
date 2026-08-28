@@ -226,9 +226,10 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
                      % (mapped, total_terms))
 
 
-    # One generator for the dictionary JSON-LD, shared with schema_terms.py.
-    # Terms with no matching section anchor are skipped there rather than
-    # emitted with an @id that resolves to nothing.
+    # The DefinedTerm nodes themselves are emitted by the pillar pages, each
+    # on the page that holds its anchor (see build.build_schema). The hub
+    # emits the set they all point at, without enumerating them. Nodes are
+    # still generated here so the count can be reported and validated.
     term_entries = [e for L in LETTERS for e in groups.get(L, [])]
     term_nodes, term_skipped = schema_terms.build_defined_terms(term_entries, term_map, SITE)
 
@@ -244,7 +245,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
                 "url": url,
                 "isPartOf": {"@type": "WebSite", "@id": SITE + "/#website"},
             },
-            schema_terms.defined_term_set(term_nodes, SITE),
+            schema_terms.defined_term_set([], SITE),
             {
                 "@type": "ItemList",
                 "@id": url + "#pillars",

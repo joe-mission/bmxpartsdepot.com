@@ -160,15 +160,25 @@ def validate(nodes, known_anchors=None):
 
 
 def defined_term_set(nodes, site):
-    """Wrap the terms in the DefinedTermSet node the pages already reference."""
-    return {
+    """The DefinedTermSet node every term points back at.
+
+    Pass an empty list to emit the set without enumerating its members,
+    which is how the hub does it. Each DefinedTerm carries inDefinedTermSet
+    pointing here, so membership is already stated once per term; repeating
+    it as a thousand inline nodes on the hub said nothing extra and cost
+    578KB of JSON-LD on one page. The set is emitted either way so the
+    @id every term references still resolves to a real node.
+    """
+    node = {
         "@type": "DefinedTermSet",
         "@id": site + "/guides/#dictionary",
         "name": "BMX Parts Depot A-Z Parts Glossary",
         "description": "BMX technical terms, dimensional standards, and part variations.",
         "url": site + "/guides/",
-        "hasDefinedTerm": nodes,
     }
+    if nodes:
+        node["hasDefinedTerm"] = nodes
+    return node
 
 
 def _slugify(s):

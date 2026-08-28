@@ -601,24 +601,52 @@ def build_schema(meta, ctx, url):
         "datePublished": meta.get("published", str(date.today())),
         "dateModified": meta.get("updated", str(date.today())),
     }
-    terms = [(s_, l) for s_, l in as_pairs(meta, "terms") if s_ in ctx["ids"]]
-    if terms:
-        article["about"] = [
-            {
-                "@type": "DefinedTerm",
-                "@id": "%s#%s" % (url, slug),
-                "name": label,
-                "termCode": slug,
-                "url": "%s#%s" % (url, slug),
-                "inDefinedTermSet": {
-                    "@type": "DefinedTermSet",
-                    "@id": SITE + "/guides/#dictionary",
-                    "name": "BMX Parts Depot A-Z Parts Glossary",
-                    "url": SITE + "/guides/",
-                },
-            }
-            for slug, label in terms
-        ]
+    # ---- DefinedTerm nodes ---------------------------------------------
+    #
+    # These used to live on the hub, all of them, inline inside one
+    # DefinedTermSet. That put 62KB of JSON-LD on a 116KB page, 53% of it,
+    # and it scaled linearly: at the 1,000 terms the expansion is aimed at
+    # it projected to 578KB on a single page, duplicating descriptions that
+    # already exist as HTML on the pillars.
+    #
+    # A term's node now lives on the page that contains its anchor. Each
+    # node points at the set with inDefinedTermSet, so the relationship is
+    # fully expressed from the term side and the set does not have to
+    # enumerate its members. The hub's payload drops to a few hundred bytes
+    # and stays there however many terms get added.
+    #
+    # Only the owning page emits the node. Several terms are claimed by two
+    # pillars and both have a matching section, which previously produced
+    # two DefinedTerm nodes with the same termCode and different @ids: one
+    # term, two identities, and no way for a consumer to tell which was
+    # canonical. The registry's home column settles it, and the other page
+    # references the canonical @id instead of minting a rival.
+    import buildhub
+    registry = {r["slug"]: r for r in buildhub.load_registry(ROOT)}
+
+    about = []
+    for slug, label in as_pairs(meta, "terms"):
+        if slug not in ctx["ids"]:
+            continue
+        row = registry.get(slug)
+        if row is None or row["status"] != "published":
+            continue
+        owner = row["home"]
+        canonical = "%s/guides/%s/#%s" % (SITE, owner, slug)
+        about.append({"@id": canonical})
+        if owner != meta.get("slug"):
+            continue
+        graph.append({
+            "@type": "DefinedTerm",
+            "@id": canonical,
+            "name": row["term"] or label,
+            "description": row["definition"],
+            "termCode": slug,
+            "url": canonical,
+            "inDefinedTermSet": {"@id": SITE + "/guides/#dictionary"},
+        })
+    if about:
+        article["about"] = about
     graph.append(article)
 
     if ctx["faqs"]:
