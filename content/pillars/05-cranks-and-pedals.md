@@ -120,10 +120,31 @@ That is worth knowing rather than treating as a gap. If the company that made th
 
 On spline systems, 8-spline and 48-spline are both real and both current, with 8-spline common at the entry level and 48-spline on higher-end cranks, Profile's spline-drive being the well known implementation. Bolt and hex sizes vary: Park Tool describes 8mm as common on BMX three-piece cranks but explicitly generically, covering "many" cranks while noting some makes need a proprietary puller. That is not a per-brand figure and is not published as one.
 
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Crank bolt sizes, where a manufacturer states one</caption>
+<thead>
+<tr><th scope="col">Crank</th><th scope="col">Bolt</th><th scope="col">Applies to</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Odyssey Thunderbolt</th><td class="num">M6</td><td>Spindle bolt</td><td>Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Profile GDH</th><td class="num">M12 x 1.25mm</td><td>Bolt-through axle bolt, <strong>19mm GDH axle only</strong></td><td>Profile Racing <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Sunday, 8-spline</th><td class="num">M8 x 1.25</td><td>Pinch bolt</td><td>Retailer naming Sunday models <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Read the Profile row carefully. That M12 x 1.25 figure is stated for the 19mm GDH axle and **not** for their 22mm axle or their solid 19mm, so do not carry it across to a different Profile spindle because the brand matches. This is the kind of detail that turns a correct spec into a wrong one.
+
+**On torque, the absence is now the answer rather than a gap.** Neither Odyssey nor Profile publishes a numeric figure in their own install documentation, and both were checked directly. Odyssey's Twombolt manual specifies the job qualitatively: snug, tightened as needed, anti-seize on the lock bolt lip, and a long 6mm hex key for leverage. Aftermarket torque charts exist and none of their numbers appear here, because a chart somebody compiled is not more authoritative than the maker declining to state a figure.
+
+On splines, 8-spline and 48-spline are both real and both current, with 8-spline common at the entry level and 48-spline on higher-end cranks, Profile's spline-drive being the well known implementation. **There is no 16-spline BMX system.** It gets repeated, and searching for it turns up nothing from any manufacturer or technical reference, so if you see one listed, the listing is wrong.
+
+Bolt and hex sizes beyond the table above vary and are largely unpublished. Park Tool describes 8mm as common on BMX three-piece cranks but says so generically, covering "many" cranks while noting some makes need a proprietary puller. That is not a per-brand figure and is not published as one.
+
 ::: needsverify
-- crank bolt and pinch bolt torque figures from any BMX crank manufacturer, if one publishes them at all
-- pinch bolt thread size and head size per brand
-- machining tolerances for crank spindle diameters
+- pinch bolt thread and head sizes for BSD and Eclat, neither of which publishes one
+- machining tolerance classes for crank spindle diameters, which no manufacturer appears to publish
 :::
 
 ::: video Fitting a three-piece crank without wrecking the splines | TBD
