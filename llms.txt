@@ -109,6 +109,10 @@ Each guide is deep-linkable. The sections are:
 - [Sprocket mounting](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#spline-drive-sprocket) : Section of the guide covering sprocket mounting.
 - [Checking used cranks and pedals](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-condition) : Section of the guide covering checking used cranks and pedals.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#questions) : Section of the guide covering questions.
+- [One-piece to three-piece conversion](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#one-piece-to-three-piece-conversion) : Section of the guide covering one-piece to three-piece conversion.
+- [Left-hand thread](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#left-hand-thread) : Section of the guide covering left-hand thread.
+- [Cross-threading](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#cross-threading) : Section of the guide covering cross-threading.
+- [Thread insert](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#thread-insert) : Section of the guide covering thread insert.
 
 ### Brakes, Cables and Detanglers
 
@@ -141,6 +145,19 @@ Each guide is deep-linkable. The sections are:
 - [Quill stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#quill-stem) : Section of the guide covering quill stems.
 - [Unicrown forks](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#unicrown-fork) : Section of the guide covering unicrown forks.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#questions) : Section of the guide covering questions.
+- [Steerer tube diameter](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#steerer-tube-diameter) : Section of the guide covering steerer tube diameter.
+- [Steerer tube length](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#steerer-tube-length) : Section of the guide covering steerer tube length.
+- [Star nut](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#star-nut) : Section of the guide covering star nut.
+- [Compression cap](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#compression-cap) : Section of the guide covering compression cap.
+- [Internal compression bolt](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#internal-compression-bolt) : Section of the guide covering internal compression bolt.
+- [Crown race](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#crown-race) : Section of the guide covering crown race.
+- [Split crown race ring](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#split-crown-race-ring) : Section of the guide covering split crown race ring.
+- [Headset bearing angle](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#headset-bearing-angle) : Section of the guide covering headset bearing angle.
+- [Headset stack height](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#headset-stack-height) : Section of the guide covering headset stack height.
+- [Headset spacer](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#headset-spacer) : Section of the guide covering headset spacer.
+- [Top load stem](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#top-load-stem) : Section of the guide covering top load stem.
+- [Stem reach](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#stem-reach) : Section of the guide covering stem reach.
+- [Torque specification](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#torque-specification) : Section of the guide covering torque specification.
 
 ### Handlebars, Grips and Cockpit
 
@@ -154,6 +171,10 @@ Each guide is deep-linkable. The sections are:
 - [Grips, flanges and barends](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bmx-grips) : Section of the guide covering grips, flanges and barends.
 - [Stems and where they put the bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#front-load-stem) : Section of the guide covering stems and where they put the bars.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#questions) : Section of the guide covering questions.
+- [Two-piece bar](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#two-piece-bar) : Section of the guide covering two-piece bar.
+- [Four-piece bar](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#four-piece-bar) : Section of the guide covering four-piece bar.
+- [Crossbar](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-crossbar) : Section of the guide covering crossbar.
+- [Lock-on grip](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#lock-on-grip) : Section of the guide covering lock-on grip.
 
 ### Seats, Posts and Clamps
 

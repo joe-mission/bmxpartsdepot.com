@@ -11,7 +11,7 @@ standfirst: Cranks are the part of a used BMX most likely to be sold with the wr
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: one-piece-crank|One-Piece Crank, three-piece-crank|Three-Piece Crank, crank-spindle-diameter|Crank Spindle Diameter, pinch-bolt|Pinch Bolt, pedal-thread-size|Pedal Thread Size, nylon-pedals|Nylon Pedal Body, spline-drive-sprocket|Spline Drive Sprocket, sprocket-guard|Sprocket Guard, american-bottom-bracket|American Bottom Bracket, press-fit-bottom-bracket|Press-Fit Bottom Bracket, 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel
+terms: one-piece-crank|One-Piece Crank, three-piece-crank|Three-Piece Crank, crank-spindle-diameter|Crank Spindle Diameter, pinch-bolt|Pinch Bolt, pedal-thread-size|Pedal Thread Size, nylon-pedals|Nylon Pedal Body, spline-drive-sprocket|Spline Drive Sprocket, sprocket-guard|Sprocket Guard, american-bottom-bracket|American Bottom Bracket, press-fit-bottom-bracket|Press-Fit Bottom Bracket, 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, one-piece-to-three-piece-conversion|One-Piece to Three-Piece Conversion, left-hand-thread|Left-Hand Thread, cross-threading|Cross-Threading, thread-insert|Thread Insert
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, drivetrain-chains-and-sprockets|Drivetrain, Chains and Sprockets, bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, vintage-bmx-identification|Vintage BMX Identification
 ---
 
@@ -347,3 +347,76 @@ If the marking has worn off, use the thread direction. The left pedal is left-ha
 ::: ebay Cranks, spindles and pedals in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 Crank arms go up with the measured length and the spindle size they take. Pedals go up with the thread size, since 9/16 inch and 1/2 inch are not interchangeable.
 :::
+
+## One-piece to three-piece conversion {#one-piece-to-three-piece-conversion}
+
+::: quickanswer
+**A conversion kit presses adapter cups into an American bottom bracket shell so it will take a modern three-piece crank.** It is the standard answer to the most common question asked about an old frame: can I put decent cranks in this.
+:::
+
+The frame side of this is covered under [American bottom bracket](#american-bottom-bracket), and the shell diameter is the figure that decides which kit fits. The kit itself is two cups that press into the large unthreaded shell and carry bearings sized for a 19mm, 22mm or 24mm spindle.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>American shell, the figure a conversion kit has to match</caption>
+<thead>
+<tr><th scope="col">Fitment</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">American shell inner diameter</th><td class="num">51.5mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Note that this figure sits inside the range the bottom bracket guide publishes for American shells, where sources disagree. Treat it as one reading rather than the settled answer, and measure the shell before ordering.
+
+## Left-hand thread {#left-hand-thread}
+
+::: quickanswer
+**A left-hand thread tightens anticlockwise, and it exists on the parts where normal pedalling would otherwise undo a normal thread.** The left pedal is the one that catches people out, and forcing a right-hand pedal into it destroys the crank arm.
+:::
+
+The left pedal unscrews itself under forward pedalling if it is right-hand threaded, which is why it is not. Left pedals are usually marked with an L on the spindle flats or a groove cut across them. If a pedal does not start easily by hand, stop and check which side you are holding.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Left-hand threaded parts</caption>
+<thead>
+<tr><th scope="col">Component</th><th scope="col">Thread</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Left pedal, three-piece crank</th><td class="num">9/16 inch x 20 TPI, left hand</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Left pedal, one-piece crank</th><td class="num">1/2 inch x 20 TPI, left hand</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Drive side cup, threaded shell</th><td class="num">1.375 inch x 24 TPI, left hand</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+## Cross-threading {#cross-threading}
+
+::: quickanswer
+**Cross-threading is starting a fastener at an angle so it cuts a new path across the existing thread.** On a steel bolt going into an aluminium crank arm it takes about two seconds and ruins the arm.
+:::
+
+Start every threaded part by hand, turning it backwards first until you feel it drop into the thread, then forwards. If it will not turn easily by hand for the first few turns, something is wrong and a wrench will only make it permanent. This is the single most expensive mistake in home BMX assembly, and it is entirely avoidable.
+
+## Thread insert {#thread-insert}
+
+::: quickanswer
+**A thread insert rebuilds a stripped thread back to its original size, and it is what decides whether a damaged crank arm is repairable or scrap.** The hole is drilled and tapped oversize, then an insert is fitted that gives back the original thread.
+:::
+
+Pedal threads in crank arms are the usual case. Inserts come in left and right hand versions because the pedal threads do, and fitting the wrong one wastes the repair.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Pedal thread insert</caption>
+<thead>
+<tr><th scope="col">Side</th><th scope="col">Inner thread</th><th scope="col">Outer thread</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Right, right-hand thread</th><td class="num">9/16 inch x 20 TPI</td><td class="num">5/8 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Left, left-hand thread</th><td class="num">9/16 inch x 20 TPI</td><td class="num">5/8 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>

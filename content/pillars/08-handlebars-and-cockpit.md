@@ -11,7 +11,7 @@ standfirst: Bars are the part riders replace on feel rather than on fitment, whi
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: handlebar-rise|Handlebar Rise, handlebar-width|Handlebar Width, handlebar-backsweep|Handlebar Backsweep, handlebar-upsweep|Handlebar Upsweep, oversize-bar-clamp|Oversize Bar Clamp, knurled-bar-clamp|Knurled Bar Clamp Area, bmx-grips|Grip Diameter and Flange, front-load-stem|Front Load Stem
+terms: handlebar-rise|Handlebar Rise, handlebar-width|Handlebar Width, handlebar-backsweep|Handlebar Backsweep, handlebar-upsweep|Handlebar Upsweep, oversize-bar-clamp|Oversize Bar Clamp, knurled-bar-clamp|Knurled Bar Clamp Area, bmx-grips|Grip Diameter and Flange, front-load-stem|Front Load Stem, two-piece-bar|Two-Piece Bar, four-piece-bar|Four-Piece Bar, bar-crossbar|Crossbar, lock-on-grip|Lock-On Grip
 related: bmx-front-end-headsets-and-forks|Front End Headsets and Forks, bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-brakes-and-gyros|Brakes and Gyros, vintage-bmx-identification|Era and Dating
 ---
 
@@ -339,3 +339,35 @@ Both hold the same bars, assuming the clamp diameters match. The choice is about
 ::: ebay Handlebars, stems and grips in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 Used bars go up with the measured width, not the width the model was sold at, because a cut set is a different bar. Rise gets measured the same way.
 :::
+
+## Two-piece bar {#two-piece-bar}
+
+::: quickanswer
+**A two-piece bar is bent from one tube for the uprights and grip sections, with a single crossbar welded in.** Fewer welds than a four-piece, and you can tell them apart by eye in a listing photo.
+:::
+
+Look at where the uprights meet the bottom section. On a two-piece the tube runs through in a continuous bend. It is both a construction difference and a rough era marker, and it changes how the bar flexes under load.
+
+## Four-piece bar {#four-piece-bar}
+
+::: quickanswer
+**A four-piece bar is built from four separate tubes meeting at four welded joints, which gives the square-shouldered look most freestyle bars have.** More welds, stiffer feel, and the construction most current bars use.
+:::
+
+The joints are what to inspect on a used set. Cracks start at weld toes, so look closely where the uprights meet the crossbar and where they meet the bottom section, particularly on a bar that has taken a hard front-end hit.
+
+## Crossbar {#bar-crossbar}
+
+::: quickanswer
+**The crossbar is the tube bracing the uprights, and it stops them folding inward under a landing.** It also gives you somewhere to mount a number plate or a bar pad.
+:::
+
+A bent or dented crossbar means the bar has taken a serious impact and should be retired rather than straightened.
+
+## Lock-on grip {#lock-on-grip}
+
+::: quickanswer
+**Lock-on grips clamp to the bar with a collar instead of relying on friction, so they need no glue and do not spin.** They do need clear straight bar end for the collar to sit on.
+:::
+
+Worth checking against your bars before buying, because a bar with a short straight section at the ends may not leave room for the clamp. They also need end plugs; the collar does not close off the bar end on its own, and an open bar end is a real hazard in a crash.

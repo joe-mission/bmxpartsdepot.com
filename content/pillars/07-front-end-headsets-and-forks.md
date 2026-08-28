@@ -11,7 +11,7 @@ standfirst: The front end is where the most confidently wrong numbers on the int
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: bmx-headset-standards|Headset Standards, integrated-headset|Integrated Headset, zero-stack-headset|Zero Stack Headset, threaded-headset|Threaded Headset, threadless-headset|Threadless Headset, aheadset|Aheadset, quill-stem|Quill Stem, front-load-stem|Front Load Stem, fork-offset|Fork Offset, unicrown-fork|Unicrown Fork, dropout-slot-width|Dropout Slot Width
+terms: bmx-headset-standards|Headset Standards, integrated-headset|Integrated Headset, zero-stack-headset|Zero Stack Headset, threaded-headset|Threaded Headset, threadless-headset|Threadless Headset, aheadset|Aheadset, quill-stem|Quill Stem, front-load-stem|Front Load Stem, fork-offset|Fork Offset, unicrown-fork|Unicrown Fork, dropout-slot-width|Dropout Slot Width, steerer-tube-diameter|Steerer Tube Diameter, steerer-tube-length|Steerer Tube Length, star-nut|Star Nut, compression-cap|Compression Cap, internal-compression-bolt|Internal Compression Bolt, crown-race|Crown Race, split-crown-race-ring|Split Crown Race Ring, headset-bearing-angle|Headset Bearing Angle, headset-stack-height|Headset Stack Height, headset-spacer|Headset Spacer, top-load-stem|Top Load Stem, stem-reach|Stem Reach, torque-specification|Torque Specification
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-handlebars-and-cockpit|Handlebars and Cockpit, bmx-brakes-and-gyros|Brakes, Cables and Detanglers, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles
 ---
 
@@ -472,3 +472,226 @@ This guide does not publish a year for the changeover, because no source consult
 ::: ebay Headsets, forks and stems in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 Forks go up with the measured steerer length and the headset standard they suit. A steerer too short for your head tube is not a fixable problem, so it gets measured first.
 :::
+
+## Steerer tube diameter {#steerer-tube-diameter}
+
+::: quickanswer
+**Steerer tube diameter has to match the headset bearings and the stem clamp, and there are only two you will meet on BMX.** Modern freestyle and race forks use 1 1/8 inch. Vintage frames and some youth bikes use 1 inch, and the two do not interchange.
+:::
+
+This is the first number to check on a used fork, because getting it wrong means the fork will not go into the frame or the stem will not clamp the fork. Measure across the outside of the steerer above the crown.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Fork steerer outer diameter</caption>
+<thead>
+<tr><th scope="col">Standard</th><th scope="col">Outer diameter</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">1 1/8 inch threadless</th><td class="num">28.6mm</td><td>Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">1 inch, vintage and youth</th><td class="num">25.4mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+## Steerer tube length {#steerer-tube-length}
+
+::: quickanswer
+**Steerer length decides whether a used fork will fit your frame at all.** It has to pass through the head tube, the headset, any spacers and the stem, and still leave the stem fully clamped. A fork already cut short for someone else's bike cannot be made longer.
+
+:::
+
+Measure from the crown race seat to the top of the tube. Then add up what it has to clear: head tube length, headset stack, your spacer stack, and the stem clamp height.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Steerer fitting dimensions</caption>
+<thead>
+<tr><th scope="col">Dimension</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Minimum stem clamp engagement</th><td class="num">30mm to 35mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Gap left under the stem for preload</th><td class="num">3mm to 5mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+The steerer must sit slightly below the top of the stem, not flush with it. If it sits flush the compression cap bottoms out on the steerer and cannot pull the bearings together, so the headset stays loose no matter how far the bolt goes in.
+
+::: needsverify
+- Uncut steerer length as supplied by BMX fork manufacturers
+:::
+
+## Star nut {#star-nut}
+
+::: quickanswer
+**A star nut is a sprung steel nut driven down inside the steerer to give the top cap bolt something to pull against.** It sets headset preload and does nothing else. Once the stem pinch bolts are tight, the star nut carries no load.
+:::
+
+Its sprung arms bite into the inside wall of the steerer, so it only works in a steel tube. It must never go into a carbon steerer, and it is not needed on a fork with an internal thread cut into the steerer.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Star nut thread</caption>
+<thead>
+<tr><th scope="col">Component</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Internal thread</th><td class="num">M6 x 1.0</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+## Compression cap {#compression-cap}
+
+::: quickanswer
+**The compression cap is an adjuster, not a fastener.** Its bolt pulls the fork up to seat the headset bearings before the stem is clamped. It is not what holds the stem on, and treating it as a structural bolt is how people overtighten it.
+:::
+
+The order matters. Loosen the stem pinch bolts, tighten the cap bolt until the play disappears and the bars still turn freely, then tighten the pinch bolts. Do it the other way round and the cap is fighting a clamped stem.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Compression cap bolt</caption>
+<thead>
+<tr><th scope="col">System</th><th scope="col">Thread</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Star nut cap bolt</th><td class="num">M6 x 1.0</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+::: needsverify
+- Thread size of the large alloy top bolts used with internal compression forks
+:::
+
+## Internal compression bolt {#internal-compression-bolt}
+
+::: quickanswer
+**An internal compression bolt threads into the top of the steerer itself, replacing the star nut.** A fork with one has a thread cut inside the steerer wall, and it needs its own bolt rather than a star nut and top cap.
+:::
+
+This is what most modern BMX forks use. It lets the steerer be welded and heat treated as one piece, and on some forks the bolt is hollow so a front brake cable can pass through it. If you buy a used fork with no bolt, you need the one that matches that fork, not a generic top cap.
+
+::: needsverify
+- Thread sizes used for internal compression bolts across BMX fork manufacturers
+:::
+
+## Crown race {#crown-race}
+
+::: quickanswer
+**The crown race is the lower bearing surface, and it sits on a machined shoulder at the base of the steerer.** It has to match both the shoulder diameter and the angle of the bearing above it, or the front end will never adjust out properly.
+:::
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Crown race seat</caption>
+<thead>
+<tr><th scope="col">Fitment</th><th scope="col">Seat diameter</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">1 1/8 inch threadless</th><td class="num">30.0mm</td><td>Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+## Split crown race ring {#split-crown-race-ring}
+
+::: quickanswer
+**A split crown race has a slot cut through it so it clips onto the fork by hand instead of being pressed on.** It is the piece most often missing from a used fork, and it is worth checking for before you buy.
+:::
+
+The split works because a cartridge bearing sits on it and the preload holds it centred. That also means it only works with cartridge bearings. A loose ball headset needs a continuous race with no gap in it. Many modern BMX forks skip the part entirely and have the race angle machined straight into the crown, so if a used fork appears to be missing one, look closely before ordering a replacement.
+
+## Headset bearing angle {#headset-bearing-angle}
+
+::: quickanswer
+**Cartridge headset bearings are chamfered at set angles on their inner and outer edges, and those angles have to match the frame and the crown race.** Two bearings with the same diameters and different angles will not seat, and forcing one damages both the bearing and the frame.
+:::
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Cartridge bearing bevel angles</caption>
+<thead>
+<tr><th scope="col">Specification</th><th scope="col">Inner and outer angle</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Campagnolo pattern, the usual BMX case</th><td class="num">45 and 45 degrees</td><td>Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Cane Creek pattern</th><td class="num">36 and 45 degrees</td><td>Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Buy bearings by the frame's headset standard rather than by measuring the old ones, because a worn bearing can measure close to the wrong spec.
+
+## Headset stack height {#headset-stack-height}
+
+::: quickanswer
+**Stack height is how much of the headset sits outside the head tube, above and below.** It comes straight off your usable steerer length, so a taller headset leaves less room for spacers and stem.
+:::
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Stack height by headset type</caption>
+<thead>
+<tr><th scope="col">Headset</th><th scope="col">Stack height</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Integrated, 1 1/8 inch</th><td class="num">5mm to 15mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">External cup threadless</th><td class="num">25mm to 30mm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+## Headset spacer {#headset-spacer}
+
+::: quickanswer
+**Spacers set bar height and take up spare steerer, and they can go above the stem as well as below it.** Moving one from under the stem to above it lowers the bars without cutting anything, which is worth knowing before you take a saw to a fork.
+:::
+
+Whatever the stack, the stem has to end up fully clamped on the tube, and the top of the steerer has to finish just below the top of the stem so the compression cap has something to pull against.
+
+## Top load stem {#top-load-stem}
+
+::: quickanswer
+**A top load stem clamps the bars from above rather than from the front, which raises them.** Same fork, same bars, more height than a front load stem.
+:::
+
+Beyond height, the two feel different under load, and which one a used bike has tells you something about how it was set up. The clamp diameter has to match your bars, which is a separate question covered under [oversize bar clamp](#oversize-bar-clamp).
+
+## Stem reach {#stem-reach}
+
+::: quickanswer
+**Reach is the horizontal distance from the steerer to the bar clamp, and it changes cockpit length without changing the frame.** A shorter reach brings the bars back and makes the front end quicker; a longer one stretches you out.
+:::
+
+It is the cheapest way to adjust how a frame fits you, and worth considering before deciding a used frame is the wrong size.
+
+::: needsverify
+- Published reach ranges for BMX stems by category
+:::
+
+## Torque specification {#torque-specification}
+
+::: quickanswer
+**Torque matters most where a steel bolt threads into aluminium.** Stem bodies, bar clamps and crank arms are the parts people strip, and the failure is silent until the part moves under you.
+:::
+
+Undertightening is its own hazard: a bar that slips in the clamp or a stem that turns on the steerer will do it at the worst moment.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Front end fastener torque</caption>
+<thead>
+<tr><th scope="col">Fastener</th><th scope="col">Torque</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Stem faceplate bolts, M6 steel</th><td class="num">10 to 14 Nm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Stem steerer pinch bolts, M8 steel</th><td class="num">15 to 20 Nm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Top compression cap bolt</th><td class="num">1.5 to 3.0 Nm</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+The compression cap figure is an order of magnitude below the others on purpose. It is setting bearing preload, not clamping anything.

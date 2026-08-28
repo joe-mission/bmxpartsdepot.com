@@ -481,3 +481,61 @@ This is the distance between the inner faces of the rear dropouts, also called f
 12. **Sources deliberately not used.** Several high-ranking results for these queries were content-farm style listicles or AI-generated shop blog posts with no attribution. They were excluded. Notably, one widely-cited retailer blog described the standards only by comparison to a coffee cup, a Red Bull can, a penny, a nickel and a quarter, with no measurements at all. That kind of page is likely the origin of a lot of repeated but unsourced numbers online.
 
 13. **Pages that could not be fetched**, and so contributed nothing: BMX Museum forum threads (robots.txt disallowed), Bike Forums threads (403), Bicycle Fabrication Supply product and category pages (robots.txt), Pardo bottom bracket standards page (redirect loop), Source BMX cranks buyers guide (page body did not render), The Pro's Closet BB identification guide (covers road and MTB only, no BMX content).
+
+## Window 2: front end, cockpit and cranks
+
+Every figure below is sourced to a specific Park Tool repair-help article or
+to the Standardized Headset Identification System documented there. Barnett's
+Manual was cited by the drafting pass for two figures and is not counted here,
+because no page could be produced for it; those figures are published as
+Single source on Park Tool alone rather than Confirmed.
+
+Figures with no citable page were not published. They are in ::: needsverify
+blocks on the pages: uncut steerer length, internal compression bolt threads,
+large alloy top cap threads, and stem reach ranges by category.
+
+### Steerer tube diameter
+- 28.6mm, 1 1/8 inch threadless | Park Tool, headset standards | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Confirmed
+- 28.6mm, 1 1/8 inch threadless | SHIS, as documented by Park Tool | https://www.parktool.com/en-us/blog/repair-help/standardized-headset-identification-system | Confirmed
+- 25.4mm, 1 inch | Park Tool, headset standards | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Single source
+
+### Steerer tube length
+- Minimum stem clamp engagement 30mm to 35mm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/stem-removal-installation-threadless | Single source
+- Preload gap 3mm to 5mm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/stem-removal-installation-threadless | Single source
+
+### Star nut
+- M6 x 1.0 internal thread | Park Tool | https://www.parktool.com/en-us/blog/repair-help/star-nut-installation | Single source
+
+### Compression cap
+- M6 x 1.0 cap bolt | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-service | Single source
+
+### Crown race
+- 30.0mm crown seat, 1 1/8 inch | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Confirmed
+- 30.0mm crown seat, 1 1/8 inch | SHIS, as documented by Park Tool | https://www.parktool.com/en-us/blog/repair-help/standardized-headset-identification-system | Confirmed
+
+### Headset bearing angle
+- 45 and 45 degrees, Campagnolo pattern | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Confirmed
+- 45 and 45 degrees, Campagnolo pattern | SHIS, as documented by Park Tool | https://www.parktool.com/en-us/blog/repair-help/standardized-headset-identification-system | Confirmed
+- 36 and 45 degrees, Cane Creek pattern | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Confirmed
+- 36 and 45 degrees, Cane Creek pattern | SHIS, as documented by Park Tool | https://www.parktool.com/en-us/blog/repair-help/standardized-headset-identification-system | Confirmed
+
+### Headset stack height
+- Integrated 5mm to 15mm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Single source
+- External cup 25mm to 30mm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/headset-standards | Single source
+
+### Torque specification
+- Stem faceplate M6, 10 to 14 Nm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/torque-specifications-and-concepts | Single source
+- Stem steerer pinch M8, 15 to 20 Nm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/torque-specifications-and-concepts | Single source
+- Top compression cap, 1.5 to 3.0 Nm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/torque-specifications-and-concepts | Single source
+
+### One-piece to three-piece conversion
+- American shell inner diameter 51.5mm | Park Tool | https://www.parktool.com/en-us/blog/repair-help/bottom-bracket-standards-and-terminology | Single source
+- Note: the bottom bracket guide publishes this as a 51.3 to 51.5mm conflict range. The section says so rather than presenting 51.5mm as settled.
+
+### Left-hand thread
+- Left pedal 9/16 inch x 20 TPI LH | Park Tool | https://www.parktool.com/en-us/blog/repair-help/pedal-installation-and-removal | Single source
+- Left pedal one-piece 1/2 inch x 20 TPI LH | Park Tool | https://www.parktool.com/en-us/blog/repair-help/pedal-installation-and-removal | Single source
+- Drive side cup 1.375 inch x 24 TPI LH | Park Tool | https://www.parktool.com/en-us/blog/repair-help/bottom-bracket-standards-and-terminology | Single source
+
+### Thread insert
+- Insert 9/16 inch x 20 TPI inner, 5/8 inch x 24 TPI outer | Park Tool | https://www.parktool.com/en-us/blog/repair-help/pedal-bushing-and-thread-repair | Single source
