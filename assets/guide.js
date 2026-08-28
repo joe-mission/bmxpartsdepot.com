@@ -151,12 +151,14 @@
 (function () {
   var btn = document.getElementById('navToggle');
   var panel = document.getElementById('navPanel');
+  var scrim = document.getElementById('navScrim');
   if (!btn || !panel) return;
 
   function setOpen(open) {
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     panel.hidden = !open;
+    if (scrim) scrim.classList.toggle('is-open', open);
   }
 
   btn.addEventListener('click', function (e) {
@@ -175,4 +177,51 @@
   window.addEventListener('resize', function () {
     if (window.innerWidth > 900 && !panel.hidden) setOpen(false);
   }, { passive: true });
+})();
+
+/* ---- hub: search toggle -------------------------------------------
+   The input starts collapsed behind a magnifier at the end of the A-Z
+   row and slides out over the letters. Its own IIFE so it cannot be
+   taken out by anything above it. Filtering itself is untouched: this
+   only opens, closes and clears. */
+(function () {
+  var row = document.getElementById("azRow");
+  var btn = document.getElementById("searchToggle");
+  var input = document.getElementById("dict-search");
+  if (!row || !btn || !input) return;
+
+  function setOpen(open) {
+    row.classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.setAttribute("aria-label", open ? "Close search" : "Search the guide");
+    /* Collapsed the input is 0 wide and must stay out of the tab order,
+       or keyboard users land in a field they cannot see. */
+    input.setAttribute("tabindex", open ? "0" : "-1");
+    if (open) {
+      input.focus();
+    } else if (input.value) {
+      /* Closing with a query left behind would leave the page filtered
+         with no visible reason. Clear it, and fire the event the filter
+         above listens for so the full list comes back. */
+      input.value = "";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+  }
+
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    setOpen(!row.classList.contains("is-open"));
+  });
+
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { setOpen(false); btn.focus(); }
+  });
+
+  /* Click away closes, but only when nothing has been typed, so a stray
+     click does not throw away a query mid-search. */
+  document.addEventListener("click", function (e) {
+    if (!row.classList.contains("is-open")) return;
+    if (row.contains(e.target)) return;
+    if (!input.value) setOpen(false);
+  });
 })();

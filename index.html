@@ -221,6 +221,21 @@ a{color:inherit}
 .nav-panel a:hover,.nav-panel a:focus-visible{color:#fff}
 /* [hidden] has to beat the display rule above or the panel paints when closed. */
 .nav-panel[hidden]{display:none}
+/* Scrim behind the open mobile menu. Sibling of the panel so it is driven
+   purely by [hidden] with no extra JS state to keep in sync. Fixed, so it
+   covers the viewport rather than only the page height. */
+.nav-scrim{
+  /* Outside <header> on purpose. The nav uses backdrop-filter, which makes
+     it a containing block for fixed children, so a scrim inside it was
+     clipped to the 62px bar instead of covering the viewport. */
+  position:fixed;inset:0;z-index:50;
+  background:rgba(4,6,9,.66);
+  opacity:0;pointer-events:none;
+  transition:opacity .26s ease;
+}
+.nav-scrim.is-open{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){.nav-scrim{transition:none}}
+@media(min-width:821px){.nav-scrim{display:none}}
 @media(max-width:820px){
   .nav .links a.lnk{display:none}
   .nav-toggle{display:inline-flex}
@@ -530,6 +545,7 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
     <a href="#contact">Contact</a>
   </nav>
 </header>
+<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
@@ -841,11 +857,13 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
      button rather than to a dead toggle. */
   var navBtn = document.getElementById('navToggle');
   var navPanel = document.getElementById('navPanel');
+  var navScrim = document.getElementById('navScrim');
   if (navBtn && navPanel) {
     var setOpen = function(open){
       navBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       navBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       navPanel.hidden = !open;
+      if (navScrim) navScrim.classList.toggle("is-open", open);
     };
     navBtn.addEventListener('click', function(e){
       e.stopPropagation();

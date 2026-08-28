@@ -1304,6 +1304,7 @@
     <a href="../#contact">Contact</a>
   </nav>
 </header>
+<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
 
 <section class="guide-head">
   <div class="wrap">
@@ -1316,12 +1317,17 @@
 
 <div class="hub-tools">
   <div class="wrap">
-    <div class="hub-search">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-      <input type="search" id="dict-search" placeholder="Search the guide: 19mm spindle, Mid BB, freecoaster..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count">
+    <div class="az-row" id="azRow">
+      <nav class="az-bar" aria-label="Jump to letter"><button type="button" data-jump="A">A</button><button type="button" data-jump="B">B</button><button type="button" data-jump="C">C</button><button type="button" data-jump="D">D</button><button type="button" data-jump="E">E</button><button type="button" data-jump="F">F</button><button type="button" data-jump="G">G</button><button type="button" data-jump="H">H</button><button type="button" data-jump="I">I</button><button type="button" data-jump="J">J</button><button type="button" data-jump="K">K</button><button type="button" data-jump="L">L</button><button type="button" data-jump="M">M</button><button type="button" data-jump="N">N</button><button type="button" data-jump="O">O</button><button type="button" data-jump="P">P</button><button type="button" data-jump="Q">Q</button><button type="button" data-jump="R">R</button><button type="button" data-jump="S">S</button><button type="button" data-jump="T">T</button><button type="button" data-jump="U">U</button><button type="button" data-jump="V">V</button><button type="button" data-jump="W">W</button><button type="button" data-jump="X">X</button><button type="button" data-jump="Y">Y</button><button type="button" data-jump="Z">Z</button></nav>
+      <div class="hub-search">
+        <button class="search-toggle" id="searchToggle" type="button" aria-expanded="false" aria-controls="dict-search" aria-label="Search the guide">
+          <svg class="ico-search" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+          <svg class="ico-clear" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+        </button>
+        <input type="search" id="dict-search" placeholder="freecoaster, spindle, chainline, pivotal..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count" tabindex="-1">
+      </div>
     </div>
     <p class="search-count" id="search-count" role="status" aria-live="polite" hidden></p>
-    <nav class="az-bar" aria-label="Jump to letter"><button type="button" data-jump="A">A</button><button type="button" data-jump="B">B</button><button type="button" data-jump="C">C</button><button type="button" data-jump="D">D</button><button type="button" data-jump="E">E</button><button type="button" data-jump="F">F</button><button type="button" data-jump="G">G</button><button type="button" data-jump="H">H</button><button type="button" data-jump="I">I</button><button type="button" data-jump="J">J</button><button type="button" data-jump="K">K</button><button type="button" data-jump="L">L</button><button type="button" data-jump="M">M</button><button type="button" data-jump="N">N</button><button type="button" data-jump="O">O</button><button type="button" data-jump="P">P</button><button type="button" data-jump="Q">Q</button><button type="button" data-jump="R">R</button><button type="button" data-jump="S">S</button><button type="button" data-jump="T">T</button><button type="button" data-jump="U">U</button><button type="button" data-jump="V">V</button><button type="button" data-jump="W">W</button><button type="button" data-jump="X">X</button><button type="button" data-jump="Y">Y</button><button type="button" data-jump="Z">Z</button></nav>
   </div>
 </div>
 

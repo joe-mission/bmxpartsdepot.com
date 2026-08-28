@@ -667,7 +667,8 @@ def nav_html(active=""):
     <a href="/#process">Our Process</a>
     <a href="/#contact">Contact</a>
   </nav>
-</header>""" % (cur("guides"), EBAY)
+</header>
+<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>""" % (cur("guides"), EBAY)
 
 
 def footer_html(top_guides):

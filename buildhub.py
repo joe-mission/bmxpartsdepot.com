@@ -225,12 +225,17 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 
 <div class="hub-tools">
   <div class="wrap">
-    <div class="hub-search">
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-      <input type="search" id="dict-search" placeholder="Search the guide: 19mm spindle, Mid BB, freecoaster..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count">
+    <div class="az-row" id="azRow">
+      <nav class="az-bar" aria-label="Jump to letter">{az_bar}</nav>
+      <div class="hub-search">
+        <button class="search-toggle" id="searchToggle" type="button" aria-expanded="false" aria-controls="dict-search" aria-label="Search the guide">
+          <svg class="ico-search" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+          <svg class="ico-clear" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+        </button>
+        <input type="search" id="dict-search" placeholder="freecoaster, spindle, chainline, pivotal..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count" tabindex="-1">
+      </div>
     </div>
     <p class="search-count" id="search-count" role="status" aria-live="polite" hidden></p>
-    <nav class="az-bar" aria-label="Jump to letter">{az_bar}</nav>
   </div>
 </div>
 
