@@ -38,7 +38,7 @@ Four parts, one loop.
 
 Everything else on this page is a detail of one of those four.
 
-::: figure The four parts of a BMX drivetrain | TBD | Side and top view of a BMX drivetrain showing sprocket, chain, driver and the chainline plane running between sprocket and driver
+::: figure The four parts of a BMX drivetrain | assets/diagrams/bmx-drivetrain-anatomy.svg | Side and top view of a BMX drivetrain showing sprocket, chain, driver and the chainline plane running between sprocket and driver
 The loop from the side, and the same thing from above showing what chainline actually means.
 :::
 

@@ -216,6 +216,14 @@
       ]
     },
     {
+      "@type": "ImageObject",
+      "@id": "https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#image-the-four-bar-measurements",
+      "name": "The four bar measurements",
+      "caption": "One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.",
+      "contentUrl": "https://bmxpartsdepot.com/assets/diagrams/bmx-handlebar-measurement-points.svg",
+      "url": "https://bmxpartsdepot.com/assets/diagrams/bmx-handlebar-measurement-points.svg"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#crumbs",
       "itemListElement": [
@@ -298,7 +306,54 @@
 </div></div>
 <p>That table has no figures in it on purpose. The shape of the effect is well understood and does not need a source. The numbers do, and they are not confirmed yet.</p>
 <aside class="caliper" data-needs-verify="5"><p class="cal-label">Specifications pending verification</p><p><span class="todo">[SOURCE CHECK NEEDED]</span><br>These figures are not published yet because they have not been confirmed against a manufacturer or other primary source. The bar dimensions people search for most, none of which are published on this page until they are checked against manufacturer spec sheets:</p><ul style="margin:10px 0 0;padding-left:20px;font-size:15px;color:var(--muted)"><li>the usual range of BMX bar rise, in inches, from the lowest to the tallest commonly sold</li><li>the usual range of BMX bar width, in inches</li><li>typical backsweep, in degrees, and the range across current bars</li><li>typical upsweep, in degrees, and the range across current bars</li><li>whether rise is normally quoted to the top of the bar tube or to the centreline of the grip area</li></ul></aside>
-<figure class="diagram"><div class="fig-body placeholder"><span class="todo">[DIAGRAM NEEDED]</span><span>The four bar measurements</span></div><figcaption><b>The four bar measurements</b> One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.</figcaption></figure>
+<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-handlebar-measurement-points" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <title>The Four Bar Measurements</title>
+
+  <defs>
+    <style>#dg-bmx-handlebar-measurement-points .bg{fill: #ffffff;}#dg-bmx-handlebar-measurement-points .bar{fill: none; stroke: #08090b; stroke-width: 18; stroke-linecap: round; stroke-linejoin: round;}#dg-bmx-handlebar-measurement-points .dim-orange{stroke: #e64700; stroke-width: 3; stroke-dasharray: 6 6;}#dg-bmx-handlebar-measurement-points .grid-line{stroke: #e2e5e9; stroke-width: 2;}#dg-bmx-handlebar-measurement-points .text-orange{fill: #e64700; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle;}#dg-bmx-handlebar-measurement-points .text-dark{fill: #08090b; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 700;}</style>
+    <marker id="dg-bmx-handlebar-measurement-points-arrow-start" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#e64700" />
+    </marker>
+    <marker id="dg-bmx-handlebar-measurement-points-arrow-end" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e64700" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1000" height="600" />
+
+  <!-- MAIN FRONT VIEW -->
+  <g id="dg-bmx-handlebar-measurement-points-front-view">
+    <!-- Handlebar Tube (Ink) -->
+    <path class="bar" d="M 100 160 L 280 160 L 320 380 L 480 380 L 520 160 L 700 160" />
+    <!-- Crossbar -->
+    <line stroke="#08090b" stroke-width="12" x1="300" y1="260" x2="500" y2="260" />
+
+    <!-- RISE (Clamp Center to Top of Tube) -->
+    <line class="dim-orange" x1="400" y1="380" x2="400" y2="150" marker-start="url(#dg-bmx-handlebar-measurement-points-arrow-start)" marker-end="url(#dg-bmx-handlebar-measurement-points-arrow-end)" />
+    <rect class="bg" x="360" y="240" width="80" height="30" rx="4" />
+    <text class="text-orange" x="400" y="262">Rise</text>
+
+    <!-- WIDTH (Tip to Tip) -->
+    <line class="dim-orange" x1="100" y1="100" x2="700" y2="100" marker-start="url(#dg-bmx-handlebar-measurement-points-arrow-start)" marker-end="url(#dg-bmx-handlebar-measurement-points-arrow-end)" />
+    <rect class="bg" x="360" y="85" width="80" height="30" rx="4" />
+    <text class="text-orange" x="400" y="107">Width</text>
+  </g>
+
+  <!-- INSET TOP-DOWN VIEW (Lower Right) -->
+  <g id="dg-bmx-handlebar-measurement-points-top-inset" transform="translate(680, 360)">
+    <rect fill="#f8fafc" stroke="#e2e5e9" stroke-width="2" x="0" y="0" width="280" height="200" rx="8" />
+    <text class="text-dark" x="20" y="35">TOP INSET</text>
+
+    <!-- Swept Tube Profile -->
+    <path stroke="#08090b" stroke-width="10" fill="none" d="M 30 140 L 100 140 L 130 90 L 250 70" />
+    <line stroke="#6b7280" stroke-width="2" stroke-dasharray="4 4" x1="100" y1="140" x2="260" y2="140" />
+
+    <!-- Angles -->
+    <path stroke="#e64700" stroke-width="3" fill="none" d="M 180 140 A 60 60 0 0 1 170 80" />
+    <text class="text-orange" x="200" y="120">Backsweep / Upsweep</text>
+  </g>
+</svg>
+</div><figcaption><b>The four bar measurements</b> One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.</figcaption></figure>
 <figure class="video"><div class="video-frame placeholder"><span class="todo">[VIDEO ID NEEDED]</span><span class="hint">How to measure a set of BMX bars on the bench</span></div><figcaption><b>How to measure a set of BMX bars on the bench</b> Bars stood on a flat surface, rise taken off the clamp area, width taken end to end, and both sweeps read off from above. Also shows how much the rise reading moves if the bar is not sat square.</figcaption></figure>
 <aside class="caliper"><p class="cal-label"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v14a4 4 0 0 0 4 4h14"/><path d="M7 7h10"/><path d="M7 12h6"/></svg> Depot Caliper Verification</p><p><span class="todo">[CALIPER VERIFICATION NEEDED]</span><br>Measure rise and width on several sets of used bars, and note how each maker quotes the same bar on the bench and record the reading here, with the tool used and the part it came off. Leave this block out rather than filling it with a figure taken from somewhere else.</p></aside>
 <h2 id="handlebar-rise">Handlebar rise</h2><div class="sec-rule"></div>

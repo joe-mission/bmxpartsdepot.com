@@ -48,7 +48,7 @@ So this page treats era as a reading taken from the parts. That is both more hon
 - whether any manufacturer or governing body has ever published era definitions, or whether the terms are entirely collector usage
 :::
 
-::: figure Era feature timeline | TBD | Chart showing bottom bracket, headset, crank, bar and brake standards changing across the three BMX eras with overlapping rather than hard boundaries
+::: figure Era feature timeline | assets/diagrams/bmx-era-feature-sequence.svg | Chart showing bottom bracket, headset, crank, bar and brake standards changing across the three BMX eras with overlapping rather than hard boundaries
 The standards drawn as overlapping bands rather than blocks, so the transitions read as transitions. No year axis until the dates are sourced.
 :::
 

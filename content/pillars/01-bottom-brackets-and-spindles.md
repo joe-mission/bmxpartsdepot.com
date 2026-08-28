@@ -35,7 +35,7 @@ One thing that catches people out: some sources quote the bearing or cup outer d
 ::: caliper the shell bore on a known American frame, a known Mid frame, and a known Spanish frame
 :::
 
-::: figure Bottom bracket shell comparison | TBD | Cutaway comparison of American, Mid, Spanish and Euro BMX bottom bracket shells showing relative diameters
+::: figure Bottom bracket shell comparison | assets/diagrams/bmx-bottom-bracket-shell-comparison.svg | Cutaway comparison of American, Mid, Spanish and Euro BMX bottom bracket shells showing relative diameters
 The four standards at the same scale, with the bore diameter called out on each.
 :::
 

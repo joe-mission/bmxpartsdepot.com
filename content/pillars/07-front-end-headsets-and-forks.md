@@ -65,7 +65,7 @@ Those three are independent of each other in principle and heavily correlated in
 - headset stack height figures for each type
 :::
 
-::: figure BMX headset types in cross section | TBD | Cutaway drawing of a BMX head tube showing an integrated headset, a zero stack headset and a traditional pressed cup headset side by side, with the bearing position marked in each
+::: figure BMX headset types in cross section | assets/diagrams/bmx-headset-types-section.svg | Cutaway drawing of a BMX head tube showing an integrated headset, a zero stack headset and a traditional pressed cup headset side by side, with the bearing position marked in each
 The same head tube drawn three ways, showing where the bearing actually sits in each design and how much of the headset ends up outside the tube.
 :::
 
@@ -154,7 +154,7 @@ Two other points that matter on a used bike.
 
 **BMX often uses a compression plug rather than a star nut**, because BMX steerers are frequently thicker walled and because a plug can be removed and reused where a star nut is a one-way trip. If a used fork has a star nut hammered down inside it and you want to run a plug, the star nut has to come out, which usually means driving it down and out of the bottom of the steerer.
 
-::: figure Threadless compression, exploded | TBD | Exploded diagram of a BMX threadless front end showing the lower bearing, head tube, upper bearing, compression ring, dust cover, spacers, stem, top cap and compression plug inside the steerer
+::: figure Threadless compression, exploded | assets/diagrams/bmx-threadless-compression-exploded.svg | Exploded diagram of a BMX threadless front end showing the lower bearing, head tube, upper bearing, compression ring, dust cover, spacers, stem, top cap and compression plug inside the steerer
 The full stack in order, with arrows showing which fastener sets preload and which one clamps.
 :::
 
@@ -229,7 +229,7 @@ What you can do practically, when replacing a used fork, is measure the offset o
 - typical BMX head tube angles, for the trail calculation to mean anything
 :::
 
-::: figure Fork offset and trail | TBD | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tyre contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
+::: figure Fork offset and trail | assets/diagrams/bmx-fork-offset-and-trail.svg | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tyre contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
 Two forks with different offsets on the same frame, showing how the contact patch moves relative to the steering axis.
 :::
 

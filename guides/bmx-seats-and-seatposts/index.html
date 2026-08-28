@@ -207,6 +207,14 @@
       ]
     },
     {
+      "@type": "ImageObject",
+      "@id": "https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#image-the-three-seat-interfaces",
+      "name": "The three seat interfaces",
+      "caption": "The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.",
+      "contentUrl": "https://bmxpartsdepot.com/assets/diagrams/bmx-seat-interfaces-comparison.svg",
+      "url": "https://bmxpartsdepot.com/assets/diagrams/bmx-seat-interfaces-comparison.svg"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#crumbs",
       "itemListElement": [
@@ -288,7 +296,70 @@
 </div></div>
 <p><strong>None of these three convert to each other by buying an adapter you can trust.</strong> The interface is part of the post, so changing seat type means changing the post. This is the single most common seat buying mistake: a pivotal seat bought for a bike with a railed post, or the other way round, because the listing only said the colour and the brand.</p>
 <aside class="caliper" data-needs-verify="5"><p class="cal-label">Specifications pending verification</p><p><span class="todo">[SOURCE CHECK NEEDED]</span><br>These figures are not published yet because they have not been confirmed against a manufacturer or other primary source. Seat interface dimensions, none of which are published until they are checked against seat and post manufacturer specifications:</p><ul style="margin:10px 0 0;padding-left:20px;font-size:15px;color:var(--muted)"><li>the rail diameter used on railed BMX seats, and whether it is consistent across brands</li><li>the rail spacing a railed post cradle is built to accept</li><li>the bolt size and thread used on a pivotal seat</li><li>the bolt pattern on a tripod seat plate</li><li>whether pivotal spline pitch is genuinely common between makers or only within a maker</li></ul></aside>
-<figure class="diagram"><div class="fig-body placeholder"><span class="todo">[DIAGRAM NEEDED]</span><span>The three seat interfaces</span></div><figcaption><b>The three seat interfaces</b> The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.</figcaption></figure>
+<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-seat-interfaces-comparison" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480">
+  <title>The Three Seat Interfaces</title>
+
+  <defs>
+    <style>#dg-bmx-seat-interfaces-comparison .bg{fill: #ffffff;}#dg-bmx-seat-interfaces-comparison .post{fill: #08090b; stroke: #08090b; stroke-width: 2;}#dg-bmx-seat-interfaces-comparison .seat-base{fill: #00a4e6; stroke: #08090b; stroke-width: 2;}#dg-bmx-seat-interfaces-comparison .bolt{fill: #e64700; stroke: #08090b; stroke-width: 2;}#dg-bmx-seat-interfaces-comparison .grid-line{stroke: #e2e5e9; stroke-width: 2;}#dg-bmx-seat-interfaces-comparison .text-title{fill: #08090b; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 30px; font-weight: 800; text-anchor: middle;}#dg-bmx-seat-interfaces-comparison .text-sub{fill: #6b7280; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 500; text-anchor: middle;}</style>
+  </defs>
+
+  <rect class="bg" width="1000" height="480" />
+  <line class="grid-line" x1="333" y1="20" x2="333" y2="440" />
+  <line class="grid-line" x1="666" y1="20" x2="666" y2="440" />
+
+  <!-- PANEL 1: PIVOTAL -->
+  <g id="dg-bmx-seat-interfaces-comparison-pivotal">
+    <text class="text-title" x="166.5" y="55">PIVOTAL</text>
+
+    <!-- Seat Base (Cyan) -->
+    <path class="seat-base" d="M 60 180 Q 166 140 270 180 L 250 210 Q 166 180 80 210 Z" />
+    <!-- Splined Post Top (Ink) -->
+    <rect class="post" x="145" y="210" width="43" height="180" rx="4" />
+    <circle cx="166.5" cy="210" r="22" fill="#08090b" />
+
+    <!-- Single Top-Down Bolt (Orange) -->
+    <rect class="bolt" x="158" y="150" width="17" height="70" rx="3" />
+
+    <text class="text-sub" x="166.5" y="430">1 bolt down through seat</text>
+  </g>
+
+  <!-- PANEL 2: RAILED -->
+  <g id="dg-bmx-seat-interfaces-comparison-railed">
+    <text class="text-title" x="500" y="55">RAILED</text>
+
+    <!-- Two Rails (Cyan) -->
+    <circle fill="#00a4e6" stroke="#08090b" stroke-width="3" cx="470" cy="200" r="12" />
+    <circle fill="#00a4e6" stroke="#08090b" stroke-width="3" cx="530" cy="200" r="12" />
+
+    <!-- Two-Part Clamping Head (Ink) -->
+    <rect class="post" x="440" y="175" width="120" height="15" rx="3" />
+    <rect class="post" x="440" y="215" width="120" height="20" rx="3" />
+    <rect class="post" x="480" y="235" width="40" height="155" rx="4" />
+
+    <!-- Clamping Bolts (Orange) -->
+    <rect class="bolt" x="491" y="210" width="18" height="45" rx="2" />
+
+    <text class="text-sub" x="500" y="430">2 rails clamped in head</text>
+  </g>
+
+  <!-- PANEL 3: TRIPOD -->
+  <g id="dg-bmx-seat-interfaces-comparison-tripod">
+    <text class="text-title" x="833" y="55">TRIPOD</text>
+
+    <!-- Seat Base (Cyan) -->
+    <path class="seat-base" d="M 730 180 Q 833 150 936 180 L 910 210 Q 833 190 756 210 Z" />
+
+    <!-- 3-Point Wedge Plate Post (Ink) -->
+    <polygon class="post" points="770,210 896,210 853,240 813,240" />
+    <rect class="post" x="813" y="240" width="40" height="150" rx="4" />
+
+    <!-- Single Underneath Bolt (Orange) -->
+    <rect class="bolt" x="824" y="230" width="18" height="40" rx="2" />
+
+    <text class="text-sub" x="833" y="430">3-point mounting plate</text>
+  </g>
+</svg>
+</div><figcaption><b>The three seat interfaces</b> The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.</figcaption></figure>
 <h2 id="pivotal-seat">Pivotal seats</h2><div class="sec-rule"></div>
 <div class="quick-answer"><p class="qa-label">Quick Answer</p><p>A pivotal seat mounts on a <strong>splined face at the top of the post, held by one long bolt that passes down through the seat</strong>. The splines set the angle in fixed steps, which is why a pivotal seat has no fore and aft adjustment.</p></div>
 <p>Pivotal exists because riders wanted the seat to stop moving. A railed clamp holds the seat by friction on two thin wires. Land on it hard enough, often enough, and it slips or the rails bend. The pivotal design replaces friction with mechanical interlock: two toothed faces that cannot rotate against each other once the bolt is tight, and no rails to bend.</p>

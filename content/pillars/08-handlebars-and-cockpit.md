@@ -57,7 +57,7 @@ That table has no figures in it on purpose. The shape of the effect is well unde
 - whether rise is normally quoted to the top of the bar tube or to the centreline of the grip area
 :::
 
-::: figure The four bar measurements | TBD | Diagram of a BMX handlebar with rise, width, backsweep and upsweep each called out with an arrow
+::: figure The four bar measurements | assets/diagrams/bmx-handlebar-measurement-points.svg | Diagram of a BMX handlebar with rise, width, backsweep and upsweep each called out with an arrow
 One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.
 :::
 

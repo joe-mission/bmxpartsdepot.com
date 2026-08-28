@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <title>How a U-Brake Pulls</title>
+  <desc>Front-on mechanical diagram of a BMX U-brake showing crossing arms, straddle cable pull, and pad force vectors.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .arm { fill: #08090b; stroke: #08090b; stroke-width: 2; }
+      .ghost-rim { fill: none; stroke: #e2e5e9; stroke-width: 24; }
+      .cable { fill: none; stroke: #08090b; stroke-width: 6; stroke-linecap: round; }
+      .yoke { fill: #00a4e6; stroke: #08090b; stroke-width: 2; }
+      .pad { fill: #6b7280; stroke: #08090b; stroke-width: 2; }
+      .pivot { fill: #00a4e6; stroke: #08090b; stroke-width: 3; }
+      .arrow-line { stroke: #e64700; stroke-width: 4; stroke-linecap: round; }
+      .text-title { fill: #08090b; font-family: system-ui, -apple-system, sans-serif; font-size: 26px; font-weight: 800; text-anchor: middle; }
+      .text-orange { fill: #e64700; font-family: system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle; }
+      .text-sub { fill: #6b7280; font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 600; text-anchor: middle; }
+      .callout-line { stroke: #6b7280; stroke-width: 2; stroke-dasharray: 4 4; fill: none; }
+    </style>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e64700" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1000" height="640" />
+
+  <!-- Ghosted Rim Section -->
+  <circle class="ghost-rim" cx="500" cy="460" r="210" />
+
+  <!-- Main Cable Pull -->
+  <line class="cable" x1="500" y1="30" x2="500" y2="130" />
+  <polygon class="yoke" points="475,130 525,130 500,165" />
+
+  <!-- Straddle Cable Triangle -->
+  <polyline class="cable" points="260,280 500,165 740,280" />
+
+  <!-- LEFT BRAKE ARM (Pivots on Right Post #620) -->
+  <path class="arm" d="M 260 280 Q 360 280 440 350 L 420 440 L 375 440 L 360 360 Q 310 310 260 300 Z" />
+  <path class="arm" d="M 260 280 L 620 350 L 620 375 L 260 300 Z" />
+
+  <!-- RIGHT BRAKE ARM (Pivots on Left Post #380) -->
+  <path class="arm" d="M 740 280 Q 640 280 560 350 L 580 440 L 625 440 L 640 360 Q 690 310 740 300 Z" />
+  <path class="arm" d="M 740 280 L 380 350 L 380 375 L 740 300 Z" />
+
+  <!-- Pivot Posts -->
+  <circle class="pivot" cx="380" cy="362" r="14" />
+  <circle class="pivot" cx="620" cy="362" r="14" />
+
+  <!-- Brake Pads -->
+  <rect class="pad" x="375" y="440" width="35" height="24" rx="4" />
+  <rect class="pad" x="590" y="440" width="35" height="24" rx="4" />
+
+  <!-- FORCE VECTOR ARROWS & LABELS (With Protective White Backing Cards) -->
+  <!-- 1. Upward Yoke Pull -->
+  <line class="arrow-line" x1="500" y1="110" x2="500" y2="50" marker-end="url(#arrow-head)" />
+  <rect class="bg" x="525" y="65" width="130" height="30" rx="4" />
+  <text class="text-orange" x="590" y="87" text-anchor="middle">Yoke Pull</text>
+
+  <!-- 2. Straddle Cable Tension -->
+  <line class="arrow-line" x1="330" y1="248" x2="410" y2="212" marker-end="url(#arrow-head)" />
+  <line class="arrow-line" x1="670" y1="248" x2="590" y2="212" marker-end="url(#arrow-head)" />
+  <rect class="bg" x="410" y="145" width="180" height="32" rx="4" />
+  <text class="text-orange" x="500" y="168">Straddle Cable</text>
+
+  <!-- 3. Pad Inward Clamping Force -->
+  <line class="arrow-line" x1="310" y1="452" x2="365" y2="452" marker-end="url(#arrow-head)" />
+  <line class="arrow-line" x1="690" y1="452" x2="635" y2="452" marker-end="url(#arrow-head)" />
+
+  <!-- Structural Callout Labels (Clear of Vectors) -->
+  <rect class="bg" x="390" y="278" width="220" height="32" rx="4" />
+  <text class="text-title" x="500" y="302">Arms Cross Over</text>
+
+  <!-- Pivot Leader Callouts -->
+  <line class="callout-line" x1="380" y1="362" x2="280" y2="390" />
+  <rect class="bg" x="200" y="375" width="95" height="28" rx="4" />
+  <text class="text-sub" x="247" y="395">Pad Post</text>
+
+  <line class="callout-line" x1="620" y1="362" x2="720" y2="390" />
+  <rect class="bg" x="705" y="375" width="95" height="28" rx="4" />
+  <text class="text-sub" x="752" y="395">Pad Post</text>
+</svg>

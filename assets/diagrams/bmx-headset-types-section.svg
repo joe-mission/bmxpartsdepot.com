@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520">
+  <title>Headset Types in Cross Section</title>
+  <desc>Cross-section comparing Integrated, Zero Stack, and Traditional BMX headset bearing and cup placements.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .head-tube { fill: #08090b; stroke: #08090b; stroke-width: 2; }
+      .bearing { fill: #00a4e6; stroke: #08090b; stroke-width: 2.5; }
+      .cup { fill: #e64700; stroke: #08090b; stroke-width: 2.5; }
+      .grid-line { stroke: #e2e5e9; stroke-width: 2; }
+      .text-title { fill: #08090b; font-family: system-ui, -apple-system, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 0.05em; text-anchor: middle; }
+      .text-sub { fill: #6b7280; font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 500; text-anchor: middle; }
+      .callout-line { stroke: #6b7280; stroke-width: 2; stroke-dasharray: 4 4; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1000" height="520" />
+
+  <!-- Grid Dividers -->
+  <line class="grid-line" x1="333" y1="20" x2="333" y2="500" />
+  <line class="grid-line" x1="666" y1="20" x2="666" y2="500" />
+
+  <!-- ==================== PANEL 1: INTEGRATED ==================== -->
+  <g id="integrated">
+    <text class="text-title" x="166.5" y="60">INTEGRATED</text>
+
+    <!-- Head Tube Shell with Internal Integrated Beveled Seats (Ink) -->
+    <path class="head-tube" d="M 60 120 L 105 120 L 105 160 L 130 185 L 130 335 L 105 360 L 105 400 L 60 400 Z" />
+    <path class="head-tube" d="M 273 120 L 228 120 L 228 160 L 203 185 L 203 335 L 228 360 L 228 400 L 273 400 Z" />
+
+    <!-- Sealed Bearings Sitting Directly in Frame Bevels (Cyan) -->
+    <path class="bearing" d="M 105 125 L 140 125 L 140 160 L 115 160 Z" />
+    <path class="bearing" d="M 228 125 L 193 125 L 193 160 L 218 160 Z" />
+
+    <text class="text-sub" x="166.5" y="465">
+      <tspan x="166.5" dy="0">bearing sits directly</tspan>
+      <tspan x="166.5" dy="26">in the head tube</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== PANEL 2: ZERO STACK ==================== -->
+  <g id="zero-stack">
+    <text class="text-title" x="500" y="60">ZERO STACK</text>
+
+    <!-- Head Tube Shell with Internal Stepped Bore (Ink) -->
+    <path class="head-tube" d="M 390 120 L 420 120 L 420 180 L 440 180 L 440 340 L 420 340 L 420 400 L 390 400 Z" />
+    <path class="head-tube" d="M 610 120 L 580 120 L 580 180 L 560 180 L 560 340 L 580 340 L 580 400 L 610 400 Z" />
+
+    <!-- Internal Pressed Metal Cups (Orange) -->
+    <path class="cup" d="M 420 120 L 455 120 L 455 175 L 440 175 L 440 132 L 420 132 Z" />
+    <path class="cup" d="M 580 120 L 545 120 L 545 175 L 560 175 L 560 132 L 580 132 Z" />
+
+    <!-- Recessed Bearings Inside Internal Cups (Cyan) -->
+    <rect class="bearing" x="440" y="125" width="28" height="42" rx="2" />
+    <rect class="bearing" x="532" y="125" width="28" height="42" rx="2" />
+
+    <text class="text-sub" x="500" y="465">
+      <tspan x="500" dy="0">bearing recessed into</tspan>
+      <tspan x="500" dy="26">internal cup</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== PANEL 3: TRADITIONAL ==================== -->
+  <g id="traditional">
+    <text class="text-title" x="833" y="60">TRADITIONAL</text>
+
+    <!-- Straight Smooth Bore Head Tube (Ink) -->
+    <rect class="head-tube" x="740" y="160" width="30" height="200" rx="3" />
+    <rect class="head-tube" x="896" y="160" width="30" height="200" rx="3" />
+
+    <!-- Protruding External Pressed Cups (Orange) -->
+    <path class="cup" d="M 725 115 L 785 115 L 785 160 L 770 160 L 770 190 L 755 190 L 755 160 L 725 160 Z" />
+    <path class="cup" d="M 941 115 L 881 115 L 881 160 L 896 160 L 896 190 L 911 190 L 911 160 L 941 160 Z" />
+
+    <!-- Bearings Inside External Cups (Cyan) -->
+    <rect class="bearing" x="732" y="120" width="32" height="34" rx="3" />
+    <rect class="bearing" x="902" y="120" width="32" height="34" rx="3" />
+
+    <text class="text-sub" x="833" y="465">
+      <tspan x="833" dy="0">bearing in cup pressed</tspan>
+      <tspan x="833" dy="26">outside head tube</tspan>
+    </text>
+  </g>
+</svg>

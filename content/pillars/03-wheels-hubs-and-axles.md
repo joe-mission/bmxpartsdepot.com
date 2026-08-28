@@ -36,7 +36,7 @@ Three designs have been used to let a BMX bike coast. They are not interchangeab
 
 **Try to unscrew the cog.** A freewheel will come off with a freewheel removal tool as one unit and leave threads behind on the hub. A cassette driver will not.
 
-::: figure The three BMX rear hub types in section | TBD | Cutaway comparison of a cassette hub, a freecoaster hub and a threaded freewheel hub showing where the ratchet or clutch sits in each
+::: figure The three BMX rear hub types in section | assets/diagrams/bmx-rear-hub-types-comparison.svg | Cutaway comparison of a cassette hub, a freecoaster hub and a threaded freewheel hub showing where the ratchet or clutch sits in each
 Where the mechanism lives in each design, and why that is what makes them incompatible.
 :::
 

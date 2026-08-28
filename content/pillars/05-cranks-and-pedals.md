@@ -48,7 +48,7 @@ A **two-piece crank** sits in the middle. The drive side arm and the spindle are
 </table>
 </div>
 
-::: figure One-piece, two-piece and three-piece cranks compared | TBD | Side by side line drawing of an Ashtabula one-piece crank, a two-piece crank with an integrated drive arm and spindle, and a three-piece crank with two arms and a separate spindle
+::: figure One-piece, two-piece and three-piece cranks compared | assets/diagrams/bmx-crank-types-comparison.svg | Side by side line drawing of an Ashtabula one-piece crank, a two-piece crank with an integrated drive arm and spindle, and a three-piece crank with two arms and a separate spindle
 The same view of all three, with the joints marked, so the identification can be made without pulling anything apart.
 :::
 

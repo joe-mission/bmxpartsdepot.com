@@ -56,7 +56,7 @@ A **tripod** seat is the older three-bolt arrangement, with the seat base boltin
 - whether pivotal spline pitch is genuinely common between makers or only within a maker
 :::
 
-::: figure The three seat interfaces | TBD | Cross section drawings of a pivotal seat and post, a railed seat and post head, and a tripod seat mounting plate
+::: figure The three seat interfaces | assets/diagrams/bmx-seat-interfaces-comparison.svg | Cross section drawings of a pivotal seat and post, a railed seat and post head, and a tripod seat mounting plate
 The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.
 :::
 

@@ -38,7 +38,7 @@ Because the pull is upward on a triangle of cable, **the shape of that triangle 
 
 Pad position is adjustable in more directions than most people use. The pad can move up and down the arm, in and out from the rim, and rotate to match the rim's braking surface. **The pad face wants to sit fully on the braking surface, not hanging over the top edge of the rim and not touching the tyre.** A pad that has been running half on the tyre is a used part that gets binned rather than sold.
 
-::: figure How a U-brake pulls | TBD | Diagram of a BMX U-brake showing the two arms crossing over their posts, the straddle cable triangle, the yoke, and the direction of force at each point
+::: figure How a U-brake pulls | assets/diagrams/bmx-u-brake-action.svg | Diagram of a BMX U-brake showing the two arms crossing over their posts, the straddle cable triangle, the yoke, and the direction of force at each point
 The force path from the lever to the pad, with the straddle triangle drawn at two different heights to show how the mechanical advantage changes.
 :::
 

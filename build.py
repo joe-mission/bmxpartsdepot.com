@@ -204,6 +204,58 @@ def d_video(arg, body, ctx):
     return '<figure class="video">%s%s</figure>' % (frame, cap_html)
 
 
+def inline_svg(path, uid):
+    """Inline an SVG so the page's own fonts and CSS reach it.
+
+    Loaded through <img> an SVG is a sealed document: webfonts never
+    arrive, its text is not selectable, not searchable and invisible to a
+    screen reader. Inlining fixes all of that, but it drops the file's
+    guts into a shared document, and these files were drawn independently:
+    `.bg` is defined in all thirteen and `id="arrow-end"` in four. Three
+    diagrams share the headset page, so unscoped they would fight, and
+    every marker reference would resolve to whichever SVG the browser
+    parsed first.
+
+    So everything gets namespaced on the way in: internal ids and the
+    url(#...) references that point at them, and every CSS selector gets
+    prefixed with the wrapper's own id.
+    """
+    raw = open(path, encoding="utf-8").read()
+    raw = re.sub(r"<\?xml[^>]*\?>\s*", "", raw)
+    raw = re.sub(r"<!DOCTYPE[^>]*>\s*", "", raw)
+
+    # ids first, longest name first so short names cannot corrupt long ones
+    for ident in sorted(set(re.findall(r'\bid="([^"]+)"', raw)), key=len, reverse=True):
+        new = "%s-%s" % (uid, ident)
+        raw = raw.replace('id="%s"' % ident, 'id="%s"' % new)
+        raw = raw.replace("url(#%s)" % ident, "url(#%s)" % new)
+        raw = raw.replace('href="#%s"' % ident, 'href="#%s"' % new)
+
+    def scope(m):
+        css = m.group(1)
+        # the drawings ask for system-ui; the page already loads Inter,
+        # so put it in front and keep the rest of the stack as written
+        css = re.sub(r"font-family:\s*system-ui", "font-family: Inter, system-ui", css)
+        out = []
+        for sel, decl in re.findall(r"([^{}]+)\{([^{}]*)\}", css):
+            sels = ",".join("#%s %s" % (uid, s.strip()) for s in sel.split(",") if s.strip())
+            if sels:
+                out.append("%s{%s}" % (sels, decl.strip()))
+        return "<style>%s</style>" % "".join(out)
+
+    raw = re.sub(r"<style[^>]*>(.*?)</style>", scope, raw, flags=re.S)
+
+    def root(m):
+        tag = re.sub(r'\s(?:width|height)="[^"]*"', "", m.group(0))
+        return tag.replace(
+            "<svg",
+            '<svg id="%s" role="img" style="display:block;width:100%%;height:auto"' % uid,
+            1,
+        )
+
+    return re.sub(r"<svg[^>]*>", root, raw, count=1)
+
+
 def d_figure(arg, body, ctx):
     parts = [p.strip() for p in arg.split("|")]
     title = parts[0] if parts else ""
@@ -217,10 +269,15 @@ def d_figure(arg, body, ctx):
 
     if src and not src.upper().startswith("TBD"):
         ctx["images"].append({"title": title, "src": src, "caption": caption or title})
-        body_html = (
-            '<div class="fig-body"><img src="%s" alt="%s" loading="lazy" decoding="async"></div>'
-            % (html.escape(src, quote=True), html.escape(alt, quote=True))
-        )
+        local = os.path.join(ROOT, src.lstrip("/"))
+        if src.lower().endswith(".svg") and os.path.isfile(local):
+            uid = "dg-" + slugify(os.path.splitext(os.path.basename(src))[0])
+            body_html = '<div class="fig-body">%s</div>' % inline_svg(local, uid)
+        else:
+            body_html = (
+                '<div class="fig-body"><img src="%s" alt="%s" loading="lazy" decoding="async"></div>'
+                % (html.escape(src, quote=True), html.escape(alt, quote=True))
+            )
     else:
         ctx["todo"].append("diagram: %s" % (title or "untitled"))
         body_html = (

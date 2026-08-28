@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420">
+  <title>BMX Butted Tubing Section</title>
+  <desc>Cross-section comparing straight gauge tubing against double-butted tubing showing wall thickness differences.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .outer-tube { fill: #08090b; }
+      .butted-wall { fill: #00a4e6; }
+      .bore-space { fill: #ffffff; }
+      .text-title { fill: #08090b; font-family: system-ui, -apple-system, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 0.05em; }
+      .text-sub { fill: #6b7280; font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 500; }
+      .text-disclaimer { fill: #6b7280; font-family: system-ui, -apple-system, sans-serif; font-size: 20px; font-style: italic; text-anchor: end; }
+      .grid-line { stroke: #e2e5e9; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1000" height="420" />
+  <line class="grid-line" x1="40" y1="210" x2="960" y2="210" />
+
+  <!-- TOP TUBE: STRAIGHT GAUGE -->
+  <g id="straight-gauge">
+    <text class="text-title" x="60" y="55">STRAIGHT GAUGE</text>
+    <text class="text-sub" x="60" y="88">same wall thickness throughout</text>
+
+    <rect class="outer-tube" x="60" y="110" width="880" height="70" rx="4" />
+    <rect class="bore-space" x="60" y="128" width="880" height="34" />
+  </g>
+
+  <!-- BOTTOM TUBE: DOUBLE BUTTED -->
+  <g id="double-butted">
+    <text class="text-title" x="60" y="260">DOUBLE BUTTED</text>
+    <text class="text-sub" x="60" y="293">thicker at the joints, thinner in the middle</text>
+
+    <!-- Outer Frame Profile -->
+    <rect class="outer-tube" x="60" y="315" width="880" height="70" rx="4" />
+    
+    <!-- Butted Inner Profile (Cyan highlights thin mid-section) -->
+    <path class="butted-wall" d="M 60 315 L 940 315 L 940 385 L 60 385 Z" />
+    
+    <!-- Bore Cavity showing thick ends (15px wall) and thin middle (6px wall) -->
+    <path class="bore-space" d="M 60 330 L 220 330 C 270 321, 310 321, 360 321 L 640 321 C 690 321, 730 330, 780 330 L 940 330 L 940 370 L 780 370 C 730 370, 690 379, 640 379 L 360 379 C 310 379, 270 370, 220 370 L 60 370 Z" />
+  </g>
+
+  <!-- Corner Disclaimer -->
+  <text class="text-disclaimer" x="940" y="38">not to scale</text>
+</svg>

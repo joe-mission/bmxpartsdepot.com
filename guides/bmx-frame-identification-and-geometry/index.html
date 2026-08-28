@@ -214,6 +214,22 @@
       ]
     },
     {
+      "@type": "ImageObject",
+      "@id": "https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#image-butted-tube-wall-thickness-in-section",
+      "name": "Butted tube wall thickness in section",
+      "caption": "Straight gauge against double butted at the same outer diameter, with the thin midsection called out.",
+      "contentUrl": "https://bmxpartsdepot.com/assets/diagrams/bmx-butted-tubing-section.svg",
+      "url": "https://bmxpartsdepot.com/assets/diagrams/bmx-butted-tubing-section.svg"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#image-where-the-four-frame-measurements-are-taken",
+      "name": "Where the four frame measurements are taken",
+      "caption": "One frame with all four measurements drawn on, showing which are horizontal and which are not.",
+      "contentUrl": "https://bmxpartsdepot.com/assets/diagrams/bmx-frame-measurement-points.svg",
+      "url": "https://bmxpartsdepot.com/assets/diagrams/bmx-frame-measurement-points.svg"
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": "https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#crumbs",
       "itemListElement": [
@@ -301,7 +317,45 @@
 <p>The naming counts transitions, not tubes. <strong>Single butted</strong> has one thickness change. <strong>Double butted</strong> is thick, thin, thick, which is the common frame tube. <strong>Triple butted</strong> has three different wall thicknesses. <strong>Quad butted</strong> claims four. Past double butted the marketing outruns the engineering fairly quickly, and quad butted in particular is used loosely enough by brands that it is worth treating as a description of intent rather than a spec.</p>
 <p>You cannot see butting from outside. The outer diameter is constant, which is the point. What you can do is feel it: a butted frame is noticeably lighter than a straight-gauge frame that looks identical, and that weight gap is the honest reason butting exists.</p>
 <p>For a used buyer, butting matters in one specific way. A thin-walled middle section dents more easily than a thick-walled one. A dent in the middle of a butted top tube is in the thinnest part of the tube. That is worth knowing before you decide a dent is cosmetic.</p>
-<figure class="diagram"><div class="fig-body placeholder"><span class="todo">[DIAGRAM NEEDED]</span><span>Butted tube wall thickness in section</span></div><figcaption><b>Butted tube wall thickness in section</b> Straight gauge against double butted at the same outer diameter, with the thin midsection called out.</figcaption></figure>
+<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-butted-tubing-section" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420">
+  <title>BMX Butted Tubing Section</title>
+  <desc>Cross-section comparing straight gauge tubing against double-butted tubing showing wall thickness differences.</desc>
+
+  <defs>
+    <style>#dg-bmx-butted-tubing-section .bg{fill: #ffffff;}#dg-bmx-butted-tubing-section .outer-tube{fill: #08090b;}#dg-bmx-butted-tubing-section .butted-wall{fill: #00a4e6;}#dg-bmx-butted-tubing-section .bore-space{fill: #ffffff;}#dg-bmx-butted-tubing-section .text-title{fill: #08090b; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: 0.05em;}#dg-bmx-butted-tubing-section .text-sub{fill: #6b7280; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 500;}#dg-bmx-butted-tubing-section .text-disclaimer{fill: #6b7280; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 20px; font-style: italic; text-anchor: end;}#dg-bmx-butted-tubing-section .grid-line{stroke: #e2e5e9; stroke-width: 2;}</style>
+  </defs>
+
+  <rect class="bg" width="1000" height="420" />
+  <line class="grid-line" x1="40" y1="210" x2="960" y2="210" />
+
+  <!-- TOP TUBE: STRAIGHT GAUGE -->
+  <g id="dg-bmx-butted-tubing-section-straight-gauge">
+    <text class="text-title" x="60" y="55">STRAIGHT GAUGE</text>
+    <text class="text-sub" x="60" y="88">same wall thickness throughout</text>
+
+    <rect class="outer-tube" x="60" y="110" width="880" height="70" rx="4" />
+    <rect class="bore-space" x="60" y="128" width="880" height="34" />
+  </g>
+
+  <!-- BOTTOM TUBE: DOUBLE BUTTED -->
+  <g id="dg-bmx-butted-tubing-section-double-butted">
+    <text class="text-title" x="60" y="260">DOUBLE BUTTED</text>
+    <text class="text-sub" x="60" y="293">thicker at the joints, thinner in the middle</text>
+
+    <!-- Outer Frame Profile -->
+    <rect class="outer-tube" x="60" y="315" width="880" height="70" rx="4" />
+    
+    <!-- Butted Inner Profile (Cyan highlights thin mid-section) -->
+    <path class="butted-wall" d="M 60 315 L 940 315 L 940 385 L 60 385 Z" />
+    
+    <!-- Bore Cavity showing thick ends (15px wall) and thin middle (6px wall) -->
+    <path class="bore-space" d="M 60 330 L 220 330 C 270 321, 310 321, 360 321 L 640 321 C 690 321, 730 330, 780 330 L 940 330 L 940 370 L 780 370 C 730 370, 690 379, 640 379 L 360 379 C 310 379, 270 370, 220 370 L 60 370 Z" />
+  </g>
+
+  <!-- Corner Disclaimer -->
+  <text class="text-disclaimer" x="940" y="38">not to scale</text>
+</svg>
+</div><figcaption><b>Butted tube wall thickness in section</b> Straight gauge against double butted at the same outer diameter, with the thin midsection called out.</figcaption></figure>
 <h2 id="frame-gusset">Gussets and where frames get reinforced</h2><div class="sec-rule"></div>
 <div class="quick-answer"><p class="qa-label">Quick Answer</p><p><strong>A gusset is a plate or tube welded into a joint to spread load away from the weld.</strong> The two places they appear on BMX frames are the head tube junction and the bottom bracket area, because those are where the loads arrive.</p></div>
 <p>A weld is a hard line. Load arriving at that line concentrates there, and cracks on steel frames start at welds far more often than in the middle of tubes. A gusset moves the edge of the reinforcement away from the weld and gives the load somewhere gentler to go.</p>
@@ -332,7 +386,71 @@
 <p>Top tube is chosen by rider height and by what the bike is for, and the honest answer is that the ranges overlap heavily. Riders of the same height run different lengths depending on whether they ride street, park or trails, and personal preference moves it further. Anyone publishing a single top tube length for a given height is oversimplifying. This guide is not publishing a height chart until the ranges have been checked against what manufacturers actually recommend rather than against each other.</p>
 <p><strong>Frame reach</strong> is the more precise version of the same idea: the horizontal distance from the bottom bracket to the top of the head tube. It separates two frames that share a top tube length but put the bottom bracket in different places. It is not printed on many BMX geometry charts, which limits how useful it currently is when comparing used frames.</p>
 <aside class="caliper" data-needs-verify="4"><p class="cal-label">Specifications pending verification</p><p><span class="todo">[SOURCE CHECK NEEDED]</span><br>These figures are not published yet because they have not been confirmed against a manufacturer or other primary source. Sizing figures still to be sourced from manufacturer geometry charts rather than from each other.</p><ul style="margin:10px 0 0;padding-left:20px;font-size:15px;color:var(--muted)"><li>top tube length range sold as a 20 inch BMX complete</li><li>top tube length ranges recommended against rider height</li><li>typical top tube lengths for street, park, dirt and race frames</li><li>typical frame reach figures on modern BMX frames</li></ul></aside>
-<figure class="diagram"><div class="fig-body placeholder"><span class="todo">[DIAGRAM NEEDED]</span><span>Where the four frame measurements are taken</span></div><figcaption><b>Where the four frame measurements are taken</b> One frame with all four measurements drawn on, showing which are horizontal and which are not.</figcaption></figure>
+<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-frame-measurement-points" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <title>BMX Frame Measurement Points</title>
+  <desc>Side view of a BMX frame highlighting Top Tube Length, Chainstay Length, Standover Height, and Wheelbase measurement lines.</desc>
+
+  <defs>
+    <style>#dg-bmx-frame-measurement-points .bg{fill: #ffffff;}#dg-bmx-frame-measurement-points .frame{stroke: #08090b; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; fill: none;}#dg-bmx-frame-measurement-points .frame-thin{stroke: #08090b; stroke-width: 8; stroke-linecap: round; fill: none;}#dg-bmx-frame-measurement-points .ghost-wheel{stroke: #e2e5e9; stroke-width: 3; stroke-dasharray: 6 6; fill: none;}#dg-bmx-frame-measurement-points .dim-line{stroke: #e64700; stroke-width: 3; stroke-dasharray: 6 6;}#dg-bmx-frame-measurement-points .ground-line{stroke: #6b7280; stroke-width: 2; stroke-dasharray: 4 4;}#dg-bmx-frame-measurement-points .text-label{fill: #e64700; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 800; text-anchor: middle;}#dg-bmx-frame-measurement-points .text-sub{fill: #6b7280; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 600; text-anchor: middle;}</style>
+    <marker id="dg-bmx-frame-measurement-points-arrow-start" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#e64700" />
+    </marker>
+    <marker id="dg-bmx-frame-measurement-points-arrow-end" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e64700" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1000" height="620" />
+
+  <!-- Ghosted Wheels & Ground Axis -->
+  <line class="ground-line" x1="50" y1="520" x2="950" y2="520" />
+  <circle class="ghost-wheel" cx="180" cy="380" r="140" />
+  <circle class="ghost-wheel" cx="820" cy="380" r="140" />
+
+  <!-- BMX Frame Skeleton (Ink) -->
+  <!-- Head Tube -->
+  <line class="frame" x1="780" y1="210" x2="800" y2="280" />
+  <!-- Top Tube -->
+  <line class="frame" x1="430" y1="250" x2="790" y2="230" />
+  <!-- Down Tube -->
+  <line class="frame" x1="480" y1="380" x2="795" y2="270" />
+  <!-- Seat Tube -->
+  <line class="frame" x1="480" y1="380" x2="415" y2="200" />
+  <!-- Chainstays -->
+  <line class="frame-thin" x1="480" y1="380" x2="180" y2="380" />
+  <!-- Seatstays -->
+  <line class="frame-thin" x1="425" y1="230" x2="180" y2="380" />
+  <!-- Bottom Bracket Shell -->
+  <circle fill="#08090b" cx="480" cy="380" r="14" />
+
+  <!-- 1. TOP TUBE LENGTH -->
+  <line class="dim-line" x1="423" y1="170" x2="790" y2="170" marker-start="url(#dg-bmx-frame-measurement-points-arrow-start)" marker-end="url(#dg-bmx-frame-measurement-points-arrow-end)" />
+  <line class="ground-line" x1="423" y1="230" x2="423" y2="150" />
+  <line class="ground-line" x1="790" y1="230" x2="790" y2="150" />
+  <rect class="bg" x="520" y="156" width="180" height="26" rx="4" />
+  <text class="text-label" x="610" y="176">Top Tube Length</text>
+
+  <!-- 2. CHAINSTAY LENGTH -->
+  <line class="dim-line" x1="180" y1="420" x2="480" y2="420" marker-start="url(#dg-bmx-frame-measurement-points-arrow-start)" marker-end="url(#dg-bmx-frame-measurement-points-arrow-end)" />
+  <line class="ground-line" x1="180" y1="380" x2="180" y2="440" />
+  <line class="ground-line" x1="480" y1="380" x2="480" y2="440" />
+  <rect class="bg" x="240" y="406" width="180" height="26" rx="4" />
+  <text class="text-label" x="330" y="426">Chainstay Length</text>
+
+  <!-- 3. STANDOVER HEIGHT -->
+  <line class="dim-line" x1="360" y1="240" x2="360" y2="520" marker-start="url(#dg-bmx-frame-measurement-points-arrow-start)" marker-end="url(#dg-bmx-frame-measurement-points-arrow-end)" />
+  <line class="ground-line" x1="360" y1="240" x2="425" y2="240" />
+  <rect class="bg" x="280" y="360" width="160" height="26" rx="4" />
+  <text class="text-label" x="360" y="380">Standover</text>
+
+  <!-- 4. WHEELBASE -->
+  <line class="dim-line" x1="180" y1="560" x2="820" y2="560" marker-start="url(#dg-bmx-frame-measurement-points-arrow-start)" marker-end="url(#dg-bmx-frame-measurement-points-arrow-end)" />
+  <line class="ground-line" x1="180" y1="380" x2="180" y2="580" />
+  <line class="ground-line" x1="820" y1="380" x2="820" y2="580" />
+  <rect class="bg" x="420" y="546" width="160" height="26" rx="4" />
+  <text class="text-label" x="500" y="566">Wheelbase</text>
+</svg>
+</div><figcaption><b>Where the four frame measurements are taken</b> One frame with all four measurements drawn on, showing which are horizontal and which are not.</figcaption></figure>
 <h2 id="chainstay-length">Chainstay length and head tube angle</h2><div class="sec-rule"></div>
 <div class="quick-answer"><p class="qa-label">Quick Answer</p><p><strong>Chainstay length is the distance from the bottom bracket centre to the rear axle centre</strong>, and it is the number that decides how easily the front end comes up. <strong>Head tube angle is how far the head tube leans back from vertical</strong>, and it decides how quickly the bike steers.</p></div>
 <h3 id="chainstay-length">Chainstay length</h3>

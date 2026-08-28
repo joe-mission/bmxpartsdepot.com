@@ -92,7 +92,7 @@ You cannot see butting from outside. The outer diameter is constant, which is th
 
 For a used buyer, butting matters in one specific way. A thin-walled middle section dents more easily than a thick-walled one. A dent in the middle of a butted top tube is in the thinnest part of the tube. That is worth knowing before you decide a dent is cosmetic.
 
-::: figure Butted tube wall thickness in section | TBD | Cutaway of a straight gauge tube next to a double butted tube showing wall thickness changes at each end
+::: figure Butted tube wall thickness in section | assets/diagrams/bmx-butted-tubing-section.svg | Cutaway of a straight gauge tube next to a double butted tube showing wall thickness changes at each end
 Straight gauge against double butted at the same outer diameter, with the thin midsection called out.
 :::
 
@@ -174,7 +174,7 @@ Top tube is chosen by rider height and by what the bike is for, and the honest a
 - typical frame reach figures on modern BMX frames
 :::
 
-::: figure Where the four frame measurements are taken | TBD | Side view diagram of a BMX frame with top tube length, chainstay length, standover height and wheelbase marked
+::: figure Where the four frame measurements are taken | assets/diagrams/bmx-frame-measurement-points.svg | Side view diagram of a BMX frame with top tube length, chainstay length, standover height and wheelbase marked
 One frame with all four measurements drawn on, showing which are horizontal and which are not.
 :::
 
