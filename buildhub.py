@@ -351,16 +351,18 @@ Sitemap: %s/sitemap.xml
         "Blocks marked as caliper verification are bench measurements taken in the shop. "
         "This site does not publish sales figures, review counts, or years in business.",
         "",
-        "## Master pillar guides",
+        "## Fitment Guides and Key Pages",
         "",
+        "- [Home](%s/) : Used and mid-school BMX parts reference and shop portal." % SITE,
+        "- [BMX Fitment Guide and A-Z Parts Glossary](%s/guides/) : The master index page and searchable dictionary of all BMX fitment standards." % SITE,
     ]
-    for i, p in enumerate(pages, 1):
+    for p in pages:
         m = p["meta"]
-        lines.append("- [%s](%s/guides/%s/): %s"
+        lines.append("- [%s](%s/guides/%s/) : %s"
                      % (m.get("short", m.get("title", "")), SITE, p["slug"],
                         m.get("description", "")))
     lines.append("")
-    lines.append("## Section anchors")
+    lines.append("## Section Anchors")
     lines.append("")
     lines.append("Each guide is deep-linkable. The sections are:")
     lines.append("")
@@ -369,19 +371,14 @@ Sitemap: %s/sitemap.xml
         lines.append("### %s" % m.get("short", m.get("title", "")))
         lines.append("")
         for anchor, title in p["sections"]:
-            lines.append("- [%s](%s/guides/%s/#%s)" % (title, SITE, p["slug"], anchor))
+            lines.append("- [%s](%s/guides/%s/#%s) : Section of the guide covering %s." % (title, SITE, p["slug"], anchor, title.lower()))
         lines.append("")
     lines += [
-        "## Reference",
-        "",
-        "- [A-Z fitment dictionary](%s/guides/#dictionary): every BMX term, standard, and "
-        "dimension covered on the site, each linking into the guide section that explains it." % SITE,
-        "- [eBay store](https://www.ebay.com/usr/bmx-parts-depot): the live inventory.",
-        "",
         "## Optional",
         "",
-        "- [Privacy policy](%s/privacy.html)" % SITE,
-        "- [Terms of use](%s/terms.html)" % SITE,
+        "- [eBay Store](https://www.ebay.com/usr/bmx-parts-depot) : The live eBay inventory store.",
+        "- [Privacy Policy](%s/privacy.html) : Privacy policy for the website." % SITE,
+        "- [Terms of Use](%s/terms.html) : Terms and conditions of using the website." % SITE,
         "",
     ]
     open(os.path.join(root, "llms.txt"), "w", encoding="utf-8").write("\n".join(lines))

@@ -8,183 +8,181 @@ Sales happen on eBay, not here. There is no checkout on this site. Inventory lin
 
 Dimensions are taken from component manufacturer and established retailer documentation, and each figure carries its status in the page: confirmed by two or more independent sources, single source, or sources in conflict. Where sources disagree the range is published rather than a single figure picked for tidiness. Blocks marked as caliper verification are bench measurements taken in the shop. This site does not publish sales figures, review counts, or years in business.
 
-## Master pillar guides
+## Fitment Guides and Key Pages
 
-- [Bottom Brackets and Spindles](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/): American, Mid, Spanish, and Euro bottom brackets compared, with shell diameters, bearing sizes, and which crank spindles fit each one.
-- [Frame ID, Materials and Geometry](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/): Chromoly against hi-ten, butted tubing, gussets, dropouts and brake mounts, plus what top tube length, chainstay length and head angle actually change on a BMX frame.
-- [Wheels, Hubs and Axles](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/): Cassette, freecoaster and freewheel hubs compared, plus axle diameters, male and female axles, hub spacing, rim wall construction, bead seat diameter and spoke count.
-- [Drivetrain, Chains and Sprockets](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/): Chain width 1/8 inch against 3/32 inch, half links, gear ratio and gear inches, micro drive, sprocket bolt patterns and spline drive, sprocket bore, chainline and chain tension.
-- [Cranks and Pedals](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/): One-piece, two-piece and three-piece BMX cranks explained, with how spindles attach, what crank arm length changes, and which pedal thread goes with which crank.
-- [Brakes, Cables and Detanglers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/): How BMX U-brakes mount, what 990 mounts and gyro tabs are, how a detangler actually works, and what a brakeless frame is missing when you try to put a brake back on it.
-- [Headsets, Forks and Stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/): Integrated, zero stack and threaded BMX headsets explained, with how threadless compression works, what fork offset changes, and how to tell a quill stem from a threadless one.
-- [Handlebars, Grips and Cockpit](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/): How BMX bars are measured, what rise, width, backsweep and upsweep each change, two-piece against four-piece construction, clamp diameter, and how grips and stem choice finish the cockpit.
-- [Seats, Posts and Clamps](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/): Pivotal, railed and tripod seats explained, how seat post diameter is measured, integrated against external clamps, slammed setups, and how to get a seized post out of a frame.
-- [Era, Dating and Restoration ID](https://bmxpartsdepot.com/guides/vintage-bmx-identification/): What old school, mid school and modern actually mean, why the year boundaries are contested, and how to read a frame's era from its bottom bracket, headset, cranks, bars and construction.
+- [Home](https://bmxpartsdepot.com/) : Used and mid-school BMX parts reference and shop portal.
+- [BMX Fitment Guide and A-Z Parts Glossary](https://bmxpartsdepot.com/guides/) : The master index page and searchable dictionary of all BMX fitment standards.
+- [Bottom Brackets and Spindles](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/) : American, Mid, Spanish, and Euro bottom brackets compared, with shell diameters, bearing sizes, and which crank spindles fit each one.
+- [Frame ID, Materials and Geometry](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/) : Chromoly against hi-ten, butted tubing, gussets, dropouts and brake mounts, plus what top tube length, chainstay length and head angle actually change on a BMX frame.
+- [Wheels, Hubs and Axles](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/) : Cassette, freecoaster and freewheel hubs compared, plus axle diameters, male and female axles, hub spacing, rim wall construction, bead seat diameter and spoke count.
+- [Drivetrain, Chains and Sprockets](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/) : Chain width 1/8 inch against 3/32 inch, half links, gear ratio and gear inches, micro drive, sprocket bolt patterns and spline drive, sprocket bore, chainline and chain tension.
+- [Cranks and Pedals](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/) : One-piece, two-piece and three-piece BMX cranks explained, with how spindles attach, what crank arm length changes, and which pedal thread goes with which crank.
+- [Brakes, Cables and Detanglers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/) : How BMX U-brakes mount, what 990 mounts and gyro tabs are, how a detangler actually works, and what a brakeless frame is missing when you try to put a brake back on it.
+- [Headsets, Forks and Stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/) : Integrated, zero stack and threaded BMX headsets explained, with how threadless compression works, what fork offset changes, and how to tell a quill stem from a threadless one.
+- [Handlebars, Grips and Cockpit](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/) : How BMX bars are measured, what rise, width, backsweep and upsweep each change, two-piece against four-piece construction, clamp diameter, and how grips and stem choice finish the cockpit.
+- [Seats, Posts and Clamps](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/) : Pivotal, railed and tripod seats explained, how seat post diameter is measured, integrated against external clamps, slammed setups, and how to get a seized post out of a frame.
+- [Era, Dating and Restoration ID](https://bmxpartsdepot.com/guides/vintage-bmx-identification/) : What old school, mid school and modern actually mean, why the year boundaries are contested, and how to read a frame's era from its bottom bracket, headset, cranks, bars and construction.
 
-## Section anchors
+## Section Anchors
 
 Each guide is deep-linkable. The sections are:
 
 ### Bottom Brackets and Spindles
 
-- [How to identify your bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#identify)
-- [American bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#american-bottom-bracket)
-- [Mid bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#mid-bottom-bracket)
-- [Spanish bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#spanish-bottom-bracket)
-- [Euro bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#euro-bottom-bracket)
-- [The four standards side by side](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#comparison)
-- [Crank spindle diameter](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#crank-spindle-diameter)
-- [How bore and outer diameter work together](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#sealed-bearing-sizes)
-- [Swapping standards and spindles](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#compatibility)
-- [Cross-brand compatibility](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#cross-brand)
-- [Bottom bracket shell width](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#bottom-bracket-shell-width)
-- [Press-fit bottom brackets and how they go wrong](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#press-fit-bottom-bracket)
-- [Loose ball bearings, and when to bin them](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#loose-ball-bearings)
-- [Unsealed bearings on used parts](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#unsealed-bearings)
-- [Questions](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#questions)
+- [How to identify your bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#identify) : Section of the guide covering how to identify your bottom bracket.
+- [American bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#american-bottom-bracket) : Section of the guide covering american bottom bracket.
+- [Mid bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#mid-bottom-bracket) : Section of the guide covering mid bottom bracket.
+- [Spanish bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#spanish-bottom-bracket) : Section of the guide covering spanish bottom bracket.
+- [Euro bottom bracket](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#euro-bottom-bracket) : Section of the guide covering euro bottom bracket.
+- [The four standards side by side](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#comparison) : Section of the guide covering the four standards side by side.
+- [Crank spindle diameter](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#crank-spindle-diameter) : Section of the guide covering crank spindle diameter.
+- [How bore and outer diameter work together](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#sealed-bearing-sizes) : Section of the guide covering how bore and outer diameter work together.
+- [Swapping standards and spindles](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#compatibility) : Section of the guide covering swapping standards and spindles.
+- [Cross-brand compatibility](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#cross-brand) : Section of the guide covering cross-brand compatibility.
+- [Bottom bracket shell width](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#bottom-bracket-shell-width) : Section of the guide covering bottom bracket shell width.
+- [Press-fit bottom brackets and how they go wrong](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#press-fit-bottom-bracket) : Section of the guide covering press-fit bottom brackets and how they go wrong.
+- [Loose ball bearings, and when to bin them](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#loose-ball-bearings) : Section of the guide covering loose ball bearings, and when to bin them.
+- [Unsealed bearings on used parts](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#unsealed-bearings) : Section of the guide covering unsealed bearings on used parts.
+- [Questions](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#questions) : Section of the guide covering questions.
 
 ### Frame ID, Materials and Geometry
 
-- [How to identify a used BMX frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#identify)
-- [Chromoly, hi-ten and what the sticker means](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#4130-chromoly)
-- [Butted tubing](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#butted-tubing)
-- [Gussets and where frames get reinforced](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#frame-gusset)
-- [Dropouts, slot width and brake mounts](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#dropout-slot-width)
-- [Top tube length and how a frame is sized](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#top-tube-length)
-- [Chainstay length and head tube angle](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#chainstay-length)
-- [Standover and wheelbase](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#wheelbase)
-- [Serial numbers and dating a frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#serials)
-- [Checking a used frame for damage](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#damage)
-- [Telling hi-ten from chromoly on an unlabelled frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#hi-ten-steel)
-- [Chainstay yoke, and what fails there](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#chainstay-yoke)
-- [Quad-butted tubing](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#quad-butted-tubing)
-- [Vertical dropouts, and why BMX does not use them](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#vertical-dropout)
-- [Junior and Pro XL frame sizes](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#junior-bmx-frame-size)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#questions)
+- [How to identify a used BMX frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#identify) : Section of the guide covering how to identify a used bmx frame.
+- [Chromoly, hi-ten and what the sticker means](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#4130-chromoly) : Section of the guide covering chromoly, hi-ten and what the sticker means.
+- [Butted tubing](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#butted-tubing) : Section of the guide covering butted tubing.
+- [Gussets and where frames get reinforced](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#frame-gusset) : Section of the guide covering gussets and where frames get reinforced.
+- [Dropouts, slot width and brake mounts](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#dropout-slot-width) : Section of the guide covering dropouts, slot width and brake mounts.
+- [Top tube length and how a frame is sized](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#top-tube-length) : Section of the guide covering top tube length and how a frame is sized.
+- [Chainstay length and head tube angle](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#chainstay-length) : Section of the guide covering chainstay length and head tube angle.
+- [Standover and wheelbase](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#wheelbase) : Section of the guide covering standover and wheelbase.
+- [Serial numbers and dating a frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#serials) : Section of the guide covering serial numbers and dating a frame.
+- [Checking a used frame for damage](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#damage) : Section of the guide covering checking a used frame for damage.
+- [Telling hi-ten from chromoly on an unlabelled frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#hi-ten-steel) : Section of the guide covering telling hi-ten from chromoly on an unlabelled frame.
+- [Chainstay yoke, and what fails there](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#chainstay-yoke) : Section of the guide covering chainstay yoke, and what fails there.
+- [Quad-butted tubing](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#quad-butted-tubing) : Section of the guide covering quad-butted tubing.
+- [Vertical dropouts, and why BMX does not use them](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#vertical-dropout) : Section of the guide covering vertical dropouts, and why bmx does not use them.
+- [Junior and Pro XL frame sizes](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#junior-bmx-frame-size) : Section of the guide covering junior and pro xl frame sizes.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#questions) : Section of the guide covering questions.
 
 ### Wheels, Hubs and Axles
 
-- [Telling the three rear hub types apart](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#identify-rear-hub)
-- [Cassette hub](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#cassette-hub)
-- [Freecoaster](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#freecoaster)
-- [Freewheel](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-freewheel)
-- [Drivers and cog sizes](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#cassette-driver)
-- [Axle diameter, male axles and female axles](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-axle-diameter)
-- [Hub spacing and over locknut dimension](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#over-locknut-dimension)
-- [Rims, wall construction and bead seat diameter](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#rim-wall-construction)
-- [Spoke count and lacing](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#spoke-lacing-pattern)
-- [Pegs and what decides whether one fits](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-pegs)
-- [Hub guards, drive side and left hand drive](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#left-hand-drive)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#questions)
+- [Telling the three rear hub types apart](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#identify-rear-hub) : Section of the guide covering telling the three rear hub types apart.
+- [Cassette hub](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#cassette-hub) : Section of the guide covering cassette hub.
+- [Freecoaster](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#freecoaster) : Section of the guide covering freecoaster.
+- [Freewheel](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-freewheel) : Section of the guide covering freewheel.
+- [Drivers and cog sizes](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#cassette-driver) : Section of the guide covering drivers and cog sizes.
+- [Axle diameter, male axles and female axles](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-axle-diameter) : Section of the guide covering axle diameter, male axles and female axles.
+- [Hub spacing and over locknut dimension](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#over-locknut-dimension) : Section of the guide covering hub spacing and over locknut dimension.
+- [Rims, wall construction and bead seat diameter](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#rim-wall-construction) : Section of the guide covering rims, wall construction and bead seat diameter.
+- [Spoke count and lacing](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#spoke-lacing-pattern) : Section of the guide covering spoke count and lacing.
+- [Pegs and what decides whether one fits](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-pegs) : Section of the guide covering pegs and what decides whether one fits.
+- [Hub guards, drive side and left hand drive](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#left-hand-drive) : Section of the guide covering hub guards, drive side and left hand drive.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#questions) : Section of the guide covering questions.
 
 ### Drivetrain, Chains and Sprockets
 
-- [What a BMX drivetrain is made of](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#overview)
-- [Chain width, 1/8 inch and 3/32 inch](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#bmx-chain-size)
-- [Half links](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#half-links)
-- [Gear ratio and gear inches](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#bmx-gear-ratio)
-- [Micro drive](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#micro-drive)
-- [Drivers and cog sizes](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#cassette-driver)
-- [Sprocket bolt patterns](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#sprocket-bolt-pattern)
-- [Spline drive and sprocket bore](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#spline-drive-sprocket)
-- [Chainline](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#chainline)
-- [Chain tension and tensioners](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#internal-chain-tensioner)
-- [Drive side and non-drive side](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#non-drive-side)
-- [Sprocket guards](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#sprocket-guard)
-- [Questions](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#questions)
+- [What a BMX drivetrain is made of](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#overview) : Section of the guide covering what a bmx drivetrain is made of.
+- [Chain width, 1/8 inch and 3/32 inch](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#bmx-chain-size) : Section of the guide covering chain width, 1/8 inch and 3/32 inch.
+- [Half links](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#half-links) : Section of the guide covering half links.
+- [Gear ratio and gear inches](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#bmx-gear-ratio) : Section of the guide covering gear ratio and gear inches.
+- [Micro drive](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#micro-drive) : Section of the guide covering micro drive.
+- [Drivers and cog sizes](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#cassette-driver) : Section of the guide covering drivers and cog sizes.
+- [Sprocket bolt patterns](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#sprocket-bolt-pattern) : Section of the guide covering sprocket bolt patterns.
+- [Spline drive and sprocket bore](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#spline-drive-sprocket) : Section of the guide covering spline drive and sprocket bore.
+- [Chainline](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#chainline) : Section of the guide covering chainline.
+- [Chain tension and tensioners](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#internal-chain-tensioner) : Section of the guide covering chain tension and tensioners.
+- [Drive side and non-drive side](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#non-drive-side) : Section of the guide covering drive side and non-drive side.
+- [Sprocket guards](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#sprocket-guard) : Section of the guide covering sprocket guards.
+- [Questions](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#questions) : Section of the guide covering questions.
 
 ### Cranks and Pedals
 
-- [Telling the three crank types apart](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-types)
-- [One-piece cranks](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#one-piece-crank)
-- [Two-piece and three-piece cranks](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#three-piece-crank)
-- [Spindle attachment, boots and pinch bolts](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#pinch-bolt)
-- [Crank spindle diameter](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-spindle-diameter)
-- [Crank arm length](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-arm-length)
-- [Pedal thread size](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#pedal-thread-size)
-- [Pedal bodies](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#nylon-pedals)
-- [Sprocket mounting](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#spline-drive-sprocket)
-- [Checking used cranks and pedals](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-condition)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#questions)
+- [Telling the three crank types apart](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-types) : Section of the guide covering telling the three crank types apart.
+- [One-piece cranks](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#one-piece-crank) : Section of the guide covering one-piece cranks.
+- [Two-piece and three-piece cranks](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#three-piece-crank) : Section of the guide covering two-piece and three-piece cranks.
+- [Spindle attachment, boots and pinch bolts](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#pinch-bolt) : Section of the guide covering spindle attachment, boots and pinch bolts.
+- [Crank spindle diameter](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-spindle-diameter) : Section of the guide covering crank spindle diameter.
+- [Crank arm length](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-arm-length) : Section of the guide covering crank arm length.
+- [Pedal thread size](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#pedal-thread-size) : Section of the guide covering pedal thread size.
+- [Pedal bodies](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#nylon-pedals) : Section of the guide covering pedal bodies.
+- [Sprocket mounting](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#spline-drive-sprocket) : Section of the guide covering sprocket mounting.
+- [Checking used cranks and pedals](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-condition) : Section of the guide covering checking used cranks and pedals.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#questions) : Section of the guide covering questions.
 
 ### Brakes, Cables and Detanglers
 
-- [U-brakes and how they work](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#u-brake)
-- [Brake mounts and the 990 name](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#u-brake-mounts)
-- [Removable brake mounts](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#removable-brake-mounts)
-- [Detanglers and how they actually work](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#gyro-detangler)
-- [Gyro tabs](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#gyro-tabs)
-- [Straddle cable and yoke](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#straddle-cable-yoke)
-- [Brake levers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#brake-lever-reach)
-- [V-brakes and calipers on BMX](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#v-brake)
-- [Cable routing and quick release](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#quick-release-brake-cable)
-- [Brakeless frames and what gets left behind](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#brakeless)
-- [Keyed washers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#keyed-washer)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#questions)
+- [U-brakes and how they work](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#u-brake) : Section of the guide covering u-brakes and how they work.
+- [Brake mounts and the 990 name](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#u-brake-mounts) : Section of the guide covering brake mounts and the 990 name.
+- [Removable brake mounts](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#removable-brake-mounts) : Section of the guide covering removable brake mounts.
+- [Detanglers and how they actually work](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#gyro-detangler) : Section of the guide covering detanglers and how they actually work.
+- [Gyro tabs](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#gyro-tabs) : Section of the guide covering gyro tabs.
+- [Straddle cable and yoke](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#straddle-cable-yoke) : Section of the guide covering straddle cable and yoke.
+- [Brake levers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#brake-lever-reach) : Section of the guide covering brake levers.
+- [V-brakes and calipers on BMX](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#v-brake) : Section of the guide covering v-brakes and calipers on bmx.
+- [Cable routing and quick release](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#quick-release-brake-cable) : Section of the guide covering cable routing and quick release.
+- [Brakeless frames and what gets left behind](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#brakeless) : Section of the guide covering brakeless frames and what gets left behind.
+- [Keyed washers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#keyed-washer) : Section of the guide covering keyed washers.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#questions) : Section of the guide covering questions.
 
 ### Headsets, Forks and Stems
 
-- [Headset standards, and why the head tube decides](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards)
-- [Integrated headsets](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#integrated-headset)
-- [Zero stack and pressed cup headsets](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#zero-stack-headset)
-- [Threaded headsets and quill stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#threaded-headset)
-- [Threadless headsets and compression](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#threadless-headset)
-- [Top load and front load stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#front-load-stem)
-- [Steerer tube length and stack](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#steerer-length)
-- [Fork offset](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#fork-offset)
-- [Fork dropouts and axle sizing](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#dropout-slot-width)
-- [Headset play, wear, and checking a used front end](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#headset-play)
-- [Aheadset](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#aheadset)
-- [Quill stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#quill-stem)
-- [Unicrown forks](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#unicrown-fork)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#questions)
+- [Headset standards, and why the head tube decides](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards) : Section of the guide covering headset standards, and why the head tube decides.
+- [Integrated headsets](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#integrated-headset) : Section of the guide covering integrated headsets.
+- [Zero stack and pressed cup headsets](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#zero-stack-headset) : Section of the guide covering zero stack and pressed cup headsets.
+- [Threaded headsets and quill stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#threaded-headset) : Section of the guide covering threaded headsets and quill stems.
+- [Threadless headsets and compression](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#threadless-headset) : Section of the guide covering threadless headsets and compression.
+- [Top load and front load stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#front-load-stem) : Section of the guide covering top load and front load stems.
+- [Steerer tube length and stack](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#steerer-length) : Section of the guide covering steerer tube length and stack.
+- [Fork offset](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#fork-offset) : Section of the guide covering fork offset.
+- [Fork dropouts and axle sizing](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#dropout-slot-width) : Section of the guide covering fork dropouts and axle sizing.
+- [Headset play, wear, and checking a used front end](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#headset-play) : Section of the guide covering headset play, wear, and checking a used front end.
+- [Aheadset](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#aheadset) : Section of the guide covering aheadset.
+- [Quill stems](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#quill-stem) : Section of the guide covering quill stems.
+- [Unicrown forks](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#unicrown-fork) : Section of the guide covering unicrown forks.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#questions) : Section of the guide covering questions.
 
 ### Handlebars, Grips and Cockpit
 
-- [The four numbers on a set of bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-numbers)
-- [Handlebar rise](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-rise)
-- [Handlebar width](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-width)
-- [Backsweep and upsweep](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-backsweep)
-- [Two-piece, three-piece and four-piece bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-construction)
-- [Bar clamp diameter](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#oversize-bar-clamp)
-- [Bar material and butting](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-material)
-- [Grips, flanges and barends](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bmx-grips)
-- [Stems and where they put the bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#front-load-stem)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#questions)
+- [The four numbers on a set of bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-numbers) : Section of the guide covering the four numbers on a set of bars.
+- [Handlebar rise](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-rise) : Section of the guide covering handlebar rise.
+- [Handlebar width](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-width) : Section of the guide covering handlebar width.
+- [Backsweep and upsweep](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#handlebar-backsweep) : Section of the guide covering backsweep and upsweep.
+- [Two-piece, three-piece and four-piece bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-construction) : Section of the guide covering two-piece, three-piece and four-piece bars.
+- [Bar clamp diameter](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#oversize-bar-clamp) : Section of the guide covering bar clamp diameter.
+- [Bar material and butting](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-material) : Section of the guide covering bar material and butting.
+- [Grips, flanges and barends](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bmx-grips) : Section of the guide covering grips, flanges and barends.
+- [Stems and where they put the bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#front-load-stem) : Section of the guide covering stems and where they put the bars.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#questions) : Section of the guide covering questions.
 
 ### Seats, Posts and Clamps
 
-- [Pivotal, railed and tripod](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-types)
-- [Pivotal seats](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#pivotal-seat)
-- [Seat post diameter](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-post-diameter)
-- [Seat clamps, integrated and external](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#integrated-seat-clamp)
-- [Post length, slammed setups and offset](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#post-length)
-- [Stuck and seized seat posts](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#stuck-post)
-- [Seat and post material](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-material)
-- [Combo seat and post units](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#combo-units)
-- [Buying a used seat, post or clamp](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#condition)
-- [Questions](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#questions)
+- [Pivotal, railed and tripod](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-types) : Section of the guide covering pivotal, railed and tripod.
+- [Pivotal seats](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#pivotal-seat) : Section of the guide covering pivotal seats.
+- [Seat post diameter](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-post-diameter) : Section of the guide covering seat post diameter.
+- [Seat clamps, integrated and external](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#integrated-seat-clamp) : Section of the guide covering seat clamps, integrated and external.
+- [Post length, slammed setups and offset](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#post-length) : Section of the guide covering post length, slammed setups and offset.
+- [Stuck and seized seat posts](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#stuck-post) : Section of the guide covering stuck and seized seat posts.
+- [Seat and post material](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-material) : Section of the guide covering seat and post material.
+- [Combo seat and post units](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#combo-units) : Section of the guide covering combo seat and post units.
+- [Buying a used seat, post or clamp](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#condition) : Section of the guide covering buying a used seat, post or clamp.
+- [Questions](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#questions) : Section of the guide covering questions.
 
 ### Era, Dating and Restoration ID
 
-- [Why the year ranges are contested](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#era-boundaries)
-- [Old school](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#old-school-bmx)
-- [Mid school](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#mid-school-bmx)
-- [Modern](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#modern-bmx)
-- [Dating a frame from its features](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#dating-by-feature)
-- [Construction giveaways](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#construction)
-- [The front end: threaded to threadless](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#threaded-to-threadless)
-- [Mag wheels and period wheel details](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#mag-wheels)
-- [Buying and valuing vintage](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#buying-vintage)
-- [Before you restore](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#restoration)
-- [Questions](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#questions)
-
-## Reference
-
-- [A-Z fitment dictionary](https://bmxpartsdepot.com/guides/#dictionary): every BMX term, standard, and dimension covered on the site, each linking into the guide section that explains it.
-- [eBay store](https://www.ebay.com/usr/bmx-parts-depot): the live inventory.
+- [Why the year ranges are contested](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#era-boundaries) : Section of the guide covering why the year ranges are contested.
+- [Old school](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#old-school-bmx) : Section of the guide covering old school.
+- [Mid school](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#mid-school-bmx) : Section of the guide covering mid school.
+- [Modern](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#modern-bmx) : Section of the guide covering modern.
+- [Dating a frame from its features](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#dating-by-feature) : Section of the guide covering dating a frame from its features.
+- [Construction giveaways](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#construction) : Section of the guide covering construction giveaways.
+- [The front end: threaded to threadless](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#threaded-to-threadless) : Section of the guide covering the front end: threaded to threadless.
+- [Mag wheels and period wheel details](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#mag-wheels) : Section of the guide covering mag wheels and period wheel details.
+- [Buying and valuing vintage](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#buying-vintage) : Section of the guide covering buying and valuing vintage.
+- [Before you restore](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#restoration) : Section of the guide covering before you restore.
+- [Questions](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#questions) : Section of the guide covering questions.
 
 ## Optional
 
-- [Privacy policy](https://bmxpartsdepot.com/privacy.html)
-- [Terms of use](https://bmxpartsdepot.com/terms.html)
+- [eBay Store](https://www.ebay.com/usr/bmx-parts-depot) : The live eBay inventory store.
+- [Privacy Policy](https://bmxpartsdepot.com/privacy.html) : Privacy policy for the website.
+- [Terms of Use](https://bmxpartsdepot.com/terms.html) : Terms and conditions of using the website.
