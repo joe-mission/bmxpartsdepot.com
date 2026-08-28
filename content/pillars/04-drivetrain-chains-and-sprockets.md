@@ -248,9 +248,26 @@ A **sprocket guard** is a disc that sits over or beside the sprocket to protect 
 
 On bolt threads, **two are in circulation on modern drive bolts and you cannot assume which you have**: M8 x 1.25 and 5/16 inch x 18 TPI both appear across brands, and they are not interchangeable despite being close in diameter. Legacy 5-bolt spider hardware uses the standard fine-pitch chainring bolt, M8 x 0.75. Check the bolt you have before ordering a replacement.
 
-::: needsverify
-- which brands use M8 x 1.25 against 5/16 x 18 on modern drive bolts, since both are in use and no source maps them to makers
-:::
+### The two drive bolt threads split by where the crank was made {#drive-bolt-origin}
+
+This turns out to have a rule behind it, and it is a useful one.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Drive bolt thread by manufacturing origin</caption>
+<thead>
+<tr><th scope="col">Thread</th><th scope="col">Cranks</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">5/16 inch x 18 TPI</th><td>US-made: Profile Racing, S&amp;M, Fit 48-spline, Tree</td><td>Profile <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">M8 x 1.25</th><td>Asian-made: Odyssey, Sunday, BSD, Cult, Eclat, Subrosa, Kink</td><td>Odyssey, BSD <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Imperial thread on US-manufactured cranks, metric on Asian-manufactured ones.** That is not a BMX standard, it is two manufacturing traditions meeting in the same parts bin, and it explains why both threads are in circulation with no one to arbitrate.
+
+The practical version: **if the crank was made in the States, expect 5/16 x 18. Otherwise expect M8 x 1.25.** They are close enough in diameter to start and then destroy a thread, so check before forcing anything.
 
 ## Spline drive and sprocket bore {#spline-drive-sprocket}
 
@@ -370,9 +387,7 @@ Chain play is workshop guidance, not a specification. Aim for some slack. A chai
 
 **On rear axle torque, nobody publishes a figure and this page will not invent one.** Odyssey, Profile, BSD, Sunday and Shadow Conspiracy were all checked, manuals and spec sheets, and none states a torque for a 14mm axle nut or a 3/8 inch axle bolt. A figure does circulate informally in the race world, and it is deliberately not repeated here, because an unsourced number for the fastener holding your rear wheel in is worse than no number. This is the same situation as crank bolt torque on the cranks page, and it gets the same treatment.
 
-::: needsverify
-- a published rear axle torque figure from any BMX manufacturer, which two passes have now failed to find
-:::
+**Three passes have now failed to find a published rear axle torque figure**, across Odyssey, Sunday, Profile, BSD, Cinema and Shadow Conspiracy. Manuals and spec sheets both. This is the same result as crank bolt torque on the [cranks guide](/guides/bmx-cranks-and-pedals/#pinch-bolt), and at this point it is a characteristic of the industry rather than a gap in this research. <span class="src src-conflict">Unpublished</span>
 
 ## Questions {#questions}
 

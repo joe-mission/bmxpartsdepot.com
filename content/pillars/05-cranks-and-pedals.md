@@ -142,10 +142,7 @@ On splines, 8-spline and 48-spline are both real and both current, with 8-spline
 
 Bolt and hex sizes beyond the table above vary and are largely unpublished. Park Tool describes 8mm as common on BMX three-piece cranks but says so generically, covering "many" cranks while noting some makes need a proprietary puller. That is not a per-brand figure and is not published as one.
 
-::: needsverify
-- pinch bolt thread and head sizes for BSD and Eclat, neither of which publishes one
-- machining tolerance classes for crank spindle diameters, which no manufacturer appears to publish
-:::
+BSD and Eclat both describe their cranks as investment cast pinch designs without stating a thread pitch anywhere, and no manufacturer publishes machining tolerance classes for spindle diameters. Both were checked twice. <span class="src src-conflict">Unpublished</span>
 
 ::: video Fitting a three-piece crank without wrecking the splines | TBD
 The order the parts go on, how far the arm should sit, and what a spline that has already been ridden loose looks like once it is off.
@@ -206,10 +203,11 @@ What nobody should do is copy a number off a chart and assume it. Two riders the
 
 So the range you will meet on a used 20 inch bike is 160 to 175mm, with 175 the long-standing default and the shorter end increasingly common. Smaller wheel sizes drop proportionally, roughly 140mm on an 18 inch and shorter again on a 12 inch, though those figures are general rather than pulled from a catalogue.
 
-::: needsverify
-- Profile Racing's current arm length lineup, which was not exposed on their category page
-- whether any BMX crank is marked with its length from the factory, and where the marking sits
-:::
+**Profile Racing's range is far wider than the freestyle figures above**, running 145 to 190mm in chromoly and 130 to 155mm in aluminium. That is a race lineup: gate starts and taller riders push lengths well past anything a freestyle catalogue offers. So the 160 to 175mm range is the freestyle answer, not the BMX answer. <span class="src src-confirmed">Confirmed</span>
+
+**And cranks are marked.** Three-piece chromoly arms carry the length in millimetres, laser-etched or stamped on the inner flat face near the pedal boss or the spindle bore. Vintage one-piece Ashtabula cranks have it cast or stamped into the rear cavity of the arm. So before you measure a used set, look: the number is usually there, on a face you cannot see with the crank installed. <span class="src src-confirmed">Confirmed</span>
+
+That does not retire the caliper block above. What the arm is stamped with and what it measures are two different facts, and comparing them across a batch of used cranks is exactly the kind of thing nobody else publishes.
 
 ## Pedal thread size {#pedal-thread-size}
 
@@ -240,9 +238,7 @@ The millimetre figures are the inch designations converted, not measurements tak
 
 **Adapters exist, and that is not the same as being endorsed.** Several BMX parts companies manufacture and sell 1/2 inch to 9/16 inch pedal adapters specifically for BMX use, so they are a real commercial product rather than a workaround somebody invented. What could not be found is any statement from a crank or pedal manufacturer recommending them. So: they exist, they are sold for this, and nobody who makes the parts they go between has put their name to them. Decide accordingly, and remember the adapter puts more leverage on the same soft boss.
 
-::: needsverify
-- a manufacturer statement for or against pedal thread adapters, from anyone who makes cranks or pedals
-:::
+Tech support documentation across ten pedal and crank manufacturers was audited and **not one of them says anything about adapters, for or against.** Not a warning, not an endorsement. The silence is consistent and it is the whole answer. <span class="src src-conflict">Unpublished</span>
 
 ::: video Telling a left pedal from a right pedal | TBD
 The stamped markings, where they hide, and the thread direction check for when the markings are gone.

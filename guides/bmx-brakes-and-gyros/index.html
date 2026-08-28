@@ -311,76 +311,7 @@
 <p>Each arm is a lever. The bottom end pivots on a post. The pad sits partway up the arm against the rim. The top end carries one end of the straddle cable. The two arms lean inward across each other, so the left arm's top end is over on the right and the right arm's top end is over on the left. When the main cable lifts the yoke, both ends of the straddle cable are pulled up and inward, and the arms rotate about their posts to close the pads onto the rim.</p>
 <p>Because the pull is upward on a triangle of cable, <strong>the shape of that triangle changes how hard the brake bites.</strong> A shallow, wide straddle gives more mechanical advantage and less pad travel. A tall, narrow straddle gives less advantage and more travel. That is why two identical brakes can feel completely different, and why a brake that feels wooden is often a straddle length problem rather than a pad problem.</p>
 <p>Pad position is adjustable in more directions than most people use. The pad can move up and down the arm, in and out from the rim, and rotate to match the rim's braking surface. <strong>The pad face wants to sit fully on the braking surface, not hanging over the top edge of the rim and not touching the tyre.</strong> A pad that has been running half on the tyre is a used part that gets binned rather than sold.</p>
-<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-u-brake-action" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640">
-  <title>How a U-Brake Pulls</title>
-  <desc>Front-on mechanical diagram of a BMX U-brake showing crossing arms, straddle cable pull, and pad force vectors.</desc>
-
-  <defs>
-    <style>#dg-bmx-u-brake-action .bg{fill: #ffffff;}#dg-bmx-u-brake-action .arm{fill: #08090b; stroke: #08090b; stroke-width: 2;}#dg-bmx-u-brake-action .ghost-rim{fill: none; stroke: #e2e5e9; stroke-width: 24;}#dg-bmx-u-brake-action .cable{fill: none; stroke: #08090b; stroke-width: 6; stroke-linecap: round;}#dg-bmx-u-brake-action .yoke{fill: #00a4e6; stroke: #08090b; stroke-width: 2;}#dg-bmx-u-brake-action .pad{fill: #6b7280; stroke: #08090b; stroke-width: 2;}#dg-bmx-u-brake-action .pivot{fill: #00a4e6; stroke: #08090b; stroke-width: 3;}#dg-bmx-u-brake-action .arrow-line{stroke: #e64700; stroke-width: 4; stroke-linecap: round;}#dg-bmx-u-brake-action .text-title{fill: #08090b; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 26px; font-weight: 800; text-anchor: middle;}#dg-bmx-u-brake-action .text-orange{fill: #e64700; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle;}#dg-bmx-u-brake-action .text-sub{fill: #6b7280; font-family: Inter, system-ui, -apple-system, sans-serif; font-size: 20px; font-weight: 600; text-anchor: middle;}#dg-bmx-u-brake-action .callout-line{stroke: #6b7280; stroke-width: 2; stroke-dasharray: 4 4; fill: none;}</style>
-    <marker id="dg-bmx-u-brake-action-arrow-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e64700" />
-    </marker>
-  </defs>
-
-  <!-- Background -->
-  <rect class="bg" width="1000" height="640" />
-
-  <!-- Ghosted Rim Section -->
-  <circle class="ghost-rim" cx="500" cy="460" r="210" />
-
-  <!-- Main Cable Pull -->
-  <line class="cable" x1="500" y1="30" x2="500" y2="130" />
-  <polygon class="yoke" points="475,130 525,130 500,165" />
-
-  <!-- Straddle Cable Triangle -->
-  <polyline class="cable" points="260,280 500,165 740,280" />
-
-  <!-- LEFT BRAKE ARM (Pivots on Right Post #620) -->
-  <path class="arm" d="M 260 280 Q 360 280 440 350 L 420 440 L 375 440 L 360 360 Q 310 310 260 300 Z" />
-  <path class="arm" d="M 260 280 L 620 350 L 620 375 L 260 300 Z" />
-
-  <!-- RIGHT BRAKE ARM (Pivots on Left Post #380) -->
-  <path class="arm" d="M 740 280 Q 640 280 560 350 L 580 440 L 625 440 L 640 360 Q 690 310 740 300 Z" />
-  <path class="arm" d="M 740 280 L 380 350 L 380 375 L 740 300 Z" />
-
-  <!-- Pivot Posts -->
-  <circle class="pivot" cx="380" cy="362" r="14" />
-  <circle class="pivot" cx="620" cy="362" r="14" />
-
-  <!-- Brake Pads -->
-  <rect class="pad" x="375" y="440" width="35" height="24" rx="4" />
-  <rect class="pad" x="590" y="440" width="35" height="24" rx="4" />
-
-  <!-- FORCE VECTOR ARROWS & LABELS (With Protective White Backing Cards) -->
-  <!-- 1. Upward Yoke Pull -->
-  <line class="arrow-line" x1="500" y1="110" x2="500" y2="50" marker-end="url(#dg-bmx-u-brake-action-arrow-head)" />
-  <rect class="bg" x="525" y="65" width="130" height="30" rx="4" />
-  <text class="text-orange" x="590" y="87" text-anchor="middle">Yoke Pull</text>
-
-  <!-- 2. Straddle Cable Tension -->
-  <line class="arrow-line" x1="330" y1="248" x2="410" y2="212" marker-end="url(#dg-bmx-u-brake-action-arrow-head)" />
-  <line class="arrow-line" x1="670" y1="248" x2="590" y2="212" marker-end="url(#dg-bmx-u-brake-action-arrow-head)" />
-  <rect class="bg" x="410" y="145" width="180" height="32" rx="4" />
-  <text class="text-orange" x="500" y="168">Straddle Cable</text>
-
-  <!-- 3. Pad Inward Clamping Force -->
-  <line class="arrow-line" x1="310" y1="452" x2="365" y2="452" marker-end="url(#dg-bmx-u-brake-action-arrow-head)" />
-  <line class="arrow-line" x1="690" y1="452" x2="635" y2="452" marker-end="url(#dg-bmx-u-brake-action-arrow-head)" />
-
-  <!-- Structural Callout Labels (Clear of Vectors) -->
-  <rect class="bg" x="390" y="278" width="220" height="32" rx="4" />
-  <text class="text-title" x="500" y="302">Arms Cross Over</text>
-
-  <!-- Pivot Leader Callouts -->
-  <line class="callout-line" x1="380" y1="362" x2="280" y2="390" />
-  <rect class="bg" x="200" y="375" width="95" height="28" rx="4" />
-  <text class="text-sub" x="247" y="395">Pad Post</text>
-
-  <line class="callout-line" x1="620" y1="362" x2="720" y2="390" />
-  <rect class="bg" x="705" y="375" width="95" height="28" rx="4" />
-  <text class="text-sub" x="752" y="395">Pad Post</text>
-</svg>
-</div><figcaption><b>How a U-brake pulls</b> The force path from the lever to the pad, with the straddle triangle drawn at two different heights to show how the mechanical advantage changes.</figcaption></figure>
+<figure class="diagram"><div class="fig-body"><svg id="dg-bmx-u-brake-action" role="img" style="display:block;width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-labelledby="ubt ubd"><title id="dg-bmx-u-brake-action-ubt">How a U-brake pulls</title><desc id="dg-bmx-u-brake-action-ubd">Front view of a U-brake with the arms crossing over their posts, the straddle cable forming a triangle up to the yoke, and arrows showing the direction of force at the yoke, along each straddle leg and inward at each pad.</desc><defs><pattern id="dg-bmx-u-brake-action-hatch" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="16" height="16" fill="#ffffff"></rect><line x1="0" y1="0" x2="0" y2="16" stroke="#08090b" stroke-width="2"></line></pattern></defs><rect width="1000" height="640" fill="#ffffff"></rect><rect x="448" y="240" width="104" height="360" rx="14" fill="none" stroke="#e2e5e9" stroke-width="3"></rect><rect x="466" y="330" width="68" height="270" fill="#e2e5e9"></rect><line x1="500" y1="240" x2="500" y2="600" stroke="#ffffff" stroke-width="2" stroke-dasharray="16 10"></line><path d="M 340 560 L 505 508 L 600 300" fill="none" stroke="#08090b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 660 560 L 495 508 L 400 300" fill="none" stroke="#08090b" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="340" cy="560" r="20" fill="#ffffff" stroke="#08090b" stroke-width="7"></circle><circle cx="660" cy="560" r="20" fill="#ffffff" stroke="#08090b" stroke-width="7"></circle><rect x="524" y="412" width="24" height="50" rx="4" fill="#00a4e6"></rect><rect x="452" y="412" width="24" height="50" rx="4" fill="#00a4e6"></rect><path d="M 400 300 L 500 205 L 600 300" fill="none" stroke="#08090b" stroke-width="7"></path><polygon points="500,188 524,214 476,214" fill="#08090b"></polygon><line x1="500" y1="188" x2="500" y2="68" stroke="#08090b" stroke-width="8"></line><line x1="556.0" y1="250.0" x2="556.0" y2="132.4" stroke="#e64700" stroke-width="3.5"></line><polygon points="556.0,118.0 565.0,136.0 547.0,136.0" fill="#e64700"></polygon><line x1="372.0" y1="268.0" x2="451.6" y2="191.9" stroke="#e64700" stroke-width="3.5"></line><polygon points="462.0,182.0 455.2,200.9 442.8,187.9" fill="#e64700"></polygon><line x1="628.0" y1="268.0" x2="548.4" y2="191.9" stroke="#e64700" stroke-width="3.5"></line><polygon points="538.0,182.0 557.2,187.9 544.8,200.9" fill="#e64700"></polygon><line x1="392.0" y1="437.0" x2="429.6" y2="437.0" stroke="#e64700" stroke-width="3.5"></line><polygon points="444.0,437.0 426.0,446.0 426.0,428.0" fill="#e64700"></polygon><line x1="608.0" y1="437.0" x2="570.4" y2="437.0" stroke="#e64700" stroke-width="3.5"></line><polygon points="556.0,437.0 574.0,428.0 574.0,446.0" fill="#e64700"></polygon><text x="452" y="198" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b" text-anchor="end">Yoke</text><line x1="460" y1="190" x2="482" y2="198" stroke="#6b7280" stroke-width="2"></line><text x="700" y="250" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b">Straddle cable</text><line x1="692" y1="240" x2="572" y2="234" stroke="#6b7280" stroke-width="2"></line><text x="60" y="470" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b">Arms cross over</text><line x1="316" y1="478" x2="474" y2="502" stroke="#6b7280" stroke-width="2"></line><text x="420" y="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b" text-anchor="end">Pad</text><line x1="426" y1="492" x2="450" y2="464" stroke="#6b7280" stroke-width="2"></line><text x="580" y="500" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b">Pad</text><line x1="574" y1="492" x2="550" y2="464" stroke="#6b7280" stroke-width="2"></line><text x="340" y="616" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b" text-anchor="middle">Post</text><text x="660" y="616" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="700" fill="#08090b" text-anchor="middle">Post</text></svg></div><figcaption><b>How a U-brake pulls</b> The force path from the lever to the pad, with the straddle triangle drawn at two different heights to show how the mechanical advantage changes.</figcaption></figure>
 <h2 id="u-brake-mounts">Brake mounts and the 990 name</h2><div class="sec-rule"></div>
 <div class="quick-answer"><p class="qa-label">Quick Answer</p><p><strong>Brake mounts</strong> are the two posts a U-brake bolts onto. On a BMX frame they sit on the seat stays or the chain stays. On a fork they sit on the back of the fork legs. The listing word for the standard BMX U-brake post arrangement is <strong>990</strong>.</p></div>
 <p>The name 990 is used in listings and in conversation to mean the standard BMX U-brake mount, and a brake described as a 990 brake is a U-brake meant for those posts. It began as a model designation and became a generic term the way a lot of BMX vocabulary does. This guide does not publish which model it originally referred to, or the post spacing figure, because neither has been checked against a source.</p>

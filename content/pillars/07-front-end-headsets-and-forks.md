@@ -214,9 +214,9 @@ The **oversize bar clamp** question is separate and it is a bar question rather 
 
 **On stem stack height, the finding is the inconsistency rather than the number.** Figures in circulation run roughly 30 to 33mm, but brands do not measure the same thing: some publish the steerer clamp height, some publish overall body thickness, and many omit it entirely. That means two stems quoting the same stack height may not stack the same, and comparing published figures between brands is not reliable. If stack height matters to your setup, measure the stem rather than trusting the listing.
 
-::: needsverify
-- a consistent definition of stem stack height from any manufacturer, since none of those checked state where they measure it from
-:::
+**One brand does state its method, which gives the rest a reference point.** Eclat defines stack height explicitly as steerer clamping height, the vertical length of steerer the stem bore actually grips, and publishes it at 32mm. That is the useful definition, because it is the number that tells you whether you have enough steerer left.
+
+So when a stem quotes stack height without saying what it measures, **Eclat's definition is the one to compare against**, and a figure noticeably larger than about 32mm is probably overall body thickness rather than clamping height. <span class="src src-confirmed">Confirmed</span>
 
 ::: caliper the bar clamp bore on a range of used stems and the knurled clamp section on a range of used bars, so this page can publish measured figures instead of repeated ones
 :::

@@ -142,10 +142,7 @@ That is a genuinely useful split for buying used: **on an aftermarket hub, sourc
 
 One correction to a common assumption, including one this guide previously made. **The driver does not thread into the hub shell.** The driver body drops in. What threads into the shell is the internal ratchet ring, and manufacturers do not publish its thread diameter or pitch either.
 
-::: needsverify
-- driver spline geometry from any manufacturer, which none of those audited publishes
-- the ratchet ring thread specification, likewise unpublished
-:::
+Checked twice now across Profile, Odyssey, BSD and Eclat, technical archives and overhaul guides both. **Neither the driver spline geometry nor the ratchet ring thread is published by anyone.** The interfaces are proprietary and undocumented, which is why matching by hub name is not laziness, it is the only method available. <span class="src src-conflict">Unpublished</span>
 
 ## Axle diameter, male axles and female axles {#bmx-axle-diameter}
 

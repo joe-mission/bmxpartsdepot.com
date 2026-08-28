@@ -93,10 +93,9 @@ Two caveats that matter more than the numbers.
 
 Roughly, then: **chromoly yields at somewhere near twice the load hi-ten does, and a hi-ten frame carries an extra pound and a half of steel to be strong enough anyway.** That is the honest version of what the sticker is telling you.
 
-::: needsverify
-- a published spec sheet for hi-ten bicycle tubing as sold, rather than for the underlying steel grade
-- a stripped frame weight for a hi-ten 20 inch frame from a manufacturer rather than a complete bike listing
-:::
+**Two related gaps that turned out to have the same cause.** Nobody publishes a spec sheet for hi-ten bicycle tubing as sold, and nobody publishes a stripped frame weight for a hi-ten 20 inch frame either. The reason is the same in both cases: **hi-ten frames are not sold as frames.** They are welded chassis inside entry-level complete bikes, from Haro, GT, Eastern, Kink and Fit among others, and no manufacturer catalogues one as a standalone product. No product means no spec sheet and no published weight. <span class="src src-conflict">Unpublished</span>
+
+That is worth knowing rather than mourning. It also explains the asymmetry in the table above, where the chromoly column comes from named frames and the hi-ten column has to be inferred.
 
 ## Butted tubing {#butted-tubing}
 
@@ -173,6 +172,7 @@ Dropout plate thickness is different, because modern frames do publish it.
 <tr><th scope="row">Rear dropout slot width, any axle</th><td>Not published by any manufacturer audited</td><td>Nine brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 <tr><th scope="row">Front fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 <tr><th scope="row">Dropout plate thickness, modern</th><td class="num">5 to 6mm, or 7.5mm cast</td><td>S&amp;M, BSD <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Dropout plate thickness, old school</th><td class="num">3.18 to 4.76mm (1/8 to 3/16 inch) stamped plate</td><td>Skyway, Redline, Hutch archives <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">U-brake post spacing</th><td class="num">82 to 85mm as built, 75 to 85mm accommodated</td><td>Odyssey, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
 </table>
@@ -181,7 +181,6 @@ Dropout plate thickness is different, because modern frames do publish it.
 On post spacing, later research resolved what first looked like a missing standard. Frame builders target 82 to 85mm, wide enough to clear modern rims. The wider 75 to 85mm figure is what a U-brake tolerates, because the orbital washers behind the pads absorb the difference. Two numbers describing two different things, covered in full on the [brakes guide](/guides/bmx-brakes-and-gyros/#u-brake-mounts).
 
 ::: needsverify
-- dropout plate thickness on old school frames, where the modern sources do not reach
 - U-brake post spacing stated by a BMX frame manufacturer rather than a general reference
 :::
 
@@ -260,8 +259,8 @@ In practice head angle is one of the less useful numbers when comparing two used
 <tr><th scope="row">Chainstay, street and park</th><td class="num">12.5 to 13.5 inch</td><td>BSD ALVX AF, Sunday Street Sweeper, Cult 2-Short, Subrosa Simpa <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Chainstay, race</th><td class="num">14.0 to 15.5 inch</td><td>Supercross Envy RS7, Chase ACT 1.2 <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Head tube angle, street and park</th><td class="num">75.25 to 75.75 degrees</td><td>BSD ALVX, Cult 2-Short, Sunday Soundwave <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Head tube angle, dirt</th><td class="num">74.5 degrees</td><td>S&amp;M M.O.D. <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Head tube angle, race</th><td class="num">74.0 to 74.5 degrees</td><td>Chase <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Head tube angle, dirt</th><td class="num">74.5 degrees</td><td>S&amp;M M.O.D., Fit Hartbreaker <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube angle, race</th><td class="num">74.0 to 74.5 degrees</td><td>Chase ACT 1.2, DK Professional-X <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Seat tube angle</th><td class="num">71 to 71.5 degrees</td><td>Sunday, BSD, S&amp;M, Cult, Chase <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bottom bracket height</th><td class="num">11.5 to 11.8 inch</td><td>Sunday 11.5, S&amp;M 11.61, BSD 11.7, Cult 11.8 <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
@@ -274,10 +273,7 @@ Two things to hold on to. **Chainstay is where street and race genuinely diverge
 
 **Bottom bracket height is a measurement with a tyre in it.** The figures above assume a standard 20 x 2.25 tyre. Fit a taller or a flatter tyre and the number moves without anything on the frame changing, so a BB height quoted without a tyre size is not really a frame specification.
 
-::: needsverify
-- whether bottom bracket height is quoted to the shell centre or the shell bottom, which sources do not consistently state
-- head tube angle for dirt and race from a second manufacturer each, since both currently rest on one
-:::
+**Bottom bracket height is measured to the centre of the shell**, the spindle axis, not to the bottom of it. Every geometry chart checked uses that convention, so the figures above are comparable between brands. Worth knowing because half a shell diameter is a real difference on a number quoted to a tenth of an inch. <span class="src src-confirmed">Confirmed</span>
 
 ::: fitbadge Working out chain length for a frame? | Drivetrain Chains and Sprockets guide | /guides/drivetrain-chains-and-sprockets/
 :::
