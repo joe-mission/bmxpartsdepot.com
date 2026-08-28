@@ -11,7 +11,7 @@ standfirst: The rear hub is the part of a BMX bike with the most ways to be inco
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: cassette-hub|Cassette Hub, freecoaster|Freecoaster, bmx-freewheel|Freewheel, cassette-driver|Driver, bmx-axle-diameter|Axle Diameter, male-axle|Male Axle, female-axle|Female Axle, over-locknut-dimension|Over Locknut Dimension, hub-guard|Hub Guard, rim-wall-construction|Rim Wall Construction, iso-bead-seat-diameter|ISO Bead Seat Diameter, spoke-lacing-pattern|Spoke Lacing Pattern, left-hand-drive|Left Hand Drive, right-hand-drive|Right Hand Drive
+terms: cassette-hub|Cassette Hub, freecoaster|Freecoaster, bmx-freewheel|Freewheel, cassette-driver|Driver, bmx-axle-diameter|Axle Diameter, male-axle|Male Axle, female-axle|Female Axle, over-locknut-dimension|Over Locknut Dimension, hub-guard|Hub Guard, rim-wall-construction|Rim Wall Construction, iso-bead-seat-diameter|ISO Bead Seat Diameter, spoke-lacing-pattern|Spoke Lacing Pattern, left-hand-drive|Left Hand Drive, right-hand-drive|Right Hand Drive, axle-nuts-and-bolts|Axle Nuts and Bolts, wheel-dish|Wheel Dish, effective-rim-diameter|Effective Rim Diameter, hub-end-caps|Hub End Caps, j-bend-spoke|J-Bend Spoke, spoke-nipple|Spoke Nipple, bmx-pegs|BMX Pegs, valve-hole-size|Valve Hole Size, bmx-wheel-sizes|BMX Wheel Sizes, 3x-lacing|3X Lacing
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-frame-identification-and-geometry|Frame ID and Geometry, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, bmx-brakes-and-gyros|Brakes and Gyros
 ---
 
@@ -185,13 +185,29 @@ If a hub or axle is not marked, the honest listing says which one it measures wi
 </table>
 </div>
 
-### Male and female axles
+### Male axles {#male-axle}
 
-A **male axle** is threaded on the outside and takes nuts that thread onto the axle. A **female axle** is hollow and internally threaded, and takes bolts that thread into it. Both are common and neither is better in general.
+A **male axle** is threaded on the outside and takes nuts that thread onto it. The threads stick out past the dropout where you can see them, which is the identification and also the weakness.
 
-The difference matters for two reasons. Hardware is not shared: nuts for a male axle are useless on a female axle and vice versa. And peg fitment differs, because a female axle setup runs a bolt through the peg into the axle, which changes how much thread engagement you get and which pegs and spacers work.
+**Those exposed threads are the first thing to go on a bike that grinds**, because they are the outermost part of the axle and they take the hit. Once flattened, the nut will not start, and you are into a thread file or a new axle. On a bike that never touches a ledge they are perfectly good, and they are cheaper and easier to replace than the alternative.
 
-Female axles usually sit flush or nearly flush with the dropout, which is tidier and less likely to catch on things. Male axles protrude, which some riders prefer for peg mounting. What you cannot do is decide on looks and then assume the hardware will follow.
+Checking a used one takes ten seconds: run a nut down the thread by hand on both sides. Threads that look acceptable and will not take a nut are common.
+
+### Female axles {#female-axle}
+
+A **female axle** is hollow and internally threaded, taking a bolt into each end with the end caps sitting flush or nearly flush against the dropout.
+
+**Street riders prefer female for one reason: a smooth bolt head slides over a ledge where an exposed male thread catches and gets destroyed.** That is the whole argument and it is a good one for anyone who grinds.
+
+The corresponding weakness is that the damage moves inside where you cannot see it. A rounded bolt head or a stripped internal thread is a bigger job than a flattened male thread, and an axle with a snapped bolt in it is worse again. **Check that both bolts come all the way out and go back in** before buying a used female hub, rather than judging by the outside.
+
+Hardware is not shared between the two. Nuts for a male axle are useless on a female axle and the reverse. Peg fitment differs too, because a female setup runs a bolt through the peg into the axle, which changes thread engagement and which pegs and spacers work.
+
+### Axle nuts and bolts {#axle-nuts-and-bolts}
+
+The hardware itself is the most commonly missing part on an incoming used wheelset, along with stripped or rounded examples of the same. **Assume a used wheel needs new hardware until you have checked it**, and count what is there before you agree a price.
+
+**Thread pitch is not something to order on the nominal size alone.** 26 TPI is the commonly quoted standard for BMX axle nuts, and female bolts are also sold as 24 TPI. Both are in circulation. Take the old nut or bolt with you, or match against the axle in hand, because a fastener that starts and then binds two turns in is the wrong pitch rather than a dirty thread.
 
 ::: caliper Actual axle diameter against the nominal size on used hubs
 tool: Mitutoyo 6 inch Digital Caliper
@@ -235,11 +251,21 @@ Two things about that table are deliberate. **We are not saying old school rear 
 
 And a 14mm axle in a 110mm frame is completely normal. The two numbers are describing different things and neither constrains the other.
 
-### Hub end caps and dish
+### Hub end caps {#hub-end-caps}
 
 Hub end caps and spacers set the over locknut dimension, and on some hubs they can be changed. That is how one hub gets sold to suit more than one spacing, and it is also how a hub arrives at your door set up for something other than what you have. Count and keep every spacer that comes off a used wheel.
 
-**Wheel dish** is how centred the rim sits between the locknuts. A wheel built for one frame can sit off-centre in another, and a wheel that has been rebuilt badly can be off-centre in every frame. Drop the wheel into the frame and look at the gap either side of the tyre. If it is uneven, swap in a wheel you trust to find out whether it is the wheel or the frame.
+**End caps are not a generic part.** Profile, Odyssey and BSD caps do not interchange across hub models, and often not across generations of the same model. Fitting the wrong one causes bearing drag if it sits too deep, or side to side axle play if it does not seat, and both feel like a worn bearing to anyone diagnosing by feel.
+
+So a used hub missing an end cap is a hub waiting on a specific part, not a cheap fix. Check for crushed or burred cap shoulders too, because a deformed cap binds the bearing the moment the axle bolt is tightened.
+
+### Wheel dish {#wheel-dish}
+
+**Wheel dish** is how centred the rim sits between the locknuts. A wheel built for one frame can sit off-centre in another, and a wheel rebuilt badly can be off-centre in every frame.
+
+Every used wheel that comes through here goes on a truing stand and gets its dish checked before it is listed. That is not perfectionism, it is because **an off-centre wheel is what makes a wide tyre rub one stay and not the other**, and the buyer will blame the frame or the tyre rather than the wheel.
+
+You can do a rough version without a stand. Drop the wheel into the frame and look at the gap either side of the tyre. If it is uneven, swap in a wheel you trust to find out whether the problem is the wheel or the frame, because a bent stay gives you the same symptom.
 
 ## Rims, wall construction and bead seat diameter {#rim-wall-construction}
 
@@ -268,6 +294,8 @@ In practice, BMX is much better behaved than the rest of cycling here, because t
 <tbody>
 <tr><th scope="row">Bead seat diameter, 20 inch</th><td class="num">ISO 406mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bead seat diameter, 24 inch cruiser</th><td class="num">ISO 507mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bead seat diameter, 22 inch</th><td class="num">ISO 457mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bead seat diameter, 18 inch</th><td class="num">ISO 355mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bead seat diameter, 16 inch</th><td class="num">ISO 305mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Rim internal width</th><td class="num">24 to 30mm</td><td>Odyssey Hazard Lite 24, G-Sport Ribcage 28, Eclat Bondi 30 <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Rim outer width</th><td class="num">32 to 38mm</td><td>Same rims <span class="src src-confirmed">Confirmed</span></td></tr>
@@ -280,11 +308,31 @@ In practice, BMX is much better behaved than the rest of cycling here, because t
 </table>
 </div>
 
+### BMX wheel sizes {#bmx-wheel-sizes}
+
+Five sizes turn up, and the ISO figure is what separates them rather than the inch name. **20 inch is ISO 406 and is nearly everything on the freestyle side.** 24 inch cruiser is ISO 507, 22 inch is ISO 457, 18 inch is ISO 355 and 16 inch is ISO 305, all in the table above and all sourced to ISO 5775.
+
+We stock 20 inch adult freestyle and mid school almost exclusively, so treat the other four as identification help for a job lot rather than as things you will find here.
+
 **ISO 406 is the number that matters**, and it is a standard rather than a convention, which makes it one of the few figures on this site you can rely on absolutely. A "20 inch" BMX wheel is a 406mm bead seat with a tyre on top, which is also why it rolls about 19.5 inches rather than 20, as covered on the [drivetrain guide](/guides/drivetrain-chains-and-sprockets/#bmx-gear-ratio).
+
+### Effective rim diameter {#effective-rim-diameter}
+
+**ERD is a different number from bead seat diameter and it is easy to confuse them, which is the reason this sits directly under BSD.**
+
+**Bead seat diameter is measured where the tyre sits, and it decides whether a tyre fits.** **Effective rim diameter is measured at the spoke nipple seats inside the rim, and it decides how long the spokes need to be.** One is about rubber, the other is about spokes, and they are never the same figure for the same rim.
+
+We sell wheels rather than build them, so the practical use here is knowing which number a seller is quoting. **If someone gives you a rim diameter that is not 406, they are probably quoting ERD**, and it tells you nothing about which tyre will go on. Ask for the ISO number stamped on the rim or printed on the tyre instead.
+
+If you are having a wheel built, the builder needs the ERD of your specific rim, and rim makers publish it because it changes between models. It is not something to estimate from the nominal size.
 
 **One trap: ISO 451 also exists.** Some narrow BMX race and older wheels use a 451mm bead seat, and 406 and 451 tyres do not interchange in either direction. If a tyre will not seat, check the number printed on the sidewall before blaming the tyre.
 
-On valves, a Presta tube will physically pass through an 8.5mm Schrader drilling but should not be run bare in one. **Use a grommet.** The hole is nearly 2mm oversize for the stem, so the valve gets pushed sideways every time the tyre moves on the rim, and that is how a stem tears at the base.
+### Valve hole size {#valve-hole-size}
+
+Rims are drilled for one valve type or the other, **8.5mm for Schrader and 6.5mm for Presta**, both in the table above.
+
+A Presta tube will physically pass through an 8.5mm Schrader drilling but should not be run bare in one. **Use a grommet.** The hole is nearly 2mm oversize for the stem, so the valve gets pushed sideways every time the tyre moves on the rim, and that is how a stem tears at the base.
 
 ## Spoke count and lacing {#spoke-lacing-pattern}
 
@@ -296,15 +344,50 @@ Spoke count is easy to establish and easy to get wrong by miscounting. The relia
 
 More spokes spread the load over more points, which is stronger, and add weight and build time. 48 spoke wheels were the heavy-duty answer for a long time and turn up on old school and mid school bikes constantly. Modern rims and hubs are strong enough that 36 spoke does the job for most riders, which is why it is the default now.
 
-**Three cross** means each spoke crosses three others between hub and rim. It is what almost every BMX wheel is built with. Lower cross counts exist and change the spoke length required, which is the practical consequence: lacing pattern and spoke length are the same question asked twice.
+### Three cross lacing {#3x-lacing}
 
-Spokes on BMX wheels are **J-bend**, meaning the head has a bent elbow that hooks through the flange. That is worth knowing because straight-pull spokes exist elsewhere in cycling and are not interchangeable.
+**Three cross** means each spoke crosses three others on its way from hub flange to rim. It is what almost every BMX wheel is built with, in both 36 and 48 spoke counts.
+
+The crossing is what lets the wheel take drive and braking load, because a crossed spoke pulls tangentially on the flange rather than straight out of it. That matters more on BMX than on most bikes, given what a grind does to a rear wheel.
+
+Lower cross counts exist and change the spoke length required, which is the practical consequence: **lacing pattern and spoke length are the same question asked twice.** For a used wheel this is identification rather than a decision. Count the crossings on a spoke from flange to rim if you need to know what you have, and do not assume a rebuild will reuse the spokes if you change the pattern.
+
+### J-bend spokes {#j-bend-spoke}
+
+Spokes on BMX wheels are **J-bend**, meaning the head has a bent elbow that hooks through the flange from the inside. Straight-pull spokes exist elsewhere in cycling, use differently drilled flanges, and are not interchangeable with J-bend in either direction.
+
+For a used buyer that is one less thing to worry about, because a BMX hub will be J-bend. Where it matters is inspection. **The elbow is where spokes break**, so when you are checking a used wheel, look at the flange holes for spokes that have gone slack, for bright wear marks around the elbow, and for any hole that has been elongated. A wheel with one replaced spoke is normal. A wheel with several is telling you something about how it has been ridden.
+
+### Spoke nipples {#spoke-nipple}
+
+Nipples are the small threaded fittings at the rim end that hold spoke tension. **Brass is the durable choice and alloy is the light one**, and on a used wheel the difference shows up as corrosion and as rounding.
+
+We sell wheels rather than lace them, so the relevant part is what to look for. **Rounded nipple flats mean somebody has already fought this wheel** with the wrong size spoke key or with too much tension, and a rounded nipple cannot be adjusted without replacing it. Green or white corrosion around an alloy nipple means it may be seized to the spoke, and turning it hard will twist the spoke rather than tension it.
+
+Look through the valve hole or along the rim bed for nipples that have pulled into the rim, which is the rim failing rather than the nipple.
 
 ### Working out spoke length for a rebuild
 
 You need four numbers to calculate spoke length: hub flange diameter, hub centre to flange distance on each side, rim effective diameter, and the lacing pattern. Then a spoke length calculator does the arithmetic. There is no shortcut and there is no universal BMX spoke length, because hub flange dimensions vary between hubs.
 
 The honest practical route on a used wheel is to measure a spoke that is already in it, if the wheel is currently built and correct. That gives you the answer without touching a calculator, and it is why it is worth measuring before you strip a wheel rather than after.
+
+## Pegs and what decides whether one fits {#bmx-pegs}
+
+::: quickanswer
+A **peg** is a tube that mounts over the axle against the dropout face so the bike can be ground on ledges and rails. Three things decide whether one fits: **the axle diameter it has to go over, whether the axle is male or female, and whether there is room at the dropout.**
+:::
+
+**Axle diameter first.** A peg is bored for the axle it goes on, and the two sizes on BMX are 3/8 inch at the front and 14mm at the rear on most modern bikes. A peg bored for 14mm will slop about on a 3/8 inch axle, and one bored for 3/8 inch will not go on a 14mm axle at all. Some pegs ship with a reducer sleeve to cover both, which is worth checking for when buying used, because the sleeve is the part that goes missing.
+
+**Then male or female.** On a male axle the peg sits over the protruding thread and the nut goes on outside it. On a female axle a bolt runs through the peg into the axle end. Those need different lengths of thread engagement, so a peg and hardware that worked on one setup is not automatically right on the other. See [male axles](#male-axle) and [female axles](#female-axle) above.
+
+**Then clearance at the dropout.** The peg has to sit flat against the dropout face, and anything in the way stops that. On the rear that is usually a hub guard or a chain tensioner. On the front it is the fork dropout itself, and forks vary in how much flat face they give you.
+
+Peg length and material are rider preference rather than fitment, so this guide does not publish a length range. What is worth saying is that **a peg is only as good as what is holding it on**, and the axle, the dropout and the hardware are all doing that job together.
+
+::: fitbadge Checking fork dropouts before buying pegs? | Headsets, Forks and Stems | /guides/bmx-front-end-headsets-and-forks/#dropout-slot-width
+:::
 
 ## Hub guards, drive side and left hand drive {#left-hand-drive}
 
@@ -316,7 +399,15 @@ Hub guards are not generic. They fit a specific hub design, or a specific family
 
 The reason riders want them is simple: a grind that lands on the hub flange rather than the peg will chew spokes and flange metal. A guard turns that into a replaceable part.
 
-### Left hand drive and right hand drive
+### Drive side and non-drive side guards {#hub-guard}
+
+**The two sides take different parts and it is not a preference.** The non-drive side guard is a plain disc covering the flange and spoke heads. The drive side guard has to clear the driver and the chain, so it is cut differently, and a non-drive guard fitted on the drive side will foul the chain.
+
+That makes a listing saying only "hub guard" half an answer. Ask which side, and ask which hub it came off, because guards locate on the hub body or the axle in a way that is usually specific to a hub family.
+
+Checking a used one is quick. **On plastic guards, look at the press-fit retention tabs**, which are the ears holding it on. Those crack, and once cracked the guard spins or comes off entirely. **On aluminium or steel guards, check the threads and look for deep gouges on the inner face** that would bind against the hub body. A guard scarred on the outside has simply done its job. One damaged where it mounts has not.
+
+### Left hand drive and right hand drive {#right-hand-drive}
 
 **Right hand drive** is the conventional arrangement, with the sprocket, chain and driver on the right. **Left hand drive** puts all of it on the left instead.
 
@@ -328,50 +419,6 @@ The practical warning for a used buyer: **a left hand drive wheel is not a right
 
 ::: fitbadge Sorting out chainline after a drive side change? | Drivetrain Chains and Sprockets guide | /guides/drivetrain-chains-and-sprockets/
 :::
-
-## Male axles {#male-axle}
-
-::: quickanswer
-A **male axle** is a threaded shaft that runs through the hub and sticks out past the dropouts on both sides, secured with a nut on each end. If you can see external threads outside the dropout, it is a male axle.
-:::
-
-That visible thread is the whole identification, and it is also the weakness. **The exposed threads are the first thing to go on a bike that gets ridden on ledges**, because they are the outermost part of the axle and they take the hit. Once they are flattened, the nut will not start, and you are into a die or a new axle.
-
-Male axles are simpler, cheaper and easier to replace, and on a bike that never grinds they are perfectly good. Check the threads on both sides before buying, and check that a nut actually runs down them by hand rather than trusting how they look.
-
-## Female axles {#female-axle}
-
-::: quickanswer
-A **female axle** is hollow and threaded on the inside, with a bolt screwing into each end and end caps sitting flush against the dropout. There are no threads outside the dropout to damage. If you see a bolt head rather than a nut, it is a female axle.
-:::
-
-Street riders prefer female for one specific reason: **a smooth bolt head slides over a ledge, where an exposed male thread catches and gets destroyed.** That is the entire argument and it is a good one for anyone who grinds.
-
-The corresponding weakness is that the damage moves inside where you cannot see it. A rounded bolt head or a stripped internal thread means removing the bolt is a problem, and an axle with a snapped bolt in it is a bigger job than a flattened male thread. **Check that both bolts come out and go back in** before buying a used female hub, rather than only looking at the outside.
-
-Thread pitch on 3/8 inch hardware is not consistent. 26 TPI is the commonly quoted standard for BMX axle nuts, and female bolts turn up sold as 24 TPI as well. Match the hardware to the axle you actually have rather than ordering on the nominal size alone.
-
-## Hub guards {#hub-guard}
-
-::: quickanswer
-A **hub guard** is a disc that sits over the hub against the dropout to take grind damage instead of the spokes and flange. Drive side and non-drive side guards are different parts, and they are not interchangeable.
-:::
-
-**The non-drive side guard is a plain disc.** It protects the flange and the spoke heads on that side. **The drive side guard has to clear the driver and the chain**, so it is cut differently, and a non-drive guard fitted on the drive side will foul the chain.
-
-Guards are also hub specific more often than people expect, because they locate on the hub body or the axle in a way that depends on the hub design. Assume a guard fits the hub it came off unless you can confirm otherwise.
-
-Checking a used one is quick. **On plastic guards, look at the retention tabs**, which are the press fit ears that hold it on, because those crack and once cracked the guard spins or falls off. **On aluminium or steel guards, check the threads and look for deep gouges** on the inner face that would bind against the hub body. A guard that has done its job is scarred on the outside, which is fine. One that is damaged where it mounts is not.
-
-## Right hand drive and left hand drive {#right-hand-drive}
-
-::: quickanswer
-**Right hand drive (RHD)** puts the sprocket, chain and driver on the right of the bike, which is the standard arrangement. **Left hand drive (LHD)** puts them on the left. Converting between them is not a matter of turning parts around.
-:::
-
-A conversion needs two things at minimum: **an LHD rear hub**, because the driver threads on and thread direction has to suit the side it is on, and **LHD cranks**, because the sprocket mounts to a boss or spline on the correct arm. Neither an RHD hub nor an RHD crankset can be flipped to do the job.
-
-Riders run LHD to suit which foot they grind with, so it is a preference rather than an upgrade. For a used buyer the thing to be careful about is a partial conversion. **A bike advertised as LHD with only one of the two parts changed is not an LHD bike**, and the other half is a specific purchase rather than something you have lying around. Check the hub and the cranks separately before believing the listing.
 
 ## Questions {#questions}
 

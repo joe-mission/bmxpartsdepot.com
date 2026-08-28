@@ -11,7 +11,7 @@ standfirst: A used BMX frame usually turns up with no spec sheet, no box and hal
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle, wheelbase|Wheelbase
+terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle, wheelbase|Wheelbase, effective-top-tube-length|Effective Top Tube Length, frame-reach|Frame Reach, junior-bmx-frame-size|Junior BMX Frame Size, pro-xl-frame-size|Pro XL Frame Size
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, vintage-bmx-identification|Vintage BMX Identification
 ---
 
@@ -192,6 +192,16 @@ Stand the frame up so the bottom bracket and the dropouts are level, or better, 
 
 Top tube is chosen by rider height and by what the bike is for, and the honest answer is that the ranges overlap heavily. Riders of the same height run different lengths depending on whether they ride street, park or trails, and personal preference moves it further. Anyone publishing a single top tube length for a given height is oversimplifying. This guide is not publishing a height chart until the ranges have been checked against what manufacturers actually recommend rather than against each other.
 
+### Effective top tube length {#effective-top-tube-length}
+
+**Effective top tube length is the horizontal distance from the centre of the head tube to the centre line of the seat post**, measured level rather than along the tube.
+
+The word "effective" exists because sloping top tubes make the tube's own length and its horizontal span two different numbers. **On BMX this distinction mostly does not bite**, because freestyle top tubes are straight or close to it, so actual and effective come out the same. It matters when you are comparing a BMX frame against something from another discipline, or reading a chart that does not say which it is quoting.
+
+This is the number BMX actually sizes frames by, so it is the one to ask a seller for. The sourced ranges by discipline are in the table below.
+
+### Frame reach {#frame-reach}
+
 **Frame reach** is the more precise version of the same idea: the horizontal distance from the bottom bracket to the top of the head tube. It separates two frames that share a top tube length but put the bottom bracket in different places. It is not printed on many BMX geometry charts, which limits how useful it currently is when comparing used frames.
 
 <div class="table-scroll">
@@ -225,7 +235,7 @@ One frame with all four measurements drawn on, showing which are horizontal and 
 **Chainstay length is the distance from the bottom bracket centre to the rear axle centre**, and it is the number that decides how easily the front end comes up. **Head tube angle is how far the head tube leans back from vertical**, and it decides how quickly the bike steers.
 :::
 
-### Chainstay length
+### What chainstay length changes
 
 Short chainstays pull the rear wheel in under the rider. Weight shifts back, the front comes up more easily, and the bike turns more sharply. That is why street and park frames trend short. Long chainstays push the wheel back, which makes the bike more stable at speed, easier to land on and better behaved through a corner under power. That is why race frames trend long.
 
@@ -382,6 +392,24 @@ A **vertical dropout** has a slot opening downwards, so the axle drops in and ca
 The reason is chain tension. A BMX drivetrain is a single fixed gear ratio with no derailleur to take up slack, so the chain is tensioned by sliding the rear axle backwards in the dropout. **A vertical dropout takes that adjustment away**, which is why a BMX frame with vertical dropouts would need a chain tensioner pulley to work at all.
 
 Worth knowing mostly so that you can read a frame correctly. Long horizontal slots on a BMX frame are not a sign of a cheap frame or a worn one, they are the design. What you are checking on used horizontal dropouts is that the faces are not chewed from an axle that has been allowed to slip, and that both sides are worn evenly, because uneven wear means the wheel has been running out of line.
+
+## Junior and Pro XL frame sizes {#junior-bmx-frame-size}
+
+::: quickanswer
+**Junior** and **Pro XL** are size names rather than standards. Junior frames are scaled down for younger riders, Pro XL is the long end of adult race sizing. Both are named tiers in a maker's own range, so the name tells you where a frame sits in that maker's line and nothing more.
+:::
+
+This guide does not publish a top tube figure for either name. **No source was found that defines them dimensionally**, and each brand sets its own tiers, so a Junior from one maker and a Junior from another are not guaranteed to be the same size. Publishing a range here would be repeating a number nobody stands behind, which is the thing this guide exists not to do.
+
+What is safe to say is what the names indicate. **A Junior frame is built around a smaller rider**, which usually brings a shorter top tube, 3/8 inch dropouts, and a front end sized for narrower wheels. **A Pro XL sits at the long end of race sizing**, above Pro, on a full size adult platform.
+
+So treat both as a starting point and then get the actual top tube length, which is the number that decides fit and is in the table above. Ask the seller to measure it rather than trusting the tier name.
+
+### Pro XL {#pro-xl-frame-size}
+
+Same answer as above, from the race side. **Pro XL is a race sizing tier, not a measurement**, and the useful comparison is its top tube length against the freestyle figures in the geometry table rather than against another brand's Pro XL.
+
+We stock 20 inch adult freestyle and mid school hardgoods almost exclusively, so both of these are reference entries for reading a listing rather than descriptions of what is in the shop.
 
 ## Questions {#questions}
 

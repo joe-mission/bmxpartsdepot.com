@@ -486,6 +486,12 @@ def render(body, ctx):
             level = len(m.group(1))
             text = m.group(2).strip()
             anchor = m.group(3) or slugify(strip_md(text))
+            # Two headings resolving to the same id silently break deep links:
+            # the browser and the schema both take the first, so the second
+            # section becomes unreachable. Usually an explicit {#anchor} on one
+            # heading colliding with the auto-slug of another.
+            if anchor in ctx["ids"]:
+                ctx["dupe_ids"].append(anchor)
             ctx["ids"].add(anchor)
             if level == 2:
                 ctx["toc"].append((anchor, strip_md(text)))
@@ -778,7 +784,7 @@ def build_pillar(path, all_pillars, top_guides):
     url = "%s/guides/%s/" % (SITE, slug)
 
     ctx = {"toc": [], "faqs": [], "videos": [], "images": [], "todo": [],
-           "seen_qa": False, "ids": set()}
+           "seen_qa": False, "ids": set(), "dupe_ids": []}
     main = render(body, ctx)
 
     toc = ""
@@ -852,6 +858,7 @@ def build_pillar(path, all_pillars, top_guides):
         "sections": ctx["toc"], "faqs": len(ctx["faqs"]),
         "todo": ctx["todo"],
         "terms": as_pairs(meta, "terms"),
+        "dupe_ids": ctx["dupe_ids"],
         "ids": ctx["ids"],
     }
 
@@ -890,6 +897,12 @@ def main():
         print("  %-42s %2d sections  %2d faqs  %2d placeholders"
               % (p["slug"], len(p["sections"]), p["faqs"], len(p["todo"])))
     print("%d placeholders awaiting Joe (caliper readings, video ids, diagrams)" % todo_total)
+
+    dupes = [(p["slug"], a) for p in pages for a in p.get("dupe_ids", [])]
+    if dupes:
+        print("  DUPLICATE SECTION IDS (the second one is unreachable):")
+        for slug, a in dupes:
+            print("    %-42s #%s" % (slug, a))
     return 0
 
 
