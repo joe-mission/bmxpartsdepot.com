@@ -11,7 +11,7 @@ standfirst: A used BMX frame usually turns up with no spec sheet, no box and hal
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle
+terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle, wheelbase|Wheelbase
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, vintage-bmx-identification|Vintage BMX Identification
 ---
 
@@ -328,6 +328,60 @@ Do this in good light with the frame stripped if possible, and take your time.
 
 ::: fitbadge Checking the wheels that came with the frame? | Wheels Hubs and Axles guide | /guides/bmx-wheels-hubs-and-axles/
 :::
+
+## Telling hi-ten from chromoly on an unlabelled frame {#hi-ten-steel}
+
+::: quickanswer
+**Hi-tensile steel is the cheaper frame material and chromoly (4130) is the better one.** On a frame with no sticker left, the tells are weight, dropout thickness and how the tube sounds when you tap it. None of them is conclusive on its own, so use them together.
+:::
+
+**Weight is the first tell and the most reliable.** Hi-ten is not as strong, so a hi-ten frame carries thicker, unbutted walls to compensate. Two frames of the same nominal size in the two materials are not close, and once you have lifted a few of each you stop needing the other tests.
+
+**Look at the dropouts.** Hi-ten frames typically use plain flat dropouts, thinner and simpler than the machined and gusseted plate you get on a chromoly frame.
+
+**Tap the top tube and listen.** Chromoly rings with a clear high note. Hi-ten gives a duller thud. This is a workshop heuristic rather than a measurement, and it depends on what else is bolted to the bike, so treat it as a third opinion rather than a verdict.
+
+**Tube seam.** Cheaper tubing is often welded from rolled strip and carries an internal seam down its length, which you can sometimes feel inside a cut tube end or a seat tube. Better chromoly tubing is seamless and has no such line. That is a real difference, but it needs a tube end you can actually see into, so it is more use on a bare frame than on a built bike.
+
+None of this beats a sticker or a catalogue. If the frame is a known model, look it up first.
+
+## Chainstay yoke, and what fails there {#chainstay-yoke}
+
+::: quickanswer
+The **chainstay yoke** is the plate or wishbone joining the two chainstays just behind the bottom bracket. It exists to give the rear tyre room, and it is one of the highest stress areas on a BMX frame.
+:::
+
+Three things happen to a yoke and all three are worth looking for on a used frame.
+
+**Tyre rub.** A wide tyre in a tight frame wears a bright polished patch, and given long enough it will wear through the tube wall. A yoke with a shiny worn stripe on it has been running a tyre too big for the frame, and the question is how deep it went.
+
+**Chain suck gouges.** A dropped chain gets dragged between sprocket and stay and takes bites out of the yoke plate. Usually cosmetic, occasionally not.
+
+**Fatigue cracks at the welds.** This is the one that matters. Look closely where the stays meet the yoke, all the way round both sides. Hairline cracks start at the weld toe and they do not get better. A cracked yoke is a scrapped frame, not a repairable one, and it is exactly the sort of thing that is easy to miss under paint or a layer of grime.
+
+Clean the area before you judge it. Half the cracks people miss are missed because the frame was dirty.
+
+## Quad-butted tubing {#quad-butted-tubing}
+
+::: quickanswer
+**Butted tubing has different wall thicknesses along one tube**, thick where the stress is and thin where it is not. Double butted means two thicknesses, quad butted means four distinct zones in a single tube. You cannot feel it from the outside.
+:::
+
+The point is weight. The ends of a tube, where it is welded to another tube, carry the highest load and get the thickest wall. The middle carries less and can be thinner. Quad butting just does that more precisely than double butting, with more transitions along the length.
+
+For a used buyer the honest position is that **you cannot verify quad butting on a built bike.** It is invisible externally. What you can do is look at a cut tube end if the frame has one, or find the tubing stamp, or identify the model and check what the maker said it was built from. Quad butted tubing turns up on higher end frame main tubes and on good handlebars.
+
+Treat a seller's claim of quad butting as a claim rather than a fact, in the same way as any other spec that cannot be seen. The weight of the frame will tell you more.
+
+## Vertical dropouts, and why BMX does not use them {#vertical-dropout}
+
+::: quickanswer
+A **vertical dropout** has a slot opening downwards, so the axle drops in and cannot move fore and aft. It is standard on mountain and road bikes and effectively absent from 20 inch freestyle BMX, which uses horizontal slots instead.
+:::
+
+The reason is chain tension. A BMX drivetrain is a single fixed gear ratio with no derailleur to take up slack, so the chain is tensioned by sliding the rear axle backwards in the dropout. **A vertical dropout takes that adjustment away**, which is why a BMX frame with vertical dropouts would need a chain tensioner pulley to work at all.
+
+Worth knowing mostly so that you can read a frame correctly. Long horizontal slots on a BMX frame are not a sign of a cheap frame or a worn one, they are the design. What you are checking on used horizontal dropouts is that the faces are not chewed from an axle that has been allowed to slip, and that both sides are worn evenly, because uneven wear means the wheel has been running out of line.
 
 ## Questions {#questions}
 

@@ -102,7 +102,6 @@ This document lists the BMX technical terms, dimensional standards, geometry ter
 | Term | Slug | One-line definition | Fitment relevance | Confidence |
 | --- | --- | --- | --- | --- |
 | Knurled Bar Clamp Area | knurled-bar-clamp | The roughened band in the middle of a handlebar that helps the stem grip. | Worn or over-tightened knurling is a sign of used bar condition | solid |
-| Kevlar Bead Tyre | kevlar-bead-tyre | A tyre with a flexible folding bead instead of a steel wire bead. | Lighter and packable, but seats differently on some used rims | solid |
 | Keyed Washer | keyed-washer | A washer with a tab that locates in the dropout slot to stop the axle rotating. | Often used with detanglers and adjustable dropouts, and easily lost on used bikes | solid |
 
 ## L
@@ -187,7 +186,6 @@ This document lists the BMX technical terms, dimensional standards, geometry ter
 | Threadless Headset | threadless-headset | A headset used with an unthreaded steerer, where a stem clamps the steerer directly. | Fork, stem, and headset must all be the threadless type | solid |
 | Threaded Headset | threaded-headset | An older headset design where the top race threads onto a threaded fork steerer. | Common on old-school bikes and not compatible with modern forks and stems | verify |
 | Three-Piece Crank | three-piece-crank | A crankset made of two arms and a separate spindle. | The modern standard, and the spindle diameter drives bottom bracket choice | solid |
-| Tyre Sizing | bmx-tyre-sizes | The nominal size marked on a BMX tyre, such as a 20 inch diameter with a stated width. | Width must clear the frame, fork, and brake, and the diameter must match the rim | solid |
 
 ## U
 
@@ -221,7 +219,6 @@ This document lists the BMX technical terms, dimensional standards, geometry ter
 | --- | --- | --- | --- | --- |
 | 3X Lacing | 3x-lacing | The three cross spoke pattern, where each spoke crosses three others on its way to the rim. | Determines spoke length when rebuilding a used wheel | solid |
 | Pro XL Frame Size | pro-xl-frame-size | The largest common BMX race frame size class. | Race frames sell by class name, so buyers search this term directly | verify |
-| X-Up | x-up | A trick where the bars are turned past 90 degrees and back. | Explains why riders want a detangler or a brakeless setup | solid |
 
 ## Y
 

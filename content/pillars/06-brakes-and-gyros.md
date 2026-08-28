@@ -11,7 +11,7 @@ standfirst: Most used BMX frames arrive brakeless, and most used brake sets arri
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: u-brake|U-Brake, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, gyro-detangler|Detangler, gyro-tabs|Gyro Tabs, straddle-cable-yoke|Straddle Cable Yoke, brake-lever-reach|Brake Lever Reach, quick-release-brake-cable|Quick Release Brake Cable, v-brake|V-Brake, x-up|X-Up, keyed-washer|Keyed Washer
+terms: u-brake|U-Brake, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, gyro-detangler|Detangler, gyro-tabs|Gyro Tabs, straddle-cable-yoke|Straddle Cable Yoke, brake-lever-reach|Brake Lever Reach, quick-release-brake-cable|Quick Release Brake Cable, v-brake|V-Brake, keyed-washer|Keyed Washer
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-front-end-headsets-and-forks|Headsets, Forks and Stems, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles, bmx-handlebars-and-cockpit|Handlebars and Cockpit
 ---
 
@@ -275,6 +275,16 @@ Most used BMX frames come to a shop brakeless, because most street riding is don
 **Cable stops still in place with no cable.** Harmless, and a useful signal that the frame was built to take a brake.
 
 On the front end, a fork with no brake mounts is very common on modern forks and completely normal. See [Q019](#how-do-i-tell-if-a-bmx-fork-has-brake-mounts) below for what to look for.
+
+## Keyed washers {#keyed-washer}
+
+::: quickanswer
+A **keyed washer** has a tab on its inner edge that sits in a matching groove machined along a threaded steerer or axle. The tab stops the washer rotating, which stops the adjustment underneath it moving when you tighten the locknut on top.
+:::
+
+You meet it on threaded headsets and on older loose ball hubs. The job is small and specific. **The adjusting cup or cone below sets bearing preload. The locknut above holds the setting.** Without something between them that cannot turn, tightening the locknut drags the adjustment round with it and you end up chasing a headset that is either tight or loose and never right.
+
+**A missing keyed washer is a genuinely common problem on used parts**, because it is a flat unremarkable component that gets lost during a rebuild and nobody notices. If a threaded headset will not hold an adjustment no matter how carefully it is set, check whether the washer is there and whether its tab is still intact before assuming the bearings are worn.
 
 ## Questions {#questions}
 

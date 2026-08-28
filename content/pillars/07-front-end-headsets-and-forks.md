@@ -361,6 +361,40 @@ Alongside the headset, three things to check on any used fork.
 
 **Cracks at the welds.** Look where the legs meet the crown or the steerer, and around the dropouts and any brake mounts. A crack in a fork is a hard no. **If a fork is cracked, bent, or sketchy, it does not get sold.**
 
+## Aheadset {#aheadset}
+
+::: quickanswer
+**Aheadset** is Dia-Compe's trade name for the threadless headset design. In a modern listing it means the same thing as threadless. On period parts it is a specific product rather than a generic description.
+:::
+
+Treat it as two words doing two jobs. **When a current listing says Aheadset, read it as threadless**, and everything under threadless headsets above applies unchanged.
+
+**When a mid school part says Dia-Compe Aheadset, the name is the point.** Restorers building era correct bikes search for that name specifically, and a genuine period Dia-Compe unit is a different proposition to a modern threadless headset that happens to fit. That is worth knowing on both sides of a sale: it is what makes the part findable, and it is why the name is worth keeping in a listing rather than normalising it away.
+
+This guide does not publish a date for when the design arrived, because no source consulted gave one that could be checked. The parts themselves date a bike better than a year range does.
+
+## Quill stems {#quill-stem}
+
+::: quickanswer
+A **quill stem** drops down inside a threaded steerer tube rather than clamping around the outside of it. A wedge or cone at the bottom is pulled up by a long expander bolt, jamming the quill against the inside of the steerer. It only works with a threaded headset.
+:::
+
+The mechanism is worth understanding because it explains every quill stem problem. Everything is held by one bolt working through a wedge, so **the bolt and the wedge are the parts that fail**, and they fail where you cannot see them.
+
+Four checks before buying or selling a used one. **Does the expander bolt actually turn**, or has it seized in the quill, which is common on anything that has sat outside. **Are the wedge threads intact**, because a stripped wedge means the stem cannot be tightened at all. **Any hairline cracks around the bar clamp**, which is the other high stress area. And **look at the quill shaft above the minimum insertion mark** for gouging or a bend, which tells you it has been run too high.
+
+That minimum insertion line is not advisory. A quill run above it puts the wedge near the top of the steerer where there is far less material, and steerers do break there.
+
+## Unicrown forks {#unicrown-fork}
+
+::: quickanswer
+A **unicrown fork** has its legs bent up and welded directly to the base of the steerer, with no separate crown piece. The join is a smooth shoulder rather than a distinct cast or forged block, and it is the normal construction on BMX forks now.
+:::
+
+The alternative is a crowned fork, where the legs socket into a separate machined or cast crown that the steerer also fits into. **Look at the shoulders where the legs meet the steerer.** A visible flat block with defined edges is a crown. A continuous curve into a weld is unicrown.
+
+For a buyer this is mostly an identification and era point rather than a fitment one, because it does not change what headset or stem you need. It does tell you roughly where a fork sits in the timeline, and it is one of the features worth noting when you are dating a bike from its parts rather than from a claimed year.
+
 ## Questions {#questions}
 
 ::: faq Q012 | What size headset does a BMX bike use?

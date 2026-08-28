@@ -280,6 +280,48 @@ Bottom bracket bearings are dimensional parts, not proprietary ones. A 41.3mm ou
 
 The practical read: **match the dimensions and the brand stops mattering.** Where brands do differ is in the spacer kit and the cone or pinch bolt arrangement supplied with a bottom bracket, so keep the hardware that came with yours.
 
+## Bottom bracket shell width {#bottom-bracket-shell-width}
+
+::: quickanswer
+**Shell width is the measurement between the two outer faces of the bottom bracket shell**, across the frame rather than through it. On BMX it is **68mm** almost without exception. It is a different number from shell diameter, and diameter is the one that picks your standard.
+:::
+
+Width matters less than diameter, because Mid and Spanish kits are sold with spacer sets that cover the range. It is still worth a reading on any used frame, for one reason: **you are checking that nobody has ground the shell faces down.** A previous owner fighting a stuck bearing sometimes takes material off the face, and a shell that is narrow because it has been attacked with a file will not hold a bearing square.
+
+The figures already in the tables above hold. 68mm is the BMX answer, 73mm turns up on MTB and dirt jump frames, and Mid and Spanish kits are commonly sold to suit both.
+
+## Press-fit bottom brackets and how they go wrong {#press-fit-bottom-bracket}
+
+::: quickanswer
+A **press-fit bottom bracket** has its bearings pressed directly into the frame shell rather than threaded into it. Mid, Spanish and sealed American are all press-fit. The bearing is held by friction against an interference fit, which is why how it goes in matters as much as what goes in.
+:::
+
+Use a threaded bearing press with stepped drifts that bear on the **outer** race. That is the whole technique. The press pulls the bearing in square and slowly, and the drift makes sure the load goes through the part of the bearing that can take it.
+
+What goes wrong is almost always a hammer. Driving a bearing in with a socket and a mallet takes it in at an angle, and three things follow. The shell can be ovalised, which is permanent and takes the frame out of service for that standard. The seal can be pushed in or nicked, which turns a sealed bearing into an unsealed one. And on a setup with an internal spacer tube between the bearings, over-driving crushes the spacer, after which the bearings are preloaded against each other and will not spin freely no matter what you do to the cranks.
+
+**On a used frame, look at the shell before you look at anything else.** A bore that is bright and scored, or that will not take a new bearing with normal press force, has been hammered.
+
+## Loose ball bearings, and when to bin them {#loose-ball-bearings}
+
+::: quickanswer
+**Loose ball bearings** run directly against cup and cone races rather than living inside a sealed cartridge. You meet them on one-piece cranks, vintage headsets and older hubs. Whether they are worth servicing depends entirely on the race, not on the balls.
+:::
+
+The balls are consumable and cost almost nothing. The **race** is the part pressed into the component body, and it is the part that decides.
+
+So the rule here is simple. Run a fingernail around the cup race and look at it in good light. **If the race is smooth, the part is worth servicing**, and new balls plus fresh grease will make it run properly again. **If the race is pitted, scored or has a visible track worn into it, bin the part.** New balls in a pitted race feels fine for a week and then goes rough again, because every ball is rolling over the same damage. That is a temporary fix sold as a repair, and it is not something that goes out with a part from here.
+
+## Unsealed bearings on used parts {#unsealed-bearings}
+
+::: quickanswer
+**Unsealed** means the bearing has no cartridge and no seal, so grit and water reach the balls directly. It is the older arrangement and it is fully serviceable, which is the upside. The downside is that neglect does permanent damage rather than temporary damage.
+:::
+
+The check is the same one as for loose balls above, because it is the same failure. A hub or bottom bracket with unsealed bearings gets listed here only when the cup races are clean. Rust pitting or scoring in the race means the part is scrapped rather than rebuilt.
+
+Worth being blunt about why. A sealed cartridge that has gone rough is a ten minute fix, because you press the old one out and a new one in and the frame or hub is untouched. **An unsealed part with a damaged race is not repairable in the same way**, because the race is part of the component. That is the real difference between the two systems on the used market, and it is worth more than any argument about which spins better when new.
+
 ## Questions {#questions}
 
 ::: faq Q001 | What bottom bracket does my BMX frame take?

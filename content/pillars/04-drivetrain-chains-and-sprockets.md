@@ -380,6 +380,28 @@ Chain play is workshop guidance, not a specification. Aim for some slack. A chai
 
 **Three passes have now failed to find a published rear axle torque figure**, across Odyssey, Sunday, Profile, BSD, Cinema and Shadow Conspiracy. Manuals and spec sheets both. This is the same result as crank bolt torque on the [cranks guide](/guides/bmx-cranks-and-pedals/#pinch-bolt), and at this point it is a characteristic of the industry rather than a gap in this research. <span class="src src-conflict">Unpublished</span>
 
+## Drive side and non-drive side {#non-drive-side}
+
+::: quickanswer
+The **drive side** is the side the chain and sprocket are on, the right on a standard bike. The **non-drive side (NDS)** is the other one. The terms come up constantly in listings, and they matter because a fair number of parts are side specific.
+:::
+
+Hub guards are the common trip. A drive side guard is cut to clear the driver and a non-drive guard is not, so the two are not swappable, and a listing that says "hub guard" without saying which side is only half an answer. Ask before buying.
+
+The other one is grind wear. **On a bike that grinds, the non-drive side axle hardware takes the worst of it**, because there is no sprocket or chain in the way and nothing else to hit first. When you are assessing a used rear wheel, look hard at the non-drive end of the axle, the nut or bolt on that side, and the guard if there is one. The drive side often looks better than the bike has actually been treated.
+
+## Sprocket guards {#sprocket-guard}
+
+::: quickanswer
+A **sprocket guard** is a disc that mounts with the sprocket to shield the teeth and chain from rails and coping. It works with the sprocket rather than replacing it, and fitment depends on the spindle size and on frame clearance.
+:::
+
+Guards fit reasonably well across brands provided the hardware is right. **The part that has to match is the hat washer bore**, which follows the spindle: 19mm, 22mm or 24mm, the same set covered under crank spindle diameter. Get that wrong and the guard does not sit concentric with the sprocket, which is worse than no guard.
+
+The second check is clearance. **Frames with a wide or heavily flared chainstay yoke can leave less room than a guard needs**, so a guard that fits the cranks may still foul the frame. Worth offering the guard up before committing, rather than assuming that matching the spindle is the end of the question.
+
+On a used guard, expect the outer edge to be ground away, which is what it is for. What matters is the mounting area and whether the bolt holes have been pulled oval.
+
 ## Questions {#questions}
 
 ::: faq Q037 | Does my BMX bike need a 1/8 inch or 3/32 inch chain?

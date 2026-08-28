@@ -195,10 +195,13 @@ Female axles usually sit flush or nearly flush with the dropout, which is tidier
 
 ::: caliper Actual axle diameter against the nominal size on used hubs
 tool: Mitutoyo 6 inch Digital Caliper
+- Odyssey Hazard front, 3/8 inch nominal | 9.51mm
 - Profile Mini rear, 14mm nominal | 13.96mm
 - Shimano MX30, 3/8 inch nominal | 9.48mm
 
-**Both read slightly under nominal, and that is normal.** 3/8 inch is 9.525mm exactly, so 9.48 is 0.045mm under. A 14mm axle at 13.96 is 0.04mm under. Those are manufacturing tolerance and light wear, not a different size, and neither would stop the axle going into the dropout it was made for.
+**All three read slightly under nominal, and that is normal.** 3/8 inch is 9.525mm exactly, so 9.51 is 0.015mm under and 9.48 is 0.045mm under. A 14mm axle at 13.96 is 0.04mm under. Those are manufacturing tolerance and light wear, not a different size, and none would stop the axle going into the dropout it was made for.
+
+**Note which Hazard that is.** The front Hazard runs a 3/8 inch axle. The Hazard cassette rear runs 14mm. Same model name, two different axle sizes depending on which end of the bike it came off, which is a good reminder that a hub's model name is not its axle spec.
 
 The number that matters is which size you are looking at, not the second decimal place. **A reading anywhere near 9.5 is a 3/8 inch axle and a reading near 14 is a 14mm axle**, and nothing in between exists as a BMX standard. If a listing says 10mm and the part measures 9.5, the listing is describing a 3/8 inch axle by the wrong name, which is the confusion this section exists to clear up.
 :::
@@ -325,6 +328,50 @@ The practical warning for a used buyer: **a left hand drive wheel is not a right
 
 ::: fitbadge Sorting out chainline after a drive side change? | Drivetrain Chains and Sprockets guide | /guides/drivetrain-chains-and-sprockets/
 :::
+
+## Male axles {#male-axle}
+
+::: quickanswer
+A **male axle** is a threaded shaft that runs through the hub and sticks out past the dropouts on both sides, secured with a nut on each end. If you can see external threads outside the dropout, it is a male axle.
+:::
+
+That visible thread is the whole identification, and it is also the weakness. **The exposed threads are the first thing to go on a bike that gets ridden on ledges**, because they are the outermost part of the axle and they take the hit. Once they are flattened, the nut will not start, and you are into a die or a new axle.
+
+Male axles are simpler, cheaper and easier to replace, and on a bike that never grinds they are perfectly good. Check the threads on both sides before buying, and check that a nut actually runs down them by hand rather than trusting how they look.
+
+## Female axles {#female-axle}
+
+::: quickanswer
+A **female axle** is hollow and threaded on the inside, with a bolt screwing into each end and end caps sitting flush against the dropout. There are no threads outside the dropout to damage. If you see a bolt head rather than a nut, it is a female axle.
+:::
+
+Street riders prefer female for one specific reason: **a smooth bolt head slides over a ledge, where an exposed male thread catches and gets destroyed.** That is the entire argument and it is a good one for anyone who grinds.
+
+The corresponding weakness is that the damage moves inside where you cannot see it. A rounded bolt head or a stripped internal thread means removing the bolt is a problem, and an axle with a snapped bolt in it is a bigger job than a flattened male thread. **Check that both bolts come out and go back in** before buying a used female hub, rather than only looking at the outside.
+
+Thread pitch on 3/8 inch hardware is not consistent. 26 TPI is the commonly quoted standard for BMX axle nuts, and female bolts turn up sold as 24 TPI as well. Match the hardware to the axle you actually have rather than ordering on the nominal size alone.
+
+## Hub guards {#hub-guard}
+
+::: quickanswer
+A **hub guard** is a disc that sits over the hub against the dropout to take grind damage instead of the spokes and flange. Drive side and non-drive side guards are different parts, and they are not interchangeable.
+:::
+
+**The non-drive side guard is a plain disc.** It protects the flange and the spoke heads on that side. **The drive side guard has to clear the driver and the chain**, so it is cut differently, and a non-drive guard fitted on the drive side will foul the chain.
+
+Guards are also hub specific more often than people expect, because they locate on the hub body or the axle in a way that depends on the hub design. Assume a guard fits the hub it came off unless you can confirm otherwise.
+
+Checking a used one is quick. **On plastic guards, look at the retention tabs**, which are the press fit ears that hold it on, because those crack and once cracked the guard spins or falls off. **On aluminium or steel guards, check the threads and look for deep gouges** on the inner face that would bind against the hub body. A guard that has done its job is scarred on the outside, which is fine. One that is damaged where it mounts is not.
+
+## Right hand drive and left hand drive {#right-hand-drive}
+
+::: quickanswer
+**Right hand drive (RHD)** puts the sprocket, chain and driver on the right of the bike, which is the standard arrangement. **Left hand drive (LHD)** puts them on the left. Converting between them is not a matter of turning parts around.
+:::
+
+A conversion needs two things at minimum: **an LHD rear hub**, because the driver threads on and thread direction has to suit the side it is on, and **LHD cranks**, because the sprocket mounts to a boss or spline on the correct arm. Neither an RHD hub nor an RHD crankset can be flipped to do the job.
+
+Riders run LHD to suit which foot they grind with, so it is a preference rather than an upgrade. For a used buyer the thing to be careful about is a partial conversion. **A bike advertised as LHD with only one of the two parts changed is not an LHD bike**, and the other half is a specific purchase rather than something you have lying around. Check the hub and the cranks separately before believing the listing.
 
 ## Questions {#questions}
 
