@@ -14,50 +14,108 @@ from datetime import date
 
 import schema_terms
 
-DICT_SRC = "content-plan/az-dictionary.md"
+DICT_SRC = "content-plan/terms.tsv"
 LETTERS = [chr(c) for c in range(ord("A"), ord("Z") + 1)]
 
-ROW_RE = re.compile(r"^\|(.+)\|\s*$")
+REGISTRY_COLUMNS = [
+    "slug", "term", "letter", "category", "tier", "home", "status",
+    "definition", "relevance", "source_status", "related",
+]
+
+CATEGORIES = {
+    "drivetrain", "frame", "wheels", "steering",
+    "brakes", "cockpit", "vintage", "hardware",
+}
+
+_REGISTRY_CACHE = {}
+
+
+def load_registry(root):
+    """Read content-plan/terms.tsv into a list of dicts, in file order.
+
+    This is the single source of truth for the term list. It replaced
+    content-plan/az-dictionary.md, which is kept as the original research
+    record and is no longer read by anything.
+
+    A missing or malformed registry is a hard error rather than an empty
+    result. Returning {} on a bad read used to mean the hub silently built
+    with no glossary at all, which looks like a content problem rather than
+    a build one and wasted an afternoon finding it.
+    """
+    path = os.path.join(root, DICT_SRC)
+    if path in _REGISTRY_CACHE:
+        return _REGISTRY_CACHE[path]
+    if not os.path.isfile(path):
+        raise SystemExit("term registry missing: %s" % path)
+
+    rows = []
+    header = None
+    with open(path, encoding="utf-8") as fh:
+        for lineno, line in enumerate(fh, 1):
+            line = line.rstrip("\n")
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            cells = line.split("\t")
+            if header is None:
+                header = cells
+                if header != REGISTRY_COLUMNS:
+                    raise SystemExit(
+                        "%s line %d: unexpected columns\n  found:    %s\n  expected: %s"
+                        % (path, lineno, header, REGISTRY_COLUMNS))
+                continue
+            if len(cells) != len(REGISTRY_COLUMNS):
+                raise SystemExit("%s line %d: %d columns, expected %d"
+                                 % (path, lineno, len(cells), len(REGISTRY_COLUMNS)))
+            row = dict(zip(REGISTRY_COLUMNS, (c.strip() for c in cells)))
+            if row["status"] not in ("published", "planned"):
+                raise SystemExit("%s line %d: bad status %r"
+                                 % (path, lineno, row["status"]))
+            if row["category"] not in CATEGORIES:
+                raise SystemExit("%s line %d: unknown category %r"
+                                 % (path, lineno, row["category"]))
+            if row["letter"] not in LETTERS:
+                raise SystemExit("%s line %d: letter %r is not A-Z"
+                                 % (path, lineno, row["letter"]))
+            row["related"] = [s for s in row["related"].split("|") if s]
+            rows.append(row)
+
+    seen = {}
+    for r in rows:
+        if r["slug"] in seen:
+            raise SystemExit("%s: duplicate slug %s" % (path, r["slug"]))
+        seen[r["slug"]] = r
+    dangling = sorted({s for r in rows for s in r["related"] if s not in seen})
+    if dangling:
+        raise SystemExit("%s: related points at unknown slugs: %s"
+                         % (path, ", ".join(dangling)))
+
+    _REGISTRY_CACHE[path] = rows
+    return rows
 
 
 def parse_dictionary(root):
-    """Pull (letter -> [entries]) out of the planning markdown.
+    """(letter -> [entries]) for the terms that are actually live.
 
-    The planning doc is the single source of truth for the term list, so
-    the hub cannot drift from it. Rows that are not real entries (header
-    rows, separators) are skipped.
+    Planned terms are deliberately excluded. A planned term has no section
+    and therefore no anchor, so publishing it here would put a dead link in
+    the A-Z and an unresolvable @id in the schema. It becomes visible the
+    moment its status flips to published.
+
+    Grouping comes from the registry's letter column, not from the first
+    character of the name. The A-Z files by concept keyword: Wheel Dish sits
+    under D, Handlebar Backsweep under B, Hub End Caps under E. Recomputing
+    it would quietly reshuffle a third of the glossary.
     """
-    path = os.path.join(root, DICT_SRC)
-    if not os.path.isfile(path):
-        return {}
     groups = {}
-    letter = None
-    for line in open(path, encoding="utf-8"):
-        line = line.rstrip("\n")
-        m = re.match(r"^##\s+([A-Z])\s*$", line)
-        if m:
-            letter = m.group(1)
-            groups.setdefault(letter, [])
+    for row in load_registry(root):
+        if row["status"] != "published":
             continue
-        if letter is None:
-            continue
-        if line.startswith("## "):
-            letter = None
-            continue
-        m = ROW_RE.match(line)
-        if not m:
-            continue
-        cells = [c.strip() for c in m.group(1).split("|")]
-        if len(cells) < 4:
-            continue
-        if cells[0].lower() == "term" or set(cells[0]) <= set("- :"):
-            continue
-        groups[letter].append({
-            "term": cells[0],
-            "slug": cells[1],
-            "definition": cells[2],
-            "relevance": cells[3],
-            "confidence": cells[4] if len(cells) > 4 else "",
+        groups.setdefault(row["letter"], []).append({
+            "term": row["term"],
+            "slug": row["slug"],
+            "definition": row["definition"],
+            "relevance": row["relevance"],
+            "confidence": row["source_status"],
         })
     return groups
 
