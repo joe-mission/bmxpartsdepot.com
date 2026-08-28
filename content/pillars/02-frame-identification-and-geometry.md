@@ -411,6 +411,6 @@ After the condition checks, get the fitment facts: bottom bracket shell size, he
 Finally, measure the top tube yourself rather than trusting the listing, and note the serial number.
 :::
 
-::: ebay Chromoly BMX frame, mid school | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Frames in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Frames get listed by the standards measured off the frame, not by what the model was sold as. If something is cracked, bent, or sketchy, it does not get sold at all.
 :::

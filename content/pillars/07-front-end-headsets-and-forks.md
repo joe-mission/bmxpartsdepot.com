@@ -363,7 +363,7 @@ Alongside the headset, three things to check on any used fork.
 ::: faq Q012 | What size headset does a BMX bike use?
 The honest answer is that you have to look at the frame, because the head tube design decides it. Bearings sitting directly in a machined angled seat with no cups means an integrated headset. Cups pressed into the tube with the bearings inside it means zero stack. Cups sitting proud of the head tube faces means a traditional pressed headset. A threaded ring and locknut on top of the steerer means an old threaded headset.
 
-Then there is the steerer diameter, which the headset and stem both have to match. This guide does not publish the diameter figures yet, because the commonly repeated numbers in this area have not been checked against a manufacturer source and several of them do not hold up. Measure your steerer and your head tube bore, or take the old headset to the counter with you.
+Then there is the steerer diameter, which the headset and stem both have to match. **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against ISO 4210-2, Park Tool and SHIS, and unusually for BMX the inch names here are exact rather than nominal. The full set of dimensions is in [headset standards](#bmx-headset-standards). Measure your steerer and your head tube bore against them, or take the old headset to the counter with you.
 :::
 
 ::: faq Q013 | What is the difference between an integrated and a press in BMX headset?
@@ -387,7 +387,7 @@ Sometimes, and it depends on the head tube rather than on what was in it before.
 
 What has to line up is the steerer diameter and the head tube bore. Older threaded setups and modern threadless setups frequently use different steerer diameters, and if they differ then the fork will not work in that frame with that headset. You will also need a threadless stem, because your existing quill stem is useless on a smooth steerer, and the bars have to suit the new stem's clamp.
 
-Measure the head tube bore and the steerer of the fork you are considering before buying anything. This guide does not publish those diameters yet, because they have not been sourced.
+Measure the head tube bore and the steerer of the fork you are considering before buying anything, and compare against the sourced figures in [headset standards](#bmx-headset-standards): 25.40mm for a 1 inch steerer, 28.575mm for 1 1/8 inch.
 :::
 
 ::: faq Q016 | How do I measure BMX fork steerer tube length?
@@ -423,7 +423,7 @@ No. The stem has to match the steerer diameter it clamps to or sits inside, and 
 
 There is a second problem beyond diameter. Old school 1 inch stems are usually quill stems, which go inside a threaded steerer, and most 1 1/8 inch BMX forks are threadless, which need a stem that clamps around the outside. So the two are often incompatible in type as well as in size.
 
-This guide does not publish the measured diameters for either name yet, because the inch names are nominal and the figures repeated online have not been checked. If you are matching parts, measure the steerer.
+Both names are exact here rather than nominal, which is not always true in BMX: **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against ISO 4210-2, Park Tool and SHIS. Compare that with the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm. If you are matching parts, measure the steerer and check it against those figures.
 :::
 
 ::: faq Q093 | When did BMX move from 1 inch threaded headsets to 1 1/8 integrated?
@@ -432,6 +432,6 @@ The sequence is clear and the dates are not. BMX went from threaded headsets wit
 This guide does not publish a year for the changeover, because no source consulted gave one that could be checked. Era boundaries in BMX are generally described by which parts a bike has rather than by dates, and a lot of the year ranges repeated online are somebody's estimate that got copied. If you are dating a frame, use the parts and the construction rather than a headset year.
 :::
 
-::: ebay Integrated headset, sealed bearing | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Headsets, forks and stems in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Forks go up with the measured steerer length and the headset standard they suit. A steerer too short for your head tube is not a fixable problem, so it gets measured first.
 :::

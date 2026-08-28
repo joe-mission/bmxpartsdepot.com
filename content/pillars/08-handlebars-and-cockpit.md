@@ -334,6 +334,6 @@ A front load stem clamps the bars with a removable faceplate, so the bars come o
 Both hold the same bars, assuming the clamp diameters match. The choice is about how the bars are held and how much height the stem adds under them, not about compatibility.
 :::
 
-::: ebay Four-piece BMX bars, cut and measured | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up. Used bars go up with the measured width, not the model width.
+::: ebay Handlebars, stems and grips in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Used bars go up with the measured width, not the width the model was sold at, because a cut set is a different bar. Rise gets measured the same way.
 :::

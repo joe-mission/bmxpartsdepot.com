@@ -351,6 +351,9 @@ figure.diagram .fig-body.placeholder .todo{
   transition:border-color .2s ease,box-shadow .25s ease,transform .2s ease;
 }
 .part-card:hover{border-color:#c9ced6;box-shadow:0 18px 34px -26px rgba(0,0,0,.5);transform:translateY(-2px)}
+/* A store link has no item photo, so it drops the thumbnail column rather than
+   showing an empty dashed box that reads as unfinished. */
+.part-card.no-thumb{grid-template-columns:minmax(0,1fr);padding:18px}
 .part-card .thumb{
   width:104px;height:104px;border-radius:10px;overflow:hidden;
   background:var(--paper-2);display:flex;align-items:center;justify-content:center;

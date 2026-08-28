@@ -7,7 +7,7 @@ slug: bmx-brakes-and-gyros
 headline: BMX U-Brakes, Brake Mounts, Gyros and Cable Setup
 description: How BMX U-brakes mount, what 990 mounts and gyro tabs are, how a detangler actually works, and what a brakeless frame is missing when you try to put a brake back on it.
 cardline: Mounts, straddle cables, detanglers, and the parts that go missing off a used frame.
-standfirst: Most used BMX frames arrive brakeless, and most used brake sets arrive incomplete. This guide explains how each part of the system works and what has to be present for it to work at all. Post spacings and cable lengths are held back rather than guessed at, because those are the numbers people get wrong.
+standfirst: Most used BMX frames arrive brakeless, and most used brake sets arrive incomplete. This guide explains how each part of the system works and what has to be present for it to work at all. Mount dimensions are sourced and stated. Straddle cable lengths are held back rather than guessed at, because that one varies with the frame and the brake together.
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
@@ -48,7 +48,7 @@ The force path from the lever to the pad, with the straddle triangle drawn at tw
 **Brake mounts** are the two posts a U-brake bolts onto. On a BMX frame they sit on the seat stays or the chain stays. On a fork they sit on the back of the fork legs. The listing word for the standard BMX U-brake post arrangement is **990**.
 :::
 
-The name 990 is used in listings and in conversation to mean the standard BMX U-brake mount, and a brake described as a 990 brake is a U-brake meant for those posts. It began as a model designation and became a generic term the way a lot of BMX vocabulary does. This guide does not publish which model it originally referred to, or the post spacing figure, because neither has been checked against a source.
+The name 990 is used in listings and in conversation to mean the standard BMX U-brake mount, and a brake described as a 990 brake is a U-brake meant for those posts. It began as a model designation and became a generic term the way a lot of BMX vocabulary does, and the section below traces which model. Both the post spacing and the post diameter are given in the table further down, sourced.
 
 The identification job on a used frame is straightforward. Look at the seat stays just above the rear wheel, and at the chain stays just behind the bottom bracket. Posts on the seat stays mean the brake sits above the wheel. Posts on the chain stays mean it sits below and behind the bottom bracket, tucked out of the way, which was a common arrangement on frames built for riders who wanted a brake but not a brake in the way. Some frames have both. Many modern frames have neither.
 
@@ -293,7 +293,7 @@ To check your frame, look along the seat stays just above the rear tyre and alon
 ::: faq Q043 | Will a U-brake fit a frame with cantilever mounts?
 Not reliably. Cantilever posts and U-brake posts look alike, both being a pair of posts either side of the wheel, but the spacing and the arm geometry differ. A U-brake arm may slide onto a cantilever post and still put the pad in the wrong place relative to the rim, which is not something you can adjust your way out of.
 
-The honest answer is to measure the post spacing on your frame and buy a brake made for that spacing. This page does not publish either figure yet because neither has been checked against a source, and a wrong number here costs you a brake that does not fit.
+The honest answer is to measure the post spacing on your frame and buy a brake made for that spacing. **990 U-brake posts are 9.0mm in diameter at 82 to 85mm centre to centre**, sourced to Odyssey and Dia-Compe. **Cantilever posts run 75 to 80mm, and 55 to 65mm on vintage frames**, sourced to ISO 4210-2 and Shimano. Full table in [brake mounts and the 990 name](#u-brake-mounts).
 :::
 
 ::: faq Q044 | What is the difference between a U-brake and a V-brake on a BMX?
@@ -338,6 +338,6 @@ Look at the back of the fork legs, roughly level with where the rim's braking su
 Also check the fork crown or the back of the crown for a drilled hole, which would take a caliper brake instead of posts. Many modern BMX forks have neither, because most street riders run no front brake, and a fork with no mounts and no drilling will not take a front brake at all. Look for ground-off stubs and grinding marks too, since removing mounts with a grinder is common and leaves a mark.
 :::
 
-::: ebay U-brake set with straddle cable and yoke | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Brakes, levers and gyros in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Brake sets go up with the mount standard they fit and with whatever hardware is genuinely in the box, because a U-brake missing its straddle cable and yoke is a different purchase.
 :::

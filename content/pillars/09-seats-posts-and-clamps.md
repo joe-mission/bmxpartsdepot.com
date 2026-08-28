@@ -303,7 +303,7 @@ If you want to run a pivotal seat, you need a pivotal post. Buying both together
 ::: faq Q059 | What diameter seat post does my BMX frame take?
 Measure it rather than assume it. Take calipers across the outside of the post you already have, at a couple of points along its length, because a post that has been over-clamped is often no longer round. If you have no post, measure the inside of the seat tube at the very top and treat that reading as the less reliable of the two.
 
-Watch for a shim. A frame with a post in it is not proof of the frame's native size, because sleeves and shims are common and are easy to miss until the post comes out. This guide does not publish the specific diameters yet, because they have not been verified against manufacturer specifications, and a wrong number here is the one that gets a seat tube crushed.
+Watch for a shim. A frame with a post in it is not proof of the frame's native size, because sleeves and shims are common and are easy to miss until the post comes out. The diameters themselves are in [seat post diameter](#seat-post-diameter): **25.4mm is the modern freestyle default**, with 22.2mm on old school, youth and micro frames and 27.2mm on race and cruiser, all confirmed. Measure anyway rather than ordering off the odds, because a wrong number here is the one that gets a seat tube crushed.
 :::
 
 ::: faq Q060 | How do I measure a BMX seat post diameter?
@@ -332,6 +332,6 @@ An integrated seat mast is a frame built so the seat mounts at or very near the 
 It is not the same thing as an integrated seat clamp, which is a clamp machined into the frame that still takes an ordinary sliding post. The clamp style and the mast are two different questions, and plenty of frames have the first without the second.
 :::
 
-::: ebay Pivotal seat and post, checked underneath | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up. Used seats get photographed from underneath, because that is the side that tells you whether the base is cracked.
+::: ebay Seats, posts and clamps in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Used seats get photographed from underneath, because that is the side that tells you whether the base is cracked. Posts go up with the measured diameter.
 :::

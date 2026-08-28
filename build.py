@@ -314,16 +314,27 @@ def d_ebay(arg, body, ctx):
     thumb = parts[4] if len(parts) > 4 else ""
     note = body.strip()
 
-    gclass = {"A": "grade-a", "B": "grade-b", "C": "grade-c"}.get(grade, "grade-b")
-    gtext = {"A": "Grade A", "B": "Grade B", "C": "Grade C"}.get(grade, "Grade " + grade if grade else "Ungraded")
+    # A grade, a price and a photo describe one specific item. A card that points
+    # at the store rather than at an item has none of them, and must not invent
+    # them: no badge, no price, no dashed photo box. Leave the field empty and the
+    # card renders as a clean category link instead of a half-filled listing.
+    if grade and not grade.startswith("TBD"):
+        gclass = {"A": "grade-a", "B": "grade-b", "C": "grade-c"}.get(grade, "grade-b")
+        gtext = {"A": "Grade A", "B": "Grade B", "C": "Grade C"}.get(grade, "Grade " + grade)
+        grade_html = '<span class="grade %s">%s</span>' % (gclass, gtext)
+    else:
+        grade_html = ""
 
     if thumb and not thumb.upper().startswith("TBD"):
         thumb_html = '<div class="thumb"><img src="%s" alt="%s" loading="lazy"></div>' % (
             html.escape(thumb, quote=True), html.escape(title, quote=True))
     else:
-        thumb_html = '<div class="thumb placeholder">Photo</div>'
+        thumb_html = ""
 
-    price_html = '<span class="price">%s</span>' % html.escape(price) if price else ""
+    if price and not price.upper().startswith("TBD"):
+        price_html = '<span class="price">%s</span>' % html.escape(price)
+    else:
+        price_html = ""
     note_html = "<p>%s</p>" % inline(note) if note else ""
     arrow = (
         '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
@@ -331,14 +342,18 @@ def d_ebay(arg, body, ctx):
         '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>'
         '<polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
     )
+    meta_html = ('<div class="meta">%s%s</div>' % (grade_html, price_html)) if (grade_html or price_html) else ""
+    cta_text = "View Live Item on eBay" if thumb_html or meta_html else "Browse the eBay Store"
     return (
-        '<div class="part-card">%s<div class="pc-body">'
+        '<div class="part-card%s">%s<div class="pc-body">'
         '<h4><a href="%s" target="_blank" rel="noopener nofollow">%s</a></h4>'
-        '<div class="meta"><span class="grade %s">%s</span>%s</div>%s'
+        '%s%s'
         '<a class="btn sm cta" href="%s" target="_blank" rel="noopener nofollow">'
-        'View Live Item on eBay %s</a></div></div>'
-        % (thumb_html, html.escape(url, quote=True), inline(title),
-           gclass, gtext, price_html, note_html, html.escape(url, quote=True), arrow)
+        '%s %s</a></div></div>'
+        % ("" if thumb_html else " no-thumb", thumb_html,
+           html.escape(url, quote=True), inline(title),
+           meta_html, note_html, html.escape(url, quote=True),
+           html.escape(cta_text), arrow)
     )
 
 

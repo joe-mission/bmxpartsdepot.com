@@ -337,6 +337,6 @@ Less than you would expect. Mid and Spanish bottom bracket kits are sold to cove
 Measure it while you have the calipers out, but it rarely stops a build.
 :::
 
-::: ebay Mid bottom bracket, 19mm, sealed | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Bottom brackets, spindles and bearings in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+What is in stock changes as bikes come apart. Each one is measured against the standards on this page before it goes up, so the listing says which shell it actually fits.
 :::

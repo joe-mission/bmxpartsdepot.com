@@ -309,7 +309,7 @@ You are changing the adapter around the bearing rather than the bearing itself, 
 ::: faq Q010 | What crank arm length should I run on a BMX bike?
 Length is measured from the centre of the spindle to the centre of the pedal thread. Shorter arms keep the pedals further from the ground and further from the front tyre, which suits grinding and tight riding. Longer arms give more leverage from a standstill, which is why race and taller riders lean that way.
 
-There is no single right answer and no reliable height chart. If you already ride something you get on with, measure it and match it. This guide does not publish a recommended figure because the length ranges commonly quoted online have not been checked against manufacturer catalogues.
+There is no single right answer and no reliable height chart. If you already ride something you get on with, measure it and match it. The lengths actually sold are listed in [crank arm length](#crank-arm-length), running 160 to 175mm on freestyle with 175mm the long-standing default, and much wider on race. What this guide will not do is recommend one for you, because no manufacturer publishes a fitting rule and the height charts in circulation are somebody's estimate that got copied.
 :::
 
 ::: faq Q011 | Why do my BMX cranks keep working loose?
@@ -342,6 +342,6 @@ Look for an L or an R stamped on the spindle end or on the wrench flats. That is
 If the marking has worn off, use the thread direction. The left pedal is left-hand threaded, so it tightens anticlockwise and loosens clockwise, which is the opposite of everything else on the bike. Turn each spindle by hand against a nut or against the crank and the one that tightens the wrong way is the left.
 :::
 
-::: ebay Three-piece crankset, 19mm spindle | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Cranks, spindles and pedals in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Crank arms go up with the measured length and the spindle size they take. Pedals go up with the thread size, since 9/16 inch and 1/2 inch are not interchangeable.
 :::

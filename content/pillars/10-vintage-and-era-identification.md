@@ -405,6 +405,6 @@ Pay particular attention to places rust concentrates because water sits there: i
 If cleaning it back leaves a part you would not put on your own bike, it does not get sold as anything other than what it is.
 :::
 
-::: ebay Old school BMX parts, era described by standard | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up. Period parts get listed by the standard they use, not by a year we cannot support.
+::: ebay Old school and mid school parts in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Period parts get listed by the standard they use rather than by a year nobody can support. The era chips on this site carry no dates for the same reason.
 :::

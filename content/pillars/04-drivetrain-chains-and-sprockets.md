@@ -462,6 +462,6 @@ A chain wear gauge gives a proper answer and is worth owning if you handle a lot
 What matters more than the chain is what it has done to everything else. A chain run well past its life wears the sprocket and driver teeth into a hooked shape, and at that point a new chain will skip on the old teeth. So on a used bike with an obviously worn chain, inspect the driver and the sprocket before assuming a new chain fixes it.
 :::
 
-::: ebay Sprocket, 25t, bolt-through with adapter | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Sprockets, drivers and chains in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Sprockets go up with the bolt pattern and the width they are cut for, because a sprocket that does not suit your chain is exactly the fitment problem this page exists to prevent.
 :::

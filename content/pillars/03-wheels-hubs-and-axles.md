@@ -368,7 +368,9 @@ You can also tell by eye once you have seen both. A 48 spoke wheel looks visibly
 ::: faq Q022 | What is the real rim diameter of a 20 inch BMX wheel?
 "20 inch" is a trade name rather than a measurement, and the number that actually matters is the ISO bead seat diameter, which is the measured diameter of the rim where the tyre bead sits. That figure is printed on most tyres as part of a pair, width and bead seat diameter.
 
-We are not publishing the figure on this page yet, because it has not been checked against a primary source and it is exactly the kind of number that gets copied between websites without anyone verifying it. What can be said is that the standard 20 inch BMX wheel is genuinely standard, so 20 inch BMX tyres and 20 inch BMX rims go together reliably.
+The figure is **ISO 406mm**, sourced to ISO 5775 and ETRTO. A 20 inch BMX wheel is a 406mm bead seat with a tyre on top, which is also why it rolls closer to 19.5 inches than to 20. Because it is a standard rather than a convention, it is one of the few figures on this site you can rely on absolutely, and 20 inch BMX tyres and rims go together reliably.
+
+The trap is **ISO 451**, used on some narrow race wheels and some older ones. 406 and 451 do not interchange in either direction, so if a tyre will not seat, read the number on the sidewall before blaming the tyre. Full detail in [rims, wall construction and bead seat diameter](#rim-wall-construction).
 
 Where the ISO number earns its keep is on everything that is not a standard 20 inch BMX wheel: cruisers, smaller kids' bikes, and old wheels of uncertain origin.
 :::
@@ -391,6 +393,6 @@ On a cassette or freecoaster, also check the mechanism. Turn the cog backwards s
 Sealed cartridge bearings are usually replaceable and a hub with a bad bearing and a good shell is worth having. A cracked flange is not fixable and the hub is scrap.
 :::
 
-::: ebay Cassette rear wheel, 14mm axle | B | TBD | https://www.ebay.com/usr/bmx-parts-depot | TBD
-Placeholder card. Swap the title, grade, price, and direct item URL when the listing goes up.
+::: ebay Wheels, hubs and axles in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
+Axle diameter and dropout spacing are two different numbers, and listings here keep them apart. Both are measured off the part rather than copied from a spec sheet.
 :::
