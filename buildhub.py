@@ -85,6 +85,11 @@ def build_term_map(pages):
 
 
 def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
+    # Deferred like the relativise import below: build.py imports this module
+    # from inside a function, so importing it back at module level would
+    # re-execute build.py as a second module object.
+    from build import versioned
+
     root = os.path.dirname(os.path.abspath(__file__))
     groups = parse_dictionary(root)
 
@@ -210,7 +215,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
         description=("Work out whether a used BMX part fits before you buy it. Ten reference "
                      "guides and an A-Z dictionary of BMX standards, dimensions, and part variations."),
         url=url, site=SITE, schema=json.dumps(schema, indent=2, ensure_ascii=False),
-        nav=nav_html("guides"),
+        nav=nav_html("guides"), css_href=versioned("/assets/guide.css"),
     )
 
     page = head + """
@@ -226,14 +231,8 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 <div class="hub-tools">
   <div class="wrap">
     <div class="az-row" id="azRow">
-      <nav class="az-bar" aria-label="Jump to letter">{az_bar}</nav>
-      <div class="hub-search">
-        <button class="search-toggle" id="searchToggle" type="button" aria-expanded="false" aria-controls="dict-search" aria-label="Search the guide">
-          <svg class="ico-search" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-          <svg class="ico-clear" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
-        </button>
-        <input type="search" id="dict-search" placeholder="freecoaster, spindle, chainline, pivotal..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count" tabindex="-1">
-      </div>
+      <nav class="az-bar" aria-label="Jump to letter"><button class="search-toggle" id="searchToggle" type="button" aria-expanded="false" aria-controls="dict-search" aria-label="Search the guide"><svg class="ico-search" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg><svg class="ico-clear" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>{az_bar}</nav>
+      <input type="search" id="dict-search" class="hub-input" placeholder="freecoaster, spindle, chainline, pivotal..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count" tabindex="-1">
     </div>
     <p class="search-count" id="search-count" role="status" aria-live="polite" hidden></p>
   </div>
@@ -255,11 +254,12 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
   </div>
 </div>
 {footer}
-<script src="/assets/guide.js" defer></script>
+<script src="{js_href}" defer></script>
 </body>
 </html>
 """.format(total=total_terms, mapped=mapped, az_status=az_status, az_bar=az_bar,
-           cards="".join(cards), az="".join(az_html), footer=footer_html(top_guides))
+           cards="".join(cards), az="".join(az_html), footer=footer_html(top_guides),
+           js_href=versioned("/assets/guide.js"))
 
     outdir = os.path.join(root, "guides")
     os.makedirs(outdir, exist_ok=True)

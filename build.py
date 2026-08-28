@@ -18,6 +18,7 @@ on). Raw HTML passes straight through, so spec tables can be written as
 real HTML5 tables.
 """
 
+import hashlib
 import html
 import json
 import os
@@ -132,6 +133,28 @@ def inline(s):
 def slugify(s):
     s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
     return s or "section"
+
+
+def asset_ver(relpath):
+    """Short content hash for cache-busting a static asset.
+
+    Without this, a returning visitor gets freshly generated HTML alongside
+    whatever guide.css their browser cached, which renders as a broken page
+    rather than an old one. Changing the file changes the query string, so
+    the browser refetches exactly when it should and keeps caching the rest
+    of the time.
+    """
+    path = os.path.join(ROOT, relpath.lstrip("/"))
+    try:
+        with open(path, "rb") as fh:
+            return hashlib.md5(fh.read()).hexdigest()[:8]
+    except OSError:
+        return ""
+
+
+def versioned(relpath):
+    v = asset_ver(relpath)
+    return relpath + ("?v=" + v if v else "")
 
 
 # --------------------------------------------------------------------------
@@ -738,7 +761,7 @@ HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/guide.css">
+<link rel="stylesheet" href="{css_href}">
 <script type="application/ld+json">
 {schema}
 </script>
@@ -822,6 +845,7 @@ def build_pillar(path, all_pillars, top_guides):
         title=html.escape(meta.get("title", ""), quote=True),
         description=html.escape(meta.get("description", ""), quote=True),
         url=url, site=SITE, schema=schema, nav=nav_html("guides"),
+        css_href=versioned("/assets/guide.css"),
     )
 
     page = head + """
@@ -847,7 +871,7 @@ def build_pillar(path, all_pillars, top_guides):
   </div>
 </div>
 {footer}
-<script src="/assets/guide.js" defer></script>
+<script src="{js_href}" defer></script>
 </body>
 </html>
 """.format(
@@ -857,6 +881,7 @@ def build_pillar(path, all_pillars, top_guides):
         standfirst=inline(meta.get("standfirst", meta.get("description", ""))),
         eras=era_row(as_list(meta, "eras")),
         main=main, related=related, toc=toc, footer=footer_html(top_guides),
+        js_href=versioned("/assets/guide.js"),
     )
 
     outdir = os.path.join(OUT, slug)

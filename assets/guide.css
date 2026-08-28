@@ -557,23 +557,17 @@ figure.diagram .fig-body.placeholder .todo{
   background:var(--ink-2);border-bottom:1px solid var(--hairline);
   padding:22px 0;position:sticky;top:70px;z-index:50;
 }
-/* The A-Z letters and the search toggle share one row. The input is not in
-   that row's flow: it is anchored to the right edge of the toggle and grows
-   leftward across the letters, which keeps the row exactly one line tall
-   whether the search is open or shut. */
-.az-row{display:flex;align-items:center;gap:10px}
-/* 0 1 auto, not 1 1 auto: the letters take their natural width so the
-   magnifier sits just after Z rather than pinned to the far right. */
-.az-row .az-bar{flex:0 1 auto;min-width:0;transition:opacity .22s ease}
-.az-row.is-open .az-bar{opacity:0;pointer-events:none}
-
-.hub-search{position:relative;flex:none;margin-left:6px}
+/* The magnifier is the first item in the A-Z flow, before the A. Placed
+   after Z it orphaned onto a row of its own at any width where it did not
+   quite fit after the last letter. First, it never can. */
+.az-row{position:relative}
+.az-bar{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
 
 .search-toggle{
   display:inline-flex;align-items:center;justify-content:center;
   position:relative;z-index:2;
-  width:34px;height:34px;flex:none;
-  border-radius:8px;border:1px solid rgba(255,255,255,.16);
+  width:32px;height:32px;flex:none;margin-right:11px;
+  border-radius:7px;border:1px solid rgba(255,255,255,.16);
   background:rgba(255,255,255,.05);color:rgba(255,255,255,.8);
   cursor:pointer;
   transition:background .18s ease,color .18s ease,border-color .18s ease;
@@ -585,26 +579,31 @@ figure.diagram .fig-body.placeholder .todo{
 .search-toggle[aria-expanded="true"] .ico-search{display:none}
 .search-toggle[aria-expanded="true"] .ico-clear{display:block}
 
-.hub-search input{
-  position:absolute;right:42px;top:50%;
-  width:0;padding:0;opacity:0;pointer-events:none;
-  transform:translateY(-50%);
-  border-radius:9px;border:1px solid rgba(255,255,255,.18);
+/* Open: the letters go and the row collapses to one line, so the field has
+   the full width to grow into and there is no empty band left behind. */
+.az-row.is-open .az-bar > button:not(.search-toggle),
+.az-row.is-open .az-bar > a{display:none}
+
+/* Animating `right` keeps the left edge pinned to the toggle, so the field
+   slides out from under it rather than fading in at full width. */
+.hub-input{
+  position:absolute;top:50%;transform:translateY(-50%);
+  left:43px;right:calc(100% - 43px);
+  padding:0;opacity:0;pointer-events:none;
+  border-radius:8px;border:1px solid rgba(255,255,255,.18);
   background:#141922;color:#fff;
   font-family:var(--body);font-size:16px;
-  transition:width .34s cubic-bezier(.2,.8,.2,1),
+  transition:right .34s cubic-bezier(.2,.8,.2,1),
              padding .34s cubic-bezier(.2,.8,.2,1),
              opacity .2s ease;
 }
-.az-row.is-open .hub-search input{
-  width:min(520px, calc(100vw - var(--pad) * 2 - 58px));
-  padding:9px 14px;
-  opacity:1;pointer-events:auto;
+.az-row.is-open .hub-input{
+  right:0;padding:8px 13px;opacity:1;pointer-events:auto;
 }
-.hub-search input::placeholder{color:rgba(255,255,255,.45)}
-.hub-search input:focus{outline:2px solid var(--cyan);outline-offset:1px}
+.hub-input::placeholder{color:rgba(255,255,255,.45)}
+.hub-input:focus{outline:2px solid var(--cyan);outline-offset:1px}
 @media(prefers-reduced-motion:reduce){
-  .az-row .az-bar,.hub-search input{transition:none}
+  .az-row .az-bar,.hub-input{transition:none}
 }
 
 /* live result count, sits directly under the input so typing has a visible
