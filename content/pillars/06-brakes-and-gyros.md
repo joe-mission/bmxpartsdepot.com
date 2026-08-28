@@ -175,9 +175,6 @@ Some setups use a **quick release** at the straddle, where one end of the stradd
 
 When buying a used U-brake, the checklist is: two arms, two pads with fixing hardware, the straddle cable, the yoke, the springs, and the mounting bolts. **A brake sold as "complete" that is missing the yoke is not complete**, and a yoke is not a universal part you can grab off a shelf.
 
-::: caliper straddle cable lengths off working setups, together with the frame and the brake they came off, so this page can eventually say what length actually suits what
-:::
-
 ## Brake levers {#brake-lever-reach}
 
 ::: quickanswer
@@ -278,9 +275,6 @@ Most used BMX frames come to a shop brakeless, because most street riding is don
 **Cable stops still in place with no cable.** Harmless, and a useful signal that the frame was built to take a brake.
 
 On the front end, a fork with no brake mounts is very common on modern forks and completely normal. See [Q019](#how-do-i-tell-if-a-bmx-fork-has-brake-mounts) below for what to look for.
-
-::: caliper stay wall thickness near a ground-off brake post against the same stay further along, to see whether grinding mounts off measurably thins the tube
-:::
 
 ## Questions {#questions}
 

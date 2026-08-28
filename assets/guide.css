@@ -292,6 +292,34 @@ table.spec-table td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .caliper p{margin:0;font-size:15px;color:var(--muted)}
 .caliper.filled{border-style:solid;border-color:rgba(230,71,0,.4);background:rgba(230,71,0,.06)}
 .caliper.filled p{color:var(--text)}
+/* Verified is a different state from pending, so it gets a different colour.
+   Dashed orange means "we still owe you this". Solid green means the number
+   came off a part on the bench. */
+.caliper.verified{
+  border:1px solid rgba(16,163,90,.42);
+  background:rgba(16,163,90,.055);
+}
+.caliper.verified .cal-label{color:#0a6c3d}
+.caliper.verified p{color:var(--text)}
+.caliper .cal-badge{
+  display:inline-block;font-family:var(--display);font-size:12.5px;
+  letter-spacing:.10em;color:#0a6c3d;background:rgba(16,163,90,.12);
+  border:1px solid rgba(16,163,90,.32);border-radius:999px;
+  padding:5px 12px;margin:0 0 14px;
+}
+.caliper .cal-table{width:100%;border-collapse:collapse;margin:0 0 12px}
+.caliper .cal-table th,.caliper .cal-table td{
+  text-align:left;padding:9px 10px;font-size:15px;
+  border-bottom:1px solid rgba(16,163,90,.20);
+}
+.caliper .cal-table tr:last-child th,.caliper .cal-table tr:last-child td{border-bottom:0}
+.caliper .cal-table th{font-weight:600;color:var(--text)}
+.caliper .cal-table td.num{
+  font-variant-numeric:tabular-nums;font-weight:650;color:var(--text);
+  white-space:nowrap;text-align:right;
+}
+.caliper .cal-part{font-size:14px;color:var(--muted);margin:0 0 10px}
+.caliper.verified p+p{margin-top:10px}
 .caliper .todo{
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
   font-size:13px;color:var(--orange);font-weight:600;letter-spacing:.02em;

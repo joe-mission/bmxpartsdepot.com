@@ -149,7 +149,13 @@ def d_quickanswer(arg, body, ctx):
 
 
 def d_caliper(arg, body, ctx):
-    """Empty by design. Joe fills these from his own bench measurements."""
+    """Bench measurements, recorded by Joe. Never write a figure into one of
+    these that did not come off a part in the shop.
+
+    A block carrying `tool:` plus one or more `- Label | reading` rows renders
+    as verified, with the tool named in the badge. Anything else renders as an
+    open request, so a half-filled block cannot pass itself off as measured.
+    """
     subject = inline(arg) if arg else "this section"
     filled = body.strip()
     icon = (
@@ -157,12 +163,38 @@ def d_caliper(arg, body, ctx):
         'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
         '<path d="M3 3v14a4 4 0 0 0 4 4h14"/><path d="M7 7h10"/><path d="M7 12h6"/></svg>'
     )
-    if filled:
-        inner = "".join("<p>%s</p>" % inline(p.strip()) for p in filled.split("\n\n") if p.strip())
-        return (
-            '<aside class="caliper filled"><p class="cal-label">%s Depot Caliper Verification</p>%s</aside>'
-            % (icon, inner)
+
+    tool = part = ""
+    rows, prose = [], []
+    for line in filled.split("\n"):
+        s = line.strip()
+        if s.lower().startswith("tool:"):
+            tool = s[5:].strip()
+        elif s.lower().startswith("part:"):
+            part = s[5:].strip()
+        elif s.startswith("- ") and "|" in s:
+            label, _, reading = s[2:].partition("|")
+            rows.append((label.strip(), reading.strip()))
+        else:
+            prose.append(line)
+
+    if tool and rows:
+        body_html = "".join(
+            "<p>%s</p>" % inline(p.strip())
+            for p in "\n".join(prose).split("\n\n") if p.strip()
         )
+        part_html = ('<p class="cal-part">Measured off %s</p>' % inline(part)) if part else ""
+        return (
+            '<aside class="caliper verified">'
+            '<p class="cal-label">%s Depot Caliper Verification</p>'
+            '<p class="cal-badge">Caliper Verified &middot; %s</p>'
+            '<table class="cal-table"><tbody>%s</tbody></table>%s%s</aside>'
+            % (icon, html.escape(tool),
+               "".join('<tr><th scope="row">%s</th><td class="num">%s</td></tr>'
+                       % (inline(l), inline(r)) for l, r in rows),
+               part_html, body_html)
+        )
+
     ctx["todo"].append("caliper: %s" % (arg or "unlabelled"))
     return (
         '<aside class="caliper"><p class="cal-label">%s Depot Caliper Verification</p>'

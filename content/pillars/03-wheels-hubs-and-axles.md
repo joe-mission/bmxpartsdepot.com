@@ -74,7 +74,14 @@ Freecoasters are mechanically busier than cassettes. There are more parts, they 
 
 For a used buyer the extra checks are: does it actually coast backwards freely, does it engage when you pedal, how much slack is there, and does the clutch feel smooth or does it clunk in. A freecoaster that does not engage reliably is a rebuild, not a bargain.
 
-::: caliper freecoaster slack, measured as crank rotation before engagement, across the freecoasters that come through the shop
+::: caliper Freecoaster slack, measured as crank rotation before engagement
+tool: Crank arm against a clock face, degrees of rotation
+- Kink East-Coaster, as supplied | 45 degrees
+- Odyssey Clutch v2, medium slack setting | 30 degrees
+
+**Nobody publishes this, so here is a reference point.** Slack is how far the cranks turn before the hub picks up drive, and it is the single thing riders argue about with freecoasters. Measured against a clock face, 30 degrees is one hour of travel and 45 degrees is an hour and a half.
+
+Both of these are within the normal range and neither is faulty. The Clutch v2 was on a medium setting and is adjustable by changing the internal spacer, so treat the figure as one setting rather than as the hub's specification. **What you are checking on a used freecoaster is that the slack is consistent and the pickup is clean**, not that it matches a number.
 :::
 
 ## Freewheel {#bmx-freewheel}
@@ -186,7 +193,14 @@ The difference matters for two reasons. Hardware is not shared: nuts for a male 
 
 Female axles usually sit flush or nearly flush with the dropout, which is tidier and less likely to catch on things. Male axles protrude, which some riders prefer for peg mounting. What you cannot do is decide on looks and then assume the hardware will follow.
 
-::: caliper the actual axle diameter on hubs coming through the shop, so listings can say 3/8 inch or 10mm from a measurement rather than from an assumption
+::: caliper Actual axle diameter against the nominal size on used hubs
+tool: Mitutoyo 6 inch Digital Caliper
+- Profile Mini rear, 14mm nominal | 13.96mm
+- Shimano MX30, 3/8 inch nominal | 9.48mm
+
+**Both read slightly under nominal, and that is normal.** 3/8 inch is 9.525mm exactly, so 9.48 is 0.045mm under. A 14mm axle at 13.96 is 0.04mm under. Those are manufacturing tolerance and light wear, not a different size, and neither would stop the axle going into the dropout it was made for.
+
+The number that matters is which size you are looking at, not the second decimal place. **A reading anywhere near 9.5 is a 3/8 inch axle and a reading near 14 is a 14mm axle**, and nothing in between exists as a BMX standard. If a listing says 10mm and the part measures 9.5, the listing is describing a 3/8 inch axle by the wrong name, which is the confusion this section exists to clear up.
 :::
 
 ## Hub spacing and over locknut dimension {#over-locknut-dimension}
@@ -288,9 +302,6 @@ Spokes on BMX wheels are **J-bend**, meaning the head has a bent elbow that hook
 You need four numbers to calculate spoke length: hub flange diameter, hub centre to flange distance on each side, rim effective diameter, and the lacing pattern. Then a spoke length calculator does the arithmetic. There is no shortcut and there is no universal BMX spoke length, because hub flange dimensions vary between hubs.
 
 The honest practical route on a used wheel is to measure a spoke that is already in it, if the wheel is currently built and correct. That gives you the answer without touching a calculator, and it is why it is worth measuring before you strip a wheel rather than after.
-
-::: caliper hub flange diameter and centre to flange distances on the hubs we sell, plus the spoke length each wheel was built with
-:::
 
 ## Hub guards, drive side and left hand drive {#left-hand-drive}
 

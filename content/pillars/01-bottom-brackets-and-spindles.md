@@ -32,9 +32,6 @@ If the shell has threads cut into it, you have a Euro. If it is smooth, you have
 
 One thing that catches people out: some sources quote the bearing or cup outer diameter rather than the shell bore, and on a sealed American bottom bracket those are different numbers. If your measurement lands between the standards, you are probably measuring a cup that is already pressed in rather than the frame itself.
 
-::: caliper the shell bore on a known American frame, a known Mid frame, and a known Spanish frame
-:::
-
 ::: figure Bottom bracket shell comparison | assets/diagrams/bmx-bottom-bracket-shell-comparison.svg | Cutaway comparison of American, Mid, Spanish and Euro BMX bottom bracket shells showing relative diameters
 The four standards at the same scale, with the bore diameter called out on each.
 :::
@@ -72,7 +69,15 @@ The shell diameter is the one figure on this page where good sources genuinely d
 
 The detail worth knowing is that a **sealed American bottom bracket uses the same cartridge bearing as a Mid**, 41.3mm outer diameter and 11mm wide. The cup makes up the difference between the 41.3mm bearing and the much larger shell. That is why an American to Mid conversion is possible at all: you are not changing the bearing, only removing the adapter around it.
 
-::: caliper an American shell bore, and separately the outer diameter of a pressed-in American cup, to show where the 51.3 to 51.5 spread comes from
+::: caliper American shell bore against pressed-in cup outer diameter
+tool: Mitutoyo 6 inch Digital Caliper, CD-6 CSX
+part: an S&M Holmes frame, 1997
+- Shell bore, cups removed | 51.35mm
+- Pressed-in cup, outer diameter | 51.52mm
+
+**This is where the published disagreement comes from.** Sources give American as 51.3mm, 51.5mm or 51mm, and both readings above are correct measurements of the same frame. The bare shell reads 51.35. A cup pressed into it reads 51.52, because a press-fit cup is deliberately made larger than the hole it goes into, here by 0.17mm.
+
+So a source quoting 51.5 was almost certainly measuring across a cup, and a source quoting 51.3 was measuring the frame. Neither is wrong, and neither is measuring the same thing. **Pull the cups before you measure**, and if your reading lands near 51.5 on a shell you believe is empty, look again for a cup still seated in it.
 :::
 
 ## Mid bottom bracket {#mid-bottom-bracket}
@@ -105,9 +110,6 @@ Five independent sources give the shell diameter as the same number to rounding:
 
 ::: video Pressing Mid bottom bracket bearings in and out | TBD
 The job people most often do badly. Watch how the press is squared up before any load goes on.
-:::
-
-::: caliper a Mid shell before and after pressing bearings, and the bearings themselves
 :::
 
 ## Spanish bottom bracket {#spanish-bottom-bracket}
@@ -277,9 +279,6 @@ Bottom bracket bearings are dimensional parts, not proprietary ones. A 41.3mm ou
 </div>
 
 The practical read: **match the dimensions and the brand stops mattering.** Where brands do differ is in the spacer kit and the cone or pinch bolt arrangement supplied with a bottom bracket, so keep the hardware that came with yours.
-
-::: caliper bearings pulled from different brand bottom brackets, to show the dimensions matching across brands
-:::
 
 ## Questions {#questions}
 

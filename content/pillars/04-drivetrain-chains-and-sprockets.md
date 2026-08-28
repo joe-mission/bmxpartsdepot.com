@@ -207,9 +207,6 @@ If you have an older hub with a threaded **freewheel** instead of a driver, none
 
 The driver is a wear part and it is meant to be. What you are looking for on a used one is hooking on the tooth profile, where the teeth have worn into a curved hook shape rather than a symmetrical tooth, and any slipping when the ratchet is loaded. A hub with a worn driver and a good shell is still a good hub, because the driver comes off.
 
-::: caliper the tooth profile on a new driver against a worn one, photographed alongside, so listings can describe wear against a reference instead of a guess
-:::
-
 ## Sprocket bolt patterns {#sprocket-bolt-pattern}
 
 ::: quickanswer
@@ -328,9 +325,6 @@ The straightforward check is to sight along the chain from behind the bike with 
 If it is off, the adjustment is almost always at the bottom bracket, moving spacers from one side of the spindle to the other to shift the sprocket inboard or outboard. That is what the spacer kit is for. Second place to check is the rear, where hub spacers can move the driver, and third is whether the wheel is sitting square in the dropouts, because a wheel pulled over to one side puts the driver out of line as surely as anything else.
 
 A **left hand drive** conversion changes chainline completely, because the sprocket moves to the **non drive side** and everything about the setup has to be redone. That is not a bolt-on job.
-
-::: caliper chainline on built bikes, measured from the frame centreline to the sprocket and to the driver, so we have a reference for what a correct setup reads
-:::
 
 ::: video Checking and correcting BMX chainline | TBD
 Sighting the chain from behind, then moving bottom bracket spacers to bring the sprocket into line, on the bench.

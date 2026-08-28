@@ -84,9 +84,6 @@ One bar drawn twice, from the front and from above, with each of the four measur
 Bars stood on a flat surface, rise taken off the clamp area, width taken end to end, and both sweeps read off from above. Also shows how much the rise reading moves if the bar is not sat square.
 :::
 
-::: caliper rise and width on several sets of used bars, and note how each maker quotes the same bar
-:::
-
 ## Handlebar rise {#handlebar-rise}
 
 ::: quickanswer
@@ -112,9 +109,6 @@ Width is the **overall end to end measurement of the bars**, and it is the easie
 Wider bars give more leverage over the front wheel and open the chest up. Narrower bars turn faster for the same hand movement and get through tighter gaps. Riders who spin bars often prefer them a little narrower simply because there is less bar to swing.
 
 On used bars, width is the spec to treat with suspicion. A cut set is not a fault as long as the cut is clean and square and both sides match, but it does mean the listed model width is no longer the width you are buying. **Measure a used set rather than trusting the model name.** Uneven cuts are more common than people expect, and a bar that is a few millimetres longer on one side than the other will always feel slightly off centre no matter how carefully you line the stem up.
-
-::: caliper both halves of a cut set of bars from the knurling out, to show how far off centre a badly cut bar can be
-:::
 
 ## Backsweep and upsweep {#handlebar-backsweep}
 
@@ -203,7 +197,15 @@ Knurling that is worn smooth in a band, or shows a clear polished ring, has had 
 
 If a used bar is marked in the clamp area badly enough that the stem sits on a step rather than on a round tube, it does not get sold. That is the sort of part that fails without warning.
 
-::: caliper the clamp area of a used bar at several points around the tube, to show ovalling from an over-tightened stem
+::: caliper Clamp area of a used bar, measured across two axes
+tool: Mitutoyo 6 inch Digital Caliper
+part: a used S&M Slammed bar
+- Across 12 and 6 o'clock, the stem bolt axis | 22.08mm
+- Across 3 and 9 o'clock | 22.31mm
+
+**That bar is 0.23mm out of round, and it is a 22.2mm bar in both directions on average.** The mean of the two readings is 22.195mm, which is nominal. The stem has squashed it 0.12mm in the axis the bolts pull along and pushed it 0.11mm out at ninety degrees to that.
+
+This is what an over-tightened front load stem does, and it is why **measuring a used bar in one direction can tell you almost anything you want to hear.** Take two readings ninety degrees apart. If they differ by more than a couple of tenths, the bar has been clamped hard, and the clamp area is the part of a bar that fails.
 :::
 
 ## Bar material and butting {#bar-material}

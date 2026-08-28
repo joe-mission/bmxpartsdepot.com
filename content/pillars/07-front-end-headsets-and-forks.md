@@ -102,9 +102,6 @@ Two things follow.
 
 **The frame is the wear part.** On a pressed cup headset, a bearing that has been run dry and beaten up chews the cup, and you press a new cup in. On an integrated headset there is no cup, so a bearing that has been hammering away in a dry seat is beating on the frame itself. That is why an integrated head tube is worth inspecting closely on a used frame: look for a bright polished ring or a stepped groove where the bearing has been sitting.
 
-::: caliper the bearing seat in a used integrated head tube against a known-good one, looking for a measurable step where the bearing has worn in
-:::
-
 ## Zero stack and pressed cup headsets {#zero-stack-headset}
 
 ::: quickanswer
@@ -234,7 +231,16 @@ On a used fork, the steerer has usually already been cut for whatever frame it w
 
 On a threaded fork, there is a second constraint: the threaded section has a finite length, and the top race and locknut have to land inside it. A threaded steerer that is long enough physically but has run out of thread is no more usable than one that is too short.
 
-::: caliper steerer length on a batch of used forks, measured from the crown race seat, and record the head tube length of whatever frame each came off
+::: caliper Steerer length against the head tube each fork came off
+tool: Mitutoyo steel rule and digital caliper
+- S&M Pitchfork, 1 inch threaded, steerer | 142mm
+- Head tube it came off | 102mm
+- Odyssey R25, 1 1/8 inch threadless, steerer | 165mm
+- Head tube it came off | 115mm
+
+**The useful number is the difference, not the length.** The Pitchfork leaves 40mm of steerer above its head tube and the R25 leaves 50mm. That remainder is everything the headset and the stem have to live in, and it is what decides whether a fork works on your frame.
+
+Which is why **a steerer length on its own tells you nothing.** A 165mm steerer is generous on a 115mm head tube and too short on a 150mm one. Measure your own head tube first, add your headset stack and your stem, and compare against the fork before buying it.
 :::
 
 ## Fork offset {#fork-offset}
@@ -354,9 +360,6 @@ Alongside the headset, three things to check on any used fork.
 **The crown race seat.** The machined step at the bottom of the steerer where the crown race sits should be clean and square. A chewed crown race seat, usually from someone levering an old race off badly, means the new race will not sit square.
 
 **Cracks at the welds.** Look where the legs meet the crown or the steerer, and around the dropouts and any brake mounts. A crack in a fork is a hard no. **If a fork is cracked, bent, or sketchy, it does not get sold.**
-
-::: caliper the dropout spacing and the leg symmetry on a fork suspected of being bent, measuring from the steerer centreline to each dropout
-:::
 
 ## Questions {#questions}
 

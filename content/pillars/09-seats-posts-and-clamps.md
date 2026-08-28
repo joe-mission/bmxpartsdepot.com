@@ -89,9 +89,6 @@ Setting one up is simple and there are two things to get right. Seat the splines
 
 On a used pivotal seat, look straight at that bolt hole area and at the splines in the socket. Rounded or chewed splines mean the seat has been ridden loose. That seat will not hold an angle no matter what you do to the bolt.
 
-::: caliper the spline pitch and socket depth on unbranded pivotal seats and posts against licensed ones, since the geometry is single-source and the open question is whether the copies actually hold it
-:::
-
 ## Seat post diameter {#seat-post-diameter}
 
 ::: quickanswer
@@ -124,9 +121,6 @@ Two things that catch people out. First, **shims exist and are common**, so a bi
 **25.4mm is the modern freestyle default**, near enough universally on current aftermarket frames and completes. If you are buying a post for a modern 20 inch bike without checking, that is the odds-on answer, but check anyway, because the older sizes are exactly what turns up on the used frames this site exists to sell.
 
 Shims are made for the common step-ups, from Problem Solvers, Cane Creek and Gusset, so a smaller post in a larger seat tube is a solved problem rather than a bodge. Same rule as the bar shims: use a machined split sleeve, not a wrap of something.
-
-::: caliper used seat posts that have been clamped hard, at the clamp zone and again further up the shaft, against whatever is stamped near the bottom, since the nominal sizes are already sourced and the open question is how far a hard clamp takes a used post off them
-:::
 
 ::: video Measuring a seat post and a seat tube properly | TBD
 Where to take the reading on a post that has been clamped hard, and why a bore measurement taken freehand should always be checked against a real post.

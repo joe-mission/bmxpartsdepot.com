@@ -67,9 +67,6 @@ A frame can be chromoly in the main triangle and hi-ten everywhere else. "Full c
 
 Both chromoly and hi-ten are steel and both are magnetic. A magnet tells you steel from aluminium, and that is all. It will not separate two steels. On BMX frames this matters less than it sounds, because BMX frames are overwhelmingly steel, but it comes up constantly with cranks, stems, bars and sprockets where aluminium is common.
 
-::: caliper the weight of a stripped chromoly frame and a stripped hi-ten frame of the same nominal size, on the same scale
-:::
-
 <div class="table-scroll">
 <table class="spec-table">
 <caption>What the two steels actually differ by</caption>
@@ -130,9 +127,6 @@ Gussets are also a dating cue. Big obvious external plate gussets read older, an
 ### The chainstay yoke
 
 Down at the other end, the **chainstay yoke** is the shaped bridge or plate that joins the two chainstays near the bottom bracket. It is doing structural work, but the thing it decides for a buyer is clearance: how fat a tyre will fit, and how the sprocket sits. A frame with a tight yoke and a frame with a deeply recessed one are not going to take the same tyre, whatever the rest of the geometry says.
-
-::: caliper tyre clearance at the chainstay yoke on a few different frames, with the tyre and rim used recorded alongside
-:::
 
 ## Dropouts, slot width and brake mounts {#dropout-slot-width}
 
@@ -286,9 +280,6 @@ Wheelbase is the more useful comparison number of the two, and it is the one peo
 
 For a bare frame, top tube and chainstay length together get you close enough. Wheelbase is worth measuring when a complete bike comes through and worth putting in the listing, since almost nobody else does.
 
-::: caliper standover height and wheelbase on complete bikes as they come through, recording tyre size alongside, because both figures move with the tyre
-:::
-
 ## Serial numbers and dating a frame {#serials}
 
 ::: quickanswer
@@ -334,9 +325,6 @@ Do this in good light with the frame stripped if possible, and take your time.
 **Threads and shells.** Chase the seat clamp bolt, look inside the bottom bracket shell for a bore that has been reamed or hammered, and check brake mount threads if they are there. Stripped threads on a frame are expensive to fix properly.
 
 **Rust.** Surface rust on the outside of a steel frame is normal on anything old and is not by itself a reason to pass. Rust from the inside out, showing as bubbling paint or a soft spot, is the end of that tube. Look inside the seat tube and inside the head tube with a torch, because that is where water sits.
-
-::: caliper rear triangle alignment on frames coming through the shop, measured off a flat surface, to build a reference for what a straight frame reads
-:::
 
 ::: fitbadge Checking the wheels that came with the frame? | Wheels Hubs and Axles guide | /guides/bmx-wheels-hubs-and-axles/
 :::

@@ -82,9 +82,6 @@ The things that mark a bike as old school are mostly things that later disappear
 
 **Period details.** Loose ball hubs with adjustable cones, plated steel hardware, tripod or combo seats, and often mag wheels or plastic wheels rather than laced spokes.
 
-::: caliper the bottom bracket shell, head tube and dropouts on any old school frame that comes through, and record the readings against the frame's known model where one exists
-:::
-
 ## Mid school {#mid-school-bmx}
 
 ::: quickanswer

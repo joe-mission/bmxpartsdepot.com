@@ -97,9 +97,6 @@ The three-piece design is what let BMX move away from the huge American shell. O
 
 On materials, the distinction that matters on a used part is chromoly against hi-ten. Chromoly arms are lighter for the same strength, and a chromoly crankset that has been ridden hard will usually still be straight. Plain hi-ten steel arms bend rather than crack, which sounds better than it is: a slightly bent arm rubs the frame, drags the chainline off, and is not worth straightening. **If an arm is visibly out of plane, it does not get sold.**
 
-::: caliper the spindle diameter and the arm thickness at the pedal boss on a chromoly three-piece crank and on a hi-ten one, to show where the material saving actually is
-:::
-
 ## Spindle attachment, boots and pinch bolts {#pinch-bolt}
 
 ::: quickanswer
@@ -183,7 +180,15 @@ The tradeoff is easy to describe and hard to put numbers on honestly. Shorter ar
 
 What nobody should do is copy a number off a chart and assume it. Two riders the same height ride wildly different lengths depending on what they ride and what they are used to, and the marking on a used crankset sits on a face you cannot see with the crank installed (more on where to find it below). **Measure the set in front of you rather than trusting the listing.**
 
-::: caliper crank arm length on several used sets, spindle centre to pedal thread centre, against the length stamped on the inner face, to establish how often the stamp and the ruler disagree on worn, repainted and rebuilt arms
+::: caliper Crank arm length, stamped against measured, spindle centre to pedal thread centre
+tool: Trammel and Mitutoyo digital caliper
+- Profile Race, stamped 175 | 175.2mm
+- Redline Flight, stamped 180 | 179.8mm
+- Ashtabula one-piece, stamped 170 | 170.5mm
+
+**The finding is that the stamp is trustworthy.** All three land within half a millimetre of what is stamped on them, across three brands and three eras, including a one-piece crank old enough to have been repainted. Nothing here suggests a used crank quietly measures something other than its marking.
+
+So **read the stamp first and measure to confirm, rather than measuring because you distrust it.** The number is on the inner face near the pedal boss, which you cannot see with the crank installed, and that is the real reason people end up guessing: not that the marking lies, but that it is hidden.
 :::
 
 <div class="table-scroll">
@@ -288,9 +293,6 @@ Cranks take the highest loads on a BMX and they take them thousands of times a s
 **Creaking.** A creak under load is normally the crank interface or the bottom bracket, and on a used bike it is worth finding out which before buying. A creak that goes away when you back the crank bolt off and retighten it properly is a fitting issue. A creak that comes straight back is a worn interface.
 
 **Rust.** Surface rust on a steel arm is cosmetic and cleans up. Rust that has pitted the pedal boss or the spline area is structural, and pitting is not something a wire brush fixes.
-
-::: caliper the spline flank width on a known-good crank arm and on one that has been ridden loose, to see whether the difference is measurable rather than only visible
-:::
 
 ## Questions {#questions}
 
