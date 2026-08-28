@@ -8,7 +8,7 @@
    ============================================================ */
 
 :root{
-  --cyan:#00a4e6;
+  --cyan:#007bb0;--cyan-on-dark:#00a4e6;
   --cyan-lt:#38c6ff;
   --blue:#0032e6;
   --orange:#e64700;
@@ -294,6 +294,12 @@ article.guide a:hover{color:var(--orange)}
   font-weight:600;color:#fff;
 }
 .quick-answer p + p{margin-top:12px}
+/* Quick Answer sits on ink. The light-background cyan measures 4.23 on it,
+   so links inside it use the brighter brand cyan, which measures 6.71. */
+article.guide .quick-answer a,.quick-answer a{color:var(--cyan-on-dark)}
+/* Specificity, not preference: article.guide a is (0,1,2) and beats a bare
+   .quick-answer a at (0,1,1). The same trap painted the eBay CTA cyan on
+   cyan earlier. Match the qualifier rather than reaching for !important. */
 .quick-answer strong{color:var(--cyan-lt);font-weight:700}
 
 /* ============================================================
