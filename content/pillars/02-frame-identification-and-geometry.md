@@ -180,10 +180,6 @@ Dropout plate thickness is different, because modern frames do publish it.
 
 On post spacing, later research resolved what first looked like a missing standard. Frame builders target 82 to 85mm, wide enough to clear modern rims. The wider 75 to 85mm figure is what a U-brake tolerates, because the orbital washers behind the pads absorb the difference. Two numbers describing two different things, covered in full on the [brakes guide](/guides/bmx-brakes-and-gyros/#u-brake-mounts).
 
-::: needsverify
-- U-brake post spacing stated by a BMX frame manufacturer rather than a general reference
-:::
-
 ## Top tube length and how a frame is sized {#top-tube-length}
 
 ::: quickanswer
@@ -313,9 +309,7 @@ Dating a frame is better done by the parts standards it was built around. Bottom
 
 That is why the era chips on these pages carry no years, and why the era diagram deliberately has no axis. **The dates above are recorded here as usage, not as fact**, and anywhere else on this site that an era is named, it is named by its features rather than its dates. If you are buying, the features tell you what fits. The label tells you what a seller calls it.
 
-::: needsverify
-- any manufacturer or governing body definition of the era boundaries, which two research passes have now failed to find
-:::
+Three research passes have now failed to find any manufacturer or governing body definition of the era boundaries, and that finding is written up in full on the [era guide](/guides/vintage-bmx-identification/#three-passes).
 
 ## Checking a used frame for damage {#damage}
 
