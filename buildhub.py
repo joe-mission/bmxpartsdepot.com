@@ -12,6 +12,8 @@ import os
 import re
 from datetime import date
 
+import schema_terms
+
 DICT_SRC = "content-plan/az-dictionary.md"
 LETTERS = [chr(c) for c in range(ord("A"), ord("Z") + 1)]
 
@@ -60,14 +62,16 @@ def parse_dictionary(root):
     return groups
 
 
-def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
-    root = os.path.dirname(os.path.abspath(__file__))
-    groups = parse_dictionary(root)
+def build_term_map(pages):
+    """term slug -> (pillar slug, pillar title, has_matching_anchor).
 
-    # term slug -> (pillar slug, pillar title)
-    # A term can only live on one page. Two pillars claiming the same term
-    # is a content decision, not something the build should silently resolve,
-    # so first claim wins and the collision is reported.
+    A term can only live on one page. Two pillars claiming the same term
+    is a content decision, not something the build should silently resolve,
+    so first claim wins and the collision is reported.
+
+    Extracted so schema_terms.py generates its JSON-LD from the same mapping
+    the hub links against, rather than a second copy that can drift.
+    """
     term_map = {}
     collisions = []
     for p in pages:
@@ -77,6 +81,14 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
                 continue
             term_map[slug] = (p["slug"], p["meta"].get("short", p["meta"].get("title", "")),
                               slug in p.get("ids", set()))
+    return term_map, collisions
+
+
+def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
+    root = os.path.dirname(os.path.abspath(__file__))
+    groups = parse_dictionary(root)
+
+    term_map, collisions = build_term_map(pages)
 
     # a claimed term that is not a real dictionary slug is a typo
     known = {e["slug"] for v in groups.values() for e in v}
@@ -141,6 +153,13 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
         )
 
     url = SITE + "/guides/"
+
+    # One generator for the dictionary JSON-LD, shared with schema_terms.py.
+    # Terms with no matching section anchor are skipped there rather than
+    # emitted with an @id that resolves to nothing.
+    term_entries = [e for L in LETTERS for e in groups.get(L, [])]
+    term_nodes, term_skipped = schema_terms.build_defined_terms(term_entries, term_map, SITE)
+
     schema = {
         "@context": "https://schema.org",
         "@graph": [
@@ -153,24 +172,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
                 "url": url,
                 "isPartOf": {"@type": "WebSite", "@id": SITE + "/#website"},
             },
-            {
-                "@type": "DefinedTermSet",
-                "@id": url + "#dictionary",
-                "name": "BMX Parts Depot A-Z Fitment Dictionary",
-                "description": "BMX technical terms, dimensional standards, and part variations.",
-                "url": url,
-                "hasDefinedTerm": [
-                    {
-                        "@type": "DefinedTerm",
-                        "@id": "%s/guides/%s/#%s" % (SITE, term_map[e["slug"]][0], e["slug"]),
-                        "name": e["term"],
-                        "description": e["definition"],
-                        "url": "%s/guides/%s/#%s" % (SITE, term_map[e["slug"]][0], e["slug"]),
-                    }
-                    for L in LETTERS for e in groups.get(L, [])
-                    if e["slug"] in term_map and term_map[e["slug"]][2]
-                ],
-            },
+            schema_terms.defined_term_set(term_nodes, SITE),
             {
                 "@type": "ItemList",
                 "@id": url + "#pillars",

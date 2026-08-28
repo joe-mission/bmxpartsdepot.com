@@ -533,6 +533,8 @@ def build_schema(meta, ctx, url):
                 "@type": "DefinedTerm",
                 "@id": "%s#%s" % (url, slug),
                 "name": label,
+                "termCode": slug,
+                "url": "%s#%s" % (url, slug),
                 "inDefinedTermSet": {
                     "@type": "DefinedTermSet",
                     "@id": SITE + "/guides/#dictionary",
