@@ -129,11 +129,13 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
     for i, p in enumerate(pages, 1):
         m = p["meta"]
         cards.append(
-            '<a class="pillar-card" href="/guides/%s/">'
+            '<a class="pillar-card" href="/guides/%s/" data-term="%s">'
             '<span class="pc-num">Pillar %02d</span>'
             '<h3>%s</h3><p>%s</p>'
             '<span class="pc-count">%d sections &middot; %d questions</span></a>'
-            % (p["slug"], i, html.escape(m.get("short", m.get("title", ""))),
+            % (p["slug"], html.escape((m.get("short", "") + " " + m.get("cardline", "") + " "
+                                       + " ".join(t for _a, t in p["sections"])).lower(), quote=True),
+               i, html.escape(m.get("short", m.get("title", ""))),
                html.escape(m.get("cardline", m.get("description", ""))[:160]),
                len(p["sections"]), p["faqs"])
         )
@@ -215,8 +217,9 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
   <div class="wrap">
     <div class="hub-search">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
-      <input type="search" id="dict-search" placeholder="Search the guide: 19mm spindle, Mid BB, freecoaster..." aria-label="Search the fitment guide" autocomplete="off">
+      <input type="search" id="dict-search" placeholder="Search the guide: 19mm spindle, Mid BB, freecoaster..." aria-label="Search the fitment guide" autocomplete="off" aria-describedby="search-count">
     </div>
+    <p class="search-count" id="search-count" role="status" aria-live="polite" hidden></p>
     <nav class="az-bar" aria-label="Jump to letter">{az_bar}</nav>
   </div>
 </div>
@@ -224,9 +227,9 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 <div class="guide-body">
   <div class="wrap">
     <main id="main">
-      <h2 class="display" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">The Ten Master Guides</h2>
-      <div class="sec-rule"></div>
-      <div class="pillar-grid">{cards}</div>
+      <h2 class="display" id="guides-head" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">The Ten Master Guides</h2>
+      <div class="sec-rule" id="guides-rule"></div>
+      <div class="pillar-grid" id="pillar-grid">{cards}</div>
 
       <h2 class="display" id="dictionary" style="font-size:clamp(26px,3.4vw,36px);margin:0 0 6px">A-Z Dictionary</h2>
       <div class="sec-rule"></div>
@@ -245,8 +248,9 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 
     outdir = os.path.join(root, "guides")
     os.makedirs(outdir, exist_ok=True)
+    from build import relativise
     with open(os.path.join(outdir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(page)
+        f.write(relativise(page, "../"))
 
     unmapped = [e["term"] for L in LETTERS for e in groups.get(L, []) if e["slug"] not in term_map]
     print("hub: %d dictionary entries, %d linked to a guide section, %d not yet placed"

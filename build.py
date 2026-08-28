@@ -626,6 +626,26 @@ HEAD = """<!DOCTYPE html>
 """
 
 
+ROOTREL_RE = re.compile(r'\b(href|src)="/(?!/)')
+
+
+def relativise(page, base):
+    """Rewrite root-relative href/src to page-relative.
+
+    Absolute /assets/... paths are correct once the site is served from the
+    domain root, but they break when a page is opened straight off disk or
+    served from a subdirectory: the browser resolves them against the
+    filesystem root and the stylesheet and script silently never load. The
+    page still renders as unstyled HTML, so it looks like the search box is
+    broken rather than like the script is missing.
+
+    Rewriting to a relative base makes every context work, production
+    included. Full URLs (canonical, og:url, eBay) start with https and are
+    untouched, as are protocol-relative //.
+    """
+    return ROOTREL_RE.sub(lambda m: '%s="%s' % (m.group(1), base), page)
+
+
 def era_row(eras):
     if not eras:
         return ""
@@ -719,7 +739,7 @@ def build_pillar(path, all_pillars, top_guides):
     outdir = os.path.join(OUT, slug)
     os.makedirs(outdir, exist_ok=True)
     with open(os.path.join(outdir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(page)
+        f.write(relativise(page, "../../"))
 
     return {
         "slug": slug, "meta": meta, "url": url,

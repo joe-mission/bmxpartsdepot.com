@@ -6,18 +6,36 @@
 (function () {
   "use strict";
 
-  /* ---------- hub: live filter over the A-Z dictionary ---------- */
+  /* ---------- hub: live filter over the guides and the A-Z ---------- */
   var search = document.getElementById("dict-search");
   var results = document.getElementById("az-results");
   var empty = document.getElementById("no-results");
+  var count = document.getElementById("search-count");
+  var grid = document.getElementById("pillar-grid");
+  var guidesHead = document.getElementById("guides-head");
+  var guidesRule = document.getElementById("guides-rule");
 
   if (search && results) {
     var groups = Array.prototype.slice.call(results.querySelectorAll(".az-group"));
+    var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll(".pillar-card")) : [];
     var timer = null;
 
     var filter = function () {
       var q = search.value.trim().toLowerCase();
       var shown = 0;
+      var cardHits = 0;
+
+      /* guides first: they are what most people are actually after, and
+         they sit above the fold, so filtering them is what makes typing
+         look like it did something */
+      cards.forEach(function (c) {
+        var hay = c.getAttribute("data-term") || c.textContent.toLowerCase();
+        var match = !q || hay.indexOf(q) !== -1;
+        c.hidden = !match;
+        if (match) cardHits++;
+      });
+      if (guidesHead) guidesHead.hidden = q !== "" && cardHits === 0;
+      if (guidesRule) guidesRule.hidden = q !== "" && cardHits === 0;
 
       groups.forEach(function (g) {
         var hits = 0;
@@ -33,7 +51,25 @@
         shown += hits;
       });
 
-      if (empty) empty.hidden = shown !== 0;
+      if (empty) empty.hidden = shown !== 0 || cardHits !== 0;
+
+      /* the results live well below the fold, so say what happened up
+         here at the box rather than leaving it looking inert */
+      if (count) {
+        if (!q) {
+          count.hidden = true;
+          count.textContent = "";
+        } else {
+          count.hidden = false;
+          var bits = [];
+          if (cardHits) bits.push(cardHits + (cardHits === 1 ? " guide" : " guides"));
+          if (shown) bits.push(shown + (shown === 1 ? " term" : " terms"));
+          count.textContent = bits.length
+            ? bits.join(" and ") + " match “" + search.value.trim() + "”"
+            : "Nothing matches “" + search.value.trim() + "”";
+          count.className = "search-count" + (bits.length ? "" : " none");
+        }
+      }
     };
 
     search.addEventListener("input", function () {

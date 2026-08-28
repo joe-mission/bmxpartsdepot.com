@@ -472,6 +472,17 @@ figure.diagram .fig-body.placeholder .todo{
 .hub-search input:focus{outline:2px solid var(--cyan);outline-offset:1px;background:rgba(255,255,255,.1)}
 .hub-search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.45)}
 
+/* live result count, sits directly under the input so typing has a visible
+   effect even though the results themselves are far below the fold */
+.search-count{
+  margin:-6px 0 14px;
+  font-size:14px;
+  color:var(--cyan-lt);
+  font-weight:550;
+}
+.search-count.none{color:rgba(255,255,255,.55)}
+.search-count[hidden]{display:none}
+
 .az-bar{display:flex;flex-wrap:wrap;gap:5px}
 .az-bar a,.az-bar button{
   display:inline-flex;align-items:center;justify-content:center;
@@ -495,6 +506,9 @@ figure.diagram .fig-body.placeholder .todo{
   transition:border-color .2s ease,transform .2s ease,box-shadow .25s ease;
 }
 .pillar-card:hover{border-color:var(--cyan);transform:translateY(-3px);box-shadow:0 22px 40px -30px rgba(0,0,0,.5)}
+/* the UA [hidden] rule is display:none, which any explicit display on the
+   same element beats. Anything the filter hides needs to say so itself. */
+.pillar-card[hidden],.az-list li[hidden],.az-group[hidden],.sec-rule[hidden]{display:none}
 .pillar-card .pc-num{
   font-family:var(--display);font-size:13px;letter-spacing:.2em;color:var(--orange);
 }
