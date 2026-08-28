@@ -99,10 +99,31 @@ See `content/pillars/01-bottom-brackets-and-spindles.md`, which is the format
 model and the quality bar. Directives: `quickanswer`, `needsverify`, `caliper`,
 `video`, `figure`, `faq`, `ebay`, `fitbadge`.
 
+Raw HTML passes through at **block** level only. Inside a paragraph everything is
+escaped, with two exceptions: backticked code, and a sourcing badge. The badge
+exception exists because the honest-hole pattern ends a sentence with one:
+
+```
+No manufacturer publishes it. <span class="src src-conflict">Unpublished</span>
+```
+
+Without the exception that shipped as visible markup text to readers, which it
+did on nine pages until it was caught. `SRC_BADGE_RE` in `build.py` matches that
+span and only that span: the three known classes, a short plain-text label, no
+attributes. Any other tag mid-paragraph still escapes, deliberately.
+
+Three labels currently ride the `src-conflict` style: Unpublished, Unverified
+and Conflicting. They mean different things and only the third is a conflict.
+Worth splitting when someone touches this next.
+
 A `## Heading {#anchor}` whose anchor matches a registry slug is what makes the
 hub's A-Z link deep-link into that section. Claiming a term in frontmatter without
 writing the matching section means the hub links to the page instead, and the
 build says so.
+
+New sections are currently appended after `## Questions` rather than before it,
+so the FAQ sits mid-page on four pillars. Cosmetic, pre-existing, and worth
+fixing in one pass rather than per batch.
 
 ### The term registry
 

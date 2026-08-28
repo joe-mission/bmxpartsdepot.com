@@ -109,6 +109,15 @@ LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
 BOLD_RE = re.compile(r"\*\*([^*]+)\*\*")
 EM_RE = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
 
+# The one raw tag allowed mid-paragraph: a sourcing badge. Prose that ends
+# "... no manufacturer publishes it. <span class="src src-conflict">Unpublished</span>"
+# is the honest-hole pattern, and before this it escaped and shipped the markup
+# as visible text on nine pages. Deliberately narrow: this matches that span and
+# nothing else, so authoring raw HTML inline is still not a thing you can do.
+SRC_BADGE_RE = re.compile(
+    r'<span class="src (src-(?:confirmed|single|conflict))">([^<>]{1,40})</span>'
+)
+
 
 def inline(s):
     """Escape, then re-introduce the small set of inline markup we allow."""
@@ -118,7 +127,15 @@ def inline(s):
         stash.append("<code>%s</code>" % html.escape(m.group(1)))
         return "\x00%d\x00" % (len(stash) - 1)
 
+    def keep_badge(m):
+        stash.append(
+            '<span class="src %s">%s</span>'
+            % (m.group(1), html.escape(m.group(2), quote=False))
+        )
+        return "\x00%d\x00" % (len(stash) - 1)
+
     s = CODE_RE.sub(keep, s)
+    s = SRC_BADGE_RE.sub(keep_badge, s)
     s = html.escape(s, quote=False)
     s = LINK_RE.sub(
         lambda m: '<a href="%s">%s</a>' % (html.escape(m.group(2), quote=True), m.group(1)),

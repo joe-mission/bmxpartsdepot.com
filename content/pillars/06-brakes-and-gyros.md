@@ -11,7 +11,7 @@ standfirst: Most used BMX frames arrive brakeless, and most used brake sets arri
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: u-brake|U-Brake, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, gyro-detangler|Detangler, gyro-tabs|Gyro Tabs, straddle-cable-yoke|Straddle Cable Yoke, brake-lever-reach|Brake Lever Reach, quick-release-brake-cable|Quick Release Brake Cable, v-brake|V-Brake, keyed-washer|Keyed Washer
+terms: u-brake|U-Brake, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, gyro-detangler|Detangler, gyro-tabs|Gyro Tabs, straddle-cable-yoke|Straddle Cable Yoke, brake-lever-reach|Brake Lever Reach, quick-release-brake-cable|Quick Release Brake Cable, v-brake|V-Brake, keyed-washer|Keyed Washer, 990-mounts|990 Mounts, straddle-cable-hanger|Straddle Cable Hanger, cable-pull-ratio|Cable Pull Ratio
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-front-end-headsets-and-forks|Headsets, Forks and Stems, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles, bmx-handlebars-and-cockpit|Handlebars and Cockpit
 ---
 
@@ -345,3 +345,44 @@ Also check the fork crown or the back of the crown for a drilled hole, which wou
 ::: ebay Brakes, levers and gyros in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 Brake sets go up with the mount standard they fit and with whatever hardware is genuinely in the box, because a U-brake missing its straddle cable and yoke is a different purchase.
 :::
+
+## 990 mounts {#990-mounts}
+
+::: quickanswer
+**990 is the name for the brake post spacing almost every BMX U-brake and frame is built to, and it is why a used brake off one bike usually bolts onto another.** The name comes from the Dia-Compe AD-990, the brake the pattern is named after.
+:::
+
+The posts are the two cylindrical studs the brake arms pivot on, either welded to the seat stays or chain stays, or threaded into bosses so they can be removed. If a frame has them, a 990 brake fits. If it does not, no amount of hardware will put a rear brake on it, which is covered under [brake mounts](#u-brake-mounts) and [removable brake mounts](#removable-brake-mounts).
+
+What matters when buying used is which of the two you have. Welded posts are permanent and always there. Threaded posts unscrew, which is how a frame gets a clean brakeless look, and it is also how the posts go missing. A frame advertised as having mounts may have empty threaded holes, and the bosses are frame-specific enough that finding the right ones later is not guaranteed.
+
+::: needsverify Two figures a buyer would want here are not published by anyone we could source.
+- Post centre to centre spacing for the 990 pattern
+- Thread size of removable 990 bosses
+:::
+
+The second one is worth explaining rather than leaving blank. Retailers selling replacement bosses list them variously as M6 and as M8, which are not close enough to be a rounding difference, and no manufacturer publishes a figure to settle it. Measure the boss on your own frame before ordering, and if you are buying bosses to suit a frame you do not have in front of you, ask the seller to measure.
+
+## Straddle cable hanger {#straddle-cable-hanger}
+
+::: quickanswer
+**The straddle cable hanger is the small part the main brake cable ends at, carrying the transverse wire that pulls both brake arms.** Its height above the brake changes how much power you get for the same hand effort, so it is an adjustment, not just a connector.
+:::
+
+Drop the hanger closer to the tyre and the straddle wire runs at a wider angle. That increases the mechanical advantage: more braking force at the rim for the same pull at the lever, at the cost of the pads moving less far for the same lever travel. Raise it and the opposite happens, giving a firmer lever with less power.
+
+That trade is the whole reason the part is adjustable, and it is the first thing to change on a used brake set that feels weak. Before deciding a brake is worn out, look at where the hanger is sitting.
+
+Two practical limits. The hanger and straddle wire have to clear the tyre through the brake's full travel, which matters more on a wide modern tyre than the setup was probably designed around. And a hanger set very low leaves so little pad travel that the pads drag on a rim that is even slightly out of true.
+
+## Cable pull ratio {#cable-pull-ratio}
+
+::: quickanswer
+**Pull ratio is how much cable a lever pulls for a given amount of hand movement, and the brake has to be designed for the same ratio.** Mixing a lever and a brake built to different ratios gives either a lever that hits the bars or a brake that barely moves.
+:::
+
+This is the reason a mountain bike V-brake lever does not work properly on a BMX U-brake, and it is a more common mistake than it sounds, because the lever will physically clamp to the bar and the cable will physically connect. Nothing about the fit tells you the geometry is wrong.
+
+A linear pull brake needs a lever that pulls roughly twice as much cable as a lever made for cantilever and U-brake arms. Put a short-pull lever on a V-brake and the pads never reach the rim. Put a long-pull lever on a U-brake and the lever hits the grip before the pads bite hard.
+
+On a used bike sold as a complete brake setup, the lever and brake usually match because they came off the same bike. Buying the two separately is where it goes wrong. If a brake feels wrong in a way that no cable adjustment fixes, the lever is worth checking before the brake.

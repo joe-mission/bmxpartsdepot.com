@@ -11,7 +11,7 @@ standfirst: A seat has to match its post, the post has to match the frame, and t
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: pivotal-seat|Pivotal Seat, seat-post-diameter|Seat Post Diameter, integrated-seat-clamp|Integrated Seat Clamp, zero-offset-seat-post|Zero Offset Seat Post, pinch-bolt|Pinch Bolt, yield-strength|Yield Strength, zinc-plated-hardware|Zinc-Plated Hardware, standover-height|Standover Height
+terms: pivotal-seat|Pivotal Seat, seat-post-diameter|Seat Post Diameter, integrated-seat-clamp|Integrated Seat Clamp, zero-offset-seat-post|Zero Offset Seat Post, pinch-bolt|Pinch Bolt, yield-strength|Yield Strength, zinc-plated-hardware|Zinc-Plated Hardware, standover-height|Standover Height, railed-seat|Railed Seat, seat-clamp-diameter|Seat Clamp Diameter, tripod-post-spline|Tripod Post Spline
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-handlebars-and-cockpit|Handlebars and Cockpit, vintage-bmx-identification|Era and Dating
 ---
 
@@ -328,4 +328,49 @@ It is not the same thing as an integrated seat clamp, which is a clamp machined 
 
 ::: ebay Seats, posts and clamps in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 Used seats get photographed from underneath, because that is the side that tells you whether the base is cracked. Posts go up with the measured diameter.
+:::
+
+## Railed seat {#railed-seat}
+
+::: quickanswer
+**A railed seat sits on two metal rails clamped by a matching post, and it does not fit a pivotal post.** It is the main alternative to [pivotal](#pivotal-seat), and the two interfaces share nothing.
+:::
+
+The rails run fore and aft under the saddle, and the post clamps them between two plates. That gives something pivotal does not: the saddle slides forward and back, so you can move it independently of the post. It costs weight and it raises the saddle, because the clamp sits under the shell rather than inside it.
+
+For buying used, the interface is the whole question. A railed seat and a pivotal post are not made to work together and no adapter makes them equivalent. Check which one a seat has before buying it to go with a post you already own, and check the post the same way. Photographs of a saddle from above tell you nothing; you need the underside.
+
+Worn rails are worth a look on anything second hand. The clamp bites in the same two places for years, and rails that are visibly flattened or grooved where the clamp sat have been overtightened at some point.
+
+::: needsverify Rail dimensions are not published by any source we could cite.
+- Saddle rail diameter
+- Rail centre to centre spacing
+:::
+
+Those two figures are widely repeated but we could not trace either to a manufacturer specification or a published standard. Rails also come in round and oval sections, which changes what a given clamp will grip. If you are matching a seat to a post you do not have in hand, measure rather than assume.
+
+## Seat clamp diameter {#seat-clamp-diameter}
+
+::: quickanswer
+**Seat clamp diameter is the outside diameter of your frame's seat tube, not the diameter of your seat post.** It is a bigger number than the post, and it is the single most common ordering mistake in this part of the bike.
+:::
+
+The post goes inside the seat tube. The clamp goes around the outside of it. So the clamp is always the larger number, because it has to clear the post plus the wall thickness of the tube on both sides. Ordering a clamp in the post's size gets you something that will not go on the frame.
+
+Each post size has a clamp size that goes with it, and those pairings are published in the table under [seat post diameter](#seat-post-diameter) with their sourcing. Work from there rather than from the post number in your hand.
+
+The pairings hold because BMX frame builders draw from a small set of tube sizes, not because there is a standard tying the two together. A frame built with unusually thick or thin seat tube wall will sit outside them. If a clamp bought to the table does not close properly, that is the reason, and the fix is to put calipers across the outside of the seat tube at the very top, where the clamp sits, and order to that measurement instead. If the frame has an [integrated seat clamp](#integrated-seat-clamp) machined into the tube, the question does not arise at all.
+
+## Tripod post spline {#tripod-post-spline}
+
+::: quickanswer
+**Tripod is a third seat interface, alongside railed and pivotal, and it is not compatible with either.** It uses a three-point mount rather than rails or a single bolt through a splined face.
+:::
+
+You meet it rarely, which is exactly why it catches people out: a tripod seat looks close enough to pivotal in a photograph that it gets bought as one. The mount pattern under the shell is the tell, and it needs its own post.
+
+The practical advice for a used purchase is short. If a seat or post is described as tripod, it works with tripod parts and nothing else, and replacements are harder to find than for either of the common systems. That is worth factoring into the price of a bike that comes with one.
+
+::: needsverify No manufacturer specification for the tripod interface could be located.
+- Tripod mount dimensions and bolt pattern
 :::

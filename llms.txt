@@ -44,6 +44,7 @@ Each guide is deep-linkable. The sections are:
 - [Loose ball bearings, and when to bin them](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#loose-ball-bearings) : Section of the guide covering loose ball bearings, and when to bin them.
 - [Unsealed bearings on used parts](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#unsealed-bearings) : Section of the guide covering unsealed bearings on used parts.
 - [Questions](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#questions) : Section of the guide covering questions.
+- [Thread pitch](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#thread-pitch) : Section of the guide covering thread pitch.
 
 ### Frame ID, Materials and Geometry
 
@@ -128,6 +129,9 @@ Each guide is deep-linkable. The sections are:
 - [Brakeless frames and what gets left behind](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#brakeless) : Section of the guide covering brakeless frames and what gets left behind.
 - [Keyed washers](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#keyed-washer) : Section of the guide covering keyed washers.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#questions) : Section of the guide covering questions.
+- [990 mounts](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#990-mounts) : Section of the guide covering 990 mounts.
+- [Straddle cable hanger](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#straddle-cable-hanger) : Section of the guide covering straddle cable hanger.
+- [Cable pull ratio](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#cable-pull-ratio) : Section of the guide covering cable pull ratio.
 
 ### Headsets, Forks and Stems
 
@@ -188,6 +192,9 @@ Each guide is deep-linkable. The sections are:
 - [Combo seat and post units](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#combo-units) : Section of the guide covering combo seat and post units.
 - [Buying a used seat, post or clamp](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#condition) : Section of the guide covering buying a used seat, post or clamp.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#questions) : Section of the guide covering questions.
+- [Railed seat](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#railed-seat) : Section of the guide covering railed seat.
+- [Seat clamp diameter](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-clamp-diameter) : Section of the guide covering seat clamp diameter.
+- [Tripod post spline](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#tripod-post-spline) : Section of the guide covering tripod post spline.
 
 ### Era, Dating and Restoration ID
 

@@ -11,7 +11,7 @@ standfirst: Four bottom bracket standards have been used on BMX bikes, and they 
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: american-bottom-bracket|American Bottom Bracket, mid-bottom-bracket|Mid Bottom Bracket, spanish-bottom-bracket|Spanish Bottom Bracket, euro-bottom-bracket|Euro Bottom Bracket, bottom-bracket-shell-width|Bottom Bracket Shell Width, crank-spindle-diameter|Crank Spindle Diameter, sealed-bearing-sizes|Sealed Bearing Sizes, press-fit-bottom-bracket|Press-Fit Bottom Bracket, loose-ball-bearings|Loose Ball Bearings, unsealed-bearings|Unsealed Bearings
+terms: american-bottom-bracket|American Bottom Bracket, mid-bottom-bracket|Mid Bottom Bracket, spanish-bottom-bracket|Spanish Bottom Bracket, euro-bottom-bracket|Euro Bottom Bracket, bottom-bracket-shell-width|Bottom Bracket Shell Width, crank-spindle-diameter|Crank Spindle Diameter, sealed-bearing-sizes|Sealed Bearing Sizes, press-fit-bottom-bracket|Press-Fit Bottom Bracket, loose-ball-bearings|Loose Ball Bearings, unsealed-bearings|Unsealed Bearings, thread-pitch|Thread Pitch
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-wheels-hubs-and-axles|Wheels and Hubs, drivetrain-chains-and-sprockets|Drivetrain and Sprockets, bmx-cranks-and-pedals|Cranks and Pedals
 ---
 
@@ -381,3 +381,34 @@ Measure it while you have the calipers out, but it rarely stops a build.
 ::: ebay Bottom brackets, spindles and bearings in the store | | | https://www.ebay.com/usr/bmx-parts-depot |
 What is in stock changes as bikes come apart. Each one is measured against the standards on this page before it goes up, so the listing says which shell it actually fits.
 :::
+
+## Thread pitch {#thread-pitch}
+
+::: quickanswer
+**Thread pitch is how far apart the threads are, and two parts with the same diameter and different pitches will destroy each other if forced together.** It is why a bolt that starts to go in can still be the wrong bolt.
+:::
+
+Diameter tells you whether a fastener will enter. Pitch tells you whether it belongs there. Imperial threads are counted as threads per inch, so a higher TPI number means finer threads. Metric threads are given as the distance between crests in millimetres, so a smaller number is finer.
+
+The reason this matters on a used BMX is that several of the threads on the bike are close enough in diameter to start, and the damage is done in the first turn or two. That is covered under [cross-threading](#cross-threading), and the rule that follows from it is simple: everything threaded gets started by hand, and nothing gets a wrench until it has turned freely for several turns.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Threads you meet on a BMX bike</caption>
+<thead>
+<tr><th scope="col">Where</th><th scope="col">Thread</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Pedals, three-piece cranks</th><td class="num">9/16 inch x 20 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Pedals, one-piece cranks</th><td class="num">1/2 inch x 20 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Threaded bottom bracket and threaded freewheel hub</th><td class="num">1.37 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Threaded headset, one inch</th><td class="num">1 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Solid rear axle</th><td class="num">3/8 inch x 26 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Solid axle, coaster brake and some others</th><td class="num">3/8 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Two rows there deserve attention. **The two 3/8 inch axle threads are the same diameter and different pitches**, so an axle nut off one will start on the other and then bind. And the bottom bracket and the threaded freewheel share a thread, which is a piece of history rather than a coincidence.
+
+The pedal threads are covered in their own right under [pedal thread size](#pedal-thread-size), including the left-hand thread on the left side, which is a separate trap from pitch.

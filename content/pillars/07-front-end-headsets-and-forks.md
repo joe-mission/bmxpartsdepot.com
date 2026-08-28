@@ -128,6 +128,18 @@ The threaded system was how every bike worked for a long time and it is what you
 
 **How the headset works.** The lower race sits on the fork crown. The bearings run in cups in the head tube. The top race threads onto the steerer and sets the bearing preload, and a locknut is tightened down against it to stop the adjustment moving. Between the two there is usually a keyed washer with a tab that locates in a groove down the steerer, which is what stops the top race turning when you tighten the locknut.
 
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Threaded steerer</caption>
+<thead>
+<tr><th scope="col">Component</th><th scope="col">Thread</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">One inch threaded headset and steerer</th><td class="num">1 inch x 24 TPI</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
 **How the stem works.** The steerer sticks up through the headset and is hollow. The quill (the long shaft of the stem) drops down inside it. An **expander bolt** runs the length of the quill and threads into a **wedge** at the bottom. Tightening the bolt pulls the wedge up into the tapered end of the quill, spreading it against the inside of the steerer. That is the entire mechanism, and it is why a quill stem can be set at any height within its range simply by loosening one bolt.
 
 The system has real advantages: height adjustment is trivial, and there is only one bolt to deal with. It also has failure modes that a threadless setup does not.
