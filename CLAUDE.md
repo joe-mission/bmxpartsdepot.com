@@ -46,13 +46,27 @@ python3 -m http.server 8000
 ```
 
 **The build fails on defects.** `python3 build.py` exits non-zero on any of:
-an unfilled placeholder, a duplicate section id, a term claimed with no matching
-section anchor, a claimed slug that is not in the registry, or a claimed slug
-still marked `planned`. Each one ships a page that looks fine and is quietly
-broken, and as warnings they simply scrolled past.
+an unfilled caliper, video or diagram placeholder, a duplicate section id, a
+term claimed with no matching section anchor, a claimed slug that is not in the
+registry, or a claimed slug still marked `planned`. Each one ships a page that
+looks fine and is quietly broken, and as warnings they simply scrolled past.
 
 Pass `--allow-warnings` while a term is half-written. It is for work in
 progress, not for pushing.
+
+**A `::: needsverify` block is NOT a defect and never fails the build.** It is
+the opposite: someone went looking, could not source the figure, and published
+the hole rather than a plausible number. For some figures that is permanent. No
+BMX brand publishes a casing TPI or a Shore A durometer for its tyres, so those
+blocks are never going away, and the page is more honest for carrying them.
+
+This was wrong for one commit, and the consequence is worth remembering: with
+the build failing on them, the directive was unusable in a clean run, so the
+honest answer got quietly rewritten as prose instead. A gate that punishes the
+behaviour it exists to protect will be routed around, and the routing around
+will look like a passing build.
+
+The build counts them separately, as "figures published as visible holes".
 
 Two pillars claiming one term is **not** a defect and stays a note. The
 registry's `home` column decides which page owns the canonical section; the

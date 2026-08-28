@@ -1166,12 +1166,37 @@ def main():
     defects = write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE)
     write_root_files(pages, SITE, ROOT)
 
-    todo_total = sum(len(p["todo"]) for p in pages)
+    # Two different things share ctx["todo"] and they are not the same kind of
+    # thing at all.
+    #
+    # A missing caliper reading, video id or diagram is work that has not been
+    # done. It fails the build.
+    #
+    # A ::: needsverify item is work that HAS been done: someone went looking,
+    # could not source the figure, and published the hole rather than a
+    # plausible number. That is the site working as intended, and for some
+    # figures it is permanent. No BMX brand publishes a casing TPI or a Shore A
+    # durometer for its tyres, so those blocks are never going away.
+    #
+    # Failing the build on them made the directive unusable in a clean build,
+    # which put pressure on the honest answer and rewarded quietly dropping the
+    # gap into prose instead. The gate was arguing against the rule it exists
+    # to protect.
+    def split_todo(p):
+        holes = [t for t in p["todo"] if t.startswith("spec: ")]
+        return [t for t in p["todo"] if not t.startswith("spec: ")], holes
+
+    pending_total = sum(len(split_todo(p)[0]) for p in pages)
+    holes_total = sum(len(split_todo(p)[1]) for p in pages)
+
     print("built %d pillar pages" % len(pages))
     for p in pages:
-        print("  %-42s %2d sections  %2d faqs  %2d placeholders  %2d auto-links"
-              % (p["slug"], len(p["sections"]), p["faqs"], len(p["todo"]), p["links"]))
-    print("%d placeholders awaiting Joe (caliper readings, video ids, diagrams)" % todo_total)
+        pending, holes = split_todo(p)
+        print("  %-42s %2d sections  %2d faqs  %2d pending  %2d holes  %2d auto-links"
+              % (p["slug"], len(p["sections"]), p["faqs"], len(pending), len(holes), p["links"]))
+    print("%d placeholders awaiting Joe (caliper readings, video ids, diagrams)" % pending_total)
+    print("%d figures published as visible holes (sourcing genuinely not available)"
+          % holes_total)
 
     # ---- the gate -------------------------------------------------------
     #
@@ -1188,7 +1213,7 @@ def main():
             defects.append("%s has two sections with id #%s, so the second is "
                            "unreachable by link, anchor and schema" % (p["slug"], a))
     for p in pages:
-        for item in p["todo"]:
+        for item in split_todo(p)[0]:
             defects.append("%s has an unfilled placeholder: %s" % (p["slug"], item))
 
     if defects:
