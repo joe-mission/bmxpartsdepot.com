@@ -153,11 +153,25 @@ If the faceplate on a front load stem will not pull down evenly, or the bar spin
 
 Going the other way, a larger bar simply will not go into a smaller clamp, and no amount of persuasion makes that a good idea.
 
-::: needsverify Clamp diameters are the numbers this page most needs, and they are not published until confirmed against stem and bar manufacturer specs:
-- the standard BMX bar clamp diameter, in millimetres
-- the oversize BMX bar clamp diameter, in millimetres
-- whether oversize is a current option or mostly a legacy one
-- whether shims are sold to run a standard bar in an oversize clamp, and by whom
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Bar clamp diameters</caption>
+<thead>
+<tr><th scope="col">Standard</th><th scope="col">Diameter</th><th scope="col">Status</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>The default across the market</td><td>Odyssey, S&amp;M, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Oversize</th><td class="num">25.4mm (1 inch)</td><td>A live option, not the norm</td><td>S&amp;M, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**22.2mm is a rounded name.** The exact figure is 7/8 inch, which is 22.225mm, so a caliper reading 22.22 on a used bar means the bar is standard, not worn. Nothing rides on the extra hundredth of a millimetre, but knowing it stops you second-guessing a good bar.
+
+Oversize at 25.4mm is offered by S&amp;M and Eclat, so it is current rather than dead, but it is a deliberate choice rather than something you end up with by accident. **An oversize bar needs an oversize stem.** The two clamp diameters do not mix, and the gap between them is 3.2mm, which is far too much to force.
+
+::: needsverify
+- whether shims are sold to run a standard 22.2mm bar in a 25.4mm clamp, and by whom
 :::
 
 ### Knurling and clamp condition {#knurled-bar-clamp}
