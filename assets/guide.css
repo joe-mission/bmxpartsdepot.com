@@ -199,6 +199,9 @@ article.guide p{margin:0 0 18px}
 article.guide ul,article.guide ol{margin:0 0 18px;padding-left:22px}
 article.guide li{margin:0 0 7px}
 article.guide a{color:var(--cyan);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+/* Buttons inside the article are not prose links. Without this the rule above
+   paints the eBay CTA cyan text on a cyan background and it disappears. */
+article.guide a.btn{color:var(--fg);text-decoration:none}
 article.guide a:hover{color:var(--orange)}
 
 /* section rule under each h2 */
