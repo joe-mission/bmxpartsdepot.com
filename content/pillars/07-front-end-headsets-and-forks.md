@@ -222,11 +222,14 @@ The catch is that offset only means something in combination with head tube angl
 
 What you can do practically, when replacing a used fork, is measure the offset on the fork that is coming off and match it. **The bike you already know is a better reference than a number off a chart.**
 
+Head tube angle is the other half of the trail calculation, and that figure is now sourced. Published geometry charts on named frames put street and park at **75.25 to 75.75 degrees**, dirt at **74.5**, and race at **74.0 to 74.5**. Those come from BSD, Cult, Sunday, S&M and Chase, and the full table with the frames listed sits on the [Frame ID and Geometry guide](/guides/bmx-frame-identification-and-geometry/#chainstay-length).
+
+So the angle side of trail is settled. The offset side is not.
+
 ::: needsverify Offset figures are deliberately absent from the prose above.
 - the range of fork offsets actually sold for BMX, from manufacturer specs
 - what is common on street forks against race forks
 - whether BMX manufacturers publish offset consistently, and where they measure it from
-- typical BMX head tube angles, for the trail calculation to mean anything
 :::
 
 ::: figure Fork offset and trail | assets/diagrams/bmx-fork-offset-and-trail.svg | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tyre contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
@@ -249,9 +252,10 @@ On BMX forks, the dropouts are at the bottom of the legs and the slot usually op
 
 A **unicrown fork**, where the legs bend inward and meet the steerer directly with no separate machined crown, is the common modern construction and is also an identification marker: a fork with a separate brazed or welded crown is generally an older design. That is a dating cue rather than a fitment one, but it is useful when working out what era a mixed-up bike is from.
 
+**Fork dropout slot width is not published by anyone.** Odyssey, Sunday, Eclat, Shadow Conspiracy and S&M were all audited and every one of them states axle compatibility, 3/8 inch or 10mm, without ever stating the slot dimension. The same holds for rear dropouts on frames, across nine brands. Two separate research passes have now come up empty, so the figure is not being withheld here, it does not appear to exist publicly. Measure the fork.
+
 ::: needsverify Front end axle and dropout figures, unverified here.
 - BMX front axle diameters in current use, and what older forks were built for
-- fork dropout slot widths, measured across a range of used forks
 - front hub over-locknut dimension and the fork spacing it needs
 - minimum thread engagement a front peg needs on the axle
 :::
