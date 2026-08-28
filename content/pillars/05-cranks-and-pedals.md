@@ -64,12 +64,24 @@ The mechanical arrangement is simple. The frame shell is unthreaded and large en
 
 Two practical consequences for a used bike. First, **a one-piece crank cannot go into a Mid, Spanish or Euro frame**, because the shell is nowhere near large enough to pass the crank through. Second, **the pedals are not the same as three-piece pedals.** One-piece cranks take the smaller of the two BMX pedal threads. Fitting the larger thread into them, or the other way round, will strip a boss.
 
-::: needsverify The thread specifications on a one-piece setup are the figures most often quoted wrong, so none of them are published here yet.
-- the exact pedal thread designation used on one-piece cranks, commonly given as 1/2 inch by 20 TPI
-- the exact pedal thread designation used on three-piece cranks, commonly given as 9/16 inch by 20 TPI
-- the major diameter in mm of both pedal threads, measured on parts in hand
-- the American cup thread pitch that goes with one-piece cranks, and the exception for some older Schwinn and Mongoose bikes
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>One-piece crank threads</caption>
+<thead>
+<tr><th scope="col">Thread</th><th scope="col">Designation</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Pedal, one-piece crank</th><td class="num">1/2 inch x 20 TPI</td><td>Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Pedal, three-piece crank</th><td class="num">9/16 inch x 20 TPI</td><td>Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">American cup, standard</th><td class="num">24 TPI</td><td>Sheldon Brown, Albes, BMXGuru <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">American cup, some Schwinn and Mongoose</th><td class="num">28 TPI</td><td>Sheldon Brown, Albes, BMXGuru <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+On the 24 and 28 TPI split, the source is blunt about what it means in practice: no part of the bearing assembly interchanges between the two threadings. If you have an older Schwinn or Mongoose, a standard American cup set will start and then bind.
+
+Both pedal threads belong to the British Standard Cycle family, specified in BS 811:1950. That standard is paywalled, so this page publishes the designations and the arithmetic that follows from them, and does not publish thread angle or tolerance figures taken from summaries of a document nobody here has read.
 
 The American cup thread question is partly answered already. Sources confirm two thread pitches exist for American one-piece bottom bracket cups, a common one and an older one found on some Schwinn and Mongoose bikes, which is covered with its sourcing in the [bottom bracket guide](/guides/bottom-brackets-and-spindles/#american-bottom-bracket). What is not confirmed here is the pedal side, so that stays in the block above.
 
@@ -102,10 +114,16 @@ There are two families of attachment in circulation and it is worth understandin
 
 The **spindle boot** is the plastic or nylon sleeve that sits over the exposed spindle between the arm and the bearing, or over the spline area, and keeps grinds off the interface. It looks cosmetic. It is not. A chewed-up spindle boot is a good sign the bike has been ridden on ledges, and a missing one means the spline area itself has been taking the hits.
 
-::: needsverify Nothing on this page publishes torque figures, because none were checked against a manufacturer.
-- crank bolt torque figures by manufacturer, and whether they differ between bolt-through and pinch bolt designs
-- pinch bolt thread size and head size, which varies between brands
-- spline count on common crank and spindle systems
+**On torque, the interesting finding is that there is nothing to find.** Odyssey's own instruction manual for their Twombolt crank gives no numeric torque value at all. It specifies the job qualitatively: snug, tightened as needed, anti-seize on the lock bolt lip, and a long 6mm hex key for leverage. Third-party BMX torque charts do exist, but they are aftermarket compilations rather than anything a crank maker published, so no number from them appears here.
+
+That is worth knowing rather than treating as a gap. If the company that made the crank declines to give you a figure, a number you found on a chart is not more authoritative than their silence.
+
+On spline systems, 8-spline and 48-spline are both real and both current, with 8-spline common at the entry level and 48-spline on higher-end cranks, Profile's spline-drive being the well known implementation. Bolt and hex sizes vary: Park Tool describes 8mm as common on BMX three-piece cranks but explicitly generically, covering "many" cranks while noting some makes need a proprietary puller. That is not a per-brand figure and is not published as one.
+
+::: needsverify
+- crank bolt and pinch bolt torque figures from any BMX crank manufacturer, if one publishes them at all
+- pinch bolt thread size and head size per brand
+- machining tolerances for crank spindle diameters
 :::
 
 ::: video Fitting a three-piece crank without wrecking the splines | TBD
@@ -150,9 +168,25 @@ What nobody should do is copy a number off a chart and assume it. Two riders the
 ::: caliper crank arm length, spindle centre to pedal thread centre, on several used sets, and record what each one is stamped with (if anything) next to what it actually measures
 :::
 
-::: needsverify Length figures are left out of the prose here on purpose.
-- the range of crank arm lengths actually sold for BMX, confirmed against manufacturer catalogues
-- the most common length supplied on complete bikes
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Crank arm lengths sold for BMX</caption>
+<thead>
+<tr><th scope="col">Length</th><th scope="col">Where it appears</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">160mm</th><td>Current catalogue, shorter end</td><td>Odyssey <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">165mm</th><td>Current catalogue</td><td>Odyssey <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">170mm</th><td>Current catalogue</td><td>Odyssey <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">175mm</th><td>Historically the standard freestyle length</td><td>Odyssey, Dans Comp <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+So the range you will meet on a used 20 inch bike is 160 to 175mm, with 175 the long-standing default and the shorter end increasingly common. Smaller wheel sizes drop proportionally, roughly 140mm on an 18 inch and shorter again on a 12 inch, though those figures are general rather than pulled from a catalogue.
+
+::: needsverify
+- Profile Racing's current arm length lineup, which was not exposed on their category page
 - whether any BMX crank is marked with its length from the factory, and where the marking sits
 :::
 
@@ -168,10 +202,25 @@ Two things save you. First, work out which cranks you have before buying pedals,
 
 The left and right rule is separate from the size question and applies to every pedal. **The left pedal is left-hand threaded** so that pedalling tightens rather than loosens it. Pedals are marked L and R on the spindle end or the wrench flats. If the marking has worn off, the thread direction itself tells you: the left pedal tightens anticlockwise.
 
-::: needsverify The thread designations are in the one-piece section's block above and are repeated here because this is the section people will land on.
-- the exact thread designation and pitch of the larger BMX pedal thread
-- the exact thread designation and pitch of the smaller one-piece pedal thread
-- whether adapters exist that let a larger pedal run in a smaller boss, and whether any manufacturer endorses them
+<div class="table-scroll">
+<table class="spec-table">
+<caption>The two BMX pedal threads</caption>
+<thead>
+<tr><th scope="col">Used on</th><th scope="col">Designation</th><th scope="col">Nominal major diameter</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Three-piece and two-piece cranks</th><td class="num">9/16 inch x 20 TPI</td><td class="num">14.29mm</td><td>Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">One-piece Ashtabula cranks</th><td class="num">1/2 inch x 20 TPI</td><td class="num">12.70mm</td><td>Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+The millimetre figures are the inch designations converted, not measurements taken off a part. 9/16 inch is 14.2875mm and 1/2 inch is 12.7mm. They are here because a caliper on an unmarked pedal spindle is the fastest way to tell the two apart, and the gap between them is over 1.5mm, which is not a reading you can get wrong.
+
+**Adapters exist, and that is not the same as being endorsed.** Several BMX parts companies manufacture and sell 1/2 inch to 9/16 inch pedal adapters specifically for BMX use, so they are a real commercial product rather than a workaround somebody invented. What could not be found is any statement from a crank or pedal manufacturer recommending them. So: they exist, they are sold for this, and nobody who makes the parts they go between has put their name to them. Decide accordingly, and remember the adapter puts more leverage on the same soft boss.
+
+::: needsverify
+- a manufacturer statement for or against pedal thread adapters, from anyone who makes cranks or pedals
 :::
 
 ::: video Telling a left pedal from a right pedal | TBD
