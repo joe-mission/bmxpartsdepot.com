@@ -40,12 +40,15 @@ Here is why the boundaries genuinely resist being pinned down.
 
 So this page treats era as a reading taken from the parts. That is both more honest and more useful, because when somebody hands you a frame it is the parts you have in front of you and not the year.
 
+**On the last of those questions there is already an answer, and it is no.** Support documentation across twelve BMX frame manufacturers was audited and none defines the eras. No governing body does either. The terms are collector usage, circulated by communities like BMX Society and VintageBMX, which is why this page describes eras by their features and why the era chips across this site carry no dates. Two research passes have now looked. <span class="src src-conflict">Unpublished</span>
+
+The year ranges themselves stay open below, and may stay open permanently.
+
 ::: needsverify Year ranges are the single most requested figure on this topic and the least well sourced. None are published until they can be checked against a contemporary catalogue, a manufacturer statement or a dated primary document:
 - the year range commonly given for old school BMX, and what primary source supports it
 - the year range commonly given for mid school BMX, and what primary source supports it
 - the year the modern era is normally said to begin, and on what basis
 - whether the freestyle and race sides of the sport are conventionally given the same boundaries
-- whether any manufacturer or governing body has ever published era definitions, or whether the terms are entirely collector usage
 :::
 
 ::: figure Era feature timeline | assets/diagrams/bmx-era-feature-sequence.svg | Chart showing bottom bracket, headset, crank, bar and brake standards changing across the three BMX eras with overlapping rather than hard boundaries
@@ -126,8 +129,11 @@ BMX serial numbers are typically stamped under the bottom bracket shell, sometim
 
 So the honest answer is that a serial number is useful for two things: proving a specific bike is a specific bike, and matching against a manufacturer's own records if that manufacturer still exists and still holds them. It is not a year lookup.
 
-::: needsverify Serial number and dating claims that need checking against manufacturer documentation before anything is published:
-- whether any major BMX manufacturer has published a serial number dating scheme
+**No BMX manufacturer publishes a serial dating scheme.** Twelve brands' support documentation was audited and none maintains a public lookup. Some factory stamps appear to carry dates, but no brand states that as a rule holding across production runs, so a serial can suggest a year and cannot establish one. <span class="src src-conflict">Unpublished</span>
+
+Which is why the feature-based dating on this page is not a second-best method. It is the better one.
+
+::: needsverify
 - which brands used date codes rather than sequential numbers
 - whether contract factory codes can be identified reliably
 - the year the threaded headset gave way to threadless as the freestyle default
@@ -177,11 +183,26 @@ On a threadless setup, the steerer is plain, the bearings are preloaded by a top
 
 The two systems share nothing useful. A threadless fork will not work with a threaded headset, a quill stem will not fit a plain steerer, and the diameters involved changed as well. **This is the change most likely to catch out somebody buying parts for an old frame**, because a fork bought on price will not fit a bike bought on nostalgia.
 
-::: needsverify Front end dimensions across the eras, none published until sourced:
-- the older BMX steerer and head tube diameter, in inches and millimetres
-- the current BMX steerer and head tube diameter, in inches and millimetres
-- the thread specification cut into an old school threaded steerer
-- whether any adapter genuinely allows a threadless stem on a threaded steerer
+<div class="table-scroll">
+<table class="spec-table">
+<caption>The front end, old and current</caption>
+<thead>
+<tr><th scope="col">Measurement</th><th scope="col">Old school</th><th scope="col">Current</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Steerer outside diameter</th><td class="num">25.40mm (1 inch)</td><td class="num">28.575mm (1 1/8 inch)</td><td>ISO 4210-2, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube outside diameter</th><td class="num">38.1mm</td><td class="num">45.0mm integrated</td><td>Odyssey, Snafu <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Steerer thread, where threaded</th><td class="num">1 inch x 24 TPI</td><td>None, threadless</td><td>ISO 4210-2, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Note the steerer and the head tube are different measurements, and both changed. The steerer went up by 3.175mm and the head tube by nearly 7mm, so an old fork will not begin to fit a modern frame and the reverse is equally hopeless. There is no partial compatibility here to hope for.
+
+The full headset side of this, including bearing seats and stack heights, is on the [headsets guide](/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards).
+
+::: needsverify
+- whether any adapter genuinely allows a threadless stem on a threaded steerer, and whether any manufacturer endorses it
 :::
 
 ### Necks, wedges and expander bolts {#bmx-neck-stem}
