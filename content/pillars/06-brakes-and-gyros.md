@@ -54,13 +54,33 @@ The identification job on a used frame is straightforward. Look at the seat stay
 
 **Cantilever posts are not U-brake posts**, even though they look similar at a glance. Both are a pair of posts either side of the wheel and both take a brake arm that pivots on them. The spacings differ, and the arms are shaped for different geometry, so a U-brake on cantilever posts will not sit where it should even if the arms slide on. The safe check is to measure the posts on your own frame and compare against what a brake is actually sold for.
 
-::: needsverify These are the figures that decide whether a brake will physically bolt on, and none of them are published here yet.
-- the post spacing for standard BMX U-brake (990) mounts, measured centre to centre
-- the post spacing for cantilever mounts, for comparison
-- the post outer diameter and the mounting bolt thread size
-- which model the 990 designation originally referred to
-- whether fork-mounted post spacing differs from frame-mounted post spacing
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Brake mount dimensions</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">990 post spacing, what builders target</th><td class="num">82 to 85mm centre to centre</td><td>Odyssey, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">990 post spacing, what a brake accommodates</th><td class="num">75 to 85mm</td><td>Park Tool, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Post outer diameter</th><td class="num">9.0mm</td><td>S&amp;M, Cult, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Mounting bolt thread</th><td class="num">M6 x 1.0</td><td>S&amp;M, Cult <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Cantilever post spacing, for contrast</th><td class="num">75 to 80mm, vintage 55 to 65mm</td><td>ISO 4210-2, Shimano <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Those first two rows look like a contradiction and are not.** Frame builders aim at 82 to 85mm, wide enough to clear modern 32 to 38mm rims. The wider 75 to 85mm figure is the span a U-brake can actually cope with, because the orbital washers behind the pads take up the difference. So one number is what frames are built to and the other is what brakes tolerate, which is why general bicycle references quote the wide range and BMX makers quote the narrow one.
+
+That resolves something this guide had wrong. An earlier pass published only the 75 to 85mm range and read the width as the absence of a standard. There is a standard, and the range is the accommodation around it.
+
+**Front and rear are the same.** 990 posts on a fork and on a rear frame use the same 9.0mm post and the same M6 bolt at the same spacing, across every source checked, so a U-brake bought for one end will fit the other.
+
+### Where the name comes from {#the-990-name}
+
+**990 is a Dia-Compe model number.** The AD-990 and FS-990 freestyle U-brakes arrived around 1986 to 1988, and their post dimensions were adopted so widely that the model name became the name of the standard. Sourced to Dia-Compe's own history and MOMBAT. <span class="src src-confirmed">Confirmed</span>
+
+So when a frame is described as having 990 mounts, it is being described by a brake that stopped being current decades ago, and nobody minds. Worth knowing when a seller uses the term without being able to say what it means.
 
 ::: caliper the post spacing and the post diameter on several used frames and forks, recording the frame or fork alongside each reading, so this page can publish measured figures rather than repeated ones
 :::
@@ -121,12 +141,28 @@ On a used frame, tabs are easy to spot and easy to miss: they are small, they si
 
 If a frame has no tabs, the options are a clamp-on adapter that grips the head tube, or a gyro design that mounts differently. Neither is as clean as tabs, and a clamp-on adapter has to fit your head tube, which brings you back to measuring.
 
-::: needsverify Tab and gyro fitment figures, none of which are published on this page yet.
-- the standard spacing between gyro tabs, measured centre to centre
-- the bolt thread size used in gyro tabs
-- the head tube diameters a clamp-on gyro adapter is made to fit
-- the range of upper and lower gyro cable lengths sold
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Gyro fitment</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Gyro tab spacing</th><td class="num">about 88mm centre to centre, 85 to 90mm across brands</td><td>Odyssey, Kink, Snafu <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Tab bolt thread</th><td class="num">M4 x 0.7</td><td>Kink, Shadow, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube outer diameter, traditional and zero stack</th><td class="num">38.1mm</td><td>Odyssey, Snafu <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Head tube outer diameter, integrated</th><td class="num">45.0mm</td><td>Odyssey, Snafu <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Upper gyro cable, housing</th><td class="num">380 to 430mm</td><td>Odyssey, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Lower gyro cable, housing</th><td class="num">950 to 980mm</td><td>Odyssey, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Gyro tab spacing is standardised**, which is the answer that makes a gyro a safe separate purchase. Any gyro will bolt to any tabbed frame, and the tabs themselves are held on with M4 hardware.
+
+**One distinction worth being careful about**, because it is easy to state wrongly. The 38.1 and 45.0mm figures above are **head tube outer diameters**, which is what a clamp-on gyro plate grips. They are not steerer diameters. A 1 1/8 inch steerer is 28.575mm, as set out on the [headsets guide](/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards). Head tube, steerer and bearing are three different diameters in the same few inches of bike, and mixing them up is how people order a part that cannot fit.
+
+Cable lengths are quoted separately for upper and lower and sold as matched sets, so buy the set rather than assembling one from halves.
 
 ## Straddle cable and yoke {#straddle-cable-yoke}
 
@@ -160,11 +196,28 @@ Two other used-lever checks. The **cable adjuster barrel** at the lever should t
 ::: fitbadge Not sure what your bar clamp diameter is? | Handlebars and Cockpit | /guides/bmx-handlebars-and-cockpit/
 :::
 
-::: needsverify Lever and cable specifications, held back until they are sourced.
-- the cable pull ratio difference between a short-pull (U-brake) lever and a linear pull lever
-- standard brake lever clamp diameters used on BMX bars
-- brake cable inner and outer diameters, and whether BMX uses anything different from general bicycle cable
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Levers and cable</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Short-pull lever, cable travel</th><td class="num">15 to 17mm per stroke</td><td>Shimano, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Linear-pull lever, cable travel</th><td class="num">23 to 25mm per stroke</td><td>Shimano, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Ratio between them</th><td class="num">about 1.5 to 1</td><td>Problem Solvers Travel Agent <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Lever clamp diameter</th><td class="num">22.2mm</td><td>Odyssey, Dia-Compe, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Cable inner diameter</th><td class="num">1.5 to 1.6mm</td><td>Odyssey, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Cable housing outer diameter</th><td class="num">5.0mm</td><td>Odyssey, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**A U-brake needs a short-pull lever, and now the page can say why rather than just saying so.** A linear-pull lever moves about half as much cable again per stroke. Put one on a U-brake and the pads reach the rim early in the stroke with roughly a third less force behind them, so the lever goes hard and the brake still will not stop you. It feels like a fault in the brake and it is a mismatch in the lever.
+
+Lever clamps are 22.2mm, matching the bars, so any BMX lever fits any BMX bar.
+
+**On cable, the dimensions are ordinary and the construction is not.** Inner wire and housing are the same 1.5 to 1.6mm and 5.0mm as any bicycle. But a freestyle bike with a gyro needs **linear strand compressionless housing** rather than the coiled housing used on most bikes, because coiled housing binds and locks the brake when the bars spin. So you can buy the cable anywhere, but you cannot buy just any cable.
 
 ## V-brakes and calipers on BMX {#v-brake}
 

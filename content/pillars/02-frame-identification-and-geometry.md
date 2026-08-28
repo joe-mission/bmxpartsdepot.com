@@ -173,12 +173,12 @@ Dropout plate thickness is different, because modern frames do publish it.
 <tr><th scope="row">Rear dropout slot width, any axle</th><td>Not published by any manufacturer audited</td><td>Nine brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 <tr><th scope="row">Front fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 <tr><th scope="row">Dropout plate thickness, modern</th><td class="num">5 to 6mm, or 7.5mm cast</td><td>S&amp;M, BSD <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">U-brake post spacing</th><td class="num">75 to 85mm centre to centre</td><td>Park Tool, Sheldon Brown <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">U-brake post spacing</th><td class="num">82 to 85mm as built, 75 to 85mm accommodated</td><td>Odyssey, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
 </table>
 </div>
 
-On the post spacing, note how wide that range is and where it came from. Frame brands list "990 mounts" and leave it there, so the figure is from general bicycle references rather than from anyone making BMX frames. A 10mm spread is not a tolerance, it is the absence of a tight standard.
+On post spacing, later research resolved what first looked like a missing standard. Frame builders target 82 to 85mm, wide enough to clear modern rims. The wider 75 to 85mm figure is what a U-brake tolerates, because the orbital washers behind the pads absorb the difference. Two numbers describing two different things, covered in full on the [brakes guide](/guides/bmx-brakes-and-gyros/#u-brake-mounts).
 
 ::: needsverify
 - dropout plate thickness on old school frames, where the modern sources do not reach
