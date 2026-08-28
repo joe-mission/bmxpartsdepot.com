@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 900" width="620" height="900">
+  <title>Threadless Compression Exploded View</title>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .part { fill: #08090b; stroke: #08090b; stroke-width: 2; }
+      .bearing { fill: #00a4e6; stroke: #08090b; stroke-width: 2; }
+      .plug { fill: #e64700; stroke: #08090b; stroke-width: 2; opacity: 0.85; }
+      .center-line { stroke: #6b7280; stroke-width: 3; stroke-dasharray: 6 6; }
+      .arrow { stroke: #e64700; stroke-width: 4; fill: none; }
+      .text-label { fill: #08090b; font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 700; }
+      .text-highlight { fill: #e64700; font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 800; }
+    </style>
+    <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#e64700" />
+    </marker>
+  </defs>
+
+  <rect class="bg" width="620" height="900" />
+
+  <!-- Centerline Axis -->
+  <line class="center-line" x1="220" y1="40" x2="220" y2="860" />
+
+  <!-- Compression Pull Vector Arrow -->
+  <line class="arrow" x1="220" y1="780" x2="220" y2="90" marker-end="url(#arrow-up)" />
+
+  <!-- STACK COMPONENTS (Top to Bottom) -->
+  <!-- 1. Top Cap -->
+  <rect class="part" x="160" y="70" width="120" height="18" rx="3" />
+  <text class="text-label" x="320" y="85">Top Cap</text>
+
+  <!-- 2. Stem -->
+  <rect class="part" x="130" y="130" width="180" height="70" rx="6" />
+  <text class="text-label" x="320" y="170">Stem</text>
+
+  <!-- 3. Spacers -->
+  <rect class="part" x="150" y="230" width="140" height="20" rx="2" />
+  <rect class="part" x="150" y="260" width="140" height="30" rx="2" />
+  <text class="text-label" x="320" y="270">Spacers</text>
+
+  <!-- 4. Dust Cover -->
+  <path class="part" d="M 130 340 L 310 340 L 290 310 L 150 310 Z" />
+  <text class="text-label" x="320" y="330">Dust Cover</text>
+
+  <!-- 5. Compression Ring -->
+  <polygon fill="#e64700" points="160,370 280,370 270,390 170,390" />
+  <text class="text-label" x="320" y="385">Compression Ring</text>
+
+  <!-- 6. Upper Bearing -->
+  <rect class="bearing" x="140" y="420" width="160" height="35" rx="4" />
+  <text class="text-label" x="320" y="442">Upper Bearing</text>
+
+  <!-- 7. Head Tube -->
+  <rect class="part" x="120" y="490" width="200" height="180" rx="6" />
+  <!-- Internal Ghosted Compression Plug Inside Steerer -->
+  <rect class="plug" x="170" y="520" width="100" height="80" rx="4" />
+  <text class="text-highlight" x="320" y="560">Compression Plug (inside)</text>
+  <text class="text-label" x="320" y="600">Head Tube</text>
+
+  <!-- 8. Lower Bearing -->
+  <rect class="bearing" x="140" y="700" width="160" height="35" rx="4" />
+  <text class="text-label" x="320" y="722">Lower Bearing</text>
+
+  <!-- Fork Steerer Tube Base -->
+  <path class="part" d="M 160 760 L 280 760 L 290 840 L 150 840 Z" />
+</svg>

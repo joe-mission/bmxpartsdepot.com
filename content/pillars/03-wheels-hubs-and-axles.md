@@ -11,7 +11,7 @@ standfirst: The rear hub is the part of a BMX bike with the most ways to be inco
 eras: old, mid, modern
 updated: 2026-08-28
 published: 2026-08-28
-terms: cassette-hub|Cassette Hub, freecoaster|Freecoaster, bmx-freewheel|Freewheel, cassette-driver|Driver, bmx-axle-diameter|Axle Diameter, male-axle|Male Axle, female-axle|Female Axle, over-locknut-dimension|Over Locknut Dimension, hub-guard|Hub Guard, rim-wall-construction|Rim Wall Construction, iso-bead-seat-diameter|ISO Bead Seat Diameter, spoke-lacing-pattern|Spoke Lacing Pattern, left-hand-drive|Left Hand Drive, right-hand-drive|Right Hand Drive, axle-nuts-and-bolts|Axle Nuts and Bolts, wheel-dish|Wheel Dish, effective-rim-diameter|Effective Rim Diameter, hub-end-caps|Hub End Caps, j-bend-spoke|J-Bend Spoke, spoke-nipple|Spoke Nipple, bmx-pegs|BMX Pegs, valve-hole-size|Valve Hole Size, bmx-wheel-sizes|BMX Wheel Sizes, 3x-lacing|3X Lacing
+terms: cassette-hub|Cassette Hub, freecoaster|Freecoaster, bmx-freewheel|Freewheel, cassette-driver|Driver, bmx-axle-diameter|Axle Diameter, male-axle|Male Axle, female-axle|Female Axle, over-locknut-dimension|Over Locknut Dimension, hub-guard|Hub Guard, rim-wall-construction|Rim Wall Construction, iso-bead-seat-diameter|ISO Bead Seat Diameter, spoke-lacing-pattern|Spoke Lacing Pattern, left-hand-drive|Left Hand Drive, right-hand-drive|Right Hand Drive, axle-nuts-and-bolts|Axle Nuts and Bolts, wheel-dish|Wheel Dish, effective-rim-diameter|Effective Rim Diameter, hub-end-caps|Hub End Caps, j-bend-spoke|J-Bend Spoke, spoke-nipple|Spoke Nipple, bmx-pegs|BMX Pegs, valve-hole-size|Valve Hole Size, bmx-wheel-sizes|BMX Wheel Sizes, 3x-lacing|3X Lacing, iso-406|ISO 406, iso-451|ISO 451, tyre-size-marking|Tyre Size Marking, wire-bead-tyre|Wire Bead Tyre, folding-bead-tyre|Folding Bead Tyre, bead-hook|Bead Hook, tyre-seating|Tyre Seating, casing-tpi|Casing TPI, tyre-pressure-range|Tyre Pressure Range, tyre-durometer|Durometer, tyre-tread-pattern|Tread Pattern, tyre-sidewall-marking|Sidewall Marking, skinwall-tyre|Skinwall Tyre, tyre-directional-marking|Directional Marking, inner-tube-size-range|Inner Tube Size Range, tube-valve-type|Tube Valve Type, valve-stem-length|Valve Stem Length, tube-gauge|Tube Gauge, rim-tape|Rim Tape, tubeless-bmx|Tubeless BMX
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-frame-identification-and-geometry|Frame ID and Geometry, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, bmx-brakes-and-gyros|Brakes and Gyros
 ---
 
@@ -279,7 +279,7 @@ A dented rim is worth noticing early. Look along the braking surface, spin the w
 
 **ISO bead seat diameter is the actual measured diameter of the rim where the tyre bead sits**, and it is the only reliable way to know a tyre and rim will go together. Nominal sizes like "20 inch" are trade names rather than measurements, and there is history in bicycles of two sizes sharing a nominal name and not fitting each other at all.
 
-In practice, BMX is much better behaved than the rest of cycling here, because the standard 20 inch BMX wheel is genuinely standard. The reason to know the term is for everything that is not that: cruisers, smaller kids' bikes, and anything unusual that comes through in a job lot. The ISO number is marked on most tyres as a pair of figures, the width and the bead seat diameter.
+In practice, BMX freestyle and street is well behaved here, because the wheel nearly everyone rides is a genuine ISO 406 and stays that way. The exception inside BMX itself is race, where narrow tyres are sold to the [ISO 451](#iso-451) standard instead, a different bead seat that does not interchange with 406. Outside BMX, the reason to know the term is for everything else that comes through in a job lot: cruisers, smaller kids' bikes, and anything unusual. The ISO number is marked on most tyres as a pair of figures, the width and the bead seat diameter.
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -329,6 +329,282 @@ If you are having a wheel built, the builder needs the ERD of your specific rim,
 Rims are drilled for one valve type or the other, **8.5mm for Schrader and 6.5mm for Presta**, both in the table above.
 
 A Presta tube will physically pass through an 8.5mm Schrader drilling but should not be run bare in one. **Use a grommet.** The hole is nearly 2mm oversize for the stem, so the valve gets pushed sideways every time the tyre moves on the rim, and that is how a stem tears at the base.
+
+## Tyres, tubes and what actually fits {#tyre-fitment}
+
+::: quickanswer
+**Two tyres both marked "20 inch" do not always fit the same rim.** The number that actually decides fit is the ISO bead seat diameter printed as part of the tyre's size code, not the inch name on the sidewall. Read that code before ordering a tyre or tube for a wheel you have not measured yourself.
+:::
+
+This section covers the tyre and tube rather than the rim they mount to, which is covered above. The two meet at the bead seat and the valve hole, both already defined, so start there first if a tyre will not seat or a tube will not pass through the rim.
+
+### ISO 406 {#iso-406}
+
+**ISO 406 is the bead seat diameter, in millimetres, of the rim used on nearly every 20 inch freestyle and street BMX wheel**, and it is the number that actually defines "20 inch" on this kind of bike rather than the inch figure printed on the sidewall.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>ISO 406</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Bead seat diameter</th><td class="num">406mm</td><td>ISO 5775, ETRTO <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+This is the same figure already given in the [rim dimensions table](#rim-wall-construction) above, restated here because a dedicated entry for the number itself is what a reader following a size code lands on. A tyre or rim marked with a size ending "-406", for example 47-406, is built to this bead seat, regardless of what inch figure sits next to it. See [ISO bead seat diameter](#iso-bead-seat-diameter) for what the measurement itself means and [BMX wheel sizes](#bmx-wheel-sizes) for how 406 compares against the other four ISO diameters BMX-adjacent bikes use.
+
+The wheel size that shares the "20 inch" name and does not share this bead seat is [ISO 451](#iso-451), next.
+
+### ISO 451 {#iso-451}
+
+**ISO 451 is a second, larger 20 inch bead seat diameter, 45mm bigger than the 406 that nearly all freestyle and street wheels use, and it does not interchange with 406 in either direction.** A 451 tyre will not seat on a 406 rim and a 406 tyre will not seat on a 451 rim, at any pressure.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>ISO 451</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Bead seat diameter</th><td class="num">451mm</td><td>ISO 5775, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Where 451 actually shows up on a BMX bike, rather than in the standard generally, is narrower: Tioga sells its Fastr-X and PowerBlock BMX race tyres in both 1-1/8 inch and 1-3/8 inch widths built to ISO 451, sold and marked that way by retailers including Dan's Comp. That is a race application, on narrow tyres, not something to expect on a freestyle or street wheel. Sheldon Brown's tyre sizing reference separately lists 451 as covering "juvenile lightweights" and "BMX for light riders" alongside some folding bikes and recumbents, consistent with a narrower, lighter duty use than the 406 standard.
+
+The practical result is the same either way: **a 451 wheel and a 406 wheel are two different diameters wearing the same "20 inch" name**, and no amount of lever work seats a tyre built for one onto the other. If a tyre will not seat, read the number printed on the sidewall before assuming the tyre is faulty or the rim is out of true.
+
+### Tyre Size Marking {#tyre-size-marking}
+
+::: quickanswer
+**The ISO/ETRTO code printed on a tyre, two numbers separated by a dash such as 47-406, is the only marking that tells you fit with certainty.** The width comes first and the bead seat diameter comes second. Any inch figure on the same sidewall is a trade name, and two different inch conventions have been used for the same nominal size.
+:::
+
+A used tyre with the box long gone still has its size stamped or moulded into the sidewall, and reading it correctly is what stops a 406 tyre going into a 451 order or the other way round.
+
+**The ISO/ETRTO format is two numbers with a dash: width first, bead seat diameter second, both in millimetres.** A 47-406 tyre is 47mm wide on a 406mm bead seat. Schwalbe, one of the tyre manufacturers whose own technical documentation explains the system, states plainly that the designation is unambiguous and maps directly to rim size, which is the entire reason the format exists.
+
+**The older inch markings are where the trap is, and it is a real one on 20 inch wheels specifically.** A decimal inch figure such as 20 x 1.75 is a 406 tyre. A fractional inch figure such as 20 x 1 3/8 is a 451 tyre. Both say "20 inch." Neither says which bead seat it is built to, and the two are 45mm apart and do not interchange. Fractional and decimal notation happen to sort into the two different standards, which is not obvious unless you already know it.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>How the same nominal 20 inch size is marked under each standard</caption>
+<thead>
+<tr><th scope="col">Marking style</th><th scope="col">Example</th><th scope="col">Actual bead seat</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">ISO/ETRTO</th><td class="num">47-406</td><td class="num">406mm</td><td>ISO 5775, Schwalbe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Decimal inch</th><td class="num">20 x 1.75</td><td class="num">406mm</td><td>ISO 5775, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Fractional inch</th><td class="num">20 x 1 3/8</td><td class="num">451mm</td><td>ISO 5775, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+When a used tyre only has an inch marking and no ISO code, measure the rim it is currently mounted on rather than trust the inch figure, or compare against [ISO 406](#iso-406) and [ISO 451](#iso-451) above.
+
+### Wire Bead Tyre {#wire-bead-tyre}
+
+**A wire bead tyre uses a loop of steel wire around the edge of the tyre to hook it onto the rim, instead of a woven fibre.** It is heavier at the rim, the worst place to carry extra weight, and it does not fold flat. It is also the cheaper construction, and it is what most used tyres coming through a job lot will be.
+
+The wire keeps the tyre round rather than collapsible, so a wire bead tyre has to be stored and shipped as a full circle. None of that affects fit: a wire bead and a folding bead version of the same tyre model use the same casing and the same size code, and either one seats on the same rim. The difference is weight, price and whether it packs flat, covered in full at [Folding Bead Tyre](#folding-bead-tyre).
+
+### Folding Bead Tyre {#folding-bead-tyre}
+
+::: quickanswer
+**A folding bead tyre uses aramid fibre instead of steel wire at the bead, so it packs flat and weighs less at the rim.** It costs more than the wire bead version of the same tyre and fits the same rim in the same way. Buy folding for weight or for carrying a spare, wire bead for price.
+:::
+
+**The bead is aramid fibre, commonly known by the brand name Kevlar, woven into a loop instead of steel wire.** That saves weight exactly where it matters most on a spinning wheel, at the outer edge, and it lets the tyre fold down small enough to carry as a spare. Neither of those things changes what it fits: a folding and a wire bead version of the same tyre model share the same casing and the same ISO size code, and either seats the same rim the same way.
+
+The tradeoff is cost. Folding bead tyres are consistently the more expensive version of a given tyre model, which is the whole reason wire bead tyres still exist on complete bikes and budget listings.
+
+### Bead Hook {#bead-hook}
+
+**The bead hook is the small inward lip inside the rim wall that the tyre bead locks behind under pressure.** It is what keeps a clincher tyre on the rim rather than letting the bead walk off the wall as pressure rises, and on a standard hooked rim it is there on both sides.
+
+Every rim sold here is a hooked rim, hooked being the traditional clincher design BMX has always used. Hookless rims exist elsewhere in cycling, mostly road and gravel, where the rim wall is straight rather than lipped and the tyre and rim have to be matched to a tighter tolerance to hold pressure safely. No hookless BMX rim turned up in this research, and none is stocked here.
+
+The hook is part of what a rim's rated maximum pressure depends on: a worn or damaged hook seats a tyre less securely at the same pressure that was previously safe, which is one reason a cracked or heavily dented rim wall gets pulled rather than sold, whatever the rim otherwise looks like.
+
+### Tyre Seating {#tyre-seating}
+
+**A properly seated tyre has its bead sitting evenly in the rim all the way round, with the moulded ridge line near the sidewall running parallel to the rim edge rather than dipping in and out.** A tyre that looks round on the bike but was seated unevenly will still run out of true, and no amount of truing the wheel itself fixes it.
+
+Check seating before blaming a wheel for hop or wobble. Spin the wheel and watch the gap between the tyre's moulded line and the rim edge as it passes the brake pad or a fixed point. If the gap wanders, deflate fully, work the bead back off the low spot, and reinflate a few PSI at a time while working the tyre round by hand so it seats evenly rather than snapping into place on one side. A tyre that will not seat evenly after that is more likely mismatched to the rim (see [ISO bead seat diameter](#iso-bead-seat-diameter)) than simply stubborn.
+
+### Casing TPI {#casing-tpi}
+
+**TPI is threads per inch in the tyre casing, and it is a tradeoff rather than a quality scale: a higher number means a lighter, more supple tyre, and a lower number means a stiffer, more puncture-resistant one for the same rubber.** Kenda's own tyre glossary describes TPI as an indicator of casing quality where "higher TPI tires are lighter weight and provide a more supple ride," while a lower TPI casing typically carries thicker rubber and better puncture protection at the cost of weight and suppleness.
+
+No BMX tyre manufacturer found during this research publishes a TPI figure for its BMX-specific tyres. Casing TPI is a real, well documented spec on other categories of bicycle tyre, and the tradeoff it describes applies to BMX tyres too, but the actual number for any given BMX tyre model is not something Odyssey, Kenda, or the other brands checked put in their spec sheets.
+
+### Tyre Pressure Range {#tyre-pressure-range}
+
+::: quickanswer
+**The PSI range printed on a tyre's sidewall is specific to that tyre and rim combination, not a BMX-wide number.** There is no single correct BMX tyre pressure. Run within the range printed on the tyre you actually have, and treat any number you saw somewhere else as a starting point to test, not a rule.
+:::
+
+Pressure range is set by the tyre casing and confirmed against the rim it is designed to run on, which is why the figure is printed per tyre rather than published once for BMX as a category. A tyre rated to a given maximum is not necessarily safe to that number on every rim, since the rim's own [bead hook](#bead-hook) and wall have to hold that pressure too.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Example printed pressure ratings</caption>
+<thead>
+<tr><th scope="col">Tyre</th><th scope="col">Rated pressure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Odyssey Path Pro (100 PSI version)</th><td class="num">100 psi max</td><td>Dan's Comp, The Cut BMX product listings <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Odyssey Path Pro (low pressure version)</th><td class="num">65 psi max</td><td>The Cut BMX product listing <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+These two rows are the same tyre model sold in two different pressure ratings, which is the clearest illustration available that pressure is a per-product figure and not a spec you can guess from wheel size or tyre width alone. Treat any number quoted without a specific tyre attached to it as unverified.
+
+### Durometer {#tyre-durometer}
+
+**Durometer is the rubber hardness rating on the Shore A scale, and a lower number is a softer rubber compound.** A softer compound grips better and wears faster. A harder compound rolls faster and lasts longer but breaks traction sooner, which is why two tyres that look identical can feel completely different under the same rider.
+
+No BMX tyre manufacturer found during this research publishes a Shore A durometer figure for its tyres. The tradeoff durometer describes is real and well documented for rubber compounds generally, but no specific BMX tyre model's rating could be sourced from a manufacturer spec sheet, a retailer listing, or a technical reference.
+
+### Tread Pattern {#tyre-tread-pattern}
+
+**Tread pattern is a surface decision, not a fitment one: slick, semi-slick and knobby tyres in the same size code all seat on the same rim.** A slick has no tread and rolls fastest on pavement and smooth park surfaces. A knobby has raised lugs and grips loose or uneven ground, at a real cost in rolling resistance. Semi-slick splits the difference, usually a smoother centre strip with some tread toward the edges for cornering grip.
+
+The one place tread pattern changes something other than grip is effective width. A knobby tyre's lugs sit outside the casing's actual width, so two tyres marked the same width can measure differently once mounted, which matters if clearance is tight against a frame or fork.
+
+### Sidewall Marking {#tyre-sidewall-marking}
+
+**A tyre's sidewall carries most of what you need to identify it with no box or listing to go on.** The [ISO/ETRTO size code](#tyre-size-marking) is the one that actually decides fit. Alongside it you will typically find an inch size, the [pressure rating](#tyre-pressure-range), and often a rotation arrow if the tread is [directional](#tyre-directional-marking). A brand and model name are usually moulded in as well, which is the fastest way to identify a used tyre if it is still legible.
+
+Wear and UV exposure fade sidewall markings on used tyres before the tread itself is worn out, so a tyre that has been sitting in the sun for years may only give up the ISO code and lose the rest. When a marking is illegible, measuring the mounted rim's [bead seat diameter](#iso-bead-seat-diameter) directly is more reliable than guessing from what is left of the print.
+
+### Skinwall Tyre {#skinwall-tyre}
+
+**A skinwall tyre has a tan, unreinforced sidewall instead of a black one, and the tan colour is the natural, uncoated casing rather than a dye.** Because the sidewall has no added protective layer, a skinwall tyre is more vulnerable to sidewall cuts and UV cracking than the black-wall version of the same casing, which is a real durability difference and not just a look.
+
+Skinwall construction is strongly associated with a particular period in BMX and is often used to identify an older bike at a glance, but the association is a visual convention rather than a rule with a hard date attached, and skinwall tyres are still made and sold new today for riders who want the look. Treat a skinwall tyre as a styling and durability fact about that specific tyre, not as dating evidence on its own.
+
+### Directional Marking {#tyre-directional-marking}
+
+**A directional tyre has a rotation arrow moulded into the sidewall, and mounting it backwards means the tread pattern works against you rather than for you** on braking bite, cornering grip, or both, depending on the design. The arrow shows which way the tyre spins when the bike moves forward, not which way to thread the valve or any other convention.
+
+Used bikes and used wheels get this wrong constantly, because a tyre swapped from side to side or refitted after a repair is easy to put back on facing the wrong way. Check the arrow against the direction the wheel actually turns before assuming a directional tyre is mounted correctly, front or rear.
+
+### Inner Tube Size Range {#inner-tube-size-range}
+
+**A tube is rated for a range of tyre widths, not one exact width, because the rubber has to stretch to fill whatever tyre it ends up inside.** Run a tube outside its rated range and it either sits folded and prone to pinching at the narrow end or stretched thin and prone to blowouts at the wide end.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Example tube width ranges</caption>
+<thead>
+<tr><th scope="col">Tube</th><th scope="col">Rated width range</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Odyssey Air Supply, 20 inch</th><td class="num">2.1 to 2.5 inch</td><td>Odyssey's own shop <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Kenda Standard, 20 inch</th><td class="num">1 to 4.5 inch, across several SKUs</td><td>Kenda's own shop <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+The Kenda row is not one tube covering that whole span. It is several distinct SKUs at the same 20 inch wheel size, each rated for its own narrower slice of that range, which is the normal pattern: manufacturers split wide and narrow tyre widths into separate tube models rather than selling one tube that stretches across all of them. Match the tube to the tyre width you actually have, printed on the [tyre's own sidewall](#tyre-sidewall-marking), not to the wheel size alone.
+
+### Tube Valve Type {#tube-valve-type}
+
+**Schrader and Presta are the two valve types, and the tube has to match both the rim's [valve hole](#valve-hole-size) and the pump head you own.** Schrader is the wider, car-tyre-style valve with a spring-loaded pin inside. Presta is the narrower valve with a threaded locknut at the tip. The two are drilled to different hole sizes, covered in full at [Valve Hole Size](#valve-hole-size).
+
+A Presta tube physically passes through a Schrader-drilled hole but should not be run there bare, since the hole is oversize for the stem and will saw at the base of the valve as the tyre moves. Going the other way does not work at all: a Schrader valve will not pass through a Presta-drilled hole.
+
+Which one a given wheel takes is a property of the rim, not something to choose freely, so check the drilled hole before ordering a tube rather than assuming.
+
+### Valve Stem Length {#valve-stem-length}
+
+**32mm is the common stem length on a standard 20 inch BMX tube, whether Schrader or Presta**, long enough to clear a normal BMX rim and reach a pump head with room to attach it. Longer stems exist for deeper rims or for riders who want more room to get a pump chuck on: Dan's Comp lists a 48mm option, and Kenda's own 20 inch Schrader tube uses a 35mm stem rather than 32mm.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Valve stem lengths seen on 20 inch BMX tubes</caption>
+<thead>
+<tr><th scope="col">Tube</th><th scope="col">Valve</th><th scope="col">Stem length</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Dan's Comp Deluxe, Vee Tire Co</th><td>Schrader and Presta</td><td class="num">32mm</td><td>Dan's Comp, Modern Bike product listings <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Kenda Standard 20</th><td>Schrader</td><td class="num">35mm</td><td>Kenda's own shop <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Kenda Standard 20</th><td>Presta</td><td class="num">32mm</td><td>Kenda's own shop <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Twitch Ultra Light</th><td>Presta</td><td class="num">48mm</td><td>Dan's Comp product listing <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+BMX rims are shallow enough that stem length rarely stops a tube fitting, unlike on a deep aero rim, so this matters mostly for making sure a pump head has room to seat and lock rather than for clearance.
+
+### Tube Gauge {#tube-gauge}
+
+**Gauge is the wall thickness of the tube's rubber, and a thicker wall trades weight for puncture resistance.**
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Tube wall thickness</caption>
+<thead>
+<tr><th scope="col">Tube</th><th scope="col">Wall thickness</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Kenda Standard 20, standard gauge</th><td class="num">1mm</td><td>Kenda's own shop <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+No comparable wall thickness figure for a thorn-resistant or heavy-duty 20 inch BMX tube turned up during this research. Thorn-resistant and heavy-duty tubes are real, commonly sold products, and they are consistently marketed as thicker and heavier than a standard tube, but none of the retailers or manufacturers checked published a millimetre figure for that thicker wall the way Kenda does for its standard tube.
+
+The tradeoff is straightforward even without a second figure to compare against: more rubber in the wall means more weight at the rim and a stiffer tube, in exchange for resisting punctures a standard-gauge tube would not survive. A thorn-resistant tube is a reasonable choice for a bike that sits outside or gets ridden through debris, and dead weight to carry for a bike that does not.
+
+### Rim Tape {#rim-tape}
+
+**Rim tape covers the spoke nipple holes inside the rim bed so the tube sits on a smooth surface instead of directly against the nipples.** Without it, or with tape that has slipped or split, a tube punctures from the inside at a nipple hole, which looks identical to a normal flat until you pull the tube and find the hole lined up with a spoke.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Rim tape width</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Width, BMX rim tape</th><td class="num">30mm</td><td>Odyssey, Eclat product listings <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Tape has to be wide enough to cover the full internal width of the rim bed with a little overlap up each wall, so a narrow rim can run narrower tape than 30mm and a wide rim needs it. Using tape that is too narrow leaves the tube exposed to the nipple holes at the edges, which defeats the point of taping the rim at all. When re-taping a used wheel, measure the rim's own [internal width](#rim-wall-construction) rather than assuming 30mm fits everything.
+
+### Tubeless BMX {#tubeless-bmx}
+
+::: quickanswer
+**Tubeless does exist on 20 inch BMX, but as a matched system from one brand rather than a mix-and-match standard.** Alienation's TCS is the system found in this research: a TCS rim and a TCS tyre, run together with TCS tape, a tubeless valve and sealant. A TCS tyre on an ordinary rim still needs a tube, and an ordinary tyre on a TCS rim still needs a tube.
+:::
+
+**Alienation's TCS (Tubeless Compatible System) is a matched rim-and-tyre system built to 406mm bead seat**, confirmed both by Alienation's own product pages and by an independent review of the TCS Mischief rim, which lists its diameter as "406 (20 inch)." TCS rims use a different internal well shape than a standard rim to hold the tyre bead without a tube, and Alienation's own FAQ is explicit that the parts are not interchangeable with anything else: a TCS tyre fits a normal rim, but only with a tube, and a normal tyre fits a TCS rim, also only with a tube.
+
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Alienation TCS</caption>
+<thead>
+<tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Bead seat diameter</th><td class="num">406mm</td><td>Alienation, bmxultra.com review <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Rated pressure range</th><td class="num">45 to 85 psi</td><td>Alienation's own FAQ <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+Setup needs all four TCS parts together: the rim, the tyre, TCS-specific tape applied in two layers, and a Presta valve with a removable core for adding sealant. Alienation's FAQ also warns that the rim's valve hole is drilled for the TCS setup specifically and that drilling it out removes the option of converting that wheel back later.
+
+No second BMX-specific tubeless system, from any other brand, turned up during this research. That does not rule one out, only that this pass did not find one, so treat "Alienation is the only BMX tubeless system" as this research's limit rather than a confirmed fact about the whole market.
 
 ## Spoke count and lacing {#spoke-lacing-pattern}
 
@@ -471,7 +747,7 @@ You can also tell by eye once you have seen both. A 48 spoke wheel looks visibly
 
 The figure is **ISO 406mm**, sourced to ISO 5775 and ETRTO. A 20 inch BMX wheel is a 406mm bead seat with a tyre on top, which is also why it rolls closer to 19.5 inches than to 20. Because it is a standard rather than a convention, it is one of the few figures on this site you can rely on absolutely, and 20 inch BMX tyres and rims go together reliably.
 
-The trap is **ISO 451**, used on some narrow race wheels and some older ones. 406 and 451 do not interchange in either direction, so if a tyre will not seat, read the number on the sidewall before blaming the tyre. Full detail in [rims, wall construction and bead seat diameter](#rim-wall-construction).
+The trap is **ISO 451**, used on some narrow race wheels and some older ones. 406 and 451 do not interchange in either direction, so if a tyre will not seat, read the number on the sidewall before blaming the tyre. Full detail in [ISO 451](#iso-451).
 
 Where the ISO number earns its keep is on everything that is not a standard 20 inch BMX wheel: cruisers, smaller kids' bikes, and old wheels of uncertain origin.
 :::

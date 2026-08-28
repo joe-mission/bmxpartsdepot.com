@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <title>BMX Rear Hub Types Comparison</title>
+  <desc>Cross-section mechanism comparison of Freewheel, Cassette, and Freecoaster BMX rear hubs showing internal engagement, drive mechanisms, and freecoaster slack gap.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .hub-shell { fill: #08090b; stroke: #08090b; stroke-width: 2; }
+      .driver-body { fill: #00a4e6; stroke: #08090b; stroke-width: 2; }
+      .axle { fill: #6b7280; stroke: #08090b; stroke-width: 2; }
+      .clutch { fill: #08090b; stroke: #00a4e6; stroke-width: 2; }
+      .slack-gap { fill: #e64700; fill-opacity: 0.25; stroke: #e64700; stroke-width: 2; stroke-dasharray: 4 4; }
+      .grid-line { stroke: #e2e5e9; stroke-width: 2; }
+      .callout-line { stroke: #6b7280; stroke-width: 2; stroke-dasharray: 4 4; fill: none; }
+      .thread { stroke: #00a4e6; stroke-width: 2.5; stroke-linecap: round; }
+      
+      .text-title { fill: #08090b; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 36px; font-weight: 800; letter-spacing: 0.05em; text-anchor: middle; }
+      .text-callout { fill: #6b7280; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 600; text-anchor: middle; }
+      .text-slack { fill: #e64700; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle; }
+      .text-sub { fill: #6b7280; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 22px; font-weight: 500; text-anchor: middle; }
+    </style>
+
+    <marker id="arrow-slack-start" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 10 0 L 0 5 L 10 10 z" fill="#e64700" />
+    </marker>
+    <marker id="arrow-slack-end" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e64700" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1000" height="600" />
+
+  <!-- Panel Grid Dividers (Cell Width: 333px) -->
+  <line class="grid-line" x1="333" y1="20" x2="333" y2="580" />
+  <line class="grid-line" x1="666" y1="20" x2="666" y2="580" />
+
+  <!-- ==================== PANEL 1: FREEWHEEL ==================== -->
+  <g id="panel-freewheel">
+    <!-- Title -->
+    <text class="text-title" x="166.5" y="60">FREEWHEEL</text>
+
+    <!-- Top Callout Text -->
+    <text class="text-callout" x="265" y="115">threads onto shell</text>
+    <line class="callout-line" x1="265" y1="125" x2="265" y2="250" />
+
+    <!-- Axle -->
+    <rect class="axle" x="26" y="275" width="280" height="30" rx="3" />
+
+    <!-- Hub Shell -->
+    <rect class="hub-shell" x="90" y="250" width="150" height="80" rx="4" />
+    <rect class="hub-shell" x="90" y="200" width="22" height="180" rx="3" />
+    <rect class="hub-shell" x="218" y="210" width="22" height="160" rx="3" />
+    <rect class="hub-shell" x="240" y="265" width="40" height="50" rx="2" />
+    
+    <!-- Threads -->
+    <path class="thread" d="M 242 265 L 246 258 L 250 265 L 254 258 L 258 265 L 262 258 L 266 265 L 270 258 L 274 265 L 278 258" />
+    <path class="thread" d="M 242 315 L 246 322 L 250 315 L 254 322 L 258 315 L 262 322 L 266 315 L 270 322 L 274 315 L 278 322" />
+
+    <!-- Thread-On Freewheel Unit -->
+    <path class="driver-body" d="M 238 250 L 290 250 L 290 262 L 304 262 L 304 318 L 290 318 L 290 330 L 238 330 L 238 312 L 280 312 L 280 268 L 238 268 Z" />
+
+    <!-- Bottom Description Text (Clean Wrapped) -->
+    <text class="text-sub" x="166.5" y="480">
+      <tspan x="166.5" dy="0">threads onto</tspan>
+      <tspan x="166.5" dy="30">the hub shell</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== PANEL 2: CASSETTE ==================== -->
+  <g id="panel-cassette">
+    <!-- Title -->
+    <text class="text-title" x="500" y="60">CASSETTE</text>
+
+    <!-- Top Callout Text -->
+    <text class="text-callout" x="525" y="115">ratchet in hub</text>
+    <line class="callout-line" x1="525" y1="125" x2="525" y2="245" />
+
+    <!-- Axle -->
+    <rect class="axle" x="360" y="275" width="280" height="30" rx="3" />
+
+    <!-- Hub Shell -->
+    <rect class="hub-shell" x="410" y="245" width="130" height="90" rx="4" />
+    <rect class="hub-shell" x="410" y="195" width="22" height="190" rx="3" />
+    <rect class="hub-shell" x="518" y="205" width="22" height="170" rx="3" />
+
+    <!-- Ratchet Teeth -->
+    <path fill="#08090b" d="M 525 250 L 535 245 L 535 255 L 540 250 L 540 260 L 530 260 Z" />
+    <path fill="#08090b" d="M 525 330 L 535 335 L 535 275 L 540 330 L 540 320 L 530 320 Z" />
+
+    <!-- Splined Driver -->
+    <path class="driver-body" d="M 528 258 L 620 258 L 620 270 L 632 270 L 632 310 L 620 310 L 620 322 L 528 322 L 528 308 L 560 308 L 560 272 L 528 272 Z" />
+
+    <!-- Pawls -->
+    <rect fill="#00a4e6" stroke="#08090b" stroke-width="2" x="515" y="252" width="18" height="8" rx="2" transform="rotate(-15 515 252)" />
+    <rect fill="#00a4e6" stroke="#08090b" stroke-width="2" x="515" y="320" width="18" height="8" rx="2" transform="rotate(15 515 320)" />
+
+    <!-- Bottom Description Text (Clean Wrapped) -->
+    <text class="text-sub" x="500" y="480">
+      <tspan x="500" dy="0">ratchet inside the hub,</tspan>
+      <tspan x="500" dy="30">splined driver</tspan>
+    </text>
+  </g>
+
+  <!-- ==================== PANEL 3: FREECOASTER ==================== -->
+  <g id="panel-freecoaster">
+    <!-- Title -->
+    <text class="text-title" x="833" y="60">FREECOASTER</text>
+
+    <!-- Top Slack Callout -->
+    <text class="text-slack" x="773.5" y="115">slack</text>
+    <line stroke="#e64700" stroke-width="2.5" x1="757" y1="130" x2="790" y2="130" marker-start="url(#arrow-slack-start)" marker-end="url(#arrow-slack-end)" />
+
+    <!-- Axle -->
+    <rect class="axle" x="690" y="275" width="280" height="30" rx="3" />
+    <path class="thread" d="M 780 275 L 790 305 M 795 275 L 805 305 M 810 275 L 820 305 M 825 275 L 835 305" />
+
+    <!-- Hub Shell -->
+    <rect class="hub-shell" x="735" y="245" width="140" height="90" rx="4" />
+    <rect class="hub-shell" x="735" y="195" width="22" height="190" rx="3" />
+    <rect class="hub-shell" x="853" y="205" width="22" height="170" rx="3" />
+
+    <!-- Clutch Cone -->
+    <path class="clutch" d="M 790 255 L 830 255 L 840 265 L 840 315 L 830 325 L 790 325 L 790 310 L 820 310 L 820 270 L 790 270 Z" />
+
+    <!-- Driver -->
+    <path class="driver-body" d="M 855 258 L 950 258 L 950 270 L 962 270 L 962 310 L 950 310 L 950 322 L 855 322 L 855 308 L 890 308 L 890 272 L 855 272 Z" />
+
+    <!-- Slack Gap Box & Guidelines -->
+    <rect class="slack-gap" x="757" y="250" width="33" height="80" rx="3" />
+    <line stroke="#e64700" stroke-width="1.5" stroke-dasharray="3 3" x1="757" y1="135" x2="757" y2="250" />
+    <line stroke="#e64700" stroke-width="1.5" stroke-dasharray="3 3" x1="790" y1="135" x2="790" y2="250" />
+
+    <!-- Bottom Description Text (Clean Wrapped) -->
+    <text class="text-sub" x="833" y="480">
+      <tspan x="833" dy="0">clutch and slack,</tspan>
+      <tspan x="833" dy="30">coasts backwards</tspan>
+    </text>
+  </g>
+</svg>

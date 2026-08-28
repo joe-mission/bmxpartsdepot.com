@@ -74,6 +74,7 @@ Each guide is deep-linkable. The sections are:
 - [Axle diameter, male axles and female axles](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-axle-diameter) : Section of the guide covering axle diameter, male axles and female axles.
 - [Hub spacing and over locknut dimension](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#over-locknut-dimension) : Section of the guide covering hub spacing and over locknut dimension.
 - [Rims, wall construction and bead seat diameter](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#rim-wall-construction) : Section of the guide covering rims, wall construction and bead seat diameter.
+- [Tyres, tubes and what actually fits](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#tyre-fitment) : Section of the guide covering tyres, tubes and what actually fits.
 - [Spoke count and lacing](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#spoke-lacing-pattern) : Section of the guide covering spoke count and lacing.
 - [Pegs and what decides whether one fits](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-pegs) : Section of the guide covering pegs and what decides whether one fits.
 - [Hub guards, drive side and left hand drive](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#left-hand-drive) : Section of the guide covering hub guards, drive side and left hand drive.
