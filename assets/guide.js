@@ -144,3 +144,35 @@
     return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   }
 })();
+
+/* ---- mobile menu ----------------------------------------------------
+   Mirrors the homepage script. The panel is [hidden] in the markup, so
+   with JS off it stays closed rather than leaving a dead toggle. */
+(function () {
+  var btn = document.getElementById('navToggle');
+  var panel = document.getElementById('navPanel');
+  if (!btn || !panel) return;
+
+  function setOpen(open) {
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    panel.hidden = !open;
+  }
+
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    setOpen(panel.hidden);
+  });
+  panel.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('click', function (e) {
+    if (!panel.hidden && !panel.contains(e.target) && e.target !== btn) setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !panel.hidden) { setOpen(false); btn.focus(); }
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 900 && !panel.hidden) setOpen(false);
+  }, { passive: true });
+})();
