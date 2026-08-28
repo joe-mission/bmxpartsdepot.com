@@ -620,7 +620,11 @@ figure.diagram .fig-body.placeholder .todo{
      min-width:32px and otherwise forces the last column past the edge. */
   .az-row .az-bar > a,.az-row .az-bar > button{min-width:0;width:100%;padding:0}
   .az-row .search-toggle{margin-right:0;width:100%}
+  /* Open, the bar goes back to flex. width:100% is only correct while it
+     is a grid cell; in a flex row it stretched the button across the whole
+     bar. Reset it explicitly. */
   .az-row.is-open .az-bar{display:flex}
+  .az-row.is-open .search-toggle{width:32px;flex:none}
 }
 
 /* While a search is running the dictionary moves above the guide cards.
