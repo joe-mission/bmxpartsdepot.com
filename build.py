@@ -582,7 +582,7 @@ def render(body, ctx):
 # --------------------------------------------------------------------------
 
 def build_schema(meta, ctx, url):
-    graph = []
+    graph = list(site_entities())
     title = meta.get("title", "")
     desc = meta.get("description", "")
 
@@ -595,8 +595,9 @@ def build_schema(meta, ctx, url):
         "inLanguage": "en-US",
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
         "url": url,
-        "isPartOf": {"@type": "WebSite", "@id": SITE + "/#website"},
-        "publisher": {"@type": "Organization", "@id": SITE + "/#org"},
+        "isPartOf": {"@id": SITE + "/#website"},
+        "author": {"@id": SITE + "/#org"},
+        "publisher": {"@id": SITE + "/#org"},
         "datePublished": meta.get("published", str(date.today())),
         "dateModified": meta.get("updated", str(date.today())),
     }
@@ -675,6 +676,42 @@ def build_schema(meta, ctx, url):
 # --------------------------------------------------------------------------
 # page shell
 # --------------------------------------------------------------------------
+
+
+def site_entities():
+    """Organization and WebSite, defined rather than only referenced.
+
+    Every TechArticle points publisher at /#org and isPartOf at /#website.
+    Those were referenced on all ten pillars and defined nowhere, so anything
+    following the reference found an empty node: the pages claimed a
+    publisher without ever saying who. Emitted on every page so the graph
+    resolves without depending on a crawler having fetched another URL.
+    """
+    return [
+        {
+            "@type": "Organization",
+            "@id": SITE + "/#org",
+            "name": "BMX Parts Depot",
+            "url": SITE + "/",
+            "email": "bmx-parts-depot@gmail.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": SITE + "/assets/logo.png",
+                "width": 1302,
+                "height": 160,
+            },
+            "sameAs": [EBAY],
+        },
+        {
+            "@type": "WebSite",
+            "@id": SITE + "/#website",
+            "name": "BMX Parts Depot",
+            "url": SITE + "/",
+            "publisher": {"@id": SITE + "/#org"},
+            "inLanguage": "en",
+        },
+    ]
+
 
 def nav_html(active=""):
     def cur(key):

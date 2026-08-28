@@ -89,6 +89,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
     # from inside a function, so importing it back at module level would
     # re-execute build.py as a second module object.
     from build import versioned
+    import build
 
     root = os.path.dirname(os.path.abspath(__file__))
     groups = parse_dictionary(root)
@@ -175,7 +176,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 
     schema = {
         "@context": "https://schema.org",
-        "@graph": [
+        "@graph": build.site_entities() + [
             {
                 "@type": "CollectionPage",
                 "@id": url + "#page",

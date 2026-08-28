@@ -25,6 +25,32 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://bmxpartsdepot.com/#org",
+      "name": "BMX Parts Depot",
+      "url": "https://bmxpartsdepot.com/",
+      "email": "bmx-parts-depot@gmail.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bmxpartsdepot.com/assets/logo.png",
+        "width": 1302,
+        "height": 160
+      },
+      "sameAs": [
+        "https://www.ebay.com/usr/bmx-parts-depot"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bmxpartsdepot.com/#website",
+      "name": "BMX Parts Depot",
+      "url": "https://bmxpartsdepot.com/",
+      "publisher": {
+        "@id": "https://bmxpartsdepot.com/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
       "@type": "TechArticle",
       "@id": "https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#article",
       "headline": "BMX Rear Hub Types, Axle Sizes and Wheel Fitment",
@@ -37,11 +63,12 @@
       },
       "url": "https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/",
       "isPartOf": {
-        "@type": "WebSite",
         "@id": "https://bmxpartsdepot.com/#website"
       },
+      "author": {
+        "@id": "https://bmxpartsdepot.com/#org"
+      },
       "publisher": {
-        "@type": "Organization",
         "@id": "https://bmxpartsdepot.com/#org"
       },
       "datePublished": "2026-08-28",
