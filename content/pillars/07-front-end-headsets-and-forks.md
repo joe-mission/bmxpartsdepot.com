@@ -55,15 +55,32 @@ Those three are independent of each other in principle and heavily correlated in
 </table>
 </div>
 
-::: needsverify Every diameter on this page is held back until it is measured or sourced. These are the ones people get wrong most often.
-- the actual measured outside diameter of a nominal 1 inch steerer tube
-- the actual measured outside diameter of a nominal 1 1/8 inch steerer tube
-- integrated headset bearing outer diameter and bearing seat angle, and whether BMX uses one design or several
-- zero stack cup outer diameter and the head tube bore it presses into
-- traditional pressed cup outer diameter and head tube bore
-- threaded headset thread designation and pitch
-- headset stack height figures for each type
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Steerer and headset dimensions</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">1 inch steerer, outside diameter</th><td class="num">25.40mm</td><td>ISO 4210-2, Park Tool, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">1 1/8 inch steerer, outside diameter</th><td class="num">28.575mm</td><td>ISO 4210-2, Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Integrated bearing, outside diameter</th><td class="num">41.8mm</td><td>Odyssey, BSD, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Integrated bearing, seat angle</th><td class="num">45 by 45 degrees</td><td>Odyssey, BSD, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Zero stack cup OD, head tube bore</th><td class="num">44.05 to 44.10mm into 43.95 to 44.00mm</td><td>Park Tool SHIS, FSA <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Traditional pressed cup OD, head tube bore</th><td class="num">34.05 to 34.15mm into 33.95 to 34.00mm</td><td>Park Tool SHIS, Dia-Compe <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Threaded headset thread</th><td class="num">1 inch x 24 TPI</td><td>ISO 4210-2, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Stack height, integrated</th><td class="num">0 to 15mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Stack height, zero stack</th><td class="num">8 to 12mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Stack height, traditional external</th><td class="num">25 to 35mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**The steerer diameters are exactly what the names say**, which is worth stating because it is not always true. 1 inch is 25.40mm and 1 1/8 inch is 28.575mm, no rounding surprises hiding in either. Compare that to the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm.
+
+**Modern BMX appears to have settled on one integrated design.** Every source checked gives 41.8mm at 45 by 45 degrees, the Campagnolo specification. The other integrated geometry in the wider bicycle world, a 41.0mm bearing at 36 by 45 degrees, did not turn up on any BMX product. That is an absence rather than a proof, so read it as "nobody found selling it for BMX" rather than "it does not exist", but if you are buying an integrated bearing for a BMX frame, 41.8mm at 45/45 is what to expect.
+
+The zero stack and external cup figures come from the general bicycle headset identification system rather than from BMX brands, so they describe the standard the frames are built to rather than anything a BMX manufacturer published themselves. Zero stack is uncommon on modern freestyle completes and more usual on race frames.
 
 ::: figure BMX headset types in cross section | assets/diagrams/bmx-headset-types-section.svg | Cutaway drawing of a BMX head tube showing an integrated headset, a zero stack headset and a traditional pressed cup headset side by side, with the bearing position marked in each
 The same head tube drawn three ways, showing where the bearing actually sits in each design and how much of the headset ends up outside the tube.
@@ -176,12 +193,29 @@ There is a third arrangement worth naming: some stems clamp the bars in a way th
 
 The **oversize bar clamp** question is separate and it is a bar question rather than a stem question. Stems and bars have to agree on clamp diameter exactly, and more than one diameter exists. Do not assume, and do not force a bar into a clamp that seems close.
 
-::: needsverify Stem and bar clamp figures, held back until they are sourced from manufacturers.
-- the standard BMX handlebar clamp diameter, measured at the knurled section
-- the oversize bar clamp diameter, and how widely it is actually used on BMX
-- steerer clamp diameters for BMX threadless stems
-- typical stem reach figures and the range actually sold
-- stem stack height, and whether manufacturers publish it consistently
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Stem and bar clamp dimensions</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Bar clamp diameter, standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>Odyssey, S&amp;M, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bar clamp diameter, oversize</th><td class="num">25.4mm (1 inch)</td><td>S&amp;M, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Steerer clamp bore, threadless</th><td class="num">28.6mm</td><td>Odyssey, Sunday, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Stem reach, range sold</th><td class="num">40 to 53mm</td><td>Odyssey Nord 49, Sunday Freeze 48, BSD Droptail 50, Cult Salvation 51 <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**22.2mm is the number to know**, and like the spindle it is a rounded name. The exact figure is 7/8 inch, 22.225mm. Nothing turns on the extra 0.025mm in practice, but if you put calipers on a bar and read 22.22, that is a standard bar and not a worn one.
+
+**Oversize at 25.4mm is real but niche.** S&amp;M and Eclat both offer it, so it is a live option rather than a dead one, but 22.2mm remains the default across the market and an oversize bar needs an oversize stem to match. Treat 25.4mm as a deliberate choice rather than something you might have by accident.
+
+**On stem stack height, the finding is the inconsistency rather than the number.** Figures in circulation run roughly 30 to 33mm, but brands do not measure the same thing: some publish the steerer clamp height, some publish overall body thickness, and many omit it entirely. That means two stems quoting the same stack height may not stack the same, and comparing published figures between brands is not reliable. If stack height matters to your setup, measure the stem rather than trusting the listing.
+
+::: needsverify
+- a consistent definition of stem stack height from any manufacturer, since none of those checked state where they measure it from
 :::
 
 ::: caliper the bar clamp bore on a range of used stems and the knurled clamp section on a range of used bars, so this page can publish measured figures instead of repeated ones
@@ -226,11 +260,26 @@ Head tube angle is the other half of the trail calculation, and that figure is n
 
 So the angle side of trail is settled. The offset side is not.
 
-::: needsverify Offset figures are deliberately absent from the prose above.
-- the range of fork offsets actually sold for BMX, from manufacturer specs
-- what is common on street forks against race forks
-- whether BMX manufacturers publish offset consistently, and where they measure it from
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Fork offset, from published fork specs</caption>
+<thead>
+<tr><th scope="col">Use</th><th scope="col">Offset</th><th scope="col">Forks it came from</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Full range sold</th><td class="num">15 to 33mm</td><td>Odyssey R15 and R32 at the extremes <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Street</th><td class="num">15 to 26mm</td><td>Odyssey R15, Eclat Storm 20, BSD Jonesin 22 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Traditional freestyle</th><td class="num">25 to 28mm</td><td>Sunday Darkwave 28 <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Race</th><td class="num">31 to 33mm</td><td>Supercross, Chase <span class="src src-confirmed">Confirmed</span></td></tr>
+</tbody>
+</table>
+</div>
+
+That is better than a two-to-one spread across the range, which makes offset one of the few BMX numbers where the difference is large enough to feel immediately. Short offset puts the axle closer to the steering axis, which increases trail and makes the front end slower to turn but easier to hold on a nose manual. Long offset does the reverse.
+
+**On how it is measured, the news is good.** The brands that document their method measure offset the same way: the perpendicular distance from the steering axis to the axle centre. No brand was found using a different convention, which means published offset figures can be compared across brands. That is not something you can assume elsewhere in this guide, so it is worth saying where it holds.
+
+Combined with the head tube angles above, that makes trail an actual calculation rather than a vibe.
 
 ::: figure Fork offset and trail | assets/diagrams/bmx-fork-offset-and-trail.svg | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tyre contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
 Two forks with different offsets on the same frame, showing how the contact patch moves relative to the steering axis.
@@ -254,11 +303,27 @@ A **unicrown fork**, where the legs bend inward and meet the steerer directly wi
 
 **Fork dropout slot width is not published by anyone.** Odyssey, Sunday, Eclat, Shadow Conspiracy and S&M were all audited and every one of them states axle compatibility, 3/8 inch or 10mm, without ever stating the slot dimension. The same holds for rear dropouts on frames, across nine brands. Two separate research passes have now come up empty, so the figure is not being withheld here, it does not appear to exist publicly. Measure the fork.
 
-::: needsverify Front end axle and dropout figures, unverified here.
-- BMX front axle diameters in current use, and what older forks were built for
-- front hub over-locknut dimension and the fork spacing it needs
-- minimum thread engagement a front peg needs on the axle
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Front axle and spacing</caption>
+<thead>
+<tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Front axle, modern</th><td class="num">3/8 inch (9.525mm) or 10mm</td><td>Park Tool, Shimano <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Front axle, old school</th><td class="num">5/16 inch (7.94mm)</td><td>Park Tool, Skyway archives <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Front hub over-locknut dimension</th><td class="num">100mm</td><td>ISO 4210-2, Profile Racing, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five fork brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Minimum peg thread engagement</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Three front axle sizes have been in use and none of them interchange.** 5/16 inch on old school forks, then 3/8 inch and 10mm on everything since. As covered on the wheels page, 3/8 inch is 9.525mm and 10mm is 10mm, and no source treats them as the same size. On an old fork, expect 5/16 and expect a modern hub not to go in.
+
+**On peg thread engagement, nobody publishes a figure and that is worth saying plainly.** Odyssey, Sunday, Cinema, BSD and Shadow Conspiracy were all checked, manuals and safety sheets, and none of them state a minimum number of threads or turns for a peg on a front axle. General fastener practice suggests engagement of at least one axle diameter, but that is engineering rule of thumb rather than anything a peg or hub maker has put their name to, and this page is not going to dress it up as a specification.
+
+What that means practically: if you are running pegs and the axle looks short in the threads, the person who can tell you whether it is enough is the manufacturer, and they have not written it down. Err long, and ask before you hang your weight on it.
 
 ::: fitbadge Working out axle sizes and hub spacing? | Wheels, Hubs and Axles | /guides/bmx-wheels-hubs-and-axles/
 :::
