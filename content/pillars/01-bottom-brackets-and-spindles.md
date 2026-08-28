@@ -215,9 +215,6 @@ BMX freestyle cranks use **19mm or 22mm spindles**, with **24mm** mostly found o
 
 Two things worth carrying away. First, **"19, 22, 24" is the complete set for freestyle, not for BMX as a whole.** Race also uses 30mm and 35mm. Second, **a 24mm spindle is really 15/16 inch, or 23.81mm.** If you put calipers on a used 24mm spindle and read 23.8, it is not worn, it is correctly sized.
 
-::: caliper a 19mm and a 22mm spindle, and a 24mm if one comes through the shop, to show the 15/16 inch reading
-:::
-
 ## How bore and outer diameter work together {#sealed-bearing-sizes}
 
 ::: quickanswer

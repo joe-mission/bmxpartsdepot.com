@@ -82,9 +82,6 @@ That resolves something this guide had wrong. An earlier pass published only the
 
 So when a frame is described as having 990 mounts, it is being described by a brake that stopped being current decades ago, and nobody minds. Worth knowing when a seller uses the term without being able to say what it means.
 
-::: caliper the post spacing and the post diameter on several used frames and forks, recording the frame or fork alongside each reading, so this page can publish measured figures rather than repeated ones
-:::
-
 ## Removable brake mounts {#removable-brake-mounts}
 
 ::: quickanswer

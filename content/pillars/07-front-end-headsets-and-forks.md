@@ -218,9 +218,6 @@ The **oversize bar clamp** question is separate and it is a bar question rather 
 
 So when a stem quotes stack height without saying what it measures, **Eclat's definition is the one to compare against**, and a figure noticeably larger than about 32mm is probably overall body thickness rather than clamping height. <span class="src src-confirmed">Confirmed</span>
 
-::: caliper the bar clamp bore on a range of used stems and the knurled clamp section on a range of used bars, so this page can publish measured figures instead of repeated ones
-:::
-
 ## Steerer tube length and stack {#steerer-length}
 
 ::: quickanswer

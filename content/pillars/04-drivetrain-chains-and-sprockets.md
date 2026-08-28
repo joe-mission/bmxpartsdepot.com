@@ -62,9 +62,6 @@ Neither combination is something we would build a bike with. Buy the chain that 
 
 The other reason chain width matters is peg and frame clearance. A wider chain is a wider chain, and on tight frames that is occasionally the thing that decides it.
 
-::: caliper the internal width of a used 1/8 inch chain and a used 3/32 inch chain, and the tooth thickness of sprockets cut for each
-:::
-
 <div class="table-scroll">
 <table class="spec-table">
 <caption>Chain dimensions</caption>

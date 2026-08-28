@@ -181,9 +181,9 @@ Crank arm length is measured from the **centre of the spindle to the centre of t
 
 The tradeoff is easy to describe and hard to put numbers on honestly. Shorter arms sweep a smaller circle, so the pedals sit further from the ground at the bottom of the stroke and further from the front tyre at the top. That matters for grinding, for pedalling out of a transition, and for anyone who has clipped a pedal on a ledge. Longer arms give you more torque for the same effort at the pedal, which is why race setups and taller riders tend towards the long end.
 
-What nobody should do is copy a number off a chart and assume it. Two riders the same height ride wildly different lengths depending on what they ride and what they are used to, and a used crankset is rarely marked. **Measure the set in front of you rather than trusting the listing.**
+What nobody should do is copy a number off a chart and assume it. Two riders the same height ride wildly different lengths depending on what they ride and what they are used to, and the marking on a used crankset sits on a face you cannot see with the crank installed (more on where to find it below). **Measure the set in front of you rather than trusting the listing.**
 
-::: caliper crank arm length, spindle centre to pedal thread centre, on several used sets, and record what each one is stamped with (if anything) next to what it actually measures
+::: caliper crank arm length on several used sets, spindle centre to pedal thread centre, against the length stamped on the inner face, to establish how often the stamp and the ruler disagree on worn, repainted and rebuilt arms
 :::
 
 <div class="table-scroll">
