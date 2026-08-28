@@ -48,13 +48,28 @@ A **tripod** seat is the older three-bolt arrangement, with the seat base boltin
 
 **None of these three convert to each other by buying an adapter you can trust.** The interface is part of the post, so changing seat type means changing the post. This is the single most common seat buying mistake: a pivotal seat bought for a bike with a railed post, or the other way round, because the listing only said the colour and the brand.
 
-::: needsverify Seat interface dimensions, none of which are published until they are checked against seat and post manufacturer specifications:
-- the rail diameter used on railed BMX seats, and whether it is consistent across brands
-- the rail spacing a railed post cradle is built to accept
-- the bolt size and thread used on a pivotal seat
-- the bolt pattern on a tripod seat plate
-- whether pivotal spline pitch is genuinely common between makers or only within a maker
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>The three seat interfaces</caption>
+<thead>
+<tr><th scope="col">System</th><th scope="col">Key dimensions</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Railed, BMX</th><td class="num">8.0mm solid rails, 43mm centre to centre</td><td>Eclat, Shadow, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Railed, road and mountain</th><td class="num">7.0mm rails, same 43mm spacing</td><td>ISO 4210-2, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Pivotal</th><td class="num">M10 x 1.5 hollow bolt, 6mm Allen, 45-tooth spline</td><td>MacNeil patent, multiple brands <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Tripod</th><td>Two front tabs plus one rear M8 x 1.25, 6mm Allen</td><td>Flybikes <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**Rail spacing is shared with the rest of cycling but rail diameter is not.** BMX railed seats use 8mm rails against 7mm on road and mountain, while the cradle spacing is 43mm across all of them. So a road seat will sit in a BMX cradle designed for 8mm rails and be loose, and a BMX seat will not go into a 7mm cradle at all.
+
+### Pivotal parts do interchange between brands {#pivotal-interchange}
+
+This is a question people guess at, and it has a real answer. **Pivotal is one licensed patent**, originally MacNeil's, and every brand producing licensed Pivotal seats and posts builds to the same geometry: a 45-tooth directional spline stepping 8 degrees per tooth, with an M10 x 1.5 hollow bolt. Forty-five teeth at 8 degrees is 360, which is the arithmetic working out as it should.
+
+That means a Pivotal seat from one brand fits a Pivotal post from another. **The caveat that matters on used parts:** this holds for licensed Pivotal products. Unbranded copies exist, and nothing guarantees a copy was cut to the licensed geometry. If a cheap unmarked seat will not seat properly on a known-good post, the seat is the suspect.
 
 ::: figure The three seat interfaces | assets/diagrams/bmx-seat-interfaces-comparison.svg | Cross section drawings of a pivotal seat and post, a railed seat and post head, and a tripod seat mounting plate
 The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.
@@ -89,13 +104,26 @@ Measure the post, not the tube. The post is easy: calipers across the outside, t
 
 Two things that catch people out. First, **shims exist and are common**, so a bike that currently has a post in it is not proof of the frame's native size. Check whether there is a sleeve in there before you order. Second, a used post often carries a size marking stamped or printed near the bottom, which is worth reading but worth verifying with calipers, because that marking may belong to a post that has since been shimmed, sleeved or swapped.
 
-::: needsverify Seat post and seat clamp sizes are the figures this page most needs, and none of them are published until they are checked against frame and post manufacturer specifications:
-- the seat post diameters in common use on BMX frames, in millimetres
-- which of those is the current freestyle default
-- the seat clamp inner diameter that matches each post size, allowing for seat tube wall thickness
-- whether shims are made for each combination of post and tube size
-- the pivotal spline pitch, and whether it is genuinely shared between brands
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Post diameters and the clamps that match them</caption>
+<thead>
+<tr><th scope="col">Post</th><th scope="col">Seat clamp inner diameter</th><th scope="col">Where you meet it</th><th scope="col">Sourcing</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">25.4mm (1 inch)</th><td class="num">28.6mm</td><td>The modern freestyle default</td><td>Sunday, BSD, Cult, S&amp;M, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">22.2mm (7/8 inch)</th><td class="num">25.4mm</td><td>Old school, youth and micro frames</td><td>ISO 4210-2, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">27.2mm</th><td class="num">31.8mm</td><td>Race and cruiser</td><td>Chase, Supercross <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">31.6mm</th><td class="num">34.9mm</td><td>Race and cruiser</td><td>Chase, Supercross <span class="src src-single">Single source</span></td></tr>
+</tbody>
+</table>
+</div>
+
+**The clamp is not the same number as the post, and that is what people order wrong.** A seat clamp goes around the outside of the seat tube, so its inner diameter is the post diameter plus **two** seat tube wall thicknesses. A 25.4mm post takes a 28.6mm clamp, and ordering a 25.4mm clamp for a 25.4mm post gets you something that will not go on the frame.
+
+**25.4mm is the modern freestyle default**, near enough universally on current aftermarket frames and completes. If you are buying a post for a modern 20 inch bike without checking, that is the odds-on answer, but check anyway, because the older sizes are exactly what turns up on the used frames this site exists to sell.
+
+Shims are made for the common step-ups, from Problem Solvers, Cane Creek and Gusset, so a smaller post in a larger seat tube is a solved problem rather than a bodge. Same rule as the bar shims: use a machined split sleeve, not a wrap of something.
 
 ::: caliper used seat posts across several frames and brands, recording the measured diameter against whatever is stamped on the post
 :::
@@ -147,11 +175,27 @@ Minimum insertion is the thing not to guess at. Most posts carry a maximum exten
 
 One more practical point on slamming. If the post bottoms out on something inside the frame before the seat is as low as you want, do not cut a post down without thinking about it. A shortened post has less material in the tube and moves your minimum insertion the wrong way.
 
-::: needsverify Post length and insertion figures still to be sourced:
-- the post lengths commonly sold for BMX, from the shortest slammed post upward
-- whether manufacturers publish a minimum insertion depth, and what it is
-- whether a maximum extension line is standard practice on BMX posts or only on some
-:::
+<div class="table-scroll">
+<table class="spec-table">
+<caption>Post lengths and what is marked on them</caption>
+<thead>
+<tr><th scope="col">Type</th><th scope="col">Length</th><th scope="col">Minimum insertion published?</th><th scope="col">Max extension line?</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Stubby, slammed</th><td class="num">75 to 135mm</td><td>No</td><td>No</td></tr>
+<tr><th scope="row">Standard freestyle</th><td class="num">150 to 200mm</td><td class="num">65 to 75mm</td><td>On the longer end</td></tr>
+<tr><th scope="row">Tall, race and cruiser</th><td class="num">300 to 330mm</td><td class="num">65 to 75mm</td><td>Yes</td></tr>
+</tbody>
+</table>
+</div>
+
+Sourced to BSD, Eclat, Sunday and S&amp;M product specs. <span class="src src-confirmed">Confirmed</span>
+
+**The markings are not consistent, and the gap is exactly where you would not want it.** Long posts carry a laser-etched minimum insertion or maximum extension line and publish a figure of 65 to 75mm. Stubby posts under about 150mm carry no marking at all and publish no minimum, because the design assumption is that they go in until they are slammed against the collar and stay there.
+
+That is defensible for a post used as intended. It is a problem on a used bike, where **you cannot tell by looking whether a short unmarked post is at a safe depth or just short.** A long post tells you where the line is. A stubby post does not, and the absence of a mark is not permission.
+
+So: if a post has a line, keep it below the line. If it has no line, get as much of it into the frame as the setup allows, and treat a post that only just reaches the clamp as the wrong post rather than a low seat.
 
 ### Setback and zero offset {#zero-offset-seat-post}
 
