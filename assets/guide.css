@@ -606,6 +606,20 @@ figure.diagram .fig-body.placeholder .todo{
   .az-row .az-bar,.hub-input{transition:none}
 }
 
+/* Mobile: the letters wrap into a ragged grid because the magnifier eats
+   one slot on the first row and the rows then no longer line up. A fixed
+   9-column grid fixes it exactly: 26 letters plus the magnifier is 27
+   items, which is three full rows of nine with nothing left ragged.
+   Desktop keeps the flex row, which already reads correctly. */
+@media(max-width:640px){
+  .az-bar{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:5px}
+  /* Higher specificity than the .az-bar a button skin below, which sets
+     min-width:32px and otherwise forces the last column past the edge. */
+  .az-row .az-bar > a,.az-row .az-bar > button{min-width:0;width:100%;padding:0}
+  .az-row .search-toggle{margin-right:0;width:100%}
+  .az-row.is-open .az-bar{display:flex}
+}
+
 /* While a search is running the dictionary moves above the guide cards.
    The ten cards sat between the search box and the term results, which was
    490px of the reason nothing looked like it had happened when you typed.
@@ -630,7 +644,8 @@ figure.diagram .fig-body.placeholder .todo{
 .search-count.none{color:rgba(255,255,255,.55)}
 .search-count[hidden]{display:none}
 
-.az-bar{display:flex;flex-wrap:wrap;gap:5px}
+/* Layout for .az-bar lives with the magnifier rules above. This block is
+   the button skin only; re-declaring display here overrode the mobile grid. */
 .az-bar a,.az-bar button{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:32px;height:32px;padding:0 6px;
