@@ -235,7 +235,30 @@ a{color:inherit}
    only 11px of slack and made every label wrap. Tighter gap and dropping
    "Shop on" below 1250px buy enough room, and the bar hands over to the
    hamburger at 1080px rather than letting anything wrap. */
-.nav .links{display:flex;gap:22px;margin-left:auto;align-items:center}
+.nav .links{display:flex;gap:18px;margin-left:auto;align-items:center}
+/* The row measured 810px into 784px once the separator and its two gaps went
+   in, so it wrapped at 1280. 22px to 18px across seven gaps gives 28px back
+   and the negative margin pulls the separator's own pair in by another 8. */
+/* Separator between the shop items and the reference items. It is a 2x2
+   checker turned on its point, the same motif as the floor in the games, at a
+   size where it reads as a mark rather than a pattern. Decorative only:
+   aria-hidden, so the menu still reads as one list of links. */
+.nav-sep{
+  width:9px;height:9px;flex:none;align-self:center;margin:0 -4px;
+  transform:rotate(45deg);
+  background:
+    conic-gradient(#7ff0ff 0% 25%, transparent 0% 50%,
+                   #7ff0ff 0% 75%, transparent 0% 100%);
+  box-shadow:0 0 9px rgba(127,240,255,.55);
+  opacity:.9;
+}
+.nav-sep-h{
+  /* the panel is a block container, so an inline span has no width to give */
+  display:block;
+  margin:10px 0 10px 3px;
+  width:11px;height:11px;
+}
+
 .nav .links a.lnk{
   position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
   color:rgba(255,255,255,.72);transition:color .2s ease;
@@ -302,6 +325,7 @@ a{color:inherit}
 @media(min-width:1201px){.nav-scrim{display:none}}
 @media(max-width:1200px){
   .nav .links a.lnk{display:none}
+  .nav .links .nav-sep{display:none}   /* collapses with the links it divides */
   .nav-toggle{display:inline-flex}
   .nav-panel:not([hidden]){display:block}
 }
@@ -350,6 +374,7 @@ a{color:inherit}
   z-index:-3;
 }
 @keyframes breathe{0%,100%{opacity:.75;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}}
+
 
 /* chainring */
 .hero .ring{
@@ -524,52 +549,57 @@ section{position:relative}
 }
 @media(prefers-reduced-motion:reduce){.gamecard:hover{transform:none}}
 
-/* Card backgrounds. The footage is captured from the games themselves, not
-   stock: the assembled bike turning on white, and a wheelie held through a
-   gate. Both were captured frame by frame against a faked clock rather than
-   screen-recorded, because recording in real time off a software renderer
-   produced unevenly spaced frames, and no amount of re-encoding fixes source
-   frames that are already irregular. The spin clip is exactly one revolution
-   over its 240 frames, so it loops without a seam.
+/* Card artwork. Captured from the games themselves, frame by frame against a
+   faked clock rather than screen-recorded: recording in real time off a
+   software renderer gives unevenly spaced frames, and no re-encode recovers a
+   cadence the source never had. The spin clip is exactly one revolution over
+   240 frames, so it loops with no seam.
 
-   The imagery is always on, and starts moving when the section scrolls into
-   view rather than waiting for a hover, so a phone gets the same thing a
-   laptop does. Hovering adds the sheen sweep the buttons use.
-
-   The card stays light. A white wash sits over the footage, heavy on the left
-   where the copy is and thinner on the right so the picture has somewhere to
-   breathe. */
-.gamecard{position:relative;overflow:hidden;isolation:isolate}
+   The cards went white first and read as timid under artwork this loud. They
+   are dark now and the picture runs full bleed, with the copy sitting at the
+   bottom over the heavy end of a vertical scrim. Motion starts when the
+   section reaches the viewport, phones included; hovering adds the sweep the
+   buttons use. */
+.gamecard{
+  position:relative;overflow:hidden;isolation:isolate;
+  background:#0d0722;border-color:rgba(127,240,255,.20);
+  min-height:264px;justify-content:flex-end;gap:8px;
+}
 .gamecard .gv{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   z-index:0;pointer-events:none;
 }
 .gamecard .gwash{
   position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:linear-gradient(100deg,
-    rgba(255,255,255,.95) 0%,
-    rgba(255,255,255,.93) 52%,
-    rgba(255,255,255,.70) 100%);
+  /* Kept light on purpose. A scrim heavy enough to carry three lines of copy
+     on its own buried most of the picture, so the type gets a shadow and the
+     scrim only has to do the rest. */
+  background:linear-gradient(180deg,
+    rgba(8,4,22,.04) 0%,
+    rgba(8,4,22,.22) 34%,
+    rgba(8,4,22,.62) 66%,
+    rgba(8,4,22,.86) 100%);
 }
-/* the sweep from .btn, tinted so it reads on a light card instead of
-   disappearing into it */
 .gamecard .gsheen{
   position:absolute;inset:0;z-index:3;pointer-events:none;
-  background:linear-gradient(100deg,transparent 22%,rgba(0,164,230,.20) 50%,transparent 78%);
+  background:linear-gradient(100deg,transparent 22%,rgba(200,245,255,.30) 50%,transparent 78%);
   transform:translateX(-130%);
 }
 .gamecard:hover .gsheen,.gamecard:focus-visible .gsheen{
   transform:translateX(130%);
   transition:transform .75s cubic-bezier(.3,.6,.2,1);
 }
-.gamecard .gk,.gamecard .gt,.gamecard .gg{position:relative;z-index:2}
-/* --muted is 4.8:1 on flat white, which is not enough once there is a picture
-   under it. This is 7.0:1 on white and holds up over the lightest part of the
-   wash. */
-.gamecard .gt{color:#4b5563}
-/* --cyan measured 4.31:1 over the lightest corner of the wash, and PLAY is
-   11px, so it gets no large-text allowance. This is the same hue, darker. */
-.gamecard .gg{color:#00618c}
+.gamecard .gk,.gamecard .gt,.gamecard .gg{
+  position:relative;z-index:2;
+  text-shadow:0 2px 12px rgba(8,4,22,.95),0 0 3px rgba(8,4,22,.9);
+}
+.gamecard .gk{color:#fff;font-size:29px}
+.gamecard .gt{color:rgba(255,255,255,.88)}
+.gamecard .gg{color:#7ff0ff}
+.gamecard:hover,.gamecard:focus-visible{
+  border-color:rgba(127,240,255,.85);
+  box-shadow:0 18px 44px -20px rgba(127,240,255,.45);
+}
 @media(prefers-reduced-motion:reduce){
   .gamecard .gsheen{display:none}
 }
@@ -671,10 +701,11 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
     <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="#stock">What We Stock</a>
-      <a class="lnk" href="guides/">Fitment Guide</a>
-      <a class="lnk" href="bmx-faq/">BMX FAQ</a>
       <a class="lnk" href="#process">Our Process</a>
       <a class="lnk" href="#contact">Contact</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <a class="lnk" href="guides/">Fitment Guide</a>
+      <a class="lnk" href="bmx-faq/">BMX FAQ</a>
       <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
         <span class="btn-label"><span class="hide-xs">Shop on </span>eBay</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -687,10 +718,11 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
   </div>
   <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
     <a href="#stock">What We Stock</a>
-    <a href="guides/">Fitment Guide</a>
-    <a href="bmx-faq/">BMX FAQ</a>
     <a href="#process">Our Process</a>
     <a href="#contact">Contact</a>
+    <span class="nav-sep nav-sep-h" aria-hidden="true"></span>
+    <a href="guides/">Fitment Guide</a>
+    <a href="bmx-faq/">BMX FAQ</a>
   </nav>
 </header>
 <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>

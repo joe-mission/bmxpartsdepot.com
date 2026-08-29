@@ -36,6 +36,11 @@
   .gamelogo .wordmark em{display:block;font-style:normal;color:var(--hot);
     text-shadow:0 0 30px rgba(255,90,60,.45)}
 
+
+  /* Same reason as the exploded view: sunset sky, HUD built for a dark one. */
+  #hud,.gamelogo,#legend,#speed,#coach,#flash{
+    text-shadow:0 2px 14px rgba(10,6,24,.92),0 0 3px rgba(10,6,24,.8);
+  }
   #hud{position:fixed;inset:0;z-index:8;pointer-events:none}
   #score{position:absolute;top:4vh;left:0;right:0;text-align:center;
     font-family:"Bricolage Grotesque",Georgia,serif;text-shadow:0 2px 24px rgba(0,0,0,.6)}
@@ -223,7 +228,7 @@ renderer.toneMapping = T.ACESFilmicToneMapping;
 stage.appendChild(renderer.domElement);
 
 var scene = new T.Scene();
-scene.fog = new T.Fog(0xa8bdd4, 60, 240);
+scene.fog = new T.Fog(0x6d2a5c, 60, 240);   // sunset haze, recedes rather than washes
 var BASE_FOV = 74;
 var camera = new T.PerspectiveCamera(BASE_FOV, window.innerWidth/window.innerHeight, 0.05, 900);
 
@@ -232,12 +237,16 @@ var camera = new T.PerspectiveCamera(BASE_FOV, window.innerWidth/window.innerHei
   var cv = document.createElement('canvas'); cv.width = 1024; cv.height = 512;
   var c = cv.getContext('2d');
   var g = c.createLinearGradient(0,0,0,512);
-  g.addColorStop(0.00,'#1b4a8f'); g.addColorStop(0.38,'#4f8ec9');
-  g.addColorStop(0.68,'#9dc2e0'); g.addColorStop(0.88,'#cddced');
-  g.addColorStop(1.00,'#a8bdd4');
+  /* Sunset. The camera only ever sees the top of this texture, so the warm
+     end is pulled up into the visible band: spread evenly over 0..1 the
+     orange and gold sit below the horizon where the ground plane hides them,
+     and the frame reads as a flat sheet of purple. */
+  g.addColorStop(0.00,'#1a0b3a'); g.addColorStop(0.38,'#b02f6b');
+  g.addColorStop(0.68,'#ff7a35'); g.addColorStop(0.88,'#ffc75a');
+  g.addColorStop(1.00,'#ffe3a0');
   c.fillStyle = g; c.fillRect(0,0,1024,512);
   function cloud(x,y,s,a){
-    c.save(); c.globalAlpha = a; c.fillStyle = '#ffffff';
+    c.save(); c.globalAlpha = a; c.fillStyle = '#ffb9a8';   // lit from underneath, not midday white
     for (var i=0;i<7;i++){
       var ox = Math.sin(i*2.7+x)*s*1.05, oy = Math.cos(i*1.9+x)*s*0.21;
       c.beginPath();
@@ -254,14 +263,14 @@ var camera = new T.PerspectiveCamera(BASE_FOV, window.innerWidth/window.innerHei
     new T.MeshBasicMaterial({map:tex, side:T.BackSide, fog:false})));
 })();
 
-scene.add(new T.HemisphereLight(0xdCEBFF, 0x4a4335, 0.95));
-var sun = new T.DirectionalLight(0xfff3dd, 1.2); sun.position.set(-30,46,-18); scene.add(sun);
+scene.add(new T.HemisphereLight(0xffb37a, 0x3a1f3a, 0.82));
+var sun = new T.DirectionalLight(0xffcf94, 1.35); sun.position.set(-30,46,-18); scene.add(sun);
 
 /* ---------------- road ---------------- */
 var ROAD_W = 11, TILE = 24, roadTex;
 (function(){
   var gm = new T.Mesh(new T.PlaneGeometry(300, 800),
-    new T.MeshStandardMaterial({color:0x6b6a4d, roughness:1, metalness:0}));
+    new T.MeshStandardMaterial({color:0x0f0820, roughness:1, metalness:0}));  // verge, kept dark so it does not out-shout the sky
   gm.rotation.x = -Math.PI/2; gm.position.set(0,-0.03,-300); scene.add(gm);
 
   var cv = document.createElement('canvas'); cv.width = 256; cv.height = 558;  // 11m x 24m

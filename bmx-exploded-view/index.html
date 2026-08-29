@@ -27,7 +27,7 @@
   *{box-sizing:border-box}
   html,body{height:100%;margin:0}
   body{
-    background:#0d0f13;
+    background:#1a0b3a;
     color:#e8e9ec;
     font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
     overflow:hidden;
@@ -35,7 +35,56 @@
   body.bg-light{background:var(--paper);color:#14161a}
   body.bg-none{background:repeating-conic-gradient(#1a1d22 0% 25%, #14171b 0% 50%) 50%/22px 22px}
 
-  #stage{position:fixed;inset:0}
+  /* ------------------------------------------------------------------
+     Sunset backdrop. The canvas is alpha:true, so everything below shows
+     through behind the bike and nothing here touches the 3D scene.
+
+     Three layers: a vertical sunset ramp, a slitted sun sitting on the
+     horizon, and a checkerboard floor laid flat in perspective and scrolled
+     toward the viewer. The floor is one element with a rotateX on it rather
+     than a painted texture, so it stays sharp at any size and costs nothing
+     to animate.
+     ------------------------------------------------------------------ */
+  .scene-bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+  .scene-bg .sky{
+    position:absolute;left:0;right:0;top:0;height:62%;
+    background:linear-gradient(180deg,
+      #150d3a 0%, #36166a 22%, #7d2280 42%,
+      #c0356f 60%, #ee6a45 80%, #ffb347 94%, #ffd98a 100%);
+  }
+  .scene-bg .sun{
+    position:absolute;left:50%;top:62%;width:min(46vh,44vw);aspect-ratio:1;
+    transform:translate(-50%,-58%);border-radius:50%;
+    background:
+      repeating-linear-gradient(180deg,
+        transparent 0 6px, #1a0b3a 6px 10px,
+        transparent 10px 20px, #1a0b3a 20px 27px,
+        transparent 27px 40px, #1a0b3a 40px 52px),
+      linear-gradient(180deg,#ffe07a 0%,#ff8a3d 40%,#ec3a82 100%);
+    background-blend-mode:normal;
+    opacity:.95;
+  }
+  .scene-bg .horizon{
+    position:absolute;left:0;right:0;top:62%;height:2px;
+    background:#7ff0ff;box-shadow:0 0 18px 4px rgba(127,240,255,.55);
+  }
+  .scene-bg .floor{
+    position:absolute;left:-60%;right:-60%;top:62%;bottom:-30%;
+    transform:perspective(220px) rotateX(62deg);
+    transform-origin:50% 0;
+    background-image:
+      repeating-conic-gradient(#f6f6fa 0% 25%, #120e20 0% 50%);
+    background-size:64px 64px;
+    animation:floorRun 3.2s linear infinite;
+  }
+  .scene-bg .haze{
+    position:absolute;left:0;right:0;top:62%;height:22%;
+    background:linear-gradient(180deg,rgba(255,179,71,.92),rgba(255,179,71,0));
+  }
+  @keyframes floorRun{from{background-position:0 0}to{background-position:0 64px}}
+  @media(prefers-reduced-motion:reduce){.scene-bg .floor{animation:none}}
+
+  #stage{position:fixed;inset:0;z-index:1}
   canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
   canvas.dragging{cursor:grabbing}
   canvas.over{cursor:crosshair}
@@ -125,6 +174,15 @@
   }
 
   /* ---------- spin mode ---------- */
+
+  /* The backdrop is bright now, and the HUD was designed against a near-black
+     page. Rather than recolour every readout, the floating text gets a shadow,
+     which holds up over the sun, the checkerboard and the sky alike. The
+     panels and buttons already carry their own backgrounds and are left
+     alone. */
+  #spinUI,.gamelogo,#prompt,#cheat{
+    text-shadow:0 2px 14px rgba(10,6,24,.92),0 0 3px rgba(10,6,24,.8);
+  }
   #spinUI{position:fixed;inset:0;z-index:8;pointer-events:none;display:none}
   body.spinning #spinUI{display:block}
   #score{position:absolute;top:5vh;left:0;right:0;text-align:center;font-family:"Bricolage Grotesque",Georgia,serif}
@@ -213,6 +271,13 @@
 </style>
 </head>
 <body>
+<div class="scene-bg" aria-hidden="true">
+  <div class="sky"></div>
+  <div class="sun"></div>
+  <div class="floor"></div>
+  <div class="haze"></div>
+  <div class="horizon"></div>
+</div>
 <div id="stage"><div id="loading">Assembling</div></div>
 
 <div class="gamelogo" id="gameLogo">
