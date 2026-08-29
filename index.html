@@ -317,7 +317,11 @@ a{color:inherit}
   /* vertical rhythm answers to viewport HEIGHT as well as width, so the hero
      still lands above the fold on short laptop viewports. Tall screens hit the
      max values and are unchanged. */
-  padding:clamp(72px,min(11vw,14vh),132px) 0 clamp(64px,min(8vw,10vh),96px);
+  /* Top was 132px against 96px at the bottom, which read as a low start and a
+     tight finish: the trust line was almost touching the fold. Taking 36px off
+     the top and giving 12px back to the bottom moves the block up and leaves
+     more room under it, and the hero ends up 24px shorter rather than taller. */
+  padding:clamp(56px,min(8vw,10.5vh),96px) 0 clamp(68px,min(8.5vw,11vh),108px);
   isolation:isolate;
 }
 /* moving grid */
@@ -520,37 +524,55 @@ section{position:relative}
 }
 @media(prefers-reduced-motion:reduce){.gamecard:hover{transform:none}}
 
-/* Hover previews. The clips are captured from the games themselves, not stock
-   footage: the spin game turning, and a wheelie held through a gate.
-   Three deliberate constraints:
-   - gated behind (hover:hover) and (pointer:fine), so a phone never shows or
-     downloads them. Motion here is a desktop nicety, not content.
-   - preload="none" plus play-on-enter, so a desktop only fetches the ~150KB
-     when someone actually points at the card.
-   - the card flips dark on hover. Both clips had to sit under white type, and
-     one is a black studio background while the other is a bright sky. A dark
-     scrim is the only treatment that works for both, and it keeps the text
-     above 7:1 either way. */
+/* Card backgrounds. The footage is captured from the games themselves, not
+   stock: the assembled bike turning on white, and a wheelie held through a
+   gate. Both were captured frame by frame against a faked clock rather than
+   screen-recorded, because recording in real time off a software renderer
+   produced unevenly spaced frames, and no amount of re-encoding fixes source
+   frames that are already irregular. The spin clip is exactly one revolution
+   over its 240 frames, so it loops without a seam.
+
+   The imagery is always on, and starts moving when the section scrolls into
+   view rather than waiting for a hover, so a phone gets the same thing a
+   laptop does. Hovering adds the sheen sweep the buttons use.
+
+   The card stays light. A white wash sits over the footage, heavy on the left
+   where the copy is and thinner on the right so the picture has somewhere to
+   breathe. */
 .gamecard{position:relative;overflow:hidden;isolation:isolate}
 .gamecard .gv{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  opacity:0;transition:opacity .45s ease;z-index:0;pointer-events:none;
+  z-index:0;pointer-events:none;
 }
-.gamecard .gscrim{
-  position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;
-  transition:opacity .45s ease;
-  background:linear-gradient(180deg,rgba(8,9,11,.58),rgba(8,9,11,.80));
+.gamecard .gwash{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(100deg,
+    rgba(255,255,255,.95) 0%,
+    rgba(255,255,255,.93) 52%,
+    rgba(255,255,255,.70) 100%);
+}
+/* the sweep from .btn, tinted so it reads on a light card instead of
+   disappearing into it */
+.gamecard .gsheen{
+  position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:linear-gradient(100deg,transparent 22%,rgba(0,164,230,.20) 50%,transparent 78%);
+  transform:translateX(-130%);
+}
+.gamecard:hover .gsheen,.gamecard:focus-visible .gsheen{
+  transform:translateX(130%);
+  transition:transform .75s cubic-bezier(.3,.6,.2,1);
 }
 .gamecard .gk,.gamecard .gt,.gamecard .gg{position:relative;z-index:2}
-.gamecard .gk,.gamecard .gt,.gamecard .gg{transition:color .3s ease}
-@media(hover:hover) and (pointer:fine){
-  .gamecard.playing{background:#08090b;border-color:var(--cyan)}
-  .gamecard.playing .gv,.gamecard.playing .gscrim{opacity:1}
-  .gamecard.playing .gk{color:#fff}
-  .gamecard.playing .gt{color:rgba(255,255,255,.86)}
-  .gamecard.playing .gg{color:#7fe4ff}
+/* --muted is 4.8:1 on flat white, which is not enough once there is a picture
+   under it. This is 7.0:1 on white and holds up over the lightest part of the
+   wash. */
+.gamecard .gt{color:#4b5563}
+/* --cyan measured 4.31:1 over the lightest corner of the wash, and PLAY is
+   11px, so it gets no large-text allowance. This is the same hue, darker. */
+.gamecard .gg{color:#00618c}
+@media(prefers-reduced-motion:reduce){
+  .gamecard .gsheen{display:none}
 }
-@media(prefers-reduced-motion:reduce){.gamecard .gv,.gamecard .gscrim{display:none}}
 .step .bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:14px 0 0 14px;background:var(--cyan)}
 .step:nth-child(2) .bar{background:var(--blue)}
 .step:nth-child(3) .bar{background:var(--orange)}
@@ -894,21 +916,23 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
     </div>
     <div class="steps">
       <a class="gamecard reveal" href="bmx-exploded-view/" style="--d:0ms">
-        <video class="gv" muted loop playsinline preload="none" data-poster="assets/video/spin.jpg" aria-hidden="true" tabindex="-1">
-          <source src="assets/video/spin.webm" type="video/webm">
+        <video class="gv" muted loop playsinline preload="none" poster="assets/video/spin.jpg" aria-hidden="true" tabindex="-1">
           <source src="assets/video/spin.mp4" type="video/mp4">
+          <source src="assets/video/spin.webm" type="video/webm">
         </video>
-        <span class="gscrim" aria-hidden="true"></span>
+        <span class="gwash" aria-hidden="true"></span>
+        <span class="gsheen" aria-hidden="true"></span>
         <span class="gk">Spin Game</span>
         <span class="gt">Spin it as many times as you can in fifteen seconds. Switch to the exploded view and every one of the 35 components is labelled.</span>
         <span class="gg">Play<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
       <a class="gamecard reveal" href="bmx-wheelie-run/" style="--d:90ms">
-        <video class="gv" muted loop playsinline preload="none" data-poster="assets/video/wheelie.jpg" aria-hidden="true" tabindex="-1">
+        <video class="gv" muted loop playsinline preload="none" poster="assets/video/wheelie.jpg" aria-hidden="true" tabindex="-1">
           <source src="assets/video/wheelie.webm" type="video/webm">
           <source src="assets/video/wheelie.mp4" type="video/mp4">
         </video>
-        <span class="gscrim" aria-hidden="true"></span>
+        <span class="gwash" aria-hidden="true"></span>
+        <span class="gsheen" aria-hidden="true"></span>
         <span class="gk">Wheelie Run</span>
         <span class="gt">Hold the balance point and steer through the gates. Front wheel up doubles your points, and sprinting is worth more than it is safe.</span>
         <span class="gg">Play<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
@@ -1004,33 +1028,28 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
   onScroll();
   window.addEventListener('scroll', onScroll, {passive:true});
 
-  /* game card hover previews.
-     The media query in the CSS decides whether the clip is ever shown; this
-     decides whether it is ever downloaded. Both have to agree, or a phone
-     fetches 150KB it will never display. Keyboard focus counts as hover here,
-     so tabbing to a card shows the same thing pointing at it does. */
-  if (!reduce && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
-    Array.prototype.forEach.call(document.querySelectorAll('.gamecard'), function(card){
-      var v = card.querySelector('video.gv');
-      if (!v) return;
-      // poster is deferred to here too, so a phone fetches neither the clip
-      // nor the still it would never get to show
-      if (v.dataset.poster) v.poster = v.dataset.poster;
-      var on = function(){
-        card.classList.add('playing');
-        var p = v.play();               // rejects on some autoplay policies
-        if (p && p.catch) p.catch(function(){});
-      };
-      var off = function(){
-        card.classList.remove('playing');
-        v.pause();
-        try { v.currentTime = 0; } catch(e){}
-      };
-      card.addEventListener('pointerenter', on);
-      card.addEventListener('pointerleave', off);
-      card.addEventListener('focus', on);
-      card.addEventListener('blur', off);
-    });
+  /* game card clips.
+     They play when the section reaches the viewport rather than on hover, so
+     a phone sees the same thing a laptop does. preload="none" plus loading on
+     first intersection means nothing downloads until someone scrolls that far,
+     and pausing on the way out keeps them off the battery for the rest of the
+     page. The poster carries the still for reduced-motion and for anything
+     that refuses to autoplay. */
+  var gameCards = document.querySelectorAll('.gamecard video.gv');
+  if (gameCards.length && !reduce && 'IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var v = e.target;
+        if (e.isIntersecting) {
+          if (!v.dataset.loaded) { v.dataset.loaded = '1'; v.preload = 'auto'; v.load(); }
+          var p = v.play();          // autoplay can still be refused
+          if (p && p.catch) p.catch(function(){});
+        } else {
+          v.pause();
+        }
+      });
+    }, {threshold:0.25});
+    Array.prototype.forEach.call(gameCards, function(v){ vio.observe(v); });
   }
 
   /* scroll reveal */
