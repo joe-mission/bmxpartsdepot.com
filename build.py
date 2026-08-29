@@ -1230,6 +1230,7 @@ HEAD = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <meta name="theme-color" content="#0a0a0a">
+<script src="/assets/analytics.js"></script>
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">

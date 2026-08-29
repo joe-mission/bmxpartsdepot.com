@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BMX Exploded View and Spin Game | BMX Parts Depot</title>
-<meta name="description" content="An exploded 3D view of a 20 inch street BMX naming 33 components, plus a fifteen second spin game. Drag to orbit, hover a part to name it.">
+<meta name="description" content="An exploded 3D view of a 20 inch street BMX naming 33 components, plus a fifteen second spin game. Drag to orbit, scroll to zoom.">
 <link rel="canonical" href="https://bmxpartsdepot.com/bmx-exploded-view/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <meta property="og:type" content="website">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="/assets/analytics.js"></script>
 <style>
   :root{
     --paper:#f2f0ec;
@@ -236,7 +237,7 @@
   <a class="act homelink" href="/">Back to BMX Parts Depot</a>
 </div>
 
-<div class="hint">Drag to orbit<br>Scroll to zoom<br>Hover a part to name it</div>
+<div class="hint">Drag to orbit<br>Scroll to zoom</div>
 
 <a class="spinhome" href="/">Back to BMX Parts Depot</a>
 
@@ -933,6 +934,14 @@ var spin = {
   px:0, py:0, held:false, cheatShown:false, lastBlip:0, startAt:null
 };
 var MAX_VEL = 70;
+
+/* GA4 hooks - no-ops when analytics.js is absent or unconfigured */
+function track(name, params){ if (window.gtag) gtag('event', name, params || {}); }
+function spinStarted(t){
+  if (spin.startAt !== null) return;
+  spin.startAt = t;
+  track('game_start', { game_name: 'spin_game' });
+}
 var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
 var SPIN_LIMIT = 15000;   // hard stop, however hard they lean on it
 var scoreN = document.getElementById('scoreN');
@@ -1038,6 +1047,7 @@ function exitSpin(){
 function endSpin(){
   spin.ended = true;
   spin.vel = 0;
+  track('post_score', { score: spin.count, game_name: 'spin_game' });
   clockEl.textContent = '0.0';
   cheatEl.classList.remove('on');
   if (spin.count > spin.best) spin.best = spin.count;
@@ -1067,7 +1077,7 @@ window.addEventListener('pointerdown', function(){
   if (gap < 320) boost += (320 - gap) / 320 * 5.5;
   spin.vel += (spin.vel >= 0 ? boost : -boost);
   spin.lastInputAt = now;
-  if (spin.startAt === null) spin.startAt = now;
+  spinStarted(now);
   if (!spin.cheatShown) showCheat();
 });
 window.addEventListener('pointerup',   function(){ spin.held = false; });
@@ -1077,7 +1087,7 @@ window.addEventListener('keydown', function(e){
     e.preventDefault();
     spin.vel += (e.key === 'ArrowRight' ? 6.5 : -6.5);
     spin.lastInputAt = performance.now();
-    if (spin.startAt === null) spin.startAt = spin.lastInputAt;
+    spinStarted(spin.lastInputAt);
     if (!spin.cheatShown) showCheat();
   }
 });
@@ -1085,6 +1095,7 @@ window.addEventListener('keydown', function(e){
 var modeSwitch = document.getElementById('modeSwitch');
 var mode = 'spin';
 function setMode(m){
+  track('select_content', { content_type: 'game_mode', content_id: m });
   mode = m;
   modeSwitch.textContent = (m === 'spin') ? 'Exploded view' : 'Spin game';
   if (m === 'spin') enterSpin(); else exitSpin();
@@ -1120,7 +1131,7 @@ window.addEventListener('pointermove', function(e){
     spin.last = a;
     spin.px = e.clientX; spin.py = e.clientY;
     spin.lastInputAt = performance.now();
-    if (spin.startAt === null) spin.startAt = spin.lastInputAt;
+    spinStarted(spin.lastInputAt);
     return;
   }
   if (dragging){
