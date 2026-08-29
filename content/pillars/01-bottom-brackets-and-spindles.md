@@ -390,7 +390,7 @@ What is in stock changes as bikes come apart. Each one is measured against the s
 
 Diameter tells you whether a fastener will enter. Pitch tells you whether it belongs there. Imperial threads are counted as threads per inch, so a higher TPI number means finer threads. Metric threads are given as the distance between crests in millimetres, so a smaller number is finer.
 
-The reason this matters on a used BMX is that several of the threads on the bike are close enough in diameter to start, and the damage is done in the first turn or two. That is covered under [cross-threading](#cross-threading), and the rule that follows from it is simple: everything threaded gets started by hand, and nothing gets a wrench until it has turned freely for several turns.
+The reason this matters on a used BMX is that several of the threads on the bike are close enough in diameter to start, and the damage is done in the first turn or two. That is covered under [cross-threading](/guides/bmx-cranks-and-pedals/#cross-threading), and the rule that follows from it is simple: everything threaded gets started by hand, and nothing gets a wrench until it has turned freely for several turns.
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -411,4 +411,4 @@ The reason this matters on a used BMX is that several of the threads on the bike
 
 Two rows there deserve attention. **The two 3/8 inch axle threads are the same diameter and different pitches**, so an axle nut off one will start on the other and then bind. And the bottom bracket and the threaded freewheel share a thread, which is a piece of history rather than a coincidence.
 
-The pedal threads are covered in their own right under [pedal thread size](#pedal-thread-size), including the left-hand thread on the left side, which is a separate trap from pitch.
+The pedal threads are covered in their own right under [pedal thread size](/guides/bmx-cranks-and-pedals/#pedal-thread-size), including the left-hand thread on the left side, which is a separate trap from pitch.

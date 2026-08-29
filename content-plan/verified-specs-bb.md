@@ -539,3 +539,42 @@ large alloy top cap threads, and stem reach ranges by category.
 
 ### Thread insert
 - Insert 9/16 inch x 20 TPI inner, 5/8 inch x 24 TPI outer | Park Tool | https://www.parktool.com/en-us/blog/repair-help/pedal-bushing-and-thread-repair | Single source
+
+---
+
+## Standards citations: two that did not hold up
+
+Two ISO numbers reached published pages as sourcing without anyone opening the
+document. Both were wrong, and both were caught only by a later audit.
+
+**ISO 5681** was cited as the source for a spoke gauge figure. ISO 5681 is
+"Equipment for crop protection - Vocabulary". Nothing to do with bicycles.
+Removed.
+
+**ISO 4210-2** was cited sixteen times across five pillars, as the second
+source that made a figure Confirmed: handlebar outer diameter, steerer
+diameters, threaded headset thread, front hub over-locknut dimension,
+cantilever post spacing, brake lever clamp diameter, saddle rail dimensions
+and seat post diameters.
+
+ISO 4210-2 is "Cycles - Safety requirements for bicycles - Part 2". Its own
+introduction says the scope "has been limited to safety considerations and has
+specifically avoided standardization of components". Its saddle clauses are a
+static strength test and a fatigue test, not a rail diameter. It cannot source
+any interchange dimension, and it never could.
+
+Checked against the publicly available document at
+`https://cdn.standards.iteh.ai/samples/78077/7e7a9e3cceeb4c0c9bfa18d139de942b/ISO-4210-2-2023.pdf`
+on 29 August 2026.
+
+All sixteen citations were removed. Eight rows kept Confirmed because two real
+sources remained. Five dropped to Single source. One, the 1 inch x 24 TPI
+threaded headset thread, stayed Confirmed because Park Tool's thread concepts
+page independently carries it.
+
+**The rule this produces:** a standards number is not a source until someone
+has opened the standard and found the figure in it. A plausible-looking ISO
+number attached to a bicycle dimension is exactly the kind of citation that
+passes review, because it looks like the most authoritative source on the page.
+Both of these did pass review, more than once. Prefer a manufacturer page
+someone can actually open.

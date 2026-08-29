@@ -55,8 +55,8 @@ A **tripod** seat is the older three-bolt arrangement, with the seat base boltin
 <tr><th scope="col">System</th><th scope="col">Key dimensions</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Railed, BMX</th><td class="num">8.0mm solid rails, 43mm centre to centre</td><td>Eclat, Shadow, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Railed, road and mountain</th><td class="num">7.0mm rails, same 43mm spacing</td><td>ISO 4210-2, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Railed, BMX</th><td class="num">8.0mm solid rails, 43mm centre to centre</td><td>Eclat, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Railed, road and mountain</th><td class="num">7.0mm rails, same 43mm spacing</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Pivotal</th><td class="num">M10 x 1.5 hollow bolt, 6mm Allen, 45-tooth spline</td><td>MacNeil patent, multiple brands <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Tripod</th><td>Two front tabs plus one rear M8 x 1.25, 6mm Allen</td><td>Flybikes <span class="src src-single">Single source</span></td></tr>
 </tbody>
@@ -109,7 +109,7 @@ Two things that catch people out. First, **shims exist and are common**, so a bi
 </thead>
 <tbody>
 <tr><th scope="row">25.4mm (1 inch)</th><td class="num">28.6mm</td><td>The modern freestyle default</td><td>Sunday, BSD, Cult, S&amp;M, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">22.2mm (7/8 inch)</th><td class="num">25.4mm</td><td>Old school, youth and micro frames</td><td>ISO 4210-2, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">22.2mm (7/8 inch)</th><td class="num">25.4mm</td><td>Old school, youth and micro frames</td><td>Dia-Compe <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">27.2mm</th><td class="num">31.8mm</td><td>Race and cruiser</td><td>Chase, Supercross <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">31.6mm</th><td class="num">34.9mm</td><td>Race and cruiser</td><td>Chase, Supercross <span class="src src-single">Single source</span></td></tr>
 </tbody>
@@ -309,7 +309,7 @@ Take the reading on a clean section away from any scoring or the clamp line, bec
 ::: faq Q063 | What size seat clamp does my BMX frame need?
 The clamp fits around the outside of the seat tube, so its size is your post diameter plus two seat tube wall thicknesses. That means you cannot work it out from the post alone, and you should measure the outside of the seat tube at the top where the clamp sits.
 
-Check first whether your frame has an integrated clamp, because then the answer is that you do not need one at all. This guide does not yet publish the clamp sizes that pair with each post size, because those figures have not been verified.
+Check first whether your frame has an integrated clamp, because then the answer is that you do not need one at all. The clamp size that pairs with each post size is in the table under [seat post diameter](#seat-post-diameter), with its sourcing. Order from there, but measure the outside of your seat tube if the clamp does not close properly, because those pairings follow the tube sizes builders normally use rather than a standard tying the two together.
 :::
 
 ::: faq Q064 | How do I get a stuck seat post out of a BMX frame?
@@ -342,12 +342,7 @@ For buying used, the interface is the whole question. A railed seat and a pivota
 
 Worn rails are worth a look on anything second hand. The clamp bites in the same two places for years, and rails that are visibly flattened or grooved where the clamp sat have been overtightened at some point.
 
-::: needsverify Rail dimensions are not published by any source we could cite.
-- Saddle rail diameter
-- Rail centre to centre spacing
-:::
-
-Those two figures are widely repeated but we could not trace either to a manufacturer specification or a published standard. Rails also come in round and oval sections, which changes what a given clamp will grip. If you are matching a seat to a post you do not have in hand, measure rather than assume.
+Rail diameter and cradle spacing are published above under [pivotal, railed and tripod](#seat-types), sourced to Eclat and Shadow. The figure worth knowing before you buy is that BMX rails are thicker than road and mountain rails at the same cradle spacing, so a road post will not grip a BMX saddle properly even though the rails sit the same distance apart. Rails also come in round and oval sections, which changes what a given clamp will grip, so a seat and post you cannot try together are worth measuring.
 
 ## Seat clamp diameter {#seat-clamp-diameter}
 
@@ -371,6 +366,10 @@ You meet it rarely, which is exactly why it catches people out: a tripod seat lo
 
 The practical advice for a used purchase is short. If a seat or post is described as tripod, it works with tripod parts and nothing else, and replacements are harder to find than for either of the common systems. That is worth factoring into the price of a bike that comes with one.
 
-::: needsverify No manufacturer specification for the tripod interface could be located.
-- Tripod mount dimensions and bolt pattern
+The bolt pattern is published above under [pivotal, railed and tripod](#seat-types): two front tabs plus one rear M8 x 1.25, taking a 6mm Allen key, sourced to Flybikes. That is one manufacturer rather than two, so treat it as one reading and check the part in front of you.
+
+::: needsverify One figure a buyer would want here is not published by anyone we could source.
+- Spacing between the three tripod mount points
 :::
+
+Without that, a tripod post and a tripod seat from different makers cannot be confirmed to fit from listings alone. If you are buying the two separately, ask for a measurement across the mount points.

@@ -16,7 +16,7 @@ related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-frame-id
 ---
 
 ::: quickanswer
-**Spin the wheel backwards with the bike off the ground and watch the cranks.** If the cranks stay still and you hear a ratchet, it is a cassette. If the cranks stay still and it is nearly silent, it is a freecoaster. If the cranks turn backwards with the wheel, the chain is dragging or the hub is seized.
+**Spin the wheel backwards with the bike off the ground and watch the cranks.** If the cranks turn backwards with the wheel, it is a cassette. If they stay still, it is a freecoaster, and that is the whole reason freecoasters exist. Spun forwards instead, a cassette clicks loudly and a freecoaster is close to silent.
 
 Then look at the cog. **A cassette or freecoaster has a small splined driver threaded into the hub body. A freewheel is a separate cluster screwed onto the outside of a plain threaded hub**, and it comes off as one unit.
 :::
@@ -32,7 +32,7 @@ Three designs have been used to let a BMX bike coast. They are not interchangeab
 
 **Look at the cog size.** A modern cassette or freecoaster driver carries a very small cog, small enough that it looks wrong to anyone used to older bikes. A freewheel cog is much larger, because a threaded freewheel has to be big enough to screw over the hub shell threads.
 
-**Spin it backwards.** Cassette hubs click loudly. Freecoasters are close to silent and let the bike roll backwards without the cranks turning at all. That last part is what a freecoaster is for.
+**Spin it.** Forwards, a cassette clicks loudly and a freecoaster is close to silent. Backwards, a cassette drags the cranks round with it and a freecoaster lets the wheel go without the cranks turning at all. That last part is what a freecoaster is for.
 
 **Try to unscrew the cog.** A freewheel will come off with a freewheel removal tool as one unit and leave threads behind on the hub. A cassette driver will not.
 
@@ -215,7 +215,7 @@ tool: Mitutoyo 6 inch Digital Caliper
 
 **Note which Hazard that is.** The front Hazard runs a 3/8 inch axle. The Hazard cassette rear runs 14mm. Same model name, two different axle sizes depending on which end of the bike it came off, which is a good reminder that a hub's model name is not its axle spec.
 
-The number that matters is which size you are looking at, not the second decimal place. **A reading anywhere near 9.5 is a 3/8 inch axle and a reading near 14 is a 14mm axle**, and nothing in between exists as a BMX standard. If a listing says 10mm and the part measures 9.5, the listing is describing a 3/8 inch axle by the wrong name, which is the confusion this section exists to clear up.
+The number that matters is which size you are looking at, not the second decimal place. **A reading near 9.5 is a 3/8 inch axle, near 10.0 is a 10mm race axle, and near 14 is a 14mm axle.** Those three are the BMX sizes, and a reading that falls between 10 and 14 is not one of them. If a listing says 10mm and the part measures 9.5, the listing is describing a 3/8 inch axle by the wrong name, which is the confusion this section exists to clear up.
 :::
 
 ## Hub spacing and over locknut dimension {#over-locknut-dimension}
@@ -695,7 +695,7 @@ The practical warning for a used buyer: **a left hand drive wheel is not a right
 ## Questions {#questions}
 
 ::: faq Q028 | How do I tell if a BMX rear hub is a cassette, freecoaster, or freewheel?
-Lift the back wheel and spin it backwards. A cassette clicks loudly and the cranks stay still. A freecoaster is close to silent and the cranks stay still. Neither drags the cranks backwards.
+Lift the back wheel and spin it forwards. A cassette clicks loudly and a freecoaster is close to silent, and on both the cranks stay still. Then spin it backwards: a cassette drags the cranks round with the wheel, and a freecoaster does not.
 
 Then look at the cog. A cassette and a freecoaster both drive through a small splined driver threaded into the hub, and the cog is small. A freewheel is a much larger cluster screwed onto the outside of a plain threaded hub, and it unscrews as a single unit with the right tool.
 

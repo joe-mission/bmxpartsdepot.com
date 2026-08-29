@@ -47,7 +47,7 @@ The second interaction is cutting. Trimming the ends of a swept bar takes width 
 </table>
 </div>
 
-That table has no figures in it on purpose. The shape of the effect is well understood and does not need a source. The numbers do, and they are not confirmed yet.
+That table has no figures in it on purpose. It describes the shape of the effect, which is well understood and does not need a source. The numbers themselves need one, and they are in the table below with their sourcing.
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -173,7 +173,7 @@ Going the other way, a larger bar simply will not go into a smaller clamp, and n
 <tr><th scope="col">Standard</th><th scope="col">Diameter</th><th scope="col">Status</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>The default across the market</td><td>Odyssey, S&amp;M, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>The default across the market</td><td>Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Oversize</th><td class="num">25.4mm (1 inch)</td><td>A live option, not the norm</td><td>S&amp;M, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
 </table>
@@ -250,7 +250,7 @@ Grip length is less tidy.
 <tr><th scope="col">Measurement</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Bar outer diameter at the grip</th><td class="num">22.2mm (7/8 inch)</td><td>ISO 4210-2, Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bar outer diameter at the grip</th><td class="num">22.2mm (7/8 inch)</td><td>Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Grip length, range sold</th><td class="num">140 to 170mm</td><td>ODI Longneck 143, Cult 160, Shadow Gypsy 165 <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">What that length means</th><td>Not quoted consistently</td><td>Compared across makers <span class="src src-conflict">Conflicting</span></td></tr>
 </tbody>
@@ -315,7 +315,11 @@ Riders cut bars routinely and it is a normal modification, but there are limits 
 
 Two things to think about before cutting. Because the ends are swept, cutting a lot off does not only change width, it brings the grips slightly down and forward as well. And a cut cannot be undone, so cut less than you think you want and ride it before going further.
 
-The amount of bar end a maker considers usable is a specification we have not confirmed, so it is listed on this page as needing a source rather than answered with a number.
+::: needsverify No bar maker we could find publishes a minimum, so this one is open.
+- Minimum straight bar end a maker considers usable after cutting
+:::
+
+Measure what your grip and lever actually need and leave that, rather than working to a number nobody publishes.
 :::
 
 ::: faq Q072 | What is the difference between flanged and flangeless BMX grips?

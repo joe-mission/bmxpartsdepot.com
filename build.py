@@ -944,6 +944,83 @@ def static_entity_block():
             % json.dumps(payload, indent=2, ensure_ascii=False))
 
 
+ABSENCE_RE = re.compile(
+    r"(?:not (?:yet )?publish|does not (?:yet )?publish|has not (?:yet )?published"
+    r"|are not confirmed yet|we are not (?:printing|publishing|quoting)"
+    r"|no year is published|not going to give you a (?:year|figure|number)"
+    r"|have not (?:been )?(?:verified|confirmed|sourced)"
+    r"|could not (?:be )?(?:source|trace|locate)|needing a source)", re.I)
+
+
+def check_absence_claims(pages):
+    """A page must not claim it does not publish a figure it publishes.
+
+    Nine of these shipped: prose written when a figure was genuinely missing,
+    left in place after the figure got sourced and tabled. The page then tells
+    a reader to go and measure something it already answers, which is worse
+    than a missing figure because it makes the sourced answer look untrusted.
+    Three more were introduced in one batch by the reverse mistake, writing a
+    needsverify block without checking what the page already had.
+
+    Cannot be decided mechanically, so this reports rather than fails: it
+    prints each absence claim with the badged figures on the same page, and a
+    person reads the pair. That is checklist item 6 from the blueprint, which
+    until now was a step everyone skipped.
+    """
+    notes = []
+    for p in pages:
+        path = os.path.join(OUT, p["slug"], "index.html")
+        try:
+            built = open(path, encoding="utf-8").read()
+        except OSError:
+            continue
+        text = re.sub(r"<[^>]+>", " ", built)
+        claims = set()
+        for m in ABSENCE_RE.finditer(text):
+            s = max(0, m.start() - 90)
+            claims.add(" ".join(text[s:m.end() + 90].split()))
+        if claims:
+            badged = len(re.findall(r'class="src src-', built))
+            notes.append((p["slug"], sorted(claims), badged))
+    return notes
+
+
+def check_same_page_anchors(pages):
+    """A [text](#anchor) link is only correct if the anchor is on that page.
+
+    Four of these shipped: two written this way because the term felt local
+    while writing, two because a section moved home later. A reader clicks and
+    nothing happens, which is worse than a wrong link because there is no error
+    to notice. Nothing else caught them: the term had a real anchor and a real
+    registry row, just on a different page.
+
+    Read back the built HTML rather than the context we assembled, so this
+    cannot drift from what actually shipped.
+    """
+    import buildhub
+
+    out = []
+    home = {}
+    for row in buildhub.load_registry(ROOT):
+        home[row["slug"]] = row["home"]
+    for p in pages:
+        path = os.path.join(OUT, p["slug"], "index.html")
+        try:
+            built = open(path, encoding="utf-8").read()
+        except OSError:
+            continue
+        ids = set(re.findall(r'id="([^"]+)"', built))
+        for frag in sorted(set(re.findall(r'href="#([^"]+)"', built))):
+            if frag in ids:
+                continue
+            elsewhere = home.get(frag)
+            hint = ("; it lives on %s, so link it as /guides/%s/#%s"
+                    % (elsewhere, elsewhere, frag)) if elsewhere else ""
+            out.append("%s links to #%s and has no such anchor%s"
+                       % (p["slug"], frag, hint))
+    return out
+
+
 def check_static_entities():
     """Defects if a hand-written page's Organization/WebSite has drifted.
 
@@ -1305,6 +1382,19 @@ def main():
         for item in split_todo(p)[0]:
             defects.append("%s has an unfilled placeholder: %s" % (p["slug"], item))
     defects.extend(check_static_entities())
+    defects.extend(check_same_page_anchors(pages))
+
+    absence = check_absence_claims(pages)
+    if absence and "--absence" in sys.argv:
+        print("\nabsence claims to read against the page's own badged figures")
+        for slug, claims, badged in absence:
+            print("  %s (%d badged figures on the page)" % (slug, badged))
+            for c in claims:
+                print("      ... %s ..." % c)
+    elif absence:
+        print("\n%d pages carry 'we do not publish this' prose; "
+              "run with --absence to read them against their own figures"
+              % len(absence))
 
     if defects:
         allow = "--allow-warnings" in sys.argv

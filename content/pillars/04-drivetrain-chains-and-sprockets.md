@@ -120,7 +120,7 @@ Gear ratio on its own does not let you compare bikes with different wheel sizes,
 
 The number people quote is a rough one, because it uses the nominal wheel size rather than the actual rolled diameter of the tyre you have fitted. It is a comparison tool, not a measurement. What it is genuinely good for is comparing your current bike to a bike you are thinking about, on the same arithmetic.
 
-We are not printing a gear inch chart on this page yet. The chart is trivial arithmetic once the wheel diameter figure is settled, and that figure is the part that needs sourcing rather than assuming.
+We are not printing a full gear inch chart, because it is trivial arithmetic once you have the wheel figure and the two conventions above: tooth count divided by cog count, multiplied by wheel diameter in inches. Do it with the figure that matches whatever chart you are comparing against.
 
 **A 20 inch BMX wheel is not 20 inches, and that is why gear charts disagree.**
 
@@ -425,7 +425,7 @@ Ratio is sprocket teeth divided by driver teeth, and the right number depends on
 
 The most useful approach is to work out the ratio your current bike runs, decide whether you want it harder or easier, and move from there. The number itself is more portable than the sprocket and driver sizes, because two completely different combinations with the same ratio pedal identically.
 
-We are not publishing recommended ratio ranges on this page yet. They vary by discipline and by rider, and the figures repeated online have not been checked here against manufacturer or team sources.
+The ratios in current use by discipline are in the table under [gear ratio and gear inches](#bmx-gear-ratio), sourced and badged. Read them as what is actually being ridden rather than as a recommendation: they vary by rider, and a ratio outside them is a choice rather than a mistake.
 :::
 
 ::: faq Q033 | How do BMX gear ratios compare in gear inches?
@@ -473,7 +473,7 @@ So when you are buying a used sprocket, the bore you want is the same as your sp
 ::: faq Q041 | How much chain wear is too much on a used BMX bike?
 The quick field check is to pull the chain away from the front sprocket at the three o'clock position. On a good chain it barely lifts off the tooth. On a worn one you can lift it far enough to see daylight underneath, and that chain is done.
 
-A chain wear gauge gives a proper answer and is worth owning if you handle a lot of used bikes. We are not quoting an elongation percentage on this page because we have not sourced the figure for BMX chain specifically.
+A chain wear gauge gives a proper answer and is worth owning if you handle a lot of used bikes. The threshold is 0.75 percent elongation, given in the wear table above. That figure is general single-speed bicycle practice from ISO 606, Park Tool and KMC rather than anything BMX specific, and no manufacturer publishes a separate BMX number.
 
 What matters more than the chain is what it has done to everything else. A chain run well past its life wears the sprocket and driver teeth into a hooked shape, and at that point a new chain will skip on the old teeth. So on a used bike with an obviously worn chain, inspect the driver and the sprocket before assuming a new chain fixes it.
 :::

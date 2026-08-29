@@ -65,7 +65,7 @@ The identification job on a used frame is straightforward. Look at the seat stay
 <tr><th scope="row">990 post spacing, what a brake accommodates</th><td class="num">75 to 85mm</td><td>Park Tool, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Post outer diameter</th><td class="num">9.0mm</td><td>S&amp;M, Cult, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Mounting bolt thread</th><td class="num">M6 x 1.0</td><td>S&amp;M, Cult <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Cantilever post spacing, for contrast</th><td class="num">75 to 80mm, vintage 55 to 65mm</td><td>ISO 4210-2, Shimano <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Cantilever post spacing, for contrast</th><td class="num">75 to 80mm, vintage 55 to 65mm</td><td>Shimano <span class="src src-single">Single source</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -181,7 +181,7 @@ When buying a used U-brake, the checklist is: two arms, two pads with fixing har
 A BMX brake lever is a **short-pull lever** made for U-brakes and cantilevers. **Brake lever reach** is how far the blade sits from the bar, sometimes adjustable with a small screw. The lever pull ratio matters more than the brand: a lever made for a linear pull brake will feel wrong on a U-brake.
 :::
 
-The important distinction is pull length. A U-brake needs a certain amount of cable pulled for a certain amount of pad movement, and a lever is designed around that. A linear pull (V-brake) lever pulls considerably more cable for the same hand movement. Put a linear pull lever on a U-brake and the brake feels vague and the pads move too far. Put a U-brake lever on a linear pull brake and it locks up almost immediately with very little modulation.
+The important distinction is pull length. A U-brake needs a certain amount of cable pulled for a certain amount of pad movement, and a lever is designed around that. A linear pull (V-brake) lever pulls considerably more cable for the same hand movement. Put a linear pull lever on a U-brake and the pads slam onto the rim in the first part of the stroke, which feels grabby rather than powerful and leaves you no modulation. Put a U-brake lever on a linear pull brake and the opposite happens: there is not enough cable to close the arms, so the pads never properly reach the rim and the lever comes back to the grip. **That second one is the dangerous direction**, because the parts fit together and the brake looks right until you need it. This is covered in full under [cable pull ratio](#cable-pull-ratio).
 
 **Reach** is the separate comfort question. Riders with smaller hands want the blade closer to the bar. Many levers have a reach adjustment screw that limits how far out the blade sits at rest. On a used lever, check that the screw is present and that it is not seized.
 
@@ -200,7 +200,7 @@ Two other used-lever checks. The **cable adjuster barrel** at the lever should t
 <tr><th scope="row">Short-pull lever, cable travel</th><td class="num">15 to 17mm per stroke</td><td>Shimano, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Linear-pull lever, cable travel</th><td class="num">23 to 25mm per stroke</td><td>Shimano, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Ratio between them</th><td class="num">about 1.5 to 1</td><td>Problem Solvers Travel Agent <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Lever clamp diameter</th><td class="num">22.2mm</td><td>Odyssey, Dia-Compe, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Lever clamp diameter</th><td class="num">22.2mm</td><td>Odyssey, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Cable inner diameter</th><td class="num">1.5 to 1.6mm</td><td>Odyssey, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Cable housing outer diameter</th><td class="num">5.0mm</td><td>Odyssey, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
@@ -291,19 +291,19 @@ You meet it on threaded headsets and on older loose ball hubs. The job is small 
 ::: faq Q042 | What are 990 brake mounts and does my frame have them?
 990 is the listing name for the standard BMX U-brake post arrangement. A frame with 990 mounts has two posts either side of the wheel, on the seat stays above it or on the chain stays behind the bottom bracket, and a U-brake sold as a 990 brake bolts straight onto them.
 
-To check your frame, look along the seat stays just above the rear tyre and along the chain stays just behind the bottom bracket. Posts on either pair means you have mounts. Threaded bosses with bolts in them means the frame takes removable mounts and you need to find the mounts. Smooth stays with nothing on them means the frame is brakeless. This guide does not yet publish the post spacing figure, so measure your own posts and compare with what a brake is sold for.
+To check your frame, look along the seat stays just above the rear tyre and along the chain stays just behind the bottom bracket. Posts on either pair means you have mounts. Threaded bosses with bolts in them means the frame takes removable mounts and you need to find the mounts. Smooth stays with nothing on them means the frame is brakeless. Builders target 82 to 85mm centre to centre on 9.0mm posts, which is in the table under [brake mounts](#u-brake-mounts) with its sourcing, and a brake accommodates a wider range than that. Measure your own posts if a frame looks unusual.
 :::
 
 ::: faq Q043 | Will a U-brake fit a frame with cantilever mounts?
 Not reliably. Cantilever posts and U-brake posts look alike, both being a pair of posts either side of the wheel, but the spacing and the arm geometry differ. A U-brake arm may slide onto a cantilever post and still put the pad in the wrong place relative to the rim, which is not something you can adjust your way out of.
 
-The honest answer is to measure the post spacing on your frame and buy a brake made for that spacing. **990 U-brake posts are 9.0mm in diameter at 82 to 85mm centre to centre**, sourced to Odyssey and Dia-Compe. **Cantilever posts run 75 to 80mm, and 55 to 65mm on vintage frames**, sourced to ISO 4210-2 and Shimano. Full table in [brake mounts and the 990 name](#u-brake-mounts).
+The honest answer is to measure the post spacing on your frame and buy a brake made for that spacing. **990 U-brake posts are 9.0mm in diameter at 82 to 85mm centre to centre**, sourced to Odyssey and Dia-Compe. **Cantilever posts run 75 to 80mm, and 55 to 65mm on vintage frames**, sourced to Shimano alone. Full table in [brake mounts and the 990 name](#u-brake-mounts).
 :::
 
 ::: faq Q044 | What is the difference between a U-brake and a V-brake on a BMX?
 A U-brake has two arms that cross over their posts and are pulled together by a straddle cable hanging from a yoke. A V-brake has two tall arms pulled straight toward each other by the cable, with a noodle guiding the outer casing into one arm and the inner cable crossing to the other. No straddle, no yoke.
 
-The consequence is the lever. A V-brake pulls much more cable for the same lever movement, so it needs a linear pull lever, while a U-brake needs a short pull lever. Mixing them gives you either a brake that feels vague or one that locks with no modulation. The U-brake is the BMX standard. The V-brake is real but uncommon on BMX, mostly turning up on cruisers, race bikes and completes that borrowed a mountain bike part.
+The consequence is the lever. A V-brake pulls much more cable for the same lever movement, so it needs a linear pull lever, while a U-brake needs a short pull lever. Mix them the wrong way and a short pull lever on a V-brake never moves the pads to the rim, which is the failure worth knowing about because everything bolts together and looks right. The U-brake is the BMX standard. The V-brake is real but uncommon on BMX, mostly turning up on cruisers, race bikes and completes that borrowed a mountain bike part.
 :::
 
 ::: faq Q045 | What is a gyro detangler and do I need one?
@@ -356,12 +356,13 @@ The posts are the two cylindrical studs the brake arms pivot on, either welded t
 
 What matters when buying used is which of the two you have. Welded posts are permanent and always there. Threaded posts unscrew, which is how a frame gets a clean brakeless look, and it is also how the posts go missing. A frame advertised as having mounts may have empty threaded holes, and the bosses are frame-specific enough that finding the right ones later is not guaranteed.
 
-::: needsverify Two figures a buyer would want here are not published by anyone we could source.
-- Post centre to centre spacing for the 990 pattern
+The spacing and post diameter that define the pattern are published above under [brake mounts](#u-brake-mounts), sourced to Odyssey and Dia-Compe. Those are the numbers to check a frame against.
+
+::: needsverify One figure a buyer would want here is not published by anyone we could source.
 - Thread size of removable 990 bosses
 :::
 
-The second one is worth explaining rather than leaving blank. Retailers selling replacement bosses list them variously as M6 and as M8, which are not close enough to be a rounding difference, and no manufacturer publishes a figure to settle it. Measure the boss on your own frame before ordering, and if you are buying bosses to suit a frame you do not have in front of you, ask the seller to measure.
+That one is worth explaining rather than leaving blank. Retailers selling replacement bosses list them variously as M6 and as M8, which are not close enough to be a rounding difference, and no manufacturer publishes a figure to settle it. Note that this is the thread of the boss itself, not the M6 x 1.0 brake mounting bolt in the table above, which is a different fastener and is sourced. Measure the boss on your own frame before ordering, and if you are buying bosses to suit a frame you do not have in front of you, ask the seller to measure.
 
 ## Straddle cable hanger {#straddle-cable-hanger}
 

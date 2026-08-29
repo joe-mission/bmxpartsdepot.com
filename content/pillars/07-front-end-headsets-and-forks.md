@@ -62,13 +62,13 @@ Those three are independent of each other in principle and heavily correlated in
 <tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">1 inch steerer, outside diameter</th><td class="num">25.40mm</td><td>ISO 4210-2, Park Tool, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">1 1/8 inch steerer, outside diameter</th><td class="num">28.575mm</td><td>ISO 4210-2, Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">1 inch steerer, outside diameter</th><td class="num">25.40mm</td><td>Park Tool, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">1 1/8 inch steerer, outside diameter</th><td class="num">28.575mm</td><td>Park Tool, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Integrated bearing, outside diameter</th><td class="num">41.8mm</td><td>Odyssey, BSD, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Integrated bearing, seat angle</th><td class="num">45 by 45 degrees</td><td>Odyssey, BSD, SHIS <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Zero stack cup OD, head tube bore</th><td class="num">44.05 to 44.10mm into 43.95 to 44.00mm</td><td>Park Tool SHIS, FSA <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Traditional pressed cup OD, head tube bore</th><td class="num">34.05 to 34.15mm into 33.95 to 34.00mm</td><td>Park Tool SHIS, Dia-Compe <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Threaded headset thread</th><td class="num">1 inch x 24 TPI</td><td>ISO 4210-2, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Threaded headset thread</th><td class="num">1 inch x 24 TPI</td><td>Park Tool, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Stack height, integrated</th><td class="num">0 to 15mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Stack height, zero stack</th><td class="num">8 to 12mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Stack height, traditional external</th><td class="num">25 to 35mm</td><td>FSA, Park Tool <span class="src src-single">Single source</span></td></tr>
@@ -209,7 +209,7 @@ The **oversize bar clamp** question is separate and it is a bar question rather 
 <tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Bar clamp diameter, standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>Odyssey, S&amp;M, ISO 4210-2 <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Bar clamp diameter, standard</th><td class="num">22.2mm nominal, 22.225mm exact (7/8 inch)</td><td>Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bar clamp diameter, oversize</th><td class="num">25.4mm (1 inch)</td><td>S&amp;M, Eclat <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Steerer clamp bore, threadless</th><td class="num">28.6mm</td><td>Odyssey, Sunday, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Stem reach, range sold</th><td class="num">40 to 53mm</td><td>Odyssey Nord 49, Sunday Freeze 48, BSD Droptail 50, Cult Salvation 51 <span class="src src-confirmed">Confirmed</span></td></tr>
@@ -327,7 +327,7 @@ A **unicrown fork**, where the legs bend inward and meet the steerer directly wi
 <tbody>
 <tr><th scope="row">Front axle, modern</th><td class="num">3/8 inch (9.525mm) or 10mm</td><td>Park Tool, Shimano <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Front axle, old school</th><td class="num">5/16 inch (7.94mm)</td><td>Park Tool, Skyway archives <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Front hub over-locknut dimension</th><td class="num">100mm</td><td>ISO 4210-2, Profile Racing, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Front hub over-locknut dimension</th><td class="num">100mm</td><td>Profile Racing, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five fork brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 <tr><th scope="row">Minimum peg thread engagement</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
 </tbody>
@@ -412,7 +412,7 @@ For a buyer this is mostly an identification and era point rather than a fitment
 ::: faq Q012 | What size headset does a BMX bike use?
 The honest answer is that you have to look at the frame, because the head tube design decides it. Bearings sitting directly in a machined angled seat with no cups means an integrated headset. Cups pressed into the tube with the bearings inside it means zero stack. Cups sitting proud of the head tube faces means a traditional pressed headset. A threaded ring and locknut on top of the steerer means an old threaded headset.
 
-Then there is the steerer diameter, which the headset and stem both have to match. **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against ISO 4210-2, Park Tool and SHIS, and unusually for BMX the inch names here are exact rather than nominal. The full set of dimensions is in [headset standards](#bmx-headset-standards). Measure your steerer and your head tube bore against them, or take the old headset to the counter with you.
+Then there is the steerer diameter, which the headset and stem both have to match. **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against Park Tool and SHIS, and unusually for BMX the inch names here are exact rather than nominal. The full set of dimensions is in [headset standards](#bmx-headset-standards). Measure your steerer and your head tube bore against them, or take the old headset to the counter with you.
 :::
 
 ::: faq Q013 | What is the difference between an integrated and a press in BMX headset?
@@ -472,7 +472,7 @@ No. The stem has to match the steerer diameter it clamps to or sits inside, and 
 
 There is a second problem beyond diameter. Old school 1 inch stems are usually quill stems, which go inside a threaded steerer, and most 1 1/8 inch BMX forks are threadless, which need a stem that clamps around the outside. So the two are often incompatible in type as well as in size.
 
-Both names are exact here rather than nominal, which is not always true in BMX: **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against ISO 4210-2, Park Tool and SHIS. Compare that with the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm. If you are matching parts, measure the steerer and check it against those figures.
+Both names are exact here rather than nominal, which is not always true in BMX: **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against Park Tool and SHIS. Compare that with the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm. If you are matching parts, measure the steerer and check it against those figures.
 :::
 
 ::: faq Q093 | When did BMX move from 1 inch threaded headsets to 1 1/8 integrated?
@@ -670,7 +670,7 @@ Whatever the stack, the stem has to end up fully clamped on the tube, and the to
 **A top load stem clamps the bars from above rather than from the front, which raises them.** Same fork, same bars, more height than a front load stem.
 :::
 
-Beyond height, the two feel different under load, and which one a used bike has tells you something about how it was set up. The clamp diameter has to match your bars, which is a separate question covered under [oversize bar clamp](#oversize-bar-clamp).
+Beyond height, the two feel different under load, and which one a used bike has tells you something about how it was set up. The clamp diameter has to match your bars, which is a separate question covered under [oversize bar clamp](/guides/bmx-handlebars-and-cockpit/#oversize-bar-clamp).
 
 ## Stem reach {#stem-reach}
 

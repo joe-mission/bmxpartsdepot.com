@@ -277,6 +277,13 @@ is worse than a missing one.
 - `content-plan/verified-specs-bb.md` is the research record: every claim, its
   source URL, and its status. Add to it rather than replacing it. Anything not in
   there has not been checked.
+- **A standards number is not a source until someone has opened the standard.**
+  Two got through: ISO 5681 cited for spoke gauge (it is crop protection
+  vocabulary) and ISO 4210-2 cited sixteen times for component dimensions (it is
+  a safety test standard whose introduction says it "specifically avoided
+  standardization of components"). Both looked like the most authoritative
+  source on the page, which is why neither was questioned. Prefer a manufacturer
+  or retailer page someone can open in a browser.
 - `::: caliper` blocks are for Joe's own bench measurements only. Never write
   a measurement into one. Fabricating first-hand shop data to look authoritative
   is exactly the kind of thing this site exists not to do.

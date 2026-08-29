@@ -8,6 +8,8 @@ Sales happen on eBay, not here. There is no checkout on this site. Inventory lin
 
 Dimensions are taken from component manufacturer and established retailer documentation, and each figure carries its status in the page: confirmed by two or more independent sources, single source, or sources in conflict. Where sources disagree the range is published rather than a single figure picked for tidiness. Blocks marked as caliper verification are bench measurements taken in the shop. This site does not publish sales figures, review counts, or years in business.
 
+Where a figure could not be traced to a manufacturer specification or a published standard, the page says so in place of the number rather than repeating a figure that circulates without a source. Those gaps are deliberate and some of them are permanent: no BMX brand publishes a tyre casing TPI or a Shore A durometer, and the old school, mid school and modern era year boundaries could not be traced to any primary source, so this site describes eras by their features and publishes no year ranges for them. An absent figure here means it was looked for and not found.
+
 ## Fitment Guides and Key Pages
 
 - [Home](https://bmxpartsdepot.com/) : Used and mid-school BMX parts reference and shop portal.

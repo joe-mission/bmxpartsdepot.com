@@ -430,14 +430,42 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
     return defects
 
 
+def git_date(root, relpath, fallback):
+    """Date of the last commit that touched a file, or fallback.
+
+    The pillar pages carry an `updated:` date an author sets deliberately.
+    The three hand-written pages carry nothing, and stamping them with the
+    build date told crawlers that the privacy notice changed every time
+    anyone regenerated the guides. Google discards lastmod it finds
+    unreliable, and "all four changed today, again" is how it decides that,
+    so an unearned lastmod costs the dates on the pages that did change.
+    """
+    try:
+        import subprocess
+        out = subprocess.run(
+            ["git", "log", "-1", "--format=%cs", "--", relpath],
+            cwd=root, capture_output=True, text=True, timeout=10)
+        stamp = out.stdout.strip()
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", stamp):
+            return stamp
+    except Exception:
+        pass
+    return fallback
+
+
 def write_root_files(pages, SITE, root):
     today = str(date.today())
 
     # ---- sitemap.xml ----------------------------------------------------
-    urls = [(SITE + "/", "1.0", today), (SITE + "/guides/", "0.9", today)]
+    # The hub is generated from the pillars, so it is as fresh as the
+    # freshest one rather than as fresh as the last time the build ran.
+    hub_mod = max([p["meta"].get("updated", "") for p in pages] or [""]) or today
+    urls = [(SITE + "/", "1.0", git_date(root, "index.html", today)),
+            (SITE + "/guides/", "0.9", hub_mod)]
     urls += [("%s/guides/%s/" % (SITE, p["slug"]), "0.8", p["meta"].get("updated", today))
              for p in pages]
-    urls += [(SITE + "/privacy.html", "0.2", today), (SITE + "/terms.html", "0.2", today)]
+    urls += [(SITE + "/privacy.html", "0.2", git_date(root, "privacy.html", today)),
+             (SITE + "/terms.html", "0.2", git_date(root, "terms.html", today))]
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -490,6 +518,14 @@ Sitemap: %s/sitemap.xml
         "disagree the range is published rather than a single figure picked for tidiness. "
         "Blocks marked as caliper verification are bench measurements taken in the shop. "
         "This site does not publish sales figures, review counts, or years in business.",
+        "",
+        "Where a figure could not be traced to a manufacturer specification or a published "
+        "standard, the page says so in place of the number rather than repeating a figure "
+        "that circulates without a source. Those gaps are deliberate and some of them are "
+        "permanent: no BMX brand publishes a tyre casing TPI or a Shore A durometer, and the "
+        "old school, mid school and modern era year boundaries could not be traced to any "
+        "primary source, so this site describes eras by their features and publishes no year "
+        "ranges for them. An absent figure here means it was looked for and not found.",
         "",
         "## Fitment Guides and Key Pages",
         "",

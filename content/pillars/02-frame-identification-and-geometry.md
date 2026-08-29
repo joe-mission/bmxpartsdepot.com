@@ -228,7 +228,7 @@ One frame with all four measurements drawn on, showing which are horizontal and 
 ## Chainstay length and head tube angle {#chainstay-length}
 
 ::: quickanswer
-**Chainstay length is the distance from the bottom bracket centre to the rear axle centre**, and it is the number that decides how easily the front end comes up. **Head tube angle is how far the head tube leans back from vertical**, and it decides how quickly the bike steers.
+**Chainstay length is the distance from the bottom bracket centre to the rear axle centre**, and it is the number that decides how easily the front end comes up. **Head tube angle is the angle between the head tube and the ground, measured from horizontal**, and it decides how quickly the bike steers. A bigger number is steeper.
 :::
 
 ### What chainstay length changes

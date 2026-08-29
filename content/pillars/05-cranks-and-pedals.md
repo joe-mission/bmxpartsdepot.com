@@ -60,7 +60,7 @@ A **one-piece or Ashtabula crank** is a single bent steel forging carrying both 
 
 One-piece cranks are heavy, they are usually made from plain steel rather than chromoly, and they are the reason a lot of old bikes weigh what they weigh. They are also close to indestructible in normal use, which is why so many survive.
 
-The mechanical arrangement is simple. The frame shell is unthreaded and large enough to pass the bent section of the crank through it. A threaded cup screws into each side of the shell, and a loose ball bearing retainer runs against a cone on the crank. Preload is set by a lockring and a keyed washer on the non-drive side. Nothing is sealed, everything is serviceable, and everything will rust if the bike sits outside.
+The mechanical arrangement is simple. The frame shell is large enough to pass the bent section of the crank through it, and on this setup it is threaded. A cup screws into each side of the shell, and a loose ball bearing retainer runs against a cone on the crank. Preload is set by a lockring and a keyed washer on the non-drive side. Nothing is sealed, everything is serviceable, and everything will rust if the bike sits outside.
 
 Two practical consequences for a used bike. First, **a one-piece crank cannot go into a Mid, Spanish or Euro frame**, because the shell is nowhere near large enough to pass the crank through. Second, **the pedals are not the same as three-piece pedals.** One-piece cranks take the smaller of the two BMX pedal threads. Fitting the larger thread into them, or the other way round, will strip a boss.
 
@@ -329,7 +329,7 @@ Bottom bracket kits ship with a spacer set, and you will want it, because the ch
 ::: faq Q074 | What thread size are BMX pedals, 9/16 or 1/2 inch?
 It depends entirely on your cranks. Three-piece and two-piece cranks take the larger thread. One-piece Ashtabula cranks take the smaller one. The two are not interchangeable and forcing the wrong one strips the crank arm, not the pedal.
 
-This guide has not yet published the exact thread designations, because they have not been checked against a manufacturer spec sheet. Identify your crank type first, buy pedals sold for that crank type, and start every pedal by hand before a spanner touches it.
+The designations are in the pedal thread table above: 9/16 inch x 20 TPI for three-piece and two-piece cranks, 1/2 inch x 20 TPI for one-piece Ashtabula. Both are sourced to Sheldon Brown, which is one good source rather than two. Identify your crank type first, buy pedals sold for that crank type, and start every pedal by hand before a spanner touches it.
 :::
 
 ::: faq Q075 | Will 9/16 pedals fit one piece cranks?
@@ -354,7 +354,7 @@ Crank arms go up with the measured length and the spindle size they take. Pedals
 **A conversion kit presses adapter cups into an American bottom bracket shell so it will take a modern three-piece crank.** It is the standard answer to the most common question asked about an old frame: can I put decent cranks in this.
 :::
 
-The frame side of this is covered under [American bottom bracket](#american-bottom-bracket), and the shell diameter is the figure that decides which kit fits. The kit itself is two cups that press into the large unthreaded shell and carry bearings sized for a 19mm, 22mm or 24mm spindle.
+The frame side of this is covered under [American bottom bracket](/guides/bottom-brackets-and-spindles/#american-bottom-bracket), and the shell diameter is the figure that decides which kit fits. The kit itself is two cups that press into the large unthreaded shell and carry bearings sized for a 19mm, 22mm or 24mm spindle.
 
 <div class="table-scroll">
 <table class="spec-table">

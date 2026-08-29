@@ -40,7 +40,7 @@ Here is why the boundaries genuinely resist being pinned down.
 
 So this page treats era as a reading taken from the parts. That is both more honest and more useful, because when somebody hands you a frame it is the parts you have in front of you and not the year.
 
-**On the last of those questions there is already an answer, and it is no.** Support documentation across twelve BMX frame manufacturers was audited and none defines the eras. No governing body does either. The terms are collector usage, circulated by communities like BMX Society and VintageBMX, which is why this page describes eras by their features and why the era chips across this site carry no dates. Two research passes have now looked. <span class="src src-conflict">Unpublished</span>
+**On the last of those questions there is already an answer, and it is no.** Support documentation across twelve BMX frame manufacturers was audited and none defines the eras. No governing body does either. The terms are collector usage, circulated by communities like BMX Society and VintageBMX, which is why this page describes eras by their features and why the era chips across this site carry no dates. Three research passes have now looked. <span class="src src-conflict">Unpublished</span>
 
 The year ranges themselves stay open below, and may stay open permanently.
 
@@ -72,7 +72,7 @@ Old school is the sport's **first generation of bikes and parts**, recognised by
 
 The things that mark a bike as old school are mostly things that later disappeared.
 
-**A big unthreaded bottom bracket shell with cups in it.** The American standard is the original BMX bottom bracket and it is the loudest single era signal on a frame. Research for this site confirmed the narrative from multiple sources: American came first, Euro followed as the first way to run three piece cranks without cups, then Mid, then Spanish. Not one of those sources gave a year for any of it.
+**A big unthreaded bottom bracket shell with cups in it.** The American standard is the original BMX bottom bracket and it is the loudest single era signal on a frame. Research for this site confirmed the narrative from multiple sources: American came first, Euro followed as the first way to run three piece cranks in a threaded shell, then Mid, which kept the American bearing and did away with the cups, then Spanish. Not one of those sources gave a year for any of it.
 
 **One-piece cranks.** A single bent steel piece forming both arms and the spindle, running in that big shell on loose ball bearings in threaded cups. Sheldon Brown describes one-piece cranks as mainly found on older American-made bicycles and on children's bikes made for the American market, which is a fair description of where you meet them now.
 
@@ -143,7 +143,7 @@ Which is why the feature-based dating on this page is not a second-best method. 
 
 Not a lookup table, but real decodable schemes on specific brands.
 
-**Schwinn stamped a two-letter date code** on the head tube or bottom bracket shell, running month and year: `AA` is January 1965, `BA` is February 1965, and onward. Raleigh's Nottingham factory stamped dates of its own. And 1980s and 1990s Taiwanese contract factories stamped a year and month prefix ahead of the sequential digits, so `G0392` reads as Giant, March 1992. <span class="src src-confirmed">Confirmed</span>
+**Schwinn stamped a two-letter date code** on the head tube or bottom bracket shell, running month and year: `AA` is January 1965, `BA` is February 1965, and onward. Raleigh's Nottingham factory stamped dates of its own. And 1980s and 1990s Taiwanese contract factories stamped a month and year prefix ahead of the sequential digits, so `G0392` reads as Giant, March 1992. <span class="src src-confirmed">Confirmed</span>
 
 Factory prefixes are verifiable on frames, `G` for Giant, `AL` for Anlun, `F` for Fairly, but **no brand published a cross-reference key**, and brands sub-contracted across several factories within a single model year. So a prefix tells you which factory, and not reliably which bike. <span class="src src-conflict">Unpublished</span>
 
@@ -217,9 +217,9 @@ The two systems share nothing useful. A threadless fork will not work with a thr
 <tr><th scope="col">Measurement</th><th scope="col">Old school</th><th scope="col">Current</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Steerer outside diameter</th><td class="num">25.40mm (1 inch)</td><td class="num">28.575mm (1 1/8 inch)</td><td>ISO 4210-2, Park Tool <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Steerer outside diameter</th><td class="num">25.40mm (1 inch)</td><td class="num">28.575mm (1 1/8 inch)</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Head tube outside diameter</th><td class="num">38.1mm</td><td class="num">45.0mm integrated</td><td>Odyssey, Snafu <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Steerer thread, where threaded</th><td class="num">1 inch x 24 TPI</td><td>None, threadless</td><td>ISO 4210-2, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
+<tr><th scope="row">Steerer thread, where threaded</th><td class="num">1 inch x 24 TPI</td><td>None, threadless</td><td>Sheldon Brown <span class="src src-single">Single source</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -369,13 +369,13 @@ That mixture is the identifying feature. A bike where every part agrees with eve
 :::
 
 ::: faq Q093 | When did BMX move from 1 inch threaded headsets to 1 1/8 integrated?
-Gradually, and this guide is not going to give you a year for it, because no primary source was found that supports one. The change happened in two separate steps that people often merge into one: threaded to threadless, which is about how the stem attaches and how the bearings are preloaded, and pressed cups to integrated, which is about how the bearings sit in the head tube. Steerer diameter grew across the same period.
+Gradually, and in two separate steps that people often merge into one: threaded to threadless, which is about how the stem attaches and how the bearings are preloaded, and pressed cups to integrated, which is about how the bearings sit in the head tube. Steerer diameter grew across the same period.
 
 What matters for buying is that the systems do not mix. A threadless fork will not run in a threaded headset, a quill stem will not clamp a plain steerer, and the diameters changed as well, so measure before you buy anything for an older frame.
 :::
 
 ::: faq Q094 | When did Mid bottom brackets take over from American?
-No year is published here, because none of the sources checked gave one. What is well supported is the sequence: American came first, Euro arrived as the first way to run three piece cranks in a threaded shell, Mid followed and kept the American bearing while doing away with the cups, and Spanish came after that as a lighter alternative. Sources credit FBM with introducing Mid, without a date.
+The dated adoption figures are in the transitions table above, from catalogues and model year specifications. What those dates describe is when Mid became normal on production bikes, not when it was invented. The sequence is well supported: American came first, Euro arrived as the first way to run three piece cranks in a threaded shell, Mid followed and kept the American bearing while doing away with the cups, and Spanish came after that as a lighter alternative. Sources credit FBM with introducing Mid, without a date.
 
 The single hard date anchor found in the research was a GSport article from June 2004 which described Spanish as still emerging at that point. That places Mid as already established by then and nothing more precise than that.
 
