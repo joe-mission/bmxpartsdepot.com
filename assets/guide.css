@@ -97,6 +97,12 @@ a{color:inherit}
 .btn.ghost:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.5);box-shadow:none}
 .btn.ghost-dark{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
 .btn.ghost-dark:hover{background:#fff;border-color:#c9ced6}
+/* The label is wrapped so the flex gap falls once, between the words and the
+   icon, rather than also between "Shop on" and "eBay". Those were separate
+   flex items, so that pair got the 10px gap plus a non-breaking space and read
+   as visibly wider than the gap before the icon. The space inside the wrapper
+   is a real space, so the button still reads "Shop on eBay" to a screen reader
+   and to copy and paste. */
 .btn.sm{padding:11px 18px;font-size:14px;border-radius:9px}
 
 /* ---------- wordmark ---------- */

@@ -204,6 +204,12 @@ a{color:inherit}
 .btn.ghost:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.5);box-shadow:none}
 .btn.ghost-dark{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
 .btn.ghost-dark:hover{background:#fff;border-color:#c9ced6;box-shadow:0 10px 24px -18px rgba(0,0,0,.6)}
+/* The label is wrapped so the flex gap falls once, between the words and the
+   icon, rather than also between "Shop on" and "eBay". Those were separate
+   flex items, so that pair got the 10px gap plus a non-breaking space and read
+   as visibly wider than the gap before the icon. The space inside the wrapper
+   is a real space, so the button still reads "Shop on eBay" to a screen reader
+   and to copy and paste. */
 .btn.sm{padding:11px 18px;font-size:14px;border-radius:9px}
 
 /* ============================================================
@@ -606,7 +612,7 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
       <a class="lnk" href="#process">Our Process</a>
       <a class="lnk" href="#contact">Contact</a>
       <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
-        <span class="hide-xs">Shop on&nbsp;</span>eBay
+        <span class="btn-label"><span class="hide-xs">Shop on </span>eBay</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       </a>
       <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu">
