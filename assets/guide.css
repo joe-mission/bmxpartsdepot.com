@@ -343,6 +343,11 @@ table.spec-table td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 .src-confirmed{background:rgba(0,164,230,.12);color:#00648c}
 .src-single{background:var(--paper-2);color:var(--muted)}
 .src-conflict{background:rgba(230,71,0,.12);color:#a33200}
+/* "Nobody publishes this" is not "sources disagree". It was wearing the
+   conflict orange, which made 27 badges read as site-wide disagreement when
+   only 7 were. Slate, deliberately unalarming: a gap that was looked for and
+   not found is an honest state, not a warning. 6.35 on white. */
+.src-gap{background:rgba(100,116,139,.14);color:#4a5568}
 
 /* ============================================================
    CALIPER VERIFICATION CALLOUT

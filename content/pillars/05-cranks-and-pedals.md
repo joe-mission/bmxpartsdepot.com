@@ -139,7 +139,7 @@ On splines, 8-spline and 48-spline are both real and both current, with 8-spline
 
 Bolt and hex sizes beyond the table above vary and are largely unpublished. Park Tool describes 8mm as common on BMX three-piece cranks but says so generically, covering "many" cranks while noting some makes need a proprietary puller. That is not a per-brand figure and is not published as one.
 
-BSD and Eclat both describe their cranks as investment cast pinch designs without stating a thread pitch anywhere, and no manufacturer publishes machining tolerance classes for spindle diameters. Both were checked twice. <span class="src src-conflict">Unpublished</span>
+BSD and Eclat both describe their cranks as investment cast pinch designs without stating a thread pitch anywhere, and no manufacturer publishes machining tolerance classes for spindle diameters. Both were checked twice. <span class="src src-gap">Unpublished</span>
 
 ::: video Removing and Installing 3-piece Cranks and Sprockets, Step By Step | QUhphm6qVcc
 The order the parts go on, how far the arm should sit, and what the splines look like once the arm is off.
@@ -243,7 +243,7 @@ The millimetre figures are the inch designations converted, not measurements tak
 
 **Adapters exist, and that is not the same as being endorsed.** Several BMX parts companies manufacture and sell 1/2 inch to 9/16 inch pedal adapters specifically for BMX use, so they are a real commercial product rather than a workaround somebody invented. What could not be found is any statement from a crank or pedal manufacturer recommending them. So: they exist, they are sold for this, and nobody who makes the parts they go between has put their name to them. Decide accordingly, and remember the adapter puts more leverage on the same soft boss.
 
-Tech support documentation across ten pedal and crank manufacturers was audited and **not one of them says anything about adapters, for or against.** Not a warning, not an endorsement. The silence is consistent and it is the whole answer. <span class="src src-conflict">Unpublished</span>
+Tech support documentation across ten pedal and crank manufacturers was audited and **not one of them says anything about adapters, for or against.** Not a warning, not an endorsement. The silence is consistent and it is the whole answer. <span class="src src-gap">Unpublished</span>
 
 ::: video Pedal Identification | EWyj-ktlcYc
 Where the L and R markings hide, and the thread direction check for when they have worn away. Pedal threading is the same across cycling, so this applies directly.

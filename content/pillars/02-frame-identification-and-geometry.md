@@ -86,7 +86,7 @@ Two caveats that matter more than the numbers.
 
 Roughly, then: **chromoly yields at somewhere near twice the load hi-ten does, and a hi-ten frame carries an extra pound and a half of steel to be strong enough anyway.** That is the honest version of what the sticker is telling you.
 
-**Two related gaps that turned out to have the same cause.** Nobody publishes a spec sheet for hi-ten bicycle tubing as sold, and nobody publishes a stripped frame weight for a hi-ten 20 inch frame either. The reason is the same in both cases: **hi-ten frames are not sold as frames.** They are welded chassis inside entry-level complete bikes, from Haro, GT, Eastern, Kink and Fit among others, and no manufacturer catalogues one as a standalone product. No product means no spec sheet and no published weight. <span class="src src-conflict">Unpublished</span>
+**Two related gaps that turned out to have the same cause.** Nobody publishes a spec sheet for hi-ten bicycle tubing as sold, and nobody publishes a stripped frame weight for a hi-ten 20 inch frame either. The reason is the same in both cases: **hi-ten frames are not sold as frames.** They are welded chassis inside entry-level complete bikes, from Haro, GT, Eastern, Kink and Fit among others, and no manufacturer catalogues one as a standalone product. No product means no spec sheet and no published weight. <span class="src src-gap">Unpublished</span>
 
 That is worth knowing rather than mourning. It also explains the asymmetry in the table above, where the chromoly column comes from named frames and the hi-ten column has to be inferred.
 
@@ -159,8 +159,8 @@ Dropout plate thickness is different, because modern frames do publish it.
 <tr><th scope="col">Figure</th><th scope="col">Value</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Rear dropout slot width, any axle</th><td>Not published by any manufacturer audited</td><td>Nine brands checked <span class="src src-conflict">Unpublished</span></td></tr>
-<tr><th scope="row">Front fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Rear dropout slot width, any axle</th><td>Not published by any manufacturer audited</td><td>Nine brands checked <span class="src src-gap">Unpublished</span></td></tr>
+<tr><th scope="row">Front fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-gap">Unpublished</span></td></tr>
 <tr><th scope="row">Dropout plate thickness, modern</th><td class="num">5 to 6mm, or 7.5mm cast</td><td>S&amp;M, BSD <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Dropout plate thickness, old school</th><td class="num">3.18 to 4.76mm (1/8 to 3/16 inch) stamped plate</td><td>Skyway, Redline, Hutch archives <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">U-brake post spacing</th><td class="num">82 to 85mm as built, 75 to 85mm accommodated</td><td>Odyssey, Dia-Compe <span class="src src-confirmed">Confirmed</span></td></tr>
@@ -212,7 +212,7 @@ This is the number BMX actually sizes frames by, so it is the one to ask a selle
 <tr><th scope="row">Park</th><td class="num">20.5 to 20.8 inch</td><td>Named production frames <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Dirt</th><td class="num">21.0 to 21.5 inch</td><td>S&amp;M Credence M.O.D. <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Race</th><td class="num">20.5 to 21.75 inch</td><td>Supercross Envy RS7 <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Frame reach</th><td>Not published on freestyle frames</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Frame reach</th><td>Not published on freestyle frames</td><td>Five brands checked <span class="src src-gap">Unpublished</span></td></tr>
 </tbody>
 </table>
 </div>

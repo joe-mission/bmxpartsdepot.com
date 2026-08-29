@@ -328,8 +328,8 @@ A **unicrown fork**, where the legs bend inward and meet the steerer directly wi
 <tr><th scope="row">Front axle, modern</th><td class="num">3/8 inch (9.525mm) or 10mm</td><td>Park Tool, Shimano <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Front axle, old school</th><td class="num">5/16 inch (7.94mm)</td><td>Park Tool, Skyway archives <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Front hub over-locknut dimension</th><td class="num">100mm</td><td>Profile Racing, Odyssey <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five fork brands checked <span class="src src-conflict">Unpublished</span></td></tr>
-<tr><th scope="row">Minimum peg thread engagement</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Fork dropout slot width</th><td>Not published by any manufacturer audited</td><td>Five fork brands checked <span class="src src-gap">Unpublished</span></td></tr>
+<tr><th scope="row">Minimum peg thread engagement</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-gap">Unpublished</span></td></tr>
 </tbody>
 </table>
 </div>

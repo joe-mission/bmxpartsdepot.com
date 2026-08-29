@@ -40,7 +40,7 @@ Here is why the boundaries genuinely resist being pinned down.
 
 So this page treats era as a reading taken from the parts. That is both more honest and more useful, because when somebody hands you a frame it is the parts you have in front of you and not the year.
 
-**On the last of those questions there is already an answer, and it is no.** Support documentation across twelve BMX frame manufacturers was audited and none defines the eras. No governing body does either. The terms are collector usage, circulated by communities like BMX Society and VintageBMX, which is why this page describes eras by their features and why the era chips across this site carry no dates. Three research passes have now looked. <span class="src src-conflict">Unpublished</span>
+**On the last of those questions there is already an answer, and it is no.** Support documentation across twelve BMX frame manufacturers was audited and none defines the eras. No governing body does either. The terms are collector usage, circulated by communities like BMX Society and VintageBMX, which is why this page describes eras by their features and why the era chips across this site carry no dates. Three research passes have now looked. <span class="src src-gap">Unpublished</span>
 
 The year ranges themselves stay open below, and may stay open permanently.
 
@@ -48,7 +48,7 @@ The year ranges themselves stay open below, and may stay open permanently.
 
 This is the answer, and it is worth stating as one rather than leaving blank.
 
-**Three independent research passes have looked for a primary source defining the era boundaries and none exists.** Contemporary catalogue archives, standards documents and racing sanctioning body rulebooks were all checked. The commonly quoted ranges, roughly pre-1988 for old school, 1988 to 2000 for mid school and 2001 onward for modern, are collector convention circulated by communities like BMX Society and VintageBMX. No manufacturer, standards organisation or governing body has ever published them. <span class="src src-conflict">Unpublished</span>
+**Three independent research passes have looked for a primary source defining the era boundaries and none exists.** Contemporary catalogue archives, standards documents and racing sanctioning body rulebooks were all checked. The commonly quoted ranges, roughly pre-1988 for old school, 1988 to 2000 for mid school and 2001 onward for modern, are collector convention circulated by communities like BMX Society and VintageBMX. No manufacturer, standards organisation or governing body has ever published them. <span class="src src-gap">Unpublished</span>
 
 **A number that everyone quotes and nobody can source is worth knowing about.** It does not make the terms useless, it makes them vocabulary rather than fact, and this site treats them accordingly.
 
@@ -135,7 +135,7 @@ BMX serial numbers are typically stamped under the bottom bracket shell, sometim
 
 So the honest answer is that a serial number is useful for two things: proving a specific bike is a specific bike, and matching against a manufacturer's own records if that manufacturer still exists and still holds them. It is not a year lookup.
 
-**No BMX manufacturer publishes a serial dating scheme.** Twelve brands' support documentation was audited and none maintains a public lookup. Some factory stamps appear to carry dates, but no brand states that as a rule holding across production runs, so a serial can suggest a year and cannot establish one. <span class="src src-conflict">Unpublished</span>
+**No BMX manufacturer publishes a serial dating scheme.** Twelve brands' support documentation was audited and none maintains a public lookup. Some factory stamps appear to carry dates, but no brand states that as a rule holding across production runs, so a serial can suggest a year and cannot establish one. <span class="src src-gap">Unpublished</span>
 
 Which is why the feature-based dating on this page is not a second-best method. It is the better one.
 
@@ -145,7 +145,7 @@ Not a lookup table, but real decodable schemes on specific brands.
 
 **Schwinn stamped a two-letter date code** on the head tube or bottom bracket shell, running month and year: `AA` is January 1965, `BA` is February 1965, and onward. Raleigh's Nottingham factory stamped dates of its own. And 1980s and 1990s Taiwanese contract factories stamped a month and year prefix ahead of the sequential digits, so `G0392` reads as Giant, March 1992. <span class="src src-confirmed">Confirmed</span>
 
-Factory prefixes are verifiable on frames, `G` for Giant, `AL` for Anlun, `F` for Fairly, but **no brand published a cross-reference key**, and brands sub-contracted across several factories within a single model year. So a prefix tells you which factory, and not reliably which bike. <span class="src src-conflict">Unpublished</span>
+Factory prefixes are verifiable on frames, `G` for Giant, `AL` for Anlun, `F` for Fairly, but **no brand published a cross-reference key**, and brands sub-contracted across several factories within a single model year. So a prefix tells you which factory, and not reliably which bike. <span class="src src-gap">Unpublished</span>
 
 ### The three transitions worth dating {#transitions}
 
@@ -299,13 +299,13 @@ What we will say about our own listings is simple. Era gets described as what th
 </thead>
 <tbody>
 <tr><th scope="row">Bottom bracket standard order</th><td>American, then Euro, then Mid, then Spanish</td><td>Multiple sources agree on the sequence, none give years <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Era year boundaries</th><td>Not published</td><td>No primary source found <span class="src src-conflict">Unverified</span></td></tr>
+<tr><th scope="row">Era year boundaries</th><td>Not published</td><td>No primary source found <span class="src src-gap">Unverified</span></td></tr>
 <tr><th scope="row">Spanish bottom bracket still emerging in June 2004</th><td>Published, as the one hard date anchor found</td><td>GSport article dated June 2004 <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Mid bottom bracket credited to FBM</th><td>Published as attribution, with no year</td><td>BMX Union <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">One-piece cranks in a large American shell</th><td>Published</td><td>Sheldon Brown, Park Tool, Dans Comp <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">American cup thread for one-piece cranks</th><td>24 TPI common, 28 TPI on some older Schwinn and Mongoose</td><td>Albes, BMXGuru <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Modern rear dropout spacing</th><td>110mm nominal, real frames often measure slightly under</td><td>Odyssey, Profile, Halo <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Whether old school rear spacing differed from modern</th><td>Not published in either direction</td><td>No usable source found <span class="src src-conflict">Unverified</span></td></tr>
+<tr><th scope="row">Whether old school rear spacing differed from modern</th><td>Not published in either direction</td><td>No usable source found <span class="src src-gap">Unverified</span></td></tr>
 </tbody>
 </table>
 </div>

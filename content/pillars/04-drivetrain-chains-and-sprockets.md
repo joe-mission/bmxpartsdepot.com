@@ -288,7 +288,7 @@ For sprockets that are not spline drive, the hole in the middle has to suit the 
 <tr><th scope="row">24mm spindle</th><td class="num">nominally 15/16 inch, which is 23.81mm</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Common sprocket bore</th><td>Frequently bored for 24mm, with an adapter reducing to 22mm or 19mm. Some are simply bored 19mm.</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Race spindle sizes beyond 24mm</th><td class="num">30mm and 35mm exist in BMX race</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Spline drive spline counts and dimensions</th><td>Not published here</td><td>System-specific, no source checked <span class="src src-conflict">Unverified</span></td></tr>
+<tr><th scope="row">Spline drive spline counts and dimensions</th><td>Not published here</td><td>System-specific, no source checked <span class="src src-gap">Unverified</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -367,7 +367,7 @@ The practical rule for a used bike: if the chain is visibly worn, replace the ch
 <tbody>
 <tr><th scope="row">Vertical chain play at mid span</th><td class="num">12 to 25mm (1/2 to 1 inch)</td><td>Park Tool, Dans Comp workshop guidance <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Chain worn out at</th><td class="num">0.75 percent elongation</td><td>ISO 606, Park Tool, KMC <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Rear axle torque</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-conflict">Unpublished</span></td></tr>
+<tr><th scope="row">Rear axle torque</th><td>Not published by any manufacturer audited</td><td>Five brands checked <span class="src src-gap">Unpublished</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -378,7 +378,7 @@ Chain play is workshop guidance, not a specification. Aim for some slack. A chai
 
 **On rear axle torque, nobody publishes a figure and this page will not invent one.** Odyssey, Profile, BSD, Sunday and Shadow Conspiracy were all checked, manuals and spec sheets, and none states a torque for a 14mm axle nut or a 3/8 inch axle bolt. A figure does circulate informally in the race world, and it is deliberately not repeated here, because an unsourced number for the fastener holding your rear wheel in is worse than no number. This is the same situation as crank bolt torque on the cranks page, and it gets the same treatment.
 
-**Three passes have now failed to find a published rear axle torque figure**, across Odyssey, Sunday, Profile, BSD, Cinema and Shadow Conspiracy. Manuals and spec sheets both. This is the same result as crank bolt torque on the [cranks guide](/guides/bmx-cranks-and-pedals/#pinch-bolt), and at this point it is a characteristic of the industry rather than a gap in this research. <span class="src src-conflict">Unpublished</span>
+**Three passes have now failed to find a published rear axle torque figure**, across Odyssey, Sunday, Profile, BSD, Cinema and Shadow Conspiracy. Manuals and spec sheets both. This is the same result as crank bolt torque on the [cranks guide](/guides/bmx-cranks-and-pedals/#pinch-bolt), and at this point it is a characteristic of the industry rather than a gap in this research. <span class="src src-gap">Unpublished</span>
 
 ## Drive side and non-drive side {#non-drive-side}
 

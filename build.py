@@ -115,7 +115,7 @@ EM_RE = re.compile(r"(?<!\*)\*([^*]+)\*(?!\*)")
 # as visible text on nine pages. Deliberately narrow: this matches that span and
 # nothing else, so authoring raw HTML inline is still not a thing you can do.
 SRC_BADGE_RE = re.compile(
-    r'<span class="src (src-(?:confirmed|single|conflict))">([^<>]{1,40})</span>'
+    r'<span class="src (src-(?:confirmed|single|conflict|gap))">([^<>]{1,40})</span>'
 )
 
 

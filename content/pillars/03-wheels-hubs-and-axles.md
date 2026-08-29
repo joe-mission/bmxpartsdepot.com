@@ -145,7 +145,7 @@ That is a genuinely useful split for buying used: **on an aftermarket hub, sourc
 
 One correction to a common assumption, including one this guide previously made. **The driver does not thread into the hub shell.** The driver body drops in. What threads into the shell is the internal ratchet ring, and manufacturers do not publish its thread diameter or pitch either.
 
-Checked twice now across Profile, Odyssey, BSD and Eclat, technical archives and overhaul guides both. **Neither the driver spline geometry nor the ratchet ring thread is published by anyone.** The interfaces are proprietary and undocumented, which is why matching by hub name is not laziness, it is the only method available. <span class="src src-conflict">Unpublished</span>
+Checked twice now across Profile, Odyssey, BSD and Eclat, technical archives and overhaul guides both. **Neither the driver spline geometry nor the ratchet ring thread is published by anyone.** The interfaces are proprietary and undocumented, which is why matching by hub name is not laziness, it is the only method available. <span class="src src-gap">Unpublished</span>
 
 ## Axle diameter, male axles and female axles {#bmx-axle-diameter}
 
@@ -237,8 +237,8 @@ Measure it across the outermost faces of the locknuts, not across the flanges an
 <tbody>
 <tr><th scope="row">Modern BMX rear dropout spacing</th><td class="num">110mm nominal</td><td>Odyssey tech article, Profile Elite hub spec, Halo Wheels spacing reference <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">What frames actually measure</th><td class="num">commonly slightly under, around 108mm</td><td>Odyssey's own article describes a frame at 108mm <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Old school BMX rear spacing</th><td>Not published here</td><td>No acceptable source found, in either direction <span class="src src-conflict">Unverified</span></td></tr>
-<tr><th scope="row">Rear dropout slot width</th><td>Not published here</td><td>No source found gives a figure <span class="src src-conflict">Unverified</span></td></tr>
+<tr><th scope="row">Old school BMX rear spacing</th><td>Not published here</td><td>No acceptable source found, in either direction <span class="src src-gap">Unverified</span></td></tr>
+<tr><th scope="row">Rear dropout slot width</th><td>Not published here</td><td>No source found gives a figure <span class="src src-gap">Unverified</span></td></tr>
 </tbody>
 </table>
 </div>

@@ -124,9 +124,21 @@ did on nine pages until it was caught. `SRC_BADGE_RE` in `build.py` matches that
 span and only that span: the three known classes, a short plain-text label, no
 attributes. Any other tag mid-paragraph still escapes, deliberately.
 
-Three labels currently ride the `src-conflict` style: Unpublished, Unverified
-and Conflicting. They mean different things and only the third is a conflict.
-Worth splitting when someone touches this next.
+**Four badge styles, and the difference between the last two matters.**
+`src-confirmed` (two or more sources), `src-single` (one), `src-conflict`
+(sources disagree, and the page gives the range), and `src-gap` (nobody
+publishes it, labelled Unpublished or Unverified).
+
+`src-gap` exists because those twenty badges used to wear the conflict orange.
+Twenty-seven orange badges read as a site full of disagreement when only seven
+were, and the mislabelling ran downstream: the derivation checks
+`src-conflict` first, so ten terms with perfectly good sources plus one
+unsourceable figure were being recorded as `conflict` in the registry. Fixing
+the style fixed the coverage table too, and conflict fell from thirteen terms
+to three.
+
+`src-gap` is slate rather than an alarm colour, deliberately. A figure that was
+looked for and not found is an honest state, not a warning.
 
 A `## Heading {#anchor}` whose anchor matches a registry slug is what makes the
 hub's A-Z link deep-link into that section. Claiming a term in frontmatter without
