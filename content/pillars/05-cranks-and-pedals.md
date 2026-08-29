@@ -176,7 +176,7 @@ The one thing that catches people out with calipers: **a 24mm spindle is a round
 Crank arm length is measured from the **centre of the spindle to the centre of the pedal thread**, not from the outside of the arm. Shorter arms clear obstacles better and spin up faster, longer arms give more leverage from a standstill.
 :::
 
-The tradeoff is easy to describe and hard to put numbers on honestly. Shorter arms sweep a smaller circle, so the pedals sit further from the ground at the bottom of the stroke and further from the front tyre at the top. That matters for grinding, for pedalling out of a transition, and for anyone who has clipped a pedal on a ledge. Longer arms give you more torque for the same effort at the pedal, which is why race setups and taller riders tend towards the long end.
+The tradeoff is easy to describe and hard to put numbers on honestly. Shorter arms sweep a smaller circle, so the pedals sit further from the ground at the bottom of the stroke and further from the front tire at the top. That matters for grinding, for pedalling out of a transition, and for anyone who has clipped a pedal on a ledge. Longer arms give you more torque for the same effort at the pedal, which is why race setups and taller riders tend towards the long end.
 
 What nobody should do is copy a number off a chart and assume it. Two riders the same height ride wildly different lengths depending on what they ride and what they are used to, and the marking on a used crankset sits on a face you cannot see with the crank installed (more on where to find it below). **Measure the set in front of you rather than trusting the listing.**
 
@@ -309,7 +309,7 @@ You are changing the adapter around the bearing rather than the bearing itself, 
 :::
 
 ::: faq Q010 | What crank arm length should I run on a BMX bike?
-Length is measured from the centre of the spindle to the centre of the pedal thread. Shorter arms keep the pedals further from the ground and further from the front tyre, which suits grinding and tight riding. Longer arms give more leverage from a standstill, which is why race and taller riders lean that way.
+Length is measured from the centre of the spindle to the centre of the pedal thread. Shorter arms keep the pedals further from the ground and further from the front tire, which suits grinding and tight riding. Longer arms give more leverage from a standstill, which is why race and taller riders lean that way.
 
 There is no single right answer and no reliable height chart. If you already ride something you get on with, measure it and match it. The lengths actually sold are listed in [crank arm length](#crank-arm-length), running 160 to 175mm on freestyle with 175mm the long-standing default, and much wider on race. What this guide will not do is recommend one for you, because no manufacturer publishes a fitting rule and the height charts in circulation are somebody's estimate that got copied.
 :::

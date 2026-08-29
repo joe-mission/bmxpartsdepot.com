@@ -524,7 +524,7 @@ Sitemap: %s/sitemap.xml
         "Where a figure could not be traced to a manufacturer specification or a published "
         "standard, the page says so in place of the number rather than repeating a figure "
         "that circulates without a source. Those gaps are deliberate and some of them are "
-        "permanent: no BMX brand publishes a tyre casing TPI or a Shore A durometer, and the "
+        "permanent: no BMX brand publishes a tire casing TPI or a Shore A durometer, and the "
         "old school, mid school and modern era year boundaries could not be traced to any "
         "primary source, so this site describes eras by their features and publishes no year "
         "ranges for them. An absent figure here means it was looked for and not found.",

@@ -118,13 +118,13 @@ The useful thing about ratio is that it is what actually matters. **Two complete
 
 Gear ratio on its own does not let you compare bikes with different wheel sizes, because the same ratio on a bigger wheel covers more ground. Gear inches fixes that by multiplying the ratio by the wheel diameter in inches, which gives you the diameter of a direct-drive wheel that would give the same gear.
 
-The number people quote is a rough one, because it uses the nominal wheel size rather than the actual rolled diameter of the tyre you have fitted. It is a comparison tool, not a measurement. What it is genuinely good for is comparing your current bike to a bike you are thinking about, on the same arithmetic.
+The number people quote is a rough one, because it uses the nominal wheel size rather than the actual rolled diameter of the tire you have fitted. It is a comparison tool, not a measurement. What it is genuinely good for is comparing your current bike to a bike you are thinking about, on the same arithmetic.
 
 We are not printing a full gear inch chart, because it is trivial arithmetic once you have the wheel figure and the two conventions above: tooth count divided by cog count, multiplied by wheel diameter in inches. Do it with the figure that matches whatever chart you are comparing against.
 
 **A 20 inch BMX wheel is not 20 inches, and that is why gear charts disagree.**
 
-The rim is ISO 406, and a modern 2.25 to 2.40 inch street tyre puts the rolled diameter at roughly **19.4 to 19.6 inches**, not 20. So there are two conventions in circulation and both are in use:
+The rim is ISO 406, and a modern 2.25 to 2.40 inch street tire puts the rolled diameter at roughly **19.4 to 19.6 inches**, not 20. So there are two conventions in circulation and both are in use:
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -338,7 +338,7 @@ Park Tool on what chainline is and how to measure it. The principle is identical
 
 Too tight and you are loading the bearings in the hub and the bottom bracket continuously, which wears both and makes the bike feel dead to pedal. Too loose and the chain slaps, wears the teeth, and comes off when you land.
 
-The adjustment method is to loosen both axle nuts or bolts, pull the wheel back until the tension is right, make sure the wheel is square in the frame, then tighten. Getting it square is the part that takes the time. Pull one side back further than the other and the wheel sits crooked, which puts the chainline out and makes the tyre rub.
+The adjustment method is to loosen both axle nuts or bolts, pull the wheel back until the tension is right, make sure the wheel is square in the frame, then tighten. Getting it square is the part that takes the time. Pull one side back further than the other and the wheel sits crooked, which puts the chainline out and makes the tire rub.
 
 ### Tensioners
 
@@ -431,7 +431,7 @@ The ratios in current use by discipline are in the table under [gear ratio and g
 ::: faq Q033 | How do BMX gear ratios compare in gear inches?
 Gear inches takes the ratio, sprocket teeth divided by driver teeth, and multiplies it by the wheel diameter in inches. The result is the diameter a direct-drive wheel would need to give the same gear, which makes setups with different wheel sizes comparable.
 
-It is a comparison tool rather than a measurement. The convention uses a nominal wheel size rather than the actual rolled diameter of the tyre fitted, so two bikes with the same gear inch figure and different tyres are not quite identical on the road.
+It is a comparison tool rather than a measurement. The convention uses a nominal wheel size rather than the actual rolled diameter of the tire fitted, so two bikes with the same gear inch figure and different tires are not quite identical on the road.
 
 There is no chart on this page yet. The arithmetic is trivial, but the wheel diameter figure that goes into it needs sourcing rather than assuming, and a chart built on an unverified constant is worse than no chart.
 :::

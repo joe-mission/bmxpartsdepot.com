@@ -122,7 +122,7 @@ Gussets are also a dating cue. Big obvious external plate gussets read older, an
 
 ### The chainstay yoke
 
-Down at the other end, the **chainstay yoke** is the shaped bridge or plate that joins the two chainstays near the bottom bracket. It is doing structural work, but the thing it decides for a buyer is clearance: how fat a tyre will fit, and how the sprocket sits. A frame with a tight yoke and a frame with a deeply recessed one are not going to take the same tyre, whatever the rest of the geometry says.
+Down at the other end, the **chainstay yoke** is the shaped bridge or plate that joins the two chainstays near the bottom bracket. It is doing structural work, but the thing it decides for a buyer is clearance: how fat a tire will fit, and how the sprocket sits. A frame with a tight yoke and a frame with a deeply recessed one are not going to take the same tire, whatever the rest of the geometry says.
 
 ## Dropouts, slot width and brake mounts {#dropout-slot-width}
 
@@ -235,7 +235,7 @@ One frame with all four measurements drawn on, showing which are horizontal and 
 
 Short chainstays pull the rear wheel in under the rider. Weight shifts back, the front comes up more easily, and the bike turns more sharply. That is why street and park frames trend short. Long chainstays push the wheel back, which makes the bike more stable at speed, easier to land on and better behaved through a corner under power. That is why race frames trend long.
 
-The tradeoffs are real in both directions. Very short stays cost you tyre clearance and can make the bike twitchy under a hard pedal. Long stays make manuals and pulling up hard work. There is no correct number, only a number that suits how the bike is ridden.
+The tradeoffs are real in both directions. Very short stays cost you tire clearance and can make the bike twitchy under a hard pedal. Long stays make manuals and pulling up hard work. There is no correct number, only a number that suits how the bike is ridden.
 
 Chainstay length also drives chain length, which is why it belongs next to the drivetrain guide rather than sitting alone in a geometry chart.
 
@@ -267,7 +267,7 @@ These are ranges built by reading published geometry charts on named frames, not
 
 Two things to hold on to. **Chainstay is where street and race genuinely diverge**, by a good inch and a half, and it is the number that most changes how a bike feels. **Seat tube angle barely moves at all**, sitting in a half-degree band across every brand checked, freestyle and race, which is why nobody talks about it.
 
-**Bottom bracket height is a measurement with a tyre in it.** The figures above assume a standard 20 x 2.25 tyre. Fit a taller or a flatter tyre and the number moves without anything on the frame changing, so a BB height quoted without a tyre size is not really a frame specification.
+**Bottom bracket height is a measurement with a tire in it.** The figures above assume a standard 20 x 2.25 tire. Fit a taller or a flatter tire and the number moves without anything on the frame changing, so a BB height quoted without a tire size is not really a frame specification.
 
 **Bottom bracket height is measured to the centre of the shell**, the spindle axis, not to the bottom of it. Every geometry chart checked uses that convention, so the figures above are comparable between brands. Worth knowing because half a shell diameter is a real difference on a number quoted to a tenth of an inch. <span class="src src-confirmed">Confirmed</span>
 
@@ -280,7 +280,7 @@ Two things to hold on to. **Chainstay is where street and race genuinely diverge
 **Standover height is how high the top tube sits above the ground at its lowest useful point. Wheelbase is the distance between the front and rear axle centres.** Standover is a practical fit check. Wheelbase is a quick way to compare how long two frames actually are once the fork is in.
 :::
 
-Standover is straightforward: stand over the bike, see whether the top tube is in the way. On a BMX bike, where the whole point is being able to move around over the frame, it is a check worth doing in person and worth reporting honestly in a listing. Measure it with the wheels and tyres on, because tyre size changes it.
+Standover is straightforward: stand over the bike, see whether the top tube is in the way. On a BMX bike, where the whole point is being able to move around over the frame, it is a check worth doing in person and worth reporting honestly in a listing. Measure it with the wheels and tires on, because tire size changes it.
 
 Wheelbase is the more useful comparison number of the two, and it is the one people forget exists. Two frames with the same top tube length can have quite different wheelbases if their chainstays or head angles differ, and wheelbase is what you actually feel. It is measured axle centre to axle centre with the bike built, which is its practical drawback: you cannot take it on a bare frame.
 
@@ -354,12 +354,12 @@ None of this beats a sticker or a catalogue. If the frame is a known model, look
 ## Chainstay yoke, and what fails there {#chainstay-yoke}
 
 ::: quickanswer
-The **chainstay yoke** is the plate or wishbone joining the two chainstays just behind the bottom bracket. It exists to give the rear tyre room, and it is one of the highest stress areas on a BMX frame.
+The **chainstay yoke** is the plate or wishbone joining the two chainstays just behind the bottom bracket. It exists to give the rear tire room, and it is one of the highest stress areas on a BMX frame.
 :::
 
 Three things happen to a yoke and all three are worth looking for on a used frame.
 
-**Tyre rub.** A wide tyre in a tight frame wears a bright polished patch, and given long enough it will wear through the tube wall. A yoke with a shiny worn stripe on it has been running a tyre too big for the frame, and the question is how deep it went.
+**Tire rub.** A wide tire in a tight frame wears a bright polished patch, and given long enough it will wear through the tube wall. A yoke with a shiny worn stripe on it has been running a tire too big for the frame, and the question is how deep it went.
 
 **Chain suck gouges.** A dropped chain gets dragged between sprocket and stay and takes bites out of the yoke plate. Usually cosmetic, occasionally not.
 
@@ -450,7 +450,7 @@ How easily the front wheel comes up, and how stable the bike is. Short chainstay
 
 Longer chainstays push the rear wheel back, which makes the bike more stable at speed, calmer under hard pedalling and easier to land on. That suits racing and trails.
 
-Chainstay length also sets how much chain you need and how much tyre clearance you have, so it is not purely a handling number.
+Chainstay length also sets how much chain you need and how much tire clearance you have, so it is not purely a handling number.
 :::
 
 ::: faq Q054 | Where is the serial number on a BMX frame?

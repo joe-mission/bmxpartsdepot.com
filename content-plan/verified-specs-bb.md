@@ -315,14 +315,14 @@ This is the distance between the inner faces of the rear dropouts, also called f
 
 ---
 
-## 5. Wheels: ISO 406, ISO 451 and tyre size marking
+## 5. Wheels: ISO 406, ISO 451 and tire size marking
 
 **Claim: ISO 406 is the bead seat diameter of the standard 20 inch freestyle/street BMX wheel**
 
 - Answer: 406 mm.
 - Sources:
-  - [ISO 5775](https://en.wikipedia.org/wiki/ISO_5775), the bicycle tyre and rim sizing standard (Wikipedia article describing its designation system, standard text itself paywalled)
-  - ETRTO designation system, as transcribed at [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tyre and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html), which lists 406 mm as a standard BMX/freestyle bead seat diameter
+  - [ISO 5775](https://en.wikipedia.org/wiki/ISO_5775), the bicycle tire and rim sizing standard (Wikipedia article describing its designation system, standard text itself paywalled)
+  - ETRTO designation system, as transcribed at [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tire and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html), which lists 406 mm as a standard BMX/freestyle bead seat diameter
 - Status: `CONFIRMED`
 - Note: this is the same figure already recorded in this file's rim-dimensions context and on the site's rim dimensions table; restated here because ISO 406 is now also a standalone term entry.
 
@@ -330,33 +330,33 @@ This is the distance between the inner faces of the rear dropouts, also called f
 
 - Answer: 451 mm, and the two sizes do not interchange in either direction.
 - Sources:
-  - [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tyre and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html): lists 451 mm as a separate ISO/ETRTO bead seat diameter from 406 mm.
+  - [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tire and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html): lists 451 mm as a separate ISO/ETRTO bead seat diameter from 406 mm.
   - Sheldon Brown, ["Tire Sizing Systems"](https://www.sheldonbrown.com/tire-sizing.html): lists 451 mm bead seat diameter separately from 406 mm, describing 451 mm applications as including "juvenile lightweights" and "BMX for light riders" alongside some folding bikes and recumbents.
 - Status: `CONFIRMED`
-- Non-interchangeability itself is a direct consequence of the two being different bead seat diameters on the same standard (a tyre bead seats to one diameter only), not a separately sourced claim.
+- Non-interchangeability itself is a direct consequence of the two being different bead seat diameters on the same standard (a tire bead seats to one diameter only), not a separately sourced claim.
 
-**Claim: ISO 451 is currently used on real, current-production BMX race tyres, not just a theoretical standard entry**
+**Claim: ISO 451 is currently used on real, current-production BMX race tires, not just a theoretical standard entry**
 
-- Answer: Tioga sells its Fastr-X and PowerBlock BMX race tyres in ISO 451, in 1-1/8 inch and 1-3/8 inch widths.
+- Answer: Tioga sells its Fastr-X and PowerBlock BMX race tires in ISO 451, in 1-1/8 inch and 1-3/8 inch widths.
 - Sources:
-  - Dan's Comp product listings for Tioga Fastr-X and PowerBlock tyres in 451 sizing (retailer product data, evidencing that these tyres are sold and marked as ISO 451, not evidencing the ISO 451 dimension itself, which is sourced separately above)
+  - Dan's Comp product listings for Tioga Fastr-X and PowerBlock tires in 451 sizing (retailer product data, evidencing that these tires are sold and marked as ISO 451, not evidencing the ISO 451 dimension itself, which is sourced separately above)
 - Status: `SINGLE SOURCE`
-- Caution: this claim is about current market availability of a specific product line, not about the ISO 451 standard itself. Tioga's own site did not surface a page confirming the ISO 451 code directly during this research pass, so the "sold as 451" claim rests on the retailer listing alone. If Tioga publishes its own spec page for these tyres, that would upgrade this to a manufacturer-sourced claim.
+- Caution: this claim is about current market availability of a specific product line, not about the ISO 451 standard itself. Tioga's own site did not surface a page confirming the ISO 451 code directly during this research pass, so the "sold as 451" claim rests on the retailer listing alone. If Tioga publishes its own spec page for these tires, that would upgrade this to a manufacturer-sourced claim.
 
-**Claim: decimal inch tyre markings (e.g. 20 x 1.75) indicate ISO 406, fractional inch markings (e.g. 20 x 1 3/8) indicate ISO 451**
+**Claim: decimal inch tire markings (e.g. 20 x 1.75) indicate ISO 406, fractional inch markings (e.g. 20 x 1 3/8) indicate ISO 451**
 
 - Answer: decimal inch notation maps to 406 mm bead seat, fractional inch notation maps to 451 mm bead seat. Both are commonly labeled "20 inch," which is the trap.
 - Sources:
-  - [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tyre and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html): a direct, unmerged transcription of the ISO 5775 size table showing decimal-inch markings under the 406 mm bead seat rows and fractional-inch markings under the 451 mm bead seat rows.
+  - [cl.cam.ac.uk (Markus Kuhn), "ISO 5775 bicycle tire and rim sizes"](https://www.cl.cam.ac.uk/~mgk25/iso-5775.html): a direct, unmerged transcription of the ISO 5775 size table showing decimal-inch markings under the 406 mm bead seat rows and fractional-inch markings under the 451 mm bead seat rows.
   - Sheldon Brown, ["Tire Sizing Systems"](https://www.sheldonbrown.com/tire-sizing.html): corroborates the same decimal/fractional split between 406 mm and 451 mm.
 - Status: `CONFIRMED`
 - Research note: an initial fetch of Wikipedia's ISO 5775 article returned a summarized table that appeared to merge decimal and fractional markings under both diameters, which would have contradicted this claim. That summary was not trusted as authoritative (likely an artifact of table-summarization) and was superseded by the direct, row-by-row cl.cam.ac.uk transcription above, which is unambiguous. A cycling blog (Bike Gremlin) also states this same decimal/fractional split, but is excluded from citation here as a non-primary source per this site's sourcing rules; it is noted only as context, not as one of the two sources backing the Confirmed status.
 
-**Claim: the ISO/ETRTO tyre size code format is width-then-bead-seat-diameter, both in millimetres, separated by a dash**
+**Claim: the ISO/ETRTO tire size code format is width-then-bead-seat-diameter, both in millimetres, separated by a dash**
 
 - Answer: format is `width-diameter`, e.g. 47-406.
 - Sources:
-  - Schwalbe, ["Tire Sizes"](https://www.schwalbe.com/en/tyre-sizes) (manufacturer technical documentation explaining the ISO/ETRTO designation system)
+  - Schwalbe, ["Tire Sizes"](https://www.schwalbe.com/en/tire-sizes) (manufacturer technical documentation explaining the ISO/ETRTO designation system)
   - [ISO 5775](https://en.wikipedia.org/wiki/ISO_5775) (Wikipedia article describing the same two-number designation format)
 - Status: `CONFIRMED`
 
@@ -364,49 +364,49 @@ This is the distance between the inner faces of the rear dropouts, also called f
 
 ---
 
-## 6. Wheels: tyres and tubes, batch 1A terms 4 through 20
+## 6. Wheels: tires and tubes, batch 1A terms 4 through 20
 
 **Claim: wire bead vs folding bead construction (steel wire vs aramid/Kevlar)**
 
-- Answer: a wire bead tyre uses a steel wire loop at the bead, is heavier and does not fold. A folding bead tyre uses aramid (Kevlar) fibre instead, is lighter, folds flat, and costs more. Both fit the same rim in the same way for the same casing.
+- Answer: a wire bead tire uses a steel wire loop at the bead, is heavier and does not fold. A folding bead tire uses aramid (Kevlar) fibre instead, is lighter, folds flat, and costs more. Both fit the same rim in the same way for the same casing.
 - Sources:
-  - Kenda's own tyre glossary: [Kenda Tires, Glossary](https://bicycle.kendatire.com/en-us/tire-tech/glossary/), defining wire bead as "a thin steel wire" and folding bead as "an Aramid string," both "the attachment point between the tire and the rim"
+  - Kenda's own tire glossary: [Kenda Tires, Glossary](https://bicycle.kendatire.com/en-us/tire-tech/glossary/), defining wire bead as "a thin steel wire" and folding bead as "an Aramid string," both "the attachment point between the tire and the rim"
   - [WTB, "Wire Bead vs. Folding Bead Tires"](https://www.wtb.com/blogs/wtb/wire-bead-vs-folding-bead-tires-what-s-the-difference-and-which-should-you-choose), corroborating material, weight and cost differences
-  - [BikeRadar, "What's the difference between a folding and wire bead tyre?"](https://www.bikeradar.com/features/qa/what-s-the-difference-between-a-folding-and-wire-bead-tyre), independent corroboration of the same material, weight and cost claims
+  - [BikeRadar, "What's the difference between a folding and wire bead tire?"](https://www.bikeradar.com/features/qa/what-s-the-difference-between-a-folding-and-wire-bead-tire), independent corroboration of the same material, weight and cost claims
 - Status: `CONFIRMED`
-- Note: this is a general bicycle tyre construction fact, not BMX-specific in its sourcing (Kenda and WTB are not BMX-only brands), but Kenda does make BMX tyres (K50) and the construction principle applies identically to BMX tyres. No BMX-specific manufacturer contradicts it.
+- Note: this is a general bicycle tire construction fact, not BMX-specific in its sourcing (Kenda and WTB are not BMX-only brands), but Kenda does make BMX tires (K50) and the construction principle applies identically to BMX tires. No BMX-specific manufacturer contradicts it.
 
-**Claim: bead hook definition (the lip inside the rim wall that retains the tyre bead)**
+**Claim: bead hook definition (the lip inside the rim wall that retains the tire bead)**
 
-- Answer: the bead hook is the inward-facing lip on the inner rim wall that grabs the tyre bead and prevents it rolling off the rim under pressure. Standard clincher (hooked) rims have this on both walls. Hookless rims, which have straight walls instead, exist in other categories of cycling.
-- Source: [Hunt Bike Wheels, "Hookless vs Hooked: An Explainer"](https://www.huntbikewheels.com/blogs/news/hookless-vs-hooked-an-explainer), defining bead hooks as "the inward protruding edges at the top of the rim bed that help to retain clincher tyres under pressure"
+- Answer: the bead hook is the inward-facing lip on the inner rim wall that grabs the tire bead and prevents it rolling off the rim under pressure. Standard clincher (hooked) rims have this on both walls. Hookless rims, which have straight walls instead, exist in other categories of cycling.
+- Source: [Hunt Bike Wheels, "Hookless vs Hooked: An Explainer"](https://www.huntbikewheels.com/blogs/news/hookless-vs-hooked-an-explainer), defining bead hooks as "the inward protruding edges at the top of the rim bed that help to retain clincher tires under pressure"
 - Status: `SINGLE SOURCE` for the exact wording, though the underlying concept (hooked vs hookless rims) is widely and consistently described the same way across BikeRadar, LightBicycle and other cycling technical media checked during this research.
 - BMX-specific note: no hookless BMX rim was found in this research. Every BMX rim checked is a standard hooked rim. The page states this as a research-limited finding, not as a claim that hookless BMX rims cannot exist.
 
 **Claim: casing TPI (threads per inch) definition and tradeoff**
 
-- Answer: TPI counts threads per inch in the tyre casing. Higher TPI means a lighter, more supple casing; lower TPI means a stiffer casing that is typically more puncture resistant at the same rubber compound.
+- Answer: TPI counts threads per inch in the tire casing. Higher TPI means a lighter, more supple casing; lower TPI means a stiffer casing that is typically more puncture resistant at the same rubber compound.
 - Sources:
   - [Kenda Tires, Glossary](https://bicycle.kendatire.com/en-us/tire-tech/glossary/): "A common indicator of the quality of the casing of a tire. Higher TPI tires are lighter weight and provide a more supple ride."
-  - [Teravail, "The FYI on TPI"](https://www.teravail.com/blogs/resources/the-fyi-on-tpi-know-your-tire-s-casing), a second tyre manufacturer's technical page, corroborating the weight/suppleness/puncture-resistance tradeoff
+  - [Teravail, "The FYI on TPI"](https://www.teravail.com/blogs/resources/the-fyi-on-tpi-know-your-tire-s-casing), a second tire manufacturer's technical page, corroborating the weight/suppleness/puncture-resistance tradeoff
 - Status: `CONFIRMED` for the general definition and tradeoff.
-- Gap: no BMX-specific tyre model's TPI figure was found from any brand checked (Odyssey, Kenda, Fit Bike Co). Odyssey's own Path Pro spec sheet lists only "durable dual ply casing," no TPI number. Published on the site as `UNVERIFIED` for any specific BMX tyre's TPI figure, via a needsverify block.
+- Gap: no BMX-specific tire model's TPI figure was found from any brand checked (Odyssey, Kenda, Fit Bike Co). Odyssey's own Path Pro spec sheet lists only "durable dual ply casing," no TPI number. Published on the site as `UNVERIFIED` for any specific BMX tire's TPI figure, via a needsverify block.
 
-**Claim: tyre pressure range is per-tyre, illustrated with Odyssey Path Pro**
+**Claim: tire pressure range is per-tire, illustrated with Odyssey Path Pro**
 
-- Answer: pressure range is printed per tyre model, not standardized for BMX as a category. The Odyssey Path Pro is sold in two pressure-rated versions of the same tyre: a 100 PSI max version and a 65 PSI max "low pressure" version.
+- Answer: pressure range is printed per tire model, not standardized for BMX as a category. The Odyssey Path Pro is sold in two pressure-rated versions of the same tire: a 100 PSI max version and a 65 PSI max "low pressure" version.
 - Sources:
-  - 100 PSI figure: [Dan's Comp, Odyssey Path Pro Tire product page](https://www.danscomp.com/odyssey-path-pro-tire-black-20-2.25-406-iso-odt-230-bk/p1197621?v=583199) ("Max Pressure: 100 psi") and [The Cut BMX, Odyssey Path Pro 100PSI product page](https://thecutbmx.com/en-us/products/odyssey-path-pro-tyre) ("100 PSI max pressure")
-  - 65 PSI figure: [The Cut BMX, Odyssey Path Pro Low Pressure product page](https://thecutbmx.com/en-us/products/odyssey-path-pro-low-pressure-tyre)
+  - 100 PSI figure: [Dan's Comp, Odyssey Path Pro Tire product page](https://www.danscomp.com/odyssey-path-pro-tire-black-20-2.25-406-iso-odt-230-bk/p1197621?v=583199) ("Max Pressure: 100 psi") and [The Cut BMX, Odyssey Path Pro 100PSI product page](https://thecutbmx.com/en-us/products/odyssey-path-pro-tire) ("100 PSI max pressure")
+  - 65 PSI figure: [The Cut BMX, Odyssey Path Pro Low Pressure product page](https://thecutbmx.com/en-us/products/odyssey-path-pro-low-pressure-tire)
 - Status: 100 PSI figure `CONFIRMED` (two independent retailers). 65 PSI figure `SINGLE SOURCE`.
 
-**Claim: durometer (Shore A hardness rating) for BMX tyres**
+**Claim: durometer (Shore A hardness rating) for BMX tires**
 
-- Status: `UNVERIFIED`. The Shore A durometer scale and its grip-vs-wear tradeoff are well documented generally (Wikipedia's Shore durometer article, various tire durometer explainers), but no BMX tyre manufacturer or retailer checked publishes a Shore A figure for a specific BMX tyre model. Published on the site as a needsverify block, concept explained without a specific figure.
+- Status: `UNVERIFIED`. The Shore A durometer scale and its grip-vs-wear tradeoff are well documented generally (Wikipedia's Shore durometer article, various tire durometer explainers), but no BMX tire manufacturer or retailer checked publishes a Shore A figure for a specific BMX tire model. Published on the site as a needsverify block, concept explained without a specific figure.
 
 **Claim: inner tube size ranges are per-product, illustrated with Odyssey Air Supply and Kenda Standard 20**
 
-- Answer: Odyssey's Air Supply 20 inch tube is rated 2.1 to 2.5 inch tyre width. Kenda's Standard 20 inch tube line spans roughly 1 to 4.5 inch across several distinct SKUs at the same wheel size, not one tube covering the whole range.
+- Answer: Odyssey's Air Supply 20 inch tube is rated 2.1 to 2.5 inch tire width. Kenda's Standard 20 inch tube line spans roughly 1 to 4.5 inch across several distinct SKUs at the same wheel size, not one tube covering the whole range.
 - Sources:
   - [Dan's Comp, Odyssey Air Supply 20" Inner Tube product page](https://www.danscomp.com/odyssey-air-supply-20-inner-tube-schrader-2.1-2.5-odt-300-01/p1192014?v=583201): "Tube Width Range: 2.1 - 2.5""
   - [Kenda USA, Standard 20 Inch tube product page](https://shop.kendatire.com/products/standard-20): lists SKUs spanning 20x1-1.5 through 20x3.5-4.5
@@ -444,13 +444,13 @@ This is the distance between the inner faces of the rear dropouts, also called f
 
 **Claim: tubeless BMX exists as Alienation's TCS (Tubeless Compatible System), built to 406mm bead seat**
 
-- Answer: Alienation's TCS is a matched rim-and-tyre tubeless system for 20 inch (406mm) BMX wheels. It requires a TCS rim, a TCS tyre, TCS-specific tape, a Presta valve with removable core, and sealant, all together. A TCS tyre on a non-TCS rim, or a non-TCS tyre on a TCS rim, requires a tube.
+- Answer: Alienation's TCS is a matched rim-and-tire tubeless system for 20 inch (406mm) BMX wheels. It requires a TCS rim, a TCS tire, TCS-specific tape, a Presta valve with removable core, and sealant, all together. A TCS tire on a non-TCS rim, or a non-TCS tire on a TCS rim, requires a tube.
 - Sources:
   - [Alienation Bicycle Components, TCS (Tubeless Compatible System)](https://www.alienationbmx.com/tubeless-compatible-system): system overview, rim models, tire-well shape, valve and tape requirements
   - [Alienation Bicycle Components, TCS FAQ](https://www.alienationbmx.com/tcs-faqs): "45 to 85 PSI" rated pressure range, component requirements, non-interchangeability
   - [bmxultra.com, Alienation BMX TCS (Tubeless) Mischief Rim review](https://bmxultra.com/review/alienation-bmx-tcs-tubeless-mischief-rim/): independent confirmation of "Diameter: 406 (20")"
 - Status: bead seat diameter and system existence `CONFIRMED` (Alienation's own materials plus an independent review). Rated pressure range (45 to 85 PSI) `SINGLE SOURCE` (Alienation's own FAQ only).
-- Gap: no second brand's BMX-specific tubeless rim-and-tyre system was found during this research. Published on the site as a needsverify block noting this is a limit of this research pass, not a confirmed claim that no other system exists in the market.
+- Gap: no second brand's BMX-specific tubeless rim-and-tire system was found during this research. Published on the site as a needsverify block noting this is a limit of this research pass, not a confirmed claim that no other system exists in the market.
 
 ---
 

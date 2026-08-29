@@ -263,7 +263,7 @@ Which is why **a steerer length on its own tells you nothing.** A 165mm steerer 
 
 This is the one front end spec that most people ignore and then feel immediately when they change it.
 
-Imagine the line of the steerer extended down to the ground. That line hits the ground somewhere in front of the tyre contact patch, and the distance between the two points is **trail**. Trail is what makes a bike want to steer straight: turn the bars, and the contact patch drags behind the steering axis, generating a force that pulls the wheel back into line. More trail, more self-centring, more stability. Less trail, less self-centring, quicker steering.
+Imagine the line of the steerer extended down to the ground. That line hits the ground somewhere in front of the tire contact patch, and the distance between the two points is **trail**. Trail is what makes a bike want to steer straight: turn the bars, and the contact patch drags behind the steering axis, generating a force that pulls the wheel back into line. More trail, more self-centring, more stability. Less trail, less self-centring, quicker steering.
 
 **Increasing fork offset moves the axle forward, which reduces trail.** So a fork with more offset gives quicker, lighter steering. A fork with less offset gives more stable, heavier steering. That relationship is the whole reason offset is on a spec sheet.
 
@@ -296,7 +296,7 @@ That is better than a two-to-one spread across the range, which makes offset one
 
 Combined with the head tube angles above, that makes trail an actual calculation rather than a vibe.
 
-::: figure Fork offset and trail | assets/diagrams/bmx-fork-offset-and-trail.svg | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tyre contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
+::: figure Fork offset and trail | assets/diagrams/bmx-fork-offset-and-trail.svg | Side view diagram of a BMX front end showing the steering axis extended to the ground, the tire contact patch, the offset measured perpendicular from the steerer centreline to the axle, and the trail measured along the ground
 Two forks with different offsets on the same frame, showing how the contact patch moves relative to the steering axis.
 :::
 

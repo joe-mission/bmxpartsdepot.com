@@ -87,7 +87,7 @@ This sheet pairs every A-Z dictionary term and every Q and A question with two r
 | ID | Term or Question | YouTube Search Query | Image / Diagram Search Query | Timestamp |
 | --- | --- | --- | --- | --- |
 | integrated-headset | Integrated Headset | how to install an integrated BMX headset | integrated headset head tube cross section diagram BMX | [TBD] |
-| iso-bead-seat-diameter | ISO Bead Seat Diameter | bicycle tyre sizing ISO and ETRTO explained | ISO bead seat diameter chart 406 451 507 BMX tyre sizes | [TBD] |
+| iso-bead-seat-diameter | ISO Bead Seat Diameter | bicycle tire sizing ISO and ETRTO explained | ISO bead seat diameter chart 406 451 507 BMX tire sizes | [TBD] |
 | integrated-seat-clamp | Integrated Seat Clamp | BMX integrated seat clamp and seat mast explained | BMX integrated seat clamp frame diagram | [TBD] |
 | internal-chain-tensioner | Internal Chain Tensioner | how to fit BMX chain tensioners in the dropouts | BMX internal chain tensioner dropout diagram | [TBD] |
 
@@ -104,7 +104,7 @@ This sheet pairs every A-Z dictionary term and every Q and A question with two r
 | ID | Term or Question | YouTube Search Query | Image / Diagram Search Query | Timestamp |
 | --- | --- | --- | --- | --- |
 | knurled-bar-clamp | Knurled Bar Clamp Area | BMX bar knurling and stem clamping torque | BMX handlebar knurled clamp area close up photo | [TBD] |
-| kevlar-bead-tyre | Kevlar Bead Tyre | folding kevlar bead tyre vs wire bead explained | kevlar folding bead vs wire bead tyre cross section diagram | [TBD] |
+| kevlar-bead-tire | Kevlar Bead Tire | folding kevlar bead tire vs wire bead explained | kevlar folding bead vs wire bead tire cross section diagram | [TBD] |
 | keyed-washer | Keyed Washer | BMX keyed axle washer and dropout setup | BMX keyed washer and dropout tab diagram | [TBD] |
 
 ### L
@@ -189,7 +189,7 @@ This sheet pairs every A-Z dictionary term and every Q and A question with two r
 | threadless-headset | Threadless Headset | how to install a threadless headset on a BMX | threadless headset exploded view diagram BMX | [TBD] |
 | threaded-headset | Threaded Headset | how to adjust an old school threaded BMX headset | threaded headset exploded diagram 1 inch locknut and race | [TBD] |
 | three-piece-crank | Three-Piece Crank | how to install BMX three piece cranks | BMX three piece crank exploded diagram spindle arms bearings | [TBD] |
-| bmx-tyre-sizes | Tyre Sizing | BMX tyre sizes explained width and diameter | BMX tyre size chart 20x1.75 to 20x2.4 with ISO 406 | [TBD] |
+| bmx-tire-sizes | Tire Sizing | BMX tire sizes explained width and diameter | BMX tire size chart 20x1.75 to 20x2.4 with ISO 406 | [TBD] |
 
 ### U
 
@@ -229,7 +229,7 @@ This sheet pairs every A-Z dictionary term and every Q and A question with two r
 
 | ID | Term or Question | YouTube Search Query | Image / Diagram Search Query | Timestamp |
 | --- | --- | --- | --- | --- |
-| chainstay-yoke | Chainstay Yoke | BMX frame tyre clearance and chainstay yoke explained | BMX chainstay yoke and tyre clearance diagram | [TBD] |
+| chainstay-yoke | Chainstay Yoke | BMX frame tire clearance and chainstay yoke explained | BMX chainstay yoke and tire clearance diagram | [TBD] |
 | straddle-cable-yoke | Straddle Cable Yoke | how to set BMX U-brake straddle cable height | BMX U-brake straddle cable yoke diagram | [TBD] |
 | yield-strength | Yield Strength | yield strength explained materials engineering | stress strain curve diagram yield strength 4130 vs mild steel | [TBD] |
 
@@ -285,7 +285,7 @@ This sheet pairs every A-Z dictionary term and every Q and A question with two r
 | Q026 | Male or female BMX axle? | male vs female BMX axle explained | male vs female BMX axle end comparison photo | [TBD] |
 | Q027 | Single wall or double wall rim? | single wall vs double wall BMX rim explained | BMX rim cross section diagram single vs double wall | [TBD] |
 | Q028 | Cassette, freecoaster, or freewheel hub? | how to tell a cassette freecoaster or freewheel BMX hub | BMX rear hub type comparison diagram cassette freecoaster freewheel | [TBD] |
-| Q029 | Widest tire that fits my frame | how to check BMX tyre clearance in a frame | BMX frame tyre clearance measurement diagram chainstay yoke | [TBD] |
+| Q029 | Widest tire that fits my frame | how to check BMX tire clearance in a frame | BMX frame tire clearance measurement diagram chainstay yoke | [TBD] |
 | Q030 | How do I work out spoke length? | how to measure for BMX spoke length rebuild | spoke length calculation diagram ERD hub flange and offset | [TBD] |
 | Q031 | Is a used wheel worth keeping? | how to inspect a used BMX wheel before buying | cracked rim spoke nipple and hub flange failure photo examples | [TBD] |
 

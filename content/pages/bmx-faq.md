@@ -57,9 +57,9 @@ So: measure the top tube, not the label. The named sizes are in the glossary und
 
 ::: faq Q02 | What size wheel does a BMX bike use?
 
-**Twenty inch, and that number means a bead seat diameter of 406mm rather than anything you can measure across the tyre.** The trap is that a second 20 inch standard exists at 451mm, mostly on race bikes, and the two do not interchange in either direction.
+**Twenty inch, and that number means a bead seat diameter of 406mm rather than anything you can measure across the tire.** The trap is that a second 20 inch standard exists at 451mm, mostly on race bikes, and the two do not interchange in either direction.
 
-This one is already answered properly in the glossary rather than here, because it is a fitment standard rather than a buying question. Start with [wheel size](/guides/bmx-wheels-hubs-and-axles/#bmx-wheel-sizes), then read [ISO 406](/guides/bmx-wheels-hubs-and-axles/#iso-406) and [ISO 451](/guides/bmx-wheels-hubs-and-axles/#iso-451) for why a tyre that says 20 inch on the sidewall can still be the wrong tyre.
+This one is already answered properly in the glossary rather than here, because it is a fitment standard rather than a buying question. Start with [wheel size](/guides/bmx-wheels-hubs-and-axles/#bmx-wheel-sizes), then read [ISO 406](/guides/bmx-wheels-hubs-and-axles/#iso-406) and [ISO 451](/guides/bmx-wheels-hubs-and-axles/#iso-451) for why a tire that says 20 inch on the sidewall can still be the wrong tire.
 
 Smaller wheels exist for smaller riders, at 12, 14, 16 and 18 inch. Be careful with the height charts for those: the brands publishing them disagree badly. On a 16 inch wheel one maker says 3 feet 0 inches to 3 feet 8 inches and another says 3 feet 11 inches to 4 feet 6 inches, and those bands barely overlap at all. We are not publishing a kids' wheel size by height figure, because there is not a defensible one to publish.
 :::
@@ -91,9 +91,9 @@ A race bike is built to accelerate out of a gate and corner on a groomed track. 
 
 Between street, park and dirt the differences are real but small, and they are setup rather than construction:
 
-- **Street** tends toward shorter gearing, pegs, and often no brakes at all. Tyres run harder.
-- **Park** is close to street, with slightly softer tyres for transition grip and more riders keeping a brake.
-- **Dirt** runs a slightly longer back end for stability in the air and softer tyres for loose ground, and dirt riders keep brakes more often than street riders do.
+- **Street** tends toward shorter gearing, pegs, and often no brakes at all. Tires run harder.
+- **Park** is close to street, with slightly softer tires for transition grip and more riders keeping a brake.
+- **Dirt** runs a slightly longer back end for stability in the air and softer tires for loose ground, and dirt riders keep brakes more often than street riders do.
 
 A used bike sold as one of these is usually just a bike with somebody's preferences on it. The frame underneath is the thing to judge, and the [frame guide](/guides/bmx-frame-identification-and-geometry/) covers what actually differs in the geometry.
 :::
@@ -163,7 +163,7 @@ As a single dated anchor rather than a table: **as of August 2026, complete 20 i
 
 ::: faq Q10 | Can I run tubeless on a BMX?
 
-**Usually not, and it needs both the rim and the tyre to be built for it rather than just sealant in a normal setup.** The requirement is a rim bed that seals and a bead that locks, and most BMX rims and tyres are neither.
+**Usually not, and it needs both the rim and the tire to be built for it rather than just sealant in a normal setup.** The requirement is a rim bed that seals and a bead that locks, and most BMX rims and tires are neither.
 
 This is a glossary term rather than a buying question, so the detail lives there: [tubeless BMX](/guides/bmx-wheels-hubs-and-axles/#tubeless-bmx).
 

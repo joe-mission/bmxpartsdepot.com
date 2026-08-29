@@ -61,7 +61,7 @@ progress, not for pushing.
 **A `::: needsverify` block is NOT a defect and never fails the build.** It is
 the opposite: someone went looking, could not source the figure, and published
 the hole rather than a plausible number. For some figures that is permanent. No
-BMX brand publishes a casing TPI or a Shore A durometer for its tyres, so those
+BMX brand publishes a casing TPI or a Shore A durometer for its tires, so those
 blocks are never going away, and the page is more honest for carrying them.
 
 This was wrong for one commit, and the consequence is worth remembering: with

@@ -1448,7 +1448,7 @@ def main():
     # could not source the figure, and published the hole rather than a
     # plausible number. That is the site working as intended, and for some
     # figures it is permanent. No BMX brand publishes a casing TPI or a Shore A
-    # durometer for its tyres, so those blocks are never going away.
+    # durometer for its tires, so those blocks are never going away.
     #
     # Failing the build on them made the directive unusable in a clean build,
     # which put pressure on the honest answer and rewarded quietly dropping the

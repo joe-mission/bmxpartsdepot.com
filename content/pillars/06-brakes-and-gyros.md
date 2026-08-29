@@ -36,7 +36,7 @@ Each arm is a lever. The bottom end pivots on a post. The pad sits partway up th
 
 Because the pull is upward on a triangle of cable, **the shape of that triangle changes how hard the brake bites.** A shallow, wide straddle gives more mechanical advantage and less pad travel. A tall, narrow straddle gives less advantage and more travel. That is why two identical brakes can feel completely different, and why a brake that feels wooden is often a straddle length problem rather than a pad problem.
 
-Pad position is adjustable in more directions than most people use. The pad can move up and down the arm, in and out from the rim, and rotate to match the rim's braking surface. **The pad face wants to sit fully on the braking surface, not hanging over the top edge of the rim and not touching the tyre.** A pad that has been running half on the tyre is a used part that gets binned rather than sold.
+Pad position is adjustable in more directions than most people use. The pad can move up and down the arm, in and out from the rim, and rotate to match the rim's braking surface. **The pad face wants to sit fully on the braking surface, not hanging over the top edge of the rim and not touching the tire.** A pad that has been running half on the tire is a used part that gets binned rather than sold.
 
 ::: figure How a U-brake pulls | assets/diagrams/bmx-u-brake-action.svg | Diagram of a BMX U-brake showing the two arms crossing over their posts, the straddle cable triangle, the yoke, and the direction of force at each point
 The force path from the lever to the pad, with the straddle triangle drawn at two different heights to show how the mechanical advantage changes.
@@ -171,7 +171,7 @@ The yoke is a tiny part doing a lot. The main cable from the lever ends at the y
 
 Where the yoke sits on the straddle changes the brake's feel, as described in the U-brake section. Raising it makes the triangle taller and narrower, which gives more pad travel and a softer bite. Lowering it does the opposite. This is a genuine adjustment, not a fiddle, and it is the first thing to try on a brake that feels wrong.
 
-Some setups use a **quick release** at the straddle, where one end of the straddle cable unhooks so the arms can spring apart and let a fat tyre pass between the pads. That is the difference between changing a rear tyre in two minutes and letting the air out to get the wheel past the brake. On used brakes the quick release fitting is often the part that went missing.
+Some setups use a **quick release** at the straddle, where one end of the straddle cable unhooks so the arms can spring apart and let a fat tire pass between the pads. That is the difference between changing a rear tire in two minutes and letting the air out to get the wheel past the brake. On used brakes the quick release fitting is often the part that went missing.
 
 When buying a used U-brake, the checklist is: two arms, two pads with fixing hardware, the straddle cable, the yoke, the springs, and the mounting bolts. **A brake sold as "complete" that is missing the yoke is not complete**, and a yoke is not a universal part you can grab off a shelf.
 
@@ -243,7 +243,7 @@ Where you actually meet V-brakes on BMX is on some cruisers, on race bikes, and 
 ## Cable routing and quick release {#quick-release-brake-cable}
 
 ::: quickanswer
-Brake cable routing on BMX is deliberately simple: lever, down the bars, through the detangler if there is one, along a cable stop or guide, to the yoke. **Route it so the cable never fouls the bars at full lock and never rubs the tyre.**
+Brake cable routing on BMX is deliberately simple: lever, down the bars, through the detangler if there is one, along a cable stop or guide, to the yoke. **Route it so the cable never fouls the bars at full lock and never rubs the tire.**
 :::
 
 The routing rules are practical rather than dimensional.
@@ -252,9 +252,9 @@ The routing rules are practical rather than dimensional.
 
 **Cable outers want gentle curves.** A tight bend in the outer casing adds friction that never goes away, and on a used bike you can often feel it: the lever pulls fine but the pads come back slowly. Kinked outer casing is a five minute fix and worth doing before blaming the brake.
 
-**The lower cable has to clear the tyre and the frame.** On a rear brake, the run from the head tube back to the yoke passes over the top tube or along it, and it should be secured. On a fork brake, the cable comes down the front and needs to clear the tyre at full compression.
+**The lower cable has to clear the tire and the frame.** On a rear brake, the run from the head tube back to the yoke passes over the top tube or along it, and it should be secured. On a fork brake, the cable comes down the front and needs to clear the tire at full compression.
 
-The **quick release** at the straddle earns its place here. Undo it and the arms swing out far enough for a fat tyre to pass between the pads. Without one, getting a wheel out means either deflating the tyre or slackening the whole cable at the yoke and setting the brake up again afterwards. Check for one before you buy a used brake set.
+The **quick release** at the straddle earns its place here. Undo it and the arms swing out far enough for a fat tire to pass between the pads. Without one, getting a wheel out means either deflating the tire or slackening the whole cable at the yoke and setting the brake up again afterwards. Check for one before you buy a used brake set.
 
 A **keyed washer** shows up in this area more than people expect. On some detangler and dropout arrangements a washer with a tab locates in a slot to stop a part rotating under load. They are small, they are easy to lose, and a setup missing one will work loose. If a used brake or gyro comes with odd little tabbed washers, keep them.
 
@@ -291,7 +291,7 @@ You meet it on threaded headsets and on older loose ball hubs. The job is small 
 ::: faq Q042 | What are 990 brake mounts and does my frame have them?
 990 is the listing name for the standard BMX U-brake post arrangement. A frame with 990 mounts has two posts either side of the wheel, on the seat stays above it or on the chain stays behind the bottom bracket, and a U-brake sold as a 990 brake bolts straight onto them.
 
-To check your frame, look along the seat stays just above the rear tyre and along the chain stays just behind the bottom bracket. Posts on either pair means you have mounts. Threaded bosses with bolts in them means the frame takes removable mounts and you need to find the mounts. Smooth stays with nothing on them means the frame is brakeless. Builders target 82 to 85mm centre to centre on 9.0mm posts, which is in the table under [brake mounts](#u-brake-mounts) with its sourcing, and a brake accommodates a wider range than that. Measure your own posts if a frame looks unusual.
+To check your frame, look along the seat stays just above the rear tire and along the chain stays just behind the bottom bracket. Posts on either pair means you have mounts. Threaded bosses with bolts in them means the frame takes removable mounts and you need to find the mounts. Smooth stays with nothing on them means the frame is brakeless. Builders target 82 to 85mm centre to centre on 9.0mm posts, which is in the table under [brake mounts](#u-brake-mounts) with its sourcing, and a brake accommodates a wider range than that. Measure your own posts if a frame looks unusual.
 :::
 
 ::: faq Q043 | Will a U-brake fit a frame with cantilever mounts?
@@ -333,7 +333,7 @@ That means lever quality and cable quality matter more on a gyro bike than on a 
 ::: faq Q049 | How do I tell if used BMX brake pads are worn out?
 Look at the grooves. A new brake pad has slots or a pattern moulded into the face, and when the face is worn flat and smooth to the point where the grooves have gone, the pad is finished. Also check the pad has not worn at an angle, which means it was set up badly and has been braking on part of its face.
 
-Two things end a pad early regardless of thickness. Grit embedded in the rubber, which you can see as bright specks and feel by dragging a fingernail across, will chew a rim. And a pad that has been running over the top edge of the rim or against the tyre has a step worn into it and is scrap. Pads are cheap, rims are not.
+Two things end a pad early regardless of thickness. Grit embedded in the rubber, which you can see as bright specks and feel by dragging a fingernail across, will chew a rim. And a pad that has been running over the top edge of the rim or against the tire has a step worn into it and is scrap. Pads are cheap, rims are not.
 :::
 
 ::: faq Q019 | How do I tell if a BMX fork has brake mounts?
@@ -370,11 +370,11 @@ That one is worth explaining rather than leaving blank. Retailers selling replac
 **The straddle cable hanger is the small part the main brake cable ends at, carrying the transverse wire that pulls both brake arms.** Its height above the brake changes how much power you get for the same hand effort, so it is an adjustment, not just a connector.
 :::
 
-Drop the hanger closer to the tyre and the straddle wire runs at a wider angle. That increases the mechanical advantage: more braking force at the rim for the same pull at the lever, at the cost of the pads moving less far for the same lever travel. Raise it and the opposite happens, giving a firmer lever with less power.
+Drop the hanger closer to the tire and the straddle wire runs at a wider angle. That increases the mechanical advantage: more braking force at the rim for the same pull at the lever, at the cost of the pads moving less far for the same lever travel. Raise it and the opposite happens, giving a firmer lever with less power.
 
 That trade is the whole reason the part is adjustable, and it is the first thing to change on a used brake set that feels weak. Before deciding a brake is worn out, look at where the hanger is sitting.
 
-Two practical limits. The hanger and straddle wire have to clear the tyre through the brake's full travel, which matters more on a wide modern tyre than the setup was probably designed around. And a hanger set very low leaves so little pad travel that the pads drag on a rim that is even slightly out of true.
+Two practical limits. The hanger and straddle wire have to clear the tire through the brake's full travel, which matters more on a wide modern tire than the setup was probably designed around. And a hanger set very low leaves so little pad travel that the pads drag on a rim that is even slightly out of true.
 
 ## Cable pull ratio {#cable-pull-ratio}
 
