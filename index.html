@@ -374,6 +374,53 @@ a{color:inherit}
   z-index:-3;
 }
 @keyframes breathe{0%,100%{opacity:.75;transform:translate(-50%,-50%) scale(1)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}}
+/* ===================== HERO SYNTHWAVE ACCENTS =====================
+   Self-contained and reversible. This block plus the three elements in the
+   hero markup carrying these class names are the whole change; nothing else
+   in the hero was touched, so dropping the commit takes all of it and leaves
+   the grid, glow, chainring and spotlight exactly as they were.
+
+   Deliberately restrained: a warm glow low down, a slitted sun mostly buried
+   below the fold line of the grid, a checker hem on the bottom edge, and the
+   existing grid lines retinted from white to cyan. Accents, not a takeover.
+   ================================================================= */
+.hero .sunset{
+  position:absolute;left:50%;bottom:-6%;width:min(1400px,150vw);height:62%;
+  transform:translateX(-50%);
+  background:radial-gradient(58% 100% at 50% 100%,
+    rgba(255,140,60,.26) 0%, rgba(226,58,120,.19) 38%,
+    rgba(90,34,115,.11) 62%, transparent 78%);
+  z-index:-3;pointer-events:none;
+}
+.hero .sunslits{
+  /* Centred it sat directly behind the headline and the CTA row, and the
+     slits read as banding across the type rather than as a sun. Pushed right
+     and partly off the edge, where it reads as a horizon detail. */
+  position:absolute;left:84%;bottom:-4%;width:min(400px,36vw);aspect-ratio:1;
+  transform:translateX(-50%);border-radius:50%;
+  background:
+    repeating-linear-gradient(180deg,
+      transparent 0 5px, #08090b 5px 9px,
+      transparent 9px 18px, #08090b 18px 25px,
+      transparent 25px 38px, #08090b 38px 52px),
+    linear-gradient(180deg,#ffd36b 0%,#ff7a3d 45%,#e5387f 100%);
+  opacity:.17;
+  z-index:-3;pointer-events:none;
+  mask-image:linear-gradient(to bottom,#000 30%,transparent 82%);
+  -webkit-mask-image:linear-gradient(to bottom,#000 30%,transparent 82%);
+}
+.hero .checkerhem{
+  position:absolute;left:0;right:0;bottom:0;height:12px;
+  background:repeating-conic-gradient(#7ff0ff 0% 25%, transparent 0% 50%) 0 0/24px 24px;
+  opacity:.26;z-index:-2;pointer-events:none;
+}
+/* the grid was neutral white; cyan ties it to the games without adding a layer */
+.hero .grid{
+  background-image:
+    linear-gradient(rgba(127,240,255,.075) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(127,240,255,.075) 1px,transparent 1px);
+}
+/* ================== end hero synthwave accents ================== */
 
 
 /* chainring */
@@ -729,6 +776,11 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
+  <!-- hero synthwave accents: these three go with the CSS block of the same
+       name, and come out together -->
+  <div class="sunset" aria-hidden="true"></div>
+  <div class="sunslits" aria-hidden="true"></div>
+  <div class="checkerhem" aria-hidden="true"></div>
   <div class="grid" aria-hidden="true"></div>
   <div class="glow" aria-hidden="true"></div>
   <div class="spot" id="spot" aria-hidden="true"></div>
