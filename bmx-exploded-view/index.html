@@ -266,6 +266,15 @@
     .gamelogo{top:13px;left:16px}
     #score{top:15vh}
     #sndBtn{bottom:14px;left:14px}
+    /* Top right works on a wide screen. On a narrow one the panel is nearly
+       full width and drops straight onto the centred score. The floor at the
+       bottom is empty, and the prompt it would sit near is already hidden by
+       the time the cheat appears, since both are triggered by the first
+       input. */
+    #cheat{
+      top:auto;bottom:72px;left:14px;right:14px;
+      max-width:none;text-align:center;transform:translateY(8px);
+    }
   }
   #loading{position:fixed;inset:0;display:grid;place-items:center;z-index:9;font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
 </style>
@@ -1085,6 +1094,11 @@ function registerRotation(){
 }
 function showCheat(){
   spin.cheatShown = true;
+  // The prompt otherwise waits for the first completed rotation, so between
+  // the first tap and that rotation both are on screen. On a narrow viewport
+  // the cheat sits at the bottom and they land on each other. By the time
+  // this runs the reader has already worked the control out.
+  promptEl.classList.add('gone');
   cheatEl.classList.add('on');
   setTimeout(function(){ cheatEl.classList.remove('on'); }, 6000);
 }
