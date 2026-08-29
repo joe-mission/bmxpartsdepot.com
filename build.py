@@ -906,7 +906,7 @@ def site_entities():
             "description": ("Used and mid-school BMX parts, sold through eBay, with a "
                             "fitment and identification reference for checking whether "
                             "a used part fits before buying it."),
-            "email": "bmx-parts-depot@gmail.com",
+            "email": "bmxpartsdepot@gmail.com",
             "logo": {
                 "@type": "ImageObject",
                 "url": SITE + "/assets/logo.png",

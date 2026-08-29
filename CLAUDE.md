@@ -257,10 +257,15 @@ category grid, dark value props, light process, dark contact, dark footer.
 - The eBay store is **https://www.ebay.com/usr/bmx-parts-depot**. Note `usr`, not
   `str`, and the hyphenated handle. `str/bmxpartsdepot` is wrong and 404s.
 - The eBay seller handle displayed on the page is `bmx-parts-depot`.
-- Contact is a `mailto:` link, currently `bmx-parts-depot@gmail.com`. There is no
+- Contact is a `mailto:` link to **`bmxpartsdepot@gmail.com`**, confirmed by Joe on
+  29 August 2026. No hyphens. It is also the Organization `email` in the structured
+  data on all fourteen pages and the contact address in the legal pages. There is no
   contact form and there should not be one; the site is static and has no backend.
-- The legal pages quote `info@bmxpartsdepot.com`. That address is inherited from the
-  old site copy and is not currently receiving mail (see Known issues).
+- Two wrong addresses were live before that: `bmx-parts-depot@gmail.com` (hyphenated,
+  a guess) on the contact button and in all the schema, and `info@bmxpartsdepot.com`
+  in four places in the privacy notice, including the COPPA paragraph, on a domain
+  with no MX records. Note that the hyphens belong to the eBay handle
+  `bmx-parts-depot`, not to the email; that is where the guess came from.
 - Never claim sales figures, review counts, customer numbers, or years in business.
   There is no data behind any of it and inventing it would be lying to buyers.
 
@@ -331,11 +336,9 @@ Then open http://localhost:8000. That is the whole workflow. Opening the file wi
 
 - **Enforce HTTPS** may still be unticked in the repo's Pages settings, pending
   certificate issuance. Check Settings > Pages and enable it once selectable.
-- **No MX records** exist on the domain, so mail to `@bmxpartsdepot.com` is not
-  delivered anywhere. The legal pages publish `info@bmxpartsdepot.com` regardless.
-  This needs sorting separately from anything web-related.
-- **The contact address is unconfirmed.** The old site had `bmxpartsdepot@gmail.com`
-  obfuscated in its footer. The current value is a best guess.
+- **No MX records** exist on the domain, so mail to any `@bmxpartsdepot.com`
+  address is still not delivered anywhere. Nothing on the site points at one now,
+  but do not introduce one without setting up MX first.
 - **The wordmark is CSS text**, not an image. A raster logo exists (heavy italic,
   distressed, blue-to-white two-tone) and is a better fit, but has not been wired in.
   If it is: it is white on the right half, so it only works on dark backgrounds. Every
