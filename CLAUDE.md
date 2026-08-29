@@ -461,3 +461,28 @@ That is deliberate: the nav was full at five full-phrase labels, and a games
 section on the homepage is a better shop window than a nav item anyway.
 
 Neither is in `sitemap.xml` or `llms.txt`.
+
+## Cross browser notes
+
+Tested in Chromium across 320, 390, 768, 1280 and 1440. Firefox and WebKit
+could not be installed in the sandbox that ran these checks, so Safari and
+Firefox behaviour is reasoned from feature support rather than observed. If
+you can run the site in real Safari, the two things worth looking at are the
+blur behind the nav and the game panels, and whether game sound plays.
+
+**Every `backdrop-filter` needs `-webkit-backdrop-filter` beside it.** Safari
+still requires the prefix, and that includes every browser on iOS. The three
+hand-written pages and `guide.css` always had it; both games arrived without
+it and would have lost the blur on Mac and iPhone.
+
+**An AudioContext must be resumed.** Safari creates one suspended unless it
+is constructed inside a user gesture, and both games make sounds from their
+run loop. Without `if (ctx.state === 'suspended') ctx.resume()` they are
+silent on Safari and iOS permanently, with no error to notice.
+
+**`.btn` is `white-space:nowrap`.** Right for short labels, wrong for long
+ones: the FAQ call to action measured 473px inside a 350px column at 390px
+wide and pushed the whole homepage into horizontal scroll. A long button
+label needs a wrap rule at narrow widths. The no-horizontal-scroll rule is
+checked at 320, 390, 768, 1280 and 1440, ignoring the skip link and anything
+inside a `.table-scroll`, both of which overflow their parent by design.

@@ -508,6 +508,13 @@ section{position:relative}
   display:inline-flex;align-items:center;gap:7px;margin-top:2px;
   font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--cyan);
 }
+/* .btn is white-space:nowrap, which is right for short labels and wrong for
+   this one. At 390px the FAQ call to action measured 473px inside a 350px
+   column and pushed the whole document to 493px, so the homepage scrolled
+   sideways on a phone. It wraps instead once there is not room for it. */
+@media(max-width:620px){
+  #faq-teaser .cta-row .btn{white-space:normal;text-align:center;line-height:1.35;max-width:100%}
+}
 @media(prefers-reduced-motion:reduce){.gamecard:hover{transform:none}}
 .step .bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:14px 0 0 14px;background:var(--cyan)}
 .step:nth-child(2) .bar{background:var(--blue)}

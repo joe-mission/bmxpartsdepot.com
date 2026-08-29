@@ -62,7 +62,7 @@
   .panel{
     position:fixed;left:26px;bottom:24px;z-index:6;display:flex;align-items:center;
     gap:22px;flex-wrap:wrap;padding:14px 18px;border:1px solid var(--line);
-    background:rgba(13,15,19,.72);backdrop-filter:blur(10px);transition:opacity .3s;
+    background:rgba(13,15,19,.72);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:opacity .3s;
   }
   body.bg-light .panel{background:rgba(255,255,255,.78);border-color:rgba(0,0,0,.14)}
   body.spinning .panel,body.spinning .mast,body.spinning .hint{opacity:0;pointer-events:none}
@@ -98,7 +98,7 @@
 
   .modeswitch{
     position:fixed;top:22px;right:26px;z-index:10;
-    background:rgba(13,15,19,.72);backdrop-filter:blur(10px);
+    background:rgba(13,15,19,.72);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
   }
   body.bg-light .modeswitch{background:rgba(255,255,255,.8)}
 
@@ -177,7 +177,7 @@
   }
   #endcard{
     position:absolute;inset:0;display:none;place-items:center;pointer-events:auto;
-    background:rgba(8,9,12,.82);backdrop-filter:blur(6px);
+    background:rgba(8,9,12,.82);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
   }
   #endcard.on{display:grid;animation:fadein .25s ease}
   @keyframes fadein{from{opacity:0}to{opacity:1}}
@@ -961,6 +961,9 @@ function blip(n){
   if (!spin.sound) return;
   try {
     if (!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    /* Safari starts a context suspended unless it was created inside a user
+       gesture. Without this the game is silent there, permanently. */
+    if (audioCtx.state === 'suspended') audioCtx.resume();
     var o = audioCtx.createOscillator(), gn = audioCtx.createGain();
     o.type = 'square';
     o.frequency.value = Math.min(1180, 300 + n*26);
@@ -975,6 +978,9 @@ function fanfare(){
   if (!spin.sound) return;
   try {
     if (!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    /* Safari starts a context suspended unless it was created inside a user
+       gesture. Without this the game is silent there, permanently. */
+    if (audioCtx.state === 'suspended') audioCtx.resume();
     [523,659,784,1047].forEach(function(f,i){
       var o = audioCtx.createOscillator(), gn = audioCtx.createGain();
       var t0 = audioCtx.currentTime + i*0.085;

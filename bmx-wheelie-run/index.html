@@ -83,7 +83,7 @@
     30%{opacity:1;transform:translateY(0) scale(1.06)}100%{opacity:0;transform:translateY(-26px)}}
 
   #howto{position:absolute;inset:0;display:none;place-items:center;pointer-events:auto;
-    background:rgba(8,9,12,.90);backdrop-filter:blur(8px);overflow:auto}
+    background:rgba(8,9,12,.90);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);overflow:auto}
   #howto.on{display:grid;animation:fadein .25s ease}
   .sheet{max-width:620px;text-align:left;padding:28px 24px}
   .sheet .ttl{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;
@@ -103,7 +103,7 @@
   @media (max-width:720px){ .sheet li{font-size:12px;padding-left:34px} }
 
   #endcard{position:absolute;inset:0;display:none;place-items:center;pointer-events:auto;
-    background:rgba(8,9,12,.84);backdrop-filter:blur(6px)}
+    background:rgba(8,9,12,.84);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
   #endcard.on{display:grid;animation:fadein .25s ease}
   @keyframes fadein{from{opacity:0}to{opacity:1}}
   .card{text-align:center;padding:0 24px;max-width:660px}
@@ -455,7 +455,14 @@ meterZone.style.height = (2*SWEET/MAX_A*100) + '%';
 
 /* ---------------- audio ---------------- */
 var actx=null;
-function ac(){ if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)(); return actx; }
+function ac(){
+  if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)();
+  /* Safari starts a context suspended unless it was created inside a user
+     gesture, and sounds here fire from the run loop. Without this the game
+     is silent on Safari and iOS, permanently. */
+  if(actx.state==='suspended') actx.resume();
+  return actx;
+}
 function beep(f, dur, type, vol){
   if (!G.sound) return;
   try{
