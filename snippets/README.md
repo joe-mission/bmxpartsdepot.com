@@ -11,26 +11,51 @@ directives in the content files, which produce the same thing driven by
 
 ## Files
 
-- `fitment-badge.html` - one compatibility badge linking an eBay listing back to
-  the guide section that answers the buyer's fitment question. Six variants, one
-  per common question.
-- `preview.html` - open in a browser to see all of them rendered.
+- `fitment-badge.html` - seven fitment note blocks, one per common buyer
+  question. They answer the question in the listing. They contain no links and
+  no domain name, on purpose. See the rule below.
 
-## Using a badge in an eBay listing
+## The link rule: do not link out of an eBay listing
 
-1. Pick the badge matching the part you are listing.
-2. Copy the block from `fitment-badge.html`.
+eBay's links policy permits links in an item description **only** to:
+
+- other eBay pages (Messages, other items, Stores pages, Follow Seller)
+- product videos
+- eBay-approved freight shipping services
+- legally required information
+
+A link to bmxpartsdepot.com is none of those. Stated enforcement is listing
+removal, a warning, restricted activity, or account suspension. The same policy
+also bars a store name that reads as a web address, including one containing
+`.com`.
+
+An earlier version of `fitment-badge.html` linked each block back to a guide
+section. That was a mistake and it has been removed. Do not restore it. If the
+policy ever changes, read the current version first:
+
+https://www.ebay.com/help/policies/listing-policies/links-policy?id=4248
+
+## Why these blocks are still worth pasting
+
+They are not a traffic play any more. They earn their place in the listing:
+
+- fewer "will this fit my bike" messages before a sale
+- fewer returns from buyers who guessed wrong on a bore or an axle size
+- real BMX vocabulary in the description, which eBay's own search indexes
+- an invitation to message, which is a permitted and useful thing to ask for
+
+## Using a block
+
+1. Pick the block matching the part you are listing.
+2. Copy it from `fitment-badge.html`.
 3. In the eBay listing editor, switch the description to HTML view and paste it
    at the bottom of the description.
-4. Change the `href` if a different guide section fits better.
 
 ## Rules
 
-Links out of eBay listings are allowed only to pages that inform the buyer, not
-to a competing storefront. These point at reference content with no checkout on
-it, which is the point, but eBay's policy is the authority and it changes.
-Check the current version of their links policy before doing this at scale.
-
-Keep the copy factual. The badge says what the part is and where to read about
-fitment. It should not promise fit, because only the buyer can measure their own
+Keep the copy factual. The block says what the part is and what the buyer should
+measure. It must not promise fit, because only the buyer can measure their own
 frame.
+
+Do not add a link, a domain name, a logo carrying a domain, or a watermark
+carrying one.
