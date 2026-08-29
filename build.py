@@ -1146,10 +1146,10 @@ def nav_html(active=""):
   <div class="wrap">
     <a class="wordmark" href="/"><img src="/assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
-      <a class="lnk" href="/#stock">Stock</a>
-      <a class="lnk"%s href="/guides/">Guides</a>
-      <a class="lnk"%s href="/bmx-faq/">FAQ</a>
-      <a class="lnk" href="/#process">Process</a>
+      <a class="lnk" href="/#stock">What We Stock</a>
+      <a class="lnk"%s href="/guides/">Fitment Guide</a>
+      <a class="lnk"%s href="/bmx-faq/">BMX FAQ</a>
+      <a class="lnk" href="/#process">Our Process</a>
       <a class="lnk" href="/#contact">Contact</a>
       <a class="btn sm" href="%s" target="_blank" rel="noopener">
         <span class="hide-xs">Shop on&nbsp;</span>eBay
@@ -1162,10 +1162,10 @@ def nav_html(active=""):
     </div>
   </div>
   <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
-    <a href="/#stock">Stock</a>
-    <a href="/guides/">Guides</a>
-    <a href="/bmx-faq/">FAQ</a>
-    <a href="/#process">Process</a>
+    <a href="/#stock">What We Stock</a>
+    <a href="/guides/">Fitment Guide</a>
+    <a href="/bmx-faq/">BMX FAQ</a>
+    <a href="/#process">Our Process</a>
     <a href="/#contact">Contact</a>
   </nav>
 </header>
@@ -1186,7 +1186,7 @@ def footer_html(top_guides):
       <div>
         <p class="col-title">BMX Knowledge Base</p>
         <nav>
-          <a href="/guides/">Guides</a>
+          <a href="/guides/">Fitment Guide</a>
           %s
         </nav>
       </div>
@@ -1194,8 +1194,8 @@ def footer_html(top_guides):
         <p class="col-title">Shop</p>
         <nav>
           <a href="%s" target="_blank" rel="noopener">eBay Store</a>
-          <a href="/#stock">Stock</a>
-          <a href="/#process">Process</a>
+          <a href="/#stock">What We Stock</a>
+          <a href="/#process">Our Process</a>
           <a href="/#contact">Contact</a>
         </nav>
       </div>
@@ -1342,7 +1342,7 @@ def build_pillar(path, all_pillars, top_guides, standalone=False):
     page = head + """
 <section class="guide-head">
   <div class="wrap">
-    <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span>{short}</p>
+    <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Fitment Guide</a><span aria-hidden="true">/</span>{short}</p>
     <p class="eyebrow">{eyebrow}</p>
     <h1 class="display">{h1}</h1>
     <p class="standfirst">{standfirst}</p>

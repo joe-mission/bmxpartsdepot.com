@@ -114,7 +114,14 @@ a{color:inherit}
 }
 .nav .wrap{display:flex;align-items:center;gap:24px;height:70px}
 .nav a{color:#fff}
-.nav .links{display:flex;gap:28px;margin-left:auto;align-items:center}
+/* Nav sizing. The five labels are deliberately full phrases rather than one
+   word each, so the row needs about 1040px once the wordmark and the eBay
+   button are counted. The container caps at 1180px minus padding, which left
+   only 11px of slack and made every label wrap. Tighter gap and dropping
+   "Shop on" below 1250px buy enough room, and the bar hands over to the
+   hamburger at 1080px rather than letting anything wrap. */
+.nav .links{display:flex;gap:22px;margin-left:auto;align-items:center}
+@media(max-width:1250px){.nav .links .btn.sm .hide-xs{display:none}}
 .nav .links a.lnk{
   position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
   color:rgba(255,255,255,.72);transition:color .2s ease;
@@ -170,8 +177,8 @@ a{color:inherit}
 }
 .nav-scrim.is-open{opacity:1;pointer-events:auto}
 @media(prefers-reduced-motion:reduce){.nav-scrim{transition:none}}
-@media(min-width:901px){.nav-scrim{display:none}}
-@media(max-width:900px){
+@media(min-width:1081px){.nav-scrim{display:none}}
+@media(max-width:1080px){
   .nav .links a.lnk{display:none}
   .nav-toggle{display:inline-flex}
   .nav-panel:not([hidden]){display:block}
