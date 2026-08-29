@@ -453,6 +453,25 @@ def git_date(root, relpath, fallback):
     return fallback
 
 
+# Hand-written pages that the pillar renderer never sees. They are real URLs
+# with real content, so they belong in the sitemap and llms.txt, but they have
+# no front matter for the build to read and no term registry entries. Listing
+# them here rather than globbing the tree keeps a stray scratch HTML file out
+# of the sitemap.
+STANDALONE_HTML = [
+    {"slug": "bmx-exploded-view",
+     "title": "BMX Exploded View",
+     "priority": "0.5",
+     "description": "An exploded 3D view of a 20 inch street BMX naming 33 "
+                    "components, plus a fifteen second spin game."},
+    {"slug": "bmx-wheelie-run",
+     "title": "BMX Wheelie Run",
+     "priority": "0.5",
+     "description": "A browser game: balance a BMX wheelie and steer through "
+                    "the gates."},
+]
+
+
 def write_root_files(pages, SITE, root, extras=()):
     today = str(date.today())
 
@@ -466,6 +485,9 @@ def write_root_files(pages, SITE, root, extras=()):
              for p in pages]
     urls += [("%s/%s/" % (SITE, e["slug"]), "0.7", e["meta"].get("updated", today))
              for e in extras]
+    urls += [("%s/%s/" % (SITE, s["slug"]), s["priority"],
+              git_date(root, "%s/index.html" % s["slug"], today))
+             for s in STANDALONE_HTML]
     urls += [(SITE + "/privacy.html", "0.2", git_date(root, "privacy.html", today)),
              (SITE + "/terms.html", "0.2", git_date(root, "terms.html", today))]
 
@@ -544,20 +566,49 @@ Sitemap: %s/sitemap.xml
         lines.append("- [%s](%s/%s/) : %s"
                      % (m.get("short", m.get("title", "")), SITE, e["slug"],
                         m.get("description", "")))
+    for s in STANDALONE_HTML:
+        lines.append("- [%s](%s/%s/) : %s" % (s["title"], SITE, s["slug"], s["description"]))
     lines.append("")
-    lines.append("## Section Anchors")
+    lines.append("## Section and Glossary Term Anchors")
     lines.append("")
-    lines.append("Each guide is deep-linkable. The sections are:")
+    lines.append("Every section heading and every glossary term is deep-linkable. "
+                 "A term appears once, under the guide that owns its definition.")
     lines.append("")
+
+    # Listing only h2 headings left 49 of the 152 published terms unreachable
+    # from this file: a term whose section is an h3, or that sits inside a
+    # larger section, had no line here at all. The registry's `home` column is
+    # the canonical owner for each term and its slug is the anchor on that
+    # page, so the two lists are merged per guide: section headings in
+    # document order first, then the terms that were not already named by one.
+    # Where an anchor is both, the registry definition replaces the generic
+    # "section covering X" filler, which says nothing an answer engine can use.
+    published = [r for r in load_registry(root) if r["status"] == "published"]
+    terms_by_home = {}
+    for r in published:
+        terms_by_home.setdefault(r["home"], []).append(r)
+    by_slug = {r["slug"]: r for r in published}
+
     for p in pages:
         m = p["meta"]
         lines.append("### %s" % m.get("short", m.get("title", "")))
         lines.append("")
+        named = set()
         for anchor, title in p["sections"]:
-            lines.append("- [%s](%s/guides/%s/#%s) : Section of the guide covering %s." % (title, SITE, p["slug"], anchor, title.lower()))
+            named.add(anchor)
+            row = by_slug.get(anchor)
+            desc = (row["definition"] if row and row["home"] == p["slug"]
+                    else "Section of the guide covering %s." % title.lower())
+            lines.append("- [%s](%s/guides/%s/#%s) : %s"
+                         % (title, SITE, p["slug"], anchor, desc))
+        for row in terms_by_home.get(p["slug"], []):
+            if row["slug"] in named or row["slug"] not in p.get("ids", set()):
+                continue
+            lines.append("- [%s](%s/guides/%s/#%s) : %s"
+                         % (row["term"], SITE, p["slug"], row["slug"], row["definition"]))
+        lines.append("")
     for e in extras:
         m = e["meta"]
-        lines.append("")
         lines.append("### %s" % m.get("short", m.get("title", "")))
         lines.append("")
         # Questions rather than section headings. On a Q and A page the
