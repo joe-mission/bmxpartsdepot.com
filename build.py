@@ -179,7 +179,7 @@ def versioned(relpath):
 # --------------------------------------------------------------------------
 
 def d_quickanswer(arg, body, ctx):
-    paras = "".join("<p>%s</p>" % inline(p.strip()) for p in body.split("\n\n") if p.strip())
+    paras = render_prose(body)
     ident = ' id="quick-answer"' if not ctx["seen_qa"] else ""
     ctx["seen_qa"] = True
     return (
@@ -360,16 +360,76 @@ def d_figure(arg, body, ctx):
     return '<figure class="diagram">%s%s</figure>' % (body_html, cap_html)
 
 
+TABLE_ATTRS = ' tabindex="0" role="region" aria-label="Specification table, scrollable"'
+
+
+def wrap_table(raw):
+    """Make a hand-written table's scroll container keyboard reachable.
+
+    A scrollable region only a mouse can scroll strands the content inside it
+    for keyboard users (WCAG 2.1.1). Sources hand-write the div, so add the
+    attributes to the one already there rather than nesting a second.
+    """
+    if "<table" not in raw:
+        return raw
+    if 'class="table-scroll"' in raw:
+        return raw.replace('<div class="table-scroll">',
+                           '<div class="table-scroll"%s>' % TABLE_ATTRS)
+    return '<div class="table-scroll"%s>%s</div>' % (TABLE_ATTRS, raw)
+
+
+def render_prose(body):
+    """Paragraphs, raw HTML blocks and lists. No headings, no directives.
+
+    Directive bodies used to split on blank lines and run every piece through
+    inline(), which escapes. That is right for a sentence and wrong for a
+    table: a spec table written inside a ::: faq shipped to readers as visible
+    markup, on a page whose whole job was answering a question with a table.
+
+    render() has always handled raw HTML blocks. Directive bodies did not,
+    because they never went through render(). This is that same handling,
+    factored out so both paths agree.
+    """
+    lines = body.split("\n")
+    out = []
+    i, n = 0, len(lines)
+    while i < n:
+        if not lines[i].strip():
+            i += 1
+            continue
+        if lines[i].lstrip().startswith("<"):
+            block = []
+            while i < n and lines[i].strip():
+                block.append(lines[i])
+                i += 1
+            out.append(wrap_table("\n".join(block)))
+            continue
+        if lines[i].lstrip().startswith(("- ", "* ")):
+            items = []
+            while i < n and lines[i].lstrip().startswith(("- ", "* ")):
+                items.append(inline(lines[i].lstrip()[2:].strip()))
+                i += 1
+            out.append("<ul>%s</ul>" % "".join("<li>%s</li>" % x for x in items))
+            continue
+        para = []
+        while i < n and lines[i].strip() and not lines[i].lstrip().startswith(("<", "- ", "* ")):
+            para.append(lines[i].strip())
+            i += 1
+        out.append("<p>%s</p>" % inline(" ".join(para)))
+    return "".join(out)
+
+
 def d_faq(arg, body, ctx):
     parts = [p.strip() for p in arg.split("|")]
     qid = parts[0] if parts else ""
     question = parts[1] if len(parts) > 1 else qid
     anchor = slugify(question)[:60]
-    answer_paras = [p.strip() for p in body.split("\n\n") if p.strip()]
-    plain = " ".join(re.sub(r"\s+", " ", strip_md(p)) for p in answer_paras)
+    inner = render_prose(body)
+    # Schema answer text comes from the rendered HTML with tags removed, so a
+    # table in the answer contributes its cell text rather than its markup.
+    plain = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", inner))).strip()
     ctx["faqs"].append({"q": question, "a": plain, "id": anchor})
     ctx["ids"].add(anchor)
-    inner = "".join("<p>%s</p>" % inline(p) for p in answer_paras)
     qid_html = '<span class="qid">%s</span>' % html.escape(qid) if qid else ""
     return (
         '<div class="faq-block" id="%s"><h3>%s%s</h3>%s</div>'
@@ -547,23 +607,7 @@ def render(body, ctx):
             while i < n and lines[i].strip():
                 block.append(lines[i])
                 i += 1
-            raw = "\n".join(block)
-            if "<table" in raw:
-                # A scrollable region only a mouse can scroll strands the
-                # content inside it for keyboard users (WCAG 2.1.1), so the
-                # wrapper is focusable and labelled.
-                #
-                # Sources hand-write <div class="table-scroll"> around their
-                # tables, and this used to wrap them a second time, nesting
-                # two identical scroll containers. Add the attributes to the
-                # one that is already there rather than making another.
-                ATTRS = ' tabindex="0" role="region" aria-label="Specification table, scrollable"'
-                if 'class="table-scroll"' in raw:
-                    raw = raw.replace('<div class="table-scroll">',
-                                      '<div class="table-scroll"%s>' % ATTRS)
-                else:
-                    raw = '<div class="table-scroll"%s>%s</div>' % (ATTRS, raw)
-            out.append(raw)
+            out.append(wrap_table("\n".join(block)))
             continue
 
         if line.lstrip().startswith(("- ", "* ")):
@@ -985,6 +1029,37 @@ def check_absence_claims(pages):
     return notes
 
 
+def check_escaped_markup(pages):
+    """Block HTML that reached a reader as visible text.
+
+    Two of these shipped. A sourcing badge escaped inside a paragraph on nine
+    pages, and a whole spec table escaped inside a ::: faq body on the FAQ
+    page, where the table was the answer. Both passed every check that existed
+    at the time: valid HTML, resolving anchors, correct schema, deterministic
+    output. Nothing looked at what the page actually said.
+
+    Escaped block markup is never intentional. `&lt;` in prose is fine and
+    common; `&lt;table` or `&lt;div` is a directive body that escaped
+    something it should have rendered.
+    """
+    out = []
+    bad = re.compile(r"&lt;/?(?:table|thead|tbody|tr|td|th|div|span|ul|ol|li|p|section)\b")
+    for p in pages:
+        path = p.get("outpath") or os.path.join(OUT, p["slug"], "index.html")
+        try:
+            built = open(path, encoding="utf-8").read()
+        except OSError:
+            continue
+        hits = bad.findall(built)
+        if hits:
+            kinds = sorted(set(h.replace("&lt;", "").replace("/", "") for h in hits))
+            out.append("%s ships %d piece%s of escaped markup as visible text (%s). "
+                       "A directive body escaped block HTML it should have rendered"
+                       % (p["slug"], len(hits), "" if len(hits) == 1 else "s",
+                          ", ".join(kinds)))
+    return out
+
+
 def check_same_page_anchors(pages):
     """A [text](#anchor) link is only correct if the anchor is on that page.
 
@@ -1309,6 +1384,7 @@ def build_pillar(path, all_pillars, top_guides, standalone=False):
         "slug": slug, "meta": meta, "url": url,
         "standalone": standalone, "outpath": outpath,
         "sections": ctx["toc"], "faqs": len(ctx["faqs"]),
+        "faq_list": ctx["faqs"],
         "todo": ctx["todo"],
         "terms": as_pairs(meta, "terms"),
         "dupe_ids": ctx["dupe_ids"],
@@ -1407,7 +1483,8 @@ def main():
         for item in split_todo(p)[0]:
             defects.append("%s has an unfilled placeholder: %s" % (p["slug"], item))
     defects.extend(check_static_entities())
-    defects.extend(check_same_page_anchors(pages))
+    defects.extend(check_same_page_anchors(pages + extras))
+    defects.extend(check_escaped_markup(pages + extras))
 
     absence = check_absence_claims(pages)
     if absence and "--absence" in sys.argv:

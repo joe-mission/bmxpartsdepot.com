@@ -48,7 +48,6 @@ Each guide is deep-linkable. The sections are:
 - [Unsealed bearings on used parts](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#unsealed-bearings) : Section of the guide covering unsealed bearings on used parts.
 - [Questions](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#questions) : Section of the guide covering questions.
 - [Thread pitch](https://bmxpartsdepot.com/guides/bottom-brackets-and-spindles/#thread-pitch) : Section of the guide covering thread pitch.
-
 ### Frame ID, Materials and Geometry
 
 - [How to identify a used BMX frame](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#identify) : Section of the guide covering how to identify a used bmx frame.
@@ -67,7 +66,6 @@ Each guide is deep-linkable. The sections are:
 - [Vertical dropouts, and why BMX does not use them](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#vertical-dropout) : Section of the guide covering vertical dropouts, and why bmx does not use them.
 - [Junior and Pro XL frame sizes](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#junior-bmx-frame-size) : Section of the guide covering junior and pro xl frame sizes.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-frame-identification-and-geometry/#questions) : Section of the guide covering questions.
-
 ### Wheels, Hubs and Axles
 
 - [Telling the three rear hub types apart](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#identify-rear-hub) : Section of the guide covering telling the three rear hub types apart.
@@ -83,7 +81,6 @@ Each guide is deep-linkable. The sections are:
 - [Pegs and what decides whether one fits](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#bmx-pegs) : Section of the guide covering pegs and what decides whether one fits.
 - [Hub guards, drive side and left hand drive](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#left-hand-drive) : Section of the guide covering hub guards, drive side and left hand drive.
 - [Questions](https://bmxpartsdepot.com/guides/bmx-wheels-hubs-and-axles/#questions) : Section of the guide covering questions.
-
 ### Drivetrain, Chains and Sprockets
 
 - [What a BMX drivetrain is made of](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#overview) : Section of the guide covering what a bmx drivetrain is made of.
@@ -99,7 +96,6 @@ Each guide is deep-linkable. The sections are:
 - [Drive side and non-drive side](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#non-drive-side) : Section of the guide covering drive side and non-drive side.
 - [Sprocket guards](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#sprocket-guard) : Section of the guide covering sprocket guards.
 - [Questions](https://bmxpartsdepot.com/guides/drivetrain-chains-and-sprockets/#questions) : Section of the guide covering questions.
-
 ### Cranks and Pedals
 
 - [Telling the three crank types apart](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#crank-types) : Section of the guide covering telling the three crank types apart.
@@ -117,7 +113,6 @@ Each guide is deep-linkable. The sections are:
 - [Left-hand thread](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#left-hand-thread) : Section of the guide covering left-hand thread.
 - [Cross-threading](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#cross-threading) : Section of the guide covering cross-threading.
 - [Thread insert](https://bmxpartsdepot.com/guides/bmx-cranks-and-pedals/#thread-insert) : Section of the guide covering thread insert.
-
 ### Brakes, Cables and Detanglers
 
 - [U-brakes and how they work](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#u-brake) : Section of the guide covering u-brakes and how they work.
@@ -135,7 +130,6 @@ Each guide is deep-linkable. The sections are:
 - [990 mounts](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#990-mounts) : Section of the guide covering 990 mounts.
 - [Straddle cable hanger](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#straddle-cable-hanger) : Section of the guide covering straddle cable hanger.
 - [Cable pull ratio](https://bmxpartsdepot.com/guides/bmx-brakes-and-gyros/#cable-pull-ratio) : Section of the guide covering cable pull ratio.
-
 ### Headsets, Forks and Stems
 
 - [Headset standards, and why the head tube decides](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#bmx-headset-standards) : Section of the guide covering headset standards, and why the head tube decides.
@@ -165,7 +159,6 @@ Each guide is deep-linkable. The sections are:
 - [Top load stem](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#top-load-stem) : Section of the guide covering top load stem.
 - [Stem reach](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#stem-reach) : Section of the guide covering stem reach.
 - [Torque specification](https://bmxpartsdepot.com/guides/bmx-front-end-headsets-and-forks/#torque-specification) : Section of the guide covering torque specification.
-
 ### Handlebars, Grips and Cockpit
 
 - [The four numbers on a set of bars](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-numbers) : Section of the guide covering the four numbers on a set of bars.
@@ -182,7 +175,6 @@ Each guide is deep-linkable. The sections are:
 - [Four-piece bar](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#four-piece-bar) : Section of the guide covering four-piece bar.
 - [Crossbar](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#bar-crossbar) : Section of the guide covering crossbar.
 - [Lock-on grip](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/#lock-on-grip) : Section of the guide covering lock-on grip.
-
 ### Seats, Posts and Clamps
 
 - [Pivotal, railed and tripod](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-types) : Section of the guide covering pivotal, railed and tripod.
@@ -198,7 +190,6 @@ Each guide is deep-linkable. The sections are:
 - [Railed seat](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#railed-seat) : Section of the guide covering railed seat.
 - [Seat clamp diameter](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#seat-clamp-diameter) : Section of the guide covering seat clamp diameter.
 - [Tripod post spline](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/#tripod-post-spline) : Section of the guide covering tripod post spline.
-
 ### Era, Dating and Restoration ID
 
 - [Why the year ranges are contested](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#era-boundaries) : Section of the guide covering why the year ranges are contested.
@@ -212,6 +203,19 @@ Each guide is deep-linkable. The sections are:
 - [Buying and valuing vintage](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#buying-vintage) : Section of the guide covering buying and valuing vintage.
 - [Before you restore](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#restoration) : Section of the guide covering before you restore.
 - [Questions](https://bmxpartsdepot.com/guides/vintage-bmx-identification/#questions) : Section of the guide covering questions.
+
+### BMX FAQ
+
+- [What size BMX bike do I need for my height?](https://bmxpartsdepot.com/bmx-faq/#what-size-bmx-bike-do-i-need-for-my-height) : On a modern freestyle BMX the wheel is 20 inch whatever your height, and the size you actually choose is the top tube length. Adult bikes run roughly 20 to 21.25 inches of top tube...
+- [What size wheel does a BMX bike use?](https://bmxpartsdepot.com/bmx-faq/#what-size-wheel-does-a-bmx-bike-use) : Twenty inch, and that number means a bead seat diameter of 406mm rather than anything you can measure across the tyre. The trap is that a second 20 inch standard exists at 451mm, m...
+- [What crank arm length should I run?](https://bmxpartsdepot.com/bmx-faq/#what-crank-arm-length-should-i-run) : Almost every BMX crank sold is 160, 165, 170 or 175mm, and 170mm is what most complete bikes ship with. Beyond that this is rider preference rather than a specification, and the on...
+- [Street, park, dirt or race, what is actually different about the bike?](https://bmxpartsdepot.com/bmx-faq/#street-park-dirt-or-race-what-is-actually-different-about-th) : Race bikes are a different machine. Street, park and dirt bikes are the same machine set up differently. That is the honest split, and most buying guides blur it. A race bike is bu...
+- [Freestyle and race BMX, are they the same bike?](https://bmxpartsdepot.com/bmx-faq/#freestyle-and-race-bmx-are-they-the-same-bike) : No, and the clearest tell is the size chart. Freestyle is near enough one size with a 20 inch wheel and roughly 20 to 21.25 inches of top tube. Race is a graded set of named sizes...
+- [Chromoly or hi-ten steel, is the price difference worth it?](https://bmxpartsdepot.com/bmx-faq/#chromoly-or-hi-ten-steel-is-the-price-difference-worth-it) : Yes for anything that gets landed on, and the difference is a real material property rather than marketing. Chromoly is roughly twice as strong as hi-ten for the same weight of tub...
+- [What gear ratio should a beginner run, and what does the ratio number mean?](https://bmxpartsdepot.com/bmx-faq/#what-gear-ratio-should-a-beginner-run-and-what-does-the-rati) : Ride what the bike came with. The ratio is the front sprocket teeth divided by the rear cog teeth, and a modern complete almost always ships at 25/9, which is 2.78 to 1. There is n...
+- [U-brake, caliper, or no brakes at all?](https://bmxpartsdepot.com/bmx-faq/#u-brake-caliper-or-no-brakes-at-all) : A modern BMX runs a U-brake on the back or nothing. Calipers are not a current BMX part. The real decision is brake or brakeless, and it is not only a style question, because a fra...
+- [How much should a first real BMX bike cost, and what do you get at each price point?](https://bmxpartsdepot.com/bmx-faq/#how-much-should-a-first-real-bmx-bike-cost-and-what-do-you-g) : We are not publishing a price tier table, because the spec is what you are buying and the price does not track it. At around the same money you can buy an all hi-ten bike from one...
+- [Can I run tubeless on a BMX?](https://bmxpartsdepot.com/bmx-faq/#can-i-run-tubeless-on-a-bmx) : Usually not, and it needs both the rim and the tyre to be built for it rather than just sealant in a normal setup. The requirement is a rim bed that seals and a bead that locks, an...
 
 ## Optional
 

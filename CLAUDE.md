@@ -51,7 +51,8 @@ python3 -m http.server 8000
 **The build fails on defects.** `python3 build.py` exits non-zero on any of:
 an unfilled caliper, video or diagram placeholder, a duplicate section id, a
 term claimed with no matching section anchor, a claimed slug that is not in the
-registry, or a claimed slug still marked `planned`. Each one ships a page that
+registry, a claimed slug still marked `planned`, a `href="#x"` with no matching
+id on that page, or escaped block markup shipping as visible text. Each one ships a page that
 looks fine and is quietly broken, and as warnings they simply scrolled past.
 
 Pass `--allow-warnings` while a term is half-written. It is for work in
@@ -102,8 +103,16 @@ See `content/pillars/01-bottom-brackets-and-spindles.md`, which is the format
 model and the quality bar. Directives: `quickanswer`, `needsverify`, `caliper`,
 `video`, `figure`, `faq`, `ebay`, `fitbadge`.
 
-Raw HTML passes through at **block** level only. Inside a paragraph everything is
-escaped, with two exceptions: backticked code, and a sourcing badge. The badge
+Raw HTML passes through at **block** level only, and that now includes block
+HTML inside a directive body. `render_prose()` handles paragraphs, raw blocks
+and lists, and both `::: quickanswer` and `::: faq` use it, so a spec table
+written inside a directive renders the same as one written at the top level.
+It did not always: directive bodies split on blank lines and ran every piece
+through `inline()`, which escaped a whole table into visible markup on the FAQ
+page, where the table was the answer.
+
+Inside a paragraph everything is still escaped, with two exceptions:
+backticked code, and a sourcing badge. The badge
 exception exists because the honest-hole pattern ends a sentence with one:
 
 ```

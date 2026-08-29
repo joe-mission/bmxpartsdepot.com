@@ -555,6 +555,17 @@ Sitemap: %s/sitemap.xml
         lines.append("")
         for anchor, title in p["sections"]:
             lines.append("- [%s](%s/guides/%s/#%s) : Section of the guide covering %s." % (title, SITE, p["slug"], anchor, title.lower()))
+    for e in extras:
+        m = e["meta"]
+        lines.append("")
+        lines.append("### %s" % m.get("short", m.get("title", "")))
+        lines.append("")
+        # Questions rather than section headings. On a Q and A page the
+        # question is the addressable unit, and it is what an answer engine
+        # is matching against.
+        for f in e.get("faq_list", []):
+            lines.append("- [%s](%s/%s/#%s) : %s"
+                         % (f["q"], SITE, e["slug"], f["id"], f["a"][:180].rstrip() + "..."))
         lines.append("")
     lines += [
         "## Optional",
