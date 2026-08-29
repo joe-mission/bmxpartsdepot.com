@@ -131,6 +131,12 @@ a{color:inherit}
   transition:transform .3s cubic-bezier(.2,.8,.2,1);
 }
 .nav .links a.lnk:hover,.nav .links a.lnk[aria-current="page"]{color:#fff}
+  /* Our Process is a homepage anchor rather than a page, so it is the item
+     the bar can lose when a sixth is added. It stays in the hamburger and in
+     the footer, so nothing becomes unreachable. Without this the six full
+     labels overflow the 1180px container at every window width. */
+  .nav .links a.lnk.secondary{display:none}
+
 .nav .links a.lnk:hover::after,.nav .links a.lnk[aria-current="page"]::after{transform:scaleX(1)}
 /* ---- mobile menu ----
    Mirrors the homepage. Below 900px the inline links are hidden, and
@@ -176,8 +182,8 @@ a{color:inherit}
 }
 .nav-scrim.is-open{opacity:1;pointer-events:auto}
 @media(prefers-reduced-motion:reduce){.nav-scrim{transition:none}}
-@media(min-width:1181px){.nav-scrim{display:none}}
-@media(max-width:1180px){
+@media(min-width:1201px){.nav-scrim{display:none}}
+@media(max-width:1200px){
   .nav .links a.lnk{display:none}
   .nav-toggle{display:inline-flex}
   .nav-panel:not([hidden]){display:block}

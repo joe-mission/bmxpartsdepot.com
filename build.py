@@ -1149,7 +1149,8 @@ def nav_html(active=""):
       <a class="lnk" href="/#stock">What We Stock</a>
       <a class="lnk"%s href="/guides/">Fitment Guide</a>
       <a class="lnk"%s href="/bmx-faq/">BMX FAQ</a>
-      <a class="lnk" href="/#process">Our Process</a>
+      <a class="lnk secondary" href="/#process">Our Process</a>
+      <a class="lnk" href="/bmx-exploded-view/">Spin Game</a>
       <a class="lnk" href="/#contact">Contact</a>
       <a class="btn sm" href="%s" target="_blank" rel="noopener">
         <span class="hide-xs">Shop on&nbsp;</span>eBay
@@ -1166,6 +1167,7 @@ def nav_html(active=""):
     <a href="/guides/">Fitment Guide</a>
     <a href="/bmx-faq/">BMX FAQ</a>
     <a href="/#process">Our Process</a>
+    <a href="/bmx-exploded-view/">Spin Game</a>
     <a href="/#contact">Contact</a>
   </nav>
 </header>
@@ -1187,6 +1189,7 @@ def footer_html(top_guides):
         <p class="col-title">BMX Knowledge Base</p>
         <nav>
           <a href="/guides/">Fitment Guide</a>
+          <a href="/bmx-faq/">BMX Tech and Sizing FAQ</a>
           %s
         </nav>
       </div>
@@ -1196,6 +1199,7 @@ def footer_html(top_guides):
           <a href="%s" target="_blank" rel="noopener">eBay Store</a>
           <a href="/#stock">What We Stock</a>
           <a href="/#process">Our Process</a>
+          <a href="/bmx-exploded-view/">Spin Game and Exploded View</a>
           <a href="/#contact">Contact</a>
         </nav>
       </div>

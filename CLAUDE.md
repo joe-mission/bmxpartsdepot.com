@@ -411,3 +411,27 @@ Then open http://localhost:8000. That is the whole workflow. Opening the file wi
   distressed, blue-to-white two-tone) and is a better fit, but has not been wired in.
   If it is: it is white on the right half, so it only works on dark backgrounds. Every
   nav and footer on the site is dark, so that is fine today.
+
+## /bmx-exploded-view/, the spin game
+
+A hand-written standalone page, not generated. It is a full-viewport three.js
+canvas with `overflow:hidden` and fixed-position chrome, so putting it through
+`build_pillar` would wrap it in the site shell and break its layout. It sits at
+the repo root beside `index.html`, `privacy.html` and `terms.html`.
+
+Two modes off one button: an exploded diagram naming 35 components, and a
+fifteen second spin game. It lands in spin mode.
+
+**three.js is self-hosted** at `assets/vendor/three.r128.min.js` rather than
+loaded from cdnjs. The page has no error path if the library fails to load: it
+is a silent black screen. This site otherwise has zero third-party runtime
+dependencies, and a CDN outage taking out a page in the nav is not a trade
+worth making for 590KB.
+
+Two exits back to the site, because the panel that holds the first one is
+hidden during a spin and spin mode is what loads first.
+
+Its own fonts and palette, deliberately unlike the rest of the site. It is a
+toy and reads as one.
+
+Not in `sitemap.xml` or `llms.txt`. Add it when the content is settled.
