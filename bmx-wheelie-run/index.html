@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMX Wheelie Run | BMX Parts Depot</title>
+<meta name="description" content="Balance a BMX wheelie and steer through the gates. Mouse or thumb to hold the balance point, sprint for more points and more risk.">
+<link rel="canonical" href="https://bmxpartsdepot.com/bmx-wheelie-run/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BMX Wheelie Run">
+<meta property="og:description" content="Balance a BMX wheelie and steer through the gates. How far can you get?">
+<meta property="og:url" content="https://bmxpartsdepot.com/bmx-wheelie-run/">
+<meta property="og:image" content="https://bmxpartsdepot.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<script src="/assets/analytics.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --accent:#c79333; --hot:#ff5a3c; --good:#5fd07a; --line:rgba(255,255,255,.16); }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{background:#0d0f13;color:#e8e9ec;
+    font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;overflow:hidden}
+  #stage{position:fixed;inset:0}
+  canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}
+
+  .gamelogo{position:fixed;top:20px;left:26px;z-index:10;pointer-events:none;
+    text-shadow:0 2px 18px rgba(0,0,0,.6)}
+  .gamelogo .eyebrow{display:block;font-size:9.5px;letter-spacing:.34em;
+    text-transform:uppercase;opacity:.6;margin-bottom:8px}
+  .gamelogo .wordmark{display:block;font-family:"Bricolage Grotesque",Georgia,serif;
+    font-weight:800;text-transform:uppercase;font-size:clamp(24px,3.2vw,40px);line-height:.80;
+    letter-spacing:-.045em;color:var(--accent);text-shadow:0 0 30px rgba(199,147,51,.45)}
+  .gamelogo .wordmark em{display:block;font-style:normal;color:var(--hot);
+    text-shadow:0 0 30px rgba(255,90,60,.45)}
+
+  #hud{position:fixed;inset:0;z-index:8;pointer-events:none}
+  #score{position:absolute;top:4vh;left:0;right:0;text-align:center;
+    font-family:"Bricolage Grotesque",Georgia,serif;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+  #score .n{display:block;font-size:clamp(60px,13vw,140px);line-height:.85;font-weight:800;
+    letter-spacing:-.05em;color:#fff;transition:transform .09s cubic-bezier(.2,1.7,.4,1);
+    transform-origin:50% 60%}
+  #score .n.pop{transform:scale(1.14)}
+  #score .cap{display:block;margin-top:8px;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;letter-spacing:.42em;text-transform:uppercase;opacity:.8}
+  #x2{display:inline-block;margin-top:12px;padding:5px 12px;background:var(--hot);color:#1a0a06;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.24em;
+    text-transform:uppercase;opacity:0;transition:opacity .18s,transform .18s;transform:scale(.85)}
+  #x2.on{opacity:1;transform:scale(1)}
+
+  /* balance column */
+  #balance{position:absolute;right:5vw;top:50%;transform:translateY(-50%);
+    display:flex;align-items:center;gap:14px}
+  #coach{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;letter-spacing:.3em;
+    text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.7);white-space:nowrap}
+  #coach.push{color:var(--accent)} #coach.hold{color:var(--good)} #coach.ease{color:var(--hot)}
+  #meter{position:relative;width:12px;height:40vh;border:1px solid var(--line);
+    background:rgba(0,0,0,.35)}
+  #meterZone{position:absolute;left:-5px;right:-5px;background:rgba(95,208,122,.20);
+    border-top:1px solid rgba(95,208,122,.85);border-bottom:1px solid rgba(95,208,122,.85)}
+  #meterFill{position:absolute;left:0;right:0;bottom:0;background:var(--accent);height:0%}
+  #meter.danger #meterFill{background:var(--hot)}
+  #meter.sweet #meterFill{background:var(--good)}
+
+  #speed{position:absolute;left:26px;bottom:64px;font-family:"Bricolage Grotesque",Georgia,serif;
+    font-weight:800;font-size:32px;letter-spacing:-.03em;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+  #speed span{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:500;
+    letter-spacing:.3em;opacity:.6;margin-left:8px}
+  #speed.boost{color:var(--hot)}
+
+  #legend{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-size:10px;
+    letter-spacing:.18em;text-transform:uppercase;opacity:.62;line-height:2;
+    text-shadow:0 2px 12px rgba(0,0,0,.8)}
+  #legend b{color:var(--accent);font-weight:600}
+
+  #flash{position:absolute;left:0;right:0;top:34vh;text-align:center;
+    font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;font-size:clamp(26px,4vw,46px);
+    letter-spacing:-.02em;opacity:0;text-shadow:0 2px 24px rgba(0,0,0,.7)}
+  #flash.on{animation:flashUp .7s ease-out}
+  @keyframes flashUp{0%{opacity:1;transform:translateY(6px) scale(.9)}
+    30%{opacity:1;transform:translateY(0) scale(1.06)}100%{opacity:0;transform:translateY(-26px)}}
+
+  #howto{position:absolute;inset:0;display:none;place-items:center;pointer-events:auto;
+    background:rgba(8,9,12,.90);backdrop-filter:blur(8px);overflow:auto}
+  #howto.on{display:grid;animation:fadein .25s ease}
+  .sheet{max-width:620px;text-align:left;padding:28px 24px}
+  .sheet .ttl{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;
+    font-size:clamp(30px,5vw,52px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px;
+    color:var(--accent);text-transform:uppercase}
+  .sheet ol{margin:0;padding:0;list-style:none;counter-reset:s}
+  .sheet li{counter-increment:s;position:relative;padding:0 0 16px 40px;
+    font-size:13px;line-height:1.75;letter-spacing:.02em}
+  .sheet li:before{content:counter(s);position:absolute;left:0;top:0;width:24px;height:24px;
+    display:grid;place-items:center;border:1px solid var(--accent);color:var(--accent);
+    font-size:11px;font-weight:600}
+  .sheet li b{color:var(--accent);font-weight:600}
+  .sheet li i{font-style:normal;color:var(--good)}
+  .sheet li u{text-decoration:none;color:var(--hot)}
+  .sheet .foot{margin:18px 0 0;font-size:11px;line-height:1.9;opacity:.6;letter-spacing:.06em}
+  .sheet .btns{margin-top:26px;justify-content:flex-start}
+  @media (max-width:720px){ .sheet li{font-size:12px;padding-left:34px} }
+
+  #endcard{position:absolute;inset:0;display:none;place-items:center;pointer-events:auto;
+    background:rgba(8,9,12,.84);backdrop-filter:blur(6px)}
+  #endcard.on{display:grid;animation:fadein .25s ease}
+  @keyframes fadein{from{opacity:0}to{opacity:1}}
+  .card{text-align:center;padding:0 24px;max-width:660px}
+  .card .bang{font-family:"Bricolage Grotesque",Georgia,serif;font-weight:800;
+    font-size:clamp(52px,11vw,120px);line-height:.9;letter-spacing:-.045em;color:var(--hot);
+    margin:0;text-shadow:0 0 60px rgba(255,90,60,.4);animation:slam .4s cubic-bezier(.2,1.6,.4,1)}
+  .card .bang.long{font-size:clamp(30px,7vw,68px);letter-spacing:-.03em}
+  @keyframes slam{from{transform:scale(1.7);opacity:0}to{transform:scale(1);opacity:1}}
+  .card .line{margin:22px 0 0;font-size:clamp(13px,1.6vw,17px);letter-spacing:.13em;
+    text-transform:uppercase;line-height:1.85}
+  .card .line b{color:var(--accent);font-weight:600}
+  .card .rank{margin:8px 0 0;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;opacity:.5}
+  .card .btns{margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  .act{font:inherit;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:7px 13px;
+    background:rgba(13,15,19,.55);border:1px solid var(--line);color:inherit;cursor:pointer}
+  .act:hover{background:var(--accent);color:#151108;border-color:var(--accent)}
+  .act.hot{border-color:var(--hot);color:var(--hot)}
+  .act.hot:hover{background:var(--hot);color:#1a0a06}
+  .act[aria-pressed=true]{background:var(--good);color:#0b2413;border-color:var(--good)}
+  .card .act{padding:11px 20px;font-size:11px}
+  .act:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  #topRight{position:fixed;top:20px;right:26px;z-index:10;display:flex;gap:8px}
+  /* Added for the site: the game is a full screen canvas with no other way out. */
+  #topRight a.homelink{text-decoration:none;display:inline-flex;align-items:center}
+
+  #sprintBtn{position:fixed;right:22px;bottom:22px;z-index:11;display:none;
+    width:104px;height:104px;border-radius:50%;border:2px solid var(--hot);
+    background:rgba(255,90,60,.14);color:var(--hot);font:inherit;font-size:11px;
+    letter-spacing:.2em;text-transform:uppercase;user-select:none;-webkit-user-select:none;
+    touch-action:none}
+  body.touch #sprintBtn{display:block}
+  #sprintBtn.on{background:var(--hot);color:#1a0a06}
+
+  @media (max-width:720px){
+    .gamelogo{top:12px;left:14px}
+    #topRight{top:12px;right:14px;flex-direction:column}
+    #score{top:9vh}
+    #speed{left:16px;bottom:74px;font-size:24px}
+    #balance{right:14px}
+    #meter{height:30vh;width:9px}
+    #coach{font-size:9px;letter-spacing:.2em}
+    #legend{bottom:14px;font-size:9px;letter-spacing:.12em}
+  }
+  #loading{position:fixed;inset:0;display:grid;place-items:center;z-index:9;font-size:11px;
+    letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+</style>
+</head>
+<body>
+<div id="stage"><div id="loading">Rolling out</div></div>
+
+<div class="gamelogo">
+  <span class="eyebrow">20&Prime; street</span>
+  <span class="wordmark">Wheelie<em>Run</em></span>
+</div>
+
+<div id="topRight">
+  <a class="act homelink" href="/">Back to BMX Parts Depot</a>
+  <button class="act" id="helpBtn">How to ride</button>
+  <button class="act" id="practiceBtn" aria-pressed="false">Practice off</button>
+  <button class="act" id="restartBtn">Restart</button>
+  <button class="act" id="sndBtn" aria-pressed="true">Sound on</button>
+</div>
+<button id="sprintBtn">Sprint</button>
+
+<div id="hud">
+  <div id="score">
+    <span class="n" id="scoreN">0</span>
+    <span class="cap">Points</span>
+    <span id="x2">Wheelie &times;2</span>
+  </div>
+
+  <div id="balance">
+    <span id="coach">Pull back</span>
+    <div id="meter"><div id="meterZone"></div><div id="meterFill"></div></div>
+  </div>
+
+  <div id="speed"><i id="speedN">0</i><span>mph</span></div>
+  <div id="flash"></div>
+  <div id="legend"></div>
+
+  <div id="howto" class="on">
+    <div class="card sheet">
+      <p class="ttl">How to ride</p>
+      <ol id="steps"></ol>
+      <p class="foot" id="footNote"></p>
+      <div class="btns"><button class="act hot" id="startBtn">Start riding</button></div>
+    </div>
+  </div>
+
+  <div id="endcard">
+    <div class="card">
+      <p class="bang" id="bang">WOW!</p>
+      <p class="line" id="endline"></p>
+      <p class="rank" id="rank"></p>
+      <div class="btns"><button class="act hot" id="again">Ride again</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/vendor/three.r128.min.js"></script>
+<script>
+(function(){
+"use strict";
+
+var T = window.THREE;
+var stage = document.getElementById('stage');
+var loading = document.getElementById('loading');
+var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+if (isTouch) document.body.classList.add('touch');
+
+var renderer = new T.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.outputEncoding = T.sRGBEncoding;
+renderer.toneMapping = T.ACESFilmicToneMapping;
+stage.appendChild(renderer.domElement);
+
+var scene = new T.Scene();
+scene.fog = new T.Fog(0xa8bdd4, 60, 240);
+var BASE_FOV = 74;
+var camera = new T.PerspectiveCamera(BASE_FOV, window.innerWidth/window.innerHeight, 0.05, 900);
+
+/* ---------------- sky ---------------- */
+(function(){
+  var cv = document.createElement('canvas'); cv.width = 1024; cv.height = 512;
+  var c = cv.getContext('2d');
+  var g = c.createLinearGradient(0,0,0,512);
+  g.addColorStop(0.00,'#1b4a8f'); g.addColorStop(0.38,'#4f8ec9');
+  g.addColorStop(0.68,'#9dc2e0'); g.addColorStop(0.88,'#cddced');
+  g.addColorStop(1.00,'#a8bdd4');
+  c.fillStyle = g; c.fillRect(0,0,1024,512);
+  function cloud(x,y,s,a){
+    c.save(); c.globalAlpha = a; c.fillStyle = '#ffffff';
+    for (var i=0;i<7;i++){
+      var ox = Math.sin(i*2.7+x)*s*1.05, oy = Math.cos(i*1.9+x)*s*0.21;
+      c.beginPath();
+      c.ellipse(x+ox, y+oy, s*(0.55+0.42*Math.abs(Math.sin(i*1.3+x))), s*0.44, 0, 0, Math.PI*2);
+      c.fill();
+    }
+    c.restore();
+  }
+  var seeds=[[90,120,44],[250,175,32],[420,95,54],[600,160,38],[760,110,46],[900,180,30],[330,140,28],[690,205,26]];
+  seeds.forEach(function(v){ cloud(v[0],v[1],v[2],0.72); });
+  seeds.forEach(function(v){ cloud((v[0]+512)%1024, v[1]+22, v[2]*0.8, 0.45); });
+  var tex = new T.CanvasTexture(cv); tex.encoding = T.sRGBEncoding;
+  scene.add(new T.Mesh(new T.SphereGeometry(420, 40, 24),
+    new T.MeshBasicMaterial({map:tex, side:T.BackSide, fog:false})));
+})();
+
+scene.add(new T.HemisphereLight(0xdCEBFF, 0x4a4335, 0.95));
+var sun = new T.DirectionalLight(0xfff3dd, 1.2); sun.position.set(-30,46,-18); scene.add(sun);
+
+/* ---------------- road ---------------- */
+var ROAD_W = 11, TILE = 24, roadTex;
+(function(){
+  var gm = new T.Mesh(new T.PlaneGeometry(300, 800),
+    new T.MeshStandardMaterial({color:0x6b6a4d, roughness:1, metalness:0}));
+  gm.rotation.x = -Math.PI/2; gm.position.set(0,-0.03,-300); scene.add(gm);
+
+  var cv = document.createElement('canvas'); cv.width = 256; cv.height = 558;  // 11m x 24m
+  var c = cv.getContext('2d');
+  c.fillStyle = '#33363b'; c.fillRect(0,0,256,558);
+  for (var i=0;i<4800;i++){
+    c.fillStyle = 'rgba(255,255,255,' + (Math.random()*0.05) + ')';
+    c.fillRect(Math.random()*256, Math.random()*558, 2, 2);
+  }
+  c.fillStyle = '#e8e4d8'; c.fillRect(8,0,6,558); c.fillRect(242,0,6,558);
+  c.fillStyle = '#e3c34a';
+  for (var d=0; d<558; d+=116) c.fillRect(125, d, 6, 68);
+
+  roadTex = new T.CanvasTexture(cv);
+  roadTex.wrapS = roadTex.wrapT = T.RepeatWrapping;
+  roadTex.repeat.set(1, 800/TILE);
+  roadTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  roadTex.encoding = T.sRGBEncoding;
+
+  var rm = new T.Mesh(new T.PlaneGeometry(ROAD_W, 800),
+    new T.MeshStandardMaterial({map:roadTex, roughness:0.95, metalness:0}));
+  rm.rotation.x = -Math.PI/2; rm.position.set(0,0,-340); scene.add(rm);
+})();
+
+/* ---------------- slalom gates ---------------- */
+var GATE_N = 9, GATE_GAP = 19, HALF_W = 1.30, AMP = 2.45;
+var gates = [], gateSeq = 0;
+var mOrange = new T.MeshStandardMaterial({color:0xf05a1e, roughness:0.5, metalness:0.05});
+var mWhite  = new T.MeshStandardMaterial({color:0xf4f2ec, roughness:0.55, metalness:0.03});
+var mDark   = new T.MeshStandardMaterial({color:0x2a2b2e, roughness:0.8, metalness:0.05});
+
+function buildMarker(poleMat){
+  var g = new T.Group();
+  var body = new T.Mesh(new T.ConeGeometry(0.21, 0.64, 18), mOrange);
+  body.position.y = 0.32; g.add(body);
+  var band = new T.Mesh(new T.ConeGeometry(0.138, 0.13, 18), mWhite);
+  band.position.y = 0.41; g.add(band);
+  var base = new T.Mesh(new T.BoxGeometry(0.46,0.05,0.46), mDark);
+  base.position.y = 0.025; g.add(base);
+  // tall pole so the gate reads from a long way off
+  var pole = new T.Mesh(new T.CylinderGeometry(0.022,0.022,1.55,10), poleMat);
+  pole.position.y = 1.10; g.add(pole);
+  var flag = new T.Mesh(new T.PlaneGeometry(0.36,0.24), poleMat);
+  flag.position.set(0.18, 1.72, 0); flag.material.side = T.DoubleSide; g.add(flag);
+  return g;
+}
+for (var gi=0; gi<GATE_N; gi++){
+  var G1 = new T.Group();
+  var L = buildMarker(new T.MeshStandardMaterial({color:0xf05a1e, roughness:0.5, metalness:0.05}));
+  var R = buildMarker(new T.MeshStandardMaterial({color:0xf4f2ec, roughness:0.55, metalness:0.03}));
+  L.position.x = -HALF_W; R.position.x = HALF_W;
+  G1.add(L); G1.add(R);
+  scene.add(G1);
+  gates.push({grp:G1, cx:0, z:0, done:false});
+}
+function seatGate(g, z){
+  g.cx = Math.sin(gateSeq * 0.80) * AMP;
+  gateSeq++;
+  g.z = z; g.done = false;
+  g.grp.position.set(g.cx, 0, z);
+}
+function seedGates(){
+  gateSeq = 0;
+  for (var i=0;i<gates.length;i++) seatGate(gates[i], -30 - i*GATE_GAP);
+}
+
+/* ---------------- first-person bike ---------------- */
+var rig = new T.Group(); scene.add(rig); rig.add(camera);
+var steerGrp = new T.Group(); rig.add(steerGrp);
+var BAR_C = new T.Vector3(0, 1.03, -0.52);
+function bp(x,y,z){ return new T.Vector3(BAR_C.x+x, BAR_C.y+y, BAR_C.z+z); }
+var UP = new T.Vector3(0,1,0);
+function tube(a,b,r,m,seg){
+  var d = new T.Vector3().subVectors(b,a), len = d.length();
+  var mesh = new T.Mesh(new T.CylinderGeometry(r,r,len,seg||18,1,false), m);
+  mesh.position.copy(a).add(b).multiplyScalar(0.5);
+  mesh.quaternion.setFromUnitVectors(UP, d.normalize());
+  return mesh;
+}
+var matBlack  = new T.MeshStandardMaterial({color:0x1b1d22, roughness:0.36, metalness:0.6});
+var matGold   = new T.MeshStandardMaterial({color:0xc79333, roughness:0.24, metalness:0.9});
+var matChrome = new T.MeshStandardMaterial({color:0xdfe3e8, roughness:0.16, metalness:0.95});
+var matGrip   = new T.MeshStandardMaterial({color:0x1e2026, roughness:0.7, metalness:0.05});
+var matGlove  = new T.MeshStandardMaterial({color:0x24262c, roughness:0.8, metalness:0.02});
+var matTire   = new T.MeshStandardMaterial({color:0x141519, roughness:0.9, metalness:0.02});
+
+(function(){
+  var pts = [
+    bp(-0.363,0.232,0.080), bp(-0.300,0.231,0.061), bp(-0.234,0.229,0.036),
+    bp(-0.175,0.225,0.014), bp(-0.142,0.217,0.004), bp(-0.127,0.185,0.000),
+    bp(-0.121,0.114,0.000), bp(-0.105,0.041,0.000), bp(-0.079,0.004,0.000),
+    bp(-0.051,0.000,0.000), bp( 0.000,0.000,0.000), bp( 0.051,0.000,0.000),
+    bp( 0.079,0.004,0.000), bp( 0.105,0.041,0.000), bp( 0.121,0.114,0.000),
+    bp( 0.127,0.185,0.000), bp( 0.142,0.217,0.004), bp( 0.175,0.225,0.014),
+    bp( 0.234,0.229,0.036), bp( 0.300,0.231,0.061), bp( 0.363,0.232,0.080)
+  ];
+  var curve = new T.CatmullRomCurve3(pts, false, 'catmullrom', 0.5);
+  steerGrp.add(new T.Mesh(new T.TubeGeometry(curve, 150, 0.0112, 12, false), matBlack));
+  steerGrp.add(tube(bp(-0.124,0.154,0), bp(0.124,0.154,0), 0.0097, matBlack));
+  [-1,1].forEach(function(s){
+    steerGrp.add(tube(bp(0.263*s,0.230,0.049), bp(0.354*s,0.232,0.077), 0.0193, matGrip, 20));
+    steerGrp.add(tube(bp(0.357*s,0.232,0.078), bp(0.377*s,0.232,0.084), 0.0224, matGold, 20));
+    var h = new T.Mesh(new T.SphereGeometry(1,18,14), matGlove);
+    h.scale.set(0.052,0.062,0.078);
+    h.position.copy(bp(0.305*s,0.238,0.062));
+    steerGrp.add(h);
+  });
+  steerGrp.add(tube(bp(0,0,0), new T.Vector3(0,0.955,-0.472), 0.028, matBlack, 20));
+  steerGrp.add(tube(new T.Vector3(0,0.955,-0.472), new T.Vector3(0,0.86,-0.455), 0.034, matBlack, 20));
+  [-1,1].forEach(function(s){
+    steerGrp.add(tube(new T.Vector3(0.032*s,0.855,-0.462),
+                      new T.Vector3(0.052*s,0.25,-1.045), 0.0145, matBlack, 16));
+  });
+})();
+
+var wheelHolder = new T.Group();
+wheelHolder.position.set(0,0.25,-1.045);
+wheelHolder.rotation.y = Math.PI/2;
+steerGrp.add(wheelHolder);
+var wheelSpin = new T.Group(); wheelHolder.add(wheelSpin);
+(function(){
+  wheelSpin.add(new T.Mesh(new T.TorusGeometry(0.222,0.029,12,40), matTire));
+  wheelSpin.add(new T.Mesh(new T.TorusGeometry(0.188,0.011,8,40), matChrome));
+  for (var i=0;i<16;i++){
+    var a = i/16*Math.PI*2, sd = (i%2)?0.028:-0.028;
+    wheelSpin.add(tube(new T.Vector3(Math.cos(a)*0.026, Math.sin(a)*0.026, sd),
+                       new T.Vector3(Math.cos(a+0.3)*0.181, Math.sin(a+0.3)*0.181, 0),
+                       0.0016, matChrome, 5));
+  }
+  var hub = new T.Mesh(new T.CylinderGeometry(0.024,0.024,0.085,14), matBlack);
+  hub.rotation.x = Math.PI/2; wheelSpin.add(hub);
+})();
+
+/* ---------------- state ---------------- */
+var scoreN=document.getElementById('scoreN'), speedN=document.getElementById('speedN');
+var speedEl=document.getElementById('speed'), meterEl=document.getElementById('meter');
+var meterFill=document.getElementById('meterFill'), meterZone=document.getElementById('meterZone');
+var coachEl=document.getElementById('coach'), flashEl=document.getElementById('flash');
+var legendEl=document.getElementById('legend'), endcard=document.getElementById('endcard');
+var x2El=document.getElementById('x2'), sprintBtn=document.getElementById('sprintBtn');
+var practiceBtn=document.getElementById('practiceBtn');
+
+var BALANCE = 0.60;      // the point
+var SWEET = 0.17;        // how wide the good band is
+var TIP_OVER = 1.40;
+var MAX_A = 1.55;
+var BASE_SPEED = 7.0, SPRINT_SPEED = 13.0;
+var WHEELIE_MIN = 0.22;  // above this you count as up
+
+var G = {
+  angle:0, av:0, lean:0, leanS:0, steer:0, x:0,
+  paused:true,
+  speed:BASE_SPEED, dist:0, points:0, gatesHit:0, wheelieGates:0,
+  running:false, crashed:false, crashT:0, crashKind:'',
+  sprint:false, started:false, sound:true, best:0, wheelRot:0, practice:false
+};
+
+var howto = document.getElementById('howto');
+var stepsEl = document.getElementById('steps');
+var move = isTouch ? 'Drag your finger' : 'Move your mouse';
+stepsEl.innerHTML =
+  '<li><b>' + move + ' up</b> to lift the front wheel. ' +
+  (isTouch ? 'Keep your thumb on the screen the whole time.'
+           : 'The bike follows where your pointer sits on the screen, so hold it there.') + '</li>' +
+  '<li>Watch the bar on the right. The <i>green band</i> is the balance point. ' +
+  'Park the wheelie in there and it wants to stay up.</li>' +
+  '<li>The word beside the bar tells you what to do: <b>Pull back</b>, <i>Hold it</i>, ' +
+  '<u>Ease forward</u>. Make small corrections, not big ones.</li>' +
+  '<li>' + (isTouch ? 'Slide left and right' : 'Move left and right') +
+  ' to steer through the orange and white gates. <b>1 point</b> per gate, ' +
+  '<b>2 points</b> if the front wheel is up.</li>' +
+  '<li>Hold ' + (isTouch ? 'the <b>Sprint</b> button' : '<b>Space</b>') +
+  ' to go faster. It lofts the wheel and gets twitchy, so it is worth points but risky.</li>' +
+  '<li>Clipping a gate marker or tipping past the top ends the run. ' +
+  'Turn on <b>Practice</b> and nothing ends, so you can just work on the balance point.</li>';
+document.getElementById('footNote').textContent = isTouch
+  ? 'Tip: small thumb movements. Big swipes will loop you over backwards.'
+  : 'Tip: small mouse movements near the middle of the screen. Arrow keys work too, but the mouse is far easier.';
+
+function openHowto(){ howto.classList.add('on'); G.paused = true; }
+function closeHowto(){ howto.classList.remove('on'); G.paused = false; reset(); }
+document.getElementById('startBtn').addEventListener('click', closeHowto);
+document.getElementById('helpBtn').addEventListener('click', openHowto);
+
+legendEl.innerHTML = isTouch
+  ? 'Drag up / down to balance &nbsp;&middot;&nbsp; left / right to steer &nbsp;&middot;&nbsp; hold <b>Sprint</b>'
+  : '<b>Mouse up / down</b> to balance &nbsp;&middot;&nbsp; <b>left / right</b> to steer &nbsp;&middot;&nbsp; hold <b>Space</b> to sprint';
+
+meterZone.style.bottom = ((BALANCE - SWEET)/MAX_A*100) + '%';
+meterZone.style.height = (2*SWEET/MAX_A*100) + '%';
+
+/* ---------------- audio ---------------- */
+var actx=null;
+function ac(){ if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)(); return actx; }
+function beep(f, dur, type, vol){
+  if (!G.sound) return;
+  try{
+    var c=ac(), o=c.createOscillator(), g=c.createGain();
+    o.type=type||'square'; o.frequency.value=f;
+    g.gain.setValueAtTime(0.0001,c.currentTime);
+    g.gain.exponentialRampToValueAtTime(vol||0.06,c.currentTime+0.01);
+    g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+(dur||0.12));
+    o.connect(g); g.connect(c.destination);
+    o.start(); o.stop(c.currentTime+(dur||0.12)+0.02);
+  }catch(e){}
+}
+function thud(){
+  if (!G.sound) return;
+  try{
+    var c=ac(), o=c.createOscillator(), g=c.createGain();
+    o.type='sawtooth';
+    o.frequency.setValueAtTime(180,c.currentTime);
+    o.frequency.exponentialRampToValueAtTime(38,c.currentTime+0.45);
+    g.gain.setValueAtTime(0.0001,c.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.16,c.currentTime+0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001,c.currentTime+0.5);
+    o.connect(g); g.connect(c.destination);
+    o.start(); o.stop(c.currentTime+0.52);
+  }catch(e){}
+}
+function fanfare(){
+  if (!G.sound) return;
+  try{
+    var c=ac();
+    [523,659,784,1047].forEach(function(f,i){
+      var o=c.createOscillator(), g=c.createGain(), t0=c.currentTime+i*0.085;
+      o.type='triangle'; o.frequency.value=f;
+      g.gain.setValueAtTime(0.0001,t0);
+      g.gain.exponentialRampToValueAtTime(0.09,t0+0.01);
+      g.gain.exponentialRampToValueAtTime(0.0001,t0+0.30);
+      o.connect(g); g.connect(c.destination);
+      o.start(t0); o.stop(t0+0.32);
+    });
+  }catch(e){}
+}
+function flash(text, color){
+  flashEl.textContent = text;
+  flashEl.style.color = color;
+  flashEl.classList.remove('on'); void flashEl.offsetWidth; flashEl.classList.add('on');
+}
+
+/* ---------------- input ---------------- */
+function readPointer(cx, cy){
+  G.lean  = Math.max(-1, Math.min(1, (0.5 - cy/window.innerHeight) * 2.0));
+  G.steer = Math.max(-1, Math.min(1, (cx/window.innerWidth - 0.5) * 2.4));
+  G.started = true;
+}
+window.addEventListener('pointermove', function(e){ if (!G.crashed) readPointer(e.clientX, e.clientY); });
+window.addEventListener('pointerdown', function(e){ if (!G.crashed) readPointer(e.clientX, e.clientY); });
+
+var keys = {};
+window.addEventListener('keydown', function(e){
+  if (e.code==='Space'||e.key==='ArrowUp'||e.key==='ArrowDown'||
+      e.key==='ArrowLeft'||e.key==='ArrowRight') e.preventDefault();
+  keys[e.code]=true;
+  if (!G.crashed) G.started=true;
+});
+window.addEventListener('keyup', function(e){ keys[e.code]=false; });
+window.addEventListener('blur', function(){ keys={}; });
+
+function sprintDown(e){ e.preventDefault(); sprintBtn.classList.add('on'); G.started=true; }
+function sprintUp(e){ if(e) e.preventDefault(); sprintBtn.classList.remove('on'); }
+sprintBtn.addEventListener('pointerdown', sprintDown);
+sprintBtn.addEventListener('pointerup', sprintUp);
+sprintBtn.addEventListener('pointercancel', sprintUp);
+sprintBtn.addEventListener('pointerleave', sprintUp);
+
+document.getElementById('sndBtn').addEventListener('click', function(){
+  G.sound=!G.sound;
+  this.textContent = G.sound ? 'Sound on' : 'Sound off';
+  this.setAttribute('aria-pressed', G.sound ? 'true':'false');
+});
+practiceBtn.addEventListener('click', function(){
+  G.practice = !G.practice;
+  this.textContent = G.practice ? 'Practice on' : 'Practice off';
+  this.setAttribute('aria-pressed', G.practice ? 'true':'false');
+  if (G.practice && G.crashed) reset();
+});
+document.getElementById('restartBtn').addEventListener('click', reset);
+document.getElementById('again').addEventListener('click', reset);
+
+/* ---------------- run control ---------------- */
+function reset(){
+  G.angle=0; G.av=0; G.lean=0; G.leanS=0; G.steer=0; G.x=0;
+  G.speed=BASE_SPEED; G.dist=0; G.points=0; G.gatesHit=0; G.wheelieGates=0;
+  G.running=true; G.crashed=false; G.crashT=0; G.crashKind='';
+  G.started=false;
+  sprintBtn.classList.remove('on');
+  scoreN.textContent='0';
+  endcard.classList.remove('on');
+  camera.rotation.set(0,0,0);
+  camera.fov=BASE_FOV; camera.updateProjectionMatrix();
+  seedGates();
+}
+function bail(kind){
+  if (G.practice){
+    // practice never ends the run, it just sets you back down
+    G.angle = 0; G.av = 0;
+    flash(kind==='cone' ? 'CONE' : 'LOOPED', '#ff5a3c');
+    beep(150, 0.16, 'square', 0.05);
+    return;
+  }
+  if (G.crashed) return;
+  G.crashed=true; G.running=false; G.crashKind=kind; G.crashT=0;
+  sprintBtn.classList.remove('on');
+  thud();
+}
+function showEnd(){
+  var p = G.points;
+  if (p > G.best) G.best = p;
+  var bang='THAT WAS TERRIBLE!', rank='Barely made a gate';
+  if (p >= 12) { bang='WOW!';        rank='Finding the rhythm'; }
+  if (p >= 40) { bang='INCREDIBLE!'; rank='Slalom dialed'; }
+  if (p >= 90) { bang='UNREAL!';     rank='Certified gate machine'; }
+  var b=document.getElementById('bang');
+  b.textContent=bang;
+  if (bang.length>12) b.classList.add('long'); else b.classList.remove('long');
+  document.getElementById('endline').innerHTML =
+    (G.crashKind==='cone' ? 'Clipped a gate. ' : 'Looped out. ') +
+    'You scored <b>'+p+'</b> point'+(p===1?'':'s')+' through <b>'+G.gatesHit+'</b> gate'+
+    (G.gatesHit===1?'':'s')+', '+G.wheelieGates+' on the back wheel.';
+  document.getElementById('rank').textContent = rank + (G.best>p ? ' \u00b7 Best '+G.best : '');
+  endcard.classList.add('on');
+  fanfare();
+}
+
+/* ---------------- loop ---------------- */
+reset();
+G.paused = true;
+var prev = performance.now(), started = false;
+
+function tick(now){
+  requestAnimationFrame(tick);
+  var dt = Math.min(0.04, (now-prev)/1000);
+  prev = now;
+
+  var inWheelie = G.angle > WHEELIE_MIN;
+
+  if (G.running && !G.paused){
+    if (keys['ArrowUp'])    G.lean  = 1;
+    if (keys['ArrowDown'])  G.lean  = -1;
+    if (keys['ArrowLeft'])  G.steer = -1;
+    if (keys['ArrowRight']) G.steer = 1;
+    G.sprint = !!keys['Space'] || sprintBtn.classList.contains('on');
+
+    if (!G.started){ G.lean = 0; G.steer = 0; }
+
+    // speed: cruising pace creeps up very slowly so runs stay long
+    var cruise = BASE_SPEED + Math.min(3.0, G.dist * 0.0022);
+    var want = G.sprint ? Math.max(SPRINT_SPEED, cruise + 4) : cruise;
+    G.speed += (want - G.speed) * Math.min(1, dt * (G.sprint ? 1.1 : 1.9));
+    var loft = Math.max(0, (G.speed - cruise) / (SPRINT_SPEED - BASE_SPEED));
+
+    // ---- balance ----
+    // smooth the raw input so a twitchy trackpad doesn't throw the bike around
+    G.leanS += (G.lean - G.leanS) * Math.min(1, dt * 8);
+    var d0 = G.angle - BALANCE;
+    var gravity = 2.4 * Math.sin(d0);
+    // a pocket of stability right at the balance point: the wheelie wants to sit here
+    var pocket = -3.0 * d0 * Math.exp(-(d0*d0) / (2*0.22*0.22));
+    var authority = 2.6 + Math.max(0, d0) * 4.5;
+    G.av += (gravity * (1 + loft*0.6) + pocket + G.leanS * authority + loft * 0.45) * dt;
+    G.av *= Math.pow(0.28, dt);
+    G.angle += G.av * dt;
+    if (G.angle <= 0){ G.angle = 0; if (G.av < 0) G.av = 0; }
+    if (G.angle >= TIP_OVER) bail('loop');
+
+    G.x += G.steer * (2.9 + loft*1.4) * dt;
+    G.x = Math.max(-4.9, Math.min(4.9, G.x));
+    G.dist += G.speed * dt;
+
+    // ---- coaching ----
+    var d = G.angle - BALANCE;
+    if (G.angle < WHEELIE_MIN){ coachEl.textContent = 'Pull back'; coachEl.className = 'push'; }
+    else if (d < -SWEET){      coachEl.textContent = 'Pull back'; coachEl.className = 'push'; }
+    else if (d >  SWEET){      coachEl.textContent = 'Ease forward'; coachEl.className = 'ease'; }
+    else {                     coachEl.textContent = 'Hold it'; coachEl.className = 'hold'; }
+
+    var pct = Math.max(0, Math.min(100, G.angle / MAX_A * 100));
+    meterFill.style.height = pct + '%';
+    meterEl.classList.toggle('sweet', Math.abs(d) <= SWEET);
+    meterEl.classList.toggle('danger', G.angle > TIP_OVER - 0.25);
+
+    speedN.textContent = Math.round(G.speed * 2.237);
+    speedEl.classList.toggle('boost', G.sprint);
+    x2El.classList.toggle('on', inWheelie);
+  }
+
+  // ---- gates ----
+  var moving = !G.paused;
+  var minZ = 0;
+  for (var i=0;i<gates.length;i++) minZ = Math.min(minZ, gates[i].z);
+  for (var j=0;j<gates.length;j++){
+    var g = gates[j];
+    if (moving) g.z += G.speed * dt;
+    g.grp.position.z = g.z;
+
+    // clipping a marker ends the run
+    if (!G.crashed && Math.abs(g.z) < 0.55){
+      if (Math.abs((g.cx - HALF_W) - G.x) < 0.42 || Math.abs((g.cx + HALF_W) - G.x) < 0.42){
+        bail('cone');
+      }
+    }
+    // scoring the moment the gate goes past
+    if (!g.done && g.z > 0.35){
+      g.done = true;
+      if (G.running || G.practice){
+        if (Math.abs(G.x - g.cx) < HALF_W - 0.30){
+          G.gatesHit++;
+          if (inWheelie){ G.points += 2; G.wheelieGates++; flash('+2 WHEELIE', '#ff5a3c'); beep(880,0.11,'square',0.07); }
+          else          { G.points += 1; flash('+1', '#c79333'); beep(620,0.09,'square',0.05); }
+          scoreN.textContent = G.points;
+          scoreN.classList.remove('pop'); void scoreN.offsetWidth; scoreN.classList.add('pop');
+        } else {
+          flash('MISSED', 'rgba(255,255,255,.65)');
+        }
+      }
+    }
+    if (g.z > 8) seatGate(g, minZ - GATE_GAP);
+  }
+
+  // ---- crash: settle, then card. no camera spin. ----
+  if (G.crashed && !G.paused){
+    G.crashT += dt;
+    if (G.crashKind === 'loop') G.angle = Math.min(1.75, G.angle + dt*1.6);
+    else G.angle = Math.max(0, G.angle - dt*2.6);
+    G.speed = Math.max(0, G.speed - dt*8);
+    if (G.crashT > 0.9 && !endcard.classList.contains('on')) showEnd();
+  }
+
+  // ---- view ----
+  if (G.paused) G.dist += 3.0 * dt;   // road drifts gently behind the instructions
+  roadTex.offset.y = G.dist / TILE;
+  rig.position.x = G.x;
+  rig.rotation.x = G.angle;
+  steerGrp.rotation.y = -G.steer * 0.16;
+  camera.rotation.x = -G.angle * 0.55;
+  camera.rotation.z = 0;                       // no roll, no spin
+  camera.position.set(0, 1.42 + G.angle*0.10, 0.30);
+
+  var wantFov = BASE_FOV + (G.sprint ? 8 : 0);
+  camera.fov += (wantFov - camera.fov) * Math.min(1, dt*4);
+  camera.updateProjectionMatrix();
+
+  G.wheelRot -= G.speed / 0.222 * dt;
+  wheelSpin.rotation.z = G.wheelRot;
+
+  renderer.render(scene, camera);
+  if (!started){ started = true; loading.style.display = 'none'; }
+}
+requestAnimationFrame(tick);
+
+window.addEventListener('resize', function(){
+  camera.aspect = window.innerWidth/window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+})();
+</script>
+</body>
+</html>

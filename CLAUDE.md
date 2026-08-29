@@ -388,8 +388,17 @@ sold" is the tone, not "premium quality guaranteed."
 - Scroll reveals use IntersectionObserver with a non-IO fallback that just shows
   everything. Do not make content depend on JS to be readable.
 - No horizontal scroll at any width down to 320px. Verify after layout changes.
-- No `localStorage` or cookies. There is no analytics and no consent banner, which is
-  deliberate.
+- No `localStorage`. **Google Analytics 4 (`G-RX3VR6S5CN`) is live site-wide** via
+  `assets/analytics.js`, which is the only place the property ID appears. It sets
+  cookies, so the old "no cookies, no analytics, deliberate" note is retired.
+  There is still no consent banner. That is a live decision rather than an
+  oversight: traffic is intended to be US, advertising features are off on the
+  property, and the privacy page names GA4 as the single processor and points at
+  Google's opt-out add-on. If the site starts drawing EU or UK traffic, revisit it.
+- **The privacy page describes what the site actually does.** It used to carry
+  inherited boilerplate naming Meta, LinkedIn and Microsoft as advertising
+  partners, on a site that has never run an ad. Those are gone. If a processor is
+  ever added, that page is part of shipping it.
 
 ## Local development
 
@@ -435,3 +444,20 @@ Its own fonts and palette, deliberately unlike the rest of the site. It is a
 toy and reads as one.
 
 Not in `sitemap.xml` or `llms.txt`. Add it when the content is settled.
+
+## /bmx-wheelie-run/, the second game
+
+Same shape as the spin game: a hand-written full-viewport three.js page at the
+repo root, not generated. First person, balance the wheelie, steer the gates.
+
+Both games follow the same rules and both were prepared the same way. Point at
+`/assets/vendor/three.r128.min.js` rather than cdnjs, carry
+`/assets/analytics.js`, and add a visible way back to the site, since a full
+screen canvas has no other exit and people arrive on these from shared links.
+
+**Neither game is in the nav.** They are reached from the "Two BMX Games"
+section near the foot of the homepage and from the footer, and nowhere else.
+That is deliberate: the nav was full at five full-phrase labels, and a games
+section on the homepage is a better shop window than a nav item anyway.
+
+Neither is in `sitemap.xml` or `llms.txt`.
