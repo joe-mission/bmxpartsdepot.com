@@ -24,6 +24,7 @@ Where a figure could not be traced to a manufacturer specification or a publishe
 - [Handlebars, Grips and Cockpit](https://bmxpartsdepot.com/guides/bmx-handlebars-and-cockpit/) : How BMX bars are measured, what rise, width, backsweep and upsweep each change, two-piece against four-piece construction, clamp diameter, and how grips and stem choice finish the cockpit.
 - [Seats, Posts and Clamps](https://bmxpartsdepot.com/guides/bmx-seats-and-seatposts/) : Pivotal, railed and tripod seats explained, how seat post diameter is measured, integrated against external clamps, slammed setups, and how to get a seized post out of a frame.
 - [Era, Dating and Restoration ID](https://bmxpartsdepot.com/guides/vintage-bmx-identification/) : What old school, mid school and modern actually mean, why the year boundaries are contested, and how to read a frame's era from its bottom bracket, headset, cranks, bars and construction.
+- [BMX FAQ](https://bmxpartsdepot.com/bmx-faq/) : Sizing by height, what separates street from race, gearing, chromoly against hi-ten, brakes, wheel size, what a first bike costs, crank length and tubeless, answered with sources.
 
 ## Section Anchors
 

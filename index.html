@@ -469,6 +469,11 @@ section{position:relative}
 }
 .step h3{margin:0 0 8px;font-family:var(--display);font-size:25px;letter-spacing:.03em;position:relative}
 .step p{margin:0;font-size:15px;color:var(--muted);position:relative}
+/* FAQ teaser cards. Same grid as the process steps, without the counter,
+   because these are questions rather than an ordered sequence. */
+.qcard{padding:26px 24px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.qcard h3{margin:0 0 10px;font-size:17px;font-weight:700;line-height:1.35}
+.qcard p{margin:0;font-size:15px;color:var(--muted)}
 .step .bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:14px 0 0 14px;background:var(--cyan)}
 .step:nth-child(2) .bar{background:var(--blue)}
 .step:nth-child(3) .bar{background:var(--orange)}
@@ -568,6 +573,7 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
     <div class="links">
       <a class="lnk" href="#stock">What We Stock</a>
       <a class="lnk" href="guides/">Fitment Guide</a>
+      <a class="lnk" href="bmx-faq/">BMX FAQ</a>
       <a class="lnk" href="#process">Our Process</a>
       <a class="lnk" href="#contact">Contact</a>
       <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
@@ -583,6 +589,7 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
   <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
     <a href="#stock">What We Stock</a>
     <a href="guides/">Fitment Guide</a>
+    <a href="bmx-faq/">BMX FAQ</a>
     <a href="#process">Our Process</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -769,6 +776,37 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
 </section>
 
 <!-- ============ CONTACT ============ -->
+<!-- ============ FAQ TEASER ============ -->
+<section class="pad tint" id="faq-teaser">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow on-light">Before You Buy</p>
+      <h2 class="display">Common Questions</h2>
+      <p>The three we get asked most. Ten more, with their sourcing, on the full FAQ.</p>
+    </div>
+    <div class="steps">
+      <article class="qcard reveal" style="--d:0ms">
+        <h3>What size BMX do I need for my height?</h3>
+        <p>On freestyle the wheel is 20 inch whatever your height, and the size you pick is the top tube. Race sizes do map to height, but the published charts disagree by up to six inches on the same size name.</p>
+      </article>
+      <article class="qcard reveal" style="--d:80ms">
+        <h3>Chromoly or hi-ten, is it worth it?</h3>
+        <p>Yes for anything you land on. Chromoly is about twice as strong for the same tube weight. It is rarely all or nothing though, and most bikes step up a piece at a time.</p>
+      </article>
+      <article class="qcard reveal" style="--d:160ms">
+        <h3>How much should a first bike cost?</h3>
+        <p>Check the spec sheet rather than the price. At the same money one brand sells you an all hi-ten bike and another sells you a chromoly one.</p>
+      </article>
+    </div>
+    <div class="cta-row" style="justify-content:center;margin-top:clamp(24px,3vw,36px)">
+      <a class="btn orange" href="bmx-faq/">
+        Have More Questions? Read the Full BMX FAQ
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="glow2" aria-hidden="true"></div>
   <div class="wrap">

@@ -969,7 +969,7 @@ def check_absence_claims(pages):
     """
     notes = []
     for p in pages:
-        path = os.path.join(OUT, p["slug"], "index.html")
+        path = p.get("outpath") or os.path.join(OUT, p["slug"], "index.html")
         try:
             built = open(path, encoding="utf-8").read()
         except OSError:
@@ -1004,7 +1004,7 @@ def check_same_page_anchors(pages):
     for row in buildhub.load_registry(ROOT):
         home[row["slug"]] = row["home"]
     for p in pages:
-        path = os.path.join(OUT, p["slug"], "index.html")
+        path = p.get("outpath") or os.path.join(OUT, p["slug"], "index.html")
         try:
             built = open(path, encoding="utf-8").read()
         except OSError:
@@ -1073,6 +1073,7 @@ def nav_html(active=""):
     <div class="links">
       <a class="lnk" href="/#stock">What We Stock</a>
       <a class="lnk"%s href="/guides/">Fitment Guide</a>
+      <a class="lnk"%s href="/bmx-faq/">BMX FAQ</a>
       <a class="lnk" href="/#process">Our Process</a>
       <a class="lnk" href="/#contact">Contact</a>
       <a class="btn sm" href="%s" target="_blank" rel="noopener">
@@ -1092,7 +1093,7 @@ def nav_html(active=""):
     <a href="/#contact">Contact</a>
   </nav>
 </header>
-<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>""" % (cur("guides"), EBAY)
+<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>""" % (cur("guides"), cur("faq"), EBAY)
 
 
 def footer_html(top_guides):
@@ -1212,11 +1213,21 @@ def era_row(eras):
 # pillar pages
 # --------------------------------------------------------------------------
 
-def build_pillar(path, all_pillars, top_guides):
+def build_pillar(path, all_pillars, top_guides, standalone=False):
+    """Render one Markdown source into a page.
+
+    `standalone` is for a page that is not one of the Ten Master Guides. It
+    renders with the same template and the same directives, and it lands at
+    the site root rather than under /guides/, so it can carry a top-level nav
+    link without becoming an eleventh pillar. The ten-card grid, the home
+    grid and the pillar numbering are all built around ten, which is why the
+    blueprint turned down a Pillar 11: the filing convenience was not worth
+    the redesign.
+    """
     src = open(path, encoding="utf-8").read()
     meta, body = split_front(src)
     slug = meta.get("slug") or os.path.splitext(os.path.basename(path))[0]
-    url = "%s/guides/%s/" % (SITE, slug)
+    url = "%s/%s/" % (SITE, slug) if standalone else "%s/guides/%s/" % (SITE, slug)
 
     ctx = {"toc": [], "faqs": [], "videos": [], "images": [], "todo": [],
            "seen_qa": False, "ids": set(), "dupe_ids": []}
@@ -1248,7 +1259,7 @@ def build_pillar(path, all_pillars, top_guides):
     head = HEAD.format(
         title=html.escape(meta.get("title", ""), quote=True),
         description=html.escape(meta.get("description", ""), quote=True),
-        url=url, site=SITE, schema=schema, nav=nav_html("guides"),
+        url=url, site=SITE, schema=schema, nav=nav_html("faq" if standalone else "guides"),
         css_href=versioned("/assets/guide.css"),
     )
 
@@ -1288,13 +1299,15 @@ def build_pillar(path, all_pillars, top_guides):
         js_href=versioned("/assets/guide.js"),
     )
 
-    outdir = os.path.join(OUT, slug)
+    outdir = os.path.join(ROOT, slug) if standalone else os.path.join(OUT, slug)
     os.makedirs(outdir, exist_ok=True)
-    with open(os.path.join(outdir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(relativise(page, "../../"))
+    outpath = os.path.join(outdir, "index.html")
+    with open(outpath, "w", encoding="utf-8") as f:
+        f.write(relativise(page, "../" if standalone else "../../"))
 
     return {
         "slug": slug, "meta": meta, "url": url,
+        "standalone": standalone, "outpath": outpath,
         "sections": ctx["toc"], "faqs": len(ctx["faqs"]),
         "todo": ctx["todo"],
         "terms": as_pairs(meta, "terms"),
@@ -1327,10 +1340,22 @@ def main():
 
     pages = [build_pillar(p, metas, top_guides) for p in files]
 
+    # Standalone pages: same renderer, same directives, not a pillar. They
+    # land at the site root and are deliberately kept out of `pages`, because
+    # that list drives the ten-card grid, the home grid and the pillar
+    # numbering. They still reach the sitemap, llms.txt and the build gate.
+    extra_dir = os.path.join(CONTENT, "pages")
+    extras = []
+    if os.path.isdir(extra_dir):
+        for f in sorted(os.listdir(extra_dir)):
+            if f.endswith(".md") and not f.startswith("_"):
+                extras.append(build_pillar(os.path.join(extra_dir, f), metas,
+                                           top_guides, standalone=True))
+
     # hub + root files are written by their own modules
     from buildhub import write_hub, write_root_files
     defects = write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE)
-    write_root_files(pages, SITE, ROOT)
+    write_root_files(pages, SITE, ROOT, extras)
 
     # Two different things share ctx["todo"] and they are not the same kind of
     # thing at all.

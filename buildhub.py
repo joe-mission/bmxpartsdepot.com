@@ -453,7 +453,7 @@ def git_date(root, relpath, fallback):
     return fallback
 
 
-def write_root_files(pages, SITE, root):
+def write_root_files(pages, SITE, root, extras=()):
     today = str(date.today())
 
     # ---- sitemap.xml ----------------------------------------------------
@@ -464,6 +464,8 @@ def write_root_files(pages, SITE, root):
             (SITE + "/guides/", "0.9", hub_mod)]
     urls += [("%s/guides/%s/" % (SITE, p["slug"]), "0.8", p["meta"].get("updated", today))
              for p in pages]
+    urls += [("%s/%s/" % (SITE, e["slug"]), "0.7", e["meta"].get("updated", today))
+             for e in extras]
     urls += [(SITE + "/privacy.html", "0.2", git_date(root, "privacy.html", today)),
              (SITE + "/terms.html", "0.2", git_date(root, "terms.html", today))]
 
@@ -536,6 +538,11 @@ Sitemap: %s/sitemap.xml
         m = p["meta"]
         lines.append("- [%s](%s/guides/%s/) : %s"
                      % (m.get("short", m.get("title", "")), SITE, p["slug"],
+                        m.get("description", "")))
+    for e in extras:
+        m = e["meta"]
+        lines.append("- [%s](%s/%s/) : %s"
+                     % (m.get("short", m.get("title", "")), SITE, e["slug"],
                         m.get("description", "")))
     lines.append("")
     lines.append("## Section Anchors")

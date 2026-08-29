@@ -27,6 +27,9 @@ buildhub.py     hub page, sitemap.xml, robots.txt, llms.txt. Imported by build.p
 schema_terms.py DefinedTerm generation and validation. Run it directly for a report.
 test_autolink.py  adversarial tests for the auto-linker. Run after touching it.
 content/pillars/*.md    the ten pillar guide sources. Edit these, not the HTML.
+content/pages/*.md      standalone pages. Same renderer, same directives, but
+                        they land at the site root rather than under /guides/
+                        and stay out of the ten-card grid. /bmx-faq/ is one.
 content-plan/terms.tsv  THE TERM REGISTRY. Single source of truth for the A-Z.
 content-plan/   planning docs: the old A-Z dictionary (superseded, kept as the
                 research record), the 100 questions, the verified spec
@@ -125,6 +128,23 @@ New sections are currently appended after `## Questions` rather than before it,
 so the FAQ sits mid-page on four pillars. Cosmetic, pre-existing, and worth
 fixing in one pass rather than per batch.
 
+### Standalone pages, and why they are not pillars
+
+`content/pages/*.md` builds with the same `build_pillar` function and the same
+directives, with `standalone=True`. The difference is where it lands and what
+it is left out of: the site root rather than `/guides/`, and deliberately kept
+out of the `pages` list that drives the ten-card grid, the home grid and the
+pillar numbering. It still reaches `sitemap.xml`, `llms.txt` and every build
+gate.
+
+This exists because the Ten Master Guides are load-bearing brand structure.
+The blueprint turned down a Pillar 11 for that reason, and dropping a file
+into `content/pillars/` would silently make an eleventh card appear.
+
+`/bmx-faq/` is the first one. It answers buying questions, which sit a layer
+above the fitment questions the pillars answer, and it links down into the
+glossary rather than redefining anything.
+
 ### The term registry
 
 `content-plan/terms.tsv` is the single source of truth for the glossary. Tab
@@ -185,6 +205,24 @@ python3 -c "import build; print(build.static_entity_block())"
 
 Paste the output over the existing block in all three files. The build tells
 you which ones are wrong.
+
+### FAQ blocks and their schema
+
+`::: faq Q01 | The question?` renders `<div class="faq-block" id="slug"><h3>`
+with the answer as paragraphs, and the same call appends to `ctx["faqs"]`,
+which becomes the page's `FAQPage` JSON-LD. One source, two outputs, so the
+schema cannot drift from the rendered text. Use it rather than hand-writing a
+schema block.
+
+The pattern is a heading plus paragraphs, always visible, with no ARIA state.
+That is deliberate and should not be swapped for `<details>`/`<summary>`:
+there is no disclosure state for a screen reader to get wrong, and the direct
+answer stays in the rendered view where a snippet can reach it.
+
+Google switched FAQ rich results off on 7 May 2026 and removed the
+documentation on 15 June 2026, so the JSON-LD no longer earns a SERP feature
+for anyone. Keep emitting it, because other consumers read it and it costs
+nothing, but do not build a page on the promise of FAQ rich results.
 
 ### The auto-linker
 

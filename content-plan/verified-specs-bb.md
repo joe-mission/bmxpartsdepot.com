@@ -578,3 +578,104 @@ number attached to a bicycle dimension is exactly the kind of citation that
 passes review, because it looks like the most authoritative source on the page.
 Both of these did pass review, more than once. Prefer a manufacturer page
 someone can actually open.
+
+---
+
+## BMX FAQ page research, 29 August 2026
+
+Every figure on `/bmx-faq/`, with what was actually fetched.
+
+### Sizing by rider height
+
+Seven sources fetched. Chase publishes its chart as a graphic, so the height
+mapping could not be extracted and is NOT VERIFIED. Position One redirect
+loops. Haro's fit page is JS rendered and returned nothing. Neither USA BMX
+nor the UCI publishes a height chart at all.
+
+| Claim | Sources | Status |
+|---|---|---|
+| Pro tops out at 5 ft 8 in | Dan's Comp, J and R, Supercross, Source BMX | Confirmed |
+| Pro XL tops out at 6 ft 0 in | same four | Confirmed |
+| Pro top tube 20 to 20.5 in | Dan's Comp, J and R | Confirmed |
+| Mini top tube 16 to 17.5 in | Dan's Comp, J and R | Confirmed |
+| Expert XL top tube 19.5 to 20 in | Dan's Comp, J and R | Confirmed |
+| Freestyle 20.5 in top tube suits 5 ft 4 in to 5 ft 8 in | Dan's Comp, Supercross | Confirmed |
+| Expert height band | Dan's/Source say 5 ft 0 to 5 ft 4; J and R/Supercross say 4 ft 6 to 5 ft 2 | Conflicting, six inch offset |
+| Junior height band | no two independent sources agree | Conflicting |
+| Mini lower bound | 3 ft 6 in, 3 ft 10 in, 4 ft 2 in | Conflicting |
+| Pro XXL lower bound | 5 ft 10 in, 5 ft 11 in, 6 ft 0 in | Conflicting |
+| Kids 16 in wheel by height | United 3 ft 0 to 3 ft 8; Tall Order 3 ft 11 to 4 ft 6 | Conflicting, barely overlapping. NOT PUBLISHED |
+
+- `https://www.supercrossbmx.com/blogs/news/bmx-frame-sizing-chart`
+- `https://www.danscomp.com/bmx-rider-sizing-chart/cp477`
+- `https://jrbicycles.com/pages/frames`
+- `https://us.sourcebmx.com/pages/race-bikes-buyers-guide`
+- `https://us.sourcebmx.com/pages/bmx-frames-buyers-guide`
+- `https://tallorderbmx.com/pages/bmx-bikes-size-chart`
+- `https://unitedbikeco.com/pages/bmx-bike-sizing-guide`
+
+**Independence warning, carried onto the page.** Dan's Comp and Source BMX
+publish character for character identical height ranges across six sizes.
+Their table structures differ, but the values almost certainly share an
+origin. They are treated as one source, not two, everywhere on this site.
+
+**Naming warning.** Size names above Pro XL are not standardised. Supercross
+uses Pro L, Pro XXL, Pro XXXL, 4XL; Source uses Pro XL+; Chase runs to Pro
+XXXXXL. Do not treat the names as interchangeable between brands.
+
+### Crank arm length
+
+| Claim | Sources | Status |
+|---|---|---|
+| Freestyle aftermarket sells 160, 165, 170, 175mm | Odyssey, Eclat, Cult, Sunday, Kink product pages | Confirmed |
+| Profile offers 125mm to 190mm on 19mm spindles | Profile Racing | Single source |
+| Crank length by rider height | Dan's Comp only, under a race heading | Single source, and contradicted |
+| 180mm gives about 9 percent more torque than 165mm, at 9 percent more pedal circle | Supercross | Single source. Arithmetic checks: 180/165 = 1.0909 |
+| Shorter cranks help hopping and spinning | Profile Racing | Single source |
+| Pedal strike related to crank length | nothing found. Park Tool's positioning chart does not mention BMX | NOT VERIFIED, not published |
+
+- `https://www.profileracing.com/tech-tip-2-crank-it-down/`
+- `https://www.danscomp.com/bmx-crank-length-sizing-chart/cp479`
+- `https://www.supercrossbmx.com/pages/bmx-race-bike-setup-guide`
+- `https://www.sheldonbrown.com/cranks.html`
+
+**The contradiction is the finding.** Profile publishes three team riders with
+heights and chosen lengths: 6 ft 3 in on 170mm, 6 ft 0 in on 170mm, 6 ft 4 in
+on 165mm. Dan's chart puts all three on 180 to 190mm. No freestyle brand
+publishes a recommendation, and Dan's own freestyle guide omits crank length
+while covering wheel size and top tube. Published as preference, not spec.
+
+### Price tiers: deliberately not published
+
+Investigated and rejected. Reasons, all evidenced:
+
+- Dan's Comp, the largest retailer with live pricing, publishes a bike buyers
+  guide with no prices in it at all
+  (`https://www.danscomp.com/bmx-bike-buyers-guide/cp1308`).
+- Observed prices were not charged prices. Mongoose showed a $429.99 bike at
+  $281.99 struck through with a further 30 percent at checkout.
+- Dan's Comp was listing 2027 models in August 2026 while Haro's live URLs
+  were still 2025. A table straddles three model years.
+- Nearly every Dan's Comp listing observed was Sold Out or Back Order.
+- Albe's BMX, an established retailer, is now a parked domain listed for sale.
+- Brand price floors differ by about 50 percent: Kink $399.99, Cult $419.99,
+  Sunday $459.99, Haro $469, Fit $599.95.
+
+Published instead: the spec ladder, which is durable and checkable on any
+spec sheet. Frame material progresses hi-ten, chromoly front triangle, full
+chromoly frame, chromoly fork, chromoly bars. Bottom bracket progresses
+unsealed American to sealed Mid. Rear hub progresses unsealed to sealed
+cassette to freecoaster. Verified against Kink, Haro, Cult, Sunday and
+Mongoose spec sheets.
+
+One dated figure is published, hedged and labelled: BMX specialist brand 20
+inch completes started around 400 US dollars as of August 2026.
+
+**A correction worth keeping.** "Make sure it has three piece cranks" no
+longer filters anything. No BMX specialist brand checked sells a one piece
+crank at any price; Kink's cheapest 20 inch complete at $399.99 already has
+3pc chromoly. The boundary survives only inside Mongoose, between the Legion
+L10 at $249.99 and the L20 at $279.99. The freewheel to cassette boundary
+could not be placed at all: every current spec sheet that names a rear hub
+names a cassette, including a $249.99 bike with one piece cranks, and the
+budget bikes simply omit the hub spec. NOT VERIFIED, not published.
