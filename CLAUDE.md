@@ -125,9 +125,18 @@ span and only that span: the three known classes, a short plain-text label, no
 attributes. Any other tag mid-paragraph still escapes, deliberately.
 
 **Four badge styles, and the difference between the last two matters.**
-`src-confirmed` (two or more sources), `src-single` (one), `src-conflict`
-(sources disagree, and the page gives the range), and `src-gap` (nobody
-publishes it, labelled Unpublished or Unverified).
+
+| class | reader sees | meaning |
+|---|---|---|
+| `src-confirmed` | Confirmed | two or more independent sources agree |
+| `src-single` | Single source | one source |
+| `src-conflict` | Sources vary | sources disagree; the page gives the range |
+| `src-gap` | Unpublished / Unverified | nobody publishes it |
+
+The class names are internal and the labels are what ships. `src-conflict`
+used to render as "Conflicting", which read as an error state rather than as
+information about the industry. The label changed; the disclosure did not.
+Do not resolve one of these by picking a single number.
 
 `src-gap` exists because those twenty badges used to wear the conflict orange.
 Twenty-seven orange badges read as a site full of disagreement when only seven

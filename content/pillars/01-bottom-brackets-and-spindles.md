@@ -57,7 +57,7 @@ The shell diameter is the one figure on this page where good sources genuinely d
 <tr><th scope="col">Specification</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Shell inner diameter</th><td class="num">51.3mm to 51.5mm</td><td>Sources conflict <span class="src src-conflict">Conflicting</span></td></tr>
+<tr><th scope="row">Shell inner diameter</th><td class="num">51.3mm to 51.5mm</td><td>Park Tool and Sheldon Brown differ <span class="src src-conflict">Sources vary</span></td></tr>
 <tr><th scope="row">Shell width</th><td class="num">68mm</td><td>One supplier listing <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Bearing fitment</th><td>Cups pressed or threaded into the frame, bearings sit in the cups</td><td>Park Tool, Dans Comp, Sheldon Brown <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Cartridge bearing</th><td class="num">41.3mm OD, 11mm wide (same bearing as Mid)</td><td>TBB-BIKE, Dans Comp, Profile Racing <span class="src src-confirmed">Confirmed</span></td></tr>
@@ -159,7 +159,7 @@ Euro arrived as the first way to run three-piece cranks without the American cup
 <tr><th scope="row">Shell diameter</th><td class="num">approximately 34.8mm thread major diameter</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Shell width</th><td class="num">68mm BMX, 73mm MTB and dirt jump</td><td>Park Tool, Odyssey, Rant <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bearing fitment</th><td>Threaded cups screw into the frame and house the bearings</td><td>Dans Comp, GSport <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Bearing outer diameter</th><td>Not published here</td><td>Sources give 31, 32 and 35mm <span class="src src-conflict">Conflicting</span></td></tr>
+<tr><th scope="row">Bearing outer diameter</th><td>Not published here</td><td>Sources give 31, 32 and 35mm <span class="src src-conflict">Sources vary</span></td></tr>
 <tr><th scope="row">Spindle diameters</th><td class="num">19mm and 22mm freestyle, 24mm on external bearing race units</td><td>Odyssey, Rant, Box <span class="src src-confirmed">Confirmed</span></td></tr>
 </tbody>
 </table>

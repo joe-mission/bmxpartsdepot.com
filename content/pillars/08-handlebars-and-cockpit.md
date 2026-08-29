@@ -252,7 +252,7 @@ Grip length is less tidy.
 <tbody>
 <tr><th scope="row">Bar outer diameter at the grip</th><td class="num">22.2mm (7/8 inch)</td><td>Odyssey, S&amp;M <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Grip length, range sold</th><td class="num">140 to 170mm</td><td>ODI Longneck 143, Cult 160, Shadow Gypsy 165 <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">What that length means</th><td>Not quoted consistently</td><td>Compared across makers <span class="src src-conflict">Conflicting</span></td></tr>
+<tr><th scope="row">What that length means</th><td>Not quoted consistently</td><td>Compared across makers <span class="src src-conflict">Sources vary</span></td></tr>
 </tbody>
 </table>
 </div>

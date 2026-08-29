@@ -37,18 +37,18 @@ That difference catches people out, so it is worth being clear about which quest
 <tr><th scope="col">Size</th><th scope="col">Rider height</th><th scope="col">Top tube</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Mini</th><td class="num">3 ft 6 in to 4 ft 2 in</td><td class="num">16 to 17.5 in</td><td>Top tube: Dan's Comp, J and R <span class="src src-confirmed">Confirmed</span>. Height: sources give 3 ft 6 in, 3 ft 10 in and 4 ft 2 in as the lower bound <span class="src src-conflict">Conflicting</span></td></tr>
-<tr><th scope="row">Junior</th><td class="num">4 ft 0 in to 5 ft 1 in</td><td class="num">17 to 18.5 in</td><td>No two independent sources agree on the height band <span class="src src-conflict">Conflicting</span></td></tr>
-<tr><th scope="row">Expert</th><td class="num">4 ft 6 in to 5 ft 4 in</td><td class="num">18.5 to 20 in</td><td>Two opposed camps, six inches apart <span class="src src-conflict">Conflicting</span></td></tr>
+<tr><th scope="row">Mini</th><td class="num">3 ft 6 in to 4 ft 2 in</td><td class="num">16 to 17.5 in</td><td>Top tube: Dan's Comp, J and R <span class="src src-confirmed">Confirmed</span>. Height: sources give 3 ft 6 in, 3 ft 10 in and 4 ft 2 in as the lower bound <span class="src src-conflict">Sources vary</span></td></tr>
+<tr><th scope="row">Junior</th><td class="num">4 ft 0 in to 5 ft 1 in</td><td class="num">17 to 18.5 in</td><td>No two independent sources agree on the height band <span class="src src-conflict">Sources vary</span></td></tr>
+<tr><th scope="row">Expert</th><td class="num">4 ft 6 in to 5 ft 4 in</td><td class="num">18.5 to 20 in</td><td>Two opposed camps, six inches apart <span class="src src-conflict">Sources vary</span></td></tr>
 <tr><th scope="row">Expert XL</th><td class="num">4 ft 10 in to 5 ft 6 in</td><td class="num">19.5 to 20 in</td><td>Top tube: Dan's Comp, J and R <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Pro</th><td class="num">up to 5 ft 8 in</td><td class="num">20 to 20.5 in</td><td>Dan's Comp, J and R, Supercross <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Pro XL</th><td class="num">5 ft 7 in to 6 ft 0 in</td><td class="num">20.5 to 21.25 in</td><td>All four sources agree on the 6 ft top <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Pro XXL</th><td class="num">5 ft 10 in and up</td><td class="num">21.25 to 22 in</td><td>Lower bound given as 5 ft 10 in, 5 ft 11 in and 6 ft 0 in <span class="src src-conflict">Conflicting</span></td></tr>
+<tr><th scope="row">Pro XXL</th><td class="num">5 ft 10 in and up</td><td class="num">21.25 to 22 in</td><td>Lower bound given as 5 ft 10 in, 5 ft 11 in and 6 ft 0 in <span class="src src-conflict">Sources vary</span></td></tr>
 </tbody>
 </table>
 </div>
 
-**Read that conflict column, because it is the useful part.** On Expert, the most common youth size, Dan's Comp and Source BMX say 5 feet 0 inches to 5 feet 4 inches while J and R and Supercross say 4 feet 6 inches to 5 feet 2 inches. That is a six inch offset on the same size name. There is no version of this where one clean number is honest.
+**Read that sourcing column, because it is the useful part.** On Expert, the most common youth size, Dan's Comp and Source BMX say 5 feet 0 inches to 5 feet 4 inches while J and R and Supercross say 4 feet 6 inches to 5 feet 2 inches. That is a six inch offset on the same size name. There is no version of this where one clean number is honest.
 
 Two more things worth knowing before you use anybody's chart. **Dan's Comp and Source BMX publish character for character identical height ranges across six sizes**, so they are one source wearing two hats rather than two independent confirmations. And **the size names above Pro XL are not standardised between brands**: one maker's Pro XXL is another's Pro L, and Chase runs the naming out to Pro XXXXXL.
 
