@@ -791,7 +791,6 @@ footer.site .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);
    is in the brand column now, under the tagline, which fills the space that
    column was wasting and takes a whole row of height out of the footer. */
 footer.site .copyright{margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.6}
-footer.site .copyright .meta{color:rgba(255,255,255,.32)}
 
 /* ============================================================
    MOTION
