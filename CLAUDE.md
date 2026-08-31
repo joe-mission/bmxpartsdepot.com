@@ -1,8 +1,11 @@
 # bmxpartsdepot.com
 
-Static one-page marketing site for BMX Parts Depot, a used and mid-school BMX parts
-seller based in Maryland. Sales happen on eBay. This site exists to look legitimate
-and route people to the eBay store.
+Static site for BMX Parts Depot, a used and mid-school BMX parts seller based in
+Maryland. Sales happen on eBay. This site exists to look legitimate, route people
+to the eBay store, and answer the fitment question that comes before a purchase.
+
+It started as a one-pager and is now fifteen pages plus two games: the home page,
+two legal pages, the guides hub, ten pillar guides and the standalone BMX FAQ.
 
 ## Stack
 
@@ -37,6 +40,7 @@ content-plan/   planning docs: the old A-Z dictionary (superseded, kept as the
 guides/         GENERATED OUTPUT. Never hand-edit, build.py overwrites it.
 assets/guide.css        shared stylesheet for guide pages only
 assets/guide.js         progressive enhancement for guide pages only
+assets/video/           card clips, captured from the two games. See below.
 snippets/       paste-in HTML for eBay item descriptions, inline-styled
 sitemap.xml robots.txt llms.txt    GENERATED. Do not hand-edit.
 ```
@@ -215,7 +219,7 @@ different `@id`. `home` decides which is canonical.
 zero problems.
 
 **One Organization, one WebSite, one @id each.** `/#org` and `/#website`,
-defined identically on all fourteen pages. Every TechArticle points its
+defined identically on all fifteen pages (the two games carry none). Every TechArticle points its
 `publisher` and `author` at `/#org`.
 
 `index.html`, `privacy.html` and `terms.html` are hand-written, so nothing kept
@@ -253,6 +257,29 @@ Google switched FAQ rich results off on 7 May 2026 and removed the
 documentation on 15 June 2026, so the JSON-LD no longer earns a SERP feature
 for anyone. Keep emitting it, because other consumers read it and it costs
 nothing, but do not build a page on the promise of FAQ rich results.
+
+### Embedded video, and uploadDate
+
+`::: video Title | youtube-id | uploaded-datetime`
+
+The third field is the video's real upload time on YouTube, in full ISO 8601
+with an offset. It is not decoration. **A video without one emits no
+`VideoObject` at all**, which is the same rule the rest of this site applies to
+any figure it cannot source.
+
+That rule exists because the alternative shipped. `uploadDate` used to fall
+back to the page's own `updated:` value, so all eleven embedded videos claimed
+they were uploaded on the day the pages were last generated. Search Console
+flagged two of them, and only for the format: a bare date carries no timezone.
+The real problem was larger and quieter. Every one of the eleven dates was
+false, and these are not our videos, they belong to Park Tool and The Basement
+Bike Shop. Reformatting the fallback would have cleared the warning and left
+the site asserting eleven things it had no basis for.
+
+Omitting just `uploadDate` and keeping the object is not an option either. It
+is required, so that trades a warning for an invalid item.
+
+Real dates and their provenance are in `content-plan/verified-specs-bb.md`.
 
 ### The auto-linker
 
@@ -327,7 +354,7 @@ category grid, dark value props, light process, dark contact, dark footer.
 - The eBay seller handle displayed on the page is `bmx-parts-depot`.
 - Contact is a `mailto:` link to **`bmxpartsdepot@gmail.com`**, confirmed by Joe on
   29 August 2026. No hyphens. It is also the Organization `email` in the structured
-  data on all fourteen pages and the contact address in the legal pages. There is no
+  data on all fifteen pages and the contact address in the legal pages. There is no
   contact form and there should not be one; the site is static and has no backend.
 - Two wrong addresses were live before that: `bmx-parts-depot@gmail.com` (hyphenated,
   a guess) on the contact button and in all the schema, and `info@bmxpartsdepot.com`
@@ -377,6 +404,41 @@ Avoid ampersands in body copy unless the source text already uses one. Honest an
 plain rather than salesy: "if something is cracked, bent, or sketchy, it does not get
 sold" is the tone, not "premium quality guaranteed."
 
+## The nav
+
+Order is shop first, then reference:
+
+```
+What We Stock   Our Process   Contact   [separator]   Fitment Guide   BMX FAQ
+```
+
+The separator is a 9px checker diamond in neon cyan (`.nav-sep`), `aria-hidden`,
+picking up the checkerboard motif from the games. The hamburger carries the same
+order and its own `.nav-sep-h`, which needs `display:block` because the panel is
+a block container and an inline span has no width to give.
+
+**The row is tight and anything added to it needs re-measuring at 1280.** With
+the separator in, it measured 810px into 784px and wrapped, which is why the gap
+is 18px rather than 22px and why `.nav-sep` carries `margin:0 -4px`.
+
+The nav lives in three places and all three have to move together:
+
+| where | pages |
+|---|---|
+| `index.html` inline | home |
+| `build.py` nav template plus `assets/guide.css` | hub, ten pillars, BMX FAQ |
+| `privacy.html` and `terms.html` inline | the two legal pages |
+
+That split is exactly how the nav drifted before: the reorder landed only on the
+home page, the generated pages kept the old order, and privacy and terms were
+still on the original one-pager's menu of What We Stock / Why Us / Contact with
+no mobile menu at all. Below 820px those two showed a logo and an eBay button
+and nothing else.
+
+Their breakpoint is now 1200px like everything else. Five links plus the
+separator need about 1200 before the row wraps, so at 820 they wrapped onto two
+lines from 825 up to about 1100.
+
 ## Accessibility and robustness
 
 - Everything must survive `prefers-reduced-motion: reduce`. There is a media query
@@ -411,15 +473,19 @@ Then open http://localhost:8000. That is the whole workflow. Opening the file wi
 
 ## Known issues
 
-- **Enforce HTTPS** may still be unticked in the repo's Pages settings, pending
-  certificate issuance. Check Settings > Pages and enable it once selectable.
-- **No MX records** exist on the domain, so mail to any `@bmxpartsdepot.com`
-  address is still not delivered anywhere. Nothing on the site points at one now,
-  but do not introduce one without setting up MX first.
-- **The wordmark is CSS text**, not an image. A raster logo exists (heavy italic,
-  distressed, blue-to-white two-tone) and is a better fit, but has not been wired in.
-  If it is: it is white on the right half, so it only works on dark backgrounds. Every
-  nav and footer on the site is dark, so that is fine today.
+- **Enforce HTTPS** may still be unticked in the repo's Pages settings. The
+  certificate has issued and the site serves over HTTPS, so the toggle should be
+  selectable now. Check Settings > Pages.
+- **The domain publishes a null MX** (`0 .`), which says explicitly that it
+  accepts no mail, alongside `v=spf1 -all` and a `p=reject` DMARC. Mail to any
+  `@bmxpartsdepot.com` address bounces immediately and by design. If a real
+  address is ever wanted there, the null MX has to come out first or nothing
+  will arrive.
+- **The logo is a raster image** now, `assets/logo.png`, wired into the nav and
+  footer on every page. It is white on the right half, so it only works on dark
+  backgrounds; every nav and footer on the site is dark, so that is fine today.
+  It has no dark-on-light variant and no vector, which rules it out for eBay
+  templates, packing material and anything printed.
 
 ## /bmx-exploded-view/, the spin game
 
@@ -440,10 +506,10 @@ worth making for 590KB.
 Two exits back to the site, because the panel that holds the first one is
 hidden during a spin and spin mode is what loads first.
 
-Its own fonts and palette, deliberately unlike the rest of the site. It is a
-toy and reads as one.
+Its own fonts, deliberately unlike the rest of the site. It is a toy and reads
+as one. The palette is no longer unrelated though: see the visual system below.
 
-Not in `sitemap.xml` or `llms.txt`. Add it when the content is settled.
+In `sitemap.xml` and `llms.txt` as of 29 August 2026.
 
 ## /bmx-wheelie-run/, the second game
 
@@ -458,9 +524,77 @@ screen canvas has no other exit and people arrive on these from shared links.
 **Neither game is in the nav.** They are reached from the "Two BMX Games"
 section near the foot of the homepage and from the footer, and nowhere else.
 That is deliberate: the nav was full at five full-phrase labels, and a games
-section on the homepage is a better shop window than a nav item anyway.
+section on the homepage is a better shop window than a nav item anyway. Both
+"Back to BMX Parts Depot" links return to `/#games` rather than the top of the
+home page, so leaving a game puts you back where you started.
 
-Neither is in `sitemap.xml` or `llms.txt`.
+Both are in `sitemap.xml` and `llms.txt` as of 29 August 2026.
+
+Neither carries the site nav, and neither should. They are full-viewport and
+have their own chrome.
+
+## The visual system, and how the card clips are made
+
+Both games and the home page hero share one look: a synthwave sunset over a
+Vans-style checkerboard. Palette is `#150d3a` deep sky, `#b02f6b` magenta,
+`#ff7a35` orange, `#ffb347` gold at the horizon, `#7ff0ff` neon cyan for the
+horizon line, PLAY links and the nav separator.
+
+`bmx-exploded-view` gets its backdrop from CSS behind the canvas, which works
+because the renderer is `alpha:true` and the canvas is transparent. The floor is
+one element with a `repeating-conic-gradient` under `perspective()` and
+`rotateX()`, so it stays sharp at any size.
+
+`bmx-wheelie-run` has the scene itself repainted: sky texture stops, `scene.fog`,
+both lights, the verge material. Grading afterwards cannot work here, because a
+tint over a blue sky is a tinted blue sky. One non-obvious thing: the warm end of
+the sky ramp has to be pulled **up** into the visible band, because the camera
+only ever sees the top of that 1024x512 texture and a sunset spread evenly over
+0..1 puts the orange below the horizon where the ground plane hides it.
+
+Both HUDs were built against a near-black page and stopped being legible over a
+bright sky. Fixed with `text-shadow` on the floating readouts rather than
+recolouring every element.
+
+### Capturing the clips in `assets/video/`
+
+They are captured from the live games. Two things are worth keeping:
+
+**Never screen-record in real time.** Recording off a software GL renderer gives
+unevenly spaced frames, which reads as choppy, and no re-encode recovers a
+cadence the source never had.
+
+**Fake the clock instead.** Replace `requestAnimationFrame` with a queue and
+freeze `performance.now()` to a virtual time advanced by hand, so every frame is
+exactly 1/60s of simulated time from the last. CSS animations ignore that clock,
+so `document.getAnimations()` gets paused and its `currentTime` set per frame
+too.
+
+Both games wrap their code in an IIFE, so nothing is reachable from outside.
+Drive them through public surfaces (real clicks, key presses, `PointerEvent`s),
+or `page.route()` the HTML and inject a script between the three.js tag and the
+game tag, where `THREE` exists but nothing is built yet.
+
+Traps, all of which cost time once:
+
+- `toDataURL('image/jpeg')` composites transparency onto **black**. Flatten onto
+  an explicit colour first, or export PNG.
+- Hiding parts must happen **after** the mode switch. Leaving spin mode calls
+  `setBrakesVisible(true)` and silently undoes it.
+- A perspective checkerboard aliases hard near the horizon; one sample per pixel
+  turns the far field into noise. Supersample it.
+- Constant rotation comes from the orbit drag handler with a fixed pointer delta
+  per frame. The spin game's own velocity decays and the idle auto-rotation is
+  far too slow. 3.74px per frame is exactly 2*PI over 240 frames, so the clip
+  loops with no seam.
+
+The cards play on scroll into view rather than on hover, phones included, with
+`preload="none"` and load on first intersection. Source order is per clip:
+whichever of webm/mp4 is smaller goes first, since browsers take the first they
+can play.
+
+**Measure contrast off the composited pixels, not the CSS.** Text over video is
+not text over a known colour.
 
 ## Cross browser notes
 
