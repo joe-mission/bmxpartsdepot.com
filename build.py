@@ -1169,10 +1169,11 @@ def nav_html(active=""):
     <a class="wordmark" href="/"><img src="/assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="/#stock">What We Stock</a>
-      <a class="lnk"%s href="/guides/">Fitment Guide</a>
-      <a class="lnk"%s href="/bmx-faq/">BMX FAQ</a>
       <a class="lnk" href="/#process">Our Process</a>
       <a class="lnk" href="/#contact">Contact</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <a class="lnk"%s href="/guides/">Fitment Guide</a>
+      <a class="lnk"%s href="/bmx-faq/">BMX FAQ</a>
       <a class="btn sm" href="%s" target="_blank" rel="noopener">
         <span class="btn-label"><span class="hide-xs">Shop on </span>eBay</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -1185,10 +1186,11 @@ def nav_html(active=""):
   </div>
   <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
     <a href="/#stock">What We Stock</a>
-    <a href="/guides/">Fitment Guide</a>
-    <a href="/bmx-faq/">BMX FAQ</a>
     <a href="/#process">Our Process</a>
     <a href="/#contact">Contact</a>
+    <span class="nav-sep nav-sep-h" aria-hidden="true"></span>
+    <a href="/guides/">Fitment Guide</a>
+    <a href="/bmx-faq/">BMX FAQ</a>
   </nav>
 </header>
 <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>""" % (cur("guides"), cur("faq"), EBAY)

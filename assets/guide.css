@@ -126,7 +126,28 @@ a{color:inherit}
    only 11px of slack and made every label wrap. Tighter gap and dropping
    "Shop on" below 1250px buy enough room, and the bar hands over to the
    hamburger at 1080px rather than letting anything wrap. */
-.nav .links{display:flex;gap:22px;margin-left:auto;align-items:center}
+.nav .links{display:flex;gap:18px;margin-left:auto;align-items:center}
+/* Separator between the shop items and the reference items, matching the home
+   page: a 2x2 checker turned on its point, the same motif as the floor in the
+   games. Decorative only, so aria-hidden keeps the menu reading as one list.
+   The gap above went 22px to 18px and the negative margin pulls this element's
+   own pair in, because the row is tight and the separator plus its two gaps is
+   what tips it into wrapping. */
+.nav-sep{
+  width:9px;height:9px;flex:none;align-self:center;margin:0 -4px;
+  transform:rotate(45deg);
+  background:
+    conic-gradient(#7ff0ff 0% 25%, transparent 0% 50%,
+                   #7ff0ff 0% 75%, transparent 0% 100%);
+  box-shadow:0 0 9px rgba(127,240,255,.55);
+  opacity:.9;
+}
+.nav-sep-h{
+  /* the panel is a block container, so an inline span has no width to give */
+  display:block;
+  margin:10px 0 10px 3px;
+  width:11px;height:11px;
+}
 .nav .links a.lnk{
   position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
   color:rgba(255,255,255,.72);transition:color .2s ease;
@@ -191,6 +212,7 @@ a{color:inherit}
 @media(min-width:1201px){.nav-scrim{display:none}}
 @media(max-width:1200px){
   .nav .links a.lnk{display:none}
+  .nav .links .nav-sep{display:none}   /* collapses with the links it divides */
   .nav-toggle{display:inline-flex}
   .nav-panel:not([hidden]){display:block}
 }

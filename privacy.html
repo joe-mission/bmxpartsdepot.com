@@ -69,7 +69,59 @@ a{color:inherit}
   border-bottom:1px solid var(--hairline)}
 .nav .wrap{display:flex;align-items:center;gap:24px;height:70px}
 .nav a{color:#fff}
-.nav .links{display:flex;gap:28px;margin-left:auto;align-items:center}
+.nav .links{display:flex;gap:18px;margin-left:auto;align-items:center}
+/* Nav brought in line with the rest of the site. These pages were still on
+   the original one-pager's menu: What We Stock / Why Us / Contact, no
+   Fitment Guide, no BMX FAQ, and no mobile menu at all, so below 820px they
+   showed a logo and an eBay button and nothing else. */
+.nav-sep{
+  width:9px;height:9px;flex:none;align-self:center;margin:0 -4px;
+  transform:rotate(45deg);
+  background:
+    conic-gradient(#7ff0ff 0% 25%, transparent 0% 50%,
+                   #7ff0ff 0% 75%, transparent 0% 100%);
+  box-shadow:0 0 9px rgba(127,240,255,.55);
+  opacity:.9;
+}
+.nav-sep-h{display:block;margin:10px 0 10px 3px;width:11px;height:11px}
+.nav-toggle{
+  display:none;align-items:center;justify-content:center;
+  width:42px;height:42px;margin-left:4px;
+  background:transparent;border:1px solid rgba(255,255,255,.24);
+  border-radius:9px;color:#fff;cursor:pointer;flex:none;
+}
+.nav-toggle:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.45)}
+.nav-toggle .ico-close{display:none}
+.nav-toggle[aria-expanded="true"] .ico-open{display:none}
+.nav-toggle[aria-expanded="true"] .ico-close{display:block}
+.nav{position:relative}
+.nav-panel{
+  display:none;position:absolute;top:100%;left:0;right:0;
+  background:#0b0d10;border-bottom:1px solid rgba(255,255,255,.12);
+  padding:8px var(--pad,20px) 14px;
+  box-shadow:0 18px 40px -20px rgba(0,0,0,.9);
+}
+.nav-panel a{
+  display:block;padding:14px 2px;font-size:16px;font-weight:600;
+  color:rgba(255,255,255,.86);text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+.nav-panel a:last-child{border-bottom:0}
+.nav-panel a:hover,.nav-panel a:focus-visible{color:#fff}
+.nav-panel[hidden]{display:none}
+.nav-scrim{
+  position:fixed;inset:0;z-index:50;background:rgba(4,6,9,.66);
+  opacity:0;pointer-events:none;transition:opacity .26s ease;
+}
+.nav-scrim.is-open{opacity:1;pointer-events:auto}
+@media(prefers-reduced-motion:reduce){.nav-scrim{transition:none}}
+@media(min-width:1201px){.nav-scrim{display:none}}
+@media(max-width:1200px){
+  .nav .links .nav-sep{display:none}
+  .nav-toggle{display:inline-flex}
+  .nav-panel:not([hidden]){display:block}
+}
+
 .nav .links a.lnk{position:relative;text-decoration:none;font-size:14.5px;font-weight:550;
   color:rgba(255,255,255,.72);transition:color .2s ease}
 .nav .links a.lnk::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;
@@ -77,7 +129,10 @@ a{color:inherit}
   transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .nav .links a.lnk:hover{color:#fff}
 .nav .links a.lnk:hover::after{transform:scaleX(1)}
-@media(max-width:820px){.nav .links a.lnk{display:none}}
+/* 820 was the old three-link menu's breakpoint. With five links plus the
+   separator the row needs about 1200 before it wraps, same as the guide
+   pages, so the hamburger has to take over there instead. */
+@media(max-width:1200px){.nav .links a.lnk{display:none}}
 
 /* page header */
 .phead{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate;
@@ -181,15 +236,31 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
     <a class="wordmark" href="index.html"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
     <div class="links">
       <a class="lnk" href="index.html#stock">What We Stock</a>
-      <a class="lnk" href="index.html#why">Why Us</a>
+      <a class="lnk" href="index.html#process">Our Process</a>
       <a class="lnk" href="index.html#contact">Contact</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <a class="lnk" href="guides/">Fitment Guide</a>
+      <a class="lnk" href="bmx-faq/">BMX FAQ</a>
       <a class="btn sm" href="https://www.ebay.com/usr/bmx-parts-depot" target="_blank" rel="noopener">
         <span class="btn-label"><span class="hide-xs">Shop on </span>eBay</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
       </a>
+      <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu">
+        <svg class="ico-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+        <svg class="ico-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
     </div>
   </div>
+  <nav class="nav-panel" id="navPanel" aria-label="Main menu" hidden>
+    <a href="index.html#stock">What We Stock</a>
+    <a href="index.html#process">Our Process</a>
+    <a href="index.html#contact">Contact</a>
+    <span class="nav-sep nav-sep-h" aria-hidden="true"></span>
+    <a href="guides/">Fitment Guide</a>
+    <a href="bmx-faq/">BMX FAQ</a>
+  </nav>
 </header>
+<div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
 
 <section class="phead">
   <div class="glow" aria-hidden="true"></div>
@@ -311,5 +382,24 @@ footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-be
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<script>
+(function(){
+  var t = document.getElementById('navToggle');
+  var p = document.getElementById('navPanel');
+  var s = document.getElementById('navScrim');
+  if (!t || !p) return;
+  function set(open){
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    p.hidden = !open;
+    if (s) s.classList.toggle('is-open', open);
+  }
+  t.addEventListener('click', function(){ set(p.hidden); });
+  if (s) s.addEventListener('click', function(){ set(false); });
+  p.addEventListener('click', function(e){ if (e.target.tagName === 'A') set(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !p.hidden) set(false); });
+})();
+</script>
 </body>
 </html>
