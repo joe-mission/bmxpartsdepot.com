@@ -773,8 +773,10 @@ figure.diagram .fig-body.placeholder .todo{
    ============================================================ */
 footer.site{background:var(--ink);color:rgba(255,255,255,.6);padding:56px 0 28px;border-top:1px solid var(--hairline)}
 footer.site .cols{
+  /* The padding and rule under this divided it from the old copyright row.
+     With that row gone they left a line with nothing beneath it. */
   display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));
-  gap:32px;padding-bottom:32px;border-bottom:1px solid var(--hairline);
+  gap:32px;
 }
 @media(max-width:820px){footer.site .cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){footer.site .cols{grid-template-columns:minmax(0,1fr)}}
@@ -785,7 +787,11 @@ footer.site nav{display:flex;flex-direction:column;gap:9px}
 footer.site a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14.5px}
 footer.site a:hover{color:#fff;text-decoration:underline}
 footer.site .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-width:34ch}
-footer.site .bottom{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;padding-top:22px;font-size:13.5px}
+/* The copyright used to sit in its own full-width row under the columns. It
+   is in the brand column now, under the tagline, which fills the space that
+   column was wasting and takes a whole row of height out of the footer. */
+footer.site .copyright{margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.6}
+footer.site .copyright .meta{color:rgba(255,255,255,.32)}
 
 /* ============================================================
    MOTION

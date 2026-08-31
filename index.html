@@ -678,9 +678,12 @@ footer .wordmark img{height:clamp(28px,3.6vw,40px)}
 footer nav{display:flex;flex-wrap:wrap;gap:26px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s ease}
 footer a:hover{color:var(--cyan-on-dark)}
-footer .bottom{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:26px;border-top:1px solid var(--hairline);font-size:13.5px;color:rgba(255,255,255,.42)}
 /* footer knowledge base columns */
-footer .cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:32px;margin-bottom:34px}
+footer .cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:32px}
+/* The copyright used to sit in its own full-width row under a divider, which
+   cost about 90px of height to carry one short line while the brand column
+   above it sat half empty. It lives under the tagline now and the row is gone. */
+footer .copyright{margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.42)}
 @media(max-width:820px){footer .cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){footer .cols{grid-template-columns:minmax(0,1fr)}}
 footer .col-title{font-family:var(--display);font-size:14px;letter-spacing:.18em;color:#fff;margin:0 0 14px;text-transform:uppercase}
@@ -1053,6 +1056,7 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
       <div>
         <a class="wordmark" href="#top"><img src="assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
         <p class="tagline">Used BMX parts, honestly priced.</p>
+        <p class="copyright">&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</p>
       </div>
       <div>
         <p class="col-title">BMX Knowledge Base</p>
@@ -1086,12 +1090,6 @@ footer .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-w
           <a href="sitemap.xml">Sitemap</a>
         </nav>
       </div>
-    </div>
-    <div class="bottom">
-      <!-- The tagline lives under the logo above. It was here too, so the home
-           page footer said it twice. Privacy and terms keep theirs: their
-           footer has no logo lockup, so it is not a duplicate there. -->
-      <span>&copy; <span id="yr">2026</span> BMX Parts Depot. All rights reserved.</span>
     </div>
   </div>
 </footer>

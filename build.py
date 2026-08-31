@@ -1205,6 +1205,8 @@ def footer_html(top_guides):
       <div>
         <a class="wordmark" href="/"><img src="/assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
         <p class="tagline">Used BMX parts, honestly priced.</p>
+        <p class="copyright">&copy; <span id="yr">%s</span> BMX Parts Depot. All rights reserved.<br>
+          <span class="meta">Specs are checked against manufacturer sources. Measure before you buy.</span></p>
       </div>
       <div>
         <p class="col-title">BMX Knowledge Base</p>
@@ -1235,13 +1237,9 @@ def footer_html(top_guides):
         </nav>
       </div>
     </div>
-    <div class="bottom">
-      <span>&copy; <span id="yr">%s</span> BMX Parts Depot. All rights reserved.</span>
-      <span>Specs are checked against manufacturer sources. Measure before you buy.</span>
-    </div>
   </div>
   <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
-</footer>""" % (links, EBAY, date.today().year)
+</footer>""" % (date.today().year, links, EBAY)   # order follows the template, year first now
 
 
 HEAD = """<!DOCTYPE html>
