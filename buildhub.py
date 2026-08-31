@@ -76,7 +76,10 @@ def load_registry(root):
             if len(cells) != len(REGISTRY_COLUMNS):
                 raise SystemExit("%s line %d: %d columns, expected %d"
                                  % (path, lineno, len(cells), len(REGISTRY_COLUMNS)))
-            row = dict(zip(REGISTRY_COLUMNS, (c.strip() for c in cells)))
+            # strict is belt and braces: the length check above already rejects a
+            # short or long row, but this makes the pairing itself refuse to
+            # silently drop a column if that check is ever moved or relaxed.
+            row = dict(zip(REGISTRY_COLUMNS, (c.strip() for c in cells), strict=True))
             if row["status"] not in ("published", "planned"):
                 raise SystemExit("%s line %d: bad status %r"
                                  % (path, lineno, row["status"]))
@@ -345,7 +348,7 @@ def write_hub(pages, top_guides, nav_html, footer_html, HEAD, SITE):
 <script src="{js_href}" defer></script>
 </body>
 </html>
-""".format(total=total_terms, mapped=mapped, az_status=az_status, az_bar=az_bar,
+""".format(total=total_terms, az_status=az_status, az_bar=az_bar,
            cards="".join(cards), az="".join(az_html), footer=footer_html(top_guides),
            js_href=versioned("/assets/guide.js"))
 
