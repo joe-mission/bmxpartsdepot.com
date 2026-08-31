@@ -152,7 +152,7 @@ The system has real advantages: height adjustment is trivial, and there is only 
 
 **Minimum insertion is not optional.** A quill stem has a maximum height line marked on it. Above that line there is not enough quill inside the steerer to clamp safely, and the failure mode is the stem coming out of the fork. **A quill stem with the maximum line above the top of the headset does not get ridden and does not get sold like that.**
 
-::: video How to Replace a Bicycle Stem, Quill Stems | yM90mfrjkUA
+::: video How to Replace a Bicycle Stem, Quill Stems | yM90mfrjkUA | 2019-01-29T09:02:52-08:00
 Park Tool on quill stems, including tapping the bolt down to free the wedge. It is filmed as a straightforward replacement rather than a seizure, so treat it as the method and expect a genuinely stuck one to take longer.
 :::
 

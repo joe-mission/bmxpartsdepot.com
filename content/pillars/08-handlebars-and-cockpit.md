@@ -80,7 +80,7 @@ It is also why the diagram above measures rise to the top of the tube and says s
 One bar drawn twice, from the front and from above, with each of the four measurements marked so it is obvious which plane each one lives in.
 :::
 
-::: video Sizing and Cutting Handlebars | pBdxCtAn5Ew
+::: video Sizing and Cutting Handlebars | pBdxCtAn5Ew | 2018-06-19T07:02:48-07:00
 Park Tool on sizing and cutting bars. It is a width video rather than a rise and sweep video, so use it for the cutting method and take rise, upsweep and backsweep from the measuring points diagram above.
 :::
 
@@ -261,7 +261,7 @@ Grip length is less tidy.
 
 Same lesson as the rise figures further up this page: **the number is reliable, what it is measuring is not.**
 
-::: video Removing and Installing BMX Grips Without an Air Compressor | qWamOoHlRFo
+::: video Removing and Installing BMX Grips Without an Air Compressor | qWamOoHlRFo | 2018-07-22T13:09:43-07:00
 The no-compressor method, which is the one most people can actually do at home.
 :::
 

@@ -122,7 +122,7 @@ Two things that catch people out. First, **shims exist and are common**, so a bi
 
 Shims are made for the common step-ups, from Problem Solvers, Cane Creek and Gusset, so a smaller post in a larger seat tube is a solved problem rather than a bodge. Same rule as the bar shims: use a machined split sleeve, not a wrap of something.
 
-::: video Identifying Your Seat Post Size | w4nga7XNprU
+::: video Identifying Your Seat Post Size | w4nga7XNprU | 2021-02-09T07:15:01-08:00
 Where to take the reading, and why a post that has been clamped hard needs measuring in more than one place.
 :::
 
@@ -221,7 +221,7 @@ Getting a seized post out is a job with a definite order to it, from least destr
 
 Where it goes past that point, the options get destructive quickly, and the honest advice is to weigh the frame's value against the risk before starting. A post can be sacrificed, cut off and its remains cut out from inside. A frame that has had a seat tube split trying to save a post is finished. **If a used frame comes in with a seized post, that gets said in the listing.** Nobody wants that discovery at home.
 
-::: video How to Remove a Stuck Seatpost | qwiwxuzyXoo
+::: video How to Remove a Stuck Seatpost | qwiwxuzyXoo | 2024-11-22T09:00:33-08:00
 The full order of operations, from penetrating fluid and leverage through to the point where the post gets sacrificed.
 :::
 

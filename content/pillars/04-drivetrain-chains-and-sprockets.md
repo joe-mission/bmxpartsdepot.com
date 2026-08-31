@@ -326,7 +326,7 @@ If it is off, the adjustment is almost always at the bottom bracket, moving spac
 
 A **left hand drive** conversion changes chainline completely, because the sprocket moves to the **non drive side** and everything about the setup has to be redone. That is not a bolt-on job.
 
-::: video Shop Talk: What is Chainline, and How Do I Measure It? | 0lN3Zf9gpp8
+::: video Shop Talk: What is Chainline, and How Do I Measure It? | 0lN3Zf9gpp8 | 2019-02-26T07:00:01-08:00
 Park Tool on what chainline is and how to measure it. The principle is identical on BMX, though the correction here is moving bottom bracket spacers rather than changing a crankset.
 :::
 

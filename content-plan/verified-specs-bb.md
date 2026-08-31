@@ -679,3 +679,32 @@ L10 at $249.99 and the L20 at $279.99. The freewheel to cassette boundary
 could not be placed at all: every current spec sheet that names a rear hub
 names a cassette, including a $249.99 bike with one piece cranks, and the
 budget bikes simply omit the hub spec. NOT VERIFIED, not published.
+
+## Video upload dates (2026-08-29)
+
+Google Search Console flagged `uploadDate` on two VideoObject items: missing a
+timezone, and an invalid datetime value. The cause was worse than the warning.
+`build.py` had `uploadDate` fall back to the page's own `updated:` value, so all
+eleven embedded videos claimed an upload date of 2026-08-28, the day the pages
+were last generated. Every one of those was false.
+
+Real values, read from each video's own page on youtube.com:
+
+| id | uploaded | channel |
+|---|---|---|
+| e-8G1G9QNX8 | 2019-09-24T11:30:57-07:00 | Park Tool |
+| KQxcwyZu9KQ | 2018-04-01T06:59:34-07:00 | The Basement Bike Shop |
+| 0lN3Zf9gpp8 | 2019-02-26T07:00:01-08:00 | Park Tool |
+| QUhphm6qVcc | 2018-03-24T07:14:51-07:00 | The Basement Bike Shop |
+| EWyj-ktlcYc | 2026-04-14T07:15:00-07:00 | Park Tool |
+| 72BCVAE7nJ0 | 2020-04-11T15:07:33-07:00 | The Basement Bike Shop |
+| yM90mfrjkUA | 2019-01-29T09:02:52-08:00 | Park Tool |
+| pBdxCtAn5Ew | 2018-06-19T07:02:48-07:00 | Park Tool |
+| qWamOoHlRFo | 2018-07-22T13:09:43-07:00 | The Basement Bike Shop |
+| w4nga7XNprU | 2021-02-09T07:15:01-08:00 | Park Tool |
+| qwiwxuzyXoo | 2024-11-22T09:00:33-08:00 | Park Tool |
+
+They live in the content as a third field on the `::: video` directive. A video
+without one now emits no VideoObject at all, rather than a guessed date. That is
+the same rule this site applies to every other figure it cannot source, and it
+is why the fallback is gone rather than reformatted.

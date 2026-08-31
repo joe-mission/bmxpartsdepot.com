@@ -246,9 +246,16 @@ def d_caliper(arg, body, ctx):
 
 
 def d_video(arg, body, ctx):
+    """::: video Title | youtube-id | uploaded-datetime
+
+    The third field is the video's real upload time on YouTube, in full ISO
+    8601 with an offset. It is not optional decoration: without it no
+    VideoObject is emitted at all. See the schema block for why.
+    """
     parts = [p.strip() for p in arg.split("|")]
     title = parts[0] if parts else ""
     vid = parts[1] if len(parts) > 1 else ""
+    uploaded = parts[2] if len(parts) > 2 else ""
     caption = body.strip()
     cap_html = (
         "<figcaption><b>%s</b>%s</figcaption>"
@@ -256,7 +263,8 @@ def d_video(arg, body, ctx):
     ) if title or caption else ""
 
     if vid and not vid.upper().startswith("TBD"):
-        ctx["videos"].append({"title": title, "id": vid, "caption": caption})
+        ctx["videos"].append({"title": title, "id": vid, "caption": caption,
+                              "uploaded": uploaded})
         frame = (
             '<div class="video-frame">'
             '<iframe src="https://www.youtube-nocookie.com/embed/%s" '
@@ -882,7 +890,21 @@ def build_schema(meta, ctx, url):
             ],
         })
 
+    # These are other people's videos, embedded here because they are useful.
+    # uploadDate used to fall back to the page's own `updated:` value, which
+    # said every one of them was uploaded on the day the page was last edited.
+    # That was wrong for all eleven, and Google flagged the format on top of
+    # it: a bare date carries no timezone.
+    #
+    # The dates now come from YouTube itself and are carried in the directive.
+    # A video without one emits no VideoObject rather than a guessed date,
+    # which is the same rule the rest of this site follows for any figure it
+    # cannot source. Omitting uploadDate but keeping the object would just
+    # trade a warning for an invalid item.
     for v in ctx["videos"]:
+        if not v.get("uploaded"):
+            ctx["unsourced_video"] = ctx.get("unsourced_video", 0) + 1
+            continue
         graph.append({
             "@type": "VideoObject",
             "@id": "%s#video-%s" % (url, v["id"]),
@@ -891,7 +913,7 @@ def build_schema(meta, ctx, url):
             "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
             "contentUrl": "https://www.youtube.com/watch?v=" + v["id"],
             "thumbnailUrl": "https://i.ytimg.com/vi/%s/hqdefault.jpg" % v["id"],
-            "uploadDate": v.get("uploaded", meta.get("updated", str(date.today()))),
+            "uploadDate": v["uploaded"],
         })
 
     for im in ctx["images"]:
