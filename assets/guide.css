@@ -249,6 +249,10 @@ a{color:inherit}
 .guide-head .wrap{position:relative;z-index:1}
 .guide-head h1{font-size:clamp(34px,5.2vw,60px);margin:0;color:#fff}
 .guide-head .eyebrow{color:var(--cyan-lt)}
+.guide-head .editorial-meta{margin:20px 0 0;font-size:14px;line-height:1.8;color:rgba(255,255,255,.75)}
+.guide-head .editorial-meta a{color:var(--cyan-lt);text-underline-offset:3px}
+.editorial-meta span{margin:0 5px}
+article.guide .source-note{font-size:14px;line-height:1.7;padding:12px 16px;border-left:3px solid var(--cyan);background:var(--paper-2);overflow-wrap:anywhere}
 .guide-head .standfirst{
   margin:18px 0 0;max-width:var(--readw);
   font-size:clamp(16px,1.9vw,19px);color:rgba(255,255,255,.72);

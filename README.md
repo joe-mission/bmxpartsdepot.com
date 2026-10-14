@@ -79,3 +79,18 @@ This project is only `joe-mission/bmxpartsdepot.com`. Do not access or change
 OCvibe repositories, projects, organization settings, or deployment services.
 The separate `joe-mission/danaloverde.com` site uses Vercel, not this publishing
 process. Keep credentials and recovery codes out of the repository.
+
+## Editorial updates
+
+`content/pages/about.md` builds `/about/` with the shared guide renderer and
+`AboutPage` structured data. It is a standalone page, not an eleventh pillar.
+Guide headers show the publisher, the source `updated:` date, and a link to
+the editorial method. Change `updated:` deliberately when editing content; it
+is not a whole-page fact-check or a human-review certification.
+
+Put source links beside the section or table claim they support. Use Markdown
+links in prose and HTML links inside raw HTML tables. A `source-note` paragraph
+can identify a document's scope without implying that it verifies every nearby
+claim. Record corrections and new evidence in `content-plan/verified-specs-bb.md`.
+Do not turn a sprocket bore into a spindle tolerance or fabricate a reviewer,
+bench measurement, or shop photograph.

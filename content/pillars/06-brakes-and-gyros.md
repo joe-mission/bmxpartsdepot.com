@@ -9,7 +9,7 @@ description: How BMX U-brakes mount, what 990 mounts and gyro tabs are, how a de
 cardline: Mounts, straddle cables, detanglers, and the parts that go missing off a used frame.
 standfirst: Most used BMX frames arrive brakeless, and most used brake sets arrive incomplete. This guide explains how each part of the system works and what has to be present for it to work at all. Mount dimensions are sourced and stated. Straddle cable lengths are held back rather than guessed at, because that one varies with the frame and the brake together.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: u-brake|U-Brake, u-brake-mounts|Brake Mounts, removable-brake-mounts|Removable Brake Mounts, gyro-detangler|Detangler, gyro-tabs|Gyro Tabs, straddle-cable-yoke|Straddle Cable Yoke, brake-lever-reach|Brake Lever Reach, quick-release-brake-cable|Quick Release Brake Cable, v-brake|V-Brake, keyed-washer|Keyed Washer, 990-mounts|990 Mounts, straddle-cable-hanger|Straddle Cable Hanger, cable-pull-ratio|Cable Pull Ratio
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-front-end-headsets-and-forks|Headsets, Forks and Stems, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles, bmx-handlebars-and-cockpit|Handlebars and Cockpit
@@ -41,6 +41,8 @@ Pad position is adjustable in more directions than most people use. The pad can 
 ::: figure How a U-brake pulls | assets/diagrams/bmx-u-brake-action.svg | Diagram of a BMX U-brake showing the two arms crossing over their posts, the straddle cable triangle, the yoke, and the direction of force at each point
 The force path from the lever to the pad, with the straddle triangle drawn at two different heights to show how the mechanical advantage changes.
 :::
+
+<p class="source-note">For a manufacturer example of pad angle adjustment hardware: <a href="https://www.flybikes.com/product/fly-manual-brake-pads">Flybikes: Manual brake pad adjustment hardware</a>.</p>
 
 ## Brake mounts and the 990 name {#u-brake-mounts}
 
@@ -125,6 +127,8 @@ A gyro adds friction to the brake system, and a badly set up one adds a lot. The
 **Wrong cable lengths.** A gyro needs cables cut for a gyro. A standard brake cable will not do the job of the upper pair, and cables that are too long loop badly and rub the bars.
 
 **Missing hardware.** The small parts (the spacers, the mounting bolts, the cable ends) are what disappear when a gyro is pulled off a bike and thrown in a box.
+
+<p class="source-note">For the detangler, upper cable, lower cable and lever components: <a href="https://shop.odysseybmx.com/collections/odyssey-gyros">Odyssey: Gyro components and cable kits</a>.</p>
 
 ## Gyro tabs {#gyro-tabs}
 

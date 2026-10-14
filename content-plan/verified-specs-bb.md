@@ -708,3 +708,47 @@ They live in the content as a third field on the `::: video` directive. A video
 without one now emits no VideoObject at all, rather than a guessed date. That is
 the same rule this site applies to every other figure it cannot source, and it
 is why the fallback is gone rather than reformatted.
+
+
+## Citation and consistency corrections, 14 October 2026
+
+This entry supersedes the earlier generalisations about 24mm cranks and the
+15/16-inch dimension. The earlier entries remain as the research history.
+
+- BSD Substance XL V2 explicitly specifies a 24mm spindle and includes a Mid BB.
+  It establishes a freestyle Mid example, not market share or a universal tolerance.
+- Odyssey Thunderbolt explicitly lists a 22mm spindle and a 15/16-inch sprocket
+  interface separately. Converting the sprocket bore to 23.8125mm does not establish
+  a 24mm spindle diameter or justify calling a used 23.8mm spindle unworn.
+- The FAQ and home teaser now distinguish adult 20-inch freestyle bikes from
+  smaller-wheel bikes for smaller riders. Sunday's archived 16-inch Primer is a
+  manufacturer example. Arm length is not the same dimension as spindle length.
+- Flybikes currently lists a Tripod post with three fixing points and an angle
+  wedge. Removed the old-school/three-bolt claim, the misleading diagram from the
+  rendered guide, and unverified universal bolt dimensions. No new shop readings
+  were created.
+
+Documents opened for the section-level citations below. These links support the
+named topic/model only; they do not certify every adjacent table row or upgrade
+existing source-status badges. Product specifications can change.
+
+- [Park Tool: bottom bracket standards](https://www.parktool.com/en-us/blog/repair-help/bottom-bracket-standards-and-terminology)
+- [Sheldon Brown: one-piece cranks](https://www.sheldonbrown.com/opc.html)
+- [Profile: Mid/American bearing dimensions](https://www.profileracing.com/product/mid-american-bottom-bracket-bearing/)
+- [BSD: Substance XL V2 specifications](https://bsdforever.com/products/substance-xl-v2-crank)
+- [Odyssey: Thunderbolt specifications](https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black)
+- [Sunday: Wavelength construction and geometry](https://shop.sundaybikes.com/products/sunday-wavelength-frame-matte-black)
+- [Supercross: frame sizing guide](https://www.supercrossbmx.com/blogs/news/bmx-frame-sizing-chart)
+- [Sheldon Brown: tire sizing systems](https://www.sheldonbrown.com/tire-sizing.html)
+- [KMC: choosing a chain size](https://www.kmcchain.com/en/article/q19)
+- [Park Tool: pedal installation and thread direction](https://www.parktool.com/en-us/blog/repair-help/pedal-installation-and-removal)
+- [Profile: crank length and rider examples](https://www.profileracing.com/tech-tip-2-crank-it-down/)
+- [Odyssey: Gyro components and cable kits](https://shop.odysseybmx.com/collections/odyssey-gyros)
+- [Flybikes: Manual brake pad adjustment hardware](https://www.flybikes.com/product/fly-manual-brake-pads)
+- [Park Tool: headset standards](https://www.parktool.com/en-us/blog/repair-help/headset-standards)
+- [Odyssey: Broc bar dimensions](https://shop.odysseybmx.com/collections/41-thermal/products/odyssey-broc-9-8-bar-matte-black)
+- [Flybikes: front-load and top-load Volcano stems](https://www.flybikes.com/blog/volcano-stems-2017sneakpeek)
+- [Flybikes: Tripod post and wedge](https://www.flybikes.com/product/fly-tripod-seat-post)
+- [Flybikes: Motosierra railed post](https://www.flybikes.com/product/fly-motosierra-rail-seat-post-black)
+- [GSport: Bottom Bracket Compendium, June 2004](https://gsportbmx.com/2004/06/bottom-bracket-compendium/)
+- [Sunday: 16-inch Primer specifications](https://sundaybikes.com/bikes/archive/2018-bikes/starter-bikes/2018-primer-16-fluorescent-green/)

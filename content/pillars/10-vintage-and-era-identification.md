@@ -9,7 +9,7 @@ description: What old school, mid school and modern actually mean, why the year 
 cardline: The era words are useful. The year ranges attached to them are repeated everywhere and sourced almost nowhere.
 standfirst: Every site that explains old school, mid school and modern BMX gives you three neat year ranges. We could not verify any of them against a primary source, so this guide does not publish them as fact. What it does instead is show you how to date a bike from the parts on it, which is how the eras are actually recognised.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: old-school-bmx|Old School, mid-school-bmx|Mid-School, bmx-neck-stem|Neck, wedge-stem|Wedge Stem, expander-bolt|Expander Bolt, frame-gusset|Frame Gusset, adjustable-cone|Adjustable Cone, jam-nut|Jam Nut
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-front-end-headsets-and-forks|Front End Headsets and Forks, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles
@@ -80,7 +80,9 @@ The things that mark a bike as old school are mostly things that later disappear
 
 **Steel, and a lot of it.** Hi-ten frames were normal, chromoly was the upgrade worth advertising on a sticker, and parts were generally heavier and simpler than their modern equivalents.
 
-**Period details.** Loose ball hubs with adjustable cones, plated steel hardware, tripod or combo seats, and often mag wheels or plastic wheels rather than laced spokes.
+**Period details.** Loose ball hubs with adjustable cones, plated steel hardware, period saddles and seat posts, and often mag wheels or plastic wheels rather than laced spokes.
+
+<p class="source-note">For the one-piece crank system, not an era boundary: <a href="https://www.sheldonbrown.com/opc.html">Sheldon Brown: one-piece cranks</a>.</p>
 
 ## Mid school {#mid-school-bmx}
 
@@ -104,6 +106,8 @@ The practical consequence for anybody buying parts is that **a mid school bike i
 
 ::: fitbadge Not sure which bottom bracket standard your frame uses? | Bottom Brackets and Spindles | /guides/bottom-brackets-and-spindles/
 :::
+
+<p class="source-note">For a dated account of bottom bracket designs, not a universal era date: <a href="https://gsportbmx.com/2004/06/bottom-bracket-compendium/">GSport: Bottom Bracket Compendium, June 2004</a>.</p>
 
 ## Modern {#modern-bmx}
 

@@ -812,7 +812,7 @@ def build_schema(meta, ctx, url):
     desc = meta.get("description", "")
 
     article = {
-        "@type": "TechArticle",
+        "@type": "AboutPage" if meta.get("page_type") == "AboutPage" else "TechArticle",
         "@id": url + "#article",
         "headline": meta.get("headline", title),
         "name": title,
@@ -932,9 +932,12 @@ def build_schema(meta, ctx, url):
         "@id": url + "#crumbs",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
+        ] + ([
+            {"@type": "ListItem", "position": 2, "name": title, "item": url},
+        ] if meta.get("page_type") == "AboutPage" else [
             {"@type": "ListItem", "position": 2, "name": "Fitment Guide", "item": SITE + "/guides/"},
             {"@type": "ListItem", "position": 3, "name": title, "item": url},
-        ],
+        ]),
     })
 
     return {"@context": "https://schema.org", "@graph": graph}
@@ -1228,6 +1231,7 @@ def footer_html(top_guides):
       <div>
         <p class="col-title">Site</p>
         <nav>
+          <a href="/about/">About and Editorial Method</a>
           <a href="/privacy.html">Privacy Policy</a>
           <a href="/terms.html">Terms of Use</a>
           <a href="/llms.txt">llms.txt</a>
@@ -1358,17 +1362,30 @@ def build_pillar(path, all_pillars, top_guides, standalone=False):
     head = HEAD.format(
         title=html.escape(meta.get("title", ""), quote=True),
         description=html.escape(meta.get("description", ""), quote=True),
-        url=url, site=SITE, schema=schema, nav=nav_html("faq" if standalone else "guides"),
+        url=url, site=SITE, schema=schema,
+        nav=nav_html("faq" if slug == "bmx-faq" else "" if standalone else "guides"),
         css_href=versioned("/assets/guide.css"),
     )
+
+    updated = date.fromisoformat(meta["updated"])
+    editorial = ('<p class="editorial-meta">Published by '
+                 '<a href="/about/#publisher">BMX Parts Depot</a>'
+                 ' <span aria-hidden="true">&middot;</span> Updated '
+                 '<time datetime="%s">%s</time>'
+                 ' <span aria-hidden="true">&middot;</span> '
+                 '<a href="/about/#sources">Sources and editorial method</a></p>'
+                 % (updated.isoformat(), updated.strftime("%B %d, %Y")))
+    guide_crumb = ('' if meta.get("page_type") == "AboutPage" else
+                   '<a href="/guides/">Fitment Guide</a><span aria-hidden="true">/</span>')
 
     page = head + """
 <section class="guide-head">
   <div class="wrap">
-    <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Fitment Guide</a><span aria-hidden="true">/</span>{short}</p>
+    <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span>{guide_crumb}{short}</p>
     <p class="eyebrow">{eyebrow}</p>
     <h1 class="display">{h1}</h1>
     <p class="standfirst">{standfirst}</p>
+    {editorial}
     {eras}
   </div>
 </section>
@@ -1394,6 +1411,7 @@ def build_pillar(path, all_pillars, top_guides, standalone=False):
         h1=html.escape(meta.get("h1", meta.get("title", ""))),
         standfirst=inline(meta.get("standfirst", meta.get("description", ""))),
         eras=era_row(as_list(meta, "eras")),
+        editorial=editorial, guide_crumb=guide_crumb,
         main=main, related=related, toc=toc, footer=footer_html(top_guides),
         js_href=versioned("/assets/guide.js"),
     )

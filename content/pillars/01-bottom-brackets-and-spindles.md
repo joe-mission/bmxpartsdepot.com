@@ -9,7 +9,7 @@ description: American, Mid, Spanish, and Euro bottom brackets compared, with she
 cardline: The four shell standards, what each one measures, and which spindle and bearing combination fits.
 standfirst: Four bottom bracket standards have been used on BMX bikes, and they are told apart by the diameter of the frame shell. Get that number and everything else follows. Every figure below carries its sourcing, because several of the numbers repeated online do not hold up.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: american-bottom-bracket|American Bottom Bracket, mid-bottom-bracket|Mid Bottom Bracket, spanish-bottom-bracket|Spanish Bottom Bracket, euro-bottom-bracket|Euro Bottom Bracket, bottom-bracket-shell-width|Bottom Bracket Shell Width, crank-spindle-diameter|Crank Spindle Diameter, sealed-bearing-sizes|Sealed Bearing Sizes, press-fit-bottom-bracket|Press-Fit Bottom Bracket, loose-ball-bearings|Loose Ball Bearings, unsealed-bearings|Unsealed Bearings, thread-pitch|Thread Pitch
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-wheels-hubs-and-axles|Wheels and Hubs, drivetrain-chains-and-sprockets|Drivetrain and Sprockets, bmx-cranks-and-pedals|Cranks and Pedals
@@ -80,6 +80,8 @@ part: an S&M Holmes frame, 1997
 So a source quoting 51.5 was almost certainly measuring across a cup, and a source quoting 51.3 was measuring the frame. Neither is wrong, and neither is measuring the same thing. **Pull the cups before you measure**, and if your reading lands near 51.5 on a shell you believe is empty, look again for a cup still seated in it.
 :::
 
+<p class="source-note">For shell and cup terminology: <a href="https://www.parktool.com/en-us/blog/repair-help/bottom-bracket-standards-and-terminology">Park Tool: bottom bracket standards</a>; <a href="https://www.sheldonbrown.com/opc.html">Sheldon Brown: one-piece cranks</a>.</p>
+
 ## Mid bottom bracket {#mid-bottom-bracket}
 
 ::: quickanswer
@@ -103,7 +105,7 @@ Five independent sources give the shell diameter as the same number to rounding:
 <tr><th scope="row">Bearing size</th><td class="num">41.3mm OD, 11mm wide</td><td>TBB-BIKE, Profile Racing <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bearing, 19mm spindle</th><td>R12 2RS</td><td>BMX Direct, dimensions match Profile <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Bearing, 22mm spindle</th><td>R12RS-22</td><td>BMX Direct, TBB-BIKE <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Spindle diameters</th><td class="num">19mm and 22mm mainstream, 24mm sold</td><td>Odyssey, Profile; 24mm from Empire only <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Spindle diameters</th><td class="num">19mm and 22mm mainstream, 24mm sold</td><td>Odyssey, Profile; <a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD lists a 24mm Mid kit with its cranks</a> <span class="src src-single">Single source</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -111,6 +113,8 @@ Five independent sources give the shell diameter as the same number to rounding:
 ::: video Removing and Installing Mid Bottom Brackets BMX, Step by Step | KQxcwyZu9KQ | 2018-04-01T06:59:34-07:00
 The job people most often do badly. Watch how the press is squared up before any load goes on.
 :::
+
+<p class="source-note">For replacement bearing dimensions: <a href="https://www.profileracing.com/product/mid-american-bottom-bracket-bearing/">Profile: Mid/American bearing dimensions</a>.</p>
 
 ## Spanish bottom bracket {#spanish-bottom-bracket}
 
@@ -193,12 +197,12 @@ So: if a complete bike has an American shell it is more likely to predate 2005 t
 ## Crank spindle diameter {#crank-spindle-diameter}
 
 ::: quickanswer
-BMX freestyle cranks use **19mm or 22mm spindles**, with **24mm** mostly found on race setups. The spindle diameter is the **bore** of your bottom bracket bearing, a completely separate number from the shell diameter.
+BMX freestyle cranks are available with **19mm, 22mm and 24mm spindles**. Match the bearing bore to the specific crank model. The spindle diameter is the **bore** of your bottom bracket bearing, a completely separate number from the shell diameter.
 :::
 
 19mm is the default. It is what most complete bikes ship with and what most aftermarket cranks use, and sources describe it as plenty strong for normal riding. 22mm is the durability upgrade, and sources describe it as the size the industry settled on after experimenting more widely.
 
-24mm is where the received wisdom goes wrong. It is usually presented as simply the strongest option. The one source that addressed the tradeoff directly says the opposite in part: going to 24mm grows the bearing bore while the shell fixes the outer diameter, so you gain spindle strength and lose bearing material. In current BMX, 24mm is mostly a race and external bearing thing rather than a freestyle Mid thing.
+**24mm is also a freestyle Mid option.** [BSD's Substance XL V2](https://bsdforever.com/products/substance-xl-v2-crank) has a 24mm spindle and includes a Mid bottom bracket. <span class="src src-single">Single source</span> Spindle diameter alone does not rank the strength of a complete crank and bearing assembly; material, construction and bearing design matter too.
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -209,13 +213,15 @@ BMX freestyle cranks use **19mm or 22mm spindles**, with **24mm** mostly found o
 <tbody>
 <tr><th scope="row">19mm</th><td>Most complete bikes, most aftermarket cranks</td><td>The default. Described by sources as plenty strong.</td></tr>
 <tr><th scope="row">22mm</th><td>Durability upgrade, widely available</td><td>The size the industry settled on for stronger setups.</td></tr>
-<tr><th scope="row">24mm</th><td>Mostly race, external bearing Euro and BSA</td><td>Nominally 15/16 inch, which is 23.81mm, not 24.00mm.</td></tr>
+<tr><th scope="row">24mm</th><td>Freestyle Mid setups as well as some race systems</td><td><a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD Substance XL V2: 24mm spindle with Mid BB</a> <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">30mm and 35mm</th><td>BMX race only</td><td>Exist, and are the reason "BMX spindles come in three sizes" is wrong.</td></tr>
 </tbody>
 </table>
 </div>
 
-Two things worth carrying away. First, **"19, 22, 24" is the complete set for freestyle, not for BMX as a whole.** Race also uses 30mm and 35mm. Second, **a 24mm spindle is really 15/16 inch, or 23.81mm.** If you put calipers on a used 24mm spindle and read 23.8, it is not worn, it is correctly sized.
+**Do not confuse spindle diameter with sprocket bore.** [Odyssey lists the Thunderbolt](https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black) with a 22mm spindle and a separate 15/16-inch sprocket interface. That fraction converts to 23.8125mm; it does not establish the diameter or wear tolerance of every crank sold as 24mm. Match the bearing and sprocket to the crank manufacturer's specification.
+
+<p class="source-note">For the named crank models and their separate spindle and sprocket interfaces: <a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD: Substance XL V2 specifications</a>; <a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey: Thunderbolt specifications</a>.</p>
 
 ## How bore and outer diameter work together {#sealed-bearing-sizes}
 
@@ -249,7 +255,7 @@ You cannot change your frame's shell standard, but you can usually run the crank
 
 **American frame, modern cranks.** Adapter cups reduce the shell down to the Mid bearing, which is the same bearing an American already uses inside its own cups. This is the most common conversion on an old frame.
 
-**Sprocket bore.** Sprockets are frequently bored for 24mm (15/16 inch), with a small adapter dropping that down to 22mm or 19mm. Some are simply bored 19mm. Check before assuming a sprocket will slide on.
+**Sprocket bore.** Check the sprocket interface separately from the bearing journal. Some cranks use a dedicated shoulder or adapter for the sprocket. A 15/16-inch bore and a nominal 24mm specification are not automatically interchangeable; follow the crank and sprocket maker's compatibility information.
 
 **Shell width.** Mid and Spanish kits are sold to cover both 68mm and 73mm shells, with the spacer set making up the difference. Width is worth measuring, but it rarely stops a build.
 
@@ -343,9 +349,9 @@ Precision is not critical. The standards are separated by 4mm and 10mm, so any r
 :::
 
 ::: faq Q006 | What is the difference between 19mm, 22mm, and 24mm BMX crank spindles?
-19mm is the default and what most complete bikes and aftermarket cranks use. 22mm is the common durability upgrade. 24mm is mostly found on race setups with external bearing Euro or BSA bottom brackets.
+Freestyle cranks are sold in 19mm, 22mm and 24mm versions. The bearing bore must match the crank spindle, and the bearing outer diameter must match the frame's bottom bracket system. [BSD's 24mm Substance XL V2](https://bsdforever.com/products/substance-xl-v2-crank) includes a Mid bottom bracket, so 24mm is not restricted to race or external-bearing setups.
 
-24mm is not straightforwardly the strongest choice. Because the shell fixes the bearing's outer diameter, a bigger spindle means a bigger bore and less bearing material. You trade spindle strength for bearing strength. Also note 24mm is nominally 15/16 inch, which is 23.81mm, so a caliper reading of 23.8 on a used spindle is correct rather than worn.
+**Do not confuse spindle diameter with sprocket bore.** [Odyssey lists the Thunderbolt](https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black) with a 22mm spindle and a separate 15/16-inch sprocket interface. That fraction converts to 23.8125mm; it does not establish the diameter or wear tolerance of every crank sold as 24mm. Match the bearing and sprocket to the crank manufacturer's specification.
 :::
 
 ::: faq Q004 | Can I run 22mm cranks in a frame that had 19mm cranks?

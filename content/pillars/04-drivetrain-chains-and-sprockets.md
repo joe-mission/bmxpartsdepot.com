@@ -9,7 +9,7 @@ description: Chain width 1/8 inch against 3/32 inch, half links, gear ratio and 
 cardline: Four parts have to agree with each other: sprocket, chain, driver and chainline. Here is how they fit together.
 standfirst: A BMX drivetrain is four parts and they all have to agree. Get the chain width wrong and it sits badly on the teeth. Get the chainline wrong and it throws off under load. Get the sprocket bore wrong and it does not go on at all. This guide covers how the parts relate, with every figure sourced, and it names the numbers nobody publishes rather than repeating one off a forum.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: bmx-chain-size|Chain Size, bmx-gear-ratio|Gear Ratio, micro-drive|Micro Drive, cassette-driver|Driver, sprocket-bolt-pattern|Sprocket Bolt Pattern, spline-drive-sprocket|Spline Drive Sprocket, sprocket-guard|Sprocket Guard, internal-chain-tensioner|Internal Chain Tensioner, bmx-freewheel|Freewheel, crank-spindle-diameter|Crank Spindle Diameter, non-drive-side|Non-Drive Side, left-hand-drive|Left Hand Drive
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles, bmx-cranks-and-pedals|Cranks and Pedals
@@ -80,11 +80,13 @@ The other reason chain width matters is peg and frame clearance. A wider chain i
 </table>
 </div>
 
-**Here the names are honest.** A 1/8 inch chain really does measure 3.175mm inside and a 3/32 really is 2.381mm, both exactly their fractions converted. That is not something to take for granted on this site, given the 24mm spindle that is really 23.81mm and the 22.2mm bar clamp that is really 22.225mm. On chains, the nominal name is the actual dimension.
+The nominal chain widths convert to 3.175mm for 1/8 inch and about 2.381mm for 3/32 inch. Use the chain maker's compatibility specification rather than treating a nominal size as a manufacturing tolerance.
 
 **Outer width is the number that decides clearance**, and it is the one nobody quotes. A half-link 1/8 inch chain is up to 10.2mm across against 9.4mm for a standard one, so a chain that fits a tight chainstay in one form may not in the other. Worth measuring if you are running a short back end.
 
 Boxed chains ship at 96 to 112 links and get cut to roughly 72 to 86 on a BMX, depending on chainstay length and gearing. Buy the chain expecting to shorten it.
+
+<p class="source-note">For matching single-speed chain width: <a href="https://www.kmcchain.com/en/article/q19">KMC: choosing a chain size</a>.</p>
 
 ## Half links {#half-links}
 
@@ -275,7 +277,7 @@ The catch is that spline drive is a system rather than a standard. The sprocket 
 
 ### Sprocket bore
 
-For sprockets that are not spline drive, the hole in the middle has to suit the crank spindle passing through it. BMX freestyle cranks use 19mm and 22mm spindles mainly, with 24mm found mostly on race setups.
+For sprockets that are not spline drive, the hole in the middle has to suit the crank spindle passing through it. Freestyle crank models include 19mm, 22mm and 24mm spindles. The sprocket interface must be checked separately.
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -284,21 +286,23 @@ For sprockets that are not spline drive, the hole in the middle has to suit the 
 <tr><th scope="col">Item</th><th scope="col">Figure</th><th scope="col">Sourcing</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Freestyle crank spindle diameters</th><td class="num">19mm and 22mm mainstream</td><td>Odyssey, Profile Racing, Dan's Comp <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">24mm spindle</th><td class="num">nominally 15/16 inch, which is 23.81mm</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
-<tr><th scope="row">Common sprocket bore</th><td>Frequently bored for 24mm, with an adapter reducing to 22mm or 19mm. Some are simply bored 19mm.</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Freestyle crank spindle examples</th><td class="num">22mm Thunderbolt; 24mm Substance XL V2</td><td><a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey</a>, <a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD</a> <span class="src src-single">Single source per model</span></td></tr>
+<tr><th scope="row">Thunderbolt sprocket interface</th><td>15/16-inch sprocket hole, separate from its 22mm spindle</td><td><a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey Thunderbolt specifications</a> <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Sprocket bore and adapters</th><td>Match the bore and any adapter to the crank model; do not infer it from the bearing bore.</td><td>Check both manufacturers' compatibility instructions</td></tr>
 <tr><th scope="row">Race spindle sizes beyond 24mm</th><td class="num">30mm and 35mm exist in BMX race</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Spline drive spline counts and dimensions</th><td>Not published here</td><td>System-specific, no source checked <span class="src src-gap">Unverified</span></td></tr>
 </tbody>
 </table>
 </div>
 
-The practical takeaway from that table is the adapter. **A sprocket bored larger than your spindle is usually usable with the correct adapter, and a sprocket bored smaller than your spindle is not usable at all.** So a sprocket bored for 24mm is the flexible one and a sprocket bored 19mm is the restrictive one. When you buy a used sprocket, find out the bore and find out whether the adapter is included, because a sprocket without its adapter is not a complete part.
+The practical takeaway is to identify the crank model, sprocket bore and required adapter before buying. A larger bore may work with the correct manufacturer-specified adapter. Check that the adapter and fixing hardware are included rather than assuming the bearing size tells you everything.
 
-The other detail worth carrying: a 24mm spindle is really 15/16 inch, which is 23.81mm. Calipers reading 23.8 on a used spindle mean it is correctly sized, not worn.
+**Do not confuse spindle diameter with sprocket bore.** [Odyssey lists the Thunderbolt](https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black) with a 22mm spindle and a separate 15/16-inch sprocket interface. That fraction converts to 23.8125mm; it does not establish the diameter or wear tolerance of every crank sold as 24mm. Match the bearing and sprocket to the crank manufacturer's specification.
 
 ::: fitbadge Matching a sprocket to cranks you already own? | Bottom Brackets and Spindles guide | /guides/bottom-brackets-and-spindles/
 :::
+
+<p class="source-note">For the model-specific spindle and sprocket examples: <a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey: Thunderbolt specifications</a>; <a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD: Substance XL V2 specifications</a>.</p>
 
 ## Chainline {#chainline}
 
@@ -455,7 +459,7 @@ They are not interchangeable. A driver will not fit a freewheel hub and a freewh
 ::: faq Q039 | How do I tell what bore or spline a BMX sprocket uses?
 Take the sprocket off and look at the hole. A spline drive sprocket has splines machined into the middle hole, matching splines on the crank spindle, and no bolts. A bolt-on sprocket has bolt holes on a circle and mounts to a spider on the crank arm. A bolt-through sprocket has a plain round hole that the spindle passes through.
 
-For a plain bore, measure it. BMX freestyle cranks mainly use 19mm and 22mm spindles, with 24mm mostly on race setups. Sprockets are frequently bored large, commonly for 24mm, with a small adapter reducing that to 22mm or 19mm, and some are simply bored 19mm.
+For a plain bore, identify the crank model and measure the sprocket opening. Freestyle cranks include 19mm, 22mm and 24mm models, but the sprocket interface can differ from the bearing journal. Check the maker's required bore, adapter and fixing hardware; do not assume a 15/16-inch opening fits every crank labelled 24mm.
 
 A sprocket bored larger than your spindle is usually usable with the right adapter. A sprocket bored smaller is not usable at all. So find out the bore and find out whether the adapter is included, because a sprocket without its adapter is not a complete part.
 
@@ -465,7 +469,7 @@ For spline drive, the sprocket has to match that specific crank system's splines
 ::: faq Q040 | Will a sprocket made for a 19mm spindle fit 22mm cranks?
 No. A 19mm bore will not pass a 22mm spindle, and boring it out is not something we would do or sell. The hole in a sprocket is not spare material.
 
-It works the other way round. A sprocket bored for 24mm will run on a 22mm or a 19mm spindle with the correct adapter, which is why sprockets are commonly bored large. That is the flexible direction.
+A larger sprocket bore may fit a smaller crank interface with the correct model-specific adapter. Check both manufacturers' compatibility instructions; the nominal bearing diameter alone is not enough to choose the adapter.
 
 So when you are buying a used sprocket, the bore you want is the same as your spindle or larger with an adapter included. If a listing does not state the bore, ask, and if it states a bore but says nothing about an adapter, ask about that too.
 :::

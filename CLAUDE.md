@@ -393,8 +393,10 @@ is worse than a missing one.
   no dates for this reason.
 - Known traps, all found by checking rather than assuming: 3/8 inch is 9.525mm and
   is not a 10mm axle. Dropout spacing (110mm nominal) is not axle diameter (14mm).
-  "24mm" spindle is 15/16 inch, 23.81mm. "19, 22, 24" is the complete spindle set
-  for freestyle only, race adds 30mm and 35mm. American shell diameter has no
+  Do not equate a 24mm spindle with a 15/16-inch sprocket bore: Odyssey's
+  Thunderbolt specifies a 22mm spindle and a separate 15/16-inch sprocket
+  interface. Freestyle includes 19, 22 and 24mm; race adds 30mm and 35mm.
+  American shell diameter has no
   single agreed figure.
 
 ## Writing style

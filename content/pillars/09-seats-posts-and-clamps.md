@@ -9,7 +9,7 @@ description: Pivotal, railed and tripod seats explained, how seat post diameter 
 cardline: The seat interface, the post diameter and the clamp are three separate fitment questions, and mixing them up is what makes seat shopping confusing.
 standfirst: A seat has to match its post, the post has to match the frame, and the clamp has to match the top of the seat tube. Three separate measurements, three separate ways to get it wrong. This guide explains all three, with the post and clamp diameters sourced and stated rather than left to a guess at the counter.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: pivotal-seat|Pivotal Seat, seat-post-diameter|Seat Post Diameter, integrated-seat-clamp|Integrated Seat Clamp, zero-offset-seat-post|Zero Offset Seat Post, pinch-bolt|Pinch Bolt, yield-strength|Yield Strength, zinc-plated-hardware|Zinc-Plated Hardware, standover-height|Standover Height, railed-seat|Railed Seat, seat-clamp-diameter|Seat Clamp Diameter, tripod-post-spline|Tripod Post Spline
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-handlebars-and-cockpit|Handlebars and Cockpit, vintage-bmx-identification|Era and Dating
@@ -30,7 +30,7 @@ A **railed** seat has two wire rails moulded into its base. The post has a clamp
 
 A **pivotal** seat has no rails. The base has a splined or serrated socket in it, the post ends in a matching splined stub, and a single long bolt drops down through the seat into the top of the post and pulls the two faces together. The serrations lock the angle. There is no fore and aft adjustment at all.
 
-A **tripod** seat is the older three-bolt arrangement, with the seat base bolting to a plate on the post at three points. You mostly meet it on old school bikes and on the seat and post combos of that period.
+A **Tripod** seat uses its own three-point interface and matching post. It is a current freestyle option, not a generic name for an old three-bolt seat. [Flybikes describes its Tripod post](https://www.flybikes.com/product/fly-tripod-seat-post) as a three-fixing-point system supplied with an angle wedge. <span class="src src-single">Single source</span>
 
 <div class="table-scroll">
 <table class="spec-table">
@@ -41,7 +41,7 @@ A **tripod** seat is the older three-bolt arrangement, with the seat base boltin
 <tbody>
 <tr><th scope="row">Pivotal</th><td>Splined face pulled together by one bolt through the seat</td><td>Angle only, in steps set by the splines</td><td>The common modern freestyle setup</td></tr>
 <tr><th scope="row">Railed</th><td>Two wire rails clamped in a cradle on the post head</td><td>Angle and fore and aft, continuously</td><td>Older BMX, race bikes, most non-BMX bikes</td></tr>
-<tr><th scope="row">Tripod</th><td>Seat base bolted to a plate at three points</td><td>Whatever the slots in the plate allow</td><td>Old school bikes and period combo units</td></tr>
+<tr><th scope="row">Tripod</th><td>Dedicated three-point seat and post interface</td><td>Angle set using the matching wedge</td><td>Freestyle seats and posts from Flybikes and other makers</td></tr>
 </tbody>
 </table>
 </div>
@@ -58,7 +58,7 @@ A **tripod** seat is the older three-bolt arrangement, with the seat base boltin
 <tr><th scope="row">Railed, BMX</th><td class="num">8.0mm solid rails, 43mm centre to centre</td><td>Eclat, Shadow <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">Railed, road and mountain</th><td class="num">7.0mm rails, same 43mm spacing</td><td>Park Tool <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">Pivotal</th><td class="num">M10 x 1.5 hollow bolt, 6mm Allen, 45-tooth spline</td><td>MacNeil patent, multiple brands <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">Tripod</th><td>Two front tabs plus one rear M8 x 1.25, 6mm Allen</td><td>Flybikes <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">Tripod</th><td>Three fixing points and an angle wedge; replacement hardware must match the model</td><td><a href="https://www.flybikes.com/product/fly-tripod-seat-post">Flybikes Tripod Post</a> <span class="src src-single">Single source</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -71,9 +71,7 @@ This is a question people guess at, and it has a real answer. **Pivotal is one l
 
 That means a Pivotal seat from one brand fits a Pivotal post from another. **The caveat that matters on used parts:** this holds for licensed Pivotal products. Unbranded copies exist, and nothing guarantees a copy was cut to the licensed geometry. If a cheap unmarked seat will not seat properly on a known-good post, the seat is the suspect.
 
-::: figure The three seat interfaces | assets/diagrams/bmx-seat-interfaces-comparison.svg | Cross section drawings of a pivotal seat and post, a railed seat and post head, and a tripod seat mounting plate
-The three mounting styles at the same scale, with the bolt path drawn through each one so it is clear what is holding the seat on.
-:::
+<p class="source-note">For the Tripod interface and a railed post example: <a href="https://www.flybikes.com/product/fly-tripod-seat-post">Flybikes: Tripod post and wedge</a>; <a href="https://www.flybikes.com/product/fly-motosierra-rail-seat-post-black">Flybikes: Motosierra railed post</a>.</p>
 
 ## Pivotal seats {#pivotal-seat}
 
@@ -283,7 +281,7 @@ Cover damage on a seat is cosmetic and honestly described as such. A cracked bas
 ## Questions {#questions}
 
 ::: faq Q061 | What is the difference between a pivotal, railed, and tripod BMX seat?
-It is how the seat attaches to the post. A pivotal seat has a splined socket in its base and is held by one long bolt that passes down through the seat into the top of the post, with the splines setting the angle. A railed seat has two wire rails clamped in a cradle on the post head, which gives angle and fore and aft adjustment. A tripod seat bolts to a plate on the post at three points and is mostly an old school arrangement.
+It is how the seat attaches to the post. A pivotal seat has a splined socket in its base and is held by one long bolt that passes down through the seat into the top of the post, with the splines setting the angle. A railed seat has two wire rails clamped in a cradle on the post head, which gives angle and fore and aft adjustment. A Tripod seat uses a dedicated three-point interface and matching post. It is also sold for current freestyle bikes; it does not fit a pivotal or railed post.
 
 They do not interchange. The mounting interface belongs to the post as much as to the seat, so changing seat type means changing the post as well.
 :::
@@ -362,14 +360,15 @@ The pairings hold because BMX frame builders draw from a small set of tube sizes
 **Tripod is a third seat interface, alongside railed and pivotal, and it is not compatible with either.** It uses a three-point mount rather than rails or a single bolt through a splined face.
 :::
 
-You meet it rarely, which is exactly why it catches people out: a tripod seat looks close enough to pivotal in a photograph that it gets bought as one. The mount pattern under the shell is the tell, and it needs its own post.
+A Tripod seat can look close enough to pivotal in a photograph to be bought as one by mistake. The mount pattern under the shell is the tell, and it needs its own post.
 
-The practical advice for a used purchase is short. If a seat or post is described as tripod, it works with tripod parts and nothing else, and replacements are harder to find than for either of the common systems. That is worth factoring into the price of a bike that comes with one.
+For a used purchase, identify the seat and post models and check their compatibility. Flybikes still lists Tripod seats and posts; the interface alone does not date a bike as old school.
 
-The bolt pattern is published above under [pivotal, railed and tripod](#seat-types): two front tabs plus one rear M8 x 1.25, taking a 6mm Allen key, sourced to Flybikes. That is one manufacturer rather than two, so treat it as one reading and check the part in front of you.
+Use the manufacturer's [Tripod installation guide](https://www.flybikes.com/support-center) for assembly and wedge placement. We have not verified a universal replacement bolt thread or tool size, so the earlier hardware dimensions have been withdrawn.
 
 ::: needsverify One figure a buyer would want here is not published by anyone we could source.
 - Spacing between the three tripod mount points
+- Universal replacement bolt thread and tool size
 :::
 
 Without that, a tripod post and a tripod seat from different makers cannot be confirmed to fit from listings alone. If you are buying the two separately, ask for a measurement across the mount points.

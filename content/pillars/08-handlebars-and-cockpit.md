@@ -9,7 +9,7 @@ description: How BMX bars are measured, what rise, width, backsweep and upsweep 
 cardline: Four numbers describe a set of bars, and changing one quietly changes the others.
 standfirst: Bars are the part riders replace on feel rather than on fitment, which is why so many people end up with a set that measures right and feels wrong. This guide explains what each of the four bar numbers does and how they interact, with every published figure carrying its source.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: handlebar-rise|Handlebar Rise, handlebar-width|Handlebar Width, handlebar-backsweep|Handlebar Backsweep, handlebar-upsweep|Handlebar Upsweep, oversize-bar-clamp|Oversize Bar Clamp, knurled-bar-clamp|Knurled Bar Clamp Area, bmx-grips|Grip Diameter and Flange, front-load-stem|Front Load Stem, two-piece-bar|Two-Piece Bar, four-piece-bar|Four-Piece Bar, bar-crossbar|Crossbar, lock-on-grip|Lock-On Grip
 related: bmx-front-end-headsets-and-forks|Front End Headsets and Forks, bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-brakes-and-gyros|Brakes and Gyros, vintage-bmx-identification|Era and Dating
@@ -83,6 +83,8 @@ One bar drawn twice, from the front and from above, with each of the four measur
 ::: video Sizing and Cutting Handlebars | pBdxCtAn5Ew | 2018-06-19T07:02:48-07:00
 Park Tool on sizing and cutting bars. It is a width video rather than a rise and sweep video, so use it for the cutting method and take rise, upsweep and backsweep from the measuring points diagram above.
 :::
+
+<p class="source-note">For a manufacturer example publishing rise, width and both sweep angles: <a href="https://shop.odysseybmx.com/collections/41-thermal/products/odyssey-broc-9-8-bar-matte-black">Odyssey: Broc bar dimensions</a>.</p>
 
 ## Handlebar rise {#handlebar-rise}
 
@@ -281,6 +283,8 @@ When you refit bars, tighten the faceplate bolts evenly in a cross pattern and l
 
 ::: fitbadge Not sure whether your stem fits your fork? | Front End Headsets and Forks | /guides/bmx-front-end-headsets-and-forks/
 :::
+
+<p class="source-note">For front-load and top-load stem examples: <a href="https://www.flybikes.com/blog/volcano-stems-2017sneakpeek">Flybikes: front-load and top-load Volcano stems</a>.</p>
 
 ## Questions {#questions}
 

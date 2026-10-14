@@ -9,7 +9,7 @@ description: Integrated, zero stack and threaded BMX headsets explained, with ho
 cardline: What the head tube decides, what the steerer decides, and why the stem is the last thing to worry about.
 standfirst: The front end is where the most confidently wrong numbers on the internet live. This guide covers how each part of a BMX front end works and what determines fit. Steerer diameters, bearing dimensions and fork offsets are sourced and stated here. Dropout slot width is not, because no manufacturer publishes it.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: bmx-headset-standards|Headset Standards, integrated-headset|Integrated Headset, zero-stack-headset|Zero Stack Headset, threaded-headset|Threaded Headset, threadless-headset|Threadless Headset, aheadset|Aheadset, quill-stem|Quill Stem, front-load-stem|Front Load Stem, fork-offset|Fork Offset, unicrown-fork|Unicrown Fork, dropout-slot-width|Dropout Slot Width, steerer-tube-diameter|Steerer Tube Diameter, steerer-tube-length|Steerer Tube Length, star-nut|Star Nut, compression-cap|Compression Cap, internal-compression-bolt|Internal Compression Bolt, crown-race|Crown Race, split-crown-race-ring|Split Crown Race Ring, headset-bearing-angle|Headset Bearing Angle, headset-stack-height|Headset Stack Height, headset-spacer|Headset Spacer, top-load-stem|Top Load Stem, stem-reach|Stem Reach, torque-specification|Torque Specification
 related: bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, bmx-handlebars-and-cockpit|Handlebars and Cockpit, bmx-brakes-and-gyros|Brakes, Cables and Detanglers, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles
@@ -76,7 +76,7 @@ Those three are independent of each other in principle and heavily correlated in
 </table>
 </div>
 
-**The steerer diameters are exactly what the names say**, which is worth stating because it is not always true. 1 inch is 25.40mm and 1 1/8 inch is 28.575mm, no rounding surprises hiding in either. Compare that to the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm.
+**The steerer diameters are exactly what the names say**, which is worth stating because it is not always true. 1 inch is 25.40mm and 1 1/8 inch is 28.575mm, no rounding surprises hiding in either.
 
 **Modern BMX appears to have settled on one integrated design.** Every source checked gives 41.8mm at 45 by 45 degrees, the Campagnolo specification. The other integrated geometry in the wider bicycle world, a 41.0mm bearing at 36 by 45 degrees, did not turn up on any BMX product. That is an absence rather than a proof, so read it as "nobody found selling it for BMX" rather than "it does not exist", but if you are buying an integrated bearing for a BMX frame, 41.8mm at 45/45 is what to expect.
 
@@ -472,7 +472,7 @@ No. The stem has to match the steerer diameter it clamps to or sits inside, and 
 
 There is a second problem beyond diameter. Old school 1 inch stems are usually quill stems, which go inside a threaded steerer, and most 1 1/8 inch BMX forks are threadless, which need a stem that clamps around the outside. So the two are often incompatible in type as well as in size.
 
-Both names are exact here rather than nominal, which is not always true in BMX: **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against Park Tool and SHIS. Compare that with the 24mm crank spindle, which is really 15/16 inch and measures 23.81mm. If you are matching parts, measure the steerer and check it against those figures.
+Both names are exact here rather than nominal, which is not always true in BMX: **1 inch is 25.40mm and 1 1/8 inch is 28.575mm**, confirmed against Park Tool and SHIS. If you are matching parts, measure the steerer and check it against those figures.
 :::
 
 ::: faq Q093 | When did BMX move from 1 inch threaded headsets to 1 1/8 integrated?
@@ -505,6 +505,8 @@ This is the first number to check on a used fork, because getting it wrong means
 </tbody>
 </table>
 </div>
+
+<p class="source-note">For steerer sizing and headset families: <a href="https://www.parktool.com/en-us/blog/repair-help/headset-standards">Park Tool: headset standards</a>.</p>
 
 ## Steerer tube length {#steerer-tube-length}
 
@@ -636,6 +638,8 @@ The split works because a cartridge bearing sits on it and the preload holds it 
 </div>
 
 Buy bearings by the frame's headset standard rather than by measuring the old ones, because a worn bearing can measure close to the wrong spec.
+
+<p class="source-note">For the different angular-contact bearing interfaces: <a href="https://www.parktool.com/en-us/blog/repair-help/headset-standards">Park Tool: headset standards</a>.</p>
 
 ## Headset stack height {#headset-stack-height}
 

@@ -9,20 +9,20 @@ description: Sizing by height, what separates street from race, gearing, chromol
 cardline: The questions that come before the fitment questions, answered with sources rather than opinion.
 standfirst: These are the ten questions people actually ask before they buy. Where there is a sourced answer it is here with its sourcing. Where the honest answer is that it depends on the rider, or that the sources disagree, this page says so rather than inventing a number to fill the gap.
 eras: all
-updated: 2026-08-29
+updated: 2026-10-14
 published: 2026-08-29
 related: bmx-frame-identification-and-geometry|Frame ID and Geometry, bmx-wheels-hubs-and-axles|Wheels, Hubs and Axles, drivetrain-chains-and-sprockets|Drivetrain and Gearing, bmx-cranks-and-pedals|Cranks and Pedals
 ---
 
 ::: quickanswer
-The three questions worth answering first: **a 20 inch wheel is near enough universal on freestyle BMX**, **frame size is set by top tube length rather than by wheel size**, and **the spec sheet tells you more about a complete bike than the price does**. Everything below expands on one of those.
+The three questions worth answering first: **20-inch wheels are common on adult freestyle BMX, with smaller bikes for smaller riders**, **frame size is set by top tube length rather than by wheel size**, and **the spec sheet tells you more about a complete bike than the price does**. Everything below expands on one of those.
 :::
 
 ## Sizing and fit {#sizing}
 
 ::: faq Q01 | What size BMX bike do I need for my height?
 
-**On a modern freestyle BMX the wheel is 20 inch whatever your height, and the size you actually choose is the top tube length.** Adult bikes run roughly 20 to 21.25 inches of top tube. Race BMX is the opposite: it runs a named size class, and the classes really do map to rider height.
+**For an adult choosing a 20-inch freestyle BMX, top tube length is a key fit measurement. Smaller riders may need a smaller-wheel bike.** Wheel size alone does not tell you whether the reach fits. Race BMX uses named size classes, but the height ranges and names vary between manufacturers. Start with the maker's sizing guidance and try the bike where possible.
 
 That difference catches people out, so it is worth being clear about which question you are asking.
 
@@ -57,7 +57,7 @@ So: measure the top tube, not the label. The named sizes are in the glossary und
 
 ::: faq Q02 | What size wheel does a BMX bike use?
 
-**Twenty inch, and that number means a bead seat diameter of 406mm rather than anything you can measure across the tire.** The trap is that a second 20 inch standard exists at 451mm, mostly on race bikes, and the two do not interchange in either direction.
+**Adult freestyle BMX commonly uses 20-inch tires with a 406mm bead seat diameter.** The inch label is a size name, not a measurement across the tire. The trap is that a second 20 inch standard exists at 451mm, mostly on race bikes, and the two do not interchange in either direction.
 
 This one is already answered properly in the glossary rather than here, because it is a fitment standard rather than a buying question. Start with [wheel size](/guides/bmx-wheels-hubs-and-axles/#bmx-wheel-sizes), then read [ISO 406](/guides/bmx-wheels-hubs-and-axles/#iso-406) and [ISO 451](/guides/bmx-wheels-hubs-and-axles/#iso-451) for why a tire that says 20 inch on the sidewall can still be the wrong tire.
 
@@ -66,7 +66,7 @@ Smaller wheels exist for smaller riders, at 12, 14, 16 and 18 inch. Be careful w
 
 ::: faq Q03 | What crank arm length should I run?
 
-**Almost every BMX crank sold is 160, 165, 170 or 175mm, and 170mm is what most complete bikes ship with.** Beyond that this is rider preference rather than a specification, and the one height chart that exists is contradicted by the manufacturer's own team riders.
+**Freestyle cranks commonly offer 160, 165, 170 and 175mm lengths; check the actual model rather than assuming every complete uses the same length.** Beyond that this is rider preference rather than a specification, and the one height chart that exists is contradicted by the manufacturer's own team riders.
 
 The lengths are easy to state. Odyssey, Eclat, Cult, Kink and Sunday all sell the same four sizes, and none of their product pages carries any guidance on choosing between them. <span class="src src-confirmed">Confirmed</span> Profile Racing is the exception, offering 125mm through 190mm, which reflects its race roots.
 
@@ -78,8 +78,10 @@ What is documented is the trade, and it is simple arithmetic rather than opinion
 
 Both are describing the same trade from opposite ends. Ride what the bike came with for a season before changing it, and if you do change, change one thing.
 
-One hard constraint that is not preference: **crank length is tied to your bottom bracket standard through spindle length**, so check what your shell takes before ordering. That is on the [bottom bracket guide](/guides/bottom-brackets-and-spindles/).
+**Crank arm length and spindle fit are separate checks.** Before ordering, confirm the spindle diameter, usable spindle length and bottom bracket compatibility for that crank model. The [bottom bracket guide](/guides/bottom-brackets-and-spindles/) explains the bearing and shell measurements.
 :::
+
+<p class="source-note">For manufacturer sizing guidance, a smaller-wheel bike example and crank-length discussion: <a href="https://www.supercrossbmx.com/blogs/news/bmx-frame-sizing-chart">Supercross: frame sizing guide</a>; <a href="https://sundaybikes.com/bikes/archive/2018-bikes/starter-bikes/2018-primer-16-fluorescent-green/">Sunday: 16-inch Primer specifications</a>; <a href="https://www.profileracing.com/tech-tip-2-crank-it-down/">Profile: crank length and rider examples</a>.</p>
 
 ## What kind of bike {#bike-types}
 

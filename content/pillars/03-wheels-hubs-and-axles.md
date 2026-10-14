@@ -9,7 +9,7 @@ description: Cassette, freecoaster and freewheel hubs compared, plus axle diamet
 cardline: Which rear hub you have, which axle it runs, and whether the wheel will fit the frame you own.
 standfirst: The rear hub is the part of a BMX bike with the most ways to be incompatible, and the most confidently repeated wrong numbers online. This guide separates the three hub types, then works through axle diameter and hub spacing, which are two different measurements people mix up constantly. Every figure carries its source, and where the honest answer is that nobody publishes one, it says that instead.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: cassette-hub|Cassette Hub, freecoaster|Freecoaster, bmx-freewheel|Freewheel, cassette-driver|Driver, bmx-axle-diameter|Axle Diameter, male-axle|Male Axle, female-axle|Female Axle, over-locknut-dimension|Over Locknut Dimension, hub-guard|Hub Guard, rim-wall-construction|Rim Wall Construction, iso-bead-seat-diameter|ISO Bead Seat Diameter, spoke-lacing-pattern|Spoke Lacing Pattern, left-hand-drive|Left Hand Drive, right-hand-drive|Right Hand Drive, axle-nuts-and-bolts|Axle Nuts and Bolts, wheel-dish|Wheel Dish, effective-rim-diameter|Effective Rim Diameter, hub-end-caps|Hub End Caps, j-bend-spoke|J-Bend Spoke, spoke-nipple|Spoke Nipple, bmx-pegs|BMX Pegs, valve-hole-size|Valve Hole Size, bmx-wheel-sizes|BMX Wheel Sizes, 3x-lacing|3X Lacing, iso-406|ISO 406, iso-451|ISO 451, tire-size-marking|Tire Size Marking, wire-bead-tire|Wire Bead Tire, folding-bead-tire|Folding Bead Tire, bead-hook|Bead Hook, tire-seating|Tire Seating, casing-tpi|Casing TPI, tire-pressure-range|Tire Pressure Range, tire-durometer|Durometer, tire-tread-pattern|Tread Pattern, tire-sidewall-marking|Sidewall Marking, skinwall-tire|Skinwall Tire, tire-directional-marking|Directional Marking, inner-tube-size-range|Inner Tube Size Range, tube-valve-type|Tube Valve Type, valve-stem-length|Valve Stem Length, tube-gauge|Tube Gauge, rim-tape|Rim Tape, tubeless-bmx|Tubeless BMX
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-frame-identification-and-geometry|Frame ID and Geometry, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, bmx-brakes-and-gyros|Brakes and Gyros
@@ -358,6 +358,8 @@ This is the same figure already given in the [rim dimensions table](#rim-wall-co
 
 The wheel size that shares the "20 inch" name and does not share this bead seat is [ISO 451](#iso-451), next.
 
+<p class="source-note">For bead seat diameter and tire size labels: <a href="https://www.sheldonbrown.com/tire-sizing.html">Sheldon Brown: tire sizing systems</a>.</p>
+
 ### ISO 451 {#iso-451}
 
 **ISO 451 is a second, larger 20 inch bead seat diameter, 45mm bigger than the 406 that nearly all freestyle and street wheels use, and it does not interchange with 406 in either direction.** A 451 tire will not seat on a 406 rim and a 406 tire will not seat on a 451 rim, at any pressure.
@@ -377,6 +379,8 @@ The wheel size that shares the "20 inch" name and does not share this bead seat 
 Where 451 actually shows up on a BMX bike, rather than in the standard generally, is narrower: Tioga sells its Fastr-X and PowerBlock BMX race tires in both 1-1/8 inch and 1-3/8 inch widths built to ISO 451, sold and marked that way by retailers including Dan's Comp. That is a race application, on narrow tires, not something to expect on a freestyle or street wheel. Sheldon Brown's tire sizing reference separately lists 451 as covering "juvenile lightweights" and "BMX for light riders" alongside some folding bikes and recumbents, consistent with a narrower, lighter duty use than the 406 standard.
 
 The practical result is the same either way: **a 451 wheel and a 406 wheel are two different diameters wearing the same "20 inch" name**, and no amount of lever work seats a tire built for one onto the other. If a tire will not seat, read the number printed on the sidewall before assuming the tire is faulty or the rim is out of true.
+
+<p class="source-note">For the distinction between the two 20-inch tire sizes: <a href="https://www.sheldonbrown.com/tire-sizing.html">Sheldon Brown: tire sizing systems</a>.</p>
 
 ### Tire Size Marking {#tire-size-marking}
 

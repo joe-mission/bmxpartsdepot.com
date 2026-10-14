@@ -9,7 +9,7 @@ description: Chromoly against hi-ten, butted tubing, gussets, dropouts and brake
 cardline: What the frame is made of, how it is put together, and which measurements decide whether it fits you.
 standfirst: A used BMX frame usually turns up with no spec sheet, no box and half its stickers gone. Everything you need is on the frame itself. This guide covers what to look at and what each answer means. Every figure carries its source, and the ones nobody publishes, dropout slot width above all, are named as unpublished rather than guessed at.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, butted-tubing|Butted Tubing, quad-butted-tubing|Quad-Butted Tubing, frame-gusset|Frame Gusset, chainstay-yoke|Chainstay Yoke, dropout-slot-width|Dropout Slot Width, vertical-dropout|Vertical Dropout, top-tube-length|Top Tube Length, chainstay-length|Chainstay Length, head-tube-angle|Head Tube Angle, wheelbase|Wheelbase, effective-top-tube-length|Effective Top Tube Length, frame-reach|Frame Reach, junior-bmx-frame-size|Junior BMX Frame Size, pro-xl-frame-size|Pro XL Frame Size
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, bmx-wheels-hubs-and-axles|Wheels Hubs and Axles, drivetrain-chains-and-sprockets|Drivetrain Chains and Sprockets, vintage-bmx-identification|Vintage BMX Identification
@@ -107,6 +107,8 @@ For a used buyer, butting matters in one specific way. A thin-walled middle sect
 ::: figure Butted tube wall thickness in section | assets/diagrams/bmx-butted-tubing-section.svg | Cutaway of a straight gauge tube next to a double butted tube showing wall thickness changes at each end
 Straight gauge against double butted at the same outer diameter, with the thin midsection called out.
 :::
+
+<p class="source-note">For a manufacturer example of double-butted construction: <a href="https://shop.sundaybikes.com/products/sunday-wavelength-frame-matte-black">Sunday: Wavelength construction and geometry</a>.</p>
 
 ## Gussets and where frames get reinforced {#frame-gusset}
 
@@ -274,6 +276,8 @@ Two things to hold on to. **Chainstay is where street and race genuinely diverge
 ::: fitbadge Working out chain length for a frame? | Drivetrain Chains and Sprockets guide | /guides/drivetrain-chains-and-sprockets/
 :::
 
+<p class="source-note">For an example of published frame geometry: <a href="https://shop.sundaybikes.com/products/sunday-wavelength-frame-matte-black">Sunday: Wavelength construction and geometry</a>.</p>
+
 ## Standover and wheelbase {#wheelbase}
 
 ::: quickanswer
@@ -406,6 +410,8 @@ So treat both as a starting point and then get the actual top tube length, which
 Same answer as above, from the race side. **Pro XL is a race sizing tier, not a measurement**, and the useful comparison is its top tube length against the freestyle figures in the geometry table rather than against another brand's Pro XL.
 
 We stock 20 inch adult freestyle and mid school hardgoods almost exclusively, so both of these are reference entries for reading a listing rather than descriptions of what is in the shop.
+
+<p class="source-note">For one manufacturer&#x27;s sizing guidance; size names are not universal: <a href="https://www.supercrossbmx.com/blogs/news/bmx-frame-sizing-chart">Supercross: frame sizing guide</a>.</p>
 
 ## Questions {#questions}
 

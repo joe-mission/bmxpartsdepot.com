@@ -9,7 +9,7 @@ description: One-piece, two-piece and three-piece BMX cranks explained, with how
 cardline: Three crank types, one spindle number that matters, and the pedal thread that ruins an arm if you get it wrong.
 standfirst: Cranks are the part of a used BMX most likely to be sold with the wrong spindle, the wrong pedals, or a quietly ruined thread. This guide covers what actually determines fit, with every figure carrying its source, starting with the pedal threads that are the most expensive thing here to get wrong.
 eras: old, mid, modern
-updated: 2026-08-28
+updated: 2026-10-14
 published: 2026-08-28
 terms: one-piece-crank|One-Piece Crank, three-piece-crank|Three-Piece Crank, crank-spindle-diameter|Crank Spindle Diameter, pinch-bolt|Pinch Bolt, pedal-thread-size|Pedal Thread Size, nylon-pedals|Nylon Pedal Body, spline-drive-sprocket|Spline Drive Sprocket, sprocket-guard|Sprocket Guard, american-bottom-bracket|American Bottom Bracket, press-fit-bottom-bracket|Press-Fit Bottom Bracket, 4130-chromoly|Chromoly (4130), hi-ten-steel|Hi-Ten Steel, one-piece-to-three-piece-conversion|One-Piece to Three-Piece Conversion, left-hand-thread|Left-Hand Thread, cross-threading|Cross-Threading, thread-insert|Thread Insert
 related: bottom-brackets-and-spindles|Bottom Brackets and Spindles, drivetrain-chains-and-sprockets|Drivetrain, Chains and Sprockets, bmx-frame-identification-and-geometry|Frame ID, Materials and Geometry, vintage-bmx-identification|Vintage BMX Identification
@@ -85,6 +85,8 @@ Both pedal threads belong to the British Standard Cycle family, specified in BS 
 
 The American cup thread question is partly answered already. Sources confirm two thread pitches exist for American one-piece bottom bracket cups, a common one and an older one found on some Schwinn and Mongoose bikes, which is covered with its sourcing in the [bottom bracket guide](/guides/bottom-brackets-and-spindles/#american-bottom-bracket). What is not confirmed here is the pedal side, so that stays in the block above.
 
+<p class="source-note">For one-piece crank construction and threading: <a href="https://www.sheldonbrown.com/opc.html">Sheldon Brown: one-piece cranks</a>.</p>
+
 ## Two-piece and three-piece cranks {#three-piece-crank}
 
 ::: quickanswer
@@ -148,7 +150,7 @@ The order the parts go on, how far the arm should sit, and what the splines look
 ## Crank spindle diameter {#crank-spindle-diameter}
 
 ::: quickanswer
-BMX freestyle cranks run **19mm or 22mm spindles**, with **24mm** mostly found on race setups. That number is the **bore** of your bottom bracket bearing. It has nothing to do with your frame's shell diameter, which sets the bearing's outer diameter.
+BMX freestyle cranks are available with **19mm, 22mm and 24mm spindles**. Choose the bearing bore for the specific crank model. That number is the **bore** of your bottom bracket bearing. It has nothing to do with your frame's shell diameter, which sets the bearing's outer diameter.
 :::
 
 This is the same idea as in the bottom bracket guide, stated from the crank side. When you buy a set of cranks, you are choosing the bearing bore. When you look at your frame shell, you are reading the bearing outer diameter. Buy the bearing that has both, and the two parts meet in the middle.
@@ -162,13 +164,15 @@ This is the same idea as in the bottom bracket guide, stated from the crank side
 <tbody>
 <tr><th scope="row">19mm</th><td>The default on most complete bikes and most aftermarket cranks</td><td>Dan's Comp, SkatePro <span class="src src-confirmed">Confirmed</span></td></tr>
 <tr><th scope="row">22mm</th><td>The common durability step up, widely stocked</td><td>Dan's Comp, Odyssey, Profile <span class="src src-confirmed">Confirmed</span></td></tr>
-<tr><th scope="row">24mm</th><td>Mostly race, on external bearing Euro and BSA bottom brackets. Nominally 15/16 inch, which is 23.81mm</td><td>Box, Dan's Comp <span class="src src-confirmed">Confirmed</span>. The 15/16 inch conversion is <span class="src src-single">Single source</span></td></tr>
+<tr><th scope="row">24mm</th><td>Also available for freestyle with a Mid bottom bracket</td><td><a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD Substance XL V2 specifications</a> <span class="src src-single">Single source</span></td></tr>
 <tr><th scope="row">30mm and 35mm</th><td>BMX race only, and the reason "three sizes" is wrong for BMX as a whole</td><td>Dan's Comp <span class="src src-single">Single source</span></td></tr>
 </tbody>
 </table>
 </div>
 
-The one thing that catches people out with calipers: **a 24mm spindle is a rounded imperial name.** If you measure a used one and read 23.8, it is correct, not worn.
+**Do not confuse spindle diameter with sprocket bore.** [Odyssey lists the Thunderbolt](https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black) with a 22mm spindle and a separate 15/16-inch sprocket interface. That fraction converts to 23.8125mm; it does not establish the diameter or wear tolerance of every crank sold as 24mm. Match the bearing and sprocket to the crank manufacturer's specification.
+
+<p class="source-note">For the named spindle and sprocket specifications: <a href="https://bsdforever.com/products/substance-xl-v2-crank">BSD: Substance XL V2 specifications</a>; <a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey: Thunderbolt specifications</a>.</p>
 
 ## Crank arm length {#crank-arm-length}
 
@@ -213,6 +217,8 @@ So the range you will meet on a used 20 inch bike is 160 to 175mm, with 175 the 
 **And cranks are marked.** Three-piece chromoly arms carry the length in millimetres, laser-etched or stamped on the inner flat face near the pedal boss or the spindle bore. Vintage one-piece Ashtabula cranks have it cast or stamped into the rear cavity of the arm. So before you measure a used set, look: the number is usually there, on a face you cannot see with the crank installed. <span class="src src-confirmed">Confirmed</span>
 
 That does not retire the caliper block above. What the arm is stamped with and what it measures are two different facts, and comparing them across a batch of used cranks is exactly the kind of thing nobody else publishes.
+
+<p class="source-note">For rider examples and lengths offered on one crank model: <a href="https://www.profileracing.com/tech-tip-2-crank-it-down/">Profile: crank length and rider examples</a>; <a href="https://shop.odysseybmx.com/products/odyssey-thunderbolt-bmx-cranks-rustproof-black">Odyssey: Thunderbolt specifications</a>.</p>
 
 ## Pedal thread size {#pedal-thread-size}
 
@@ -391,6 +397,8 @@ The left pedal unscrews itself under forward pedalling if it is right-hand threa
 </tbody>
 </table>
 </div>
+
+<p class="source-note">For pedal thread direction: <a href="https://www.parktool.com/en-us/blog/repair-help/pedal-installation-and-removal">Park Tool: pedal installation and thread direction</a>.</p>
 
 ## Cross-threading {#cross-threading}
 
