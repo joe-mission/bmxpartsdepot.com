@@ -1204,7 +1204,6 @@ def footer_html(top_guides):
     <div class="cols">
       <div>
         <a class="wordmark" href="/"><img src="/assets/logo.png" width="1302" height="160" alt="BMX Parts Depot"></a>
-        <p class="tagline">Used BMX parts, honestly priced.</p>
         <p class="copyright">&copy; <span id="yr">%s</span> BMX Parts Depot. All rights reserved.</p>
       </div>
       <div>

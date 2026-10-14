@@ -786,9 +786,8 @@ footer.site .col-title{
 footer.site nav{display:flex;flex-direction:column;gap:9px}
 footer.site a{color:rgba(255,255,255,.6);text-decoration:none;font-size:14.5px}
 footer.site a:hover{color:#fff;text-decoration:underline}
-footer.site .tagline{margin:14px 0 0;font-size:14px;color:rgba(255,255,255,.45);max-width:34ch}
 /* The copyright used to sit in its own full-width row under the columns. It
-   is in the brand column now, under the tagline, which fills the space that
+   is in the brand column now, under the logo, which fills the space that
    column was wasting and takes a whole row of height out of the footer. */
 footer.site .copyright{margin:18px 0 0;font-size:13.5px;color:rgba(255,255,255,.42);line-height:1.6}
 
